@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<!--headTrap<body></body><head></head><html></html>--><html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+<script nonce="624719085" type="text/javascript">
+window.__nonce_str = "624719085"
+if (location.href.indexOf("safe=0") == -1 && window.__nonce_str) {
+	window.__moonsafe_csp_offset || (window.__moonsafe_csp_offset = 18);
+	document.write('<meta http-equiv="Content-Security-Policy" content="script-src https: \'unsafe-inline\' \'unsafe-eval\' *.qq.com *.weishi.com'+(window.__nonce_str ? ' \'nonce-' + window.__nonce_str + "\'":"")+ '">');
+        
+}
+</script>
+
+        <script nonce="624719085" type="text/javascript">
+            window.logs = {
+                pagetime: {}
+            };
+            window.logs.pagetime['html_begin'] = (+new Date());
+        </script>
+        
+<script nonce="624719085" type="text/javascript">
+var page_begintime=+new Date,biz="MzI2NTM0NzE2NQ==",sn="",mid="100000931",idx="1",is_rumor="",norumor="";
+1*is_rumor&&!(1*norumor)&&(document.referrer&&-1!=document.referrer.indexOf("mp.weixin.qq.com/mp/rumor")||(location.href="http://mp.weixin.qq.com/mp/rumor?action=info&__biz="+biz+"&mid="+mid+"&idx="+idx+"&sn="+sn+"#wechat_redirect")),
+document.domain="qq.com";
+</script> 
+<script nonce="624719085" type="text/javascript">
+var MutationObserver=window.WebKitMutationObserver||window.MutationObserver||window.MozMutationObserver,isDangerSrc=function(t){
+if(t){
+var e=t.match(/http(?:s)?:\/\/([^\/]+?)(\/|$)/);
+if(e&&!/qq\.com(\:8080)?$/.test(e[1])&&!/weishi\.com$/.test(e[1]))return!0;
+}
+return!1;
+},ishttp=0==location.href.indexOf("http://");
+-1==location.href.indexOf("safe=0")&&ishttp&&"function"==typeof MutationObserver&&"mp.weixin.qq.com"==location.host&&(window.__observer_data={
+count:0,
+exec_time:0,
+list:[]
+},window.__observer=new MutationObserver(function(t){
+window.__observer_data.count++;
+var e=new Date,r=[];
+t.forEach(function(t){
+for(var e=t.addedNodes,o=0;o<e.length;o++){
+var n=e[o];
+if("SCRIPT"===n.tagName){
+var i=n.src;
+isDangerSrc(i)&&(window.__observer_data.list.push(i),r.push(n)),!i&&window.__nonce_str&&n.getAttribute("nonce")!=window.__nonce_str&&(window.__observer_data.list.push("inlinescript_without_nonce"),
+r.push(n));
+}
+}
+});
+for(var o=0;o<r.length;o++){
+var n=r[o];
+n.parentNode&&n.parentNode.removeChild(n);
+}
+window.__observer_data.exec_time+=new Date-e;
+}),window.__observer.observe(document,{
+subtree:!0,
+childList:!0
+})),function(){
+if(-1==location.href.indexOf("safe=0")&&Math.random()<.01&&ishttp&&HTMLScriptElement.prototype.__lookupSetter__&&"undefined"!=typeof Object.defineProperty){
+window.__danger_src={
+xmlhttprequest:[],
+script_src:[],
+script_setAttribute:[]
+};
+var t="$"+Math.random();
+HTMLScriptElement.prototype.__old_method_script_src=HTMLScriptElement.prototype.__lookupSetter__("src"),
+HTMLScriptElement.prototype.__defineSetter__("src",function(t){
+t&&isDangerSrc(t)&&window.__danger_src.script_src.push(t),this.__old_method_script_src(t);
+});
+var e="element_setAttribute"+t;
+Object.defineProperty(Element.prototype,e,{
+value:Element.prototype.setAttribute,
+enumerable:!1
+}),Element.prototype.setAttribute=function(t,r){
+"SCRIPT"==this.tagName&&"src"==t&&isDangerSrc(r)&&window.__danger_src.script_setAttribute.push(r),
+this[e](t,r);
+};
+}
+}();
+</script> 
+
+        <link rel="dns-prefetch" href="//res.wx.qq.com">
+<link rel="dns-prefetch" href="//mmbiz.qpic.cn">
+<link rel="shortcut icon" type="image/x-icon" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+<script nonce="624719085" type="text/javascript">
+    String.prototype.html = function(encode) {
+        var replace =["&#39;", "'", "&quot;", '"', "&nbsp;", " ", "&gt;", ">", "&lt;", "<", "&amp;", "&", "&yen;", "¥"];
+        if (encode) {
+            replace.reverse();
+        }
+        for (var i=0,str=this;i< replace.length;i+= 2) {
+             str=str.replace(new RegExp(replace[i],'g'),replace[i+1]);
+        }
+        return str;
+    };
+
+    window.isInWeixinApp = function() {
+        return /MicroMessenger/.test(navigator.userAgent);
+    };
+
+    window.getQueryFromURL = function(url) {
+        url = url || 'http://qq.com/s?a=b#rd'; 
+        var query = url.split('?')[1].split('#')[0].split('&'),
+            params = {};
+        for (var i=0; i<query.length; i++) {
+            var arg = query[i].split('=');
+            params[arg[0]] = arg[1];
+        }
+        if (params['pass_ticket']) {
+        	params['pass_ticket'] = encodeURIComponent(params['pass_ticket'].html(false).html(false).replace(/\s/g,"+"));
+        }
+        return params;
+    };
+
+    (function() {
+	    var params = getQueryFromURL(location.href);
+        window.uin = params['uin'] || '';
+        window.key = params['key'] || '';
+        window.wxtoken = params['wxtoken'] || '';
+        window.pass_ticket = params['pass_ticket'] || '';
+    })();
+
+</script>
+
+        <title>月报|九月电影市场总结及十月市场展望</title>
+        
+<style>html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;line-height:1.6}body{-webkit-touch-callout:none;font-family:-apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background-color:#f3f3f3;line-height:inherit}body.rich_media_empty_extra{background-color:#fff}body.rich_media_empty_extra .rich_media_area_primary:before{display:none}h1,h2,h3,h4,h5,h6{font-weight:400;font-size:16px}*{margin:0;padding:0}a{color:#607fa6;text-decoration:none}.rich_media_inner{font-size:16px;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.rich_media_area_primary{position:relative;padding:20px 15px 15px;background-color:#fff}.rich_media_area_primary:before{content:" ";position:absolute;left:0;top:0;width:100%;height:1px;border-top:1px solid #e5e5e5;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(0.5);transform:scaleY(0.5);top:auto;bottom:-2px}.rich_media_area_primary .original_img_wrp{display:inline-block;font-size:0}.rich_media_area_primary .original_img_wrp .tips_global{display:block;margin-top:.5em;font-size:14px;text-align:right;width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.rich_media_area_extra{padding:0 15px 0}.rich_media_title{margin-bottom:10px;line-height:1.4;font-weight:400;font-size:24px}.rich_media_meta_list{margin-bottom:18px;line-height:20px;font-size:0}.rich_media_meta_list em{font-style:normal}.rich_media_meta{display:inline-block;vertical-align:middle;margin-right:8px;margin-bottom:10px;font-size:16px}.meta_original_tag{display:inline-block;vertical-align:middle;padding:1px .5em;border:1px solid #9e9e9e;color:#8c8c8c;border-top-left-radius:20% 50%;-moz-border-radius-topleft:20% 50%;-webkit-border-top-left-radius:20% 50%;border-top-right-radius:20% 50%;-moz-border-radius-topright:20% 50%;-webkit-border-top-right-radius:20% 50%;border-bottom-left-radius:20% 50%;-moz-border-radius-bottomleft:20% 50%;-webkit-border-bottom-left-radius:20% 50%;border-bottom-right-radius:20% 50%;-moz-border-radius-bottomright:20% 50%;-webkit-border-bottom-right-radius:20% 50%;font-size:15px;line-height:1.1}.meta_enterprise_tag img{width:30px;height:30px!important;display:block;position:relative;margin-top:-3px;border:0}.rich_media_meta_text{color:#8c8c8c}span.rich_media_meta_nickname{display:none}.rich_media_thumb_wrp{margin-bottom:6px}.rich_media_thumb_wrp .original_img_wrp{display:block}.rich_media_thumb{display:block;width:100%}.rich_media_content{overflow:hidden;color:#3e3e3e}.rich_media_content *{max-width:100%!important;box-sizing:border-box!important;-webkit-box-sizing:border-box!important;word-wrap:break-word!important}.rich_media_content p{clear:both;min-height:1em;white-space:pre-wrap}.rich_media_content em{font-style:italic}.rich_media_content fieldset{min-width:0}.rich_media_content .list-paddingleft-2{padding-left:30px}.rich_media_content blockquote{margin:0;padding-left:10px;border-left:3px solid #dbdbdb}img{height:auto!important}@media(min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2){.mm_appmsg .rich_media_inner,.mm_appmsg .rich_media_meta,.mm_appmsg .discuss_list,.mm_appmsg .rich_media_extra,.mm_appmsg .title_tips .tips{font-size:17px}.mm_appmsg .meta_original_tag{font-size:15px}}@media(min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3){.mm_appmsg .rich_media_title{font-size:25px}}@media screen and (min-width:1024px){.rich_media{width:740px;margin-left:auto;margin-right:auto}.rich_media_inner{padding:20px}body{background-color:#fff}}@media screen and (min-width:1025px){body{font-family:"Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif}.rich_media{position:relative}.rich_media_inner{background-color:#fff;padding-bottom:100px}}.radius_avatar{display:inline-block;background-color:#fff;padding:3px;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;overflow:hidden;vertical-align:middle}.radius_avatar img{display:block;width:100%;height:100%;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;background-color:#eee}.cell{padding:.8em 0;display:block;position:relative}.cell_hd,.cell_bd,.cell_ft{display:table-cell;vertical-align:middle;word-wrap:break-word;word-break:break-all;white-space:nowrap}.cell_primary{width:2000px;white-space:normal}.flex_cell{padding:10px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.flex_cell_primary{width:100%;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;box-flex:1;flex:1}.original_tool_area{display:block;padding:.75em 1em 0;-webkit-tap-highlight-color:rgba(0,0,0,0);color:#3e3e3e;border:1px solid #eaeaea;margin:20px 0}.original_tool_area .tips_global{position:relative;padding-bottom:.5em;font-size:15px}.original_tool_area .tips_global:after{content:" ";position:absolute;left:0;bottom:0;right:0;height:1px;border-bottom:1px solid #dbdbdb;-webkit-transform-origin:0 100%;transform-origin:0 100%;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.original_tool_area .radius_avatar{width:27px;height:27px;padding:0;margin-right:.5em}.original_tool_area .radius_avatar img{height:100%!important}.original_tool_area .flex_cell_bd{width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.original_tool_area .flex_cell_ft{font-size:14px;color:#8c8c8c;padding-left:1em;white-space:nowrap}.original_tool_area .icon_access:after{content:" ";display:inline-block;height:8px;width:8px;border-width:1px 1px 0 0;border-color:#cbcad0;border-style:solid;transform:matrix(0.71,0.71,-0.71,0.71,0,0);-ms-transform:matrix(0.71,0.71,-0.71,0.71,0,0);-webkit-transform:matrix(0.71,0.71,-0.71,0.71,0,0);position:relative;top:-2px;top:-1px}.weui_loading{width:20px;height:20px;display:inline-block;vertical-align:middle;-webkit-animation:weuiLoading 1s steps(12,end) infinite;animation:weuiLoading 1s steps(12,end) infinite;background:transparent url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iciIgd2lkdGg9JzEyMHB4JyBoZWlnaHQ9JzEyMHB4JyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJub25lIiBjbGFzcz0iYmsiPjwvcmVjdD4KICAgIDxyZWN0IHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjRTlFOUU5JwogICAgICAgICAgdHJhbnNmb3JtPSdyb3RhdGUoMCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+CiAgICA8L3JlY3Q+CiAgICA8cmVjdCB4PSc0Ni41JyB5PSc0MCcgd2lkdGg9JzcnIGhlaWdodD0nMjAnIHJ4PSc1JyByeT0nNScgZmlsbD0nIzk4OTY5NycKICAgICAgICAgIHRyYW5zZm9ybT0ncm90YXRlKDMwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4KICAgICAgICAgICAgICAgICByZXBlYXRDb3VudD0naW5kZWZpbml0ZScvPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyM5Qjk5OUEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSg2MCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+CiAgICAgICAgICAgICAgICAgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnLz4KICAgIDwvcmVjdD4KICAgIDxyZWN0IHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjQTNBMUEyJwogICAgICAgICAgdHJhbnNmb3JtPSdyb3RhdGUoOTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNBQkE5QUEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxMjAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNCMkIyQjInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxNTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNCQUI4QjknCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxODAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNDMkMwQzEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyMTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNDQkNCQ0InCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyNDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNEMkQyRDInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyNzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNEQURBREEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgzMDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNFMkUyRTInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgzMzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0Pgo8L3N2Zz4=) no-repeat;-webkit-background-size:100%;background-size:100%}@-webkit-keyframes weuiLoading{0%{-webkit-transform:rotate3d(0,0,1,0deg)}100%{-webkit-transform:rotate3d(0,0,1,360deg)}}@keyframes weuiLoading{0%{-webkit-transform:rotate3d(0,0,1,0deg)}100%{-webkit-transform:rotate3d(0,0,1,360deg)}}.gif_img_wrp{display:inline-block;font-size:0;position:relative;font-weight:400;font-style:normal;text-indent:0;text-shadow:none 1px 1px rgba(0,0,0,0.5)}.gif_img_wrp img{vertical-align:top}.gif_img_tips{background:rgba(0,0,0,0.6)!important;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000',endcolorstr = '#99000000');border-top-left-radius:1.2em 50%;-moz-border-radius-topleft:1.2em 50%;-webkit-border-top-left-radius:1.2em 50%;border-top-right-radius:1.2em 50%;-moz-border-radius-topright:1.2em 50%;-webkit-border-top-right-radius:1.2em 50%;border-bottom-left-radius:1.2em 50%;-moz-border-radius-bottomleft:1.2em 50%;-webkit-border-bottom-left-radius:1.2em 50%;border-bottom-right-radius:1.2em 50%;-moz-border-radius-bottomright:1.2em 50%;-webkit-border-bottom-right-radius:1.2em 50%;line-height:2.3;font-size:11px;color:#fff;text-align:center;position:absolute;bottom:10px;left:10px;min-width:65px}.gif_img_tips.loading{min-width:75px}.gif_img_tips i{vertical-align:middle;margin:-0.2em .73em 0 -2px}.gif_img_play_arrow{display:inline-block;width:0;height:0;border-width:8px;border-style:dashed;border-color:transparent;border-right-width:0;border-left-color:#fff;border-left-style:solid;border-width:5px 0 5px 8px}.gif_img_loading{width:14px;height:14px}i.gif_img_loading{margin-left:-4px}.rich_media_global_msg{position:fixed;top:0;left:0;right:0;padding:1em 35px 1em 15px;z-index:1;background-color:#c6e0f8;color:#8c8c8c;font-size:13px}.rich_media_global_msg .icon_closed{position:absolute;right:15px;top:50%;margin-top:-5px;line-height:300px;overflow:hidden;-webkit-tap-highlight-color:rgba(0,0,0,0);background:transparent url(/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_appmsg_msg_closed_sprite.2x.png) no-repeat 0 0;width:11px;height:11px;vertical-align:middle;display:inline-block;-webkit-background-size:100% auto;background-size:100% auto}.rich_media_global_msg .icon_closed:active{background-position:0 -17px}.preview_appmsg .rich_media_title{margin-top:1.9em}@media screen and (min-width:1024px){.rich_media_global_msg{position:relative;margin:0 20px}.preview_appmsg .rich_media_title{margin-top:0}}</style>
+<style>
+     
+    </style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_pc2c9cd6.css">
+<![endif]-->
+
+    </head>
+    <body id="activity-detail" class="zh_CN mm_appmsg" ontouchstart="">
+        
+    <script nonce="624719085" type="text/javascript">
+        var write_sceen_time = (+new Date());
+    </script>
+
+    <div id="js_article" class="rich_media preview_appmsg">
+        
+        <div id="js_top_ad_area" class="top_banner">
+ 
+        </div>
+                
+
+        <div class="rich_media_inner">
+                        <div class="rich_media_global_msg">
+                
+                此为临时链接，仅用于文章预览，将在短期内失效
+                <a id="js_close_temp" href="javascript:;" class="icon_closed">关闭</a>
+            </div>
+                        <div id="page-content">
+                <div id="img-content" class="rich_media_area_primary">
+                    <h2 class="rich_media_title" id="activity-name">
+                        月报|九月电影市场总结及十月市场展望 
+                    </h2>
+                    <div class="rich_media_meta_list">
+                        						                        <em id="post-date" class="rich_media_meta rich_media_meta_text">2016-10-07</em>
+
+                                                <em class="rich_media_meta rich_media_meta_text">苏秦</em>
+                                                <a class="rich_media_meta rich_media_meta_link rich_media_meta_nickname" href="javascript:void(0);" id="post-user">德塔文影视观察</a>
+                        <span class="rich_media_meta rich_media_meta_text rich_media_meta_nickname">德塔文影视观察</span>
+
+                        <div id="js_profile_qrcode" class="profile_container" style="display:none;">
+                            <div class="profile_inner">
+                                <strong class="profile_nickname">德塔文影视观察</strong>
+                                <img class="profile_avatar" id="js_profile_qrcode_img" src="" alt="">
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">微信号</label>
+                                <span class="profile_meta_value">datawinfilmtv</span>
+                                </p>
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">功能介绍</label>
+                                <span class="profile_meta_value">影视行业深度解析，影视项目分析，艺人数据分析，舆情动态研判</span>
+                                </p>
+                                
+                            </div>
+                            <span class="profile_arrow_wrp" id="js_profile_arrow_wrp">
+                                <i class="profile_arrow arrow_out"></i>
+                                <i class="profile_arrow arrow_in"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                                                            
+                                                            
+                    
+                    <div class="rich_media_content " id="js_content">
+                        
+
+                        
+                        
+                        <section style="box-sizing: border-box; background-color: rgb(255, 255, 255);"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;">九月电影大盘22.8亿元创下今年最低，电影市场渐有秋意。还没完全结束的国庆周，也同比去年票房收入下降，独有《湄公河行动》的火爆为市场带来一缕亮色，张涵予再次捍卫中生代价值。</section><section style="box-sizing: border-box;">市场变化的原因和趋势何在？就国庆档结果，十月电影市场何去何从？</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="margin: 0.5em 0px; text-align: center; box-sizing: border-box;"><section style="border-radius: 5px; width: 100%; color: rgb(255, 255, 255); line-height: 2.3; font-size: 20.8px; display: inline-block; box-sizing: border-box; background-color: rgb(72, 198, 94);"><section style="box-sizing: border-box;">九月电影市场总结</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="text-align: center; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><section style="display: inline-block; box-sizing: border-box;"><section style="border-radius: 50%; width: 2.6em; height: 2.6em; line-height: 2.6em; vertical-align: middle; display: inline-block; box-sizing: border-box; background-color: rgb(72, 198, 94);"><section style="margin: 0.36em 0px 0.35em 0.44em; border-radius: 50%; width: 1.8em; height: 1.8em; line-height: 1.8em; box-sizing: border-box; background-color: rgb(255, 255, 255);"><section style="width: 100%; height: 100%; box-sizing: border-box;"><section style="box-sizing: border-box;">1</section></section></section></section><section style="margin: -0.5em auto 0.3em; width: 0px; border-top-color: rgb(72, 198, 94); border-right-color: transparent !important; border-left-color: transparent !important; border-top-width: 1.1em; border-right-width: 1.12em !important; border-left-width: 1em !important; border-top-style: solid; border-right-style: solid !important; border-left-style: solid !important; box-sizing: border-box;"></section><section style="padding: 1px 5px 0px; font-size: 20.8px; border-top-color: rgb(72, 198, 94); border-top-width: 2px; border-top-style: solid; display: inline-block; box-sizing: border-box;"><section style="box-sizing: border-box;">大盘整体走势</section></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;">今年九月，总票房22.8亿元：同比去年减少13.4亿元，即负增长37.1%。环比七月减少17.4亿元，负增长43.4%。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">票房峰值出现在中秋档，中秋日大盘2亿元</strong>正，甚至超过国庆前夕的1.8亿元。但票房低谷也创今年之最，多日票房跌破3000万。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">九月是今年单月票房最低的月份</strong>，在这之前，今年四月票房最低，为30.8亿，但仍远好于九月票房。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="text-align: center; box-sizing: border-box;"><img data-ratio="0.7299528301886793" data-w="848" data-s="300,640" data-type="png" src="0.jpg"  /><br  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="text-align: center; box-sizing: border-box;"><img data-ratio="0.6107871720116618" data-w="686" data-s="300,640" data-type="png" src="1.jpg"  /><br  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;">根据至今的专资办的数据，今年截至九月的总票房为350.5亿元，虽然同比去年仍增加23.0亿，但比起到上月的累计实际是倒退的，今年全年票房能否达到500亿都已存在一定疑问。从目前看，国庆前几天比之去年达到的日票房3亿左右也是下降的，电影市场正在降温。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="text-align: center; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><section style="display: inline-block; box-sizing: border-box;"><section style="border-radius: 50%; width: 2.6em; height: 2.6em; line-height: 2.6em; vertical-align: middle; display: inline-block; box-sizing: border-box; background-color: rgb(72, 198, 94);"><section style="margin: 0.36em 0px 0.35em 0.44em; border-radius: 50%; width: 1.8em; height: 1.8em; line-height: 1.8em; box-sizing: border-box; background-color: rgb(255, 255, 255);"><section style="width: 100%; height: 100%; box-sizing: border-box;"><section style="box-sizing: border-box;">2</section></section></section></section><section style="margin: -0.5em auto 0.3em; width: 0px; border-top-color: rgb(72, 198, 94); border-right-color: transparent !important; border-left-color: transparent !important; border-top-width: 1.1em; border-right-width: 1.12em !important; border-left-width: 1em !important; border-top-style: solid; border-right-style: solid !important; border-left-style: solid !important; box-sizing: border-box;"></section><section style="padding: 1px 5px 0px; font-size: 20.8px; border-top-color: rgb(72, 198, 94); border-top-width: 2px; border-top-style: solid; display: inline-block; box-sizing: border-box;"><section style="box-sizing: border-box;">整体市场分析</section></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></strong></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="line-height: 1; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><section style="vertical-align: top; display: inline-block; box-sizing: border-box;"><span style="width: 0px; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(72, 198, 94); border-top-width: 0.5em !important; border-bottom-width: 0.5em !important; border-left-width: 0.6em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box; opacity: 0.6;"> </span><span style="width: 0px; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(72, 198, 94); border-top-width: 0.5em !important; border-bottom-width: 0.5em !important; border-left-width: 0.6em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box;"> </span> </section><section style="line-height: 1.2; padding-left: 3px; vertical-align: top; display: inline-block; box-sizing: border-box;"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">9月票房分布</strong></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">从场均票房和人均票价来看，暑期过后，电影票普遍降价，单张票价比上月均减0.6元，中秋国庆假期虽然有小幅票价增长，但仍低于暑期均价，应是市场太冷使各片都有所调整。</section><section style="box-sizing: border-box;"><br  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="text-align: center; box-sizing: border-box;"><img data-ratio="0.7325443786982249" data-w="845" data-s="300,640" data-type="png" src="2.jpg"  /><br  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="text-align: center; box-sizing: border-box;"><img data-ratio="0.7357142857142858" data-w="840" data-s="300,640" data-type="png" src="3.jpg"  /><br  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;">场均票房方面，除了两假期间，各周末行情都比较低，更不用提工作日；尤其在中秋国庆假期之中的一周末最低。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">从九月影片的整体表现来看，没有5亿以上大片，仅3部片在2-5亿之间票房较理想；5000万以下收益小片达25部，占9月电影数量的70%，9月似乎变成了市场的“初秋时间”。</section><section style="box-sizing: border-box;">掐指一算，除了年初的美人鱼大火，从暑假到现在，竟然只有一部盗墓笔记算是市场大卖的强片。至于九月，江湖一片白茫茫。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="text-align: center; box-sizing: border-box;"><img data-ratio="0.6587301587301587" data-w="1008" data-s="300,640" data-type="png" src="4.jpg"  /><br  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="text-align: center; box-sizing: border-box;"><img data-ratio="0.6597222222222222" data-w="1008" data-s="300,640" data-type="png" src="5.jpg"  /><br  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">然而也不必悲观，<strong><span style="color: rgb(255, 76, 65);">与票房平庸相对的是，9月电影具有高口碑的电影很多</span></strong>，好感度7分以上的电影超过50%。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="text-align: center; box-sizing: border-box;"><img data-ratio="0.6587301587301587" data-w="1008" data-s="300,640" data-type="png" src="6.jpg"  /><br  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="text-align: center; box-sizing: border-box;"><img data-ratio="0.6597222222222222" data-w="1008" data-s="300,640" data-type="png" src="7.jpg"  /><br  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="line-height: 1; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><section style="vertical-align: top; display: inline-block; box-sizing: border-box;"><span style="width: 0px; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(72, 198, 94); border-top-width: 0.5em !important; border-bottom-width: 0.5em !important; border-left-width: 0.6em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box; opacity: 0.6;"> </span><span style="width: 0px; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(72, 198, 94); border-top-width: 0.5em !important; border-bottom-width: 0.5em !important; border-left-width: 0.6em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box;"> </span> </section><section style="line-height: 1.2; padding-left: 3px; vertical-align: top; display: inline-block; box-sizing: border-box;"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">城市及影院</strong></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="text-align: justify; box-sizing: border-box;">在城市票房方面，北京超过了上海成为本月市占比最高的城市。这似乎也与北京的平均票价最高有关。</section><section style="text-align: justify; box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="text-align: justify; box-sizing: border-box;">城市票房、城市票价：</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="text-align: center; box-sizing: border-box;"><img data-ratio="0.6759465478841871" data-w="898" data-s="300,640" data-type="png" src="8.jpg"  /><br  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="text-align: center; box-sizing: border-box;"><img data-ratio="0.6955056179775281" data-w="890" data-s="300,640" data-type="png" src="9.jpg"  /><br  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="text-align: center; box-sizing: border-box;"><img data-ratio="0.715606936416185" data-w="865" data-s="300,640" data-type="png" src="10.jpg"  /><br  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><p><br  /></p><p>最卖座的影院，则集中在北京3家、广州1家、深圳1家。这5家中，头名北京的耀莱五棵松店以人次取胜，平均票价最高则是北京UME影城双井店。</p></section><section style="box-sizing: border-box;"><p><img data-ratio="0.8056930693069307" data-w="808" data-s="300,640" data-type="png" src="11.jpg"  /><br  /></p><p><br  /></p></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="text-align: center; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><section style="display: inline-block; box-sizing: border-box;"><section style="border-radius: 50%; width: 2.6em; height: 2.6em; line-height: 2.6em; vertical-align: middle; display: inline-block; box-sizing: border-box; background-color: rgb(72, 198, 94);"><section style="margin: 0.36em 0px 0.35em 0.44em; border-radius: 50%; width: 1.8em; height: 1.8em; line-height: 1.8em; box-sizing: border-box; background-color: rgb(255, 255, 255);"><section style="width: 100%; height: 100%; box-sizing: border-box;"><section style="box-sizing: border-box;">3</section></section></section></section><section style="margin: -0.5em auto 0.3em; width: 0px; border-top-color: rgb(72, 198, 94); border-right-color: transparent !important; border-left-color: transparent !important; border-top-width: 1.1em; border-right-width: 1.12em !important; border-left-width: 1em !important; border-top-style: solid; border-right-style: solid !important; border-left-style: solid !important; box-sizing: border-box;"></section><section style="padding: 1px 5px 0px; font-size: 20.8px; border-top-color: rgb(72, 198, 94); border-top-width: 2px; border-top-style: solid; display: inline-block; box-sizing: border-box;"><section style="box-sizing: border-box;">单片表现</section></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="line-height: 1; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><section style="vertical-align: top; display: inline-block; box-sizing: border-box;"><span style="width: 0px; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(72, 198, 94); border-top-width: 0.5em !important; border-bottom-width: 0.5em !important; border-left-width: 0.6em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box; opacity: 0.6;"> </span><span style="width: 0px; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(72, 198, 94); border-top-width: 0.5em !important; border-bottom-width: 0.5em !important; border-left-width: 0.6em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box;"> </span> </section><section style="line-height: 1.2; padding-left: 3px; vertical-align: top; display: inline-block; box-sizing: border-box;"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">9月单片票房</strong></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">9月收获票房最多的，是在9月2日上映的好莱坞巨制星际迷航3，以4.3亿元票房夺冠。国产影片票房第一则是老招牌《大话西游》的第3部，九月总收获3.5亿元。总体来说，上榜十部影片中国产片6部，引进影片4部。</section><section style="box-sizing: border-box;">当月实现票房最高的10部电影排名：<br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="text-align: center; box-sizing: border-box;"><img data-ratio="1.8894230769230768" data-w="624" data-s="300,640" data-type="png" src="12.jpg"  /><br  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">TOP10影片具体的销售数据如下：</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="text-align: center; box-sizing: border-box;"><img data-ratio="0.6920583468395461" data-w="617" data-s="300,640" data-type="png" src="13.jpg"  /><br  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="text-align: center; box-sizing: border-box;"><img data-ratio="0.6363636363636363" data-w="902" data-s="300,640" data-type="png" src="14.jpg"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">整体表现，《星际迷航3》夺冠名副其实。而9月期间上映分别只有2天的《从你的全世界路过》，和上映仅1天的《爵迹》也登上前十，可见9月整体电影之弱势。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="line-height: 1; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><section style="vertical-align: top; display: inline-block; box-sizing: border-box;"><span style="width: 0px; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(72, 198, 94); border-top-width: 0.5em !important; border-bottom-width: 0.5em !important; border-left-width: 0.6em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box; opacity: 0.6;"> </span><span style="width: 0px; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(72, 198, 94); border-top-width: 0.5em !important; border-bottom-width: 0.5em !important; border-left-width: 0.6em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box;"> </span> </section><section style="line-height: 1.2; padding-left: 3px; vertical-align: top; display: inline-block; box-sizing: border-box;"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">单片口碑</strong></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">综合豆瓣、格瓦拉、猫眼、微博评分等多个口碑，我们的DataWin八月影片口碑榜前十名如下：</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="text-align: center; box-sizing: border-box;"><img data-ratio="1.8883196721311474" data-w="976" data-s="300,640" data-type="png" src="15.jpg"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;">虽然口碑夺冠电影《樱桃小丸子》是含有情怀因素的动画片；亚军《我们诞生在中国》则是小众纪录片。但整体来说，<strong><span style="color: rgb(255, 76, 65);">九月口碑榜与票房排名的重合度高于以往，包括《星际迷航3》、《九条命》、《七月与安生》、《追凶者也》都是票房榜上有名的商业电影。</span></strong></section><section style="box-sizing: border-box;">然而这种现象可能是由于九月市场上没有强片造成的，是否说明市场开始出现口碑和票房的强烈一致趋向还有待观察。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="line-height: 1; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><section style="vertical-align: top; display: inline-block; box-sizing: border-box;"><span style="width: 0px; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(72, 198, 94); border-top-width: 0.5em !important; border-bottom-width: 0.5em !important; border-left-width: 0.6em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box; opacity: 0.6;"> </span><span style="width: 0px; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(72, 198, 94); border-top-width: 0.5em !important; border-bottom-width: 0.5em !important; border-left-width: 0.6em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box;"> </span> </section><section style="line-height: 1.2; padding-left: 3px; vertical-align: top; display: inline-block; box-sizing: border-box;"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">单片观众推荐力表现</strong></section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;">DataWin的影片推荐力榜单，体现了观众对电影的肯定程度、和电影网络热议度，更能<strong style="box-sizing: border-box;">反映出大众口味，购票预期、以及其口耳相传、“自来水”的幅度</strong>：</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="text-align: center; box-sizing: border-box;"><img data-ratio="1.8883196721311474" data-w="976" data-s="300,640" data-type="png" src="16.jpg"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;">九月范围内热议度、口碑相结合，网络自来水力度最大的影片分别是具有众多明星出演的《爵迹》、以及《从你的全世界路过》、《微微一笑很倾城》，然后是《七月与安生》和《大话西游3》，总体来说，<strong>热议度与目前电影演员年轻化有关。因此我们制作了九月的电影演员商业价值榜</strong>：</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="line-height: 1; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><section style="vertical-align: top; display: inline-block; box-sizing: border-box;"><span style="width: 0px; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(249, 110, 87); border-top-width: 0.5em !important; border-bottom-width: 0.5em !important; border-left-width: 0.6em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box; opacity: 0.6;"> </span><span style="width: 0px; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(249, 110, 87); border-top-width: 0.5em !important; border-bottom-width: 0.5em !important; border-left-width: 0.6em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box;"> </span> </section><section style="line-height: 1.2; padding-left: 3px; vertical-align: top; display: inline-block; box-sizing: border-box;"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">9月电影演员商业价值</strong></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">综合一段时间内的上映电影票房、电影口碑、网络推荐力、艺人历史业绩等因素，我们估算了9月电影市场上的演员商业价值。</section><section style="box-sizing: border-box;">该榜反映了九月期间有电影上映的演员的商业价值和票房号召力，日后我们还会继续推出月榜，并长期累计统计如年榜等。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">本月电影演员的商业价值计算结果如下：</section><section style="box-sizing: border-box;"><strong><span style="color: rgb(255, 76, 65);">邓超</span></strong>以稳定的商业表现，位列榜首。</section><section style="box-sizing: border-box;"><strong><span style="color: rgb(255, 76, 65);">范冰冰</span></strong>有《爵迹》上映，更有《我不是潘金莲》的获奖消息和金马提名，作为电影大花旦的价值有所加持。</section><section style="box-sizing: border-box;"><strong><span style="color: rgb(255, 76, 65);">白百何</span></strong>的市场表现一贯稳定，以票房和演技成为中生代女星的实力之选。</section><section style="box-sizing: border-box;"><strong><span style="color: rgb(255, 76, 65);">古天乐</span></strong>作为香港中生代的代表，继续捍卫港圈尊严。但过度开发商业价值，正在让这位香港中生代第一人呈现强弩之末的趋势。最可怕的，不是古天乐不努力，而是古天乐再演还是古天乐，他不再被万众瞩目地期待。</section><section style="box-sizing: border-box;">值得注意的是，<strong><span style="color: rgb(255, 76, 65);">新生代的杨洋、吴亦凡、周冬雨、马思纯</span></strong>等人正在表现出强劲实力，其中杨洋、周冬雨上位趋势强劲，马思纯升势明显。</section><section style="box-sizing: border-box;"><strong><span style="color: rgb(255, 76, 65);">周冬雨</span></strong>和<strong><span style="color: rgb(255, 76, 65);">马思纯</span></strong>本月拿到金马影后提名，以及《七月与安生》的出色表现和不俗的文艺片票房成绩、口碑反馈，都为两位小花旦的未来打下光明烙印。</section><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><strong><span style="color: rgb(255, 76, 65);">吴亦凡</span></strong>以多片的参与度和票房表现能力，体现出偶像实力。</section><section style="box-sizing: border-box;">由于本月票房普遍不佳，《大话西游3》尽管口碑不足，仍然把<strong><span style="color: rgb(255, 76, 65);">韩庚</span></strong>和<strong><span style="color: rgb(255, 76, 65);">唐嫣</span></strong>代入了本月的艺人电影商业价值榜。必须说，《大话3》对两位艺人的转型和提升，仍然是一种好的机遇。</section><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="text-align: center; box-sizing: border-box;"><img data-ratio="1.891025641025641" data-w="624" data-s="300,640" data-type="png" src="17.jpg"  /><br style="box-sizing: border-box;"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="line-height: 1; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><section style="vertical-align: top; display: inline-block; box-sizing: border-box;"><span style="width: 0px; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(72, 198, 94); border-top-width: 0.5em !important; border-bottom-width: 0.5em !important; border-left-width: 0.6em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box; opacity: 0.6;"> </span><span style="width: 0px; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(72, 198, 94); border-top-width: 0.5em !important; border-bottom-width: 0.5em !important; border-left-width: 0.6em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box;"> </span> </section><section style="line-height: 1.2; padding-left: 3px; vertical-align: top; display: inline-block; box-sizing: border-box;"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">单片表现小结</strong></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">在总结暑期档时，我们发现电影市场呈现一种明显的“有口碑的电影卖点不足，有卖点的电影口碑不行的境况”。但在九月，这种情况看似有了一些好转，卖得好的商业电影有一半登上了口碑榜，并且其中的国产电影比例大增，不像八月主要被好莱坞影片霸占。</section><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;">只是，当这种现象与九月整体超冷的大盘相比较的时候，会发现其实好口碑的影片能有一半登上票房榜，可能是因为九月市场上大型商业电影少的缘故。</section><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;">事实上，九月最卖座的国产商业电影，是旧瓶装新酒的《大话西游3》，它凭借这个高知名度的品牌获得了3亿多的票房。但，它依然是一部典型的“烂片”——很多人狠狠批这部影片只是披了一层大话西游的皮，《大话》如果是高口碑影片的话，卖5亿以上应该是妥妥的。</section><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;">所以，<strong style="box-sizing: border-box;">国产重量级的商业电影，为什么总是很难同时赢得口碑和票房？</strong></section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">一方面，确实存在“看的人多了，挑剔的人就多了”的基数问题，而且，批评商业大制作，对某些批评家和文青来说，甚至有着“政治正确”。但这只是较小的因素。</section><section style="box-sizing: border-box;">另一方面，较大的因素是，电影剧本薄弱、缺乏足够多的善于做商业片的导演、缺乏能控制风险和质量的电影工业制作流程，这都是问题。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">九月的市场好评国产电影告诉我们，并不是中国拍不出好片，而是烂片淹没了好片。</section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></strong></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">近年电影市场资本的过度丰沛，造成了有限的优质制作资源的匮乏，令无数不够成熟的影片得以制作和上映，让观众看到无数烂片，从而对中国商业电影失望。近几个月来的大盘不振，令电影业的资本热潮有退烧之相，市场正在自动实现资本、制作质量和制作资源的调节平衡。</strong></section><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="margin: 0.5em 0px; text-align: center; box-sizing: border-box;"><section style="border-radius: 5px; width: 100%; color: rgb(255, 255, 255); line-height: 2.3; font-size: 20.8px; display: inline-block; box-sizing: border-box; background-color: rgb(72, 198, 94);"><section style="box-sizing: border-box;">十月电影市场展望</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">十月最强势的国庆周已经步入尾声，国庆周后，接下来的定档影片还有28部，这一数量远远小于七、八、九月动辄40来部的总量。</section><section style="box-sizing: border-box;">从国庆后到贺岁档之间，总是电影市场的疲软期，再加上国庆档强片多，国庆过后的几周，总体来说还是国庆档大片们持续战斗的地盘，其它国产影片纷纷回避，主要战力还是外国引进电影。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="text-align: center; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><section style="display: inline-block; box-sizing: border-box;"><section style="border-radius: 50%; width: 2.6em; height: 2.6em; line-height: 2.6em; vertical-align: middle; display: inline-block; box-sizing: border-box; background-color: rgb(72, 198, 94);"><section style="margin: 0.36em 0px 0.35em 0.44em; border-radius: 50%; width: 1.8em; height: 1.8em; line-height: 1.8em; box-sizing: border-box; background-color: rgb(255, 255, 255);"><section style="width: 100%; height: 100%; box-sizing: border-box;"><section style="box-sizing: border-box;">1</section></section></section></section><section style="margin: -0.5em auto 0.3em; width: 0px; border-top-color: rgb(72, 198, 94); border-right-color: transparent !important; border-left-color: transparent !important; border-top-width: 1.1em; border-right-width: 1.12em !important; border-left-width: 1em !important; border-top-style: solid; border-right-style: solid !important; border-left-style: solid !important; box-sizing: border-box;"></section><section style="padding: 1px 5px 0px; font-size: 20.8px; border-top-color: rgb(72, 198, 94); border-top-width: 2px; border-top-style: solid; display: inline-block; box-sizing: border-box;"><section style="box-sizing: border-box;">国庆档战况解析</section></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;">今年国庆档较去年总票房有明显的退烧。但《湄公河行动》的市场表现还是值得欣慰的。</section><section style="box-sizing: border-box;"><p><br  /></p><p><img data-ratio="0.665" data-w="600" data-s="300,640" data-type="jpeg" src="18.jpg"  /><br  /></p></section><section style="box-sizing: border-box;"><p><br  /></p><p>国庆档几部大片的战况，<strong>目前看来《湄公河行动》必定会后来居上，超过《从你的全世界路过》成为国庆几部大片的累计票房冠军</strong>，预测其票房很可能会在8亿上下，因为直到21日的《惊天破》上映，市场上都不会有警匪动作片和它竞争。</p></section><section style="box-sizing: border-box;">《湄公河行动》是幸运的，这次可谓是占据了天时地利人和，本来和它会形成最直接竞争的冯小刚导演的《我不是潘金莲》退出了国庆档，其它竞争影片的兴趣观众群和《湄公河》差异都比较大，再加上电影质量高、题材积极向上政治正确、更符合国庆气氛，连人民日报都发表评论为其背书。</section><section style="box-sizing: border-box;">而它也是值得的，因为中国十分缺乏高质量、正能量的商业大片。</section><section style="box-sizing: border-box;">笔者之前在多篇文章中看好过该片，一部“正能量”电影，只要能拍得精彩，其实远远比其它类型电影容易获得口碑，也容易获得传递。无论是政策导向还是群众基础，对于这种能够传递中国价值观的影片，其市场潜力是很大的。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">《从你的全世界路过》、《爵迹》两部以年轻女性为主要兴趣观众的影片，看来还是剧情片《全世界》略胜了一筹，导演张一白再一次证明自己在长线营销方面的稳定实力，《全世界》无论是市场表现还是口碑都在意料之中。</section><section style="box-sizing: border-box;">&nbsp;<img data-ratio="0.5586206896551724" data-w="580" data-s="300,640" data-type="jpeg" src="19.jpg"  /><br  /></section><section style="box-sizing: border-box;">《爵迹》，笔者个人还是充分肯定郭敬明使用3D动作捕捉技术、在华语电影市场上进行的新探索，虽然郭敬明在电影人看来是业余导演，其人也总是陷在各种各样的话题中，但他做了许多专业电影人也没有去做的新尝试，这是值得褒扬的。</section><section style="box-sizing: border-box;">但可惜《爵迹》作为西幻题材，到底是不接地气了一些，之前电视剧《幻城》的口碑滑铁卢其实已经隐隐有所预示，西幻题材目前看来最好还是活在二次元，一旦进入三次元市场，它的观众心理认同感和代入感太差，经不起大众市场考验。电视剧《幻城》和电影《爵迹》的两连击之后，郭敬明式影视走向何方，也值得观察。</section><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;">《王牌逗王牌》的失利，则再一次说明了王晶的港式喜剧动作片如今已经江河日下，港式文化吸引力的日渐衰微，让观众不再青睐港式喜剧，除非是过年合家欢的气氛，否则仅凭港式套路再难脱颖而出。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="text-align: center; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><section style="display: inline-block; box-sizing: border-box;"><section style="border-radius: 50%; width: 2.6em; height: 2.6em; line-height: 2.6em; vertical-align: middle; display: inline-block; box-sizing: border-box; background-color: rgb(72, 198, 94);"><section style="margin: 0.36em 0px 0.35em 0.44em; border-radius: 50%; width: 1.8em; height: 1.8em; line-height: 1.8em; box-sizing: border-box; background-color: rgb(255, 255, 255);"><section style="width: 100%; height: 100%; box-sizing: border-box;"><section style="box-sizing: border-box;">2</section></section></section></section><section style="margin: -0.5em auto 0.3em; width: 0px; border-top-color: rgb(72, 198, 94); border-right-color: transparent !important; border-left-color: transparent !important; border-top-width: 1.1em; border-right-width: 1.12em !important; border-left-width: 1em !important; border-top-style: solid; border-right-style: solid !important; border-left-style: solid !important; box-sizing: border-box;"></section><section style="padding: 1px 5px 0px; font-size: 20.8px; border-top-color: rgb(72, 198, 94); border-top-width: 2px; border-top-style: solid; display: inline-block; box-sizing: border-box;"><section style="box-sizing: border-box;">其它重点电影扫描</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;">国庆周过后，还有哪些值得关注的影片呢？如前文所述，能不怕成为国庆强片的炮灰的，主要还是外国引进电影。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="line-height: 1; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><section style="vertical-align: top; display: inline-block; box-sizing: border-box;"><span style="width: 0px; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(72, 198, 94); border-top-width: 0.5em !important; border-bottom-width: 0.5em !important; border-left-width: 0.6em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box; opacity: 0.6;"> </span><span style="width: 0px; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(72, 198, 94); border-top-width: 0.5em !important; border-bottom-width: 0.5em !important; border-left-width: 0.6em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box;"> </span> </section><section style="line-height: 1.2; padding-left: 3px; vertical-align: top; display: inline-block; box-sizing: border-box;"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">今年第41周（10月10日-10月16日）</strong></section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><p>首先是10月14日的周五，引进影片《暗杀游戏》和《圆梦巨人》上映。</p><p><br  /></p></section><section style="box-sizing: border-box;">《圆梦巨人》是斯皮尔伯格大导演的作品，据称是部适合全家观赏、回归童心充满奇幻魅力的影片。电影质量方面可以期待得个高分，然而该片的档期显然不适合该片的题材，再加上卡司不是大众熟脸孔、宣传也明显不足的情况下，其市场表现恐怕也不会出现奇迹。</section><section style="text-align: center; box-sizing: border-box;"><img data-ratio="1.4018691588785046" data-w="428" data-s="300,640" data-type="jpeg" src="20.jpg"  /><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><p><br  /></p><p>《暗杀游戏》是继之前《他是龙》等一系列俄罗斯影片后的又一部俄罗斯制作。其实引进的这些俄罗斯影片质量方面都属上乘，然而俄罗斯影片在中国，一是缺乏群众基础，二是没有群众吸引力，因此该片恐怕也会成为又一部高口碑低票房的引进电影。</p></section><section style="text-align: center; box-sizing: border-box;"><img data-ratio="1.4285714285714286" data-w="420" data-s="300,640" data-type="jpeg" src="21.jpg"  /><br  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="line-height: 1; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><section style="vertical-align: top; display: inline-block; box-sizing: border-box;"><span style="width: 0px; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(72, 198, 94); border-top-width: 0.5em !important; border-bottom-width: 0.5em !important; border-left-width: 0.6em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box; opacity: 0.6;"> </span><span style="width: 0px; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(72, 198, 94); border-top-width: 0.5em !important; border-bottom-width: 0.5em !important; border-left-width: 0.6em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box;"> </span> </section><section style="line-height: 1.2; padding-left: 3px; vertical-align: top; display: inline-block; box-sizing: border-box;"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">今年第42周（10月17日-10月23日）</strong></section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;">10月21日周五较为热闹，有《惊天破》、《机械师：复活》《侠探杰克：永不回头》《夺路而逃》四部有看点的影片上映。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">《惊天破》是谢霆锋和刘青云主演的警匪动作片，这样的卡司对市场还是有吸引力的，也是一部直接和《湄公河行动》形成题材竞争的影片。只不过该片是暑期档的跳票电影，虽然背后原因也许不是电影本身造成，但到底还是让人稍微降低了些期待，再加上《湄公河》的真实题材、高水准制作在前，《惊天破》的前景变得不是很明朗。</section><section style="text-align: center; box-sizing: border-box;"><img data-ratio="1.5" data-w="400" data-s="300,640" data-type="jpeg" src="22.jpg"  /><br  /></section><section style="box-sizing: border-box;">《侠探杰克：永不回头》是2013年的影片《侠探杰克》的续集，当时该片的票房为1亿元。主演汤姆克鲁斯是中国电影观众都认识的熟脸孔，该片也是他继《碟中谍》系列后的野心之作，但是随着好莱坞影片也越来越套路化，该片与《碟中谍》声势的差距必然是巨大的。</section><section style="text-align: center; box-sizing: border-box;"><img data-ratio="1.5037593984962405" data-w="399" data-s="300,640" data-type="jpeg" src="23.jpg"  /><br  /></section><section style="box-sizing: border-box;"><p><br  /></p><p>《机械师：复活》的首集也是2013年上映的，票房9000万元，也是好莱坞硬汉型动作电影，与《侠探杰克》撞在一起恐怕要两败俱伤。</p></section><section style="text-align: center; box-sizing: border-box;"><p><img data-ratio="1.4018691588785046" data-w="428" data-s="300,640" data-type="jpeg" src="24.jpg"  /></p><p><br  /></p></section><section style="box-sizing: border-box;">《夺路而逃》本来不是一部卖点很明显的影片，不过该片主演是张一山。前段时间张一山凭借网剧《余罪》收获了许多关注，商业价值明显上升，这是《余罪》后张一山的第一部上映影片。综合各种因素，该片不会是一部强片，但如果票房能有出乎意料的结果的话，对张一山的上位肯定会带来帮助。该片据称是一部充满二次元元素的3D武侠影片。</section><section style="text-align: center; box-sizing: border-box;"><img data-ratio="1.4285714285714286" data-w="420" data-s="300,640" data-type="jpeg" src="25.jpg"  /><br  /></section><section style="box-sizing: border-box;">这周还有一部小片《驴得水》，据称是开心麻花的第二部大电影，但没有沈腾、马丽这样的招牌明星，它还能否如《夏洛特烦恼》般实现票房逆袭，也是一个看点。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="line-height: 1; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><section style="vertical-align: top; display: inline-block; box-sizing: border-box;"><span style="width: 0px; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(72, 198, 94); border-top-width: 0.5em !important; border-bottom-width: 0.5em !important; border-left-width: 0.6em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box; opacity: 0.6;"> </span><span style="width: 0px; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(72, 198, 94); border-top-width: 0.5em !important; border-bottom-width: 0.5em !important; border-left-width: 0.6em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box;"> </span> </section><section style="line-height: 1.2; padding-left: 3px; vertical-align: top; display: inline-block; box-sizing: border-box;"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">今年第43周（10月24日-10月30日）</strong></section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;">10月28日周五有一部大制作《但丁密码》上映，此外还有值得一提的《笑林足球》。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">《但丁密码》是大家都很熟悉的《达芬奇密码》同系列小说的第三部，作为冒险悬疑电影，肯定是有其吸引力的，再加上汤姆汉克斯的主演，毫无疑问这是一部质量保障的影片。</section><section style="text-align: center; box-sizing: border-box;"><img data-ratio="1.4492753623188405" data-w="414" data-s="300,640" data-type="jpeg" src="26.jpg"  /><br  /></section><section style="box-sizing: border-box;"><p><br  /></p><p>《笑林足球》的导演，是当年《少林足球》里的六师弟林子聪，主演是歌手苏见信。不过该片据称与星爷的《少林足球》没有什么关系，只是走的一样是喜剧竞技路线而已。林子聪个人执导作品倒是没有大卖之作，但他曾担任《美人鱼》的副导演，因此其导演实力可能也值得期待。在《大话西游3》之后，又一部听起来好像和周星驰有关系的影片，这种先入为主的印象也许能为该片带来一些关注吧。</p><p style="text-align: center;"><img data-ratio="1.3986013986013985" data-w="429" data-s="300,640" data-type="jpeg" src="27.jpg"  /><br  /><br style="box-sizing: border-box;"  /></p></section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="margin: 0.5em 0px; text-align: center; box-sizing: border-box;"><section style="border-radius: 5px; width: 100%; color: rgb(255, 255, 255); line-height: 2.3; font-size: 20.8px; display: inline-block; box-sizing: border-box; background-color: rgb(72, 198, 94);"><section style="box-sizing: border-box;">小结</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><p>九月大盘下跌，十月靠国庆档挽尊后，也将进入市场平淡期。虽然不能排除中小电影突围的可能，但整体来说，整个电影市场进入调整。</p><p>但可喜的是，我们还有像《湄公河行动》这样正能量中又有所突破的商业电影，能够传递中国价值的影片的成功，其意义远不止于票房，更具有中国商业电影发展方向上的启明星作用。</p><p>同时，电影艺人格局也正在发生深刻变化，新生代逐渐崛起。后续我们将通过每个月的艺人电影商业价值榜持续跟踪艺人在电影市场的价值变化。</p><p>另一方面，随着多地楼市进一步的限购政策，大量游资无处可去，电影市场的资本仍将发烧。随着多部高口碑电影的上映，我们期待，这新一轮的资本入局，伴随的不是过热，而是质量提升。</p><p><br  /></p></section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="margin: 0.5em 0px; overflow: hidden; box-sizing: border-box;"><section style="text-align: center; box-sizing: border-box;"><img style="width: 1em; vertical-align: middle; float: left; box-sizing: border-box; background-color: rgb(49, 199, 100);" data-ratio="1" data-w="16" data-type="png" src="28.jpg"  /> <img style="width: 1em; vertical-align: middle; box-sizing: border-box; background-color: rgb(49, 199, 100);" data-ratio="0.9375" data-w="16" data-type="png" src="29.jpg"  /> <img style="width: 1em; vertical-align: middle; float: right; box-sizing: border-box; background-color: rgb(49, 199, 100);" data-ratio="1" data-w="16" data-type="png" src="30.jpg"  /> </section><section style="width: 100%; margin-top: -0.8em; vertical-align: top; display: inline-block; box-sizing: border-box;"><section style="width: 45%; border-top-color: rgb(49, 199, 100); border-top-width: 1px; border-top-style: solid; float: left; box-sizing: border-box;"></section><section style="width: 45%; border-top-color: rgb(49, 199, 100); border-top-width: 1px; border-top-style: solid; float: right; box-sizing: border-box;"></section></section><section style="padding: 0px 0.5em; width: 100%; line-height: 1.3em; margin-top: -1.5em; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: center; color: rgb(49, 199, 100); box-sizing: border-box;"><section style="box-sizing: border-box;">以上为原创内容</section><section style="box-sizing: border-box;">转载请注明：苏秦|影视大数据</section></section></section></section></section><section style="width: 100%; text-align: center; box-sizing: border-box;"><section style="width: 98%; vertical-align: middle; border-top-color: rgb(49, 199, 100); border-top-width: 1px; border-top-style: solid; display: inline-block; box-sizing: border-box;"></section></section><section style="margin: -1em 0px 1em; box-sizing: border-box;"><img style="width: 1em; vertical-align: middle; float: left; box-sizing: border-box; background-color: rgb(49, 199, 100);" data-ratio="1" data-w="16" data-type="png" src="31.jpg"  /> <img style="width: 1em; vertical-align: middle; float: right; box-sizing: border-box; background-color: rgb(49, 199, 100);" data-ratio="1" data-w="16" data-type="png" src="32.jpg"  /> </section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="text-align: center; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><img style="vertical-align: middle; max-width: 100%; box-sizing: border-box;" data-ratio="1.532033426183844" data-w="359" data-type="png" src="33.jpg"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="box-sizing: border-box;"><section style="text-align: center; box-sizing: border-box;"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;"><span style="text-decoration: underline; box-sizing: border-box;">联系我们 </span></strong><strong style="line-height: 1.6; box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">QQ：149817396</span></strong></section><section style="box-sizing: border-box;">内容交流：微博@笔下苏秦</section></section></section></section></section><p><br  /></p>
+                    </div>
+                    <script nonce="624719085" type="text/javascript">
+                        var first_sceen__time = (+new Date());
+
+                        if ("" == 1 && document.getElementById('js_content'))
+                            document.getElementById('js_content').addEventListener("selectstart",function(e){ e.preventDefault(); });
+
+                                        (function(){
+                            if (navigator.userAgent.indexOf("WindowsWechat") != -1){
+                                var link = document.createElement('link');
+                                var head = document.getElementsByTagName('head')[0];
+                                link.rel = 'stylesheet';
+                                link.type = 'text/css';
+                                link.href = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+                                head.appendChild(link);
+                            }
+                        })();
+                    </script>
+                    
+                    
+                                        
+                    <div class="ct_mpda_wrp" id="js_sponsor_ad_area" style="display:none;">
+
+                    </div>
+
+                    
+                                        
+                                        <div class="rich_media_tool" id="js_toobar3">
+                                                                    <div id="js_read_area3" class="media_tool_meta tips_global meta_primary" style="display:none;">阅读 <span id="readNum3"></span></div>
+
+                        <span style="display:none;" class="media_tool_meta meta_primary tips_global meta_praise" id="like3">
+                            <i class="icon_praise_gray"></i><span class="praise_num" id="likeNum3"></span>
+                        </span>
+
+                        <a id="js_report_article3" style="display:none;" class="media_tool_meta tips_global meta_extra" href="javascript:void(0);">投诉</a>
+
+                    </div>
+
+
+
+                                    </div>
+
+                <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none">
+
+                </div>
+
+                <div class="rich_media_area_extra">
+
+                    
+                                        <div class="mpda_bottom_container" id="js_bottom_ad_area">
+                        
+                    </div>
+                                        
+                    <div id="js_iframetest" style="display:none;"></div>
+                                        
+                                    </div>
+               
+            </div>
+            <div id="js_pc_qr_code" class="qr_code_pc_outer" style="display:none;">
+                <div class="qr_code_pc_inner">
+                    <div class="qr_code_pc">
+                        <img id="js_pc_qr_code_img" class="qr_code_pc_img">
+                        <p>微信扫一扫<br>关注该公众号</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+        
+        <script nonce="624719085">
+    var __DEBUGINFO = {
+        debug_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/debug/console2ca724.js",
+        safe_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/moonsafe2f3e84.js",
+        res_list: []
+    };
+</script>
+
+<script nonce="624719085">
+(function() {
+	function _addVConsole(uri) {
+		var url = '//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/vconsole/' + uri;
+		document.write('<script nonce="624719085" type="text/javascript" src="' + url + '"><\/script>');
+	}
+	if (
+		(document.cookie && document.cookie.indexOf('vconsole_open=1') > -1)
+		|| location.href.indexOf('vconsole=1') > -1
+	) {
+		_addVConsole('2.4.0/vconsole.min.js');
+		_addVConsole('plugin/vconsole-sources/1.0.1/vconsole-sources.min.js');
+		_addVConsole('plugin/vconsole-resources/1.0.0/vconsole-resources.min.js');
+		_addVConsole('plugin/vconsole-mpopt/1.0.0/vconsole-mpopt.js');
+	}
+})();
+</script>
+        
+<script nonce="624719085" type="text/javascript">
+    var not_in_mm_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm2c9cd6.css";
+    var windowwx_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+    var article_improve_combo_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_combo311179.css";
+    var tid = "";
+    var aid = "";
+    var clientversion = "";
+    var appuin = "MzI2NTM0NzE2NQ=="||"";
+
+    var source = "";
+    var scene = 75;
+
+    var itemidx = "";
+
+    var _copyright_stat = "0";
+    var _ori_article_type = "";
+
+    var nickname = "德塔文影视观察";
+    var appmsg_type = "6";
+    var ct = "1475796781";
+    var publish_time = "2016-10-07" || "";
+    var user_name = "gh_1555a58ded12";
+    var user_name_new = "";
+    var fakeid   = "";
+    var version   = "";
+    var is_limit_user   = "0";
+    var round_head_img = "http://mmbiz.qpic.cn/mmbiz/LSxOecqPPiaTTibE3AOKUDHYwdoS7mxxSKfy7YlvuTGQSZUibiaaEiaDaAoyOPkibxG1icHukN3p7uNnDUharXfQg4KGg/0?wx_fmt=png";
+    var msg_title = "月报|九月电影市场总结及十月市场展望";
+    var msg_desc = "九月电影市场表现总结；国庆档战况解析；十月还有什么看点？";
+    var msg_cdn_url = "http://mmbiz.qpic.cn/mmbiz_jpg/LSxOecqPPiaRmfq4FmmkiaqeCzd6LdI4XVKEcXpJDDia1ksXdmWT61N3yQmiaQ1MHLNRtk1xCzicZVLjdrjd43c5p7w/0?wx_fmt=jpeg";
+    var msg_link = "http://mp.weixin.qq.com/s?__biz=MzI2NTM0NzE2NQ==&amp;tempkey=psV6NThnxJO5BLuLwguS2JtVUGcaOeBTRc8Yipbk9ez%2Fo4H6ITPbHEwZ4z1Iwt24E3rlx4enTPI5AxG%2F30aqiqKJdZg5mQzOBkb9p5XaNBOeRkIRNjGFDYY8yerfXnF5bB38yllPmMJEE2B2pdsvfA%3D%3D&amp;chksm=6a9f8d915de8048706ebdac2dac1c2e6940db0ea7fa9b168d202f468f0cb62290f8d33b313d4#rd";
+    var user_uin = "0"*1;
+    var msg_source_url = '';
+    var img_format = 'jpeg';
+    var srcid = '';
+    var req_id = '1214knBooLxpWfydXQtyqwwA';
+    var networkType;
+    var appmsgid = '' || '100000931'|| "100000931";
+    var comment_id = "0" * 1;
+    var comment_enabled = "" * 1;
+    var is_need_reward = "0" * 1;
+    var is_https_res = ("" * 1) && (location.protocol == "https:");
+    var msg_daily_idx = "0" || "";
+
+    var devicetype = "";
+    var source_encode_biz = "";
+    
+    
+    var reprint_ticket = "";
+    var source_mid = "";
+    var source_idx = "";
+
+    var show_comment = "";
+    var __appmsgCgiData = {
+        can_use_page : "0"*1,
+        is_wxg_stuff_uin : "0"*1,
+        card_pos : "",
+        copyright_stat : "0",
+        source_biz : "",
+        hd_head_img : "http://wx.qlogo.cn/mmhead/Q3auHgzwzM7vC69ROWiahuXUMiahnllfXlZdvBMgdbG07sF82IZtmjGg/0"||(window.location.protocol+"//"+window.location.host + "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_rumor_link.2x264e76.jpg")
+    };
+    var _empty_v = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/pages/voice/empty26f1f1.mp3";
+
+    var copyright_stat = "0" * 1;
+
+    var pay_fee = "" * 1;
+    var pay_timestamp = "";
+    var need_pay = "" * 1;
+
+    var need_report_cost = "0" * 1;
+    var use_tx_video_player = "0" * 1;
+
+    var friend_read_source = "" || "";
+    var friend_read_version = "" || "";
+    var friend_read_class_id = "" || "";
+
+    var is_only_read = "1" * 1;
+    var read_num = "4" * 1;
+    var like_num = "0" * 1;
+    var liked = "false" == 'true' ? true : false;
+    var is_temp_url = "psV6NThnxJO5BLuLwguS2JtVUGcaOeBTRc8Yipbk9ez/o4H6ITPbHEwZ4z1Iwt24E3rlx4enTPI5AxG/30aqiqKJdZg5mQzOBkb9p5XaNBOeRkIRNjGFDYY8yerfXnF5qf4pCx3asqS7wa5YBSNnHw==" ? 1 : 0;
+    var send_time = "1476252253";
+      var icon_emotion_switch = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch.2x2f1273.png";
+      var icon_emotion_switch_active = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch_active.2x2f1273.png";
+      var icon_loading_white = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif";
+      var icon_audio_unread = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_unread26f1f1.png";
+      var icon_qqmusic_default = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_default.2x26f1f1.png";
+      var icon_qqmusic_source = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_source263724.png";
+
+    var topic_default_img = 'http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/topic/pic_book_thumb.2x2e4987.png';
+
+    
+    
+    
+    
+    
+    
+    var ban_scene = "0" * 1;
+
+    var svr_time = "1476252285" * 1;
+
+        window.wxtoken = "";
+        window.__moon_initcallback = function(){
+        if(!!window.__initCatch){
+            window.__initCatch({
+                idkey : 27613,
+                startKey : 0,
+                limit : 128,
+                badjsId: 43,
+                reportOpt : {
+                    uin : uin,
+                    biz : biz,
+                    mid : mid,
+                    idx : idx,
+                    sn  : sn
+                },
+                extInfo : {
+                    network_rate : 0.01    
+                }
+            });
+        }
+    }
+        
+
+</script>
+
+        <script nonce="624719085">window.__moon_mainjs = 'appmsg/index.js';window.moon_map = {"appmsg/emotion/caret.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/caret278965.js","biz_wap/jsapi/cardticket.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/cardticket275627.js","appmsg/emotion/map.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/map278965.js","appmsg/emotion/textarea.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/textarea27cdc5.js","appmsg/emotion/nav.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/nav278965.js","appmsg/emotion/common.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/common278965.js","appmsg/emotion/slide.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/slide2a9cd9.js","pages/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/report304edd.js","pages/music_player.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_player310e30.js","pages/loadscript.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/loadscript30203e.js","appmsg/emotion/dom.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/dom2f3ac3.js","biz_wap/utils/hashrouter.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/hashrouter2805ea.js","a/sponsor.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/sponsor30c4d9.js","a/app_card.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/app_card311179.js","a/ios.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/ios275627.js","a/android.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/android2c5484.js","a/profile.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/profile311179.js","a/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/a_tpl.html311179.js","a/mpshop.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/mpshop311179.js","a/card.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/card311179.js","biz_wap/utils/position.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/position2f1750.js","a/a_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/a_report311179.js","biz_common/utils/respTypes.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/respTypes2c57d0.js","appmsg/my_comment_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/my_comment_tpl.html2f3f48.js","appmsg/cmt_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cmt_tpl.html2a2c13.js","sougou/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/a_tpl.html2c6e7c.js","appmsg/emotion/emotion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/emotion2f3ac3.js","biz_common/utils/wxgspeedsdk.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/wxgspeedsdk30bcdd.js","biz_common/utils/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/report275627.js","biz_common/utils/http.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/http30b871.js","biz_common/utils/cookie.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/cookie275627.js","appmsg/topic_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/topic_tpl.html2f2e72.js","pages/voice_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_tpl.html2f2e72.js","pages/voice_component.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_component310e30.js","pages/qqmusic_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/qqmusic_tpl.html2f2e72.js","new_video/ctl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/ctl2d441f.js","biz_common/utils/monitor.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/monitor304edd.js","appmsg/reward_entry.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/reward_entry3004a4.js","appmsg/comment.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment2fb099.js","appmsg/like.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/like2eb52b.js","pages/version4video.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/version4video3106ea.js","a/a.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/a311179.js","rt/appmsg/getappmsgext.rt.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/rt/appmsg/getappmsgext.rt2c21f6.js","biz_wap/utils/storage.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage2a74ac.js","biz_common/tmpl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl2b3578.js","appmsg/img_copyright_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/img_copyright_tpl.html2a2c13.js","biz_common/ui/imgonepx.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/ui/imgonepx275627.js","biz_common/utils/string/html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html29f4e9.js","biz_wap/utils/ajax.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax2f1747.js","biz_wap/utils/log.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/log2fcb7c.js","sougou/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/index2fd671.js","biz_wap/safe/mutation_observer_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/mutation_observer_report2fafd1.js","appmsg/fereport.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/fereport30be2c.js","appmsg/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report304cae.js","appmsg/report_and_source.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report_and_source2f1274.js","appmsg/page_pos.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/page_pos30c907.js","appmsg/cdn_speed_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_speed_report3097b2.js","appmsg/wxtopic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/wxtopic3097b2.js","appmsg/voice.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voice310e30.js","appmsg/qqmusic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/qqmusic308cbc.js","appmsg/iframe.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/iframe2ff82f.js","appmsg/review_image.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/review_image309c11.js","appmsg/outer_link.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/outer_link275627.js","biz_wap/jsapi/core.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core2ffa93.js","biz_common/dom/event.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event275627.js","appmsg/copyright_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/copyright_report2ec4b2.js","appmsg/cache.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cache2a74ac.js","appmsg/async.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/async311179.js","biz_wap/ui/lazyload_img.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/ui/lazyload_img309c11.js","biz_common/log/jserr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/log/jserr2805ea.js","appmsg/share.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share30b871.js","appmsg/cdn_img_lib.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_img_lib30b785.js","biz_common/utils/url/parse.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/url/parse2fb01a.js","appmsg/test.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/test306a2e.js","biz_wap/utils/mmversion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion2f1d97.js","appmsg/max_age.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/max_age2fdd28.js","biz_common/dom/attr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr275627.js","appmsg/log.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/log300330.js","biz_common/dom/class.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/class275627.js","biz_wap/utils/device.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/device2b3aae.js","biz_wap/jsapi/a8key.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/a8key2a30ee.js","appmsg/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/index30b785.js"};</script><script nonce="624719085" type="text/javascript">(function(){function c(a){var b=document.createElement("script");document.getElementsByTagName("body")[0].appendChild(b);b.type="text/javascript";b.async="async";b.onload=function(){a&&(localStorage.setItem("__WXLS__moon",String(__moonf__)),localStorage.setItem("__WXLS__moonarg",JSON.stringify({version:"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/moon30bcdd.js",method:""})))};b.src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/moon30bcdd.js"}var a=!!top&&!!top.window&&top.window.user_uin||0,d=0!==a&&1>Math.floor(a/100)%100;if(2876363900==a||1506075==a||942807682==a)d=!0;window.__wxgspeeds={};window.__wxgspeeds.moonloadtime=+new Date;if(d&&localStorage)try{var e=JSON.parse(localStorage.getItem("__WXLS__moonarg"))||{};if(e&&"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/moon30bcdd.js"==e.version){var f=localStorage.getItem("__WXLS__moon");localStorage.setItem("__WXLS__moonarg",JSON.stringify({version:"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/moon30bcdd.js",method:"fromls"}));eval(f);__moonf__()}else c(!0)}catch(g){c(!0)}else c(!1)})();</script>
+
+  <script nonce="624719085" type="text/javascript">
+    
+    if (typeof getComputedStyle == 'undefined') {
+        if (document.body.currentStyle) {
+            window.getComputedStyle = function(el) {
+                return el.currentStyle;
+            }
+        } else {
+            window.getComputedStyle = {};
+        }
+    }
+    var occupyImg = function() {
+        var images = document.getElementsByTagName('img');
+        var length = images.length;
+        var container = document.getElementById('img-content');
+        var max_width = container.offsetWidth;
+        var container_padding = 0;
+        var container_style = getComputedStyle(container);
+        container_padding = parseFloat(container_style.paddingLeft) + parseFloat(container_style.paddingRight);
+        max_width -= container_padding;
+        if (!max_width) {
+            max_width = window.innerWidth - 30;      
+        }
+        for (var i = 0; i < length; ++i) {
+            var src_ = images[i].getAttribute('src');
+            if (!src_) continue;
+            var width_ = 1 * images[i].getAttribute('data-w') || max_width;
+            var ratio_ = 1 * images[i].getAttribute('data-ratio');
+            var height = 100;
+            if (ratio_ && ratio_ > 0) {
+                var init_width = images[i].style.width;
+                if (init_width) {
+                    images[i].setAttribute('_width', init_width);
+                    if (init_width != 'auto') width_ = parseFloat(getComputedStyle(images[i]).width);
+                }
+                var parent_width = 0;
+                var parent = images[i].parentNode;
+                var outerWidth = 0;
+                while (true) {
+                    var parent_style = getComputedStyle(parent);
+                    if (!parent || !parent_style) break;
+                    parent_width = parent.clientWidth - parseFloat(parent_style.paddingLeft) - parseFloat(parent_style.paddingRight);
+                    if (parent_width > 0) break;
+                    outerWidth += parseFloat(parent_style.paddingLeft) + parseFloat(parent_style.paddingRight) + parseFloat(parent_style.marginLeft) + parseFloat(parent_style.marginRight) + parseFloat(parent_style.borderLeftWidth) + parseFloat(parent_style.borderRightWidth);
+                    parent = parent.parentNode;
+                }
+                parent_width -= outerWidth;
+                parent_width = parent_width || max_width;
+                var width = width_ > parent_width ? parent_width : width_; 
+                height = width * ratio_;
+                images[i].style.cssText += "width: " + width + "px !important;";
+                images[i].src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJDQzA1MTVGNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJDQzA1MTYwNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkNDMDUxNUQ2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkNDMDUxNUU2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6p+a6fAAAAD0lEQVR42mJ89/Y1QIABAAWXAsgVS/hWAAAAAElFTkSuQmCC";
+            } else {
+                images[i].style.cssText += "visibility: hidden !important;";
+            }
+            images[i].style.cssText += "height: " + height + "px !important;";
+        }       
+    }
+    if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', function()  {
+            occupyImg();                                                   
+        });
+    } else {
+        
+        document.onreadystatechange = function() {
+            if (document.readyState === 'complete') {
+                occupyImg();
+            }
+        }
+    }
+  </script>
+  <script nonce="624719085" type="text/javascript">
+    var real_show_page_time = +new Date();
+    if (!!window.addEventListener){
+        window.addEventListener("load", function(){
+            window.onload_endtime = +new Date();
+        });
+    }
+    
+  </script>
+
+    </body>
+</html>
+<!--tailTrap<body></body><head></head><html></html>-->
+ 

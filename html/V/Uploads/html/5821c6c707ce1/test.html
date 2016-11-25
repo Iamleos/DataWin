@@ -1,0 +1,30 @@
+﻿<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!--此处需要引入jquery-->
+		<script type="text/javascript" src="./jquery-1.8.3.min.js"></script>
+	</head>
+	<body>
+		<iframe  id="iframepage" name="iframepage" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" width="40%" ></iframe>
+			<script type="text/javascript">
+				
+				
+				$(function () {
+				
+				$("#iframepage").attr({src:"temp.html"});
+				
+				$("#iframepage").load(function () {
+				var iframe=document.getElementById("iframepage");
+				var h=iframe.contentDocument.documentElement.scrollHeight;
+				document.getElementById("iframepage").height = h+ "px";
+				//alert(h);
+				//将高度h通过ajax发送给php，php接收到之后插入数据库
+				$.get("test.php", { height: h} );
+				});
+				
+				
+				})
+				
+			</script>
+	</body>
+</html>

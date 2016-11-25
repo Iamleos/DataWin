@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?>{"html":"115.159.205.133/V/Uploads/html/57a33e65a7c3c/temp.html","photo":"115.159.205.133/V/Uploads/57a33e65a7c3c/thumb.jpg","title":"u4e0au4f4du548cu8fc7u6c14u4e2du7684u5c0fu9c9cu8089uff0cu98deu9a70u5982u7535u7684u9752u6625","height":"115.159.205.133/V/Uploads/html/57a33e65a7c3c/a.txt"}

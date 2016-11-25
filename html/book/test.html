@@ -1,0 +1,107 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<script type="text/javascript">
+	var xmlHttp;
+	function createXMLHttpRequest()
+	{
+		if(window.ActiveXObject)
+		{
+			xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		else if(window.XMLHttpRequest)
+		{
+			xmlHttp = new XMLHttpRequest();
+		}
+	}
+	function startRequest()
+	{
+		createXMLHttpRequest();
+		try
+		{
+			xmlHttp.onreadystatechange = handleStateChange;
+			xmlHttp.open("GET","index.php", true);
+			xmlHttp.send(null);
+		}
+		catch(exception)
+		{
+			alert("xmlHttp Fail");
+		}
+	}
+	function handleStateChange()
+	{
+		if(xmlHttp.readyState == 4)
+		{
+			if (xmlHttp.status == 200 || xmlHttp.status == 0)
+			{
+					var result = xmlHttp.responseText;
+					//var json = eval("("+ result +")");
+					//alert(json.programmers[0].firstName);
+					//alert(json.sex);
+					var text=document.getElementById("test");
+					text.innerHTML=result;
+			}
+		}
+	}
+</script>
+</head>
+<body>
+<div id="test">
+ <input type="button"value="AjaxTest" onclick="startRequest()"/>
+</div>
+</body>
+</html>
+
+
+	<!--底部-->
+<footer class="bs-docs-footer">
+		<div class="container">
+			<div class="bs-docs-one footer-cn">
+				<h4>重庆七州数据信息科技有限公司 </h4>
+				<p>地址：重庆市沙坪坝沙正街174号</p>
+				<p>热线：400-820-8820</p>
+				<p>电话：023-87654321</p>
+				<p>邮箱：xujunrt@163.com</p>
+			</div>
+			<div class="bs-docs-two footer-cn">
+				<ul>
+					<li>
+						<i><img src="qizhou_files/qr.jpg"></i>
+						<p>七州科技官方微信</p>
+					</li>
+					<li>
+						<i><img src="qizhou_files/qr2.jpg"></i>
+						<p>七州科技小徐</p>
+					</li>
+				</ul>
+			</div>
+			<div class="bs-docs-three footer-cn">
+				<i><img src="qizhou_files/phone.png"></i>
+				<ul>
+					<li>服务热线：400-820-8820</li>
+					<li>服务时间：09:00-18:00</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+<div class="footer">
+		<p>
+			<span> 版权所有&nbsp;&nbsp;七州数据信息科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;渝ICP备01234567号</span>
+			<font>
+			<i class="fa fa-phone-square"></i>
+			<span>400-820-8820</span>
+			<i class="fa fa-wechat"></i>
+			<span class="qrCode">
+				七州科技-小徐（qizhou）
+				<i class="fa fa-qrcode"></i>
+				<img src="qizhou_files/qb.png" class="qrImg">
+			</span>
+
+			<i class="fa fa-envelope"></i>
+			<span>xujunrt@163.com</span>
+			<i class="fa fa-qq"></i>
+			<span>七州科技-小徐：15696081572</span>
+			</font>
+		</p>
+	</div>
+
+    <!--end of底部-->

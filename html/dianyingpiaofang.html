@@ -1,0 +1,990 @@
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<title>德塔文电影票房</title>
+<script src='http://www.ichartjs.com/ichart.latest.min.js'></script>
+<script type='text/javascript'>
+$(function(){
+      var chart = new iChart.Bar2D({
+            render:"ichart-render",
+            width:1000,
+            height:800,
+			animation:true,
+            background_color:"#fefefe",
+            gradient:false,
+            color_factor:0.2,
+            border:{
+                  color:"#f5ab23",
+                  width:1
+            },
+			
+            align:"right",
+            offsetx:-20,
+            offsety:-10,
+            sub_option:{
+                  border:{
+                        color:"#BCBCBC",
+                        width:0
+                  },
+                  label:{
+                        fontweight:500,
+                        fontsize:0,
+                        color:"#4572a7",
+                        sign:"square",
+                        sign_size:12,
+                        border:{
+                              color:"#BCBCBC",
+                              width:1
+                        },
+                        background_color:"#fefefe"
+                  }
+            },
+            shadow:true,
+            shadow_color:"#666666",
+            shadow_blur:2,
+            showpercent:false,
+            column_width:"70%",
+            bar_height:"70%",
+            radius:"80%",
+            title:{
+                  text:"2016年8月1日电影票房",
+                  color:"#424242",
+                  fontsize:24,
+                  font:"微软雅黑",
+                  textAlign:"center",
+                  height:36,
+                  offsetx:0,
+                  offsety:0
+            },
+            
+            footnote:{
+                  text:"",
+                  color:"#111111",
+                  fontsize:12,
+                  font:"微软雅黑",
+                  textAlign:"right",
+                  height:20,
+                  offsetx:0,
+                  offsety:0
+            },
+            legend:{
+                  enable:false,
+                  background_color:"#fefefe",
+                  color:"#333333",
+                  fontsize:12,
+                  border:{
+                        color:"#BCBCBC",
+                        width:1
+                  },
+                  column:1,
+                  align:"right",
+                  valign:"center",
+                  offsetx:0,
+                  offsety:0
+            },
+            coordinate:{
+						width:"85%",
+						height:"90%",
+						background_color:"#ffffff",
+						axis:{
+                        color:"#a1a5ab",
+                        width:[1,"",1,""]
+						}, 
+						scale:[{
+							 position:'bottom',	
+							 start_scale:0,
+							 end_scale:35,
+							 scale_space:5,
+							 label:{color:'#ffffff'},
+						
+						}],
+						
+
+						
+					},
+            label:{
+                  fontweight:500,
+                  color:"#0f0e0e",
+                  fontsize:13,
+				  font:"微软雅黑"
+            },
+            type:"bar2d",
+            data:[
+                  {
+                  name:"绝地逃亡",
+                 
+				 
+            },{
+                  name:"封神传奇",
+                 
+            },{
+                  name:"泰山归来：险战丛林",
+                  
+            },{
+                  name:"神秘世界历险记3",
+                 
+            },{
+                  name:"新·大熊的日本诞生",
+                 
+            },{
+                  name:"大鱼海棠",
+                 
+            },{
+                  name:"宝贝当家",
+                  
+            },{
+                  name:"寒战2",
+                 
+            },{
+                  name:"情况不妙",
+                  
+            }
+            ]
+      });
+	  
+	 
+	 var bar2d= new iChart.Bar2D({
+				data:[
+                  {
+                 
+                  value:2422,
+                  color:"#f58608"
+					 
+				},{
+					
+					  value:2335,
+					  color:"#f58608"
+				},{
+					
+					  value:690,
+					  color:"#f58608"
+				},{
+					 
+					  value:573,
+					  color:"#f58608"
+				},{
+					 
+					  value:229,
+					  color:"#f58608"
+				},{
+					 
+					  value:163,
+					  color:"#f58608"
+				},{
+					 
+					  value:152,
+					  color:"#f58608"
+				},{
+					 
+					  value:145,
+					  color:"#f58608"
+				},{
+					
+					  value:110,
+					  color:"#f58608"
+				}
+				],
+				bar_height:"60%",
+				coordinate:{
+						width:"75%",
+						height:"90%",
+						background_color:null,
+						axis:{
+                       
+                        enable:false
+						}, 
+						gridlinesVisible:false,
+						
+						width:98,
+						height:670,
+						scale:[{
+							 position:'bottom',			 
+							 scale_enable:false,
+							 scale_share:5,
+						}],
+						grid_color:"#ffffff",
+						label:{
+							fontweight:600,
+							color:"#ffffff",
+							fontsize:0
+						}
+						
+						
+
+						
+				},
+				
+				sub_option:{
+                  border:{
+                        color:"#BCBCBC",
+                        width:0
+                  },
+				 
+                  label:{
+                        fontweight:400,
+                        fontsize:12,
+                        color:"#4572a7",
+                        sign:"square",
+                        sign_size:12,
+                        border:{
+                              color:"#BCBCBC",
+                              width:1
+                        },
+                        background_color:"#fefefe",
+						
+						
+						
+                  }
+				},
+				
+				label:{
+					color:'#4c4f48',
+					fontsize:10
+				},
+				
+				text_space : 16,
+				
+				animation:true,
+				align : 'right',
+				offsetx:chart.coo.get('originx')-890,
+				offsety:-(chart.get('centery')-chart.coo.get('originy')-330),
+				//animation : animation,
+				
+			});
+			
+			
+			var bar2d1= new iChart.Bar2D({
+				data:[
+                  {
+                 
+                  value:2422,
+                  color:"#f58608"
+					 
+				},{
+					
+					  value:2335,
+					  color:"#f58608"
+				},{
+					
+					  value:690,
+					  color:"#f58608"
+				},{
+					 
+					  value:573,
+					  color:"#f58608"
+				},{
+					 
+					  value:229,
+					  color:"#f58608"
+				},{
+					 
+					  value:163,
+					  color:"#f58608"
+				},{
+					 
+					  value:152,
+					  color:"#f58608"
+				},{
+					 
+					  value:145,
+					  color:"#f58608"
+				},{
+					
+					  value:110,
+					  color:"#f58608"
+				}
+				],
+				bar_height:"60%",
+				coordinate:{
+						width:"75%",
+						height:"90%",
+						background_color:null,
+						axis:{
+                       
+                        enable:false
+						}, 
+						gridlinesVisible:false,
+						
+						width:98,
+						height:670,
+						scale:[{
+							 position:'bottom',			 
+							 scale_enable:false,
+							 scale_share:5,
+						}],
+						grid_color:"#ffffff",
+						label:{
+							fontweight:600,
+							color:"#ffffff",
+							fontsize:0
+						}
+						
+						
+
+						
+				},
+				
+				sub_option:{
+                  border:{
+                        color:"#BCBCBC",
+                        width:0
+                  },
+				 
+                  label:{
+                        fontweight:400,
+                        fontsize:12,
+                        color:"#4572a7",
+                        sign:"square",
+                        sign_size:12,
+                        border:{
+                              color:"#BCBCBC",
+                              width:1
+                        },
+                        background_color:"#fefefe",
+						
+						
+						
+                  }
+				},
+				
+				label:{
+					color:'#4c4f48',
+					fontsize:10
+				},
+				
+				text_space : 16,
+				
+				animation:true,
+				align : 'right',
+				offsetx:chart.coo.get('originx')-772,
+				offsety:-(chart.get('centery')-chart.coo.get('originy')-330),
+				//animation : animation,
+				
+			});
+			
+			var bar2d2= new iChart.Bar2D({
+				data:[
+                  {
+                 
+                  value:1788,
+                  color:"#f58608"
+					 
+				},{
+					
+					  value:625,
+					  color:"#f58608"
+				},{
+					
+					  value:547,
+					  color:"#f58608"
+				},{
+					 
+					  value:78,
+					  color:"#f58608"
+				},{
+					 
+					  value:214,
+					  color:"#f58608"
+				},{
+					 
+					  value:18,
+					  color:"#f58608"
+				},{
+					 
+					  value:125,
+					  color:"#f58608"
+				},{
+					 
+					  value:89,
+					  color:"#f58608"
+				},{
+					
+					  value:152,
+					  color:"#f58608"
+				}
+				],
+				bar_height:"60%",
+				coordinate:{
+						width:"70%",
+						height:"90%",
+						background_color:null,
+						axis:{
+                       
+                        enable:false
+						}, 
+						gridlinesVisible:false,
+						
+						width:90,
+						height:670,
+						scale:[{
+							 position:'bottom',			 
+							 scale_enable:false,
+							 scale_share:5,
+						}],
+						grid_color:"#ffffff",
+						label:{
+							fontweight:600,
+							color:"#ffffff",
+							fontsize:0
+						}
+						
+						
+
+						
+				},
+				
+				sub_option:{
+                  border:{
+                        color:"#BCBCBC",
+                        width:0
+                  },
+				 
+                  label:{
+                        fontweight:400,
+                        fontsize:12,
+                        color:"#4572a7",
+                        sign:"square",
+                        sign_size:12,
+                        border:{
+                              color:"#BCBCBC",
+                              width:1
+                        },
+                        background_color:"#fefefe",
+						offsetx:-2
+						
+						
+						
+                  }
+				},
+				
+				label:{
+					color:'#4c4f48',
+					fontsize:10
+				},
+				
+				text_space : 16,
+				
+				animation:true,
+				align : 'right',
+				offsetx:chart.coo.get('originx')-661,
+				offsety:-(chart.get('centery')-chart.coo.get('originy')-330),
+				//animation : animation,
+				
+			});
+			
+			
+			var bar2d3= new iChart.Bar2D({
+				data:[
+                  {
+                 
+                  value:19,
+                  color:"#f58608"
+					 
+				},{
+					
+					  value:15,
+					  color:"#f58608"
+				},{
+					
+					  value:14,
+					  color:"#f58608"
+				},{
+					 
+					  value:12,
+					  color:"#f58608"
+				},{
+					 
+					  value:10,
+					  color:"#f58608"
+				},{
+					 
+					  value:10,
+					  color:"#f58608"
+				},{
+					 
+					  value:18,
+					  color:"#f58608"
+				},{
+					 
+					  value:17,
+					  color:"#f58608"
+				},{
+					
+					  value:13,
+					  color:"#f58608"
+				}
+				],
+				bar_height:"60%",
+				coordinate:{
+						width:"75%",
+						height:"90%",
+						background_color:null,
+						axis:{
+                       
+                        enable:false
+						}, 
+						gridlinesVisible:false,
+						
+						width:98,
+						height:670,
+						scale:[{
+							 position:'bottom',			 
+							 scale_enable:false,
+							 scale_share:5,
+						}],
+						grid_color:"#ffffff",
+						label:{
+							fontweight:600,
+							color:"#ffffff",
+							fontsize:0
+						}
+						
+						
+
+						
+				},
+				
+				sub_option:{
+                  border:{
+                        color:"#BCBCBC",
+                        width:0
+                  },
+				 
+                  label:{
+                        fontweight:400,
+                        fontsize:12,
+                        color:"#4572a7",
+                        sign:"square",
+                        sign_size:12,
+                        border:{
+                              color:"#BCBCBC",
+                              width:1
+                        },
+                        background_color:"#fefefe",
+						
+						
+						
+                  }
+				},
+				
+				label:{
+					color:'#4c4f48',
+					fontsize:10
+				},
+				
+				text_space : 16,
+				
+				animation:true,
+				align : 'right',
+				offsetx:chart.coo.get('originx')-535,
+				offsety:-(chart.get('centery')-chart.coo.get('originy')-330),
+				//animation : animation,
+				
+			});
+			
+			var bar2d4= new iChart.Bar2D({
+				data:[
+                  {
+                 
+                  value:332,
+                  color:"#f58608"
+					 
+				},{
+					
+					  value:221,
+					  color:"#f58608"
+				},{
+					
+					  value:458,
+					  color:"#f58608"
+				},{
+					 
+					  value:625,
+					  color:"#f58608"
+				},{
+					 
+					  value:448,
+					  color:"#f58608"
+				},{
+					 
+					  value:339,
+					  color:"#f58608"
+				},{
+					 
+					  value:365,
+					  color:"#f58608"
+				},{
+					 
+					  value:410,
+					  color:"#f58608"
+				},{
+					
+					  value:218,
+					  color:"#f58608"
+				}
+				],
+				bar_height:"60%",
+				coordinate:{
+						width:"75%",
+						height:"90%",
+						background_color:null,
+						axis:{
+                       
+                        enable:false
+						}, 
+						gridlinesVisible:false,
+						
+						width:98,
+						height:670,
+						scale:[{
+							 position:'bottom',			 
+							 scale_enable:false,
+							 scale_share:5,
+						}],
+						grid_color:"#ffffff",
+						label:{
+							fontweight:600,
+							color:"#ffffff",
+							fontsize:0
+						}
+						
+						
+
+						
+				},
+				
+				sub_option:{
+                  border:{
+                        color:"#BCBCBC",
+                        width:0
+                  },
+				 
+                  label:{
+                        fontweight:400,
+                        fontsize:12,
+                        color:"#4572a7",
+                        sign:"square",
+                        sign_size:12,
+                        border:{
+                              color:"#BCBCBC",
+                              width:1
+                        },
+                        background_color:"#fefefe",
+						
+						
+						
+                  }
+				},
+				
+				label:{
+					color:'#4c4f48',
+					fontsize:10
+				},
+				
+				text_space : 16,
+				
+				animation:true,
+				align : 'right',
+				offsetx:chart.coo.get('originx')-416,
+				offsety:-(chart.get('centery')-chart.coo.get('originy')-330),
+				//animation : animation,
+				
+			});
+			
+			var bar2d5= new iChart.Bar2D({
+				data:[
+                  {
+                 
+                  value:32.3,
+                  color:"#f58608"
+					 
+				},{
+					
+					  value:27.3,
+					  color:"#f58608"
+				},{
+					
+					  value:12.4,
+					  color:"#f58608"
+				},{
+					 
+					  value:9.2,
+					  color:"#f58608"
+				},{
+					 
+					  value:6.8,
+					  color:"#f58608"
+				},{
+					 
+					  value:5.5,
+					  color:"#f58608"
+				},{
+					 
+					  value:2.5,
+					  color:"#f58608"
+				},{
+					 
+					  value:1.5,
+					  color:"#f58608"
+				},{
+					
+					  value:1.5,
+					  color:"#f58608"
+				}
+				],
+				bar_height:"60%",
+				coordinate:{
+						width:"75%",
+						height:"90%",
+						background_color:null,
+						axis:{
+                       
+                        enable:false
+						}, 
+						gridlinesVisible:false,
+						
+						width:98,
+						height:670,
+						scale:[{
+							 position:'bottom',			 
+							 scale_enable:false,
+							 scale_share:5,
+						}],
+						grid_color:"#ffffff",
+						label:{
+							fontweight:600,
+							color:"#ffffff",
+							fontsize:0
+						}
+						
+						
+
+						
+				},
+				
+				sub_option:{
+                  border:{
+                        color:"#BCBCBC",
+                        width:0
+                  },
+				 
+                  label:{
+                        fontweight:400,
+                        fontsize:12,
+                        color:"#4572a7",
+                        sign:"square",
+                        sign_size:12,
+                        border:{
+                              color:"#BCBCBC",
+                              width:1
+                        },
+                        background_color:"#fefefe",
+						
+						
+						
+                  }
+				},
+				
+				label:{
+					color:'#4c4f48',
+					fontsize:10
+				},
+				
+				text_space : 16,
+				
+				animation:true,
+				align : 'right',
+				offsetx:chart.coo.get('originx')-297,
+				offsety:-(chart.get('centery')-chart.coo.get('originy')-330),
+				//animation : animation,
+				
+			});
+			
+			var bar2d6= new iChart.Bar2D({
+				data:[
+                  {
+                 
+                  value:12.3,
+                  color:"#f58608"
+					 
+				},{
+					
+					  value:17.3,
+					  color:"#f58608"
+				},{
+					
+					  value:12.4,
+					  color:"#f58608"
+				},{
+					 
+					  value:19.2,
+					  color:"#f58608"
+				},{
+					 
+					  value:16.8,
+					  color:"#f58608"
+				},{
+					 
+					  value:15.5,
+					  color:"#f58608"
+				},{
+					 
+					  value:21.5,
+					  color:"#f58608"
+				},{
+					 
+					  value:11.5,
+					  color:"#f58608"
+				},{
+					
+					  value:13.5,
+					  color:"#f58608"
+				}
+				],
+				bar_height:"60%",
+				coordinate:{
+						width:"75%",
+						height:"90%",
+						background_color:null,
+						axis:{
+                       
+                        enable:false
+						}, 
+						gridlinesVisible:false,
+						
+						width:98,
+						height:670,
+						scale:[{
+							 position:'bottom',			 
+							 scale_enable:false,
+							 scale_share:5,
+						}],
+						grid_color:"#ffffff",
+						label:{
+							fontweight:600,
+							color:"#ffffff",
+							fontsize:0
+						}
+						
+						
+
+						
+				},
+				
+				sub_option:{
+                  border:{
+                        color:"#BCBCBC",
+                        width:0
+                  },
+				 
+                  label:{
+                        fontweight:400,
+                        fontsize:12,
+                        color:"#4572a7",
+                        sign:"square",
+                        sign_size:12,
+                        border:{
+                              color:"#BCBCBC",
+                              width:1
+                        },
+                        background_color:"#fefefe",
+						
+						
+						
+                  }
+				},
+				
+				label:{
+					color:'#4c4f48',
+					fontsize:10
+				},
+				
+				text_space : 16,
+				
+				animation:true,
+				align : 'right',
+				offsetx:chart.coo.get('originx')-178,
+				offsety:-(chart.get('centery')-chart.coo.get('originy')-330),
+				//animation : animation,
+				
+			});
+			
+			chart.plugin(new iChart.Custom({
+					drawFn:function(){
+						 //计算位置
+						var coo = chart.getCoordinate(),
+							x = coo.get('originx'),
+							y = coo.get('originy'),
+							h = coo.height;
+						//在左侧的位置，渲染说明文字。
+						var image = new Image(); 
+						image.src = "logo.png"; 
+						this.T.c.drawImage(image,5,10,100,40);	
+						
+						//添加文字说明
+						chart.target.textAlign('start')
+						.textBaseline('bottom')
+						.textFont('500 16px 微软雅黑')
+						.fillText('预估全天(万)',x+15,y+h+25,false,'#000');
+						
+						//添加文字说明
+						chart.target.textAlign('start')
+						.textBaseline('bottom')
+						.textFont('500 16px 微软雅黑')
+						.fillText('20:30票房(万)',x+128,y+h+25,false,'#000');
+						
+						//添加文字说明
+						chart.target.textAlign('start')
+						.textBaseline('bottom')
+						.textFont('500 16px 微软雅黑')
+						.fillText('累计票房(百万)',x+245,y+h+25,false,'#000');
+						
+						//添加文字说明
+						chart.target.textAlign('start')
+						.textBaseline('bottom')
+						.textFont('500 16px 微软雅黑')
+						.fillText('场均(人)',x+380,y+h+25,false,'#000');
+						
+						//添加文字说明
+						chart.target.textAlign('start')
+						.textBaseline('bottom')
+						.textFont('500 16px 微软雅黑')
+						.fillText('场均票房(元)',x+490,y+h+25,false,'#000');
+
+						//添加文字说明
+						chart.target.textAlign('start')
+						.textBaseline('bottom')
+						.textFont('500 16px 微软雅黑')
+						.fillText('票房占比(%)',x+608,y+h+25,false,'#000');
+						
+						//添加文字说明
+						chart.target.textAlign('start')
+						.textBaseline('bottom')
+						.textFont('500 16px 微软雅黑')
+						.fillText('上座率(%)',x+734,y+h+25,false,'#000');
+						
+					}
+			}));
+			
+			chart.plugin(bar2d);
+			chart.plugin(bar2d1);
+			chart.plugin(bar2d2);
+			chart.plugin(bar2d3);
+			chart.plugin(bar2d4);
+			chart.plugin(bar2d5);
+			chart.plugin(bar2d6);
+			
+			
+	 
+	 chart.draw();
+
+     
+	 
+	 
+});
+</script>
+</head>
+<body style='background-color:#244c74;'>
+<div id='ichart-render'></div>
+</body>
+</html>

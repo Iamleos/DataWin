@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ZH-CN"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>七州数据信息科技</title>
+        <meta name="keywords" content="作者排行,作家热度">
+        <meta name="description" content="七州数据信息科技，作家排行">
+        <link rel="stylesheet" href="qizhou_files/style.css">
+        <link rel="stylesheet" href="qizhou_files/bootstrap.css">
+        <link rel="stylesheet" href="qizhou_files/font-awesome.css">
+        <link rel="stylesheet" href="qizhou_files/index.css">
+
+        <script src="qizhou_files/hm.js"></script><script src="qizhou_files/jquery.js" type="text/javascript" language="javascript"></script>
+        <script src="qizhou_files/bootstrap.js" type="text/javascript" language="javascript"></script>
+        <script src="qizhou_files/global.js" type="text/javascript" language="javascript"></script>
+		<script src="qizhou_files/site.js" type="text/javascript" language="javascript"></script>
+
+		<script type="text/javascript">
+			var CONFIG = {"base_url":"","script_url":"\/index.php","theme_base_url":"\/themes\/search_2016","controller_id":"rank","action_id":"detail","request_params":{"gid":"0"},"uid":null};
+			var _hmt = _hmt || [];
+			(function () {
+				var hm = document.createElement("script");
+				hm.src = "//hm.baidu.com/hm.js?293b2731d4897253b117bb45d9bb7023";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>		
+    <script src="qizhou_files/logger.js"></script><link type="text/css" rel="stylesheet" href="qizhou_files/bdsstyle.css"></head>
+
+<body style="width: 1903px;"><iframe style="display: none;" frameborder="0"></iframe><div style="display: block;" id="bdshare_s"><iframe id="bdsIfr" style="position:absolute;display:none;z-index:9999;" frameborder="0"></iframe><div style="display: none;" id="bdshare_l"><div id="bdshare_l_c"><h6>分享到</h6><ul><li><a href="#" class="bds_mshare mshare">一键分享</a></li><li><a href="#" class="bds_qzone qqkj">QQ空间</a></li><li><a href="#" class="bds_tsina xlwb">新浪微博</a></li><li><a href="#" class="bds_bdysc bdysc">百度云收藏</a></li><li><a href="#" class="bds_renren rrw">人人网</a></li><li><a href="#" class="bds_tqq txwb">腾讯微博</a></li><li><a href="#" class="bds_bdxc bdxc">百度相册</a></li><li><a href="#" class="bds_kaixin001 kxw">开心网</a></li><li><a href="#" class="bds_tqf txpy">腾讯朋友</a></li><li><a href="#" class="bds_tieba bdtb">百度贴吧</a></li><li><a href="#" class="bds_douban db">豆瓣网</a></li><li><a href="#" class="bds_tsohu shwb">搜狐微博</a></li><li><a href="#" class="bds_bdhome bdhome">百度新首页</a></li><li><a href="#" class="bds_sqq sqq">QQ好友</a></li><li><a href="#" class="bds_thx thx">和讯微博</a></li><li><a href="#" class="bds_more">更多...</a></li></ul><p><a href="#" class="goWebsite">百度分享</a></p></div></div></div><script type="text/javascript" src="qizhou_files/rank.js"></script>
+      <script type="text/javascript" src="qizhou_files/site.js"></script>
+
+		<!-- 导航 -->
+        
+        <nav class="navigation">
+			<div class="container">
+				<ul class="nav navbar-nav nav-first">
+				    <li><a href="#">首页</a></li>
+                    <li class="active" id="removebd"><a href="#">榜单</a></li>
+                </ul>
+						
+					<ul class="nav navbar-nav navbar-right log-reg">
+						<li><a href="#">注册</a></li>
+						<li><a href="#">登录</a></li>
+					</ul>
+            </div>
+        </nav>
+        <!-- end of 导航 -->
+
+<div id="content">
+	
+<script type="text/javascript">
+    var requestGid = 0;
+    var requestGname = "";
+    var isClz = 0;
+</script>
+
+<script type="text/javascript">
+	var xmlHttp;
+	function createXMLHttpRequest()
+	{
+		if(window.ActiveXObject)
+		{
+			xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		else if(window.XMLHttpRequest)
+		{
+			xmlHttp = new XMLHttpRequest();
+		}
+	}
+	function startRequest()
+	{
+		createXMLHttpRequest();
+		try
+		{
+			xmlHttp.onreadystatechange = handleStateChange;
+			xmlHttp.open("GET","index.php", true);
+			xmlHttp.send(null);
+		}
+		catch(exception)
+		{
+			alert("xmlHttp Fail");
+		}
+	}
+	function handleStateChange()
+	{
+		if(xmlHttp.readyState == 4)
+		{
+			if (xmlHttp.status == 200 || xmlHttp.status == 0)
+			{
+					var result = xmlHttp.responseText;
+					//var json = eval("("+ result +")");
+					//alert(json.programmers[0].firstName);//读取json数据
+					//alert(json.sex);
+					var jsonstr=eval(result);
+					var len=jsonstr.length;
+					
+					var data=document.getElementById("rank-table");
+					
+					str="<tr><th width='10%'>排名</th><th width='13%'>作家</th><th width='12%'>CI</th><th width='10%'>查看详情</th><th width='10%'></th><th width='10%'>排名</th><th width='13%'>作者</th> <th width='12%'>CI</th><th width='10%'>查看详情</th></tr>"
+					
+					for(var i=0;i<len;i++)
+					{
+							  if(i%2==0){
+							    str+="<tr><th width='10%'>"+jsonstr[i].no+"</th><th width='13%'>"+jsonstr[i].author+"</th><th width='12%'>"+jsonstr[i].ci+"</th><th width='10%'><a href='introduction.html?author="+jsonstr[i].author+"&weixin="+jsonstr[i].weixin+"&weizs="+jsonstr[i].weizs+"&tieba="+jsonstr[i].tieba+"&search="+jsonstr[i].search+"&meiti="+jsonstr[i].meiti+"' target='_blank'>进入</a></th><th width='10%'></th>"
+							  }else{
+							    str+="<th width='10%'>"+jsonstr[i].no+"</th><th width='13%'>"+jsonstr[i].author+"</th> <th width='12%'>"+jsonstr[i].ci+"</th><th width='10%'><a href='introduction.html?author="+jsonstr[i].author+"&weixin="+jsonstr[i].weixin+"&weizs="+jsonstr[i].weizs+"&tieba="+jsonstr[i].tieba+"&search="+jsonstr[i].search+"&meiti="+jsonstr[i].meiti+"' target='_blank'>进入</a></th></tr>"
+							  }	
+                              
+					}
+					
+					data.innerHTML=str;
+			}
+		}
+	}
+</script>
+        <!--搜索、轮播部分-->
+        <header class="main">
+        	<!--轮播-->
+            <div class="main_visual">
+                <div class="main_image">
+                    <ul>
+                        <li><span class="img_3"><img src="qizhou_files/banner01.jpg"></span></li>
+                    </ul>
+                </div>
+            </div>
+            <!--轮播 结束-->
+            
+            <!--搜索框-->
+            <div class="bs-docs-header">
+            	<div class="container search">
+                	<div class="input-group">
+						<span class="fa fa-search"></span>
+		                        <input class="form-control" id="search-input" placeholder="请输入作家" type="text">
+                            <a class="btn btn-search" id="search-btn">搜  索</a>
+
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <!--end of 搜索框-->
+	
+        </header>
+        <!--end of 搜索、轮播部分--><!--头部信息统计-->   
+    
+
+<div class="container bs-docs-container">
+    <div class="row">
+
+        <!-- 左侧菜单 -->
+        <div class="col-md-2 leftMenu col-xs-2">
+            <!-- 头部分组选择 -->
+            <div class="btn-group">
+                <button id="btnGroupDrop1" class="btn btn-default dropdown-toggle" aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button">
+                    <i class="fa fa-wechat"></i>
+                    综合榜
+                    
+                </button>
+                
+            </div>
+            <!-- 头部分组选择结束 -->   
+            <ul class="nav nav-tabs nav-stacked">
+                                    <li>
+                        <a href="javascript:void(0)" class="nav-header">
+                            影视                            <span class="pull-right fa fa-angle-down"></span>
+                        </a>
+                        
+                    </li>
+                                    <li>
+                        <a href="javascript:void(0)" class="nav-header">
+                            娱乐                            <span class="pull-right fa fa-angle-down"></span>
+                        </a>
+                        
+                    </li>
+                                    <li>
+                        <a href="javascript:void(0)" class="nav-header" onclick="startRequest()">
+                            作家                            <span class="pull-right fa fa-angle-down"></span>
+                        </a>
+                        
+                    </li>
+                                  
+                            </ul>
+            
+        </div>
+        <!-- end of左侧菜单 -->
+
+        <!--右侧-->
+        <div class="col-md-10 col-xs-10">
+
+            <!--头部筛选-->
+            <div class="screen-tab clr">
+                <ul class="nav navbar-nav pull-left">
+                    <li class="active"><a href="javascript:void(0)" onclick="locationRB(0);">月榜</a></li>
+                    <li><a href="javascript:void(0)" onclick="locationZB(0);">周榜</a></li>
+                   
+                    							
+                </ul>
+                <!--时间插件-->    
+                                    <div class="input-group date form_date pull-left" data-date="" data-date-format="" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                        <input id="rank-date" class="form-control" size="16" value="2016-03-15" readonly="readonly" type="text">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+
+                    <link rel="stylesheet" type="text/css" href="qizhou_files/bootstrap-datetimepicker.css">
+                    <script type="text/javascript" language="javascript" src="qizhou_files/bootstrap-datetimepicker.js"></script>
+                    <script type="text/javascript" language="javascript" src="qizhou_files/bootstrap-datetimepicker_002.js"></script>
+                    <script type="text/javascript">
+                            $('.form_date').datetimepicker({
+                                language: 'zh-CN',
+                                format: "yyyy-mm-dd",
+                                weekStart: 1,
+                                todayBtn: 1,
+                                autoclose: 1,
+                                todayHighlight: 1,
+                                startView: 2,
+                                minView: 2,
+                                forceParse: 0
+                            });
+                            $('.form_date').datetimepicker().on('changeDate', function (ev) {
+                                rank_date = $("#rank-date").val();
+                                setTimeout(function () {
+                                    if ($("#rank-container:visible").size()) {
+                                        RANK.getRanks(CONFIG.request_params.gid, rank_date, 1);
+                                    } else {
+                                        RANK.getArticles(CONFIG.request_params.gid, rank_date, 1);
+                                    }
+                                }, 100);
+                            });
+                    </script>
+                					
+                <div class="screen-btn fr">
+
+                    <!--分享-->
+                    <span class="fr">
+                        <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" data="{'text':'分享自七州科技','url':'http://beta.gsdata.cn/rank/detail?gid=0','pic':'http://beta.gsdata.cn/themes/search_2016/images/logo.png'}">
+                            <a href="#" class="bds_more" data-cmd="more"><i class="fa fa-share-alt"></i>分享榜单</a>
+                        </div>
+                        <script src="qizhou_files/bds_s_v2.js" type="text/javascript" id="bdshare_js" data="type=tools"></script>
+                        
+                        <script type="text/javascript">
+                            document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date() / 3600000);
+                        </script>
+                    </span>
+                </div>
+            </div>
+            <!--头部筛选 结束-->
+
+            <div class="article-screen clr">
+                <ul class="nav navbar-nav active-nav">
+                    <li id="phb" class="active"><a href="javascript:void(0)">榜单</a></li>
+                   
+                </ul>
+                <a href="#" class="pull-right">数据说明 &gt;</a>
+            </div>
+
+            <!--文章列表-->
+			
+            <div class="article-container clr">
+                
+                 <div id="rank-container">
+                    <table class="list-tab" id="rank-table">
+                        <tbody ><tr>
+                           
+                            <th width="10%">排名</th>
+                            <th width="13%">作家</th>
+                            <th width="12%">CI</th>
+							<th width="10%">查看详情</th>
+							<th width="10%"></th>
+							<th width="10%">排名</th>
+                            <th width="13%">作家</th>
+                            <th width="12%">CI</th>
+							<th width="10%">查看详情</th>
+                        </tr>
+                 </div>	
+           				
+                <!--热门推荐-->
+                <div id="article-container"></div>
+                <script id="article-tpl" type="text/x-jsrender">
+                    <ul class="article-ul">
+                    <li>
+                    <div class="wx-img">
+                    <a href="{{html:url}}" target="_blank"><img id="m_img" src="/themes/search_2016/images/images_loading.gif" data-hash="{{html:picurl}}" /></a>
+                    </div>
+                    <div class="wx-news">
+                    <h4><a href="{{html:url}}" target="_blank">{{html:title}}</a></h4>
+                    <a href="{{html:url}}" target="_blank">{{html:content}}</a>
+                    <div class="wx-ft">
+                    <span class="blue"><a href="/rank/single?id={{html:nickname_id}}" target="_blank">{{html:wx_nickname}}</a></span>
+                    <span>发布时间：{{html:posttime}}</span> 
+                    <font>
+                    <i class="fa fa-book"></i>{{html:readnum_newest}}
+                    <i class="fa fa-thumbs-o-up"></i>{{html:likenum_newest}}
+                    </font>
+                    <!--分享-->
+                    <span class="fr">
+                    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" data="{'url':'{{html:url}}','pic':'{{html:picurl}}','text':'{{html:title}}'}">
+                    <a href="#" class="bds_more" data-cmd="more"><i class="fa fa-share-alt"></i>分享</a>
+                    </div>
+
+                    </span>
+                    </div>
+                    </div>
+                    </li>
+                    </ul>					
+                </script>						
+
+
+            </div>
+            <!--文章列表 结束-->
+        </div>
+        <!--右侧 结束-->
+    </div>
+</div>  
+</div>
+<div style="clear:both"></div>
+
+
+<script type="text/javascript" src="qizhou_files/jsrender.js"></script>
+
+
+</body></html>

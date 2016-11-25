@@ -1,0 +1,490 @@
+[ 2016-10-12T13:27:55+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006043s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000438s ]
+
+[ 2016-10-12T13:33:45+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/V/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: user /var/www/html/V/Application/Home/Controller/UserController.class.php 第 63 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 144 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0009s ]
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('郑爽，商业价值被低估的90代少女偶像','艺人数据分析','1476250422',NULL,'115.159.205.133/V/Uploads/html/57fdcb360ee25/temp.html','115.159.205.133/V/Uploads/57fdcb360ee25/thumb.jpg','115.159.205.133/V/Uploads/html/57fdcb360ee25/a.txt')
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('郑爽，商业价值被低估的90代少女偶像','艺人数据分析','1476250422',NULL,'115.159.205.133/V/Uploads/html/57fdcb360ee25/temp.html','115.159.205.133/V/Uploads/57fdcb360ee25/thumb.jpg','115.159.205.133/V/Uploads/html/57fdcb360ee25/a.txt')
+
+[ 2016-10-12T13:35:51+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/V/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: user /var/www/html/V/Application/Home/Controller/UserController.class.php 第 63 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 144 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0009s ]
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('郑爽，商业价值被低估的90代少女偶像','艺人数据分析','1476250548',NULL,'115.159.205.133/V/Uploads/html/57fdcbb4d97a4/temp.html','115.159.205.133/V/Uploads/57fdcbb4d97a4/thumb.jpg','115.159.205.133/V/Uploads/html/57fdcbb4d97a4/a.txt')
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('郑爽，商业价值被低估的90代少女偶像','艺人数据分析','1476250548',NULL,'115.159.205.133/V/Uploads/html/57fdcbb4d97a4/temp.html','115.159.205.133/V/Uploads/57fdcbb4d97a4/thumb.jpg','115.159.205.133/V/Uploads/html/57fdcbb4d97a4/a.txt')
+
+[ 2016-10-12T13:37:06+08:00 ] 106.120.160.109 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2016-10-12T13:37:21+08:00 ] 101.199.108.118 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000415s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000513s ]
+
+[ 2016-10-12T13:38:38+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2016-10-12T13:39:56+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/V/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: user /var/www/html/V/Application/Home/Controller/UserController.class.php 第 63 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 144 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0009s ]
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('分析|大男主剧为何总扑街？那些年被大男主剧坑过的男神们','影视项目总分析','1476250794',NULL,'115.159.205.133/V/Uploads/html/57fdccaa29764/temp.html','115.159.205.133/V/Uploads/57fdccaa29764/thumb.jpg','115.159.205.133/V/Uploads/html/57fdccaa29764/a.txt')
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('分析|大男主剧为何总扑街？那些年被大男主剧坑过的男神们','影视项目总分析','1476250794',NULL,'115.159.205.133/V/Uploads/html/57fdccaa29764/temp.html','115.159.205.133/V/Uploads/57fdccaa29764/thumb.jpg','115.159.205.133/V/Uploads/html/57fdccaa29764/a.txt')
+
+[ 2016-10-12T13:40:46+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006390s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000702s ]
+
+[ 2016-10-12T13:40:51+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004916s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2016-10-12T13:40:55+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2016-10-12T13:40:57+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2016-10-12T13:41:40+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/V/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: user /var/www/html/V/Application/Home/Controller/UserController.class.php 第 63 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 144 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0009s ]
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('深度|广电政策指引，市场左转之路','行业研究','1476250897',NULL,'115.159.205.133/V/Uploads/html/57fdcd11b8055/temp.html','115.159.205.133/V/Uploads/57fdcd11b8055/thumb.jpg','115.159.205.133/V/Uploads/html/57fdcd11b8055/a.txt')
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('深度|广电政策指引，市场左转之路','行业研究','1476250897',NULL,'115.159.205.133/V/Uploads/html/57fdcd11b8055/temp.html','115.159.205.133/V/Uploads/57fdcd11b8055/thumb.jpg','115.159.205.133/V/Uploads/html/57fdcd11b8055/a.txt')
+
+[ 2016-10-12T13:43:52+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/V/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: user /var/www/html/V/Application/Home/Controller/UserController.class.php 第 63 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 144 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0008s ]
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('人气周榜|DataWin九月第四周艺人网络影响力','艺人数据分析','1476251030',NULL,'115.159.205.133/V/Uploads/html/57fdcd96f3d1a/temp.html','115.159.205.133/V/Uploads/57fdcd96f3d1a/thumb.jpg','115.159.205.133/V/Uploads/html/57fdcd96f3d1a/a.txt')
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('人气周榜|DataWin九月第四周艺人网络影响力','艺人数据分析','1476251030',NULL,'115.159.205.133/V/Uploads/html/57fdcd96f3d1a/temp.html','115.159.205.133/V/Uploads/57fdcd96f3d1a/thumb.jpg','115.159.205.133/V/Uploads/html/57fdcd96f3d1a/a.txt')
+
+[ 2016-10-12T13:45:08+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/V/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: user /var/www/html/V/Application/Home/Controller/UserController.class.php 第 63 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 144 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0009s ]
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('一周电影市场图解【9.19-9.24】','电影数据分析','1476251101',NULL,'115.159.205.133/V/Uploads/html/57fdcddd166bf/temp.html','115.159.205.133/V/Uploads/57fdcddd166bf/thumb.jpg','115.159.205.133/V/Uploads/html/57fdcddd166bf/a.txt')
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('一周电影市场图解【9.19-9.24】','电影数据分析','1476251101',NULL,'115.159.205.133/V/Uploads/html/57fdcddd166bf/temp.html','115.159.205.133/V/Uploads/57fdcddd166bf/thumb.jpg','115.159.205.133/V/Uploads/html/57fdcddd166bf/a.txt')
+
+[ 2016-10-12T13:50:18+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/V/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: user /var/www/html/V/Application/Home/Controller/UserController.class.php 第 63 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 144 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0008s ]
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('分析|暑期过后大清点，当下最具电视剧商业价值和号召力的艺人是谁？','艺人数据分析','1476251415',NULL,'115.159.205.133/V/Uploads/html/57fdcf175db47/temp.html','115.159.205.133/V/Uploads/57fdcf175db47/thumb.jpg','115.159.205.133/V/Uploads/html/57fdcf175db47/a.txt')
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('分析|暑期过后大清点，当下最具电视剧商业价值和号召力的艺人是谁？','艺人数据分析','1476251415',NULL,'115.159.205.133/V/Uploads/html/57fdcf175db47/temp.html','115.159.205.133/V/Uploads/57fdcf175db47/thumb.jpg','115.159.205.133/V/Uploads/html/57fdcf175db47/a.txt')
+
+[ 2016-10-12T13:50:20+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006106s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000485s ]
+
+[ 2016-10-12T13:50:22+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+
+[ 2016-10-12T13:50:24+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2016-10-12T13:50:26+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000384s ]
+
+[ 2016-10-12T13:50:29+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004467s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000377s ]
+
+[ 2016-10-12T13:52:16+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/V/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: user /var/www/html/V/Application/Home/Controller/UserController.class.php 第 63 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 144 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0009s ]
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('数据|DataWin2016第39周艺人网络人气周榜','艺人数据分析','1476251536',NULL,'115.159.205.133/V/Uploads/html/57fdcf9080990/temp.html','115.159.205.133/V/Uploads/57fdcf9080990/thumb.jpg','115.159.205.133/V/Uploads/html/57fdcf9080990/a.txt')
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('数据|DataWin2016第39周艺人网络人气周榜','艺人数据分析','1476251536',NULL,'115.159.205.133/V/Uploads/html/57fdcf9080990/temp.html','115.159.205.133/V/Uploads/57fdcf9080990/thumb.jpg','115.159.205.133/V/Uploads/html/57fdcf9080990/a.txt')
+
+[ 2016-10-12T13:57:57+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/V/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: user /var/www/html/V/Application/Home/Controller/UserController.class.php 第 63 行.
+NOTIC: [2] file_get_contents(http://mmbiz.qpic.cn/mmbiz_png/LSxOecqPPiaQicvPqW6Hz0tzTs6qDYPVmpR4I4F0Cm7VBHG792CdPXSzKTo5ZxtI3kDiagAq1ibTfzv5xXK8STjXkg/0?wx_fmt=png): failed to open stream: HTTP request failed!  /var/www/html/V/Application/Home/Controller/UserController.class.php 第 83 行.
+NOTIC: [2] file_get_contents(http://mmbiz.qpic.cn/mmbiz_png/LSxOecqPPiaQicvPqW6Hz0tzTs6qDYPVmp0EIETPXXTrCeLCwibtMgNiaK8dTmAengbAsvO0iaPicRw59ic9BRjT5YDPQ/0?wx_fmt=png): failed to open stream: HTTP request failed!  /var/www/html/V/Application/Home/Controller/UserController.class.php 第 83 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 144 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0009s ]
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('影周报|一周电影市场图解【9.26-10.2】','电影数据分析','1476251720',NULL,'115.159.205.133/V/Uploads/html/57fdd048b5ceb/temp.html','115.159.205.133/V/Uploads/57fdd048b5ceb/thumb.jpg','115.159.205.133/V/Uploads/html/57fdd048b5ceb/a.txt')
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('影周报|一周电影市场图解【9.26-10.2】','电影数据分析','1476251720',NULL,'115.159.205.133/V/Uploads/html/57fdd048b5ceb/temp.html','115.159.205.133/V/Uploads/57fdd048b5ceb/thumb.jpg','115.159.205.133/V/Uploads/html/57fdd048b5ceb/a.txt')
+
+[ 2016-10-12T14:04:05+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/V/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: user /var/www/html/V/Application/Home/Controller/UserController.class.php 第 63 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 144 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0009s ]
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('月报|DataWin九月艺人影响力分析','艺人数据分析','1476252243',NULL,'115.159.205.133/V/Uploads/html/57fdd25316bab/temp.html','115.159.205.133/V/Uploads/57fdd25316bab/thumb.jpg','115.159.205.133/V/Uploads/html/57fdd25316bab/a.txt')
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('月报|DataWin九月艺人影响力分析','艺人数据分析','1476252243',NULL,'115.159.205.133/V/Uploads/html/57fdd25316bab/temp.html','115.159.205.133/V/Uploads/57fdd25316bab/thumb.jpg','115.159.205.133/V/Uploads/html/57fdd25316bab/a.txt')
+
+[ 2016-10-12T14:04:52+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/V/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: user /var/www/html/V/Application/Home/Controller/UserController.class.php 第 63 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 144 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0008s ]
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('月报|九月电影市场总结及十月市场展望','行业研究','1476252285',NULL,'115.159.205.133/V/Uploads/html/57fdd27dd5fc6/temp.html','115.159.205.133/V/Uploads/57fdd27dd5fc6/thumb.jpg','115.159.205.133/V/Uploads/html/57fdd27dd5fc6/a.txt')
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('月报|九月电影市场总结及十月市场展望','行业研究','1476252285',NULL,'115.159.205.133/V/Uploads/html/57fdd27dd5fc6/temp.html','115.159.205.133/V/Uploads/57fdd27dd5fc6/thumb.jpg','115.159.205.133/V/Uploads/html/57fdd27dd5fc6/a.txt')
+
+[ 2016-10-12T14:05:23+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/V/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: user /var/www/html/V/Application/Home/Controller/UserController.class.php 第 63 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 144 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0009s ]
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('周榜|DataWin第40周艺人网络影响力','艺人数据分析','1476252322',NULL,'115.159.205.133/V/Uploads/html/57fdd2a25aff9/temp.html','115.159.205.133/V/Uploads/57fdd2a25aff9/thumb.jpg','115.159.205.133/V/Uploads/html/57fdd2a25aff9/a.txt')
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('周榜|DataWin第40周艺人网络影响力','艺人数据分析','1476252322',NULL,'115.159.205.133/V/Uploads/html/57fdd2a25aff9/temp.html','115.159.205.133/V/Uploads/57fdd2a25aff9/thumb.jpg','115.159.205.133/V/Uploads/html/57fdd2a25aff9/a.txt')
+
+[ 2016-10-12T14:05:36+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000424s ]
+
+[ 2016-10-12T14:06:32+08:00 ] 117.136.67.20 /V/index.php/Home/User/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/V/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: user /var/www/html/V/Application/Home/Controller/UserController.class.php 第 63 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 144 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0008s ]
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('影周报|DataWin第40周电影市场图解【10.3-10.9】','电影数据分析','1476252385',NULL,'115.159.205.133/V/Uploads/html/57fdd2e15e804/temp.html','115.159.205.133/V/Uploads/57fdd2e15e804/thumb.jpg','115.159.205.133/V/Uploads/html/57fdd2e15e804/a.txt')
+ERR: 1048:Column 'user' cannot be null
+ [ SQL语句 ] : INSERT INTO `tp_upload` (`title`,`classify`,`creat_time`,`user`,`html`,`photo`,`height`) VALUES ('影周报|DataWin第40周电影市场图解【10.3-10.9】','电影数据分析','1476252385',NULL,'115.159.205.133/V/Uploads/html/57fdd2e15e804/temp.html','115.159.205.133/V/Uploads/57fdd2e15e804/thumb.jpg','115.159.205.133/V/Uploads/html/57fdd2e15e804/a.txt')
+

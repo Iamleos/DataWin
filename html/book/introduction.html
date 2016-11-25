@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://beta.gsdata.cn/rank/single?id=107562 -->
+<html lang="ZH-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>七州数据信息科技</title>
+        <meta name="keywords" content="作者排行,作家热度">
+        <meta name="description" content="七州数据信息科技，作家排行">
+        <link rel="stylesheet" href="./qizhouintro_files/style.css">
+        <link rel="stylesheet" href="./qizhouintro_files/bootstrap.min.css">
+        <link rel="stylesheet" href="./qizhouintro_files/font-awesome.min.css">
+        <link rel="stylesheet" href="./qizhouintro_files/index.css">
+
+        <script src="./qizhouintro_files/hm.js"></script><script src="./qizhouintro_files/jquery.min.js" type="text/javascript" language="javascript"></script>
+        <script src="./qizhouintro_files/bootstrap.min.js" type="text/javascript" language="javascript"></script>
+        <script src="./qizhouintro_files/global.js" type="text/javascript" language="javascript"></script>
+		<script src="./qizhouintro_files/site.js" type="text/javascript" language="javascript"></script>
+
+<!--[if lt IE 9]><script src="/themes/search_2016/js/ie8-responsive-file-warning.js"></script><![endif]-->
+		<script src="./qizhouintro_files/ie-emulation-modes-warning.js"></script>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="/themes/search_2016/js/html5shiv.min.js"></script>
+          <script src="/themes/search_2016/js/respond.min.js"></script>
+        <![endif]-->
+		<script type="text/javascript">
+	var xmlHttp;
+	function createXMLHttpRequest()
+	{
+		if(window.ActiveXObject)
+		{
+			xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		else if(window.XMLHttpRequest)
+		{
+			xmlHttp = new XMLHttpRequest();
+		}
+	}
+	function Trim(str)
+         { 
+             return str.replace(/(^\s*)|(\s*$)/g, ""); 
+     }
+	function startRequest()
+	{
+		createXMLHttpRequest();
+		try
+		{   var param=(location.search).substr(1);
+			var strs=param.split("&");
+			var authorname=decodeURI(strs[0].split("=")[1]);
+		    //window.alert(typeof(authorname));
+		    var url="introduction.php?author="+Trim(authorname);
+			//window.alert(url);
+			xmlHttp.onreadystatechange = handleStateChange;
+			xmlHttp.open("GET",url, true);
+			xmlHttp.send(null);
+		}
+		catch(exception)
+		{
+			alert("xmlHttp Fail");
+		}
+	}
+	function handleStateChange()
+	{
+		if(xmlHttp.readyState == 4)
+		{
+			if (xmlHttp.status == 200 || xmlHttp.status == 0)
+			{
+					var result = xmlHttp.responseText;
+					//window.alert(result);
+					var json = eval("("+ result +")");
+					//alert(json.programmers[0].firstName);//读取json数据
+					//alert(json.sex);
+					//var jsonstr=eval(result);
+					//var len=jsonstr.length;
+					//window.alert(jsonstr);
+					//window.alert(json[0]);
+					//window.alter()
+					//window.alert(json.picture);
+					
+					var data=document.getElementById("authorInfo");
+					
+					str="<img  src='"+json.picture+"' width='100' align='left' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+json.authorinfo;
+					
+					var authordata=document.getElementById("authorData");
+					var authorname=document.getElementById("authorname")
+					var param=(location.search).substr(1);
+			        var strs=param.split("&");
+					var author=decodeURI(strs[0].split("=")[1]);
+					var weixin=decodeURI(strs[1].split("=")[1]);
+					var weizs=decodeURI(strs[2].split("=")[1]);
+					var tieba=decodeURI(strs[3].split("=")[1]);
+					var search=decodeURI(strs[4].split("=")[1]);
+					var meiti=decodeURI(strs[5].split("=")[1]);
+					stb="<tr><td width='33%'>微信指数："+weixin+"</td></tr><tr><td width='33%'>微博指数："+weizs+"</td></tr><tr><td width='33%'>贴吧指数："+tieba+"</td></tr><tr><td width='33%'>搜索指数："+search+"</td></tr><tr><td width='33%'>媒体指数："+meiti+"</td></tr>"
+					data.innerHTML=str;
+					authorData.innerHTML=stb;
+					authorname.innerHTML=author;
+			}
+		}
+	}
+</script>
+    <link href="./qizhouintro_files/bdsstyle.css" rel="stylesheet" type="text/css"><script src="./qizhouintro_files/logger.js"></script>
+
+
+		<body style="width: 1522px;" onload="startRequest()">
+        <nav class="navigation">
+			<div class="container">
+				<ul class="nav navbar-nav nav-first">
+					<li><a href="http://115.28.209.109" target="_blank">首页</a></li>
+                    <li id="removebd"><a href="http://115.28.209.109" target="_blank">榜单</a></li>
+                </ul>
+						
+					
+            </div>
+        </nav>
+        <!-- end of 导航 -->
+
+<div id="content">
+	        <!--搜索、轮播部分-->
+        <header class="main">
+        	<!--轮播-->
+            <div class="main_visual">
+                <div class="main_image">
+                    <ul>
+                        <li><span class="img_3"><img src="./qizhouintro_files/banner01.jpg"></span></li>
+                    </ul>
+                </div>
+            </div>
+            <!--轮播 结束-->
+            
+            <!--搜索框-->
+            <div class="bs-docs-header">
+            	<div class="container search">
+                	<div class="input-group">
+						<span class="fa fa-search"></span>
+		                        <input class="form-control" id="search-input" type="text" placeholder="请输作者" value="">
+                            <a class="btn btn-search" id="search-btn">搜  索</a>
+
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <!--end of 搜索框-->
+	
+        </header>
+        <!--end of 搜索、轮播部分--><script>
+	
+</script>
+       <div class="container bs-docs-container">
+        	<div class="row">
+            
+                <!--右侧-->
+                <div class="col-md-12">
+                
+                    <!--文章列表-->
+                    <div class="public-details border-tp clr">
+                    	<h2 class="number-title" id="authorname">
+                            
+                        </h2>
+                        <div id="authorInfo">
+						
+						</div>
+						
+                        
+                    </div>
+                    
+                   
+                  
+                </div>
+            </div>
+        </div>
+		<div class="container bs-docs-container">
+        	<div class="row">
+            
+                <!--右侧-->
+                <div class="col-md-12">
+                
+                    <!--文章列表-->
+                    <div class="public-details border-tp clr">
+                    	<table id="authorData">
+							
+						</table>
+                        
+                    </div>
+                    
+                   
+                  
+                </div>
+            </div>
+        </div>
+<script id="recommend-tpl" type="text/x-jsrender" data-jsv-tmpl="_0">
+
+<script data="type=tools" id="bdshare_js" type="text/javascript" src="./qizhouintro_files/bds_s_v2.js"></script>
+
+</div><!-- content -->
+	
+	<div style="clear:both"></div>
+	<!--底部-->
+	<footer class="bs-docs-footer">
+		<div class="container">
+			<div class="bs-docs-one footer-cn">
+				<h4>重庆七州数据信息科技有限公司 </h4>
+				<p>地址：重庆市沙坪坝区沙正街174号</p>
+				<p>热线：400-820-8820</p>
+				<p>电话：023-87654321</p>
+				<p>邮箱：xujunrt@163.com</p>
+			</div>
+			<div class="bs-docs-two footer-cn">
+				<ul>
+					<li>
+						<i><img src="./qizhouintro_files/qr.jpg"></i>
+						<p>qizhou官方微信</p>
+					</li>
+					<li>
+						<i><img src="./qizhouintro_files/qr2.jpg"></i>
+						<p>qizhou小徐</p>
+					</li>
+				</ul>
+			</div>
+			<div class="bs-docs-three footer-cn">
+				<i><img src="./qizhouintro_files/phone.png"></i>
+				<ul>
+					<li>服务热线：400-820-8820</li>
+					<li>服务时间：09:00-18:00</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<div class="footer">
+		<p>
+			<span> 版权所有&copy;&nbsp;&nbsp;七州数据信息科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;渝ICP备01234567号</span>
+			<font>
+			<i class="fa fa-phone-square"></i>
+			<span>400-820-8820</span>
+			<i class="fa fa-wechat"></i>
+			<span class="qrCode">
+				qizhou-小徐（qizhoucn）
+				<i class="fa fa-qrcode"></i>
+				<img src="./qizhouintro_files/qb.png" class="qrImg">
+			</span>
+
+			<i class="fa fa-envelope"></i>
+			<span>xujunrt@163.com</span>
+			<i class="fa fa-qq"></i>
+			<span>qizhou-小徐：13800138000</span>
+			</font>
+		</p>
+	</div>
+
+    <!--end of底部-->
+<script type="text/javascript" src="./qizhouintro_files/jsrender.js"></script>
+<script type="text/javascript" src="./qizhouintro_files/echarts.js"></script>
+<script type="text/javascript" src="./qizhouintro_files/rank.js"></script>
+
+
+</body></html>

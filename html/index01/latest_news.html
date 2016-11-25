@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>德塔文大数据-最新消息</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+<link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png" />
+<link rel="stylesheet" href="./css/full_screen.css" type="text/css" />
+<link rel="stylesheet" href="./css/public.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/morningread.css" media="screen" />
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/mouse_over.js"></script>
+<script type="text/javascript" src="js/request.js"></script>
+<script type="text/javascript" src="js/frameheight.js"></script>
+
+<script type="text/javascript" >
+
+	function link_paper(height,html){
+		
+		$("#iframepage").attr({src:html});
+		$("#iframepage").attr({height:height});
+		//alert(html);
+		//alert(height);
+		
+		
+	}
+	function get_content(){
+		
+		$.get("./php/index_report.php", function(data){
+  			var json=JSON.parse(data);
+			var html="http://"+json.news['data'][0].html;
+			var height=json.news['data'][0].height;
+			//alert(height+"+++");
+			//var height=4500;
+			if (html!== null && html!== undefined &&  html!== '') {
+				//$.get("./php/write_file.php", { url:html} );
+				//alert(html);
+　				$("#iframepage").attr({src:html});
+				$("#iframepage").attr({height:height});
+				//document.getElementById("iframepage").style.display="block";
+				//alert(history.length);
+				
+
+　　			}else{
+				$("#iframepage").attr({src:"content.html"});
+				
+
+			}
+			var len=json.news['data'].length;
+			for(var i=0;i<len;i++)
+			{
+				var title=json.news['data'][i].title;
+				
+				var imgpath ="http://"+json.news['data'][i].photo;
+				
+				var htmlurl="http://"+json.news['data'][i].html;
+				var right_height=json.news['data'][i].height;
+				
+				//var right_height=4300;
+				$("#rightlist").append("<li><div class='chendu_paper'><div class='paper_img'><img src='"+imgpath+"' style='width:100%;'/></div><div class='paper_description'><a class='title' onclick='link_paper("+right_height+",&quot;"+htmlurl+"&quot;)'>"+title+"</a></div></div><div style='text-align:center;clear:both;'></div></li>");
+				
+			}
+			
+		});
+		//alert(url);
+	}
+	
+	
+</script>
+
+</head>
+<body  onload="get_content()">
+	<div id="header" style="background:#0066CC"> <img id ="header_logo" src="./images/header_logo.png"/>
+		<ul>
+			<li class="header_li"><a href="morning_read.html" target="_blank" style="color: #ffffff">今日晨读</a></li>
+			
+			<li class="header_li"  onmouseover="displaydiv(this)" onmouseout="hidediv(this)" >数据报告<div class="data">
+					<div class="list_item"><a href="artist_data_analysis.html" target="_blank" style="color: #ffffff">艺人数据分析</a></div>
+					<div class="list_item"><a href="film_data_analysis.html" target="_blank" style="color: #ffffff">电影数据分析</a></div>
+				</div>
+			</li>
+			<!--数据报告与<div>之间不能有空格，否则不能正确的提取文字-->
+			<li class="header_li" onmouseover="displaydiv(this)" onmouseout="hidediv(this)">项目专栏<div class="project">
+					<div class="list_item"><a href="film_project_analysis.html" target="_blank" style="color: #ffffff">影视项目分析</a></div>
+					<div class="list_item"><a href="industry_research.html" target="_blank" style="color: #ffffff">行业研究</a></div>
+				</div>
+			</li>
+			<li class="header_li" onmouseover="displaydiv(this)" onmouseout="hidediv(this)" style="color:#FFCC33;">行业资讯<div class="news">
+					<div class="list_item"><a href="monthly_summary.html" target="_blank" style="color: #ffffff">月资讯总结</a></div>
+					<div class="list_item"><a href="latest_news.html" target="_blank" style="color: #ffffff">最新消息</a></div>
+				</div>
+			</li>
+			<li class="header_li">关于我们</li>
+		</ul>
+		<div id="search">
+			<input type="text" id="search_type"  />
+			<img  src="./images/search.png"/> </div>
+		<div id= "vip"> <a href="#">VIP内容入口</a> </div>
+	</div>
+	<div class="blank" style="width:100%;height:60px;"></div>
+	<div class="main">
+		
+		<div class="paper">
+			<iframe  id="iframepage" name="iframepage" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>
+			<script type="text/javascript">
+				
+				
+				$(function () {
+				
+				//document.getElementById("iframepage").src="";
+				$("#iframepage").attr({src:"content.html"});
+				
+				var iframe=document.getElementById("iframepage");//Url地址
+				var h=iframe.contentDocument.documentElement.scrollHeight;
+				document.getElementById("iframepage").height = h+ "px";
+				//alert(h);
+				
+				})
+				
+			</script>
+		</div>
+		<div class="relative_paper">
+			<div class="more">
+				<div class="more_left">相关资讯</div>
+				<div  class="more_right">更多&gt;</div>
+			</div>
+			<div style="text-align:center;clear:both;"></div>
+			<div style=" background:#f4f4f4; width:100%;height:2px" ></div>
+			<div class="more_paper">
+				<ul id="rightlist">
+					
+					
+
+				</ul>
+			</div>
+		</div>
+		
+		<div style="text-align:center;clear:both;"></div>
+	</div>
+	<div style="text-align:center;clear:both;"></div>
+	
+	<iframe id="footer" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" src="footer.html" ></iframe>
+	
+	
+</body>
+</html>

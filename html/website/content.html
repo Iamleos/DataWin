@@ -1,0 +1,632 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+
+        <script type="text/javascript">
+            window.logs = {
+                pagetime: {}
+            };
+            window.logs.pagetime['html_begin'] = (+new Date());
+        </script>
+        
+
+<script type="text/javascript"> 
+
+    var page_begintime = (+new Date());
+
+    var biz = ""||"MzIwMDMzNzcyNQ==";
+    var sn = "" || ""|| "718514d15d6f962726c02bc4f9c9182d";
+    var mid = "" || ""|| "2650620358";
+    var idx = "" || "" || "1";
+
+    //辟谣需求
+    var is_rumor = ""*1;
+    var norumor = ""*1;
+    if (!!is_rumor&&!norumor){
+      if (!document.referrer || document.referrer.indexOf("mp.weixin.qq.com/mp/rumor") == -1){
+        location.href = "http://mp.weixin.qq.com/mp/rumor?action=info&__biz=" + biz + "&mid=" + mid + "&idx=" + idx + "&sn=" + sn + "#wechat_redirect";
+      }
+    }
+
+    //原创需求，需要跳转到中间页
+    /*
+    var copyrightInfo = {
+        display_source : ""*1,
+        nocopyrightsource : ""*1
+    };
+    if (!!copyrightInfo.display_source&&!copyrightInfo.nocopyrightsource){
+      if (!document.referrer || document.referrer.indexOf("mp.weixin.qq.com/mp/reprint") == -1){
+        location.href = "http://mp.weixin.qq.com/mp/reprint?action=info&__biz=" + biz + "&mid=" + mid + "&idx=" + idx + "&sn=" + sn + "#wechat_redirect";
+      }
+    }*/
+</script>
+<script type="text/javascript">
+var MutationObserver = window.WebKitMutationObserver||window.MutationObserver||window.MozMutationObserver;
+var isDangerSrc = function(src) {
+    if(src) {
+        var host = src.match(/http(?:s)?:\/\/([^\/]+?)(\/|$)/);
+        if(host && !/qq\.com(\:8080)?$/.test(host[1]) && !/weishi\.com$/.test(host[1])) {
+            return true;
+        }
+    }
+    return false;
+}
+var ishttp = location.href.indexOf("http://")==0;
+if (ishttp && typeof MutationObserver === 'function' && location.host == 'mp.weixin.qq.com') {
+    window.__observer_data = {count:0, exec_time: 0, list:[]};
+    window.__observer = new MutationObserver(function(mutations) {
+        // 统计触发的次数
+        window.__observer_data.count++;
+        var begin = new Date(), deleteNodes = [];
+        mutations.forEach(function(mutation) {
+            var nodes = mutation.addedNodes;
+            for (var i = 0; i < nodes.length; i++) {
+                var node = nodes[i];
+
+                if (node.tagName === 'SCRIPT') {
+                    var scriptSrc = node.src;
+                    if(isDangerSrc(scriptSrc)) {
+                        window.__observer_data.list.push(scriptSrc);
+                        deleteNodes.push(node);
+                    }
+                
+                }
+            }
+        });
+        for(var i=0; i<deleteNodes.length; i++) {
+            var node = deleteNodes[i];
+            node.parentNode.removeChild(node);
+        }
+        window.__observer_data.exec_time += (new Date() - begin);
+    });
+    window.__observer.observe(document, {subtree: true, childList: true});
+}
+(function() {
+    if (Math.random()<0.01 && ishttp && HTMLScriptElement.prototype.__lookupSetter__ && typeof Object.defineProperty !== "undefined") {
+        window.__danger_src = {xmlhttprequest:[], script_src: [], script_setAttribute: []};
+        var t = "$"+Math.random();
+        /*
+        if (typeof XMLHttpRequest !== "undefined") {
+            // 加xmlhttprequest外域请求监控
+            var ajax_open_method = "ajax_open"+t;
+            Object.defineProperty(XMLHttpRequest.prototype, ajax_open_method, {
+                value: XMLHttpRequest.prototype.open,
+                enumerable: false
+            });
+            XMLHttpRequest.prototype.open = function(method, url, async, user, pass) {
+                if (isDangerSrc(url)) {
+                    // console.log("ajax_open:"+url);
+                    window.__danger_src.xmlhttprequest.push(url);
+                }
+                this[ajax_open_method](method, url, async, user, pass);
+            };
+        }
+        */
+        // script.src
+        HTMLScriptElement.prototype.__old_method_script_src = HTMLScriptElement.prototype.__lookupSetter__ ('src');
+        HTMLScriptElement.prototype.__defineSetter__ ('src', function(url) {
+            if (url && isDangerSrc(url)) {
+                // console.log("src:"+url);
+                window.__danger_src.script_src.push(url);
+            }
+            this.__old_method_script_src(url);
+        });
+        var element_setAttribute_method = "element_setAttribute"+t;
+        Object.defineProperty(Element.prototype, element_setAttribute_method, {
+            value: Element.prototype.setAttribute,
+            enumerable: false
+        });
+        Element.prototype.setAttribute = function(name, url) {
+            if (this.tagName == 'SCRIPT' && name == 'src' && isDangerSrc(url)) {
+                // console.log("setAttr:"+url);
+                window.__danger_src.script_setAttribute.push(url);
+            }
+            this[element_setAttribute_method](name, url);
+        };
+    }
+})();
+</script>
+
+        <link rel="dns-prefetch" href="//res.wx.qq.com">
+<link rel="dns-prefetch" href="//mmbiz.qpic.cn">
+<link rel="shortcut icon" type="image/x-icon" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+<script type="text/javascript">
+    String.prototype.html = function(encode) {
+        var replace =["&#39;", "'", "&quot;", '"', "&nbsp;", " ", "&gt;", ">", "&lt;", "<", "&amp;", "&", "&yen;", "¥"];
+        if (encode) {
+            replace.reverse();
+        }
+        for (var i=0,str=this;i< replace.length;i+= 2) {
+             str=str.replace(new RegExp(replace[i],'g'),replace[i+1]);
+        }
+        return str;
+    };
+
+    window.isInWeixinApp = function() {
+        return /MicroMessenger/.test(navigator.userAgent);
+    };
+
+    window.getQueryFromURL = function(url) {
+        url = url || 'http://qq.com/s?a=b#rd'; 
+        var query = url.split('?')[1].split('#')[0].split('&'),
+            params = {};
+        for (var i=0; i<query.length; i++) {
+            var arg = query[i].split('=');
+            params[arg[0]] = arg[1];
+        }
+        if (params['pass_ticket']) {
+        	params['pass_ticket'] = encodeURIComponent(params['pass_ticket'].html(false).html(false).replace(/\s/g,"+"));
+        }
+        return params;
+    };
+
+    (function() {
+	    var params = getQueryFromURL(location.href);
+        window.uin = params['uin'] || '';
+        window.key = params['key'] || '';
+        window.wxtoken = params['wxtoken'] || '';
+        window.pass_ticket = params['pass_ticket'] || '';
+    })();
+
+</script>
+
+        <title>深度|李易峰吴亦凡相继舆论危机，小鲜肉经济该反省了吗？</title>
+        
+<link rel="stylesheet" type="text/css" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve2e801c.css">
+<style>
+     
+    </style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_pc2c9cd6.css">
+<![endif]-->
+<script type="text/javascript">
+    document.domain = "qq.com";
+</script>
+
+    </head>
+    <body id="activity-detail" class="zh_CN sougou_body" ontouchstart="">
+        
+    <script type="text/javascript">
+        var write_sceen_time = (+new Date());
+    </script>
+    
+    <div id="js_cmt_mine" class="discuss_container editing access" style="display:none;">
+        <div class="discuss_container_inner">
+            <h2 class="rich_media_title">深度|李易峰吴亦凡相继舆论危机，小鲜肉经济该反省了吗？</h2>
+            <span id="log"></span>
+            <div class="frm_textarea_box_wrp">
+                <span class="frm_textarea_box">
+                    <textarea id="js_cmt_input" class="frm_textarea" placeholder="留言将由公众号筛选后显示，对所有人可见。"></textarea>
+                    <div class="emotion_tool">
+                        <span class="emotion_switch" style="display:none;"></span>
+                        <span id="js_emotion_switch" class="pic_emotion_switch_wrp">
+                            <img class="pic_default" src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch.2x278965.png" alt="">
+                            <img class="pic_active" src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch_active.2x278965.png" alt="">
+                        </span>
+                        <div class="emotion_panel" id="js_emotion_panel">
+                            <span class="emotion_panel_arrow_wrp" id="js_emotion_panel_arrow_wrp">
+                                <i class="emotion_panel_arrow arrow_out"></i>
+                                <i class="emotion_panel_arrow arrow_in"></i>
+                            </span>
+                            <div class="emotion_list_wrp" id="js_slide_wrapper">
+                                
+                                
+                            </div>
+                            <ul class="emotion_navs" id="js_navbar">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="discuss_btn_wrp"><a id="js_cmt_submit" class="btn btn_primary btn_discuss btn_disabled" href="javascript:;">提交</a></div>
+            <div class="discuss_list_wrp" style="display:none">
+                <div class="rich_tips with_line title_tips discuss_title_line">
+                    <span class="tips">我的留言</span>
+                </div>
+                <ul class="discuss_list" id="js_cmt_mylist"></ul>
+            </div>
+            <div class="rich_tips tips_global loading_tips" id="js_mycmt_loading">
+                <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif" class="rich_icon icon_loading_white" alt="">
+                <span class="tips">加载中</span>
+            </div>
+            <div class="wx_poptips" id="js_cmt_toast" style="display:none;">
+                <img alt="" class="icon_toast" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyMTUxMzkxZS1jYWVhLTRmZTMtYTY2NS0xNTRkNDJiOGQyMWIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTA3QzM2RTg3N0UwMTFFNEIzQURGMTQzNzQzMDAxQTUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTA3QzM2RTc3N0UwMTFFNEIzQURGMTQzNzQzMDAxQTUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NWMyOGVjZTMtNzllZS00ODlhLWIxZTYtYzNmM2RjNzg2YjI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjIxNTEzOTFlLWNhZWEtNGZlMy1hNjY1LTE1NGQ0MmI4ZDIxYiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmvxj1gAAAVrSURBVHja7J15rF1TFMbXk74q1ZKHGlMkJVIhIgg1FH+YEpEQJCKmGBpThRoSs5jVVNrSQUvEEENIhGiiNf9BiERICCFIRbUiDa2qvudbOetF3Tzv7XWGffa55/uS7593977n3vO7e5+199p7v56BgQGh0tcmvAUERREUQVEERREUQVEERREUQVEERREUQVEERREUQVEERREUQVEERVAUQVEERVAUQbVYk+HdvZVG8b5F0xj4RvhouB+eCy8KrdzDJc1RtAX8ILxvx98V1GyCSkN98Cx4z/95/Wn4fj6j6tUEeN4wkFSnw1MJqj5NhBfAuwaUHREUg4lqNMmePVsHll/HFhVfe1t3FwpJI8DXCCquDrCWNN4B6Tb4M3Z98aTPmTvh0YHl18PXw29yZiKejoPvcUD6E74yFBJbVDk6Bb7K8aP/Hb4c/tRzEYIqprPhSxzlf4Uvhb/0Xoig8qnHAJ3lqPMzfDH8XZ4LEpRf2sVdA5/sqPO9Qfop70UJyn+/boaPddT5yrq7VUUvTIVJI7q74MMddXR8NB1eXcYvhBpZm0s2w72/o86HFoKvLau/pYaXzjLMdUJ6y0LwtWV9CIIaXtvA8+G9HHV03u5q+K+yH47U0NoRngPv7KjzHDwTLj0bS1BDazfJJlcnOOostC6ysnCT+q80G/sIvFVgeW09D8FPVT0uoP7VfvAD8NjA8pqmuAN+OcYAjso0RbIZ8DGB5TVNcRO8JMaHY9SXSdfa3eeANJimWBLrA7JFiZwIXye+NMUV8CcxP2SRFjXefok7NRjSGZJlWUPvw2/wtNiQirSoXWyMsR28wR7AzzYM0oXw+Y7yK+CLJGeaoqjyrJSdZJD6Ov4+z5y6NJc0Az7NUecHydIUy+v60KNyQHoM3nKI1y7YCFiq0i7uBvgER52vDdKqWn9djhY1Dn4G3n6Ecqm2rF74dvgoR53S0hQxW9RJAZAGW5bSn58QJA27dQ7uIEedjywEX5NKVxCqsY6y+qA+LxFI4+yZ6oH0trWkNan80jygtIUsc5SflgAsDXgehfdx1KkkTRE76tN+Xue2jnTU0Ru1oIbvpt30bBtKhOp5yaaRkts0lic8V1i6dPcIRx2d/l8Y8XtNNEg7OOo8bl1kmmOKnDsO88CaYzejau0hWZqiL7C83oCH4SeTHvwV2BqqsHRVztSEYOmWF80NeXZT6Hd4KflResE9vCnBOlCyGfDNAstHTVPUDWoQ1t3iW+9WNizvlhfd4aerXd+ThqiMfNR6+9LvOOro5OY5JX2H4+F7HZD+kGzlamMgldWiirQsjcwWFbjmqZJteekJLK9pisvgL6RhKvuciZiwzrWWGapfrPy30kBVcSBIrw0aD3PU0XB6cehntq7rTMf7/2iQlktDVdXJLXlg6VjmiYBn6rWSTRCH6hvJ0hQrpcGq8oidsmHpTP8t8DGO9/vcWt9qabiqPgup1yKyQwvC2tSefZ73SSpNkUJ4PlLorlHZ+446nc8f3fIyywlJhwrTuwVSjBa1ccvSxN0hjjoK5xVrYZMd9V6XbFfgBukixTwGLg8sDam3dZR/wZ6L/dJlin1en8LS+bgpFbz3Ygvzu1J1HKxYNqxGpCmaCEo12rrBorD6LRp8UbpcdR5VWhTW35KlKd6QFqjuM2XzwlpnMxTvSkuUwuG/Xlg6NtPjbT6WFimF/VG6LEvXgn8QGDjMbBukVECFwhpoS+CQatfX2Q1q6H7wENHdrfCr0lKleEB9JyxNneus+VJpsVL9TwI6W65LovWIGl3KtVJaLv7LBwYTFEERFEVQFEERFEVQFEERFEVQFEERFEVQFEERFEVQFEERFFWq/hFgADUMN4RzT6/OAAAAAElFTkSuQmCC">
+                <p class="toast_content">已留言</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="js_article" class="rich_media">
+        
+        <div id="js_top_ad_area" class="top_banner">
+ 
+        </div>
+                
+
+        <div class="rich_media_inner">
+            <div id="page-content">
+                <div id="img-content" class="rich_media_area_primary">
+                    <h2 class="rich_media_title" id="activity-name">
+                        深度|李易峰吴亦凡相继舆论危机，小鲜肉经济该反省了吗？ 
+                    </h2>
+                    <div class="rich_media_meta_list">
+                                                <span id="copyright_logo" class="rich_media_meta meta_original_tag">原创</span>
+                        						                        <em id="post-date" class="rich_media_meta rich_media_meta_text">2016-06-20</em>
+
+                                                <em class="rich_media_meta rich_media_meta_text">DataWin智库</em>
+                                                <a class="rich_media_meta rich_media_meta_link rich_media_meta_nickname" href="javascript:void(0);" id="post-user">影视大数据</a>
+                        <span class="rich_media_meta rich_media_meta_text rich_media_meta_nickname">影视大数据</span>
+
+                        <div id="js_profile_qrcode" class="profile_container" style="display:none;">
+                            <div class="profile_inner">
+                                <strong class="profile_nickname">影视大数据</strong>
+                                <img class="profile_avatar" id="js_profile_qrcode_img" src="" alt="">
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">微信号</label>
+                                <span class="profile_meta_value">ysdsju</span>
+                                </p>
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">功能介绍</label>
+                                <span class="profile_meta_value">影视数据分析评价，微博号@DataWin影视大数据</span>
+                                </p>
+                                
+                            </div>
+                            <span class="profile_arrow_wrp" id="js_profile_arrow_wrp">
+                                <i class="profile_arrow arrow_out"></i>
+                                <i class="profile_arrow arrow_in"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                                                            
+                                                            
+                    
+                    <div class="rich_media_content " id="js_content">
+                        
+
+                        
+                        <section style="box-sizing: border-box; background-color: rgb(255, 255, 255);"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;">近期娱乐圈最轰动的新闻，大概是李易峰的车祸肇事，以及吴亦凡的疑似“约炮门”事件。两个新闻争相发酵，引发圈内热议无数，粉丝心碎一地。</section><section style="box-sizing: border-box;">&nbsp;</section><p style="box-sizing: border-box;">“小鲜肉”这个流行了一段时间的词语，似乎渐渐被人等同于“有颜没演技，有青春没技能，有粉丝没持续力”，而随着两位鲜肉<strong>或真或假</strong>一波一波的负面新闻，一时间“小鲜肉”似乎成了青年男艺人们人人甩锅、避之不及的负面形容。</p><p style="box-sizing: border-box;"><br  /></p></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center;  box-sizing: border-box; "><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB0lKIdjQX0TkC3ljicibvkW78mGn3uQHhO4PqqofhmfonhDLezaUz9UZrHnjTGAL1BVnUsXH1PXHtKg/0?wx_fmt=jpeg" data-ratio="0.5323741007194245" data-w="" style="width: 100%; height: auto;"  /><br  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: justify; box-sizing: border-box;"><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">有大佬感慨，现在的影视经济，已经被大IP、小鲜肉两头捆绑，走向畸形发展。如今大IP的收益率乱象粗显，小鲜肉对影视产业的拉动效应似乎也存疑了。尤其是李易峰、吴亦凡这样的鲜肉领头羊相继闹出舆论危机之后，更让人对以“人设、颜值、青春”取胜的小鲜肉经济产生困惑：</p><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;"><span style="color: rgb(72, 198, 94); box-sizing: border-box;">舆论危机是偶然还是必然？小鲜肉经济该反省吗？</span></strong></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;"><span style="color: rgb(72, 198, 94); box-sizing: border-box;">两连击之后，85-95青年男艺人的走势是否会发生显著变化？</span></strong></section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin: 0.5em 0px; text-align: center;  box-sizing: border-box; "><section class="" style="display: inline-block; border-radius: 5px; line-height: 2.3; font-size: 20.8px; color: rgb(255, 255, 255); width: 100%; box-sizing: border-box; background-color: rgb(72, 198, 94);"><section style="box-sizing: border-box;">一、以人设驱动的经济，出事是必然</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><p style="box-sizing: border-box;">也许是受到“标签化商业推广更高效”这个理念的影响，目前，国内的小鲜肉经济似乎有个趋势——艺人的真实才艺、品行、爱好都在其次，更需要服务于经纪团队根据市场需求设计的人设，所以，无论艺人私下是个怎样的人，台面上的他几乎是个千篇一律的“阳光正能量偶像、关爱社会、政治正确、暖男、高富帅”，顶多在细节上有少许区分，比如也许他是个猫系男，也许他是个狗系男，高冷、软萌、逗比、学长、邻家、霸道总裁，来来回回不外乎就是这些。</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">比如李易峰的人设是“根正苗红李政委”：</p><p style="box-sizing: border-box;"><br  /></p></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center;  box-sizing: border-box; "><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB0lKIdjQX0TkC3ljicibvkW78bLueXREQccfA7ltu61rzSJJ5k1jDd89EtJ4shMnVsBNRA3f6AXgqUA/0?wx_fmt=jpeg" data-ratio="0.8561151079136691" data-w="" style="width: 100%; height: auto;"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: justify; box-sizing: border-box;"><p style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></p><p style="box-sizing: border-box;"><span style="line-height: 25.6px; text-align: justify;  background-color: rgb(255, 255, 255);">吴亦凡的人设是“高富帅清纯上进的学长”：</span></p><p style="box-sizing: border-box;"><span style="line-height: 25.6px; text-align: justify;  background-color: rgb(255, 255, 255);"><br  /></span></p><p style="box-sizing: border-box; text-align: center;"><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB0lKIdjQX0TkC3ljicibvkW78ibyNEFD2aouaOe2zX6ylXpkYv1eMazhn780aasUGCGAIqIpuS7Ihh3Q/0?wx_fmt=jpeg" data-ratio="1.235611510791367" data-w="" style="line-height: 1.6; white-space: normal; width: 100%; height: auto;"  /><span style="line-height: 25.6px; text-align: justify;  background-color: rgb(255, 255, 255);"><br  /></span></p><p style="box-sizing: border-box; text-align: center;"><br  /></p><p style="box-sizing: border-box;"><span style="line-height: 25.6px; text-align: justify;  background-color: rgb(255, 255, 255);">而最近两人遇到的信任危机，正是出在“根正苗红”、“清纯上进”两个关键性人设崩塌上面。</span></p><p style="box-sizing: border-box;"><span style="line-height: 25.6px; text-align: justify;  background-color: rgb(255, 255, 255);"><br  /></span></p><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">无论事件性质轻重，李易峰“车祸肇事逃逸”这件事，很难再用上“根正苗红”的设定；</span><span style="line-height: 1.6;">而在吴亦凡“约炮门”遭遇频繁爆料之后，尽管团队否认、声称要追究造谣者法律责任，但迟钝的危机公关造成的负面印象，也很难让网民把吴亦凡和“清纯”挂钩了。</span></section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: justify; box-sizing: border-box;"><p style="box-sizing: border-box;"><strong style="color: rgb(72, 198, 94); white-space: pre-wrap; line-height: 1.6; box-sizing: border-box;">且不论具体两件事的程度谁轻谁重、真实度和网上法律讨论的严谨程度，李和吴遇到的人设危机，事实上暴露出了粉丝经济的短板：&nbsp;艺人的个性被淹没在粉丝经济的市场需求适配之下，粉丝们购买的不是真实的艺人，而是她们臆想中“认为是”、“应该是”、“必须是”的人设。</strong></p><p style="box-sizing: border-box;"><strong style="color: rgb(72, 198, 94); white-space: pre-wrap; line-height: 1.6; box-sizing: border-box;"><br  /></strong></p><p style="box-sizing: border-box;">这似乎很精辟地诠释了“偶像”的定义，承载和消费的是少女梦的想象。年轻的艺人们在偶像的标签下得到极大的经济效益，但也制约了真实的专业成长，在小鲜肉经济的威力下，小鲜肉成了公司事实上的最大资源池和利润点，公司和团队甚至越来越难以管束小鲜肉的私人生活，让人设与真实之间极容易产生崩离。</p><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;">DataWin曾经在2015年发文称，上位和过气中的小鲜肉，飞驰如电的青春，所有的逼格都将打碎，所有的神像都成尘埃，小鲜肉们，除了青春，还是只有青春。现在看来，除了青春，还有人设，青春来自小鲜肉自身的年龄资源，人设则来自经纪公司的市场化运营。但青春固然不可久，人设也容易崩，小鲜肉经济的两极事实上处于危险平衡之中。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin: 0.5em 0px; text-align: center;  box-sizing: border-box; "><section class="" style="display: inline-block; border-radius: 5px; line-height: 2.3; font-size: 20.8px; color: rgb(255, 255, 255); width: 100%; box-sizing: border-box; background-color: rgb(72, 198, 94);"><section style="box-sizing: border-box;">二、李易峰和吴亦凡还能战否？<span style="line-height: 2.3; box-sizing: border-box;"></span></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;">李易峰和吴亦凡，作为85后和90后偶像艺人的两位领军人物，在负面事件之后，到底还能不能再战，是当前市场聚焦的问题。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin-top: 10px; margin-bottom: 10px; text-align: center;  box-sizing: border-box; "><section class="" style="display: inline-block; box-sizing: border-box;"><section style="width: 2.6em; height: 2.6em; display: inline-block; vertical-align: middle; line-height: 2.6em; border-radius: 50%; box-sizing: border-box; background-color: rgb(72, 198, 94);"><section style="width: 1.8em; height: 1.8em; line-height: 1.8em; border-radius: 50%; margin: 0.36em 0px 0.35em 0.44em; box-sizing: border-box; background-color: rgb(255, 255, 255);"><section class="" style="width: 100%; height: 100%; box-sizing: border-box;"><section style="box-sizing: border-box;">1</section></section></section></section><section style="margin: -0.5em auto 0.3em; width: 0px; border-top-width: 1.1em; border-top-style: solid; border-top-color: rgb(72, 198, 94); border-left-width: 1em !important; border-left-style: solid !important; border-left-color: transparent !important; border-right-width: 1.12em !important; border-right-style: solid !important; border-right-color: transparent !important; box-sizing: border-box;"></section><section class="" style="border-top-color: rgb(72, 198, 94); display: inline-block; font-size: 20.8px; border-top-width: 2px; border-top-style: solid; padding: 1px 5px 0px; box-sizing: border-box;"><section style="box-sizing: border-box;">危机中的李易峰</section></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box; text-align: left;"><p style="text-align: center;"><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB0lKIdjQX0TkC3ljicibvkW785JP7PHCuOOBzDfPglOicyVIRibN9B6R7Xibuib8AZGc93YSagtyTVbnAbQ/0?wx_fmt=jpeg" data-ratio="1.2877697841726619" data-w="" style="width: 100%; height: auto;"  /></p><p><br  /></p><p>李易峰车祸后身陷舆情危机，DataWin影视大数据曾经做过专题舆情跟踪，<span style="color: rgb(72, 198, 94); box-sizing: border-box;"><strong style="box-sizing: border-box;">传媒和自媒体的负面情感高于70%</strong></span>。</p><p>在北京市交警方面做出“交通肇事逃逸”的结论后，更是被CCTV、人民网法制频道等报道，李易峰成为第一个因为负面新闻上央视的小生，在社会上形成了一定的负面印象。甚至有专家认为，“处罚过轻，对公众有示范效应”。</p><p><br  /></p></section><section style="box-sizing: border-box;"><strong>尽管李易峰及其团队事后两次道歉，对舆情危机采取了及时的应对措施</strong>，李易峰的粉丝也表达了继续支持偶像的意愿，但其公众形象已经受到相当程度的破坏。</section><p style="box-sizing: border-box;">前几日更有网传”L姓小鲜肉吸毒”的传闻，一时间众说纷纭指向李易峰，尽管事后新浪微博和平安北京都进行了辟谣，李易峰团队更发誓要告到底，但对李易峰的公众形象还是形成了一定的关联性破坏。</p><p style="box-sizing: border-box;"><br  /></p><section style="box-sizing: border-box;">传闻尽管是无稽之谈，但李易峰变成谣言易损体质，也说明了公众对其个人形象的预期大幅下调。<span style="color: rgb(72, 198, 94); box-sizing: border-box;"><strong style="box-sizing: border-box;">作为偶像艺人，人设崩坏之后，尽管原有粉群依然长情、粉丝凝聚力极强，但很难再次大量聚集新的青少年粉丝。李易峰的转型已成必然。</strong></span></section><section style="box-sizing: border-box;">&nbsp;</section><p style="box-sizing: border-box;">目前的商业价值方面，李易峰的广告代言有真果粒、蒙牛GO畅、戴尔比斯、OPPO手机、佳能EOS、凌仕、玉兰油、蘑菇街、康师傅绿茶、愤怒的小鸟、百事可乐、乐事薯片、美特斯邦威、特步、QQ浏览器、德芙巧克力、炫迈、泰格豪雅瑞士名表、盗墓笔记S手游、植村秀、搜狐新闻、钻石Forevermark(永恒印记)等，在小生中具备一流的商业价值。一来个人形象气质良好，正能量人设加分，二来公司团队给力。</p><p style="box-sizing: border-box;"><br  /></p></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center;  box-sizing: border-box; "><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB0lKIdjQX0TkC3ljicibvkW78qYShUoLcp2tgKM7R0fcNh53sBwBrHenPNQzx6GBvOsHqACUZwaWKeQ/0?wx_fmt=jpeg" data-ratio="1" data-w=""  /><br  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: justify; box-sizing: border-box;"><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">杂志资源方面，李易峰本身外表条件、时尚感不错，最重要的是有人气加持。目前男刊已经满贯，包括《GQ智族》、《时尚先生》、《时装男士》、《芭莎男士》、《ELLEMEN睿士》等。尽管李易峰有大量的商业代言和较强的杂志资源，但这类代言和封面更多是体现李易峰个人品牌的商业价值，属于锦上添花而非雪中送炭的项目，<span style="color: rgb(72, 198, 94); box-sizing: border-box;"><strong style="box-sizing: border-box;">在个人形象受损的情况下，商业代言很难帮助李易峰重塑形象。<span style="box-sizing: border-box; color: rgb(0, 0, 0);">相反，部分代言商家若出现换人或者合约到期不再续约的情况，难免引起对个人形象的进一步消减。</span></strong></span></p><p style="box-sizing: border-box;"><span style="color: rgb(72, 198, 94); box-sizing: border-box;"><strong style="box-sizing: border-box;"><br  /></strong></span></p></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center;  box-sizing: border-box; "><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB0lKIdjQX0TkC3ljicibvkW78mC6DnpDIky25xWqRu6fmz1OoJd26cTnJIib4KpmrJ6bueytIxgVI97A/0?wx_fmt=jpeg" data-ratio="1.3111510791366907" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;"><span style="color: rgb(72, 198, 94); box-sizing: border-box;">李易峰能否从形象危机中脱身，重点一是看其个人后续的公众态度，更诚恳、更柔软、更积极的姿态，有利于缓解个人品牌受损的状况，二是要看后续作品能否帮助李易峰刷回好感值。</span></strong>对一个艺人而言，作品的洗白能力可能胜过千言万语。但另一方面，如果艺人个人形象受损，有可能连累作品中塑造形象在大众中的好感度。合理的作品营销和角色认同度塑造，有利于李易峰的形象建设。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">李易峰待播的影视作品主要有：</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center;  box-sizing: border-box; "><img data-s="300,640" data-type="png" data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB0lKIdjQX0TkC3ljicibvkW78fibJVWxhSDs34Gy9s18JKZWkumFcE09rluCzRh7Ktc5vjibGW3GtEUZA/0?wx_fmt=png" data-ratio="1.129496402877698" data-w="" style="width: 100%; height: auto;"  /></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><p style="box-sizing: border-box;">从李易峰已拍摄完成的两部作品看，《诛仙》很可能早于《麻雀》上线，这对李易峰的形象恢复是有利的，毕竟诛仙为玄幻IP剧，距离现实生活更远，而且人设不是那么“根正苗红”，观众不容易产生代入和抵触情绪。</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;"><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB0lKIdjQX0TkC3ljicibvkW78w3CeCZsCSTBWudVibIg3o3TDCazCD60tUicKciaLw9yb4vNSA9MegUtIw/0?wx_fmt=jpeg" data-ratio="0.7127272727272728" data-w="550"  /><br  /></p><p style="box-sizing: border-box;">如果是《麻雀》近期上线，有可能引起部分观众的强烈情绪反弹。李易峰如果能通过诛仙取得更多的观众好感度，再搭配适当的公关运营和个人品牌建设，通过《麻雀》进一步打消负面印象，则不但有望个人形象提升，还有利于实现从偶像艺人到演员的顺利转型。</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;"><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB0lKIdjQX0TkC3ljicibvkW78ibzk2CUHGOekAkvbRvibs6AeobNFqchAawibaYQBbjIxx6gFA5vKD7c4g/0?wx_fmt=jpeg" data-ratio="1.473021582733813" data-w="" style="line-height: 1.6; width: 100%;"  /></p><section style="box-sizing: border-box;">&nbsp;</section><p style="box-sizing: border-box;">作为85后艺人的人气魁首，李易峰目前是85后艺人走偶像路线的代表人物，也是“大IP+小鲜肉”模式的经典成功者，《古剑奇谭》、《盗墓笔记》等大IP的加持作用不可小看。其余的林更新、井柏然、窦骁等走电影演员路线，陈晓、陈伟霆等走影视双刷路线，有意无意都已经退出了小鲜肉市场竞争，独有李易峰还在捍卫着85后的偶像市场价值。</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;"><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB0lKIdjQX0TkC3ljicibvkW78fKVkZbeOn9CbHCkdJGdeC6YfGmAPZGUjDqyuxCDJJtjBnWib7ib5Xa6w/0?wx_fmt=jpeg" data-ratio="0.6672661870503597" data-w=""  /></p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">但时至如今，随着艺人年龄增长，大IP逐渐审美疲劳，这条路变得有些坎坷。《诛仙》尽管是大IP，且原著影响力极大，堪称网文中的优秀代表作，影响力很难和大IP兴起之初的古剑奇谭相提并论。</p><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">无论李易峰能否走出形象危机，能否实现转型，都标志着85后主要小生基本上不再走偶像型艺人路线。</section><p style="box-sizing: border-box;"><strong style="box-sizing: border-box;"><span style="color: rgb(72, 198, 94); box-sizing: border-box;">曾几何时，以李易峰为代表，85后小生率先掀起了“小鲜肉”风潮，成为小鲜肉经济的先行者。时隔两年，第一代小鲜肉却已经全面退出偶像型市场。85后们纷纷以“其实我是一个演员”为自我目标，开始了下一轮的市场竞争。</span></strong></p><p style="box-sizing: border-box;"><strong style="box-sizing: border-box;"><span style="color: rgb(72, 198, 94); box-sizing: border-box;"><br  /></span></strong></p><section style="box-sizing: border-box;">李易峰能否再续辉煌？我们祝他好运。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin-top: 10px; margin-bottom: 10px; text-align: center;  box-sizing: border-box; "><section class="" style="display: inline-block; box-sizing: border-box;"><section style="width: 2.6em; height: 2.6em; display: inline-block; vertical-align: middle; line-height: 2.6em; border-radius: 50%; box-sizing: border-box; background-color: rgb(72, 198, 94);"><section style="width: 1.8em; height: 1.8em; line-height: 1.8em; border-radius: 50%; margin: 0.36em 0px 0.35em 0.44em; box-sizing: border-box; background-color: rgb(255, 255, 255);"><section class="" style="width: 100%; height: 100%; box-sizing: border-box;"><section style="box-sizing: border-box;">2</section></section></section></section><section style="margin: -0.5em auto 0.3em; width: 0px; border-top-width: 1.1em; border-top-style: solid; border-top-color: rgb(72, 198, 94); border-left-width: 1em !important; border-left-style: solid !important; border-left-color: transparent !important; border-right-width: 1.12em !important; border-right-style: solid !important; border-right-color: transparent !important; box-sizing: border-box;"></section><section class="" style="border-top-color: rgb(72, 198, 94); display: inline-block; font-size: 20.8px; border-top-width: 2px; border-top-style: solid; padding: 1px 5px 0px; box-sizing: border-box;"><section style="box-sizing: border-box;">&nbsp;挣扎中的吴亦凡</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;">尽管吴亦凡的粉丝声称吴亦凡早就不走小鲜肉路线，但事实上在大众认知中，吴亦凡恐怕仍然是小鲜肉的中坚力量。在青春偶像小鲜肉之外，吴亦凡团队还没有来得及全面打造出一个更适合他的定位设定。</section><section style="box-sizing: border-box;">&nbsp;</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center;  box-sizing: border-box; "><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB0lKIdjQX0TkC3ljicibvkW784ZWCV0rwbjwVqOyKjBqibaVxFiaicjZt97ppiapkwmFUVKu5sVTJdA63ZQ/0?wx_fmt=jpeg" data-ratio="0.6672661870503597" data-w="" style="width: 100%; height: auto;"  /><br  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><p style="box-sizing: border-box;"><strong><br  /></strong></p><p style="box-sizing: border-box;"><strong>如果说李易峰面临是社会大众层面的人设坍塌和形象危机，影响了大众价值；<span style="line-height: 1.6; box-sizing: border-box;">那么吴亦凡更多是面向粉丝层面的人设坍塌，进而导致了粉丝危机，影响了粉丝经济价值。</span></strong></p><section style="box-sizing: border-box;">&nbsp;</section><p style="box-sizing: border-box;">少女情怀总是诗，粉丝们对吴亦凡的人设倾向于“高富帅清纯上进学长”，“约炮门”一出，即使真如团队所说系伪造，但迟钝的反应速度也依然对其清纯形象造成了冲击。</p><p style="box-sizing: border-box;"><br  /></p><section style="box-sizing: border-box;">部分粉丝相信了“一切指证都是伪造”的说法，部分粉丝无所谓地认为男欢女爱纯粹个人自由，也有部分粉丝表示幻灭脱粉。这次事件对吴亦凡的粉群形成了相当程度的裂变。<span style="line-height: 1.6; box-sizing: border-box;">但在社会大众层面，则更像花边新闻，虽然必然有一定的负面评价，但还不至于全民否定。</span></section><section style="box-sizing: border-box;">&nbsp;</section><p style="box-sizing: border-box;">而此次事件，首当其冲受影响的，是吴亦凡的品牌商业价值。</p><p style="box-sizing: border-box;"><br  /></p></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center;  box-sizing: border-box; "><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB0lKIdjQX0TkC3ljicibvkW78wImeGCxK3qAiamkicDIia5cd2t3CLwnq5Py6PW5GEZ27LNyjZRDup8zpg/0?wx_fmt=jpeg" data-ratio="0.3471223021582734" data-w="" style="width: 100%; height: auto;"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: justify; box-sizing: border-box;"><p style="box-sizing: border-box;">吴亦凡之前作为小鲜肉经济的代表人物、第二代归国韩流的风潮引领者，粉丝潜在消费力较高，其时尚度、质感等都足以成为潮流先锋。拥有阿迪达斯、宝格丽腕表、雷朋墨镜、戴尔笔记本电脑、Smart汽车、统一冰红茶、舒克牙膏、魅夜鸡尾酒、蒙牛、全民突击网游等商业代言，还曾为高端奢侈品牌巴宝莉走秀，拥有包括《Vogue》正刊在内的大量的杂志资源。</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box; text-align: left;"><strong style="text-align: justify; line-height: 1.6;">可以说，吴亦凡的商业价值很大程度上来自其粉丝的购买力和凝聚力，以及吴亦凡个人形象的时尚感、高端质感。</strong><span style="text-align: justify; line-height: 1.6;">在偶像形象和清纯人设破灭之后，高端质感有可能不保，粉丝经济价值也会有所消退，社会认可度下降，商业价值也受到威胁。</span><br  /></p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;"><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB0lKIdjQX0TkC3ljicibvkW78ssLwyZLExNTr2Y7VmQJ7trkjUNxKviaUyHFoRHVD61kAvWDEHG6bCdw/0?wx_fmt=jpeg" data-ratio="0.75" data-w=""  /><br  /></p><p style="box-sizing: border-box;"><span style="line-height: 1.6;"><br  /></span></p><p style="box-sizing: border-box;"><span style="line-height: 1.6;">但也必须说，吴亦凡仍然有一大把圈内人脉支持，耀莱影业的签约认领，不久前上海电影节的“最受传媒关注新人奖”，甚至冯小刚、管虎等导演在风波之后都先后公开发言力挺，正说明了<strong>业内对吴亦凡的前途仍然有相当期待</strong>。</span></p><section style="box-sizing: border-box;">&nbsp;</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center;  box-sizing: border-box; "><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB0lKIdjQX0TkC3ljicibvkW78ZJeD4m4H0Jq6s280Z4Ho6S4N5YAibCoibnJW8KF570mHmAw39pb9z0jQ/0?wx_fmt=jpeg" data-ratio="0.6258992805755396" data-w="" style="width: 100%; height: auto;"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><p style="box-sizing: border-box;">另一方面，吴亦凡拥有强势的电影资源。</p><p style="box-sizing: border-box;">这些已拍摄待上映的作品能把吴亦凡从负面传闻中拉开，让公众聚焦到他的作品吗？</p></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center;  box-sizing: border-box; "><img data-s="300,640" data-type="png" data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB0lKIdjQX0TkC3ljicibvkW78ZxFT7I3CM3rERaRE4jicSuzHxHwNXmgicpMalc3FXbU3r35rypia390zA/0?wx_fmt=png" data-ratio="1.4838129496402879" data-w="" style="width: 100%; height: auto;"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: justify; box-sizing: border-box;"><p style="box-sizing: border-box;">此次风波，对吴亦凡的偶像形象是个重创，粉丝恐怕会有不少流失。<strong>在这个粉丝群体几乎为偶像承担起一部分危机公关、社交往来、宣传造势功能的时代，这不能不说是一种很大的损失。</strong></p><p style="box-sizing: border-box;"><br  /></p><section style="box-sizing: border-box;">但因为此事无论真假，毕竟还是属于个人价值观、道德观范畴，不至于上升到违法乱纪遭到封杀，且团队已发出“事件系伪造”声明，所以，在吴亦凡电影咖的形象已经逐渐建立，存货多多的情况下，应该还是会有东山再起的机会。</section><section style="box-sizing: border-box;">&nbsp;</section><p style="box-sizing: border-box;">只不过近期的《原来》、《夏木》恐怕注定会受影响，因为一是离风波太近，舆论无法平息；二是两者剧情中的人物都是深情、痴情、学长or学生设定，确实与吴亦凡目前风波引发的形象危机有很大冲突。</p><p style="box-sizing: border-box;"><br  /></p></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center;  box-sizing: border-box; "><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB0lKIdjQX0TkC3ljicibvkW78s64T54twbrofFKYeQrTg80QuiakTyjTLpnLNO8JjASpQjLicy5GXK1Ow/0?wx_fmt=jpeg" data-ratio="0.45143884892086333" data-w="" style="width: 100%; height: auto;"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><p style="box-sizing: border-box;"><span style="color: rgb(72, 198, 94); box-sizing: border-box;"><strong style="box-sizing: border-box;">但在《爵迹》后吴亦凡仍然有可能热度回流。《爵迹》本身题材新颖，郭敬明善于宣发，即使电影真的技术不成熟，大概也免不了“看了再骂”的票房收益，所以《爵迹》不是没有爆的可能，<strong style="color: rgb(72, 198, 94); line-height: 25.6px; text-align: justify; white-space: pre-wrap; box-sizing: border-box; background-color: rgb(255, 255, 255);">吴亦凡的角色“银尘”人设又拉好感，</strong>届时可能又会有新粉。</strong></span></p><p style="box-sizing: border-box;"><span style="color: rgb(72, 198, 94); box-sizing: border-box;"><strong style="box-sizing: border-box;"><br  /></strong></span></p><p style="box-sizing: border-box;"><span style="color: rgb(72, 198, 94); box-sizing: border-box;"><strong style="box-sizing: border-box;"><img data-type="gif" data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB1kq2Qr8Zm9IjFxicrLUwhh6zbozsaNNxQp527xPkLJ8n7RaGfn7x9vmj3wYVEFWa8KBwJiaOGUfAWw/0?wx_fmt=gif" style="width: 100%; height: auto;" data-ratio="0.737410071942446" data-w=""  /><br  /></strong></span></p><p style="box-sizing: border-box;"><span style="color: rgb(72, 198, 94); box-sizing: border-box;"><strong style="box-sizing: border-box;"><br  /></strong></span></p><p style="box-sizing: border-box;"><strong style="line-height: 1.6;">待到《西游伏妖篇》上映，以周星驰的市场容量和情怀调动能力，很能给艺人增加社会好感度，吴亦凡有机会再次迎来事业发展</strong><span style="line-height: 1.6;">，并从粉丝层面的关注突围到大众层面的关注。</span><br  /></p><p style="box-sizing: border-box;"><br  /></p><section style="box-sizing: border-box; text-align: center;"><p style="text-align: left;">反而是两部好莱坞大片，未必能给吴亦凡带来太多的事业加持。之前华人演员在好莱坞出演角色，受戏份、形象、文化差异等各种制约，几乎无人能对事业形成太大的帮助，仅仅是圈内地位可能有所提高，吴亦凡也难以例外。</p><p style="text-align: left;"><br  /></p><p style="text-align: left;"><span style="line-height: 25.6px; text-align: justify; white-space: pre-wrap; background-color: rgb(255, 255, 255);">不过，吴亦凡在风头火势上加盟耀莱影视，不排除以成龙为榜样，深度开拓好莱坞市场的想法。</span></p></section><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;">不管怎么说，<strong style="box-sizing: border-box;">存货多，机会多，可能是吴亦凡渡过危机的底气来源。</strong></section><p style="box-sizing: border-box;">此前，成龙大哥已经要求吴亦凡低调行事，也许这正是以作品为基础，温和渡过形象危机的良策。</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box; text-align: center;"><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB0lKIdjQX0TkC3ljicibvkW78gjBnj6zO3eamZfgb4kx0L0garOOeQReQzSvKIkAEjXz2nlic7iaRibGXA/0?wx_fmt=jpeg" style="line-height: 1.6;" data-ratio="1.5" data-w="440"  /></p><p style="box-sizing: border-box;"><span style="color: rgb(72, 198, 94); box-sizing: border-box;"><strong style="box-sizing: border-box;"><br  /></strong></span></p><p style="box-sizing: border-box;"><span style="color: rgb(72, 198, 94); box-sizing: border-box;"><strong style="box-sizing: border-box;">总体而言，本次事件对吴亦凡应该不会形成颠覆性影响，商业价值可能会面临损失，演艺资源却仍然可保一年强势竞争力地位。</strong></span></p><p style="box-sizing: border-box;"><span style="color: rgb(72, 198, 94); box-sizing: border-box;"><strong style="box-sizing: border-box;"><br  /></strong></span></p><section style="box-sizing: border-box;">但我们必须说，之<strong>所以看好吴亦凡不会轻易糊，更大程度来自他的年龄优势和个人外观形象</strong>。不管是作为小鲜肉还是作为演员，他还有大把机会可以竞争，可以选择不转型或者转型。</section><section style="box-sizing: border-box;">韩流艺人的先行者如韩庚，则在几年时间成本抛掷之后，被逼到了不得不转型的尴尬境地。遇到负面舆情的情况下，振作艰难。</section><section style="box-sizing: border-box;">从这个角度来看，吴亦凡，努力宜趁早。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin: 0.5em 0px; text-align: center;  box-sizing: border-box; "><section class="" style="display: inline-block; border-radius: 5px; line-height: 2.3; font-size: 20.8px; color: rgb(255, 255, 255); width: 100%; box-sizing: border-box; background-color: rgb(72, 198, 94);"><section style="box-sizing: border-box;">三、下一局，谁是真英雄？</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">演员市场</strong></section><section style="box-sizing: border-box;">85后男艺人已大规模进军传统演员市场，与75后、80后男艺人形成激烈竞争。可以认为，演员市场竞争上移。传统影视迎来大量青年化的新血。</section><section style="box-sizing: border-box;">由于吴亦凡的个人形象损失，对他的演员市场竞争力也有轻度影响，林更新、井柏然等有可能更加强势。刘昊然、董子健等更鲜的鲜肉也可能得利。</section><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">商业代言</strong></section><section style="box-sizing: border-box;">李易峰和吴亦凡的商业价值必受到一定影响，尤其是产品代言等方面，可能面临缩水。鹿晗、杨洋等小鲜肉有可能进一步扩展商业代言空间，井柏然等具备高端代言潜质的演员型艺人也有可能进一步攻城掠地。</section><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">偶像市场</strong></section><section style="box-sizing: border-box;">李易峰之后，85后男艺人基本上已经不再主打偶像型市场。吴亦凡并未就此退出偶像市场，但已经相对弱势，鹿晗、杨洋、刘昊然、吴磊、董子健等90-95后艺人将持续在偶像市场大有作为。</section><section style="box-sizing: border-box;">但对偶像市场运营来说，必须吸收之前的经验教训，不管是根正苗红，是清纯高富帅，还是老干部人设，总之<strong><span style="line-height: 25.6px; text-align: justify;  background-color: rgb(255, 255, 255);">以人设加持带来的商业价值，</span>极容易走向幻灭</strong>，带来颠覆性结果。</section><section style="box-sizing: border-box;">大陆市场对偶像型艺人的运营还不成熟，容易走一窝蜂，动辄大把暖男、大把萌猫，大把老干部，这已经被市场验证了风险。</section><section style="box-sizing: border-box;">如何真正挖掘艺人的独特气质和闪光点，达到粉丝经济、偶像形象与个人气质的和谐共存，将是持续挑战。</section><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">IP剧市场</strong></section><section style="box-sizing: border-box;">很大程度上，IP剧由于主打青年市场，男主喜欢选择高颜值的偶像型小鲜肉，譬如《三生三世十里桃花》、《武动乾坤》和《择天记》等无不如此。</section><section style="box-sizing: border-box;">在李易峰淡出之后，大IP的男主选择，将进一步向鹿晗、杨洋、刘昊然、吴磊等人倾斜。市场永远不缺小鲜肉，少女心永远需要小鲜肉。</section><section style="box-sizing: border-box;">&nbsp;</section><p style="box-sizing: border-box;">但不可否认，小鲜肉的性价比，正在遭受考验。</p><p style="box-sizing: border-box;">市场也面临反思：<strong style="color: rgb(72, 198, 94); line-height: 1.6; box-sizing: border-box;">2000万的IP+2000万的小鲜肉+50万的编剧=？</strong></p><p style="box-sizing: border-box;"><span style="line-height: 1.6;">这个价格也许已经OUT，IP和小鲜肉的价格早已经更贵，但影视行业的酬劳体系扭曲，势必带来价值扭曲和回报艰难。不管是IP还是鲜肉，都将逐渐恢复理性。</span><br  /></p><p style="box-sizing: border-box;">李易峰和吴亦凡的相继危机，对小鲜肉经济的两极，提出了新的思考。在这之后，新一轮市场洗牌或将开始。</p><p style="box-sizing: border-box;"><br  /></p><section style="box-sizing: border-box; text-align: right;">（撰稿人：七州夷离堇，喵喵，苏秦）</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin: 0.5em 0px; overflow: hidden;  box-sizing: border-box; "><section class="" style="text-align: center; box-sizing: border-box;"><img style="float: left; width: 1em; box-sizing: border-box; vertical-align: middle; background-color: rgb(49, 199, 100);" data-src="http://mmbiz.qpic.cn/mmbiz/ZHmSMwnSicSVJgzSNpxrpclX5kdskp9UkBuFkyeicL4ECwqjX6bI2rehiciaA6MqMvvJ7yQ8EsPEc6nAz69s2mqWjw/0?wx_fmt=png" data-ratio="1" data-w="16"  /> <img style="width: 1em; box-sizing: border-box; vertical-align: middle; background-color: rgb(49, 199, 100);" data-src="http://mmbiz.qpic.cn/mmbiz/ZHmSMwnSicSVJgzSNpxrpclX5kdskp9UkrsnRjSG3XqQgpYwfPoV3XbjqicNVKVBeqg3IJxgW59SP2wAqNHkHFLQ/0?wx_fmt=png" data-ratio="0.9375" data-w="16"  /> <img style="float: right; width: 1em; box-sizing: border-box; vertical-align: middle; background-color: rgb(49, 199, 100);" data-src="http://mmbiz.qpic.cn/mmbiz/ZHmSMwnSicSVJgzSNpxrpclX5kdskp9UkHE5IpGJhPab9RWQyZa23bxjkx6hjVEp69CjuWgbcnJ3AINxLvgEAcQ/0?wx_fmt=png" data-ratio="1" data-w="16"  /> </section><section class="" style="width: 100%; display: inline-block; vertical-align: top; margin-top: -0.8em; box-sizing: border-box;"><section style="float: left; width: 45%; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(49, 199, 100); box-sizing: border-box;"></section><section style="float: right; width: 45%; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(49, 199, 100); box-sizing: border-box;"></section></section><section class="" style="width: 100%; padding: 0px 0.5em; margin-top: -1.5em; line-height: 1.3em; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: center; color: rgb(49, 199, 100); box-sizing: border-box;"><section style="box-sizing: border-box;">以上为原创内容</section><section style="box-sizing: border-box;">转载请注明：DataWin影视大数据</section></section></section></section></section><section class="" style="width: 100%; text-align: center; box-sizing: border-box;"><section style="display: inline-block; vertical-align: middle; width: 98%; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(49, 199, 100); box-sizing: border-box;"></section></section><section class="" style="margin: -1em 0px 1em; box-sizing: border-box;"><img style="width: 1em; float: left; box-sizing: border-box; vertical-align: middle; background-color: rgb(49, 199, 100);" data-src="http://mmbiz.qpic.cn/mmbiz/ZHmSMwnSicSVJgzSNpxrpclX5kdskp9Uku1vmdNxfpUz8cDoMT3IHa0icjYFPSeFeUEkaA0GgRKNQoaOnEurvMxQ/0?wx_fmt=png" data-ratio="1" data-w="16"  /> <img style="width: 1em; float: right; box-sizing: border-box; vertical-align: middle; background-color: rgb(49, 199, 100);" data-src="http://mmbiz.qpic.cn/mmbiz/ZHmSMwnSicSVJgzSNpxrpclX5kdskp9UkogfXIndicnkwe4vCicsJ82x6vYOwHSiaDnZ2b2RzuNTYiaWBUPiafCpg8ow/0?wx_fmt=png" data-ratio="1" data-w="16"  /> </section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin: 0.5em 0px 1em;  box-sizing: border-box; "><section class="" style="border: 1px solid rgb(226, 226, 226); box-shadow: rgb(226, 226, 226) 0px 16px 1px -13px; line-height: 1; padding: 8px; box-sizing: border-box;"><img style="float: left; width: 6em; box-sizing: border-box; vertical-align: middle;" class="" data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB1mwLJnjaqXRdbCwMBMia7yLib2gn21KAJLqnpGzajUbibRMFGbGs4VsiaO6CEibOlicPQYwuxLnSAQ8pGg/0?wx_fmt=png" data-ratio="0.9583333333333334" data-w="96"  /> <section style="text-align: right; box-sizing: border-box;"><section class="" style="display: inline-block; vertical-align: top; width: 0.8em; margin-right: 0.5em; font-size: 12.8px; color: rgb(120, 124, 129); box-sizing: border-box;"><section style="box-sizing: border-box;">艺人趋势分析</section></section><section class="" style="display: inline-block; vertical-align: top; width: 0.8em; margin-right: 0.5em; font-size: 12.8px; color: rgb(120, 124, 129); box-sizing: border-box;"><section style="box-sizing: border-box;">娱乐数据分析</section></section><section class="" style="display: inline-block; vertical-align: top; width: 0.8em; margin-right: 0.5em; font-size: 12.8px; color: rgb(120, 124, 129); box-sizing: border-box;"><section style="box-sizing: border-box;">新媒体分析</section></section><section class="" style="display: inline-block; vertical-align: top; width: 0.8em; margin-right: 0.5em; font-size: 12.8px; color: rgb(120, 124, 129); box-sizing: border-box;"><section style="box-sizing: border-box;">影视数据分析</section></section><section class="" style="display: inline-block; vertical-align: top; width: 1.2em; margin-right: 1em; text-align: center; font-size: 19.2px; color: rgb(255, 255, 255); box-sizing: border-box; background-color: rgb(49, 199, 100);"><section style="box-sizing: border-box;">业务内容</section></section><section class="" style="display: inline-block; vertical-align: top; width: 1.5em; font-size: 24px; color: rgb(0, 0, 0); box-sizing: border-box;"><section style="box-sizing: border-box;">影视大数据</section></section></section><section class="" style="padding: 0.5em; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style=" padding: 0.2em 0px;  box-sizing: border-box; "><section class="" style="font-size: 12.8px; color: rgb(0, 0, 0); box-sizing: border-box;"><section style="box-sizing: border-box;">微信号：ysdsju</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style=" padding: 0.2em 0px;  box-sizing: border-box; "><section class="" style="font-size: 12.8px; color: rgb(120, 124, 129); box-sizing: border-box;"><section style="box-sizing: border-box;">QQ：149817396</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style=" padding: 0.2em 0px;  box-sizing: border-box; "><section class="" style="font-size: 12.8px; color: rgb(120, 124, 129); box-sizing: border-box;"><section style="box-sizing: border-box;">微博@DataWin影视大数据</section></section></section></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><section class="" style="border-top-color: rgb(72, 198, 94); border-bottom-color: rgb(72, 198, 94); border-top-width: 0.1em; border-top-style: solid; border-bottom-width: 0.1em; border-bottom-style: solid; padding: 2px; line-height: 1.3; text-align: center; color: rgb(72, 198, 94); box-sizing: border-box;"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;"><span style="text-decoration: none; box-sizing: border-box;">回复关键字 查阅往期深度好文</span></strong></section><section style="box-sizing: border-box;"><span style="text-decoration: underline; box-sizing: border-box;">阿里巴巴 &nbsp;电影圈 &nbsp;艺人数据 &nbsp;网络影响力 &nbsp;六月电影 2016上半年 &nbsp;泛娱 &nbsp;系列电影 &nbsp;霍建华 &nbsp;林心如 &nbsp;商业电影 &nbsp;华为 &nbsp;VR &nbsp;中韩合拍 &nbsp;电影衍生 &nbsp;快鹿 &nbsp;邓超 &nbsp;美人鱼 &nbsp;杨洋 &nbsp;宋茜 &nbsp;好莱坞 &nbsp;西雅图 &nbsp;陈坤</span><br style="box-sizing: border-box;"  /></section></section></section></section></section>
+                    </div>
+                    <script type="text/javascript">
+                        var first_sceen__time = (+new Date());
+
+                        if ("" == 1 && document.getElementById('js_content'))
+                            document.getElementById('js_content').addEventListener("selectstart",function(e){ e.preventDefault(); });
+
+                                        (function(){
+                            if (navigator.userAgent.indexOf("WindowsWechat") != -1){
+                                var link = document.createElement('link');
+                                var head = document.getElementsByTagName('head')[0];
+                                link.rel = 'stylesheet';
+                                link.type = 'text/css';
+                                link.href = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+                                head.appendChild(link);
+                            }
+                        })();
+                    </script>
+                    <link rel="stylesheet" type="text/css" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_combo2e4987.css">
+                    
+                    
+                                        
+                                        <div class="reward_area tc" id="js_reward_area" style="display:none;">
+                                                <p>
+                            <a class="reward_access" id='js_reward_link' href="javascript:;">赞赏</a>
+                        </p>
+                        <div id="js_reward_inner" class="reward_area_inner" style="display:none;">
+                            <p class="tips_global reward_user_tips"><a href="javascript:;" id="js_reward_total"></a>人赞赏</p>
+                            <div id="js_reward_list" class="reward_user_list"></div>
+                        </div>
+                    </div>
+                                        
+                                        <div class="rich_media_tool" id="js_toobar3">
+                                                                    <div id="js_read_area3" class="media_tool_meta tips_global meta_primary" style="display:none;">阅读 <span id="readNum3"></span></div>
+
+                        <span style="display:none;" class="media_tool_meta meta_primary tips_global meta_praise" id="like3">
+                            <i class="icon_praise_gray"></i><span class="praise_num" id="likeNum3"></span>
+                        </span>
+
+                        <a id="js_report_article3" style="display:none;" class="media_tool_meta tips_global meta_extra" href="javascript:void(0);">投诉</a>
+
+                    </div>
+
+
+
+                                        <div class="rich_media_tool" id="js_sg_bar">
+                         <a class="media_tool_meta meta_primary"  href="" target="_blank">阅读原文</a>
+                         <div class="media_tool_meta tips_global meta_primary">阅读 <span><span id="sg_readNum3"></span></span></div>
+
+                         <span class="media_tool_meta meta_primary tips_global meta_praise">
+                            <i class="icon_praise_gray"></i><span class="praise_num"><span class="praise_num" id="sg_likeNum3"></span>
+                        </span>
+                    </div>
+                                    </div>
+
+                <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none">
+
+                </div>
+
+                <div class="rich_media_area_extra">
+
+                    
+                                        <div class="mpda_bottom_container" id="js_bottom_ad_area">
+                        
+                    </div>
+                                        
+                    <div id="js_iframetest" style="display:none;"></div>
+                                        <div class="rich_media_extra" id="sg_cmt_area">
+                        <div class="discuss_container" id="sg_cmt_main" style="display:none">
+                            <div class="rich_tips with_line title_tips discuss_title_line">
+                                <span class="tips">精选留言</span>
+                            </div>
+                            <ul class="discuss_list" id="sg_cmt_list"></ul>
+                        </div>
+
+                        <div class="rich_tips tips_global loading_tips" id="sg_cmt_loading">
+                            <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif" class="rich_icon icon_loading_white" alt="">
+                            <span class="tips">加载中</span>
+                        </div>
+
+                        <div class="rich_tips with_line tips_global" id="sg_cmt_statement" style="display:none">
+                            <span class="tips">以上留言由公众号筛选后显示</span>
+                        </div>
+
+                        <p class="rich_split_tips tc" id="sg_cmt_qa" style="display:none;">
+                            <a href="http://kf.qq.com/touch/sappfaq/150211YfyMVj150313qmMbyi.html?scene_id=kf264">
+                                了解留言功能详情
+                            </a>
+                        </p>
+                    </div>
+                                        
+                                        <div class="rich_media_extra" id="js_cmt_area" style="display:none">
+
+                        <div class="discuss_container" id="js_cmt_main" style="display:none">
+                            <div class="rich_tips with_line title_tips discuss_title_line">
+                                <span class="tips">精选留言</span>
+                            </div>
+                            <p class="tips_global tc title_bottom_tips" id="js_cmt_nofans1" style="display:none;">该文章作者已设置需关注才可以留言</p>
+                            <p class="discuss_icon_tips title_bottom_tips tr" id="js_cmt_addbtn1" style="display:none">
+                                
+                                                                <a href="#comment">写留言<img class="icon_edit" src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_edit25ded2.png" alt=""></a>
+                                                            </p>
+                            <ul class="discuss_list" id="js_cmt_list"></ul>
+                        </div>
+
+
+                        <div class="tips_global rich_split_tips tc" id="js_cmt_nofans2" style="display:none;">
+                            该文章作者已设置需关注才可以留言
+                        </div>
+
+                        <p class="discuss_icon_tips rich_split_tips tr" id="js_cmt_addbtn2" style="display:none">
+                            
+                                                        <a href="#comment">写留言<img class="icon_edit" src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_edit25ded2.png" alt=""></a>
+                                                    </p>
+
+                        <p class="rich_split_tips tc tips_global" id="js_cmt_tips" style="display:none;"></p>
+
+
+                        <div class="rich_tips tips_global loading_tips" id="js_cmt_loading">
+                            <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif" class="rich_icon icon_loading_white" alt="">
+                            <span class="tips">加载中</span>
+                        </div>
+
+                        <div class="rich_tips with_line tips_global" id="js_cmt_statement" style="display:none">
+                            <span class="tips">以上留言由公众号筛选后显示</span>
+                        </div>
+
+                        <p class="rich_split_tips tc" id="js_cmt_qa" style="display:none;">
+                            <a href="http://kf.qq.com/touch/sappfaq/150211YfyMVj150313qmMbyi.html?scene_id=kf264">
+                                了解留言功能详情
+                            </a>
+                        </p>
+
+                    </div>
+                                    </div>
+               
+            </div>
+            <div id="js_pc_qr_code" class="qr_code_pc_outer" style="display:none;">
+                <div class="qr_code_pc_inner">
+                    <div class="qr_code_pc">
+                        <img id="js_pc_qr_code_img" class="qr_code_pc_img">
+                        <p>微信扫一扫<br>关注该公众号</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+        
+        <script>
+    var __DEBUGINFO = {
+        debug_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/debug/console2ca724.js",
+        safe_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/moonsafe2e21ab.js",
+        res_list: []
+    };
+</script>
+        <script>window.moon_map = {"appmsg/emotion/caret.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/caret278965.js","biz_wap/jsapi/cardticket.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/cardticket275627.js","appmsg/emotion/map.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/map278965.js","appmsg/emotion/textarea.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/textarea27cdc5.js","appmsg/emotion/nav.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/nav278965.js","appmsg/emotion/common.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/common278965.js","appmsg/emotion/slide.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/slide2a9cd9.js","pages/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/report2e4987.js","pages/music_player.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_player2b674b.js","pages/loadscript.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/loadscript2c9cd6.js","appmsg/emotion/dom.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/dom278965.js","biz_wap/utils/hashrouter.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/hashrouter2805ea.js","a/gotoappdetail.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/gotoappdetail2a2c13.js","a/ios.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/ios275627.js","a/android.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/android2c5484.js","a/profile.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/profile29b1f8.js","a/mpshop.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/mpshop2da3e2.js","a/card.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/card2d1390.js","biz_wap/utils/position.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/position29b1f8.js","appmsg/a_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_report2e2d45.js","biz_common/utils/respTypes.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/respTypes2c57d0.js","appmsg/cmt_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cmt_tpl.html2a2c13.js","sougou/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/a_tpl.html2c6e7c.js","appmsg/emotion/emotion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/emotion2a9cd9.js","biz_common/utils/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/report275627.js","biz_common/utils/huatuo.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/huatuo293afc.js","biz_common/utils/cookie.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/cookie275627.js","pages/voice_component.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_component2c5484.js","new_video/ctl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/ctl2d441f.js","biz_common/utils/monitor.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/monitor2a30ee.js","biz_common/utils/spin.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/spin275627.js","biz_wap/jsapi/pay.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/pay275627.js","appmsg/reward_entry.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/reward_entry2e21d7.js","appmsg/comment.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment2d39f3.js","appmsg/like.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/like2b5583.js","appmsg/a.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a2da3e2.js","pages/version4video.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/version4video2e481d.js","rt/appmsg/getappmsgext.rt.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/rt/appmsg/getappmsgext.rt2c21f6.js","biz_wap/utils/storage.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage2a74ac.js","biz_common/tmpl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl2b3578.js","appmsg/img_copyright_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/img_copyright_tpl.html2a2c13.js","appmsg/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_tpl.html2d1390.js","biz_common/ui/imgonepx.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/ui/imgonepx275627.js","biz_common/dom/attr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr275627.js","biz_wap/utils/ajax.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax2c7a90.js","biz_common/utils/string/html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html29f4e9.js","sougou/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/index2c7543.js","biz_wap/safe/mutation_observer_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/mutation_observer_report2d5cb8.js","appmsg/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report2cf2a3.js","biz_common/dom/class.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/class275627.js","appmsg/report_and_source.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report_and_source2c0ff9.js","appmsg/page_pos.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/page_pos2e6aa5.js","appmsg/cdn_speed_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_speed_report2c57d0.js","appmsg/wxtopic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/wxtopic2e4987.js","appmsg/voice.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voice2ab8bd.js","appmsg/qqmusic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/qqmusic2ab8bd.js","appmsg/iframe.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/iframe2e69b8.js","appmsg/review_image.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/review_image2d0cfe.js","appmsg/outer_link.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/outer_link275627.js","biz_wap/jsapi/core.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core2c30c1.js","biz_common/dom/event.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event275627.js","appmsg/copyright_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/copyright_report2c57d0.js","appmsg/cache.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cache2a74ac.js","appmsg/pay_for_reading.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/pay_for_reading2c5484.js","appmsg/async.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/async2e416f.js","biz_wap/ui/lazyload_img.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/ui/lazyload_img2b18f6.js","biz_common/log/jserr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/log/jserr2805ea.js","appmsg/share.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share2e74e2.js","biz_wap/utils/mmversion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion275627.js","appmsg/cdn_img_lib.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_img_lib275627.js","biz_common/utils/url/parse.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/url/parse2dd7fd.js","biz_wap/utils/device.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/device2b3aae.js","biz_wap/jsapi/a8key.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/a8key2a30ee.js","appmsg/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/index2e80c4.js"};</script><script type="text/javascript" src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/moon2c7b0a.js"></script>
+    <script id="topic_tpl" type="text/html">        
+        <span class="db topic_wrp">
+            <span class="topic_thumb" style="background-image:url({img_url});"></span>
+            <span class="topic_content">
+                <strong class="topic_title">{title}</strong>
+                <span class="topic_desc">{author}</span>
+                <span class="topic_info">
+                    <span class="topic_info_extra"><span class="icon_topic"></span>话题</span>
+                    <span class="topic_info_primary">相关文章{msg_num}篇</span>
+                </span>
+            </span>
+        </span>
+    </script>
+    <script id="voice_tpl" type="text/html">        
+        <span id="voice_main_<#=voiceid#>_<#=posIndex#>" class="db audio_area <#if(!musicSupport){#> unsupport<#}#>">
+            <span class="tc tips_global unsupport_tips" <#if(show_not_support!==true){#>style="display:none;"<#}#>>
+            当前浏览器不支持播放音乐或语音，请在微信或其他浏览器中播放            </span>
+            <span class="audio_wrp db">
+                <span id="voice_play_<#=voiceid#>_<#=posIndex#>" class="audio_play_area">
+                    <i class="icon_audio_default"></i>
+                    <i class="icon_audio_playing"></i>
+                    <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_unread26f1f1.png" alt="" class="pic_audio_default">
+                </span>
+                <span class="audio_length tips_global"><#=duration_str#></span>
+                <span class="db audio_info_area">
+                    <strong class="db audio_title"><#=title#></strong>
+                    <span class="audio_source tips_global"><#if(window.nickname){#>来自<#=window.nickname#><#}#></span>
+                </span>
+                <span id="voice_progress_<#=voiceid#>_<#=posIndex#>" class="progress_bar" style="width:0px;"></span>
+            </span>
+        </span>
+    </script>
+
+    <script id="qqmusic_tpl" type="text/html">        
+        <span id="qqmusic_main_<#=comment_id#>_<#=posIndex#>" class="db qqmusic_area <#if(!musicSupport){#> unsupport<#}#>">
+            <span class="tc tips_global unsupport_tips" <#if(show_not_support!==true){#>style="display:none;"<#}#>>
+            当前浏览器不支持播放音乐或语音，请在微信或其他浏览器中播放            </span>
+            <span class="db qqmusic_wrp">
+                <span class="db qqmusic_bd">
+                    <span id="qqmusic_play_<#=musicid#>_<#=posIndex#>" class="play_area">
+                        <i class="icon_qqmusic_switch"></i>
+                        <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_default.2x26f1f1.png" alt="" class="pic_qqmusic_default">
+                        <img src="<#=music_img#>" data-autourl="<#=audiourl#>" data-musicid="<#=musicid#>" class="qqmusic_thumb" alt="">
+                    </span>
+                                        <a id="qqmusic_home_<#=musicid#>_<#=posIndex#>" href="javascript:void(0);" class="access_area">
+                        <span class="qqmusic_songname"><#=music_name#></span>
+                        <span class="qqmusic_singername"><#=singer#></span>
+                        <span class="qqmusic_source"><img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_source263724.png" alt=""></span>
+                    </a>
+                </span>
+            </span>       
+        </span>
+    </script>
+  <script type="text/javascript">
+      var not_in_mm_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm2c9cd6.css";
+      var windowwx_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+      var tid = "";
+      var aid = "";
+      var clientversion = "0";
+      var appuin = ""||"MzIwMDMzNzcyNQ==";
+
+      var source = "";
+      var scene = 75;
+      
+      var itemidx = "";
+
+      var _copyright_stat = "1";
+      var _ori_article_type = "娱乐";
+
+      var nickname = "影视大数据";
+      var appmsg_type = "9";
+      var ct = "1466376673";
+      var publish_time = "2016-06-20" || "";
+      var user_name = "gh_be98065513d1";
+      var user_name_new = "";
+      var fakeid   = "";
+      var version   = "";
+      var is_limit_user   = "0";
+      var round_head_img = "http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB1ELW0LLqCnHxgRo96Ecvib9G6oXkCfm0icJskpbiazjOGxnBrs1dsFw4PGXyBSMslaUSw6icyojeonicw/0?wx_fmt=png";
+      var msg_title = "深度|李易峰吴亦凡相继舆论危机，小鲜肉经济该反省了吗？";
+      var msg_desc = "李易峰、吴亦凡这样的鲜肉领头羊相继出事之后，让人对以“人设、颜值、青春”取胜的小鲜肉经济产生困惑：出事是偶然还是必然？小鲜肉经济该反省吗？两连击之后，85-95青年男艺人的走势是否会发生显著变化？DataWin为您深度解读。";
+      var msg_cdn_url = "http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB0lKIdjQX0TkC3ljicibvkW78K8TZ6aZrI4kWd0zQs5h1vdibNwJRpvHTnnv0RXSAGwtuSyxJtncGBAg/0?wx_fmt=jpeg";
+      var msg_link = "http://mp.weixin.qq.com/s?__biz=MzIwMDMzNzcyNQ==&amp;mid=2650620358&amp;idx=1&amp;sn=718514d15d6f962726c02bc4f9c9182d#rd";
+      var user_uin = "0"*1;
+      var msg_source_url = '';
+      var img_format = 'jpeg';
+      var srcid = '';
+      var networkType;
+      var appmsgid = '' || ''|| "2650620358";
+      var comment_id = "2497697185" * 1;
+      var comment_enabled = "" * 1;
+      var is_need_reward = "1" * 1;
+      var is_https_res = ("" * 1) && (location.protocol == "https:");
+
+      var devicetype = "";
+      var source_username = "";  
+      var profile_ext_signature = "" || "";
+      var reprint_ticket = "";
+      var source_mid = "";
+      var source_idx = "";
+
+      var show_comment = "";
+      var __appmsgCgiData = {
+            can_use_page : "0"*1,
+            is_wxg_stuff_uin : "0"*1,
+            card_pos : "",
+            copyright_stat : "1",
+            source_biz : "",
+            hd_head_img : "http://wx.qlogo.cn/mmhead/Q3auHgzwzM4opw9CLZiawE4Tyg6sDaa6PJaxzAsxfSARfVRIvXEPHfw/0"||(window.location.protocol+"//"+window.location.host + "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_rumor_link.2x264e76.jpg")
+      };
+      var _empty_v = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/pages/voice/empty26f1f1.mp3";
+
+      var copyright_stat = "1" * 1;
+
+      var pay_fee = "" * 1;
+      var pay_timestamp = "";
+      var need_pay = "" * 1;
+
+      var need_report_cost = "0" * 1;
+      var use_tx_video_player = "0" * 1;
+
+      var friend_read_source = "" || "";
+      var friend_read_version = "" || "";
+      var friend_read_class_id = "" || "";
+
+      var is_only_read = "1" * 1;
+
+      var topic_default_img = 'http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/topic/pic_book_thumb.2x2e4987.png';
+
+      // 话题卡片相关数据
+      var wxtopic = {
+        isbn : ""    // 书籍
+      };
+
+      var svr_time = "1466400159" * 1;
+      
+            window.wxtoken = "";
+          if(!!window.__initCatch){
+        window.__initCatch({
+            idkey : 27613,
+            startKey : 0,
+            limit : 128,
+            reportOpt : {
+                uin : uin,
+                biz : biz,
+                mid : mid,
+                idx : idx,
+                sn  : sn
+            },
+            extInfo : {
+                network_rate : 0.01    //网络错误采样率
+            }
+        });
+    }
+  </script>
+  <script type="text/javascript">
+            window.isSg=true;
+        window.sg_qr_code="/rr?timestamp=1466400159&src=3&ver=1&signature=MbcSchI-yq-4rzn7X6CuUvsdsQj9EJTQb60vKTKF59yJp4Gr8MWNtsMJxUyubFLuiVdoZDwg5k4ZBOsIRj1mGCXY9xXHlHUwhzdbAVzGpY4=";
+        window.sg_data={
+            src:"3",
+            ver:"1",
+            timestamp:"1466400157",
+            signature:"OUOntIKER9QimhVzslQFQz16x*-8xKY1slF1-q7rTM4qJfOKrWF3lof0Q4o*PljqHCodAkUnCfuoumNuG2foU2tfF2r8FSZfireZ0O0r3*safXa*IbW3fPURG83d937uTpJ559pHnD42N-cSYNfqxNZ4I8B9IEsaY7iGIKBa13k="
+        }
+          seajs.use('appmsg/index.js');
+  </script>
+
+    </body>
+</html>
+
+ 

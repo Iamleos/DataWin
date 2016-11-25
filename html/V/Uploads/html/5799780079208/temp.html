@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<!--headTrap<body></body><head></head><html></html>--><html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+window.__nonce_str = "MOONSAFE_NONCE_1469070959"
+if (location.href.indexOf("safe=0") == -1 && window.__nonce_str) {
+	window.__moonsafe_csp_offset || (window.__moonsafe_csp_offset = 18);
+	document.write('<meta http-equiv="Content-Security-Policy" content="script-src https: \'unsafe-inline\' \'unsafe-eval\' *.qq.com *.weishi.com'+(window.__nonce_str ? ' \'nonce-' + window.__nonce_str + "\'":"")+ '">');
+        
+}
+</script>
+
+        <script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+            window.logs = {
+                pagetime: {}
+            };
+            window.logs.pagetime['html_begin'] = (+new Date());
+        </script>
+        
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+var page_begintime=+new Date,biz="MzIwMDMzNzcyNQ==",sn="",mid="503136057",idx="1",is_rumor="",norumor="";
+1*is_rumor&&!(1*norumor)&&(document.referrer&&-1!=document.referrer.indexOf("mp.weixin.qq.com/mp/rumor")||(location.href="http://mp.weixin.qq.com/mp/rumor?action=info&__biz="+biz+"&mid="+mid+"&idx="+idx+"&sn="+sn+"#wechat_redirect")),
+document.domain="qq.com";
+</script> 
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+var MutationObserver=window.WebKitMutationObserver||window.MutationObserver||window.MozMutationObserver,isDangerSrc=function(t){
+if(t){
+var e=t.match(/http(?:s)?:\/\/([^\/]+?)(\/|$)/);
+if(e&&!/qq\.com(\:8080)?$/.test(e[1])&&!/weishi\.com$/.test(e[1]))return!0;
+}
+return!1;
+},ishttp=0==location.href.indexOf("http://");
+-1==location.href.indexOf("safe=0")&&ishttp&&"function"==typeof MutationObserver&&"mp.weixin.qq.com"==location.host&&(window.__observer_data={
+count:0,
+exec_time:0,
+list:[]
+},window.__observer=new MutationObserver(function(t){
+window.__observer_data.count++;
+var e=new Date,r=[];
+t.forEach(function(t){
+for(var e=t.addedNodes,o=0;o<e.length;o++){
+var n=e[o];
+if("SCRIPT"===n.tagName){
+var i=n.src;
+isDangerSrc(i)&&(window.__observer_data.list.push(i),r.push(n)),!i&&window.__nonce_str&&n.getAttribute("nonce")!=window.__nonce_str&&(window.__observer_data.list.push("inlinescript_without_nonce"),
+r.push(n));
+}
+}
+});
+for(var o=0;o<r.length;o++){
+var n=r[o];
+n.parentNode&&n.parentNode.removeChild(n);
+}
+window.__observer_data.exec_time+=new Date-e;
+}),window.__observer.observe(document,{
+subtree:!0,
+childList:!0
+})),function(){
+if(-1==location.href.indexOf("safe=0")&&Math.random()<.01&&ishttp&&HTMLScriptElement.prototype.__lookupSetter__&&"undefined"!=typeof Object.defineProperty){
+window.__danger_src={
+xmlhttprequest:[],
+script_src:[],
+script_setAttribute:[]
+};
+var t="$"+Math.random();
+HTMLScriptElement.prototype.__old_method_script_src=HTMLScriptElement.prototype.__lookupSetter__("src"),
+HTMLScriptElement.prototype.__defineSetter__("src",function(t){
+t&&isDangerSrc(t)&&window.__danger_src.script_src.push(t),this.__old_method_script_src(t);
+});
+var e="element_setAttribute"+t;
+Object.defineProperty(Element.prototype,e,{
+value:Element.prototype.setAttribute,
+enumerable:!1
+}),Element.prototype.setAttribute=function(t,r){
+"SCRIPT"==this.tagName&&"src"==t&&isDangerSrc(r)&&window.__danger_src.script_setAttribute.push(r),
+this[e](t,r);
+};
+}
+}();
+</script> 
+
+        <link rel="dns-prefetch" href="//res.wx.qq.com">
+<link rel="dns-prefetch" href="//mmbiz.qpic.cn">
+<link rel="shortcut icon" type="image/x-icon" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+    String.prototype.html = function(encode) {
+        var replace =["&#39;", "'", "&quot;", '"', "&nbsp;", " ", "&gt;", ">", "&lt;", "<", "&amp;", "&", "&yen;", "¥"];
+        if (encode) {
+            replace.reverse();
+        }
+        for (var i=0,str=this;i< replace.length;i+= 2) {
+             str=str.replace(new RegExp(replace[i],'g'),replace[i+1]);
+        }
+        return str;
+    };
+
+    window.isInWeixinApp = function() {
+        return /MicroMessenger/.test(navigator.userAgent);
+    };
+
+    window.getQueryFromURL = function(url) {
+        url = url || 'http://qq.com/s?a=b#rd'; 
+        var query = url.split('?')[1].split('#')[0].split('&'),
+            params = {};
+        for (var i=0; i<query.length; i++) {
+            var arg = query[i].split('=');
+            params[arg[0]] = arg[1];
+        }
+        if (params['pass_ticket']) {
+        	params['pass_ticket'] = encodeURIComponent(params['pass_ticket'].html(false).html(false).replace(/\s/g,"+"));
+        }
+        return params;
+    };
+
+    (function() {
+	    var params = getQueryFromURL(location.href);
+        window.uin = params['uin'] || '';
+        window.key = params['key'] || '';
+        window.wxtoken = params['wxtoken'] || '';
+        window.pass_ticket = params['pass_ticket'] || '';
+    })();
+
+</script>
+
+        <title>数据|李易峰当前网络数据与发展分析报告</title>
+        
+<style>html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;line-height:1.6}body{-webkit-touch-callout:none;font-family:-apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background-color:#f3f3f3;line-height:inherit}body.rich_media_empty_extra{background-color:#fff}body.rich_media_empty_extra .rich_media_area_primary:before{display:none}h1,h2,h3,h4,h5,h6{font-weight:400;font-size:16px}*{margin:0;padding:0}a{color:#607fa6;text-decoration:none}.rich_media_inner{font-size:16px;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.rich_media_area_primary{position:relative;padding:20px 15px 15px;background-color:#fff}.rich_media_area_primary:before{content:" ";position:absolute;left:0;top:0;width:100%;height:1px;border-top:1px solid #e5e5e5;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(0.5);transform:scaleY(0.5);top:auto;bottom:-2px}.rich_media_area_primary .original_img_wrp{display:inline-block;font-size:0}.rich_media_area_primary .original_img_wrp .tips_global{display:block;margin-top:.5em;font-size:14px;text-align:right;width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.rich_media_area_extra{padding:0 15px 0}.rich_media_title{margin-bottom:10px;line-height:1.4;font-weight:400;font-size:24px}.rich_media_meta_list{margin-bottom:18px;line-height:20px;font-size:0}.rich_media_meta_list em{font-style:normal}.rich_media_meta{display:inline-block;vertical-align:middle;margin-right:8px;margin-bottom:10px;font-size:16px}.meta_original_tag{display:inline-block;vertical-align:middle;padding:1px .5em;border:1px solid #9e9e9e;color:#8c8c8c;border-top-left-radius:20% 50%;-moz-border-radius-topleft:20% 50%;-webkit-border-top-left-radius:20% 50%;border-top-right-radius:20% 50%;-moz-border-radius-topright:20% 50%;-webkit-border-top-right-radius:20% 50%;border-bottom-left-radius:20% 50%;-moz-border-radius-bottomleft:20% 50%;-webkit-border-bottom-left-radius:20% 50%;border-bottom-right-radius:20% 50%;-moz-border-radius-bottomright:20% 50%;-webkit-border-bottom-right-radius:20% 50%;font-size:15px;line-height:1.1}.meta_enterprise_tag img{width:30px;height:30px!important;display:block;position:relative;margin-top:-3px;border:0}.rich_media_meta_text{color:#8c8c8c}span.rich_media_meta_nickname{display:none}.rich_media_thumb_wrp{margin-bottom:6px}.rich_media_thumb_wrp .original_img_wrp{display:block}.rich_media_thumb{display:block;width:100%}.rich_media_content{overflow:hidden;color:#3e3e3e}.rich_media_content *{max-width:100%!important;box-sizing:border-box!important;-webkit-box-sizing:border-box!important;word-wrap:break-word!important}.rich_media_content p{clear:both;min-height:1em;white-space:pre-wrap}.rich_media_content em{font-style:italic}.rich_media_content fieldset{min-width:0}.rich_media_content .list-paddingleft-2{padding-left:30px}.rich_media_content blockquote{margin:0;padding-left:10px;border-left:3px solid #dbdbdb}img{height:auto!important}@media(min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2){.mm_appmsg .rich_media_inner,.mm_appmsg .rich_media_meta,.mm_appmsg .discuss_list,.mm_appmsg .rich_media_extra,.mm_appmsg .title_tips .tips{font-size:17px}.mm_appmsg .meta_original_tag{font-size:15px}}@media(min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3){.mm_appmsg .rich_media_title{font-size:25px}}@media screen and (min-width:1024px){.rich_media{width:740px;margin-left:auto;margin-right:auto}.rich_media_inner{padding:20px}body{background-color:#fff}}@media screen and (min-width:1025px){body{font-family:"Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif}.rich_media{position:relative}.rich_media_inner{background-color:#fff;padding-bottom:100px}}.radius_avatar{display:inline-block;background-color:#fff;padding:3px;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;overflow:hidden;vertical-align:middle}.radius_avatar img{display:block;width:100%;height:100%;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;background-color:#eee}.cell{padding:.8em 0;display:block;position:relative}.cell_hd,.cell_bd,.cell_ft{display:table-cell;vertical-align:middle;word-wrap:break-word;word-break:break-all;white-space:nowrap}.cell_primary{width:2000px;white-space:normal}.flex_cell{padding:10px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.flex_cell_primary{width:100%;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;box-flex:1;flex:1}.original_tool_area{display:block;padding:.75em 1em 0;-webkit-tap-highlight-color:rgba(0,0,0,0);color:#3e3e3e;border:1px solid #eaeaea;margin:20px 0}.original_tool_area .tips_global{position:relative;padding-bottom:.5em;font-size:15px}.original_tool_area .tips_global:after{content:" ";position:absolute;left:0;bottom:0;right:0;height:1px;border-bottom:1px solid #dbdbdb;-webkit-transform-origin:0 100%;transform-origin:0 100%;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.original_tool_area .radius_avatar{width:27px;height:27px;padding:0;margin-right:.5em}.original_tool_area .radius_avatar img{height:100%!important}.original_tool_area .flex_cell_bd{width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.original_tool_area .flex_cell_ft{font-size:14px;color:#8c8c8c;padding-left:1em;white-space:nowrap}.original_tool_area .icon_access:after{content:" ";display:inline-block;height:8px;width:8px;border-width:1px 1px 0 0;border-color:#cbcad0;border-style:solid;transform:matrix(0.71,0.71,-0.71,0.71,0,0);-ms-transform:matrix(0.71,0.71,-0.71,0.71,0,0);-webkit-transform:matrix(0.71,0.71,-0.71,0.71,0,0);position:relative;top:-2px;top:-1px}.weui_loading{width:20px;height:20px;display:inline-block;vertical-align:middle;-webkit-animation:weuiLoading 1s steps(12,end) infinite;animation:weuiLoading 1s steps(12,end) infinite;background:transparent url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iciIgd2lkdGg9JzEyMHB4JyBoZWlnaHQ9JzEyMHB4JyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJub25lIiBjbGFzcz0iYmsiPjwvcmVjdD4KICAgIDxyZWN0IHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjRTlFOUU5JwogICAgICAgICAgdHJhbnNmb3JtPSdyb3RhdGUoMCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+CiAgICA8L3JlY3Q+CiAgICA8cmVjdCB4PSc0Ni41JyB5PSc0MCcgd2lkdGg9JzcnIGhlaWdodD0nMjAnIHJ4PSc1JyByeT0nNScgZmlsbD0nIzk4OTY5NycKICAgICAgICAgIHRyYW5zZm9ybT0ncm90YXRlKDMwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4KICAgICAgICAgICAgICAgICByZXBlYXRDb3VudD0naW5kZWZpbml0ZScvPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyM5Qjk5OUEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSg2MCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+CiAgICAgICAgICAgICAgICAgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnLz4KICAgIDwvcmVjdD4KICAgIDxyZWN0IHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjQTNBMUEyJwogICAgICAgICAgdHJhbnNmb3JtPSdyb3RhdGUoOTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNBQkE5QUEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxMjAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNCMkIyQjInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxNTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNCQUI4QjknCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxODAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNDMkMwQzEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyMTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNDQkNCQ0InCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyNDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNEMkQyRDInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyNzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNEQURBREEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgzMDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNFMkUyRTInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgzMzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0Pgo8L3N2Zz4=) no-repeat;-webkit-background-size:100%;background-size:100%}@-webkit-keyframes weuiLoading{0%{-webkit-transform:rotate3d(0,0,1,0deg)}100%{-webkit-transform:rotate3d(0,0,1,360deg)}}@keyframes weuiLoading{0%{-webkit-transform:rotate3d(0,0,1,0deg)}100%{-webkit-transform:rotate3d(0,0,1,360deg)}}.gif_img_wrp{display:inline-block;font-size:0;position:relative}.gif_img_wrp img{min-height:120px;min-width:120px}.gif_img_tips{background:rgba(0,0,0,0.6)!important;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000',endcolorstr = '#99000000');border-top-left-radius:1.2em 50%;-moz-border-radius-topleft:1.2em 50%;-webkit-border-top-left-radius:1.2em 50%;border-top-right-radius:1.2em 50%;-moz-border-radius-topright:1.2em 50%;-webkit-border-top-right-radius:1.2em 50%;border-bottom-left-radius:1.2em 50%;-moz-border-radius-bottomleft:1.2em 50%;-webkit-border-bottom-left-radius:1.2em 50%;border-bottom-right-radius:1.2em 50%;-moz-border-radius-bottomright:1.2em 50%;-webkit-border-bottom-right-radius:1.2em 50%;line-height:2.3;padding:0 1em;font-size:11px;color:#fff;text-align:center;position:absolute;bottom:10px;left:10px}.gif_img_tips i{vertical-align:middle;margin:-0.2em .73em 0 -2px}.gif_img_play_arrow{display:inline-block;width:0;height:0;border-width:8px;border-style:dashed;border-color:transparent;border-right-width:0;border-left-color:#fff;border-left-style:solid;border-width:5px 0 5px 8px}.gif_img_loading{width:14px;height:14px}i.gif_img_loading{margin-left:-4px}.rich_media_global_msg{position:fixed;top:0;left:0;right:0;padding:.65em 35px .65em 15px;z-index:1;background-color:#cde6ff;color:#8c8c8c;font-size:13px}.rich_media_global_msg .icon_closed{position:absolute;right:15px;top:50%;margin-top:-5px;line-height:300px;overflow:hidden;-webkit-tap-highlight-color:rgba(0,0,0,0);background:transparent url(/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_appmsg_msg_closed_sprite.2x.png) no-repeat 0 0;width:11px;height:11px;vertical-align:middle;display:inline-block;-webkit-background-size:100% auto;background-size:100% auto}.rich_media_global_msg .icon_closed:active{background-position:0 -17px}.preview_appmsg .rich_media_title{margin-top:1.5em}@media screen and (min-width:1024px){.rich_media_global_msg{position:relative;margin:0 20px}.preview_appmsg .rich_media_title{margin-top:0}}</style>
+<style>
+     
+    </style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_pc2c9cd6.css">
+<![endif]-->
+
+    </head>
+    <body id="activity-detail" class="zh_CN mm_appmsg" ontouchstart="">
+        
+    <script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+        var write_sceen_time = (+new Date());
+    </script>
+
+    <div id="js_article" class="rich_media preview_appmsg">
+        
+        <div id="js_top_ad_area" class="top_banner">
+ 
+        </div>
+                
+
+        <div class="rich_media_inner">
+                        <div class="rich_media_global_msg">
+                
+                此为临时链接，仅用于文章预览，将在短期内失效
+                <a id="js_close_temp" href="javascript:;" class="icon_closed">关闭</a>
+            </div>
+                        <div id="page-content">
+                <div id="img-content" class="rich_media_area_primary">
+                    <h2 class="rich_media_title" id="activity-name">
+                        数据|李易峰当前网络数据与发展分析报告 
+                    </h2>
+                    <div class="rich_media_meta_list">
+                        						                        <em id="post-date" class="rich_media_meta rich_media_meta_text">2016-04-30</em>
+
+                                                <em class="rich_media_meta rich_media_meta_text">七州夷离堇</em>
+                                                <a class="rich_media_meta rich_media_meta_link rich_media_meta_nickname" href="javascript:void(0);" id="post-user">影视大数据</a>
+                        <span class="rich_media_meta rich_media_meta_text rich_media_meta_nickname">影视大数据</span>
+
+                        <div id="js_profile_qrcode" class="profile_container" style="display:none;">
+                            <div class="profile_inner">
+                                <strong class="profile_nickname">影视大数据</strong>
+                                <img class="profile_avatar" id="js_profile_qrcode_img" src="" alt="">
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">微信号</label>
+                                <span class="profile_meta_value">ysdsju</span>
+                                </p>
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">功能介绍</label>
+                                <span class="profile_meta_value">影视、艺人数据分析评价，微博号@德塔文数据</span>
+                                </p>
+                                
+                            </div>
+                            <span class="profile_arrow_wrp" id="js_profile_arrow_wrp">
+                                <i class="profile_arrow arrow_out"></i>
+                                <i class="profile_arrow arrow_in"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                                                            
+                                                            
+                    
+                    <div class="rich_media_content " id="js_content">
+                        
+
+                        
+                        <section style="box-sizing: border-box; background-color: rgb(255, 255, 255);"><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin: 0.5em 0px; padding-left: 0.5em; padding-right: 0.5em;  box-sizing: border-box; "><img style="box-sizing: border-box; width: 100%; box-shadow: rgb(102, 102, 102) 0.2em 0.2em 0.5em; border-color: white; height: auto !important; vertical-align: middle;" src="0.jpg" class="" data-ratio="0.6240740740740741" data-w="540"  /></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><section class="" style="width: 100%; box-sizing: border-box;"><section class="" style="display: block; float: left; padding: 0px 3px 0px 0px; line-height: 1; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="font-size: 44.8px; box-sizing: border-box;"><section style="box-sizing: border-box;">李</section></section></section></section></section><section class="" style="display: block; min-height: 4.5em !important; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;">易峰从2007年参加“加油！好男儿”进入演艺圈以来，浮沉已近10年，虽然年龄不大，却出演了较多的影视作品，已算得上娱乐圈一名成熟艺人了。最近这些年，他幸运的赶上了互联网时代，成为了网络热度较高的艺人之一。本文中，DataWin智库对他的当前网络数据和近期发展进行了全面解析。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><p style="box-sizing: border-box;">李易峰的四月份网络热度暂居男艺人第五位。</p><p style="box-sizing: border-box;">这位85鲜肉军团的代表人物之一，仍然是潮头人物。<span style="line-height: 1.6;">甚至我们可以看到，整个85后90前小生序列中，李易峰是网红度维持得最好的一位。</span></p></section></section></section></section><section style="clear: both; box-sizing: border-box;"></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin: 0.5em 0px; padding-left: 0.5em; padding-right: 0.5em;  box-sizing: border-box; "><img style="box-sizing: border-box; width: 100%; box-shadow: rgb(102, 102, 102) 0.2em 0.2em 0.5em; border-color: white; height: auto !important; vertical-align: middle;" src="1.jpg" class="" data-ratio="1.038888888888889" data-w="540"  /></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: center; font-size: 14px; box-sizing: border-box;"><section style="box-sizing: border-box;">（算法说明见附录1，采集日期为3/24-4/22日）</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin: 0.5em 0px;  box-sizing: border-box; "><section class="" style="border-top-width: 2px; border-top-style: solid; border-color: rgb(49, 199, 100); padding-top: 3px; box-sizing: border-box;"><section class="" style="display: inline-block; vertical-align: top; height: 2em; line-height: 2em; padding: 0px 0.5em; color: rgb(255, 255, 255); box-sizing: border-box; background-color: rgb(49, 199, 100);"><section style="box-sizing: border-box;"><strong>85军团的网络竞争力分析</strong></section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section><section style="width: 0px; display: inline-block; vertical-align: top; border-left-width: 0.8em; border-left-style: solid; border-left-color: rgb(49, 199, 100); border-top-width: 1em; border-top-style: solid; border-top-color: rgb(49, 199, 100); border-right-width: 0.8em !important; border-right-style: solid !important; border-right-color: transparent !important; border-bottom-width: 1em !important; border-bottom-style: solid !important; border-bottom-color: transparent !important; box-sizing: border-box;"></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><section class="" style="width: 100%; box-sizing: border-box;"><section class="" style="display: block; float: left; padding: 0px 3px 0px 0px; line-height: 1; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="font-size: 44.8px; box-sizing: border-box;"><section style="box-sizing: border-box;">由</section></section></section></section></section><section class="" style="display: block; min-height: 4.5em !important; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;">于娱乐圈存在的代际效应，在细说李易峰之前，我们先对整个85军团的态势进行一些分析。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">曾经风光无限的85军团，尽管在电影、电视的实际业绩上持续开拓，在2016年的网络热度上似乎有所下降。</section><section style="box-sizing: border-box;">在互联网时代，无论艺人再如何惊才绝艳、德艺双馨，网不红显然事难谐，而李易峰则代表了85军团网红度的最高水准。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">85军团为何网红度集体短时下跌，这是个有趣的话题。</section><section style="box-sizing: border-box;">对于不那么鲜嫩生涩、但又远远谈不上腊肉的85后们而言，这个微妙的年龄段用好了是优势，用坏了就是尴尬。</section><section style="box-sizing: border-box;">85后要通过网红拼天下，&nbsp;再小点是小鲜肉，再老点是魅力大叔，现在却有点游移不定。其结果是，2016年85后小生们似乎多多少少到了转型定位期。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">85小生现在处于80小生与90、95小生之间的尴尬段，不够成熟又不够鲜嫩，有点成熟又有点鲜嫩，所以定位略为模糊，和前后两段艺人抢粉丝抢市场，竞争压力格外大。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">铁粉们仍然热爱85后，但新的兴趣人群从何而来，成为关键点。</section><section style="box-sizing: border-box;">作为85网红第一人的李易峰，能否扛得住网络热度，也成为85小生人群定位的一个考验点。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section></section><section style="clear: both; box-sizing: border-box;"></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin: 0.5em 0px; padding-left: 0.5em; padding-right: 0.5em;  box-sizing: border-box; "><img style="box-sizing: border-box; width: 100%; box-shadow: rgb(102, 102, 102) 0.2em 0.2em 0.5em; border-color: white; height: auto !important; vertical-align: middle;" src="2.jpg" class="" data-ratio="0.975925925925926" data-w="540"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">从上图中可见，<strong>李易峰在同龄人中网络人气的优势非常突出</strong>。</section><section style="box-sizing: border-box;">但如果放眼80代的轻熟肉和90、95的小鲜肉们的各种叱咤风云，<span style="color: rgb(0, 82, 255);"><strong>则整个85代际的小生似乎都在网红、粉丝热度方面稍显薄弱，呈现人气较为低迷的态势</strong></span>。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">由于男艺人的话题往往呈现代际效应，同代人具备一定相互竞争、但也相互加持的效果，在85后整体网红度明显下调的情况下，李易峰的一枝独秀，成为一道差异化风景线。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">这也带来进一步的思考：要么李易峰带动85后部分艺人网红度的回血，要么李易峰在集体沉寂的情况下，网红度随之下调。</section><section style="box-sizing: border-box;"></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin: 0.5em 0px; padding-left: 0.5em; padding-right: 0.5em;  box-sizing: border-box; "><img style="box-sizing: border-box; width: 100%; box-shadow: rgb(102, 102, 102) 0.2em 0.2em 0.5em; border-color: white; height: auto !important; vertical-align: middle;" src="3.jpg" class="" data-ratio="1.2851851851851852" data-w="540"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">但我们也必须看到，网络热度竞争力，事实上和艺人的市场定位明显相关。85后目前的人气下降，和年龄递增后进入定位调整期有关。<strong>一旦步入定位明确的成熟期，85后小生仍然有可能通过新的稳定市场定位获取新的高关注度人群，如同目前当红的80代小生胡歌等人。</strong></section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">另一方面，85后小生的市场竞争力与网络竞争力不尽成正比，<span style="color: rgb(12, 20, 233); box-sizing: border-box;"><strong style="box-sizing: border-box;">尽管网红度下调，但通过上一轮网红度的市场变现，在电影票房和收视率上仍然有强势表现，这一方面预示着网络竞争力仍有可上升的空间，另一方面，如果网络竞争力持续不振，在网红度越来越影响经济消费能力的情况下，最终也会影响85小生的市场竞争力。</strong></span></section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><span style="color: rgb(12, 20, 233); box-sizing: border-box;"><strong style="box-sizing: border-box;">换而言之，85小生仍然有较大的网络竞争力预期，但顺利转型，营造下一个强网络竞争年，将是85小生们的重要目标。</strong></span></section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">只是，届时85后高人气小生的范畴将有所压减，因为并不是每个人都能顺利渡过转型，步入下一段辉煌期。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">如何寻找优质的转型契机，成为85后竞争力存续的关键点。</section><section style="box-sizing: border-box;">李易峰作为当前85小生的人气代表，他的探索，也将具备重要的积极意义。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin: 0.5em 0px;  box-sizing: border-box; "><section class="" style="border-top-width: 2px; border-top-style: solid; border-color: rgb(49, 199, 100); padding-top: 3px; box-sizing: border-box;"><section class="" style="display: inline-block; vertical-align: top; height: 2em; line-height: 2em; padding: 0px 0.5em; color: rgb(255, 255, 255); box-sizing: border-box; background-color: rgb(49, 199, 100);"><section style="box-sizing: border-box;"><strong>李易峰的各维度数据表现</strong></section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section><section style="width: 0px; display: inline-block; vertical-align: top; border-left-width: 0.8em; border-left-style: solid; border-left-color: rgb(49, 199, 100); border-top-width: 1em; border-top-style: solid; border-top-color: rgb(49, 199, 100); border-right-width: 0.8em !important; border-right-style: solid !important; border-right-color: transparent !important; border-bottom-width: 1em !important; border-bottom-style: solid !important; border-bottom-color: transparent !important; box-sizing: border-box;"></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><p><br  /></p><p><img data-s="300,640" data-type="jpeg" src="4.jpg" data-ratio="0.6672661870503597" data-w=""  /></p></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">1、搜索指数</strong></section><section style="box-sizing: border-box;">李易峰的搜索指数（百度、360）在本次统计的男艺人TOP10中居于中等偏高水平。</section><section style="box-sizing: border-box;">在经历了《古剑奇谭》、《盗墓笔记》等持续现象级大热剧作之后，李易峰的国民度已经提升到相当高度，且持续3年，所以新鲜度也有所下调，在没有重大新闻的情况下，搜索量不易创造天量，但稳定在较高水平上，持续度相当好。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">2、新浪微指数</strong></section><section style="box-sizing: border-box;">新浪微博的相关热度，对评价艺人在娱乐核心敏感人群的话题度和敏感度具备极高价值，某些时候，新浪微指数甚至具备对大众向热度的引导意义。</section><section style="box-sizing: border-box;">李易峰在新浪微博的传播能力处于男艺人中的顶级水平，竞争优势明显。强大的微博传播能力，有利于李易峰在娱乐核心敏感人群中的持续热度。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">3、媒体指数</strong></section><section style="box-sizing: border-box;">通过考察媒体指数（百度、360）可见，&nbsp;李易峰在新媒体各大平台的传播力处于TOP10男艺人中的中等偏弱水平。从媒体投放量来看，似乎有所不足。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">4、论坛热度</strong></section><section style="box-sizing: border-box;">考察了李易峰在5个主要娱乐论坛的话题表现，李易峰的论坛热度处于男艺人中的中等水平。这也与李易峰在豆瓣八组被禁有一定关系。豆瓣八组目前是活跃度较高的娱乐论坛之一，缺失该论坛数据，对李易峰的话题热度略有影响。在其他娱乐向论坛上，李易峰仍然是大热的话题人物。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">5、贴吧活力</strong></section><section style="box-sizing: border-box;">对于艺人在百度贴吧的活力，我们考察了新增主题帖、新增回帖、新增粉丝数等指标，李易峰的贴吧活力在TOP10男艺人中处于中等水平。其中新增主题和新增回帖的数据量略高于TOP10平均水平，但新增粉丝数有所不足。<strong style="box-sizing: border-box;">这也和李易峰已经大红三年，面临人气饱和后的平台期有关。</strong></section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="text-indent: 0em; box-sizing: border-box;"><strong style="box-sizing: border-box;">6、兴趣人群构成</strong></section><p style="box-sizing: border-box;"><strong><span style="text-decoration: underline;"><br  /></span></strong></p><p style="box-sizing: border-box;"><strong><span style="text-decoration: underline;">年龄构成</span></strong></p><section style="box-sizing: border-box;">李易峰兴趣人群的年龄构成，30岁以下占据68%，略高于TOP10的平均水准。</section><section style="box-sizing: border-box;">同时我们也注意到，30岁以下兴趣人群的占比，往往与网络人气的持续力呈现正相关关系。李易峰的兴趣人群年龄构成具备一定竞争力。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="max-width: 100%; box-sizing: border-box; vertical-align: middle;" class="" src="5.jpg" data-ratio="0.6151079136690647" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">同时，我们也做了李易峰与其他85后男艺人网络兴趣人群的年龄构成比照，进一步印证了我们的看法：李易峰的网络兴趣人群年龄构成是最偏年轻化的，这也可以解释他网络人气持续的重要原因。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin: 0.5em 0px; padding-left: 0.5em; padding-right: 0.5em;  box-sizing: border-box; "><img style="box-sizing: border-box; width: 100%; box-shadow: rgb(102, 102, 102) 0.2em 0.2em 0.5em; border-color: white; height: auto !important; vertical-align: middle;" src="6.jpg" class="" data-ratio="0.6148148148148148" data-w="540"  /></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">网络兴趣人群的年龄构成，与艺人接戏风格、自身气质、化妆造型等都有关系。但保持相对青春化的网络兴趣人群，有利于艺人的网络热度延续，进而也有利于艺人的网络热度变现能力。</strong></section><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;"><strong><span style="text-decoration: underline;">网络兴趣人群性别构成</span></strong></section><section style="box-sizing: border-box;">李易峰的网络兴趣人群中女性占比在TOP10小生中处于中等偏高水平，在85后小生中则处于最高。</section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">保持较大的青年女性兴趣人群，在她世纪的今天，对于男艺人的事业版图具备重大意义。</strong></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">另一方面，女性人群占比过大，有可能影响国民度的提升，甚至侧面印证艺人缺乏广泛人气基础，李易峰近60%的女性兴趣人群占比是一个比较合理的比例。</strong></section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin: 0.5em 0px; padding-left: 0.5em; padding-right: 0.5em;  box-sizing: border-box; "><img style="box-sizing: border-box; width: 100%; box-shadow: rgb(102, 102, 102) 0.2em 0.2em 0.5em; border-color: white; height: auto !important; vertical-align: middle;" src="7.jpg" class="" data-ratio="0.5666666666666667" data-w="540"  /></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin: 0.5em 0px; padding-left: 0.5em; padding-right: 0.5em;  box-sizing: border-box; "><img style="box-sizing: border-box; width: 100%; box-shadow: rgb(102, 102, 102) 0.2em 0.2em 0.5em; border-color: white; height: auto !important; vertical-align: middle;" src="8.jpg" class="" data-ratio="0.6074074074074074" data-w="540"  /></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><strong><span style="text-decoration: underline;">兴趣人群地域构成</span></strong></section><section style="box-sizing: border-box;">李易峰的兴趣人群主要来自浙江、广东、江苏、北京、上海、山东、河南、四川、福建、天津等地。</section><section style="box-sizing: border-box;">考察了浙江、广东、江苏等经济发达省份和北京、上海等一线城市的各家艺人兴趣人群占比，进行了李易峰在经济发达地区的网络竞争力分析。</section><section style="box-sizing: border-box;">图中可见，李易峰尽管整体人气较高，在经济发达地区及一线城市的影响力不占据优势。另一方面也可以说明，李易峰的兴趣人群分布较为宽泛，在国民度上有一定优势。</section><section style="box-sizing: border-box;">地域分布的特征，<strong style="box-sizing: border-box;">说明目前李易峰在一线城市和经济发达地区的潮流引领上不占优，在强调国民度和大地域普适性的场景则优势突出。</strong>这位曾经的潮流前锋，正在逐步转型为沉稳实战型艺人。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin: 0.5em 0px; padding-left: 0.5em; padding-right: 0.5em;  box-sizing: border-box; "><img style="box-sizing: border-box; width: 100%; box-shadow: rgb(102, 102, 102) 0.2em 0.2em 0.5em; border-color: white; height: auto !important; vertical-align: middle;" src="9.jpg" class="" data-ratio="0.6537037037037037" data-w="540"  /></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin: 0.5em 0px; padding-left: 0.5em; padding-right: 0.5em;  box-sizing: border-box; "><img style="box-sizing: border-box; width: 100%; box-shadow: rgb(102, 102, 102) 0.2em 0.2em 0.5em; border-color: white; height: auto !important; vertical-align: middle;" src="10.jpg" class="" data-ratio="0.6129629629629629" data-w="540"  /></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><strong><span style="text-decoration: underline;">需求分析</span></strong></section><section style="box-sizing: border-box;">李易峰需求分析相关中，“女友、现任女友、电视、婚纱照”等占据重要地位，可见大众对李易峰的感情、婚恋等有较大兴趣，体现出偶像型小生的特质。</section><section style="box-sizing: border-box;">与李易峰的网络兴趣人群需求分析强相关的艺人主要有：李晨、李菲儿、李沁、李多海、李钟硕等。值得注意的是，尽管绯闻压身，媒体指数飙升，在李易峰的百度搜索需求分布中，杨幂的数据值较低，李易峰的核心兴趣人群与杨幂弱相关。<strong style="box-sizing: border-box;">说明媒体的兴趣与大众的兴趣并不一致。</strong></section><section style="box-sizing: border-box;">在作品及参与节目方面，快本、怦然星动的有一定关注度，但比起女友等话题，热度不高。《诛仙》、《麻雀》等作品与李易峰的相关度还不足，李易峰从大热偶像艺人到实力艺人的转型，仍需持续努力。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin: 0.5em 0px; padding-left: 0.5em; padding-right: 0.5em;  box-sizing: border-box; "><img style="box-sizing: border-box; width: 100%; box-shadow: rgb(102, 102, 102) 0.2em 0.2em 0.5em; border-color: white; height: auto !important; vertical-align: middle;" src="11.jpg" class="" data-ratio="0.8740740740740741" data-w="540"  /></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><strong><span style="text-decoration: underline;">舆情风险控制</span></strong></section><section style="box-sizing: border-box;">截止发稿时，因与杨幂的小道传闻，李易峰驳斥谣言等新闻在新媒体平台和微信公众号上已迅速发散，百度媒体指数迅速升温到600以上，达到近期高点。</section><section style="box-sizing: border-box;">尽管各大传媒和公众号对李易峰多为肯定态度，舆情风险仍然快速扩大。</section><section style="box-sizing: border-box;">李易峰在驳斥传言的时候，似乎该事件反而成了舆情焦点。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin: 0.5em 0px; padding-left: 0.5em; padding-right: 0.5em;  box-sizing: border-box; "><img style="box-sizing: border-box; width: 100%; box-shadow: rgb(102, 102, 102) 0.2em 0.2em 0.5em; border-color: white; height: auto !important; vertical-align: middle;" src="12.jpg" class="" data-ratio="0.40370370370370373" data-w="540"  /></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin: 0.5em 0px;  box-sizing: border-box; "><section class="" style="border-top-width: 2px; border-top-style: solid; border-color: rgb(49, 199, 100); padding-top: 3px; box-sizing: border-box;"><section class="" style="display: inline-block; vertical-align: top; height: 2em; line-height: 2em; padding: 0px 0.5em; color: rgb(255, 255, 255); box-sizing: border-box; background-color: rgb(49, 199, 100);"><section style="box-sizing: border-box;"><strong>李易峰作品分析</strong></section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section><section style="width: 0px; display: inline-block; vertical-align: top; border-left-width: 0.8em; border-left-style: solid; border-left-color: rgb(49, 199, 100); border-top-width: 1em; border-top-style: solid; border-top-color: rgb(49, 199, 100); border-right-width: 0.8em !important; border-right-style: solid !important; border-right-color: transparent !important; border-bottom-width: 1em !important; border-bottom-style: solid !important; border-bottom-color: transparent !important; box-sizing: border-box;"></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><section class="" style="width: 100%; box-sizing: border-box;"><section class="" style="display: block; float: left; padding: 0px 3px 0px 0px; line-height: 1; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="font-size: 44.8px; box-sizing: border-box;"><section style="box-sizing: border-box;">据</section></section></section></section></section><section class="" style="display: block; min-height: 4.5em !important; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;">统计，李易峰共出演影视作品19部，其中电视剧15部，电影3部，网络剧1部。主演12部，参演7部。李易峰出演作品中，不乏《古剑奇谭》、《盗墓笔记》等大热神剧，也不乏《老炮儿》等口碑电影神作，今年也有《诛仙青云志》等大IP即将播出。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin: 0.5em 0px; padding-left: 0.5em; padding-right: 0.5em;  box-sizing: border-box; "><img style="box-sizing: border-box; width: 100%; box-shadow: rgb(102, 102, 102) 0.2em 0.2em 0.5em; border-color: white; height: auto !important; vertical-align: middle;" src="13.jpg" class="" data-ratio="0.7148148148148148" data-w="540"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">综合看来，李易峰可谓作品丰富，作品的覆盖面和影响力较大。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">李易峰出演作品以电视剧为主，近年也在探索向电影圈发展，并在网络剧上成为重磅标志人物。而他的<span style="line-height: 1.6; box-sizing: border-box;">作品呈现以下特点：</span></section><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;"><br style="box-sizing: border-box;"  /></span></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">1、&nbsp;近年的收视率、票房价值和网播量都表现较好。</strong>其中《古剑奇谭》平均收视率1.314，打开了湖南卫视钻石剧场一片江山，《盗墓笔记》以约30亿的网播总量开拓中国网络剧的元年，成为新市场的引领者，载入了网剧业的史册。在电影市场上，主演的《栀子花开》和《怦然星动》也有不错斩获。整体而言，李易峰的网络人气到影视市场价值的变现非常充分，转换率较高。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">2、&nbsp;主演作品以强IP作品居多</strong>，《古剑奇谭》、《盗墓笔记》和《诛仙》等都是男主视角的强IP作品，即使是青春电影《栀子花开》也属于歌曲IP之列。通过连续出演高国民度的强IP作品，让李易峰在二次元游戏兴趣人群、小说兴趣人群等圈层中都取得了较高的知名度，为他的网络人气打下了稳定基础。同时，由于李易峰反复出演强IP作品，近年风格受到一定限制。</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin: 0.5em 0px; padding-left: 0.5em; padding-right: 0.5em;  box-sizing: border-box; "><img style="box-sizing: border-box; width: 100%; box-shadow: rgb(102, 102, 102) 0.2em 0.2em 0.5em; border-color: white; height: auto !important; vertical-align: middle;" src="14.jpg" class="" data-ratio="0.6296296296296297" data-w="540"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">3、&nbsp;参演作品的口碑好于主演作品</strong>。通过分析李易峰历年作品的豆瓣评分可见，强IP作品能够得到极高人气，但不易得到大众口碑认可，相反容易引起原著粉丝的失望和反感，可见强IP也有代价。反而是李易峰参演的冯小刚电影《老炮儿》等，并非强IP作品，却取得了极高的口碑，也给李易峰添了不少好感度。可见，IP并非唯一王道，适度搭配原创优质作品，有利于艺人好感度的提升。</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin: 0.5em 0px; padding-left: 0.5em; padding-right: 0.5em;  box-sizing: border-box; "><img data-s="300,640" data-type="jpeg" src="15.jpg" data-ratio="0.538" data-w="500"  /><br  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><p style="box-sizing: border-box;"><strong style="box-sizing: border-box;"><br  /></strong></p><p style="box-sizing: border-box;"><strong style="box-sizing: border-box;">4、&nbsp;主演电视剧作品普遍质量好于电影</strong>。李易峰主演的电视剧尽管因强IP而褒贬不一，《古剑奇谭》等还是刷了不少的好感，但电影方面，《栀子花开》和《怦然星动》都未能取得好评，豆瓣平均评分4.2，票房与口碑未能达成一致高度。这也与李易峰在电影市场尚属新人，接获题材有一定限制有关。李易峰需要更加重视电影选题，避免口碑流失。</p></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin: 0.5em 0px; padding-left: 0.5em; padding-right: 0.5em;  box-sizing: border-box; "><img style="box-sizing: border-box; width: 100%; box-shadow: rgb(102, 102, 102) 0.2em 0.2em 0.5em; border-color: white; height: auto !important; vertical-align: middle;" src="16.jpg" class="" data-ratio="0.7222222222222222" data-w="540"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">李易峰作为2014年的人气之王，在持续三年之后，近期步入作品空窗期。</strong><strong style="box-sizing: border-box;">下一步的巩固提升，有赖于新作的发挥。</strong></section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">从李易峰的待播作品来看，《麻雀》是谍战剧，《诛仙》是又一部强IP作品。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">《麻雀》的搜索兴趣人群与李易峰密切相关，同时，对同为李易峰出演的《诛仙》、同为谍战剧的《胭脂》，以及存在潜在档期竞争关系的幻城有一定兴趣。</section><p style="box-sizing: border-box;">除此之外，核心人群的兴趣点主要集中在上映时间、片花、原著小说方面。</p><p style="box-sizing: border-box;"><br  /></p><section style="box-sizing: border-box;"><img data-s="300,640" data-type="png" src="17.jpg" data-ratio="0.5269784172661871" data-w=""  /><br  /></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;"><span style="color: rgb(12, 20, 233); box-sizing: border-box;">可以说，从百度需求来看，《麻雀》电视剧是李易峰的个人标签，其成败主要与李易峰的个人符号相关。</span></strong></section><section style="box-sizing: border-box;"><strong style="line-height: 1.6; box-sizing: border-box;"><span style="color: rgb(12, 20, 233); box-sizing: border-box;">《诛仙》的搜索兴趣人群更倾向于关注赵丽颖，尽管按照原著这是一部大男主戏。</span></strong><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><p style="box-sizing: border-box;">同时，《诛仙》电视剧的兴趣人群对《三生三世十里桃花》等剧也有一定兴趣。从原作设置来看，这无疑有些错位。</p><p style="box-sizing: border-box;">萧鼎的作品与唐七公子的作品风格差异极大，且一个是男主视角，一个是女主视角。但在搜索人群的兴趣点上，却实现了合流。《三生三世十里桃花》可能是《诛仙》的潜在竞争者。</p><section style="box-sizing: border-box;">这似乎也预示着，改编后的电视剧可能做了适度的风格调整和软化处理，《诛仙》与《三生三世》具备了可比性。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">从待播剧人气来看，《诛仙》作为强IP，影响力明显大于《麻雀》。从兴趣人群分布来看，《诛仙》电视剧在20-29岁年龄段男性中有较大的热度。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">综合看来，李易峰2016年待播作品中，《诛仙》的影响力有可能大于《麻雀》，也有利于巩固李易峰的网络人气地位，但强IP改编作品不易取得好的口碑，且与《幻城》等剧存在潜在的档期竞争关系，对该剧的播出效果有一定挑战。</section><section style="box-sizing: border-box;">《麻雀》作为谍战剧，是近年颇受欢迎的剧种，在制作品质到位的情况下，有可能得到意外突破。随着向谍战剧等轻熟龄艺人擅长剧种的探索，似乎也标志着李易峰在个人形象定位上的轻微转型。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin: 0.5em 0px;  box-sizing: border-box; "><section class="" style="border-top-width: 2px; border-top-style: solid; border-color: rgb(49, 199, 100); padding-top: 3px; box-sizing: border-box;"><section class="" style="display: inline-block; vertical-align: top; height: 2em; line-height: 2em; padding: 0px 0.5em; color: rgb(255, 255, 255); box-sizing: border-box; background-color: rgb(49, 199, 100);"><section style="box-sizing: border-box;"><strong>结论</strong></section></section><section style="width: 0px; display: inline-block; vertical-align: top; border-left-width: 0.8em; border-left-style: solid; border-left-color: rgb(49, 199, 100); border-top-width: 1em; border-top-style: solid; border-top-color: rgb(49, 199, 100); border-right-width: 0.8em !important; border-right-style: solid !important; border-right-color: transparent !important; border-bottom-width: 1em !important; border-bottom-style: solid !important; border-bottom-color: transparent !important; box-sizing: border-box;"></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;">1、李易峰近年的收视率、票房价值和网播量都表现较好，作品影响力和覆盖面较大。网络人气到影视市场价值的变现非常充分，转换率较高。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">2、李易峰仍然是网络人气最高的男艺人之一，且持续三年，打下较好国民度基础，同时李易峰也是85后小生网红度的最高水准；</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">3、85小生的网络人气集体下降，因步入轻熟男阶段，年龄递增后面临定位调整期，与80后、90后、95后三代艺人的竞争，定位模糊，亟需转型，一旦步入进一步成熟期，85后小生仍然可以通过新的稳定市场定位获取新的高关注度人群；李易峰同样需要寻找优质的转型契机；</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">4、在顶级网红的男艺人中，李易峰在新浪微指数表现强势，搜索指数、论坛热度、贴吧活力表现中等，媒体指数偏弱。说明粉丝的忠诚度高、粘性强，国民度高，大众讨论度不错，但步入人气饱和期，新增兴趣人群来源不足，粉丝运营维护需要加强，媒体投放还需增强。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">5、李易峰相关兴趣人群的年龄构成、性别构成较为合理，具备较强竞争力；</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">6、一线城市和经济发达地区粉丝占比偏低，在一线城市和经济发达地区的潮流引领上不占优，在强调国民度和地域普适性的场景则优势突出；</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">7、女友等话题热度较高。《诛仙》、《麻雀》等作品与李易峰的相关度还不足，且近期存在舆情风险，李易峰从大热偶像艺人到实力艺人的转型，仍需持续努力。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">8、出演强IP较多，市场变现能力极强，但作品口碑还需提升，选题还需更加考虑口碑潜力；</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">9、待播作品中，《诛仙》的影响力有可能大于《麻雀》，且有利于巩固李易峰的网络人气地位。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin: 0.5em 0px; padding-left: 0.5em; padding-right: 0.5em;  box-sizing: border-box; "><img style="box-sizing: border-box; width: 100%; box-shadow: rgb(102, 102, 102) 0.2em 0.2em 0.5em; border-color: white; height: auto !important; vertical-align: middle;" src="18.jpg" class="" data-ratio="0.9796296296296296" data-w="540"  /></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin: 0.5em 0px; padding-left: 0.5em; padding-right: 0.5em;  box-sizing: border-box; "><img style="box-sizing: border-box; width: 100%; box-shadow: rgb(102, 102, 102) 0.2em 0.2em 0.5em; border-color: white; height: auto !important; vertical-align: middle;" src="19.jpg" class="" data-ratio="0.8074074074074075" data-w="540"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section></section><section style="clear: both; box-sizing: border-box;"></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin: 0.5em 0px; overflow: hidden;  box-sizing: border-box; "><section class="" style="text-align: center; box-sizing: border-box;"><img style="float: left; width: 1em; box-sizing: border-box; vertical-align: middle; background-color: rgb(49, 199, 100);" src="20.jpg" data-ratio="1" data-w="16"  /> <img style="width: 1em; box-sizing: border-box; vertical-align: middle; background-color: rgb(49, 199, 100);" src="21.jpg" data-ratio="0.9375" data-w="16"  /> <img style="float: right; width: 1em; box-sizing: border-box; vertical-align: middle; background-color: rgb(49, 199, 100);" src="22.jpg" data-ratio="1" data-w="16"  /> </section><section class="" style="width: 100%; display: inline-block; vertical-align: top; margin-top: -0.8em; box-sizing: border-box;"><section style="float: left; width: 45%; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(49, 199, 100); box-sizing: border-box;"></section><section style="float: right; width: 45%; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(49, 199, 100); box-sizing: border-box;"></section></section><section class="" style="width: 100%; padding: 0px 0.5em; margin-top: -1.5em; line-height: 1.3em; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: center; color: rgb(49, 199, 100); box-sizing: border-box;"><section style="box-sizing: border-box;">以上为原创内容</section><section style="box-sizing: border-box;">转载请注明：七州夷离堇|影视大数据</section></section></section></section></section><section class="" style="width: 100%; text-align: center; box-sizing: border-box;"><section style="display: inline-block; vertical-align: middle; width: 98%; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(49, 199, 100); box-sizing: border-box;"></section></section><section class="" style="margin: -1em 0px 1em; box-sizing: border-box;"><img style="width: 1em; float: left; box-sizing: border-box; vertical-align: middle; background-color: rgb(49, 199, 100);" src="23.jpg" data-ratio="1" data-w="16"  /> <img style="width: 1em; float: right; box-sizing: border-box; vertical-align: middle; background-color: rgb(49, 199, 100);" src="24.jpg" data-ratio="1" data-w="16"  /> </section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin: 0.5em 0px 1em;  box-sizing: border-box; "><section class="" style="border: 1px solid rgb(226, 226, 226); box-shadow: rgb(226, 226, 226) 0px 16px 1px -13px; line-height: 1; padding: 8px; box-sizing: border-box;"><img style="float: left; width: 6em; box-sizing: border-box; vertical-align: middle;" class="" src="25.jpg" data-ratio="0.9583333333333334" data-w="96"  /> <section style="text-align: right; box-sizing: border-box;"><section class="" style="display: inline-block; vertical-align: top; width: 0.8em; margin-right: 0.5em; font-size: 12.8px; color: rgb(120, 124, 129); box-sizing: border-box;"><section style="box-sizing: border-box;">艺人趋势分析</section></section><section class="" style="display: inline-block; vertical-align: top; width: 0.8em; margin-right: 0.5em; font-size: 12.8px; color: rgb(120, 124, 129); box-sizing: border-box;"><section style="box-sizing: border-box;">娱乐数据分析</section></section><section class="" style="display: inline-block; vertical-align: top; width: 0.8em; margin-right: 0.5em; font-size: 12.8px; color: rgb(120, 124, 129); box-sizing: border-box;"><section style="box-sizing: border-box;">新媒体分析</section></section><section class="" style="display: inline-block; vertical-align: top; width: 0.8em; margin-right: 0.5em; font-size: 12.8px; color: rgb(120, 124, 129); box-sizing: border-box;"><section style="box-sizing: border-box;">影视数据分析</section></section><section class="" style="display: inline-block; vertical-align: top; width: 1.2em; margin-right: 1em; text-align: center; font-size: 19.2px; color: rgb(255, 255, 255); box-sizing: border-box; background-color: rgb(49, 199, 100);"><section style="box-sizing: border-box;">业务内容</section></section><section class="" style="display: inline-block; vertical-align: top; width: 1.5em; font-size: 24px; color: rgb(0, 0, 0); box-sizing: border-box;"><section style="box-sizing: border-box;">影视大数据</section></section></section><section class="" style="padding: 0.5em; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style=" padding: 0.2em 0px;  box-sizing: border-box; "><section class="" style="font-size: 12.8px; color: rgb(0, 0, 0); box-sizing: border-box;"><section style="box-sizing: border-box;">微信号：ysdsju</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style=" padding: 0.2em 0px;  box-sizing: border-box; "><section class="" style="font-size: 12.8px; color: rgb(120, 124, 129); box-sizing: border-box;"><section style="box-sizing: border-box;">QQ：149817396</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style=" padding: 0.2em 0px;  box-sizing: border-box; "><section class="" style="font-size: 12.8px; color: rgb(120, 124, 129); box-sizing: border-box;"><section style="box-sizing: border-box;">微博@DataWin影视大数据</section></section></section></section></section></section></section></section></section>
+                    </div>
+                    <script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+                        var first_sceen__time = (+new Date());
+
+                        if ("" == 1 && document.getElementById('js_content'))
+                            document.getElementById('js_content').addEventListener("selectstart",function(e){ e.preventDefault(); });
+
+                                        (function(){
+                            if (navigator.userAgent.indexOf("WindowsWechat") != -1){
+                                var link = document.createElement('link');
+                                var head = document.getElementsByTagName('head')[0];
+                                link.rel = 'stylesheet';
+                                link.type = 'text/css';
+                                link.href = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+                                head.appendChild(link);
+                            }
+                        })();
+                    </script>
+                    
+                    
+                                        
+                                        
+                                        <div class="rich_media_tool" id="js_toobar3">
+                                                                    <div id="js_read_area3" class="media_tool_meta tips_global meta_primary" style="display:none;">阅读 <span id="readNum3"></span></div>
+
+                        <span style="display:none;" class="media_tool_meta meta_primary tips_global meta_praise" id="like3">
+                            <i class="icon_praise_gray"></i><span class="praise_num" id="likeNum3"></span>
+                        </span>
+
+                        <a id="js_report_article3" style="display:none;" class="media_tool_meta tips_global meta_extra" href="javascript:void(0);">投诉</a>
+
+                    </div>
+
+
+
+                                    </div>
+
+                <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none">
+
+                </div>
+
+                <div class="rich_media_area_extra">
+
+                    
+                                        <div class="mpda_bottom_container" id="js_bottom_ad_area">
+                        
+                    </div>
+                                        
+                    <div id="js_iframetest" style="display:none;"></div>
+                                        
+                                    </div>
+               
+            </div>
+            <div id="js_pc_qr_code" class="qr_code_pc_outer" style="display:none;">
+                <div class="qr_code_pc_inner">
+                    <div class="qr_code_pc">
+                        <img id="js_pc_qr_code_img" class="qr_code_pc_img">
+                        <p>微信扫一扫<br>关注该公众号</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+        
+        <script nonce="MOONSAFE_NONCE_1469070959">
+    var __DEBUGINFO = {
+        debug_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/debug/console2ca724.js",
+        safe_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/moonsafe2f3e84.js",
+        res_list: []
+    };
+</script>
+        
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+    var not_in_mm_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm2c9cd6.css";
+    var windowwx_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+    var article_improve_combo_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_combo2eb52b.css";
+    var tid = "";
+    var aid = "";
+    var clientversion = "";
+    var appuin = "MzIwMDMzNzcyNQ=="||"";
+
+    var source = "";
+    var scene = 75;
+
+    var itemidx = "";
+
+    var _copyright_stat = "0";
+    var _ori_article_type = "";
+
+    var nickname = "影视大数据";
+    var appmsg_type = "6";
+    var ct = "1461959631";
+    var publish_time = "2016-04-30" || "";
+    var user_name = "gh_be98065513d1";
+    var user_name_new = "";
+    var fakeid   = "";
+    var version   = "";
+    var is_limit_user   = "0";
+    var round_head_img = "http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB1ELW0LLqCnHxgRo96Ecvib9G6oXkCfm0icJskpbiazjOGxnBrs1dsFw4PGXyBSMslaUSw6icyojeonicw/0?wx_fmt=png";
+    var msg_title = "数据|李易峰当前网络数据与发展分析报告";
+    var msg_desc = "85小生的代际效应分析；以及李易峰的网络数据分析、作品影响力分析、未来发展风险分析。";
+    var msg_cdn_url = "http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB0DLicpvdv9zuiaXdZ7LHo21icRzGW2O9gf2YmsjiaTrPeOexNM7k86eMgvibDQZqXEQribb3Cw4vumZibWQ/0?wx_fmt=png";
+    var msg_link = "http://mp.weixin.qq.com/s?__biz=MzIwMDMzNzcyNQ==&amp;tempkey=gyQQfLwRAKAyf48QSIPFRox5r5M3LjYV2q2YchrL0RAfX7cEwdY3xcU6uSWq03Nek1T%2F9OnnzIN9m1NaZahbgn9X3YQ1tZgqbEPzl8KYqCs%2FmqqET2YbQmQ9CxBiF6MSqp1YHbHgtkHPySisO2GBnA%3D%3D&amp;#rd";
+    var user_uin = "0"*1;
+    var msg_source_url = '';
+    var img_format = 'jpeg';
+    var srcid = '';
+    var req_id = '2811RzJUkAHCzYPhAurxuxPv';
+    var networkType;
+    var appmsgid = '' || '503136057'|| "503136057";
+    var comment_id = "0" * 1;
+    var comment_enabled = "" * 1;
+    var is_need_reward = "0" * 1;
+    var is_https_res = ("" * 1) && (location.protocol == "https:");
+
+    var devicetype = "";
+    var source_encode_biz = "";
+    // var source_username = "";
+    // var profile_ext_signature = "" || "";
+    var reprint_ticket = "";
+    var source_mid = "";
+    var source_idx = "";
+
+    var show_comment = "";
+    var __appmsgCgiData = {
+        can_use_page : "0"*1,
+        is_wxg_stuff_uin : "0"*1,
+        card_pos : "",
+        copyright_stat : "0",
+        source_biz : "",
+        hd_head_img : "http://wx.qlogo.cn/mmhead/Q3auHgzwzM4opw9CLZiawE4Tyg6sDaa6PJaxzAsxfSARfVRIvXEPHfw/0"||(window.location.protocol+"//"+window.location.host + "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_rumor_link.2x264e76.jpg")
+    };
+    var _empty_v = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/pages/voice/empty26f1f1.mp3";
+
+    var copyright_stat = "0" * 1;
+
+    var pay_fee = "" * 1;
+    var pay_timestamp = "";
+    var need_pay = "" * 1;
+
+    var need_report_cost = "0" * 1;
+    var use_tx_video_player = "0" * 1;
+
+    var friend_read_source = "" || "";
+    var friend_read_version = "" || "";
+    var friend_read_class_id = "" || "";
+
+    var is_only_read = "1" * 1;
+    var read_num = "2" * 1;
+    var like_num = "0" * 1;
+    var liked = "false" == 'true' ? true : false;
+    var is_temp_url = "gyQQfLwRAKAyf48QSIPFRox5r5M3LjYV2q2YchrL0RAfX7cEwdY3xcU6uSWq03Nek1T/9OnnzIN9m1NaZahbgn9X3YQ1tZgqbEPzl8KYqCs/mqqET2YbQmQ9CxBiF6MS2myLu9VqjDm&amp;nbsp;QAn5hlLL6g==" ? 1 : 0;
+    var send_time = "1469675458";
+      var icon_emotion_switch = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch.2x2f1273.png";
+      var icon_emotion_switch_active = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch_active.2x2f1273.png";
+      var icon_loading_white = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif";
+      var icon_audio_unread = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_unread26f1f1.png";
+      var icon_qqmusic_default = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_default.2x26f1f1.png";
+      var icon_qqmusic_source = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_source263724.png";
+
+    var topic_default_img = 'http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/topic/pic_book_thumb.2x2e4987.png';
+
+    // 话题卡片相关数据
+    var wxtopic = {
+    isbn : ""    // 书籍
+    };
+
+    var svr_time = "1469675520" * 1;
+
+        window.wxtoken = "";
+        window.__moon_initcallback = function(){
+        if(!!window.__initCatch){
+            window.__initCatch({
+                idkey : 27613,
+                startKey : 0,
+                limit : 128,
+                badjsId: 43,
+                reportOpt : {
+                    uin : uin,
+                    biz : biz,
+                    mid : mid,
+                    idx : idx,
+                    sn  : sn
+                },
+                extInfo : {
+                    network_rate : 0.01    //网络错误采样率
+                }
+            });
+        }
+    }
+    </script>
+
+        <script nonce="MOONSAFE_NONCE_1469070959">window.__moon_mainjs = 'appmsg/index.js';window.moon_map = {"appmsg/emotion/caret.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/caret278965.js","biz_wap/jsapi/cardticket.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/cardticket275627.js","appmsg/emotion/map.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/map278965.js","appmsg/emotion/textarea.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/textarea27cdc5.js","appmsg/emotion/nav.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/nav278965.js","appmsg/emotion/common.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/common278965.js","appmsg/emotion/slide.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/slide2a9cd9.js","pages/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/report2eec22.js","pages/music_player.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_player2b674b.js","pages/loadscript.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/loadscript2c9cd6.js","appmsg/emotion/dom.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/dom2f3ac3.js","appmsg/my_comment_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/my_comment_tpl.html2f3f48.js","biz_wap/utils/hashrouter.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/hashrouter2805ea.js","a/gotoappdetail.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/gotoappdetail2f33fb.js","a/ios.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/ios275627.js","a/android.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/android2c5484.js","a/profile.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/profile2f1750.js","a/mpshop.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/mpshop2f1750.js","a/card.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/card2f1750.js","biz_wap/utils/position.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/position2f1750.js","appmsg/a_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_report2f1750.js","biz_common/utils/respTypes.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/respTypes2c57d0.js","appmsg/cmt_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cmt_tpl.html2a2c13.js","sougou/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/a_tpl.html2c6e7c.js","appmsg/emotion/emotion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/emotion2f3ac3.js","biz_common/utils/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/report275627.js","biz_common/utils/huatuo.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/huatuo293afc.js","biz_common/utils/cookie.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/cookie275627.js","appmsg/topic_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/topic_tpl.html2f2e72.js","pages/voice_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_tpl.html2f2e72.js","pages/voice_component.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_component2f3ac3.js","pages/qqmusic_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/qqmusic_tpl.html2f2e72.js","new_video/ctl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/ctl2d441f.js","biz_common/utils/monitor.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/monitor2a30ee.js","biz_common/utils/spin.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/spin275627.js","biz_wap/jsapi/pay.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/pay275627.js","appmsg/reward_entry.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/reward_entry2f3ac3.js","appmsg/comment.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment2f3ac3.js","appmsg/like.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/like2eb52b.js","appmsg/a.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a2f1750.js","pages/version4video.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/version4video2e481d.js","rt/appmsg/getappmsgext.rt.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/rt/appmsg/getappmsgext.rt2c21f6.js","biz_wap/utils/storage.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage2a74ac.js","biz_common/tmpl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl2b3578.js","appmsg/img_copyright_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/img_copyright_tpl.html2a2c13.js","appmsg/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_tpl.html2f1750.js","biz_common/ui/imgonepx.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/ui/imgonepx275627.js","biz_common/dom/attr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr275627.js","biz_wap/utils/ajax.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax2f1747.js","biz_common/utils/string/html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html29f4e9.js","sougou/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/index2c7543.js","biz_wap/safe/mutation_observer_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/mutation_observer_report2f3e84.js","appmsg/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report2f3ac3.js","appmsg/report_and_source.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report_and_source2f1274.js","appmsg/page_pos.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/page_pos2ec4b2.js","appmsg/cdn_speed_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_speed_report2c57d0.js","appmsg/wxtopic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/wxtopic2f2e72.js","appmsg/voice.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voice2f2e72.js","appmsg/qqmusic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/qqmusic2f2e72.js","appmsg/iframe.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/iframe2ef6ca.js","appmsg/review_image.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/review_image2d0cfe.js","appmsg/outer_link.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/outer_link275627.js","biz_wap/jsapi/core.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core2f0d45.js","biz_common/dom/event.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event275627.js","appmsg/copyright_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/copyright_report2ec4b2.js","appmsg/cache.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cache2a74ac.js","appmsg/pay_for_reading.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/pay_for_reading2c5484.js","appmsg/async.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/async2f1750.js","biz_wap/ui/lazyload_img.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/ui/lazyload_img2ec99a.js","biz_common/log/jserr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/log/jserr2805ea.js","appmsg/share.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share2ec548.js","biz_wap/utils/mmversion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion2f1d97.js","appmsg/cdn_img_lib.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_img_lib275627.js","biz_common/utils/url/parse.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/url/parse2dd7fd.js","biz_common/dom/class.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/class275627.js","biz_wap/utils/device.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/device2b3aae.js","biz_wap/jsapi/a8key.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/a8key2a30ee.js","appmsg/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/index2f3f48.js"};</script><script nonce="MOONSAFE_NONCE_1469070959" async type="text/javascript" src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/moon2f0d45.js"></script>
+  <script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+    var real_show_page_time = +new Date();
+    if (!!window.addEventListener){
+        window.addEventListener("load", function(){
+            window.onload_endtime = +new Date();
+        });
+    }
+    
+  </script>
+
+    </body>
+</html>
+<!--tailTrap<body></body><head></head><html></html>-->
+ 

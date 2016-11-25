@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:wb="http://open.weibo.com/wb">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>德塔文大数据</title>
+<meta name="keywords" content="重庆德塔文科技有限责任公司，重庆德塔文，德塔文科技，重庆德塔文科技，德塔文，datawin
+司，主要进行数据采集，聚类分析，数据挖掘，统计预测">
+<meta name="description" content="重庆德塔文科技有限责任公司，重庆德塔文，德塔文科技，重庆德塔文科技，德塔文（DataWin）科技是一家以影视数据分析、数据服务、咨询评估、品牌建设和泛产业链分析为核心内容的公司。核心团队成员有丰富的企业战略规划、政府规划、品牌建设、数据能力建设、指标评估及研究、智能化工程应用经验；从2013年开始介入影视数据分析，擅长行业趋势研判、项目评估、服务、策划等。">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+<link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png" />
+<link rel="stylesheet" href="./css/full_screen.css" type="text/css" />
+<link rel="stylesheet" href="./css/public.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.banner.revolution.min.js"></script>
+<script type="text/javascript" src="js/banner.js"></script>
+<script type="text/javascript" src="js/mouse_over.js"></script>
+<script type="text/javascript" src="js/request.js"></script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=1815821284&debug=true" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body onload="loadnews()">
+<div id="full_screen">
+	<div id="content" name="content">
+		<div id="wrapper">
+			<div class="fullwidthbanner-container">
+				<div class="fullwidthbanner">
+					<ul>
+						<li data-transition="papercut" data-slotamount="15" data-masterspeed="300"> <img src="images/slide01.jpg" alt="" /><a class="lookmore" href="#" target="_blank">查看更多</a></li>
+						<li data-transition="3dcurtain-horizontal" data-slotamount="15" data-masterspeed="300"> <img src="images/slide02.jpg" alt="" /><a class="lookmore" href="#" target="_blank">查看更多</a></li>
+						<li data-transition="turnoff" data-slotamount="15" data-masterspeed="300"> <img src="images/slide03.jpg" alt="" /><a class="lookmore" href="#" target="_blank">查看更多</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div style="text-align:center;clear:both;"></div>
+		<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+		<script src="/follow.js" type="text/javascript"></script>
+	</div>
+	<div style="text-align:center;clear:both;"></div>
+	<div id="header"> <img id ="header_logo" src="./images/header_logo.png"/>
+		<ul>
+			<li class="header_li"><a href="morning_read.html" target="_blank" style="color: #ffffff">今日晨读</a></li>
+			
+			<li class="header_li"  onmouseover="displaydiv(this)" onmouseout="hidediv(this)" >数据报告<div class="data">
+					<div class="list_item"><a href="artist_data_analysis.html" target="_blank" style="color: #ffffff">艺人数据分析</a></div>
+					<div class="list_item"><a href="film_data_analysis.html" target="_blank" style="color: #ffffff">电影数据分析</a></div>
+				</div>
+			</li>
+			<!--数据报告与<div>之间不能有空格，否则不能正确的提取文字-->
+			<li class="header_li" onmouseover="displaydiv(this)" onmouseout="hidediv(this)">项目专栏<div class="project">
+					<div class="list_item"><a href="film_project_analysis.html" target="_blank" style="color: #ffffff">影视项目分析</a></div>
+					<div class="list_item"><a href="industry_research.html" target="_blank" style="color: #ffffff">行业研究</a></div>
+				</div>
+			</li>
+			<li class="header_li" onmouseover="displaydiv(this)" onmouseout="hidediv(this)">行业资讯<div class="news">
+					<div class="list_item"><a href="monthly_summary.html" target="_blank" style="color: #ffffff">月资讯总结</a></div>
+					<div class="list_item"><a href="latest_news.html" target="_blank" style="color: #ffffff">最新消息</a></div>
+				</div>
+			</li>
+			<li class="header_li">关于我们</li>
+		</ul>
+		<div id="search">
+			<input type="text" id="search_type"  />
+			<img  src="./images/search.png"/> </div>
+		<div id="vip"><a href="#">VIP内容入口</a></div>
+	
+	<div id="wb_connect_btn" ><wb:login-button  type="3,5" onlogin="login" onlogout="logout"></div>
+		<style type="text/javascript">
+			WB2.anyWhere(function (W) {
+			W.widget.connectButton({
+				id: "wb_connect_btn",
+				type: '3,2',
+				callback: {
+					login: function (o) { //登录后的回调函数
+						 alert("login: " + o.id + "+++");
+						
+					},
+					logout: function () { //退出后的回调函数
+						alert('logout');
+					}
+				}
+			});
+		});
+		</style>
+	</wb:login-button>
+
+
+	
+
+		
+	</div>
+	<div class="today_news">
+		<span>每日资讯</span>
+		<div></div>
+	</div>
+	<div id="paper">
+		<div class="paper_type1">
+			<img src="./images/paper_type.jpg"/>
+			
+			<div><a href="morning_read.html" target="_blank" style="color:#000000">今日晨读</a></div>
+			
+			
+		</div>
+		<div class="paper_type2">
+			<img src="./images/paper_type.jpg"/>
+			
+			<div><a href="film_project_analysis.html" target="_blank" style="color:#000000">影视项目分析</a></div>
+		</div>
+		<div class="paper_type3">
+			<img src="./images/paper_type.jpg"/>
+			
+			<div><a href="artist_data_analysis.html" target="_blank" style="color:#000000">艺人数据分析</a></div>
+		</div>
+		<div class="paper_type4">
+			<img src="./images/paper_type.jpg"/>
+			
+			<div><a href="industry_research.html" target="_blank" style="color:#000000">深度文章</a></div>
+		</div>
+		<div style="text-align:center;clear:both;"></div>
+		<div id="right_float">
+			<ul>
+				<li><a href="#content"><img src="./images/up.png"/></a></li>
+				<li><img src="./images/tel.png" alt="客服电话" onmouseover="show_tel(this)"  onmouseout="hide_tel(this)"/></li>
+				<li class="erweima"><img src="./images/erweima.png"  onmouseover="show_wx(this)"  onmouseout="hide_wx(this)"alt="微信二维码"/></li>
+				<li><a href="#footer"><img src="./images/down.png"/></a></li>
+			</ul>
+			
+		</div>
+		<div class="wx">
+			<img src="./images/wx_datawin.jpg"/>
+		</div>
+		<div class="tel"  >
+			客服电话：023-87654321
+		</div>
+		
+	</div>
+	</div>
+	<div id="slogan">
+		<p>DataWin的信念</p>
+		<span>艺人数据，影视选题，营销方式推荐--您所需要的服务，我们将精益求精。</span>
+	</div>
+	<iframe id="footer" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" src="footer.html" ></iframe>
+	
+</div>
+
+</body>
+</html>

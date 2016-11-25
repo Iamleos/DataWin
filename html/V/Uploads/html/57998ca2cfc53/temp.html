@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<!--headTrap<body></body><head></head><html></html>--><html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+window.__nonce_str = "MOONSAFE_NONCE_1469070959"
+if (location.href.indexOf("safe=0") == -1 && window.__nonce_str) {
+	window.__moonsafe_csp_offset || (window.__moonsafe_csp_offset = 18);
+	document.write('<meta http-equiv="Content-Security-Policy" content="script-src https: \'unsafe-inline\' \'unsafe-eval\' *.qq.com *.weishi.com'+(window.__nonce_str ? ' \'nonce-' + window.__nonce_str + "\'":"")+ '">');
+        
+}
+</script>
+
+        <script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+            window.logs = {
+                pagetime: {}
+            };
+            window.logs.pagetime['html_begin'] = (+new Date());
+        </script>
+        
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+var page_begintime=+new Date,biz="MzIwMDMzNzcyNQ==",sn="",mid="401338918",idx="1",is_rumor="",norumor="";
+1*is_rumor&&!(1*norumor)&&(document.referrer&&-1!=document.referrer.indexOf("mp.weixin.qq.com/mp/rumor")||(location.href="http://mp.weixin.qq.com/mp/rumor?action=info&__biz="+biz+"&mid="+mid+"&idx="+idx+"&sn="+sn+"#wechat_redirect")),
+document.domain="qq.com";
+</script> 
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+var MutationObserver=window.WebKitMutationObserver||window.MutationObserver||window.MozMutationObserver,isDangerSrc=function(t){
+if(t){
+var e=t.match(/http(?:s)?:\/\/([^\/]+?)(\/|$)/);
+if(e&&!/qq\.com(\:8080)?$/.test(e[1])&&!/weishi\.com$/.test(e[1]))return!0;
+}
+return!1;
+},ishttp=0==location.href.indexOf("http://");
+-1==location.href.indexOf("safe=0")&&ishttp&&"function"==typeof MutationObserver&&"mp.weixin.qq.com"==location.host&&(window.__observer_data={
+count:0,
+exec_time:0,
+list:[]
+},window.__observer=new MutationObserver(function(t){
+window.__observer_data.count++;
+var e=new Date,r=[];
+t.forEach(function(t){
+for(var e=t.addedNodes,o=0;o<e.length;o++){
+var n=e[o];
+if("SCRIPT"===n.tagName){
+var i=n.src;
+isDangerSrc(i)&&(window.__observer_data.list.push(i),r.push(n)),!i&&window.__nonce_str&&n.getAttribute("nonce")!=window.__nonce_str&&(window.__observer_data.list.push("inlinescript_without_nonce"),
+r.push(n));
+}
+}
+});
+for(var o=0;o<r.length;o++){
+var n=r[o];
+n.parentNode&&n.parentNode.removeChild(n);
+}
+window.__observer_data.exec_time+=new Date-e;
+}),window.__observer.observe(document,{
+subtree:!0,
+childList:!0
+})),function(){
+if(-1==location.href.indexOf("safe=0")&&Math.random()<.01&&ishttp&&HTMLScriptElement.prototype.__lookupSetter__&&"undefined"!=typeof Object.defineProperty){
+window.__danger_src={
+xmlhttprequest:[],
+script_src:[],
+script_setAttribute:[]
+};
+var t="$"+Math.random();
+HTMLScriptElement.prototype.__old_method_script_src=HTMLScriptElement.prototype.__lookupSetter__("src"),
+HTMLScriptElement.prototype.__defineSetter__("src",function(t){
+t&&isDangerSrc(t)&&window.__danger_src.script_src.push(t),this.__old_method_script_src(t);
+});
+var e="element_setAttribute"+t;
+Object.defineProperty(Element.prototype,e,{
+value:Element.prototype.setAttribute,
+enumerable:!1
+}),Element.prototype.setAttribute=function(t,r){
+"SCRIPT"==this.tagName&&"src"==t&&isDangerSrc(r)&&window.__danger_src.script_setAttribute.push(r),
+this[e](t,r);
+};
+}
+}();
+</script> 
+
+        <link rel="dns-prefetch" href="//res.wx.qq.com">
+<link rel="dns-prefetch" href="//mmbiz.qpic.cn">
+<link rel="shortcut icon" type="image/x-icon" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+    String.prototype.html = function(encode) {
+        var replace =["&#39;", "'", "&quot;", '"', "&nbsp;", " ", "&gt;", ">", "&lt;", "<", "&amp;", "&", "&yen;", "¥"];
+        if (encode) {
+            replace.reverse();
+        }
+        for (var i=0,str=this;i< replace.length;i+= 2) {
+             str=str.replace(new RegExp(replace[i],'g'),replace[i+1]);
+        }
+        return str;
+    };
+
+    window.isInWeixinApp = function() {
+        return /MicroMessenger/.test(navigator.userAgent);
+    };
+
+    window.getQueryFromURL = function(url) {
+        url = url || 'http://qq.com/s?a=b#rd'; 
+        var query = url.split('?')[1].split('#')[0].split('&'),
+            params = {};
+        for (var i=0; i<query.length; i++) {
+            var arg = query[i].split('=');
+            params[arg[0]] = arg[1];
+        }
+        if (params['pass_ticket']) {
+        	params['pass_ticket'] = encodeURIComponent(params['pass_ticket'].html(false).html(false).replace(/\s/g,"+"));
+        }
+        return params;
+    };
+
+    (function() {
+	    var params = getQueryFromURL(location.href);
+        window.uin = params['uin'] || '';
+        window.key = params['key'] || '';
+        window.wxtoken = params['wxtoken'] || '';
+        window.pass_ticket = params['pass_ticket'] || '';
+    })();
+
+</script>
+
+        <title>“魔性”的背面——不一样的邓超</title>
+        
+<style>html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;line-height:1.6}body{-webkit-touch-callout:none;font-family:-apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background-color:#f3f3f3;line-height:inherit}body.rich_media_empty_extra{background-color:#fff}body.rich_media_empty_extra .rich_media_area_primary:before{display:none}h1,h2,h3,h4,h5,h6{font-weight:400;font-size:16px}*{margin:0;padding:0}a{color:#607fa6;text-decoration:none}.rich_media_inner{font-size:16px;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.rich_media_area_primary{position:relative;padding:20px 15px 15px;background-color:#fff}.rich_media_area_primary:before{content:" ";position:absolute;left:0;top:0;width:100%;height:1px;border-top:1px solid #e5e5e5;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(0.5);transform:scaleY(0.5);top:auto;bottom:-2px}.rich_media_area_primary .original_img_wrp{display:inline-block;font-size:0}.rich_media_area_primary .original_img_wrp .tips_global{display:block;margin-top:.5em;font-size:14px;text-align:right;width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.rich_media_area_extra{padding:0 15px 0}.rich_media_title{margin-bottom:10px;line-height:1.4;font-weight:400;font-size:24px}.rich_media_meta_list{margin-bottom:18px;line-height:20px;font-size:0}.rich_media_meta_list em{font-style:normal}.rich_media_meta{display:inline-block;vertical-align:middle;margin-right:8px;margin-bottom:10px;font-size:16px}.meta_original_tag{display:inline-block;vertical-align:middle;padding:1px .5em;border:1px solid #9e9e9e;color:#8c8c8c;border-top-left-radius:20% 50%;-moz-border-radius-topleft:20% 50%;-webkit-border-top-left-radius:20% 50%;border-top-right-radius:20% 50%;-moz-border-radius-topright:20% 50%;-webkit-border-top-right-radius:20% 50%;border-bottom-left-radius:20% 50%;-moz-border-radius-bottomleft:20% 50%;-webkit-border-bottom-left-radius:20% 50%;border-bottom-right-radius:20% 50%;-moz-border-radius-bottomright:20% 50%;-webkit-border-bottom-right-radius:20% 50%;font-size:15px;line-height:1.1}.meta_enterprise_tag img{width:30px;height:30px!important;display:block;position:relative;margin-top:-3px;border:0}.rich_media_meta_text{color:#8c8c8c}span.rich_media_meta_nickname{display:none}.rich_media_thumb_wrp{margin-bottom:6px}.rich_media_thumb_wrp .original_img_wrp{display:block}.rich_media_thumb{display:block;width:100%}.rich_media_content{overflow:hidden;color:#3e3e3e}.rich_media_content *{max-width:100%!important;box-sizing:border-box!important;-webkit-box-sizing:border-box!important;word-wrap:break-word!important}.rich_media_content p{clear:both;min-height:1em;white-space:pre-wrap}.rich_media_content em{font-style:italic}.rich_media_content fieldset{min-width:0}.rich_media_content .list-paddingleft-2{padding-left:30px}.rich_media_content blockquote{margin:0;padding-left:10px;border-left:3px solid #dbdbdb}img{height:auto!important}@media(min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2){.mm_appmsg .rich_media_inner,.mm_appmsg .rich_media_meta,.mm_appmsg .discuss_list,.mm_appmsg .rich_media_extra,.mm_appmsg .title_tips .tips{font-size:17px}.mm_appmsg .meta_original_tag{font-size:15px}}@media(min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3){.mm_appmsg .rich_media_title{font-size:25px}}@media screen and (min-width:1024px){.rich_media{width:740px;margin-left:auto;margin-right:auto}.rich_media_inner{padding:20px}body{background-color:#fff}}@media screen and (min-width:1025px){body{font-family:"Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif}.rich_media{position:relative}.rich_media_inner{background-color:#fff;padding-bottom:100px}}.radius_avatar{display:inline-block;background-color:#fff;padding:3px;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;overflow:hidden;vertical-align:middle}.radius_avatar img{display:block;width:100%;height:100%;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;background-color:#eee}.cell{padding:.8em 0;display:block;position:relative}.cell_hd,.cell_bd,.cell_ft{display:table-cell;vertical-align:middle;word-wrap:break-word;word-break:break-all;white-space:nowrap}.cell_primary{width:2000px;white-space:normal}.flex_cell{padding:10px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.flex_cell_primary{width:100%;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;box-flex:1;flex:1}.original_tool_area{display:block;padding:.75em 1em 0;-webkit-tap-highlight-color:rgba(0,0,0,0);color:#3e3e3e;border:1px solid #eaeaea;margin:20px 0}.original_tool_area .tips_global{position:relative;padding-bottom:.5em;font-size:15px}.original_tool_area .tips_global:after{content:" ";position:absolute;left:0;bottom:0;right:0;height:1px;border-bottom:1px solid #dbdbdb;-webkit-transform-origin:0 100%;transform-origin:0 100%;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.original_tool_area .radius_avatar{width:27px;height:27px;padding:0;margin-right:.5em}.original_tool_area .radius_avatar img{height:100%!important}.original_tool_area .flex_cell_bd{width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.original_tool_area .flex_cell_ft{font-size:14px;color:#8c8c8c;padding-left:1em;white-space:nowrap}.original_tool_area .icon_access:after{content:" ";display:inline-block;height:8px;width:8px;border-width:1px 1px 0 0;border-color:#cbcad0;border-style:solid;transform:matrix(0.71,0.71,-0.71,0.71,0,0);-ms-transform:matrix(0.71,0.71,-0.71,0.71,0,0);-webkit-transform:matrix(0.71,0.71,-0.71,0.71,0,0);position:relative;top:-2px;top:-1px}.weui_loading{width:20px;height:20px;display:inline-block;vertical-align:middle;-webkit-animation:weuiLoading 1s steps(12,end) infinite;animation:weuiLoading 1s steps(12,end) infinite;background:transparent url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iciIgd2lkdGg9JzEyMHB4JyBoZWlnaHQ9JzEyMHB4JyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJub25lIiBjbGFzcz0iYmsiPjwvcmVjdD4KICAgIDxyZWN0IHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjRTlFOUU5JwogICAgICAgICAgdHJhbnNmb3JtPSdyb3RhdGUoMCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+CiAgICA8L3JlY3Q+CiAgICA8cmVjdCB4PSc0Ni41JyB5PSc0MCcgd2lkdGg9JzcnIGhlaWdodD0nMjAnIHJ4PSc1JyByeT0nNScgZmlsbD0nIzk4OTY5NycKICAgICAgICAgIHRyYW5zZm9ybT0ncm90YXRlKDMwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4KICAgICAgICAgICAgICAgICByZXBlYXRDb3VudD0naW5kZWZpbml0ZScvPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyM5Qjk5OUEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSg2MCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+CiAgICAgICAgICAgICAgICAgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnLz4KICAgIDwvcmVjdD4KICAgIDxyZWN0IHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjQTNBMUEyJwogICAgICAgICAgdHJhbnNmb3JtPSdyb3RhdGUoOTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNBQkE5QUEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxMjAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNCMkIyQjInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxNTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNCQUI4QjknCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxODAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNDMkMwQzEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyMTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNDQkNCQ0InCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyNDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNEMkQyRDInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyNzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNEQURBREEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgzMDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNFMkUyRTInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgzMzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0Pgo8L3N2Zz4=) no-repeat;-webkit-background-size:100%;background-size:100%}@-webkit-keyframes weuiLoading{0%{-webkit-transform:rotate3d(0,0,1,0deg)}100%{-webkit-transform:rotate3d(0,0,1,360deg)}}@keyframes weuiLoading{0%{-webkit-transform:rotate3d(0,0,1,0deg)}100%{-webkit-transform:rotate3d(0,0,1,360deg)}}.gif_img_wrp{display:inline-block;font-size:0;position:relative}.gif_img_wrp img{min-height:120px;min-width:120px}.gif_img_tips{background:rgba(0,0,0,0.6)!important;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000',endcolorstr = '#99000000');border-top-left-radius:1.2em 50%;-moz-border-radius-topleft:1.2em 50%;-webkit-border-top-left-radius:1.2em 50%;border-top-right-radius:1.2em 50%;-moz-border-radius-topright:1.2em 50%;-webkit-border-top-right-radius:1.2em 50%;border-bottom-left-radius:1.2em 50%;-moz-border-radius-bottomleft:1.2em 50%;-webkit-border-bottom-left-radius:1.2em 50%;border-bottom-right-radius:1.2em 50%;-moz-border-radius-bottomright:1.2em 50%;-webkit-border-bottom-right-radius:1.2em 50%;line-height:2.3;padding:0 1em;font-size:11px;color:#fff;text-align:center;position:absolute;bottom:10px;left:10px}.gif_img_tips i{vertical-align:middle;margin:-0.2em .73em 0 -2px}.gif_img_play_arrow{display:inline-block;width:0;height:0;border-width:8px;border-style:dashed;border-color:transparent;border-right-width:0;border-left-color:#fff;border-left-style:solid;border-width:5px 0 5px 8px}.gif_img_loading{width:14px;height:14px}i.gif_img_loading{margin-left:-4px}.rich_media_global_msg{position:fixed;top:0;left:0;right:0;padding:.65em 35px .65em 15px;z-index:1;background-color:#cde6ff;color:#8c8c8c;font-size:13px}.rich_media_global_msg .icon_closed{position:absolute;right:15px;top:50%;margin-top:-5px;line-height:300px;overflow:hidden;-webkit-tap-highlight-color:rgba(0,0,0,0);background:transparent url(/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_appmsg_msg_closed_sprite.2x.png) no-repeat 0 0;width:11px;height:11px;vertical-align:middle;display:inline-block;-webkit-background-size:100% auto;background-size:100% auto}.rich_media_global_msg .icon_closed:active{background-position:0 -17px}.preview_appmsg .rich_media_title{margin-top:1.5em}@media screen and (min-width:1024px){.rich_media_global_msg{position:relative;margin:0 20px}.preview_appmsg .rich_media_title{margin-top:0}}</style>
+<style>
+     
+    </style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_pc2c9cd6.css">
+<![endif]-->
+
+    </head>
+    <body id="activity-detail" class="zh_CN mm_appmsg" ontouchstart="">
+        
+    <script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+        var write_sceen_time = (+new Date());
+    </script>
+
+    <div id="js_article" class="rich_media preview_appmsg">
+        
+        <div id="js_top_ad_area" class="top_banner">
+ 
+        </div>
+                
+
+        <div class="rich_media_inner">
+                        <div class="rich_media_global_msg">
+                
+                此为临时链接，仅用于文章预览，将在短期内失效
+                <a id="js_close_temp" href="javascript:;" class="icon_closed">关闭</a>
+            </div>
+                        <div id="page-content">
+                <div id="img-content" class="rich_media_area_primary">
+                    <h2 class="rich_media_title" id="activity-name">
+                        “魔性”的背面——不一样的邓超 
+                    </h2>
+                    <div class="rich_media_meta_list">
+                        						                        <em id="post-date" class="rich_media_meta rich_media_meta_text">2016-01-05</em>
+
+                                                <em class="rich_media_meta rich_media_meta_text">影视大数据</em>
+                                                <a class="rich_media_meta rich_media_meta_link rich_media_meta_nickname" href="javascript:void(0);" id="post-user">影视大数据</a>
+                        <span class="rich_media_meta rich_media_meta_text rich_media_meta_nickname">影视大数据</span>
+
+                        <div id="js_profile_qrcode" class="profile_container" style="display:none;">
+                            <div class="profile_inner">
+                                <strong class="profile_nickname">影视大数据</strong>
+                                <img class="profile_avatar" id="js_profile_qrcode_img" src="" alt="">
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">微信号</label>
+                                <span class="profile_meta_value">ysdsju</span>
+                                </p>
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">功能介绍</label>
+                                <span class="profile_meta_value">影视、艺人数据分析评价，微博号@德塔文数据</span>
+                                </p>
+                                
+                            </div>
+                            <span class="profile_arrow_wrp" id="js_profile_arrow_wrp">
+                                <i class="profile_arrow arrow_out"></i>
+                                <i class="profile_arrow arrow_in"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                                                            
+                                        <div class="rich_media_thumb_wrp" id="media">
+                        
+                                                <script nonce="MOONSAFE_NONCE_1469070959">
+                            (function(){
+                                var cover = "http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB0ZhYtacJ8sS7jsRGnW4eOyO3UAgguglicEAFbSTXJHoqyyUTBlj362qfmNzn3uZTOqLGy8tQmSb5g/0?wx_fmt=jpeg";
+                                document.write('<img class="rich_media_thumb" id="js_cover" onerror="this.parentNode.removeChild(this)" data-backsrc='+ cover +'  src="0.jpg" />');
+                            })();
+                        </script>
+                                            </div>
+                                        
+                    
+                    <div class="rich_media_content " id="js_content">
+                        
+
+                        
+                        <section style="border: 0px; margin-top: 0px; margin-bottom: 0px; clear: both; font-size: 1em; font-family: inherit; text-align: justify; text-decoration: inherit; color: inherit; box-sizing: border-box; padding: 0px;" class="tn-Powered-by-XIUMI"><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;"></section><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">昨天还想违心地夸两句邓超执导的新电影《恶棍天使》呢，今儿个就被邓超自己给打脸了。果然是体内两个小人互搏么？邓超前一阵到处安利自己的电影，不顾掉粉9万，也要卖力吆喝，今天就在太原公开自嘲电影够烂。嘿，有点儿意思啊！</section><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; box-sizing: border-box; width: 100%; margin: 0.8em 0px 0.2em; clear: both; padding: 0px;" class="tn-Powered-by-XIUMI"><img style="box-sizing: border-box;              width: 100%;              height: auto !important;              text-align: start" src="1.jpg" class="tn-Powered-by-XIUMI" data-ratio="0.21487603305785125" data-w=""  /><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; box-sizing: border-box; width: 100%; margin: 0.8em 0px 0.2em; clear: both; padding: 0px;" class="tn-Powered-by-XIUMI"><img style="box-sizing: border-box;              width: 100%;              height: auto !important;              text-align: start" src="2.jpg" class="tn-Powered-by-XIUMI" data-ratio="0.26170798898071623" data-w=""  /><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; margin-top: 0px; margin-bottom: 0px; clear: both; font-size: 1em; font-family: inherit; text-align: justify; text-decoration: inherit; color: inherit; box-sizing: border-box; padding: 0px;" class="tn-Powered-by-XIUMI"><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">前后也就几天工夫，超哥变化咋这么大呢？或许是他体内执着于艺术追求的小人儿占了上风，承认《恶棍天使》的烂俗、无聊和无厘头？反正网友们看热闹不嫌事大，纷纷搬小板凳坐等逗比“超哥”做出更“魔性”的事来。像这样自带蛇精病属性的段子手，总不会缺少关注的。不过，网络新闻也就十秒钟的持久度，下一次对超哥的印象，还取决于他想要塑造的形象。<br class="tn-Powered-by-XIUMI" style="box-sizing: border-box;"  /></section><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">现在的小朋友们，已经习惯了邓超是逗比段子手，黄磊是中年胖子，从不会将他们和文艺或文艺男神扯上啥关系。但是在很久很久前，当邓超不是超哥的时候，他接拍了一部又一部大制作的正剧，诸如《少年天子》、《幸福像花儿一样》、《甜蜜蜜》等，俘获了一众大妈的关爱。</section><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; margin: 0.8em 0px 0.5em; box-sizing: border-box; padding: 0px;" class="tn-Powered-by-XIUMI"><span style="display: inline-block; padding: 0.3em 0.5em; border-radius: 0.5em; color: rgb(255, 255, 255); font-size: 1em; box-shadow: rgb(165, 165, 165) 0.2em 0.2em 0.1em; font-family: inherit; text-decoration: inherit; border-color: rgb(255, 129, 36); box-sizing: border-box; background-color: rgb(255, 129, 36);" class="tn-Powered-by-XIUMI"><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">少年壮志当拿云</section></span><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; margin-top: 0px; margin-bottom: 0px; clear: both; font-size: 1em; font-family: inherit; text-align: justify; text-decoration: inherit; color: inherit; box-sizing: border-box; padding: 0px;" class="tn-Powered-by-XIUMI"><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;"><br class="tn-Powered-by-XIUMI" style="box-sizing: border-box;"  /></section><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; margin-top: 0px; margin-bottom: 0px; clear: both; font-size: 1em; font-family: inherit; text-align: justify; text-decoration: inherit; color: inherit; box-sizing: border-box; padding: 0px;" class="tn-Powered-by-XIUMI"><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">早期的邓超是个一门心思追求艺术梦想的孩子，老实、羞涩、虎头虎脑。2000年起涉足影视圈，接了各种角色，直到2002年的《少年天子》将他推入人们视线中。因为年代久远，已经查不到《少年天子》的收视率。虽然大爷大娘们对《孝庄秘史》更加津津乐道，但看门道的观众似乎更欣赏《少年天子》。很多人说它“精致大气”，说它戏的密度极大，甚至比一般电影还高。说得我心痒痒，决定从今晚起，开始恶补这部剧。<br class="tn-Powered-by-XIUMI" style="box-sizing: border-box;"  /></section><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">这部剧是根据凌力同名小说改编，刘恒一人包揽了导演、编剧和制作三项大工程，主演有邓超、潘虹、霍思燕、郝蕾、何赛飞、杨蓉等，且不说别的，单看这阵容就够令人咂舌的了。邓超是这部剧的主角，一个人撑起了40集，与潘虹、何赛飞这样的大腕儿对戏，虽然演技生涩，但骨子里那种执拗和锐气恰如其分地诠释了顺治帝福临的天子气象。</section><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; box-sizing: border-box; width: 100%; margin: 0.8em 0px 0.2em; clear: both; padding: 0px;" class="tn-Powered-by-XIUMI"><img style="box-sizing: border-box;              width: 100%;              height: auto !important;              text-align: start" src="3.jpg" class="tn-Powered-by-XIUMI" data-ratio="0.7796143250688705" data-w=""  /><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; margin: 0.8em 0px 0.5em; box-sizing: border-box; padding: 0px;" class="tn-Powered-by-XIUMI"><span style="display: inline-block; padding: 0.3em 0.5em; border-radius: 0.5em; color: rgb(255, 255, 255); font-size: 1em; box-shadow: rgb(165, 165, 165) 0.2em 0.2em 0.1em; font-family: inherit; text-decoration: inherit; border-color: rgb(255, 129, 36); box-sizing: border-box; background-color: rgb(255, 129, 36);" class="tn-Powered-by-XIUMI"><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">自信、得意的高富帅</section></span><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; margin-top: 0px; margin-bottom: 0px; clear: both; font-size: 1em; font-family: inherit; text-align: justify; text-decoration: inherit; color: inherit; box-sizing: border-box; padding: 0px;" class="tn-Powered-by-XIUMI"><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">2005年，对邓超来说是一个开启神秘宝藏的年份，虽然他当时并不知道。在这里一年，他主演了军旅剧《幸福像花儿一样》、古装探案剧《少年包青天3》。后一部剧是响当当的大IP，播出之前就广受关注，但最后，更让他受益的却是《幸福像花儿一样》。<br class="tn-Powered-by-XIUMI" style="box-sizing: border-box;"  /></section><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">这又是一部大制作，原著石钟山，导演高希希，编剧王宛平，主演邓超、孙俪、辛柏青、殷桃等，2007年获得了第26届飞天奖长篇电视剧三等奖、第五届“北京市文学艺术奖”等奖项。在这部剧里，邓超饰演了一个幼稚、单纯的高干子弟白杨，对孙俪饰演的文艺兵杜鹃一见钟情，死缠烂打，最终抱得美人归。因为这部剧，邓超成了“高干子弟”、钻石王老五的标杆，后来他主演的《甜蜜蜜》、《艰难爱情》，无一不是这种模式。自带镁光灯、走路带风、英俊潇洒、自我感觉好到突破天际的高富帅，用一腔真心打动善良美丽的女主。</section><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; box-sizing: border-box; width: 100%; margin: 0.8em 0px 0.2em; clear: both; padding: 0px;" class="tn-Powered-by-XIUMI"><img style="box-sizing: border-box;              width: 100%;              height: auto !important;              text-align: start" src="4.jpg" class="tn-Powered-by-XIUMI" data-ratio="1.1074380165289257" data-w=""  /><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; box-sizing: border-box; width: 100%; margin: 0.8em 0px 0.2em; clear: both; padding: 0px;" class="tn-Powered-by-XIUMI"><img style="box-sizing: border-box;              width: 100%;              height: auto !important;              text-align: start" src="5.jpg" class="tn-Powered-by-XIUMI" data-ratio="0.7162534435261708" data-w=""  /><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; margin: 0.8em 0px 0.5em; box-sizing: border-box; padding: 0px;" class="tn-Powered-by-XIUMI"><span style="display: inline-block; padding: 0.3em 0.5em; border-radius: 0.5em; color: rgb(255, 255, 255); font-size: 1em; box-shadow: rgb(165, 165, 165) 0.2em 0.2em 0.1em; font-family: inherit; text-decoration: inherit; border-color: rgb(255, 129, 36); box-sizing: border-box; background-color: rgb(255, 129, 36);" class="tn-Powered-by-XIUMI"><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">追逐梦想的文艺青年</section></span><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; margin-top: 0px; margin-bottom: 0px; clear: both; font-size: 1em; font-family: inherit; text-align: justify; text-decoration: inherit; color: inherit; box-sizing: border-box; padding: 0px;" class="tn-Powered-by-XIUMI"><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">总是演一种模式不会烦么？当然会。尤其是邓超这种精力旺盛、头脑灵活的主儿。2008年到2012年，邓超的剧似乎不多，除了《倚天屠龙记》、《你是我兄弟》、《延安爱情》和《相爱十年》，也没有其他为人所称道的了。But，人家可真没闲着，电影作品、话剧作品一部接一部地出，这才是他的梦想所在。《李米的猜想》、《狄仁杰之通天帝国》、《画壁》、《四大名捕》，每一部都是大制作、大卡司。你说人家在这些电影里都不够出彩，但人家的确积累了经验、攒到了钱，并且在拍戏之余开办了小剧场。</section><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; box-sizing: border-box; width: 100%; margin: 0.8em 0px 0.2em; clear: both; padding: 0px;" class="tn-Powered-by-XIUMI"><img style="box-sizing: border-box;              width: 100%;              height: auto !important;              text-align: start" src="6.jpg" class="tn-Powered-by-XIUMI" data-ratio="1.2011019283746556" data-w=""  /><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; margin-top: 0px; margin-bottom: 0px; clear: both; font-size: 1em; font-family: inherit; text-align: justify; text-decoration: inherit; color: inherit; box-sizing: border-box; padding: 0px;" class="tn-Powered-by-XIUMI"><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;"> 邓超追逐梦想，接拍的片子越来越少，曝光度越来越低，可是另一半孙俪却凭借《甄嬛传》大红大紫，“娘娘”一跃而成为国内一线女星，当仁不让的收视女王。曾经的影视收视保证邓超只能退位成为“娘娘背后的男人”。做演员这一行，光有颗文艺心不行，要保证足够的曝光度和话题度。于是，邓超要主动出击了。</section><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; box-sizing: border-box; width: 100%; margin: 0.8em 0px 0.2em; clear: both; padding: 0px;" class="tn-Powered-by-XIUMI"><img style="box-sizing: border-box;              width: 100%;              height: auto !important;              text-align: start" src="7.jpg" class="tn-Powered-by-XIUMI" data-ratio="0.7658402203856749" data-w=""  /><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; margin: 0.8em 0px 0.5em; box-sizing: border-box; padding: 0px;" class="tn-Powered-by-XIUMI"><span style="display: inline-block; padding: 0.3em 0.5em; border-radius: 0.5em; color: rgb(255, 255, 255); font-size: 1em; box-shadow: rgb(165, 165, 165) 0.2em 0.2em 0.1em; font-family: inherit; text-decoration: inherit; border-color: rgb(255, 129, 36); box-sizing: border-box; background-color: rgb(255, 129, 36);" class="tn-Powered-by-XIUMI"><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">十项全能逗比超</section></span><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; margin-top: 0px; margin-bottom: 0px; clear: both; font-size: 1em; font-family: inherit; text-align: justify; text-decoration: inherit; color: inherit; box-sizing: border-box; padding: 0px;" class="tn-Powered-by-XIUMI"><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">2013年，邓超发力了。<br class="tn-Powered-by-XIUMI" style="box-sizing: border-box;"  /></section><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">2013年4月，全国热播的《我是歌手》第一季总决赛中，邓超亮相，同羽泉合唱《奔跑》和《冷酷到底》。又酷又帅又热辣，引得一众阿姨们眼冒星星，亢奋地尖叫。有网友说，以前一直搞不明白孙俪为什么爱上邓超，今天终于明白了：“高富帅+会演戏+会唱歌+兄弟多，无敌了这个男人”。</section><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">当然了，人家讲义气，能为兄弟两肋插刀，又十项全能，“翠花，上酸菜”，飞着两条大辫子在台上扭来跳去……</section><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; box-sizing: border-box; width: 100%; margin: 0.8em 0px 0.2em; clear: both; padding: 0px;" class="tn-Powered-by-XIUMI"><img style="box-sizing: border-box;              width: 100%;              height: auto !important;              text-align: start" src="8.jpg" class="tn-Powered-by-XIUMI" data-ratio="0.6639118457300276" data-w=""  /><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; margin-top: 0px; margin-bottom: 0px; clear: both; font-size: 1em; font-family: inherit; text-align: justify; text-decoration: inherit; color: inherit; box-sizing: border-box; padding: 0px;" class="tn-Powered-by-XIUMI"><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">2013年5月，《中国合伙人》上映。陈可辛执导，邓超、黄晓明、佟大为主演，以“新东方”的创办为原型，光是这些个点，就足以拉动票房了。截至6月底，《中国合伙人》就以5.37亿的内地票房成为2013年上半年华语片票房季军。<br class="tn-Powered-by-XIUMI" style="box-sizing: border-box;"  /></section><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">同年，还有武侠电影《四大名捕2》上映，又获了个“亚洲全能艺人奖”。的确是全能，这一年他还成立了“邓超工作室”，出品多部话剧，并且担任艺术顾问和主演。你以为人家只会逗比，人家背地里有多努力多勤奋流了多少斤汗你知道吗？</section><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; box-sizing: border-box; width: 100%; margin: 0.8em 0px 0.2em; clear: both; padding: 0px;" class="tn-Powered-by-XIUMI"><img style="box-sizing: border-box;              width: 100%;              height: auto !important;              text-align: start" src="9.jpg" class="tn-Powered-by-XIUMI" data-ratio="0.5619834710743802" data-w=""  /><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; margin-top: 0px; margin-bottom: 0px; clear: both; font-size: 1em; font-family: inherit; text-align: justify; text-decoration: inherit; color: inherit; box-sizing: border-box; padding: 0px;" class="tn-Powered-by-XIUMI"><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">2014年是邓超的爆发年。<br class="tn-Powered-by-XIUMI" style="box-sizing: border-box;"  /></section><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">6月，他投资、执导、主演的电影《分手大师》上映，取得6.6亿元的票房。牛刀小试，便拿下了暑期国产片票房冠军。这让邓超信心十足，开始全力拓展自己各方面的能力和业务。投资IT界，与周鸿祎这样的业界大佬联合，瞄准手机APP开发；与苏宁携手，成为苏宁品牌形象代言人；加盟浙江卫视综艺节目《奔跑吧兄弟》……</section><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; box-sizing: border-box; width: 100%; margin: 0.8em 0px 0.2em; clear: both; padding: 0px;" class="tn-Powered-by-XIUMI"><img style="box-sizing: border-box;              width: 100%;              height: auto !important;              text-align: start" src="10.jpg" class="tn-Powered-by-XIUMI" data-ratio="0.6666666666666666" data-w=""  /><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; margin-top: 0px; margin-bottom: 0px; clear: both; font-size: 1em; font-family: inherit; text-align: justify; text-decoration: inherit; color: inherit; box-sizing: border-box; padding: 0px;" class="tn-Powered-by-XIUMI"><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">全国人民看着邓超风风火火赚钱，四处投资，很少有人知道，他中间还有几个月的时间在厦门经历“炼狱”。拍《烈日灼心》的时候，他“差点不能活着出来了”。<span style="color: inherit; font-family: inherit; font-size: 1em; text-decoration: inherit; line-height: 1.6; box-sizing: border-box;" class="tn-Powered-by-XIUMI">因为拍《烈日灼心》太压抑，太沉郁，邓超开通了新浪微博，释放心里的另一面，从而走上一条远离文艺的不归路。什么逗比、段子手、二、蛇精病都不足以形容，只有一个词最合适，那就是“魔性”。 </span></section><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">不知道是为了迎合网友的需求还是内在自我无处宣泄，邓超将无厘头风格发挥到极致，随时随地搞怪。他领衔跑男一众明星，为大家提供无聊但热闹搞笑的“跑跑跑”和“撕名牌”游戏。大家看得乐呵，超哥跑得欢快，电视台看着蹭蹭上涨的收视率更是心花怒放。</section><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; box-sizing: border-box; width: 100%; margin: 0.8em 0px 0.2em; clear: both; padding: 0px;" class="tn-Powered-by-XIUMI"><img style="box-sizing: border-box;              width: 100%;              height: auto !important;              text-align: start" src="11.jpg" class="tn-Powered-by-XIUMI" data-ratio="0.6060606060606061" data-w=""  /><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; margin-top: 0px; margin-bottom: 0px; clear: both; font-size: 1em; font-family: inherit; text-align: justify; text-decoration: inherit; color: inherit; box-sizing: border-box; padding: 0px;" class="tn-Powered-by-XIUMI"><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">2015年，超哥持续发力。<br class="tn-Powered-by-XIUMI" style="box-sizing: border-box;"  /></section><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">《跑男》第二季播出，超哥和大黑牛等人自high的同时拽着观众一起high，节目收视率一路飙高，最高都破了5，平均也到了4.77。<br class="tn-Powered-by-XIUMI" style="box-sizing: border-box;"  /></section><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">8月，超哥主演的《烈日灼心》上映，赞誉声如潮水般涌来。超哥“吃了药”，在里头变成了焦灼、煎熬的协警辛小丰，凭借这部戏拿下了金马奖影帝。总算这么多年来的执着和打拼都有了回报。</section><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; box-sizing: border-box; width: 100%; margin: 0.8em 0px 0.2em; clear: both; padding: 0px;" class="tn-Powered-by-XIUMI"><img style="box-sizing: border-box;              width: 100%;              height: auto !important;              text-align: start" src="12.jpg" class="tn-Powered-by-XIUMI" data-ratio="0.7107438016528925" data-w=""  /><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; margin-top: 0px; margin-bottom: 0px; clear: both; font-size: 1em; font-family: inherit; text-align: justify; text-decoration: inherit; color: inherit; box-sizing: border-box; padding: 0px;" class="tn-Powered-by-XIUMI"><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">但超哥的野心不止于此，他已经尝到了投资、导演的甜头，希望能够开出一条新路子。艺术片挣不来钱，这是共识。贾樟柯的《山河故人》广受赞誉，都传是良心之作，票房才2802万。可这已经是贾樟柯这么多年来最卖座的电影了。而无厘头搞笑的《煎饼侠》票房破11亿，《小时代》系列票房破20亿，《泰囧》拍完了拍《港囧》，一样的闹腾，可一样的赚钱。<br class="tn-Powered-by-XIUMI" style="box-sizing: border-box;"  /></section><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">于是，2015年底，超哥执导的新电影上映了。《恶棍天使》，听名字就感觉挺闹腾的，实际上更是。现在各媒体提邓超，基本上就是一股脑儿嘲讽、贬斥，因为电影实在是，看不下去啊……看剧照你们就能感受这片子的风格了……</section><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; box-sizing: border-box; width: 100%; margin: 0.8em 0px 0.2em; clear: both; padding: 0px;" class="tn-Powered-by-XIUMI"><img style="box-sizing: border-box;              width: 100%;              height: auto !important;              text-align: start" src="13.jpg" class="tn-Powered-by-XIUMI" data-ratio="0.7520661157024794" data-w=""  /><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; margin-top: 0px; margin-bottom: 0px; clear: both; font-size: 1em; font-family: inherit; text-align: justify; text-decoration: inherit; color: inherit; box-sizing: border-box; padding: 0px;" class="tn-Powered-by-XIUMI"><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;"> 《恶棍天使》上映之初，就跟《老炮儿》杠上了。《老炮儿》载誉无数，豆瓣电影评分保持了导演管虎的一贯水准，8.5分，演员冯小刚借此轻松拿下了金马影帝。但是到电影院排期的时候，《老炮儿》的票房却败给了所谓“大烂片”《恶棍天使》。一边是呕心沥血大制作的无人赏识，一边是烂片抢占市场，耿直的冯小刚忍不住发声炮轰《恶棍天使》。超哥不怕事儿，明目张胆地跟冯导杠上，贴出种种证据打脸冯导。<br class="tn-Powered-by-XIUMI" style="box-sizing: border-box;"  /></section><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">结局呢？《老炮儿》凭借良好口碑，近期漂亮逆袭，票房破了7亿。而《恶棍天使》口碑和票房每况愈下，但票房也破了6亿，超哥腰包鼓了。是不是这样，他才会摸着心口承认，《恶棍天使》其实是一部大烂片呢？</section><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; box-sizing: border-box; width: 100%; margin: 0.8em 0px 0.2em; clear: both; padding: 0px;" class="tn-Powered-by-XIUMI"><img style="box-sizing: border-box;              width: 100%;              height: auto !important;              text-align: start" src="14.jpg" class="tn-Powered-by-XIUMI" data-ratio="0.509641873278237" data-w=""  /><section style="display: block; width: 0; height: 0; clear: both;"></section></section><section style="border: 0px; margin-top: 0px; margin-bottom: 0px; clear: both; font-size: 1em; font-family: inherit; text-align: justify; text-decoration: inherit; color: inherit; box-sizing: border-box; padding: 0px;" class="tn-Powered-by-XIUMI"><section class="tn-Powered-by-XIUMI" style="box-sizing: border-box;">听说，因为这部大烂片，也因为超哥无所忌惮的作风，影视圈的“北京老炮儿”们要联合抵制他。“高群书朋友圈曝光 联合83位电影人集体抵制恶棍天使”，这样的新闻未必是空穴来风，多少都有些真实的影子吧。而超哥这次公开承认自己拍了大烂片，是不是也有些收敛脾性，变相服软的意思呢？<br class="tn-Powered-by-XIUMI" style="box-sizing: border-box;"  /></section><p style="box-sizing: border-box;">    元芳，这事儿你怎么看？</p><p style="line-height: 25.6px; white-space: normal; background-color: rgb(255, 255, 255);"><br  /></p><p><section style="line-height: 25.6px; white-space: normal; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><section class="Powered-by-XIUMI V5" style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;"><section class="" style="margin-top: 0.5em; margin-bottom: 0.5em; max-width: 100%; box-sizing: border-box; overflow: hidden; word-wrap: break-word !important;"><section class="" style="margin-bottom: -1em; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;"><section style="max-width: 100%; box-sizing: border-box; text-align: center; word-wrap: break-word !important;"><img data-ratio="1" data-w="16" width="1em" src="15.jpg" data-type="png" style="box-sizing: border-box; float: left; vertical-align: middle; word-wrap: break-word !important; width: 1em !important; visibility: visible !important; background-color: rgb(249, 110, 87);"  /><img data-ratio="0.9375" data-w="16" width="1em" src="16.jpg" data-type="png" style="box-sizing: border-box; vertical-align: middle; word-wrap: break-word !important; width: 1em !important; visibility: visible !important; background-color: rgb(249, 110, 87);"  /><img data-ratio="1" data-w="16" width="1em" src="17.jpg" data-type="png" style="box-sizing: border-box; float: right; vertical-align: middle; word-wrap: break-word !important; width: 1em !important; visibility: visible !important; background-color: rgb(249, 110, 87);"  /></section><section style="margin-top: -0.8em; max-width: 100%; box-sizing: border-box; width: 670px; display: inline-block; vertical-align: top; word-wrap: break-word !important;"><section style="max-width: 100%; box-sizing: border-box; float: left; width: 301.5px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(249, 110, 87); word-wrap: break-word !important;"></section><section style="max-width: 100%; box-sizing: border-box; float: right; width: 301.5px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(249, 110, 87); word-wrap: break-word !important;"></section></section><section class="" style="margin-top: -1.5em; padding-right: 0.5em; padding-left: 0.5em; max-width: 100%; box-sizing: border-box; width: 670px; line-height: 1.3em; word-wrap: break-word !important;"><section class="Powered-by-XIUMI V5" style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;"><section class="" style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;"><section class="" style="max-width: 100%; box-sizing: border-box; color: rgb(249, 110, 87); text-align: center; word-wrap: break-word !important;"><section style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">本文为原创文章</section><section style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">转载请注明：影视大数据</section></section></section></section></section><section style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;"><img data-ratio="1" data-w="16" width="1em" src="18.jpg" data-type="png" style="box-sizing: border-box; float: left; vertical-align: middle; word-wrap: break-word !important; width: 1em !important; visibility: visible !important; background-color: rgb(249, 110, 87);"  /><img data-ratio="1" data-w="16" width="1em" src="19.jpg" data-type="png" style="box-sizing: border-box; float: right; vertical-align: middle; word-wrap: break-word !important; width: 1em !important; visibility: visible !important; background-color: rgb(249, 110, 87);"  /></section><section style="margin-top: -1.6em; max-width: 100%; box-sizing: border-box; width: 670px; text-align: center; display: inline-block; vertical-align: top; word-wrap: break-word !important;"><section style="max-width: 100%; box-sizing: border-box; display: inline-block; vertical-align: middle; width: 656.594px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(249, 110, 87); word-wrap: break-word !important;"></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;"><section class="" style="margin-top: 10px; margin-bottom: 10px; padding-left: 2.6em; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;"><section class="" style="margin-top: 2.1em; margin-bottom: -2.1em; max-width: 100%; box-sizing: border-box; text-align: center; color: rgb(160, 174, 25); word-wrap: break-word !important;"><section style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">公众号ID：ysdsju</section></section><section class="" style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;"><section style="margin-bottom: -2.6em; margin-left: -2.6em; max-width: 100%; box-sizing: border-box; width: 5em; height: 5em; display: inline-block; vertical-align: bottom; border-radius: 100%; border: 3px solid rgb(0, 127, 168); word-wrap: break-word !important; background-image: url(http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB1Qxp82jBnviaNVLkwiah0MrafoVDX3FUkHAwCqEV0TPZOYkeHsWhphXZiccicibwxjkpiaxR83dE8UTN0w/0?wx_fmt=jpeg); background-size: 154.054%; background-position: 50% 40%; background-repeat: no-repeat;"><img data-ratio="1" data-w="74" width="100%" src="20.jpg" data-type="jpeg" style="box-sizing: border-box; width: 74px; opacity: 0; vertical-align: middle; word-wrap: break-word !important; visibility: visible !important;"  /></section></section><section class="" style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; background-color: rgb(255, 203, 45);"><section class="" style="padding-top: 10px; padding-right: 10px; padding-left: 10px; max-width: 100%; box-sizing: border-box; width: 628.406px; word-wrap: break-word !important;"><section class="Powered-by-XIUMI V5" style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;"><section class="" style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;"><section class="" style="max-width: 100%; box-sizing: border-box; text-align: center; font-size: 24px; word-wrap: break-word !important;"><section style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">影视大数据</section></section></section></section></section><section class="" style="padding-top: 10px; padding-bottom: 10px; padding-left: 10px; max-width: 100%; box-sizing: border-box; display: inline-block; vertical-align: top; width: 388.344px; word-wrap: break-word !important;"><section class="Powered-by-XIUMI V5" style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;"><section class="" style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;"><section class="" style="max-width: 100%; box-sizing: border-box; text-align: right; word-wrap: break-word !important;"><section style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">影视数据分析</section><section style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">新媒体分析<br style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;"  /></section><section style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">娱乐数据分析<br style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;"  /></section><section style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">艺人趋势分析</section></section></section></section></section><section class="" style="padding-right: 10px; padding-left: 10px; max-width: 100%; box-sizing: border-box; display: inline-block; vertical-align: top; width: 240.047px; word-wrap: break-word !important;"><section class="Powered-by-XIUMI V5" style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;"><section class="" style="margin-top: 10px; margin-bottom: 10px; max-width: 100%; box-sizing: border-box; text-align: center; word-wrap: break-word !important;"><img data-ratio="1.0227272727272727" data-w="220" src="21.jpg" data-type="jpeg" style="box-sizing: border-box; vertical-align: middle; word-wrap: break-word !important; width: auto !important; visibility: visible !important;"  /></section></section></section><section class="" style="max-width: 100%; box-sizing: border-box; width: 628.406px; word-wrap: break-word !important;"><section class="Powered-by-XIUMI V5" style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;"><section class="" style="padding: 10px; max-width: 100%; box-sizing: border-box; width: 628.406px; word-wrap: break-word !important;"><section class="" style="max-width: 100%; box-sizing: border-box; text-align: center; word-wrap: break-word !important;"><section style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">工作联系：QQ149817396</section><section style="max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">微博 @七州夷离堇</section></section></section></section></section></section></section></section></section></p><p style="line-height: 25.6px; white-space: normal; background-color: rgb(255, 255, 255);"><br  /></p><section class="Powered-by-XIUMI V5" style="line-height: 25.6px; white-space: normal; max-width: 100%; box-sizing: border-box;"><section style="margin-top: 0.5em; margin-bottom: 0.5em; overflow: hidden; max-width: 100%; box-sizing: border-box;"><section style="margin-bottom: -1em; max-width: 100%; box-sizing: border-box;"><section style="text-align: center; max-width: 100%; box-sizing: border-box;"></section></section></section><p style="line-height: 25.6px; white-space: normal; background-color: rgb(255, 255, 255);"><br  /></p><section style="padding-top: 10px; padding-right: 10px; padding-left: 10px; width: 628.4px; max-width: 100%; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="max-width: 100%; box-sizing: border-box;"><section style="max-width: 100%; box-sizing: border-box;"><section style="text-align: center; font-size: 24px; max-width: 100%; box-sizing: border-box;"><section style="max-width: 100%; box-sizing: border-box; text-align: left;"></section></section></section></section></section></section></section><section style="border: 0px; margin-top: 0px; margin-bottom: 0px; font-size: 1em; font-family: inherit; text-align: justify; text-decoration: inherit; color: inherit; box-sizing: border-box; padding: 0px;" class="tn-Powered-by-XIUMI"><section style="display: block; width: 0; height: 0; clear: both;"></section></section>
+                    </div>
+                    <script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+                        var first_sceen__time = (+new Date());
+
+                        if ("" == 1 && document.getElementById('js_content'))
+                            document.getElementById('js_content').addEventListener("selectstart",function(e){ e.preventDefault(); });
+
+                                        (function(){
+                            if (navigator.userAgent.indexOf("WindowsWechat") != -1){
+                                var link = document.createElement('link');
+                                var head = document.getElementsByTagName('head')[0];
+                                link.rel = 'stylesheet';
+                                link.type = 'text/css';
+                                link.href = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+                                head.appendChild(link);
+                            }
+                        })();
+                    </script>
+                    
+                    
+                                        
+                                        
+                                        <div class="rich_media_tool" id="js_toobar3">
+                                                                    <div id="js_read_area3" class="media_tool_meta tips_global meta_primary" style="display:none;">阅读 <span id="readNum3"></span></div>
+
+                        <span style="display:none;" class="media_tool_meta meta_primary tips_global meta_praise" id="like3">
+                            <i class="icon_praise_gray"></i><span class="praise_num" id="likeNum3"></span>
+                        </span>
+
+                        <a id="js_report_article3" style="display:none;" class="media_tool_meta tips_global meta_extra" href="javascript:void(0);">投诉</a>
+
+                    </div>
+
+
+
+                                    </div>
+
+                <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none">
+
+                </div>
+
+                <div class="rich_media_area_extra">
+
+                    
+                                        <div class="mpda_bottom_container" id="js_bottom_ad_area">
+                        
+                    </div>
+                                        
+                    <div id="js_iframetest" style="display:none;"></div>
+                                        
+                                    </div>
+               
+            </div>
+            <div id="js_pc_qr_code" class="qr_code_pc_outer" style="display:none;">
+                <div class="qr_code_pc_inner">
+                    <div class="qr_code_pc">
+                        <img id="js_pc_qr_code_img" class="qr_code_pc_img">
+                        <p>微信扫一扫<br>关注该公众号</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+        
+        <script nonce="MOONSAFE_NONCE_1469070959">
+    var __DEBUGINFO = {
+        debug_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/debug/console2ca724.js",
+        safe_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/moonsafe2f3e84.js",
+        res_list: []
+    };
+</script>
+        
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+    var not_in_mm_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm2c9cd6.css";
+    var windowwx_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+    var article_improve_combo_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_combo2eb52b.css";
+    var tid = "";
+    var aid = "";
+    var clientversion = "";
+    var appuin = "MzIwMDMzNzcyNQ=="||"";
+
+    var source = "";
+    var scene = 75;
+
+    var itemidx = "";
+
+    var _copyright_stat = "0";
+    var _ori_article_type = "";
+
+    var nickname = "影视大数据";
+    var appmsg_type = "6";
+    var ct = "1452006757";
+    var publish_time = "2016-01-05" || "";
+    var user_name = "gh_be98065513d1";
+    var user_name_new = "";
+    var fakeid   = "";
+    var version   = "";
+    var is_limit_user   = "0";
+    var round_head_img = "http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB1ELW0LLqCnHxgRo96Ecvib9G6oXkCfm0icJskpbiazjOGxnBrs1dsFw4PGXyBSMslaUSw6icyojeonicw/0?wx_fmt=png";
+    var msg_title = "“魔性”的背面——不一样的邓超";
+    var msg_desc = "邓超又该吃药了，前一阵因为《恶棍天使》到处跟人撕，还被影视圈“北京老炮儿”们集体炮轰呢，今天就承认这是大烂片了。";
+    var msg_cdn_url = "http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB0ZhYtacJ8sS7jsRGnW4eOyO3UAgguglicEAFbSTXJHoqyyUTBlj362qfmNzn3uZTOqLGy8tQmSb5g/0?wx_fmt=jpeg";
+    var msg_link = "http://mp.weixin.qq.com/s?__biz=MzIwMDMzNzcyNQ==&amp;tempkey=gyQQfLwRAKAyf48QSIPFRoepdV9zm1O9gvdHUOXelLbGpXso639yjdoD5zywRDAP6x6x2wBEBhoM4D14xwsaUpBgeGXNQotI90pdLHxIJe0%2FmqqET2YbQmQ9CxBiF6MSe7DOMcxaa83ND04wjthHlw%3D%3D&amp;#rd";
+    var user_uin = "0"*1;
+    var msg_source_url = '';
+    var img_format = 'jpeg';
+    var srcid = '';
+    var req_id = '2812JDK87TrhKnOaRVxIWMvx';
+    var networkType;
+    var appmsgid = '' || '401338918'|| "401338918";
+    var comment_id = "0" * 1;
+    var comment_enabled = "" * 1;
+    var is_need_reward = "0" * 1;
+    var is_https_res = ("" * 1) && (location.protocol == "https:");
+
+    var devicetype = "";
+    var source_encode_biz = "";
+    // var source_username = "";
+    // var profile_ext_signature = "" || "";
+    var reprint_ticket = "";
+    var source_mid = "";
+    var source_idx = "";
+
+    var show_comment = "";
+    var __appmsgCgiData = {
+        can_use_page : "0"*1,
+        is_wxg_stuff_uin : "0"*1,
+        card_pos : "",
+        copyright_stat : "0",
+        source_biz : "",
+        hd_head_img : "http://wx.qlogo.cn/mmhead/Q3auHgzwzM4opw9CLZiawE4Tyg6sDaa6PJaxzAsxfSARfVRIvXEPHfw/0"||(window.location.protocol+"//"+window.location.host + "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_rumor_link.2x264e76.jpg")
+    };
+    var _empty_v = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/pages/voice/empty26f1f1.mp3";
+
+    var copyright_stat = "0" * 1;
+
+    var pay_fee = "" * 1;
+    var pay_timestamp = "";
+    var need_pay = "" * 1;
+
+    var need_report_cost = "0" * 1;
+    var use_tx_video_player = "0" * 1;
+
+    var friend_read_source = "" || "";
+    var friend_read_version = "" || "";
+    var friend_read_class_id = "" || "";
+
+    var is_only_read = "1" * 1;
+    var read_num = "2" * 1;
+    var like_num = "0" * 1;
+    var liked = "false" == 'true' ? true : false;
+    var is_temp_url = "gyQQfLwRAKAyf48QSIPFRoepdV9zm1O9gvdHUOXelLbGpXso639yjdoD5zywRDAP6x6x2wBEBhoM4D14xwsaUpBgeGXNQotI90pdLHxIJe0/mqqET2YbQmQ9CxBiF6MS7ijtz4GsCqZeJf9If8dy0Q==" ? 1 : 0;
+    var send_time = "1469680745";
+      var icon_emotion_switch = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch.2x2f1273.png";
+      var icon_emotion_switch_active = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch_active.2x2f1273.png";
+      var icon_loading_white = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif";
+      var icon_audio_unread = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_unread26f1f1.png";
+      var icon_qqmusic_default = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_default.2x26f1f1.png";
+      var icon_qqmusic_source = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_source263724.png";
+
+    var topic_default_img = 'http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/topic/pic_book_thumb.2x2e4987.png';
+
+    // 话题卡片相关数据
+    var wxtopic = {
+    isbn : ""    // 书籍
+    };
+
+    var svr_time = "1469680802" * 1;
+
+        window.wxtoken = "";
+        window.__moon_initcallback = function(){
+        if(!!window.__initCatch){
+            window.__initCatch({
+                idkey : 27613,
+                startKey : 0,
+                limit : 128,
+                badjsId: 43,
+                reportOpt : {
+                    uin : uin,
+                    biz : biz,
+                    mid : mid,
+                    idx : idx,
+                    sn  : sn
+                },
+                extInfo : {
+                    network_rate : 0.01    //网络错误采样率
+                }
+            });
+        }
+    }
+    </script>
+
+        <script nonce="MOONSAFE_NONCE_1469070959">window.__moon_mainjs = 'appmsg/index.js';window.moon_map = {"appmsg/emotion/caret.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/caret278965.js","biz_wap/jsapi/cardticket.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/cardticket275627.js","appmsg/emotion/map.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/map278965.js","appmsg/emotion/textarea.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/textarea27cdc5.js","appmsg/emotion/nav.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/nav278965.js","appmsg/emotion/common.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/common278965.js","appmsg/emotion/slide.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/slide2a9cd9.js","pages/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/report2eec22.js","pages/music_player.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_player2b674b.js","pages/loadscript.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/loadscript2c9cd6.js","appmsg/emotion/dom.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/dom2f3ac3.js","appmsg/my_comment_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/my_comment_tpl.html2f3f48.js","biz_wap/utils/hashrouter.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/hashrouter2805ea.js","a/gotoappdetail.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/gotoappdetail2f33fb.js","a/ios.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/ios275627.js","a/android.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/android2c5484.js","a/profile.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/profile2f1750.js","a/mpshop.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/mpshop2f1750.js","a/card.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/card2f1750.js","biz_wap/utils/position.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/position2f1750.js","appmsg/a_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_report2f1750.js","biz_common/utils/respTypes.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/respTypes2c57d0.js","appmsg/cmt_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cmt_tpl.html2a2c13.js","sougou/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/a_tpl.html2c6e7c.js","appmsg/emotion/emotion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/emotion2f3ac3.js","biz_common/utils/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/report275627.js","biz_common/utils/huatuo.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/huatuo293afc.js","biz_common/utils/cookie.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/cookie275627.js","appmsg/topic_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/topic_tpl.html2f2e72.js","pages/voice_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_tpl.html2f2e72.js","pages/voice_component.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_component2f3ac3.js","pages/qqmusic_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/qqmusic_tpl.html2f2e72.js","new_video/ctl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/ctl2d441f.js","biz_common/utils/monitor.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/monitor2a30ee.js","biz_common/utils/spin.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/spin275627.js","biz_wap/jsapi/pay.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/pay275627.js","appmsg/reward_entry.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/reward_entry2f3ac3.js","appmsg/comment.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment2f3ac3.js","appmsg/like.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/like2eb52b.js","appmsg/a.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a2f1750.js","pages/version4video.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/version4video2e481d.js","rt/appmsg/getappmsgext.rt.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/rt/appmsg/getappmsgext.rt2c21f6.js","biz_wap/utils/storage.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage2a74ac.js","biz_common/tmpl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl2b3578.js","appmsg/img_copyright_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/img_copyright_tpl.html2a2c13.js","appmsg/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_tpl.html2f1750.js","biz_common/ui/imgonepx.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/ui/imgonepx275627.js","biz_common/dom/attr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr275627.js","biz_wap/utils/ajax.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax2f1747.js","biz_common/utils/string/html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html29f4e9.js","sougou/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/index2c7543.js","biz_wap/safe/mutation_observer_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/mutation_observer_report2f3e84.js","appmsg/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report2f3ac3.js","appmsg/report_and_source.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report_and_source2f1274.js","appmsg/page_pos.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/page_pos2ec4b2.js","appmsg/cdn_speed_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_speed_report2c57d0.js","appmsg/wxtopic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/wxtopic2f2e72.js","appmsg/voice.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voice2f2e72.js","appmsg/qqmusic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/qqmusic2f2e72.js","appmsg/iframe.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/iframe2ef6ca.js","appmsg/review_image.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/review_image2d0cfe.js","appmsg/outer_link.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/outer_link275627.js","biz_wap/jsapi/core.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core2f0d45.js","biz_common/dom/event.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event275627.js","appmsg/copyright_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/copyright_report2ec4b2.js","appmsg/cache.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cache2a74ac.js","appmsg/pay_for_reading.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/pay_for_reading2c5484.js","appmsg/async.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/async2f1750.js","biz_wap/ui/lazyload_img.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/ui/lazyload_img2ec99a.js","biz_common/log/jserr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/log/jserr2805ea.js","appmsg/share.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share2ec548.js","biz_wap/utils/mmversion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion2f1d97.js","appmsg/cdn_img_lib.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_img_lib275627.js","biz_common/utils/url/parse.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/url/parse2dd7fd.js","biz_common/dom/class.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/class275627.js","biz_wap/utils/device.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/device2b3aae.js","biz_wap/jsapi/a8key.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/a8key2a30ee.js","appmsg/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/index2f3f48.js"};</script><script nonce="MOONSAFE_NONCE_1469070959" async type="text/javascript" src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/moon2f0d45.js"></script>
+  <script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+    var real_show_page_time = +new Date();
+    if (!!window.addEventListener){
+        window.addEventListener("load", function(){
+            window.onload_endtime = +new Date();
+        });
+    }
+    
+  </script>
+
+    </body>
+</html>
+<!--tailTrap<body></body><head></head><html></html>-->
+ 

@@ -1,0 +1,324 @@
+﻿<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<title>ichartjs designer</title>
+<script src='http://www.ichartjs.com/ichart.latest.min.js'></script>
+<script type='text/javascript'>
+$(function(){
+      var chart = iChart.create({
+            render:"ichart-render",
+            width:900,
+            height:500,
+			animation:true,
+            background_color:"#fefefe",
+            gradient:false,
+            color_factor:0.2,
+            border:{
+                  color:"#f5ab23",
+                  width:1
+            },
+            align:"right",
+            offsetx:-75,
+            offsety:0,
+            sub_option:{
+                  border:{
+                        color:"#BCBCBC",
+                        width:0
+                  },
+                  label:{
+                        fontweight:500,
+                        fontsize:11,
+                        color:"#4572a7",
+                        sign:"square",
+                        sign_size:12,
+                        border:{
+                              color:"#BCBCBC",
+                              width:1
+                        },
+                        background_color:"#fefefe"
+                  }
+            },
+            shadow:true,
+            shadow_color:"#666666",
+            shadow_blur:2,
+            showpercent:false,
+            column_width:"70%",
+            bar_height:"70%",
+            radius:"90%",
+            title:{
+                  text:"2016年8月1日电影票房粗报(万元)",
+                  color:"#424242",
+                  fontsize:24,
+                  font:"微软雅黑",
+                  textAlign:"center",
+                  height:36,
+                  offsetx:0,
+                  offsety:5
+            },
+            subtitle:{
+                  text:"到21:30票房7190万，预估全日7765万，环比跌8483万，同比跌1644万",
+                  color:"#403f3f",
+                  fontsize:18,
+                  font:"微软雅黑",
+                  textAlign:"center",
+                  height:36,
+                  offsetx:0,
+                  offsety:20,
+				  background_color:"#FFD700"
+            },
+            footnote:{
+                  text:"",
+                  color:"#111111",
+                  fontsize:12,
+                  font:"微软雅黑",
+                  textAlign:"right",
+                  height:20,
+                  offsetx:0,
+                  offsety:0
+            },
+            legend:{
+                  enable:false,
+                  background_color:"#fefefe",
+                  color:"#333333",
+                  fontsize:12,
+                  border:{
+                        color:"#BCBCBC",
+                        width:1
+                  },
+                  column:1,
+                  align:"right",
+                  valign:"center",
+                  offsetx:0,
+                  offsety:0
+            },
+            coordinate:{
+                  width:"70%",
+                  height:"80%",
+                  background_color:"#ffffff",
+                  axis:{
+                        color:"#a1a5ab",
+                        width:[1,"",1,""]
+                  },
+                  grid_color:"#d9d9d9",
+                  label:{
+                        fontweight:500,
+                        color:"#262525",
+                        fontsize:12
+                  }
+            },
+            label:{
+                  fontweight:500,
+                  color:"#0f0e0e",
+                  fontsize:13,
+				  font:"微软雅黑"
+            },
+            type:"bar2d",
+            data:[
+                  {
+                  name:"绝地逃亡",
+                  value:2422,
+                  color:"#5087c9"
+				 
+            },{
+                  name:"封神传奇",
+                  value:2335,
+                  color:"#f58608"
+            },{
+                  name:"泰山归来：险战丛林",
+                  value:690,
+                  color:"#9d9e9b"
+            },{
+                  name:"神秘世界历险记3",
+                  value:573,
+                  color:"#f5a020"
+            },{
+                  name:"多啦A梦：新·大熊的日本诞生",
+                  value:229,
+                  color:"#4365f0"
+            },{
+                  name:"大鱼海棠",
+                  value:163,
+                  color:"#4cb551"
+            },{
+                  name:"宝贝当家",
+                  value:152,
+                  color:"#19287d"
+            },{
+                  name:"寒战2",
+                  value:145,
+                  color:"#cf2908"
+            },{
+                  name:"情况不妙",
+                  value:110,
+                  color:"#f7cb39"
+            },{
+                  name:"其他",
+                  value:371,
+                  color:"#825410"
+            }
+            ]
+      });
+	  
+	 
+	 var donut= new iChart.Donut2D({
+				data:[
+                  {
+                  name:"绝地逃亡",
+                  value:2422,
+                  color:"#5087c9"
+					 
+				},{
+					  name:"封神传奇",
+					  value:2335,
+					  color:"#f58608"
+				},{
+					  name:"泰山归来：险战丛林",
+					  value:690,
+					  color:"#9d9e9b"
+				},{
+					  name:"神秘世界历险记3",
+					  value:573,
+					  color:"#f5a020"
+				},{
+					  name:"多啦A梦：新·大熊的日本诞生",
+					  value:229,
+					  color:"#4365f0"
+				},{
+					  name:"大鱼海棠",
+					  value:163,
+					  color:"#4cb551"
+				},{
+					  name:"宝贝当家",
+					  value:152,
+					  color:"#19287d"
+				},{
+					  name:"寒战2",
+					  value:145,
+					  color:"#cf2908"
+				},{
+					  name:"情况不妙",
+					  value:110,
+					  color:"#f7cb39"
+				},{
+					  name:"其他",
+					  value:371,
+					  color:"#825410"
+				}
+				],
+				label:{
+					color:'#4c4f48'
+				},
+				sub_option:{
+					
+					label : false
+				},
+				text_space : 16,
+				showpercent:true,
+				decimalsnum:1,
+				animation:true,
+				align : 'right',
+				offsetx:chart.coo.get('originx')-400,
+				offsety:-(chart.get('centery')-chart.coo.get('originy')-230),
+				//animation : animation,
+				radius:70,
+				donutwidth:15,
+				offset_angle:270
+			});
+			
+			
+			var donut2= new iChart.Donut2D({
+				data:[
+                  {
+                  name:"绝地逃亡",
+                  value:1892,
+                  color:"#5087c9"
+					 
+				},{
+					  name:"封神传奇",
+					  value:2335,
+					  color:"#f58608"
+				},{
+					  name:"泰山归来：险战丛林",
+					  value:1650,
+					  color:"#9d9e9b"
+				},{
+					  name:"神秘世界历险记3",
+					  value:554,
+					  color:"#f5a020"
+				},{
+					  name:"多啦A梦：新·大熊的日本诞生",
+					  value:779,
+					  color:"#4365f0"
+				},{
+					  name:"大鱼海棠",
+					  value:321,
+					  color:"#4cb551"
+				},{
+					  name:"宝贝当家",
+					  value:225,
+					  color:"#19287d"
+				},{
+					  name:"寒战2",
+					  value:178,
+					  color:"#cf2908"
+				},{
+					  name:"情况不妙",
+					  value:110,
+					  color:"#f7cb39"
+				},{
+					  name:"其他",
+					  value:456,
+					  color:"#825410"
+				}
+				],
+				label:{
+					color:'#4c4f48'
+				},
+				sub_option:{
+					
+					label : false
+				},
+				text_space : 16,
+				showpercent:true,
+				decimalsnum:1,
+				animation:true,
+				align : 'right',
+				offsetx:chart.coo.get('originx')-415,
+				offsety:-(chart.get('centery')-chart.coo.get('originy')-230),
+				//animation : animation,
+				radius:55,
+				donutwidth:15,
+				offset_angle:270
+			});
+			
+			chart.plugin(new iChart.Custom({
+					drawFn:function(){
+						 //计算位置
+						var coo = chart.getCoordinate(),
+							x = coo.get('originx'),
+							y = coo.get('originy'),
+							H = coo.height;
+						//在左侧的位置，渲染说明文字。
+						var image = new Image(); 
+						image.src = "logo.png"; 
+						this.T.c.drawImage(image,5,10,100,40);	
+						
+					}
+			}));
+			
+			chart.plugin(donut);
+			chart.plugin(donut2);
+			
+	 
+	 chart.draw();
+
+     
+	 
+	 
+});
+</script>
+</head>
+<body style='background-color:#244c74;'>
+<div id='ichart-render'></div>
+</body>
+</html>

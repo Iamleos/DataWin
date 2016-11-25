@@ -1,0 +1,183 @@
+<?php
+/**
+ * descript:测试电影销售效率
+ * @date
+ * @author  XuJun
+ * @version 1.0
+ * @package
+ */
+ #! /usr/bin/php
+	//设置浏览器编码
+	header("Content-Type:text/html;charset=utf-8");
+	//由于数据量非常大，所以设置永不超时
+	set_time_limit(0);
+	//数据库基本信息
+	$host="56a3768226622.sh.cdb.myqcloud.com:4892";
+	$name="root";
+	$password="ctfoxno1";
+	$dbname="filmdaily";
+	//连接数据库
+	$con=mysql_connect($host,$name,$password) or die("Can't connect mysql!");
+	mysql_select_db($dbname,$con);
+	mysql_query("set names utf8");
+
+	$time=mysql_query("select acquitime from dianyingzh");
+	$row_time=mysql_fetch_row($time);
+	$today=date("Y年n月j日",strtotime($row_time[0]));
+
+	$arr=array();
+	$arr['title']=$today."电影票房";
+	$arr['data']=array();
+
+
+	//echo json_encode($arr);
+	$film=mysql_query("select * from dianyingzh order by zboxoffice desc limit 10");
+	$i=0;
+	while($row=mysql_fetch_row($film,true)){
+		$name=$row['mainname'];
+		$yjpf=(int)(((float)$row['zboxoffice'])*((float)$row['zestimatedboxoffice'])/((float)$row['zrealtimeboxoffice']));
+		$pf=$row['zboxoffice'];
+		$ljpf=$row['zboxofficesum'];
+		$gyrc=$row['zperson'];
+		$cj=(int)(((float)$row['zperson'])/((float)$row['zsession']));
+		$cjpf=(int)(((float)$row['zboxoffice'])*10000/((float)$row['zsession']));
+		$pfzb=round(((float)$row['zboxoffice'])*100/((float)$row['zrealtimeboxoffice']),2)."%";
+		$sz=round($row['jb_mseatrate'],1)."%";
+		$syts=1;
+		if($row['eday']==""&&$row['jb_mday']=="")
+		{
+			$syts=1;
+		}else if($row['eday']==""){
+		    $syts=$row['jb_mday'];
+		}else{
+			$syts=$row['eday'];
+		}
+
+		$datalist=array("name"=>$name,"yjqt"=>$yjpf,"pf"=>$pf,"ljpf"=>$ljpf,"gyrc"=>$gyrc,"cj"=>$cj,"cjpf"=>$cjpf,"pfzb"=>$pfzb,"sz"=>$sz,"syts"=>$syts);
+		$arr['data'][$i]=$datalist;
+		$i++;
+	}
+
+	$special_time=mysql_query("select macquitime from specialfilm");
+	$row_special_time=mysql_fetch_row($special_time);
+	$arr['ldc']=array();
+	$arr['dy']=array();
+	//if($row_special_time[0]==$row_time[0])
+	//{
+		$j=0;
+
+		//获取零点场电影type=2
+		$lingdian=mysql_query("select mname from specialfilm where type=2");
+		while($row_ld=mysql_fetch_row($lingdian))
+		{
+			$m_z=mysql_query("select zboxoffice from dianyingzh where mainname='{$row_ld[0]}'");
+
+			$m_zboxoffice=mysql_fetch_row($m_z);
+			if($m_zboxoffice[0]<=0)
+			{
+				$name=$row_ld[0];
+
+				$row_str=mysql_query("select * from dianyingzh where mainname='{$row_ld[0]}'");
+				$row=mysql_fetch_row($row_str,true);
+
+				$dy=mysql_query("select * from mpiaofangjianbao where mname='{$name}'");
+				$jb=mysql_fetch_row($dy,true);
+
+				$yjpf=(int)($jb['mboxoffice']);
+				$pf=(int)($jb['mboxoffice']);
+				$ljpf="";
+				if($jb['msumboxoffice']>0)
+				{
+					$ljpf=$jb['msumboxoffice'];
+				}
+				$gyrc="";
+				//$cj=(int)(((float)$row['zperson'])/((float)$row['zsession']));
+				$cj="";
+				//$cjpf=(int)(((float)$row['zboxoffice'])*10000/((float)$row['zsession']));
+				$cjpf="";
+				//$pfzb=round(((float)$row['zboxoffice'])*100/((float)$row['zrealtimeboxoffice']),2)."%";
+				$pfzb="";
+				if((float)$pfzb>0)
+				{
+					$pfzb=$row['jb_mboxofficerate'];
+				}
+				$sz=round($row['jb_mseatrate'],1)."%";
+				$syts=1;
+				if($row['eday']==""&&$row['jb_mday']=="")
+				{
+					$syts=1;
+				}else if($row['eday']==""){
+					$syts=$row['jb_mday'];
+				}else{
+					$syts=$row['eday'];
+				}
+
+				$datalist=array("name"=>$name,"yjqt"=>$yjpf,"pf"=>$pf,"ljpf"=>$ljpf,"gyrc"=>$gyrc,"cj"=>$cj,"cjpf"=>$cjpf,"pfzb"=>$pfzb,"sz"=>$sz,"syts"=>"");
+
+				$arr['ldc'][$j]=$datalist;
+				$j++;
+			}
+		}
+
+
+		$k=0;
+
+		//获取点映电影type=1
+		$dianying=mysql_query("select mname from specialfilm where type=1");
+		while($row_ld=mysql_fetch_row($dianying))
+		{
+			$m_z=mysql_query("select zboxoffice from dianyingzh where mainname='{$row_ld[0]}'");
+
+			$m_zboxoffice=mysql_fetch_row($m_z);
+			if($m_zboxoffice[0]<=0)
+			{
+				$name=$row_ld[0];
+
+				$row_str=mysql_query("select * from dianyingzh where mainname='{$row_ld[0]}'");
+				$row=mysql_fetch_row($row_str,true);
+
+				$dy=mysql_query("select * from mpiaofangjianbao where mname='{$name}'");
+				$jb=mysql_fetch_row($dy,true);
+
+				$yjpf=(int)($jb['mboxoffice']);
+				$pf=(int)($jb['mboxoffice']);
+				$ljpf="";
+				if($jb['msumboxoffice']>0)
+				{
+					$ljpf=$jb['msumboxoffice'];
+				}
+				$gyrc="";
+				//$cj=(int)(((float)$row['zperson'])/((float)$row['zsession']));
+				$cj="";
+				//$cjpf=(int)(((float)$row['zboxoffice'])*10000/((float)$row['zsession']));
+				$cjpf="";
+				//$pfzb=round(((float)$row['zboxoffice'])*100/((float)$row['zrealtimeboxoffice']),2)."%";
+				$pfzb="";
+				if((float)$pfzb>0)
+				{
+					$pfzb=$row['jb_mboxofficerate'];
+				}
+				$sz=round($row['jb_mseatrate'],1)."%";
+				$syts=1;
+				if($row['eday']==""&&$row['jb_mday']=="")
+				{
+					$syts=1;
+				}else if($row['eday']==""){
+					$syts=$row['jb_mday'];
+				}else{
+					$syts=$row['eday'];
+				}
+
+				$datalist=array("name"=>$name,"yjqt"=>$yjpf,"pf"=>$pf,"ljpf"=>$ljpf,"gyrc"=>$gyrc,"cj"=>$cj,"cjpf"=>$cjpf,"pfzb"=>$pfzb,"sz"=>$sz,"syts"=>"");
+
+				$arr['dy'][$k]=$datalist;
+				$k++;
+			}
+		}
+
+
+	//}
+
+	echo json_encode($arr);
+
+?>

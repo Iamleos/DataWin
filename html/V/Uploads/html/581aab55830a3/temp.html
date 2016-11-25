@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<!--headTrap<body></body><head></head><html></html>--><html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+<script nonce="1313709675" type="text/javascript">
+window.__nonce_str = "1313709675"
+if (location.href.indexOf("safe=0") == -1 && window.__nonce_str) {
+	window.__moonsafe_csp_offset || (window.__moonsafe_csp_offset = 18);
+	document.write('<meta http-equiv="Content-Security-Policy" content="script-src https: \'unsafe-inline\' \'unsafe-eval\' *.qq.com *.weishi.com'+(window.__nonce_str ? ' \'nonce-' + window.__nonce_str + "\'":"")+ '">');
+        
+}
+</script>
+
+        <script nonce="1313709675" type="text/javascript">
+            window.logs = {
+                pagetime: {}
+            };
+            window.logs.pagetime['html_begin'] = (+new Date());
+        </script>
+        
+<script nonce="1313709675" type="text/javascript">
+var page_begintime=+new Date,biz="MzI2NTM0NzE2NQ==",sn="",mid="100001104",idx="1",is_rumor="",norumor="";
+1*is_rumor&&!(1*norumor)&&biz&&mid&&(document.referrer&&-1!=document.referrer.indexOf("mp.weixin.qq.com/mp/rumor")||(location.href="http://mp.weixin.qq.com/mp/rumor?action=info&__biz="+biz+"&mid="+mid+"&idx="+idx+"&sn="+sn+"#wechat_redirect")),
+document.domain="qq.com";
+</script> 
+<script nonce="1313709675" type="text/javascript">
+var MutationObserver=window.WebKitMutationObserver||window.MutationObserver||window.MozMutationObserver,isDangerSrc=function(t){
+if(t){
+var e=t.match(/http(?:s)?:\/\/([^\/]+?)(\/|$)/);
+if(e&&!/qq\.com(\:8080)?$/.test(e[1])&&!/weishi\.com$/.test(e[1]))return!0;
+}
+return!1;
+},ishttp=0==location.href.indexOf("http://");
+-1==location.href.indexOf("safe=0")&&ishttp&&"function"==typeof MutationObserver&&"mp.weixin.qq.com"==location.host&&(window.__observer_data={
+count:0,
+exec_time:0,
+list:[]
+},window.__observer=new MutationObserver(function(t){
+window.__observer_data.count++;
+var e=new Date,r=[];
+t.forEach(function(t){
+for(var e=t.addedNodes,o=0;o<e.length;o++){
+var n=e[o];
+if("SCRIPT"===n.tagName){
+var i=n.src;
+isDangerSrc(i)&&(window.__observer_data.list.push(i),r.push(n)),!i&&window.__nonce_str&&n.getAttribute("nonce")!=window.__nonce_str&&(window.__observer_data.list.push("inlinescript_without_nonce"),
+r.push(n));
+}
+}
+});
+for(var o=0;o<r.length;o++){
+var n=r[o];
+n.parentNode&&n.parentNode.removeChild(n);
+}
+window.__observer_data.exec_time+=new Date-e;
+}),window.__observer.observe(document,{
+subtree:!0,
+childList:!0
+})),function(){
+if(-1==location.href.indexOf("safe=0")&&Math.random()<.01&&ishttp&&HTMLScriptElement.prototype.__lookupSetter__&&"undefined"!=typeof Object.defineProperty){
+window.__danger_src={
+xmlhttprequest:[],
+script_src:[],
+script_setAttribute:[]
+};
+var t="$"+Math.random();
+HTMLScriptElement.prototype.__old_method_script_src=HTMLScriptElement.prototype.__lookupSetter__("src"),
+HTMLScriptElement.prototype.__defineSetter__("src",function(t){
+t&&isDangerSrc(t)&&window.__danger_src.script_src.push(t),this.__old_method_script_src(t);
+});
+var e="element_setAttribute"+t;
+Object.defineProperty(Element.prototype,e,{
+value:Element.prototype.setAttribute,
+enumerable:!1
+}),Element.prototype.setAttribute=function(t,r){
+"SCRIPT"==this.tagName&&"src"==t&&isDangerSrc(r)&&window.__danger_src.script_setAttribute.push(r),
+this[e](t,r);
+};
+}
+}();
+</script> 
+
+        <link rel="dns-prefetch" href="//res.wx.qq.com">
+<link rel="dns-prefetch" href="//mmbiz.qpic.cn">
+<link rel="shortcut icon" type="image/x-icon" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+<script nonce="1313709675" type="text/javascript">
+    String.prototype.html = function(encode) {
+        var replace =["&#39;", "'", "&quot;", '"', "&nbsp;", " ", "&gt;", ">", "&lt;", "<", "&amp;", "&", "&yen;", "¥"];
+        if (encode) {
+            replace.reverse();
+        }
+        for (var i=0,str=this;i< replace.length;i+= 2) {
+             str=str.replace(new RegExp(replace[i],'g'),replace[i+1]);
+        }
+        return str;
+    };
+
+    window.isInWeixinApp = function() {
+        return /MicroMessenger/.test(navigator.userAgent);
+    };
+
+    window.getQueryFromURL = function(url) {
+        url = url || 'http://qq.com/s?a=b#rd'; 
+        var query = url.split('?')[1].split('#')[0].split('&'),
+            params = {};
+        for (var i=0; i<query.length; i++) {
+            var arg = query[i].split('=');
+            params[arg[0]] = arg[1];
+        }
+        if (params['pass_ticket']) {
+        	params['pass_ticket'] = encodeURIComponent(params['pass_ticket'].html(false).html(false).replace(/\s/g,"+"));
+        }
+        return params;
+    };
+
+    (function() {
+	    var params = getQueryFromURL(location.href);
+        window.uin = params['uin'] || '';
+        window.key = params['key'] || '';
+        window.wxtoken = params['wxtoken'] || '';
+        window.pass_ticket = params['pass_ticket'] || '';
+    })();
+
+</script>
+
+        <title>月报|十月艺人电视剧、电影商业价值及网络影响力：张涵予赵丽颖各自登顶</title>
+        
+<style>html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;line-height:1.6}body{-webkit-touch-callout:none;font-family:-apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background-color:#f3f3f3;line-height:inherit}body.rich_media_empty_extra{background-color:#fff}body.rich_media_empty_extra .rich_media_area_primary:before{display:none}h1,h2,h3,h4,h5,h6{font-weight:400;font-size:16px}*{margin:0;padding:0}a{color:#607fa6;text-decoration:none}.rich_media_inner{font-size:16px;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.rich_media_area_primary{position:relative;padding:20px 15px 15px;background-color:#fff}.rich_media_area_primary:before{content:" ";position:absolute;left:0;top:0;width:100%;height:1px;border-top:1px solid #e5e5e5;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(0.5);transform:scaleY(0.5);top:auto;bottom:-2px}.rich_media_area_primary .original_img_wrp{display:inline-block;font-size:0}.rich_media_area_primary .original_img_wrp .tips_global{display:block;margin-top:.5em;font-size:14px;text-align:right;width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.rich_media_area_extra{padding:0 15px 0}.rich_media_title{margin-bottom:10px;line-height:1.4;font-weight:400;font-size:24px}.rich_media_meta_list{margin-bottom:18px;line-height:20px;font-size:0}.rich_media_meta_list em{font-style:normal}.rich_media_meta{display:inline-block;vertical-align:middle;margin-right:8px;margin-bottom:10px;font-size:16px}.meta_original_tag{display:inline-block;vertical-align:middle;padding:1px .5em;border:1px solid #9e9e9e;color:#8c8c8c;border-top-left-radius:20% 50%;-moz-border-radius-topleft:20% 50%;-webkit-border-top-left-radius:20% 50%;border-top-right-radius:20% 50%;-moz-border-radius-topright:20% 50%;-webkit-border-top-right-radius:20% 50%;border-bottom-left-radius:20% 50%;-moz-border-radius-bottomleft:20% 50%;-webkit-border-bottom-left-radius:20% 50%;border-bottom-right-radius:20% 50%;-moz-border-radius-bottomright:20% 50%;-webkit-border-bottom-right-radius:20% 50%;font-size:15px;line-height:1.1}.meta_enterprise_tag img{width:30px;height:30px!important;display:block;position:relative;margin-top:-3px;border:0}.rich_media_meta_text{color:#8c8c8c}span.rich_media_meta_nickname{display:none}.rich_media_thumb_wrp{margin-bottom:6px}.rich_media_thumb_wrp .original_img_wrp{display:block}.rich_media_thumb{display:block;width:100%}.rich_media_content{overflow:hidden;color:#3e3e3e}.rich_media_content *{max-width:100%!important;box-sizing:border-box!important;-webkit-box-sizing:border-box!important;word-wrap:break-word!important}.rich_media_content p{clear:both;min-height:1em;white-space:pre-wrap}.rich_media_content em{font-style:italic}.rich_media_content fieldset{min-width:0}.rich_media_content .list-paddingleft-2{padding-left:30px}.rich_media_content blockquote{margin:0;padding-left:10px;border-left:3px solid #dbdbdb}img{height:auto!important}@media(min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2){.mm_appmsg .rich_media_inner,.mm_appmsg .rich_media_meta,.mm_appmsg .discuss_list,.mm_appmsg .rich_media_extra,.mm_appmsg .title_tips .tips{font-size:17px}.mm_appmsg .meta_original_tag{font-size:15px}}@media(min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3){.mm_appmsg .rich_media_title{font-size:25px}}@media screen and (min-width:1024px){.rich_media{width:740px;margin-left:auto;margin-right:auto}.rich_media_inner{padding:20px}body{background-color:#fff}}@media screen and (min-width:1025px){body{font-family:"Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif}.rich_media{position:relative}.rich_media_inner{background-color:#fff;padding-bottom:100px}}.radius_avatar{display:inline-block;background-color:#fff;padding:3px;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;overflow:hidden;vertical-align:middle}.radius_avatar img{display:block;width:100%;height:100%;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;background-color:#eee}.cell{padding:.8em 0;display:block;position:relative}.cell_hd,.cell_bd,.cell_ft{display:table-cell;vertical-align:middle;word-wrap:break-word;word-break:break-all;white-space:nowrap}.cell_primary{width:2000px;white-space:normal}.flex_cell{padding:10px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.flex_cell_primary{width:100%;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;box-flex:1;flex:1}.original_tool_area{display:block;padding:.75em 1em 0;-webkit-tap-highlight-color:rgba(0,0,0,0);color:#3e3e3e;border:1px solid #eaeaea;margin:20px 0}.original_tool_area .tips_global{position:relative;padding-bottom:.5em;font-size:15px}.original_tool_area .tips_global:after{content:" ";position:absolute;left:0;bottom:0;right:0;height:1px;border-bottom:1px solid #dbdbdb;-webkit-transform-origin:0 100%;transform-origin:0 100%;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.original_tool_area .radius_avatar{width:27px;height:27px;padding:0;margin-right:.5em}.original_tool_area .radius_avatar img{height:100%!important}.original_tool_area .flex_cell_bd{width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.original_tool_area .flex_cell_ft{font-size:14px;color:#8c8c8c;padding-left:1em;white-space:nowrap}.original_tool_area .icon_access:after{content:" ";display:inline-block;height:8px;width:8px;border-width:1px 1px 0 0;border-color:#cbcad0;border-style:solid;transform:matrix(0.71,0.71,-0.71,0.71,0,0);-ms-transform:matrix(0.71,0.71,-0.71,0.71,0,0);-webkit-transform:matrix(0.71,0.71,-0.71,0.71,0,0);position:relative;top:-2px;top:-1px}.weui_loading{width:20px;height:20px;display:inline-block;vertical-align:middle;-webkit-animation:weuiLoading 1s steps(12,end) infinite;animation:weuiLoading 1s steps(12,end) infinite;background:transparent url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iciIgd2lkdGg9JzEyMHB4JyBoZWlnaHQ9JzEyMHB4JyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJub25lIiBjbGFzcz0iYmsiPjwvcmVjdD4KICAgIDxyZWN0IHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjRTlFOUU5JwogICAgICAgICAgdHJhbnNmb3JtPSdyb3RhdGUoMCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+CiAgICA8L3JlY3Q+CiAgICA8cmVjdCB4PSc0Ni41JyB5PSc0MCcgd2lkdGg9JzcnIGhlaWdodD0nMjAnIHJ4PSc1JyByeT0nNScgZmlsbD0nIzk4OTY5NycKICAgICAgICAgIHRyYW5zZm9ybT0ncm90YXRlKDMwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4KICAgICAgICAgICAgICAgICByZXBlYXRDb3VudD0naW5kZWZpbml0ZScvPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyM5Qjk5OUEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSg2MCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+CiAgICAgICAgICAgICAgICAgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnLz4KICAgIDwvcmVjdD4KICAgIDxyZWN0IHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjQTNBMUEyJwogICAgICAgICAgdHJhbnNmb3JtPSdyb3RhdGUoOTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNBQkE5QUEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxMjAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNCMkIyQjInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxNTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNCQUI4QjknCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxODAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNDMkMwQzEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyMTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNDQkNCQ0InCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyNDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNEMkQyRDInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyNzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNEQURBREEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgzMDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNFMkUyRTInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgzMzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0Pgo8L3N2Zz4=) no-repeat;-webkit-background-size:100%;background-size:100%}@-webkit-keyframes weuiLoading{0%{-webkit-transform:rotate3d(0,0,1,0deg)}100%{-webkit-transform:rotate3d(0,0,1,360deg)}}@keyframes weuiLoading{0%{-webkit-transform:rotate3d(0,0,1,0deg)}100%{-webkit-transform:rotate3d(0,0,1,360deg)}}.gif_img_wrp{display:inline-block;font-size:0;position:relative;font-weight:400;font-style:normal;text-indent:0;text-shadow:none 1px 1px rgba(0,0,0,0.5)}.gif_img_wrp img{vertical-align:top}.gif_img_tips{background:rgba(0,0,0,0.6)!important;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000',endcolorstr = '#99000000');border-top-left-radius:1.2em 50%;-moz-border-radius-topleft:1.2em 50%;-webkit-border-top-left-radius:1.2em 50%;border-top-right-radius:1.2em 50%;-moz-border-radius-topright:1.2em 50%;-webkit-border-top-right-radius:1.2em 50%;border-bottom-left-radius:1.2em 50%;-moz-border-radius-bottomleft:1.2em 50%;-webkit-border-bottom-left-radius:1.2em 50%;border-bottom-right-radius:1.2em 50%;-moz-border-radius-bottomright:1.2em 50%;-webkit-border-bottom-right-radius:1.2em 50%;line-height:2.3;font-size:11px;color:#fff;text-align:center;position:absolute;bottom:10px;left:10px;min-width:65px}.gif_img_tips.loading{min-width:75px}.gif_img_tips i{vertical-align:middle;margin:-0.2em .73em 0 -2px}.gif_img_play_arrow{display:inline-block;width:0;height:0;border-width:8px;border-style:dashed;border-color:transparent;border-right-width:0;border-left-color:#fff;border-left-style:solid;border-width:5px 0 5px 8px}.gif_img_loading{width:14px;height:14px}i.gif_img_loading{margin-left:-4px}.rich_media_global_msg{position:fixed;top:0;left:0;right:0;padding:1em 35px 1em 15px;z-index:1;background-color:#c6e0f8;color:#8c8c8c;font-size:13px}.rich_media_global_msg .icon_closed{position:absolute;right:15px;top:50%;margin-top:-5px;line-height:300px;overflow:hidden;-webkit-tap-highlight-color:rgba(0,0,0,0);background:transparent url(/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_appmsg_msg_closed_sprite.2x.png) no-repeat 0 0;width:11px;height:11px;vertical-align:middle;display:inline-block;-webkit-background-size:100% auto;background-size:100% auto}.rich_media_global_msg .icon_closed:active{background-position:0 -17px}.preview_appmsg .rich_media_title{margin-top:1.9em}@media screen and (min-width:1024px){.rich_media_global_msg{position:relative;margin:0 20px}.preview_appmsg .rich_media_title{margin-top:0}}</style>
+<style>
+     
+    </style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_pc2c9cd6.css">
+<![endif]-->
+
+    </head>
+    <body id="activity-detail" class="zh_CN mm_appmsg" ontouchstart="">
+        
+    <script nonce="1313709675" type="text/javascript">
+        var write_sceen_time = (+new Date());
+    </script>
+
+    <div id="js_article" class="rich_media preview_appmsg">
+        
+        <div id="js_top_ad_area" class="top_banner">
+ 
+        </div>
+                
+
+        <div class="rich_media_inner">
+                        <div class="rich_media_global_msg">
+                
+                此为临时链接，仅用于文章预览，将在短期内失效
+                <a id="js_close_temp" href="javascript:;" class="icon_closed">关闭</a>
+            </div>
+                        <div id="page-content">
+                <div id="img-content" class="rich_media_area_primary">
+                    <h2 class="rich_media_title" id="activity-name">
+                        月报|十月艺人电视剧、电影商业价值及网络影响力：张涵予赵丽颖各自登顶 
+                    </h2>
+                    <div class="rich_media_meta_list">
+                        						                        <em id="post-date" class="rich_media_meta rich_media_meta_text">2016-11-03</em>
+
+                                                <em class="rich_media_meta rich_media_meta_text">德塔文数据</em>
+                                                <a class="rich_media_meta rich_media_meta_link rich_media_meta_nickname" href="javascript:void(0);" id="post-user">德塔文影视观察</a>
+                        <span class="rich_media_meta rich_media_meta_text rich_media_meta_nickname">德塔文影视观察</span>
+
+                        <div id="js_profile_qrcode" class="profile_container" style="display:none;">
+                            <div class="profile_inner">
+                                <strong class="profile_nickname">德塔文影视观察</strong>
+                                <img class="profile_avatar" id="js_profile_qrcode_img" src="" alt="">
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">微信号</label>
+                                <span class="profile_meta_value">datawinfilmtv</span>
+                                </p>
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">功能介绍</label>
+                                <span class="profile_meta_value">影视行业深度解析，影视项目分析，艺人数据分析，舆情动态研判</span>
+                                </p>
+                                
+                            </div>
+                            <span class="profile_arrow_wrp" id="js_profile_arrow_wrp">
+                                <i class="profile_arrow arrow_out"></i>
+                                <i class="profile_arrow arrow_in"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                                                            
+                                                            
+                    
+                    <div class="rich_media_content " id="js_content">
+                        
+
+                        
+                        
+                        <section style="background-color: rgb(255, 255, 255); box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style="   box-sizing: border-box; "><section style="display: inline-block; vertical-align: top; width: 70%; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="   box-sizing: border-box; "><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style=" margin: 10px 0% 0px;  box-sizing: border-box; "><section style="text-align: right; font-size: 14px; box-sizing: border-box;"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">↑↑等你点蓝字关注</strong><strong style="box-sizing: border-box;">都等出蜘蛛网了&gt;_&lt;</strong></section></section></section></section></section><section style="display: inline-block; vertical-align: top; width: 30%; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style=" text-align: right; margin-top: 10px; margin-bottom: 10px; transform: translate3d(0px, 0px, 0px); -webkit-transform: translate3d(0px, 0px, 0px); -moz-transform: translate3d(0px, 0px, 0px); -o-transform: translate3d(0px, 0px, 0px); font-size: 16px;  box-sizing: border-box; "><img style="max-width: 100%; vertical-align: middle; width: 100%; box-sizing: border-box;" data-ratio="0.8630952380952381" data-type="gif" data-w="336" src="0.jpg"  /></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="   box-sizing: border-box; "><section style="line-height: 1.75; letter-spacing: 2px; padding: 0px 2px; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">当前市场下，除了艺人的网络影响力，<strong>艺人的转化率、号召力、更是大家对其商业价值关心的重点</strong>。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">我们通过对艺人电视剧、电影成绩的方方面面的测评，研发了能体现艺人现阶段商业<span style="letter-spacing: 0px; box-sizing: border-box;">价值转化的<strong>【艺人电视剧商业价值榜】、【艺人电影商业价值榜】</strong>；并一贯发布艺人当前的网络影响力、和蒸蒸日上的新生代艺人网络影响力。</span></section><section style="box-sizing: border-box;"><span style="letter-spacing: 0px; box-sizing: border-box;"><br style="box-sizing: border-box;"  /></span></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style=" margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><section style="padding-left: 1em; padding-right: 1em; display: inline-block; text-align: center; box-sizing: border-box;"><span style="display: inline-block; padding: 0.3em 0.5em; border-radius: 0.5em; font-size: 16px; color: rgb(255, 255, 255); background-color: rgb(166, 91, 203); box-sizing: border-box;"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">十月艺人电视剧商业价值</strong></section></span> </section><section style="padding: 20px 10px 10px; border: 1px solid rgb(192, 200, 209); text-align: center; margin-top: -1em; box-sizing: border-box; background-color: rgb(239, 239, 239);"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="   box-sizing: border-box; "><section style="text-align: justify; color: rgb(249, 11, 11); box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">【艺人电视剧商业价值】反映艺人这一阶段为电视剧带来的收视、网播、宣传、影响力范围等价值。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style=" margin: 0.5em 0px;  box-sizing: border-box; "><section style="display: inline-block; vertical-align: top; box-sizing: border-box;"><section style="background-color: rgb(166, 91, 203); color: rgb(255, 255, 255); font-size: 19.2px; padding-left: 5px; padding-right: 5px; margin-bottom: 4px; box-sizing: border-box;"><section style="box-sizing: border-box;">艺人电视剧商业价值榜</section></section><section style="height: 2px; width: 100%; background-color: rgb(0, 0, 0); box-sizing: border-box;"></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="   box-sizing: border-box; "><section style="text-align: justify; line-height: 1.75; letter-spacing: 2px; padding: 0px 2px; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">2016年10月电视剧艺人商业价值榜TOP10分别是：</section><section style="box-sizing: border-box;">赵丽颖、李易峰、杨幂、周冬雨、宋茜、杨紫、马天宇、张鲁一、李小冉、张艺兴。<br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style="   box-sizing: border-box; "><img data-ratio="1.8619289340101523" data-type="png" data-w="985" data-s="300,640" src="1.jpg"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="   box-sizing: border-box; "><section style="text-align: justify; line-height: 1.75; letter-spacing: 2px; padding: 0px 2px; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">1、榜首赵丽颖</section><section style="box-sizing: border-box;">赵丽颖的《胭脂》等几部剧成绩相对均衡，劳模程度可嘉，已经形成了一定的收视基本盘。近期更因《花千骨》得到金鹰金杯加持，成为85后花旦中少见的有奖之人，网络热议度快速提升，商业价值有所放大。</section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">金鹰之后的赵丽颖，正在快速逼近电视剧花旦第一阵列。</strong></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;"><img data-ratio="1.5" data-type="jpeg" data-w="500" data-s="300,640" src="2.jpg"  /><br  /></strong></section><section style="box-sizing: border-box;"><p><br  /></p><p>2、亚军李易峰</p></section><section style="box-sizing: border-box;">一般而言，李易峰是市场心目中商业价值的扛鼎者，尽管《青云志》不如预期，《麻雀》的高收视、高口碑则捍卫了这位85后第一人气男艺人的尊严和业绩。争议中前进的李易峰，仍然是市场强力艺人。《麻雀》成功更让李易峰得到了演艺转型和形象提升的机会。在电视剧领域，李易峰具备强大商业价值。</section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">李易峰的名字，就是IP。</strong></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></strong></section><section style="box-sizing: border-box;">3、季军杨幂</section><section style="box-sizing: border-box;">即使杨幂本月并没有新剧上线，凭借《翻译官》重播的不错收视成绩，《真男》综艺激起的高话题度，以及居高不下的网络热度，杨幂仍然跻身商业价值榜三甲。这也看出这位85花旦的强大人气和国民基础。</section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">杨幂=收视+话题+价值。</strong></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;"><img data-ratio="1.5" data-type="jpeg" data-w="690" data-s="300,640" src="3.jpg"  /><br  /></strong></section><section style="box-sizing: border-box;"><p><br  /></p><p>4、周冬雨</p></section><section style="box-sizing: border-box;">作为电影圈实力出挑的文艺小女神，周冬雨的电视剧之路走得相当坎坷，利先生至今未播，麻雀延播。但市场从未辜负勤奋又有天赋的人，忽如一夜春风，随着《七月与安生》得到金马影后的提名，《麻雀》也以年底暂列第二的骄人收视业绩得到行业认可。周冬雨以她超人的勤奋和表演天赋，得到了影视双丰收的强悍业绩。</section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">快速上位期的周冬雨，不可不看。</strong></section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">5、宋茜</section><section style="box-sizing: border-box;">尽管《幻城》的收视不温不火，自身的情感生活也略起波澜，宋茜本月在收视与话题之间取得了不错的均衡度，名列商业价值榜第五名。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">6、杨紫</section><section style="box-sizing: border-box;">杨紫近期堪称劳模，今年多部电视剧播出，《青云志》出演绝世美人雪琪更让她成为风口浪尖的话题人物。但不可否认的是，青云志让杨紫从纯粹的演技派少女走向了人气女明星，放大了她的商业价值。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">7、马天宇</section><section style="box-sizing: border-box;">马二爷有颜有演技，是广大粉丝心目中的白玫瑰少年，《幻城》给了这位颜值演技派一个话题放大的机会，樱空释成了马天宇近期的标签角色。商业代言上的进步，也体现出《幻城》对马天宇商业价值的贡献度。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">8、张鲁一</section><section style="box-sizing: border-box;">作为传说中的国剧四美之一，张鲁一的演技刚刚的没话说，鱼蛋哥的文艺范儿和各型各款角色都能稳稳当当hold住的演技那真是人间良心没商量。必须说，张鲁一的精彩让《麻雀》更加精彩。张鲁一的价值在于，让一个剧瞬时显得更加靠谱、有逼格、有看头。</section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">张鲁一=文艺+靠谱+有好戏看。</strong></section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">9、李小冉</section><section style="box-sizing: border-box;">必须说《麻雀》确实成功，李小冉又是一名以麻雀上榜的艺人。但也必须说，李小冉的美腻、风韵和靠谱让麻雀更加成功。在电视业界，李小冉必须是个很靠谱很有范的选择，她可以让电视阵容产生更大吸引力和可信任感。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">10、张艺兴</section><section style="box-sizing: border-box;">《老九门》已经收宫，张艺兴的世界之门却正在打开，网络热度快速放大。二月红必须是张艺兴通向成功的一个重要角色。</section><section style="box-sizing: border-box;">可以看到，从吴亦凡、鹿晗、黄子韬到张艺兴，昔日的归国韩流全面崛起，正在大陆影视市场成为中坚人物。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style="   box-sizing: border-box; "><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style=" margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><section style="padding-left: 1em; padding-right: 1em; display: inline-block; text-align: center; box-sizing: border-box;"><span style="display: inline-block; padding: 0.3em 0.5em; border-radius: 0.5em; font-size: 16px; color: rgb(255, 255, 255); background-color: rgb(249, 11, 11); box-sizing: border-box;"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">十月艺人电影商业价值</strong></section></span> </section><section style="padding: 20px 10px 10px; border: 1px solid rgb(192, 200, 209); text-align: center; margin-top: -1em; box-sizing: border-box; background-color: rgb(239, 239, 239);"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="   box-sizing: border-box; "><section style="text-align: justify; color: rgb(249, 110, 87); box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">【艺人电影商业价值】表达了艺人本月通过作品呈现的对电影票房、口碑、影响力范围大小、观众印象等因素。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style=" margin: 0.5em 0px;  box-sizing: border-box; "><section style="display: inline-block; vertical-align: top; box-sizing: border-box;"><section style="color: rgb(255, 255, 255); font-size: 19.2px; padding-left: 5px; padding-right: 5px; margin-bottom: 4px; background-color: rgb(249, 11, 11); box-sizing: border-box;"><section style="box-sizing: border-box;">艺人电影商业价值榜</section></section><section style="height: 2px; width: 100%; background-color: rgb(0, 0, 0); box-sizing: border-box;"></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="   box-sizing: border-box; "><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">2016年10月电影艺人商业价值榜TOP10分别是：</section><section style="box-sizing: border-box;">张涵予、彭于晏、邓超、白百何、杨洋、范冰冰、孙淳、吴亦凡、陈学冬、黄晓明<br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style="   box-sizing: border-box; "><img data-ratio="1.8903688524590163" data-type="png" data-w="976" data-s="300,640" src="4.jpg"  /><br  /><br style="box-sizing: border-box;"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="   box-sizing: border-box; "><section style="text-align: justify; line-height: 1.75; letter-spacing: 2px; padding: 0px 2px; box-sizing: border-box;"><section style="box-sizing: border-box;">1、榜首张涵予</section><section style="box-sizing: border-box;"><p>本月《湄公河行动》的大胜利，让张涵予再次获得“正能量”+“高票房”的肯定，上次他获得这项荣誉应该是徐克导演的《智取威虎山》，此外《老炮儿》里他的出演也是电影的一大亮色。这都证明张涵予作为既有演技、又有市场的影帝级人物，在中国当前活跃的男演员里是票房号召力和国民话题度是名列前茅的。<strong style="box-sizing: border-box;">看到张涵予的名字，几乎等于戏好+精彩+男人味爆棚。</strong></p><p><strong><br  /></strong></p></section><section style="box-sizing: border-box;">&nbsp;<img data-ratio="0.714" data-type="jpeg" data-w="500" data-s="300,640" src="5.jpg"  /><br  /></section><section style="box-sizing: border-box;"><p><br  /></p><p>2、亚军彭于晏</p></section><section style="box-sizing: border-box;">虽然彭于晏一直保持着诸多电影先后上映的高曝光度，但其个人票房能力总是不够凸显，这多少有其身为台湾演员、不够完全融入的因素存在。此次《湄公河行动》，彭于晏也献出了突破性演出，苦心磨砺的角色受到大众肯定，<strong style="box-sizing: border-box;">彭于晏在中国市场的商业价值可能因此被正视，群众基础扩大。</strong></section><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;">3、季军邓超</section><section style="box-sizing: border-box;">作为爱情片《从你的全世界路过》的第一主演，邓超又一次证明了自己能驾驭各种角色、各种类型的影片。邓超目前已几乎成为75代小生的电影领军人物，《烈日灼心》、《美人鱼》到《从你的全世界路过》，<strong style="box-sizing: border-box;">邓超口碑票房双丰收，在接下来的电影市场上将依然持续是最有价值的男演员之一。</strong></section><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;">4、白百何</section><section style="box-sizing: border-box;">白百何凭借《从你的全世界路过》的高票房，成为本月电影演员商业价值榜上排名最高的女演员，近年来白百何一直维持着相当不错的接戏水准，口碑、演技、票房表现全部在线，唯独话题度较弱了一些。</section><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;">5、杨洋</section><section style="box-sizing: border-box;">刚刚跨入电影市场不久的杨洋，可能会成为《从你的全世界路过》的一众演员中，获利最大的一个。该片的票房成功让杨洋有了良好的开端，这个最近话题度很高的小鲜肉正急需证明自己有相应的票房能力。不过相比之下，下一部杨洋担纲主演的《三生三世十里桃花》的票房对杨洋更为重要。&nbsp;<img data-ratio="0.5625" data-type="jpeg" data-w="640" data-s="300,640" src="6.jpg"  /><br  /></section><section style="box-sizing: border-box;"><p><br  /></p><p>6、范冰冰</p></section><section style="box-sizing: border-box;">由于题材不适，范冰冰领衔主演的《爵迹》最终票房收于3.8亿，口碑评分也较低，这些综合因素使得范冰冰本月的排位不算很高，不过十一月范爷将携《我不是潘金莲》强势回归，凭借此片获得影后的范冰冰相信将迎来价值的高升。</section><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;">7、孙淳</section><section style="box-sizing: border-box;">由于参演大卖之作《湄公河行动》，综合票房、口碑、热议度等因素，戏骨孙淳本月的电影商业价值很高。但能否把价值持续则要看写下来的团队因应。</section><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;">8、吴亦凡</section><section style="box-sizing: border-box;">同理范冰冰，《爵迹》的市场反响一般，使得吴亦凡本月的商业价值排位不算太高，但吴亦凡接下来有强势的《西游伏妖篇》在大年初一上映，此外参演的好莱坞影片《极限特工3》也将在明年初迎来全球上映，相信届时他的商业价值将上升一个台阶。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">9、陈学冬</section><section style="box-sizing: border-box;">作为《爵迹》的三番，陈学冬本月在电影演员价值榜上排位第九。然而郭敬明遇到的瓶颈某方面来说也会影响陈学冬，陈学冬需要证明自己脱离郭敬明后独立的商业价值。</section><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;">10、黄晓明</section><section style="box-sizing: border-box;">在国庆档几部大片中，《王牌逗王牌》是最不叫好也不叫座的，几乎隐形。这也使得黄晓明的本月商业价值排名一般。虽然黄晓明一直很活跃，但他在接戏方面的标准确实需要更加明确，近年来无论是电影《何以笙箫默》，还是电视剧《上古情歌》等都让人摸不着头脑。接下来即将参演《琅琊榜2》能否为教主带来声势的回归值得观察。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style="   box-sizing: border-box; "><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style=" margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><section style="padding-left: 1em; padding-right: 1em; display: inline-block; text-align: center; box-sizing: border-box;"><span style="display: inline-block; padding: 0.3em 0.5em; border-radius: 0.5em; font-size: 16px; color: rgb(255, 255, 255); background-color: rgb(255, 129, 36); box-sizing: border-box;"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">十月艺人综合网络影响力</strong></section></span> </section><section style="padding: 20px 10px 10px; border: 1px solid rgb(192, 200, 209); text-align: center; margin-top: -1em; box-sizing: border-box; background-color: rgb(239, 239, 239);"><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style="   box-sizing: border-box; "><section style="text-align: justify; color: rgb(249, 11, 11); box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">【艺人综合网络人气榜】反映艺人阶段时期的全网热议度、关注度。</section><section style="box-sizing: border-box;">【新生代艺人网络人气榜】反映90后艺人阶段时期的全网热议度、关注度。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style=" margin: 0.5em 0px;  box-sizing: border-box; "><section style="display: inline-block; vertical-align: top; box-sizing: border-box;"><section style="color: rgb(255, 255, 255); font-size: 19.2px; padding-left: 5px; padding-right: 5px; margin-bottom: 4px; background-color: rgb(255, 129, 36); box-sizing: border-box;"><section style="box-sizing: border-box;">艺人网络人气榜</section></section><section style="height: 2px; width: 100%; background-color: rgb(0, 0, 0); box-sizing: border-box;"></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="   box-sizing: border-box; "><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">2016年10月艺人综合网络影响力TOP10</section><section style="box-sizing: border-box;">赵丽颖、杨幂、杨洋、王俊凯、王源、易烊千玺、郑爽、宋茜、鹿晗、刘亦菲<br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style="   box-sizing: border-box; "><img data-ratio="1.8558467741935484" data-type="png" data-w="992" data-s="300,640" src="7.jpg"  /><br  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="   box-sizing: border-box; "><section style="text-align: justify; line-height: 1.75; letter-spacing: 2px; padding: 0px 2px; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">1、冠军赵丽颖</section><section style="box-sizing: border-box;">获得榜首的是赵丽颖。赵丽颖的各项数值较为均衡，搜索热度和微博讨论度较高，在月初《中国电影报道》特别策划评选演技派“新四小花旦”上榜后，在生日当天凭借《花千骨》中“花千骨”一角获得主流奖项金鹰奖，可谓喜上加喜，之后又凭借《老九门》中尹新月一角获得文荣奖“最佳女主角”。主演的《胭脂》虽然话题、收视虽然不如预期，但也不乏话题度和基本的收视盘。此外，加盟韩寒新片《乘风破浪》搭档邓超、彭于晏，似乎开始向电影圈发力。入驻北京杜莎夫人蜡像馆官宣，也可见这位小花旦国民度和商业价值的提升。赵丽颖主演的《特工皇妃楚乔传》经历了五个月的拍摄后也已于10月底杀青，将于明年暑假湖南卫视播出。</section><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;">2、亚军杨幂</section><section style="box-sizing: border-box;">网红榜第二名的是自带收视基本盘的杨幂。杨幂的各项数据也较为均衡，微信热度相比较而言较为突出。这个月，杨幂加盟的《真正男子汉》空军篇播出，首播全国网收视率1.87，份额5.83%，排名全国第一，节目播出后热度和讨论度十足，节目和杨幂本人皆备受好评。此外，作为淘宝同款服装最多的女明星，杨幂私服备受好评，机场照可谓十分吸精，在微博、娱乐论坛关注度较高。10月《ELLE》官宣登上杂志11月下封面、《OK！精彩》官宣曝光最新封面大片，参加兰蔻菁纯柔润唇膏发布派对为其做推广活动，以及10月30日参加时装之夜获得2016时装之夜年度最受欢迎演员，都能看出杨幂在时尚圈越走越稳。</section><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;">3、季军杨洋</section><section style="box-sizing: border-box;">杨洋作为总榜第三、新生代榜第一， 肖奈余热未散，茅十八继续加热。杨洋作为主演之一的电影《从你的全世界路过》打破了国产爱情片的票房记录，肖奈余热助力路演人气，杨洋塑造的茅十八和肖奈的反差也使得杨洋的演技得到了一定的认可；主演的张黎导演的《武动乾坤》持续官宣张天爱、吴尊参演、和刘亦菲合作《三生三世十里桃花》不断放出物料……此外，亮相金鹰奖颁奖典礼以及在时装之夜获得最具人气演员奖所引发的关注和热度也可谓十分亮眼。</section><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;">TOP5艺人影响力分布</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style="   box-sizing: border-box; "><img data-ratio="0.7633136094674556" data-type="png" data-w="845" data-s="300,640" src="8.jpg"  /><br  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="   box-sizing: border-box; "><section style="text-align: justify; line-height: 1.75; letter-spacing: 2px; padding: 0px 2px; box-sizing: border-box;"><section style="box-sizing: border-box;"><p><br  /></p><p>4、5、6：王俊凯、王源、易烊千玺</p></section><section style="box-sizing: border-box;">TFBOYS三小只的网红度毋庸置疑，王俊凯、王源、易烊千玺分别获得了网络影响力总榜4、5、6名和新生代榜、3、4的好成绩。但显而易见，TFBOYS的热度主要集中在百科热度和微博讨论度上，媒体影响和微信热度较小，除了三人的定位，这似乎和公司也不无关系。三人主演的《我们的少年时代》正在热拍中，新歌《是你》伴随MV发布、为电影《勇士》献唱主题曲《不息之河》，均获得了较为热烈的反响。此外，王俊凯因参演张艺谋的《长城》而得以作为主创之一参加纽约国际漫展《长城》发布会，成为被BBC NEWS报道的为数不多的国产偶像之一，也成为正式走入国际舞台的95后第一人。发布的纽约街拍也让人感慨小小少年已经长大；在11月8日过了16岁生日的王源，参演的《爵迹》还在上映，粉丝们不仅在东京、首尔、伦敦等世界各地做起了应援，更响应他的号召，做起许多公益应援；此外，易烊千玺也即将在11月迎来16岁生日。</section><section style="box-sizing: border-box;"><p><img data-ratio="1" data-type="jpeg" data-w="690" data-s="300,640" src="9.jpg"  /><br  /></p><p><br  /></p></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style=" margin: 0.5em 0px;  box-sizing: border-box; "><section style="display: inline-block; vertical-align: top; box-sizing: border-box;"><section style="background-color: rgb(255, 163, 131); color: rgb(255, 255, 255); font-size: 19.2px; padding-left: 5px; padding-right: 5px; margin-bottom: 4px; box-sizing: border-box;"><section style="box-sizing: border-box;">新生代艺人网络人气榜</section></section><section style="height: 2px; width: 100%; background-color: rgb(0, 0, 0); box-sizing: border-box;"></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style="   box-sizing: border-box; "><p style="text-align: justify;"><br  /></p><p style="text-align: justify;">2016年10月新生代艺人网络影响力TOP10<br  />杨洋、王俊凯、王源、易烊千玺、郑爽、鹿晗、张艺兴、杨紫、吴亦凡、秦俊杰</p><p><img data-ratio="1.8459214501510574" data-type="png" data-w="993" data-s="300,640" src="10.jpg"  /><br  /></p></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style="   box-sizing: border-box; "><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><p><br  /></p><p><strong>结语</strong></p><p><br style="box-sizing: border-box;"  /></p></section><section style="box-sizing: border-box;">总体而言，十月最具商业价值的艺人，我们认为是张涵予和赵丽颖。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">张涵予更代表着当前市场的传统演员，他们精心磨砺演技、有着良好的大众形象，为人低调、以作品说话，他们虽然网络热度不能和新一代艺人相比，但依然凭借着广泛的群众基础，是当前电影市场的定海神针。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">赵丽颖则代表了目前作品与人气两手抓的新一代艺人。赵丽颖本人演技在线，网络人气近期也很高，大众层面她的认知度逐步提升，也充满网感和话题度，只是在个人层面她还需要进一步拓宽戏路，以免被局限于IP剧和小荧屏。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">下月谁会登顶呢？欢迎订阅我们的公众平台<strong>德塔文影视观察</strong>持续关注。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style=" margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><section style="padding-left: 1em; padding-right: 1em; display: inline-block; text-align: center; box-sizing: border-box;"><span style="display: inline-block; padding: 0.3em 0.5em; border-radius: 0.5em; background-color: rgb(160, 160, 160); font-size: 16px; color: rgb(255, 255, 255); box-sizing: border-box;"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">附：十月具体网络分项数据</strong></section></span> </section><section style="padding: 20px 10px 10px; border: 1px solid rgb(192, 200, 209); text-align: center; margin-top: -1em; box-sizing: border-box; background-color: rgb(239, 239, 239);"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="   box-sizing: border-box; "><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style=" margin: 0.5em 0px;  box-sizing: border-box; "><section style='background-position: 50% 50%; width: 20em; height: 3em; background-image: url(&quot;http://mmbiz.qpic.cn/mmbiz_png/LSxOecqPPiaQmmjEusLN21bPzPiaqoBnCNLr0ErPr9wEDEVpYRHboVy7ib9F4wfgDZMqoD1epW1qkqPAOqEGribr2A/0?wx_fmt=png&quot;); line-height: 3.2em; background-repeat: no-repeat; display: inline-block; box-sizing: border-box; background-size: cover;'><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="   box-sizing: border-box; "><section style="font-size: 18px; box-sizing: border-box;"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">网络分项数据</strong></section></section></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="   box-sizing: border-box; "><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style="   box-sizing: border-box; "><img data-ratio="1.9617021276595745" data-type="png" data-w="940" data-s="300,640" src="11.jpg"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="   box-sizing: border-box; "><section style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style="   box-sizing: border-box; "><img data-ratio="1.9555555555555555" data-type="png" data-w="945" data-s="300,640" src="12.jpg"  /><br  /><br style="box-sizing: border-box;"  /></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style="   box-sizing: border-box; "><p><img data-ratio="1.9680851063829787" data-type="png" data-w="940" data-s="300,640" src="13.jpg"  /></p><p><br  /></p></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style="   box-sizing: border-box; "><p><img data-ratio="1.9606382978723404" data-type="png" data-w="940" data-s="300,640" src="14.jpg"  /><br  /></p><p><br  /></p><p><img data-ratio="1.9585106382978723" data-type="png" data-w="940" data-s="300,640" src="15.jpg"  /></p><p><br  /><img data-ratio="1.9447983014861995" data-type="png" data-w="942" data-s="300,640" src="16.jpg"  /></p><p><br  /></p><p><img data-ratio="1.951167728237792" data-type="png" data-w="942" data-s="300,640" src="17.jpg"  /><br  /></p></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style=" margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><section style="padding: 10px; border: 1px solid rgb(226, 226, 226); width: 100%; display: inline-block; box-sizing: border-box; box-shadow: 0px 16px 1px rgb(226,226,226);"><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style=" margin: 0.5em 0px;  box-sizing: border-box; "><section style="display: inline-block; width: 50%; vertical-align: top; text-align: right; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="   box-sizing: border-box; "><img style="max-width: 100%; vertical-align: middle; box-sizing: border-box;" data-ratio="1" data-type="jpeg" data-w="258" src="18.jpg"  /></section></section></section><section style="display: inline-block; width: 50%; vertical-align: top; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style=" margin: 0.5em 0px;  box-sizing: border-box; "><section style="border-width: 0px 0px 1px; border-style: solid; border-bottom-color: rgb(72, 198, 94); font-size: 18px; box-sizing: border-box;"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></strong></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">德塔文影视观察</strong><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="   box-sizing: border-box; "><section style="color: rgb(102, 102, 102); box-sizing: border-box;"><section style="box-sizing: border-box;">行业数据与深度分析<br style="box-sizing: border-box;"  /></section></section></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style=" margin: 0.5em 0px;  box-sizing: border-box; "><section style="display: inline-block; width: 50%; vertical-align: top; text-align: right; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="   box-sizing: border-box; "><img style="max-width: 100%; vertical-align: middle; box-shadow: rgb(0, 0, 0) 0px 0px 0px; box-sizing: border-box;" data-ratio="1" data-type="jpeg" data-w="640" src="19.jpg"  /></section></section></section><section style="display: inline-block; width: 50%; vertical-align: top; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style=" margin: 0.5em 0px;  box-sizing: border-box; "><section style="border-width: 0px 0px 1px; border-style: solid; border-bottom-color: rgb(72, 198, 94); font-size: 18px; box-sizing: border-box;"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></strong></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">影视大数据</strong></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;" powered-by="xiumi.us"><section style="   box-sizing: border-box; "><section style="color: rgb(102, 102, 102); box-sizing: border-box;"><section style="box-sizing: border-box;">行业资讯收集<br style="box-sizing: border-box;"  /></section></section></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; " powered-by="xiumi.us"><section style=" padding: 0.2em 0px;  box-sizing: border-box; "><section style="font-size: 16px; color: rgb(0, 0, 0); text-align: center; line-height: 1.75; letter-spacing: 2px; padding: 0px 2px; box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="color: rgb(95, 156, 239); font-size: 18px; box-sizing: border-box;"><strong style="box-sizing: border-box;"><span style="color: rgb(95, 156, 239); box-sizing: border-box;"><br style="box-sizing: border-box;"  /></span></strong></span></section><section style="box-sizing: border-box;"><span style="color: rgb(95, 156, 239); font-size: 18px; box-sizing: border-box;"><strong style="box-sizing: border-box;"><span style="color: rgb(95, 156, 239); box-sizing: border-box;">来自 德塔文科技</span></strong></span></section><section style="box-sizing: border-box;"><span style="color: rgb(95, 156, 239); box-sizing: border-box;"><strong style="box-sizing: border-box;"><span style="font-size: 22px; box-sizing: border-box;"></span></strong></span></section><section style="box-sizing: border-box;">影视数据分析|艺人趋势分析<br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">舆情动态研判|影视项目分析</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">QQ 149817396</strong><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">微博@德塔文影视观察</strong></section></section></section></section></section></section></section></section><p><br  /></p>
+                    </div>
+                    <script nonce="1313709675" type="text/javascript">
+                        var first_sceen__time = (+new Date());
+
+                        if ("" == 1 && document.getElementById('js_content'))
+                            document.getElementById('js_content').addEventListener("selectstart",function(e){ e.preventDefault(); });
+
+                                        (function(){
+                            if (navigator.userAgent.indexOf("WindowsWechat") != -1){
+                                var link = document.createElement('link');
+                                var head = document.getElementsByTagName('head')[0];
+                                link.rel = 'stylesheet';
+                                link.type = 'text/css';
+                                link.href = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx31619e.css";
+                                head.appendChild(link);
+                            }
+                        })();
+                    </script>
+                    
+                    
+                                        
+                    <div class="ct_mpda_wrp" id="js_sponsor_ad_area" style="display:none;">
+
+                    </div>
+
+                    
+                                        
+                                        <div class="rich_media_tool" id="js_toobar3">
+                                                                    <div id="js_read_area3" class="media_tool_meta tips_global meta_primary" style="display:none;">阅读 <span id="readNum3"></span></div>
+
+                        <span style="display:none;" class="media_tool_meta meta_primary tips_global meta_praise" id="like3">
+                            <i class="icon_praise_gray"></i><span class="praise_num" id="likeNum3"></span>
+                        </span>
+
+                        <a id="js_report_article3" style="display:none;" class="media_tool_meta tips_global meta_extra" href="javascript:void(0);">投诉</a>
+
+                    </div>
+
+
+
+                                    </div>
+
+                <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none">
+
+                </div>
+
+                <div class="rich_media_area_extra">
+
+                    
+                                        <div class="mpda_bottom_container" id="js_bottom_ad_area">
+                        
+                    </div>
+                                        
+                    <div id="js_iframetest" style="display:none;"></div>
+                                        
+                                    </div>
+               
+            </div>
+            <div id="js_pc_qr_code" class="qr_code_pc_outer" style="display:none;">
+                <div class="qr_code_pc_inner">
+                    <div class="qr_code_pc">
+                        <img id="js_pc_qr_code_img" class="qr_code_pc_img">
+                        <p>微信扫一扫<br>关注该公众号</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+        
+        <script nonce="1313709675">
+    var __DEBUGINFO = {
+        debug_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/debug/console2ca724.js",
+        safe_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/moonsafe2f3e84.js",
+        res_list: []
+    };
+</script>
+
+<script nonce="1313709675">
+(function() {
+	function _addVConsole(uri) {
+		var url = '//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/vconsole/' + uri;
+		document.write('<script nonce="1313709675" type="text/javascript" src="' + url + '"><\/script>');
+	}
+	if (
+		(document.cookie && document.cookie.indexOf('vconsole_open=1') > -1)
+		|| location.href.indexOf('vconsole=1') > -1
+	) {
+		_addVConsole('2.5.1/vconsole.min.js');
+		_addVConsole('plugin/vconsole-elements/1.0.2/vconsole-elements.min.js');
+		_addVConsole('plugin/vconsole-sources/1.0.1/vconsole-sources.min.js');
+		_addVConsole('plugin/vconsole-resources/1.0.0/vconsole-resources.min.js');
+		_addVConsole('plugin/vconsole-mpopt/1.0.0/vconsole-mpopt.js');
+	}
+})();
+</script>
+        
+<script nonce="1313709675" type="text/javascript">
+    var not_in_mm_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm2c9cd6.css";
+    var windowwx_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx31619e.css";
+    var article_improve_combo_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_combo31623d.css";
+    var tid = "";
+    var aid = "";
+    var clientversion = "";
+    var appuin = "MzI2NTM0NzE2NQ=="||"";
+
+    var source = "";
+    var abtest_cookie = "";
+
+    var scene = 75;
+
+    var itemidx = "";
+
+    var _copyright_stat = "0";
+    var _ori_article_type = "";
+
+    var nickname = "德塔文影视观察";
+    var appmsg_type = "6";
+    var ct = "1478121154";
+    var publish_time = "2016-11-03" || "";
+    var user_name = "gh_1555a58ded12";
+    var user_name_new = "";
+    var fakeid   = "";
+    var version   = "";
+    var is_limit_user   = "0";
+    var round_head_img = "http://mmbiz.qpic.cn/mmbiz/LSxOecqPPiaTTibE3AOKUDHYwdoS7mxxSKfy7YlvuTGQSZUibiaaEiaDaAoyOPkibxG1icHukN3p7uNnDUharXfQg4KGg/0?wx_fmt=png";
+    var msg_title = "月报|十月艺人电视剧、电影商业价值及网络影响力：张涵予赵丽颖各自登顶";
+    var msg_desc = "我们通过对艺人电视剧、电影成绩的方方面面的测评，研发了能体现艺人现阶段商业价值转化的【艺人电视剧商业价值榜】、【艺人电影商业价值榜】，评论并解析艺人当前商业价值所在。并一贯发布艺人当前的网络影响力、和蒸蒸日上的新生代艺人网络影响力。";
+    var msg_cdn_url = "http://mmbiz.qpic.cn/mmbiz_png/LSxOecqPPiaQmmjEusLN21bPzPiaqoBnCNgCghRAhoQJZnApbVnzr0Un3elnTo3VOzwH7IcNkDJxKjVSicgs0DeCg/0?wx_fmt=png";
+    var msg_link = "http://mp.weixin.qq.com/s?__biz=MzI2NTM0NzE2NQ==&amp;tempkey=3oj55i2aRkgiRzkns2SgRHyLyfKToqQMt1wSRJeIId5DO7Cr%2FHv4AQVF3wjaxyw%2B%2F7X0wkNxtPabMccZxBOx3xvxwbyemCeubXaSPTrggqnYC0Go4AeMNgnccCi2resM9AJFDBbEqcGXF5LXs1XcMA%3D%3D&amp;chksm=6a9f8c625de805741c88eab8114d95123c5b2ff4d7d21f6e56e6f64f8c18877bf9c3d2c99c80#rd";
+    var user_uin = "0"*1;
+    var msg_source_url = '';
+    var img_format = 'png';
+    var srcid = '';
+    var req_id = '031154CfnZJDh8KcdJygDlFB';
+    var networkType;
+    var appmsgid = '' || '100001104'|| "100001104";
+    var comment_id = "0" * 1;
+    var comment_enabled = "" * 1;
+    var is_need_reward = "0" * 1;
+    var is_https_res = ("" * 1) && (location.protocol == "https:");
+    var msg_daily_idx = "0" || "";
+
+    var devicetype = "";
+    var source_encode_biz = "";
+    
+    
+    var reprint_ticket = "";
+    var source_mid = "";
+    var source_idx = "";
+
+    var show_comment = "";
+    var __appmsgCgiData = {
+        can_use_page : "0"*1,
+        is_wxg_stuff_uin : "0"*1,
+        card_pos : "",
+        copyright_stat : "0",
+        source_biz : "",
+        hd_head_img : "http://wx.qlogo.cn/mmhead/Q3auHgzwzM7vC69ROWiahuXUMiahnllfXlZdvBMgdbG07sF82IZtmjGg/0"||(window.location.protocol+"//"+window.location.host + "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_rumor_link.2x264e76.jpg")
+    };
+    var _empty_v = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/pages/voice/empty26f1f1.mp3";
+
+    var copyright_stat = "0" * 1;
+
+    var pay_fee = "" * 1;
+    var pay_timestamp = "";
+    var need_pay = "" * 1;
+
+    var need_report_cost = "0" * 1;
+    var use_tx_video_player = "0" * 1;
+
+    var friend_read_source = "" || "";
+    var friend_read_version = "" || "";
+    var friend_read_class_id = "" || "";
+
+    var is_only_read = "1" * 1;
+    var read_num = "2" * 1;
+    var like_num = "0" * 1;
+    var liked = "false" == 'true' ? true : false;
+    var is_temp_url = "3oj55i2aRkgiRzkns2SgRHyLyfKToqQMt1wSRJeIId5DO7Cr/Hv4AQVF3wjaxyw&amp;nbsp;/7X0wkNxtPabMccZxBOx3xvxwbyemCeubXaSPTrggqnYC0Go4AeMNgnccCi2resMsIrFAaKRQL10zABMVzfH3Q==" ? 1 : 0;
+    var send_time = "1478142624";
+      var icon_emotion_switch = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch.2x2f1273.png";
+      var icon_emotion_switch_active = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch_active.2x2f1273.png";
+      var icon_loading_white = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif";
+      var icon_audio_unread = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_unread26f1f1.png";
+      var icon_qqmusic_default = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_default.2x26f1f1.png";
+      var icon_qqmusic_source = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_source263724.png";
+
+    var topic_default_img = 'http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/topic/pic_book_thumb.2x2e4987.png';
+
+    
+    
+    
+    
+    
+    
+    var ban_scene = "0" * 1;
+
+    var svr_time = "1478142805" * 1;
+
+        window.wxtoken = "";
+        window.__moon_initcallback = function(){
+        if(!!window.__initCatch){
+            window.__initCatch({
+                idkey : 27613,
+                startKey : 0,
+                limit : 128,
+                badjsId: 43,
+                reportOpt : {
+                    uin : uin,
+                    biz : biz,
+                    mid : mid,
+                    idx : idx,
+                    sn  : sn
+                },
+                extInfo : {
+                    network_rate : 0.01,    
+                    badjs_rate: 0.1 
+                }
+            });
+        }
+    }
+        
+
+</script>
+
+        <script nonce="1313709675">window.__moon_host = 'res.wx.qq.com';window.__moon_mainjs = 'appmsg/index.js';window.moon_map = {"appmsg/emotion/caret.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/caret278965.js","biz_wap/jsapi/cardticket.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/cardticket275627.js","appmsg/emotion/map.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/map278965.js","appmsg/emotion/textarea.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/textarea27cdc5.js","appmsg/emotion/nav.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/nav278965.js","appmsg/emotion/common.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/common278965.js","appmsg/emotion/slide.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/slide2a9cd9.js","pages/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/report3181da.js","pages/music_player.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_player310e30.js","pages/loadscript.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/loadscript30203e.js","appmsg/emotion/dom.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/dom2f3ac3.js","biz_wap/utils/hashrouter.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/hashrouter2805ea.js","biz_common/utils/wxgspeedsdk.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/wxgspeedsdk30bcdd.js","a/sponsor.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/sponsor3189b5.js","a/app_card.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/app_card313f11.js","a/ios.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/ios275627.js","a/android.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/android2c5484.js","a/profile.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/profile311179.js","a/sponsor_a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/sponsor_a_tpl.html31623d.js","a/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/a_tpl.html3162a6.js","a/mpshop.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/mpshop311179.js","a/card.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/card311179.js","biz_wap/utils/position.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/position2f1750.js","a/a_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/a_report31623d.js","biz_common/utils/respTypes.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/respTypes2c57d0.js","appmsg/my_comment_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/my_comment_tpl.html2f3f48.js","appmsg/cmt_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cmt_tpl.html3140a6.js","sougou/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/a_tpl.html2c6e7c.js","appmsg/emotion/emotion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/emotion2f3ac3.js","biz_wap/utils/wapsdk.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/wapsdk315b3f.js","biz_common/utils/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/report275627.js","appmsg/open_url_with_webview.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/open_url_with_webview3145f0.js","biz_common/utils/http.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/http30b871.js","biz_common/utils/cookie.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/cookie275627.js","appmsg/topic_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/topic_tpl.html2f2e72.js","pages/voice_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_tpl.html2f2e72.js","pages/voice_component.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_component310e30.js","pages/qqmusic_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/qqmusic_tpl.html2f2e72.js","new_video/ctl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/ctl2d441f.js","biz_common/utils/monitor.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/monitor304edd.js","a/testdata.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/testdata31623d.js","appmsg/reward_entry.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/reward_entry3004a4.js","appmsg/comment.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment314108.js","appmsg/like.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/like2eb52b.js","pages/version4video.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/version4video3106ea.js","a/a.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/a31623d.js","rt/appmsg/getappmsgext.rt.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/rt/appmsg/getappmsgext.rt2c21f6.js","biz_wap/utils/storage.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage2a74ac.js","biz_common/tmpl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl2b3578.js","appmsg/img_copyright_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/img_copyright_tpl.html2a2c13.js","biz_common/ui/imgonepx.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/ui/imgonepx275627.js","biz_common/utils/string/html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html29f4e9.js","biz_wap/utils/ajax.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax2f1747.js","biz_wap/utils/log.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/log2fcb7c.js","sougou/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/index2fd671.js","biz_wap/safe/mutation_observer_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/mutation_observer_report2fafd1.js","appmsg/fereport.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/fereport315b3f.js","appmsg/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report304cae.js","appmsg/report_and_source.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report_and_source3188a6.js","appmsg/page_pos.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/page_pos30c907.js","appmsg/cdn_speed_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_speed_report3097b2.js","appmsg/wxtopic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/wxtopic31623d.js","appmsg/voice.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voice310e30.js","appmsg/qqmusic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/qqmusic31623d.js","appmsg/iframe.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/iframe2ff82f.js","appmsg/review_image.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/review_image309c11.js","appmsg/outer_link.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/outer_link275627.js","biz_wap/jsapi/core.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core2ffa93.js","biz_common/dom/event.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event275627.js","appmsg/copyright_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/copyright_report2ec4b2.js","appmsg/cache.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cache2a74ac.js","appmsg/async.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/async31623d.js","biz_wap/ui/lazyload_img.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/ui/lazyload_img309c11.js","biz_common/log/jserr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/log/jserr2805ea.js","appmsg/share.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share30b871.js","appmsg/cdn_img_lib.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_img_lib30b785.js","biz_common/utils/url/parse.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/url/parse2fb01a.js","appmsg/test.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/test314065.js","biz_wap/utils/mmversion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion2f1d97.js","appmsg/max_age.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/max_age2fdd28.js","biz_common/dom/attr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr275627.js","appmsg/log.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/log300330.js","biz_common/dom/class.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/class275627.js","biz_wap/utils/device.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/device2b3aae.js","biz_wap/jsapi/a8key.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/a8key2a30ee.js","appmsg/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/index3188a6.js"};</script><script nonce="1313709675" type="text/javascript">(function(){function c(a){var b=document.createElement("script");document.getElementsByTagName("body")[0].appendChild(b);b.type="text/javascript";b.async="async";b.onload=function(){a&&(localStorage.setItem("__WXLS__moon",String(__moonf__)),localStorage.setItem("__WXLS__moonarg",JSON.stringify({version:"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/moon3165f7.js",method:""})))};b.src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/moon3165f7.js"}var a=!!top&&!!top.window&&top.window.user_uin||0,d=0!==a&&1>Math.floor(a/100)%100;if(2876363900==a||1506075==a||942807682==a)d=!0;window.__wxgspeeds={};window.__wxgspeeds.moonloadtime=+new Date;if(d&&localStorage)try{var e=JSON.parse(localStorage.getItem("__WXLS__moonarg"))||{};if(e&&"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/moon3165f7.js"==e.version){var f=localStorage.getItem("__WXLS__moon");localStorage.setItem("__WXLS__moonarg",JSON.stringify({version:"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/moon3165f7.js",method:"fromls"}));eval(f);__moonf__()}else c(!0)}catch(g){c(!0)}else c(!1)})();</script>
+
+  <script nonce="1313709675" type="text/javascript">
+    
+    if (typeof getComputedStyle == 'undefined') {
+        if (document.body.currentStyle) {
+            window.getComputedStyle = function(el) {
+                return el.currentStyle;
+            }
+        } else {
+            window.getComputedStyle = {};
+        }
+    }
+    var occupyImg = function() {
+        var images = document.getElementsByTagName('img');
+        var length = images.length;
+        var container = document.getElementById('img-content');
+        var max_width = container.offsetWidth;
+        var container_padding = 0;
+        var container_style = getComputedStyle(container);
+        container_padding = parseFloat(container_style.paddingLeft) + parseFloat(container_style.paddingRight);
+        max_width -= container_padding;
+        if (!max_width) {
+            max_width = window.innerWidth - 30;      
+        }
+        for (var i = 0; i < length; ++i) {
+            var src_ = images[i].getAttribute('src');
+            if (!src_) continue;
+            var width_ = 1 * images[i].getAttribute('data-w') || max_width;
+            var ratio_ = 1 * images[i].getAttribute('data-ratio');
+            var height = 100;
+            if (ratio_ && ratio_ > 0) {
+                var img_style = getComputedStyle(images[i]);
+                var init_width = images[i].style.width;
+                if (init_width) {
+                    images[i].setAttribute('_width', init_width);
+                    if (init_width != 'auto') width_ = parseFloat(img_style.width);
+                }
+                var parent_width = 0;
+                var parent = images[i].parentNode;
+                var outerWidth = 0;
+                while (true) {
+                    var parent_style = getComputedStyle(parent);
+                    if (!parent || !parent_style) break;
+                    parent_width = parent.clientWidth - parseFloat(parent_style.paddingLeft) - parseFloat(parent_style.paddingRight) - outerWidth;
+                    if (parent_width > 0) break;
+                    outerWidth += parseFloat(parent_style.paddingLeft) + parseFloat(parent_style.paddingRight) + parseFloat(parent_style.marginLeft) + parseFloat(parent_style.marginRight) + parseFloat(parent_style.borderLeftWidth) + parseFloat(parent_style.borderRightWidth);
+                    parent = parent.parentNode;
+                }
+                parent_width = parent_width || max_width;
+                var width = width_ > parent_width ? parent_width : width_; 
+                var img_padding_border = parseFloat(img_style.paddingLeft) + parseFloat(img_style.paddingRight) + parseFloat(img_style.borderLeftWidth) + parseFloat(img_style.borderRightWidth);
+                var img_padding_border_top_bottom = parseFloat(img_style.paddingTop) + parseFloat(img_style.paddingBottom) + parseFloat(img_style.borderTopWidth) + parseFloat(img_style.borderBottomWidth);
+                height = (width - img_padding_border) * ratio_ + img_padding_border_top_bottom;
+                images[i].style.cssText += "width: " + width + "px !important;";
+                images[i].src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJDQzA1MTVGNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJDQzA1MTYwNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkNDMDUxNUQ2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkNDMDUxNUU2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6p+a6fAAAAD0lEQVR42mJ89/Y1QIABAAWXAsgVS/hWAAAAAElFTkSuQmCC";
+            } else {
+                images[i].style.cssText += "visibility: hidden !important;";
+            }
+            images[i].style.cssText += "height: " + height + "px !important;";
+        }       
+    }
+    if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', function()  {
+            occupyImg();                                                   
+        });
+    } else {
+        
+        document.onreadystatechange = function() {
+            if (document.readyState === 'complete') {
+                occupyImg();
+            }
+        }
+    }
+  </script>
+  <script nonce="1313709675" type="text/javascript">
+    var real_show_page_time = +new Date();
+    if (!!window.addEventListener){
+        window.addEventListener("load", function(){
+            window.onload_endtime = +new Date();
+        });
+    }
+    
+  </script>
+
+    </body>
+</html>
+<!--tailTrap<body></body><head></head><html></html>-->
+ 

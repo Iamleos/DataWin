@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<!--headTrap<body></body><head></head><html></html>--><html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+window.__nonce_str = "MOONSAFE_NONCE_1469070959"
+if (location.href.indexOf("safe=0") == -1 && window.__nonce_str) {
+	window.__moonsafe_csp_offset || (window.__moonsafe_csp_offset = 18);
+	document.write('<meta http-equiv="Content-Security-Policy" content="script-src https: \'unsafe-inline\' \'unsafe-eval\' *.qq.com *.weishi.com'+(window.__nonce_str ? ' \'nonce-' + window.__nonce_str + "\'":"")+ '">');
+        
+}
+</script>
+
+        <script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+            window.logs = {
+                pagetime: {}
+            };
+            window.logs.pagetime['html_begin'] = (+new Date());
+        </script>
+        
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+var page_begintime=+new Date,biz="MzIwMDMzNzcyNQ==",sn="",mid="401492636",idx="1",is_rumor="",norumor="";
+1*is_rumor&&!(1*norumor)&&(document.referrer&&-1!=document.referrer.indexOf("mp.weixin.qq.com/mp/rumor")||(location.href="http://mp.weixin.qq.com/mp/rumor?action=info&__biz="+biz+"&mid="+mid+"&idx="+idx+"&sn="+sn+"#wechat_redirect")),
+document.domain="qq.com";
+</script> 
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+var MutationObserver=window.WebKitMutationObserver||window.MutationObserver||window.MozMutationObserver,isDangerSrc=function(t){
+if(t){
+var e=t.match(/http(?:s)?:\/\/([^\/]+?)(\/|$)/);
+if(e&&!/qq\.com(\:8080)?$/.test(e[1])&&!/weishi\.com$/.test(e[1]))return!0;
+}
+return!1;
+},ishttp=0==location.href.indexOf("http://");
+-1==location.href.indexOf("safe=0")&&ishttp&&"function"==typeof MutationObserver&&"mp.weixin.qq.com"==location.host&&(window.__observer_data={
+count:0,
+exec_time:0,
+list:[]
+},window.__observer=new MutationObserver(function(t){
+window.__observer_data.count++;
+var e=new Date,r=[];
+t.forEach(function(t){
+for(var e=t.addedNodes,o=0;o<e.length;o++){
+var n=e[o];
+if("SCRIPT"===n.tagName){
+var i=n.src;
+isDangerSrc(i)&&(window.__observer_data.list.push(i),r.push(n)),!i&&window.__nonce_str&&n.getAttribute("nonce")!=window.__nonce_str&&(window.__observer_data.list.push("inlinescript_without_nonce"),
+r.push(n));
+}
+}
+});
+for(var o=0;o<r.length;o++){
+var n=r[o];
+n.parentNode&&n.parentNode.removeChild(n);
+}
+window.__observer_data.exec_time+=new Date-e;
+}),window.__observer.observe(document,{
+subtree:!0,
+childList:!0
+})),function(){
+if(-1==location.href.indexOf("safe=0")&&Math.random()<.01&&ishttp&&HTMLScriptElement.prototype.__lookupSetter__&&"undefined"!=typeof Object.defineProperty){
+window.__danger_src={
+xmlhttprequest:[],
+script_src:[],
+script_setAttribute:[]
+};
+var t="$"+Math.random();
+HTMLScriptElement.prototype.__old_method_script_src=HTMLScriptElement.prototype.__lookupSetter__("src"),
+HTMLScriptElement.prototype.__defineSetter__("src",function(t){
+t&&isDangerSrc(t)&&window.__danger_src.script_src.push(t),this.__old_method_script_src(t);
+});
+var e="element_setAttribute"+t;
+Object.defineProperty(Element.prototype,e,{
+value:Element.prototype.setAttribute,
+enumerable:!1
+}),Element.prototype.setAttribute=function(t,r){
+"SCRIPT"==this.tagName&&"src"==t&&isDangerSrc(r)&&window.__danger_src.script_setAttribute.push(r),
+this[e](t,r);
+};
+}
+}();
+</script> 
+
+        <link rel="dns-prefetch" href="//res.wx.qq.com">
+<link rel="dns-prefetch" href="//mmbiz.qpic.cn">
+<link rel="shortcut icon" type="image/x-icon" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+    String.prototype.html = function(encode) {
+        var replace =["&#39;", "'", "&quot;", '"', "&nbsp;", " ", "&gt;", ">", "&lt;", "<", "&amp;", "&", "&yen;", "¥"];
+        if (encode) {
+            replace.reverse();
+        }
+        for (var i=0,str=this;i< replace.length;i+= 2) {
+             str=str.replace(new RegExp(replace[i],'g'),replace[i+1]);
+        }
+        return str;
+    };
+
+    window.isInWeixinApp = function() {
+        return /MicroMessenger/.test(navigator.userAgent);
+    };
+
+    window.getQueryFromURL = function(url) {
+        url = url || 'http://qq.com/s?a=b#rd'; 
+        var query = url.split('?')[1].split('#')[0].split('&'),
+            params = {};
+        for (var i=0; i<query.length; i++) {
+            var arg = query[i].split('=');
+            params[arg[0]] = arg[1];
+        }
+        if (params['pass_ticket']) {
+        	params['pass_ticket'] = encodeURIComponent(params['pass_ticket'].html(false).html(false).replace(/\s/g,"+"));
+        }
+        return params;
+    };
+
+    (function() {
+	    var params = getQueryFromURL(location.href);
+        window.uin = params['uin'] || '';
+        window.key = params['key'] || '';
+        window.wxtoken = params['wxtoken'] || '';
+        window.pass_ticket = params['pass_ticket'] || '';
+    })();
+
+</script>
+
+        <title>热点 | 鹿晗井柏然盗墓番位大PK，小鲜肉咖位战加剧？</title>
+        
+<style>html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;line-height:1.6}body{-webkit-touch-callout:none;font-family:-apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background-color:#f3f3f3;line-height:inherit}body.rich_media_empty_extra{background-color:#fff}body.rich_media_empty_extra .rich_media_area_primary:before{display:none}h1,h2,h3,h4,h5,h6{font-weight:400;font-size:16px}*{margin:0;padding:0}a{color:#607fa6;text-decoration:none}.rich_media_inner{font-size:16px;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.rich_media_area_primary{position:relative;padding:20px 15px 15px;background-color:#fff}.rich_media_area_primary:before{content:" ";position:absolute;left:0;top:0;width:100%;height:1px;border-top:1px solid #e5e5e5;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(0.5);transform:scaleY(0.5);top:auto;bottom:-2px}.rich_media_area_primary .original_img_wrp{display:inline-block;font-size:0}.rich_media_area_primary .original_img_wrp .tips_global{display:block;margin-top:.5em;font-size:14px;text-align:right;width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.rich_media_area_extra{padding:0 15px 0}.rich_media_title{margin-bottom:10px;line-height:1.4;font-weight:400;font-size:24px}.rich_media_meta_list{margin-bottom:18px;line-height:20px;font-size:0}.rich_media_meta_list em{font-style:normal}.rich_media_meta{display:inline-block;vertical-align:middle;margin-right:8px;margin-bottom:10px;font-size:16px}.meta_original_tag{display:inline-block;vertical-align:middle;padding:1px .5em;border:1px solid #9e9e9e;color:#8c8c8c;border-top-left-radius:20% 50%;-moz-border-radius-topleft:20% 50%;-webkit-border-top-left-radius:20% 50%;border-top-right-radius:20% 50%;-moz-border-radius-topright:20% 50%;-webkit-border-top-right-radius:20% 50%;border-bottom-left-radius:20% 50%;-moz-border-radius-bottomleft:20% 50%;-webkit-border-bottom-left-radius:20% 50%;border-bottom-right-radius:20% 50%;-moz-border-radius-bottomright:20% 50%;-webkit-border-bottom-right-radius:20% 50%;font-size:15px;line-height:1.1}.meta_enterprise_tag img{width:30px;height:30px!important;display:block;position:relative;margin-top:-3px;border:0}.rich_media_meta_text{color:#8c8c8c}span.rich_media_meta_nickname{display:none}.rich_media_thumb_wrp{margin-bottom:6px}.rich_media_thumb_wrp .original_img_wrp{display:block}.rich_media_thumb{display:block;width:100%}.rich_media_content{overflow:hidden;color:#3e3e3e}.rich_media_content *{max-width:100%!important;box-sizing:border-box!important;-webkit-box-sizing:border-box!important;word-wrap:break-word!important}.rich_media_content p{clear:both;min-height:1em;white-space:pre-wrap}.rich_media_content em{font-style:italic}.rich_media_content fieldset{min-width:0}.rich_media_content .list-paddingleft-2{padding-left:30px}.rich_media_content blockquote{margin:0;padding-left:10px;border-left:3px solid #dbdbdb}img{height:auto!important}@media(min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2){.mm_appmsg .rich_media_inner,.mm_appmsg .rich_media_meta,.mm_appmsg .discuss_list,.mm_appmsg .rich_media_extra,.mm_appmsg .title_tips .tips{font-size:17px}.mm_appmsg .meta_original_tag{font-size:15px}}@media(min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3){.mm_appmsg .rich_media_title{font-size:25px}}@media screen and (min-width:1024px){.rich_media{width:740px;margin-left:auto;margin-right:auto}.rich_media_inner{padding:20px}body{background-color:#fff}}@media screen and (min-width:1025px){body{font-family:"Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif}.rich_media{position:relative}.rich_media_inner{background-color:#fff;padding-bottom:100px}}.radius_avatar{display:inline-block;background-color:#fff;padding:3px;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;overflow:hidden;vertical-align:middle}.radius_avatar img{display:block;width:100%;height:100%;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;background-color:#eee}.cell{padding:.8em 0;display:block;position:relative}.cell_hd,.cell_bd,.cell_ft{display:table-cell;vertical-align:middle;word-wrap:break-word;word-break:break-all;white-space:nowrap}.cell_primary{width:2000px;white-space:normal}.flex_cell{padding:10px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.flex_cell_primary{width:100%;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;box-flex:1;flex:1}.original_tool_area{display:block;padding:.75em 1em 0;-webkit-tap-highlight-color:rgba(0,0,0,0);color:#3e3e3e;border:1px solid #eaeaea;margin:20px 0}.original_tool_area .tips_global{position:relative;padding-bottom:.5em;font-size:15px}.original_tool_area .tips_global:after{content:" ";position:absolute;left:0;bottom:0;right:0;height:1px;border-bottom:1px solid #dbdbdb;-webkit-transform-origin:0 100%;transform-origin:0 100%;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.original_tool_area .radius_avatar{width:27px;height:27px;padding:0;margin-right:.5em}.original_tool_area .radius_avatar img{height:100%!important}.original_tool_area .flex_cell_bd{width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.original_tool_area .flex_cell_ft{font-size:14px;color:#8c8c8c;padding-left:1em;white-space:nowrap}.original_tool_area .icon_access:after{content:" ";display:inline-block;height:8px;width:8px;border-width:1px 1px 0 0;border-color:#cbcad0;border-style:solid;transform:matrix(0.71,0.71,-0.71,0.71,0,0);-ms-transform:matrix(0.71,0.71,-0.71,0.71,0,0);-webkit-transform:matrix(0.71,0.71,-0.71,0.71,0,0);position:relative;top:-2px;top:-1px}.weui_loading{width:20px;height:20px;display:inline-block;vertical-align:middle;-webkit-animation:weuiLoading 1s steps(12,end) infinite;animation:weuiLoading 1s steps(12,end) infinite;background:transparent url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iciIgd2lkdGg9JzEyMHB4JyBoZWlnaHQ9JzEyMHB4JyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJub25lIiBjbGFzcz0iYmsiPjwvcmVjdD4KICAgIDxyZWN0IHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjRTlFOUU5JwogICAgICAgICAgdHJhbnNmb3JtPSdyb3RhdGUoMCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+CiAgICA8L3JlY3Q+CiAgICA8cmVjdCB4PSc0Ni41JyB5PSc0MCcgd2lkdGg9JzcnIGhlaWdodD0nMjAnIHJ4PSc1JyByeT0nNScgZmlsbD0nIzk4OTY5NycKICAgICAgICAgIHRyYW5zZm9ybT0ncm90YXRlKDMwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4KICAgICAgICAgICAgICAgICByZXBlYXRDb3VudD0naW5kZWZpbml0ZScvPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyM5Qjk5OUEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSg2MCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+CiAgICAgICAgICAgICAgICAgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnLz4KICAgIDwvcmVjdD4KICAgIDxyZWN0IHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjQTNBMUEyJwogICAgICAgICAgdHJhbnNmb3JtPSdyb3RhdGUoOTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNBQkE5QUEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxMjAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNCMkIyQjInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxNTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNCQUI4QjknCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxODAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNDMkMwQzEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyMTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNDQkNCQ0InCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyNDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNEMkQyRDInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyNzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNEQURBREEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgzMDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNFMkUyRTInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgzMzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0Pgo8L3N2Zz4=) no-repeat;-webkit-background-size:100%;background-size:100%}@-webkit-keyframes weuiLoading{0%{-webkit-transform:rotate3d(0,0,1,0deg)}100%{-webkit-transform:rotate3d(0,0,1,360deg)}}@keyframes weuiLoading{0%{-webkit-transform:rotate3d(0,0,1,0deg)}100%{-webkit-transform:rotate3d(0,0,1,360deg)}}.gif_img_wrp{display:inline-block;font-size:0;position:relative}.gif_img_wrp img{min-height:120px;min-width:120px}.gif_img_tips{background:rgba(0,0,0,0.6)!important;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000',endcolorstr = '#99000000');border-top-left-radius:1.2em 50%;-moz-border-radius-topleft:1.2em 50%;-webkit-border-top-left-radius:1.2em 50%;border-top-right-radius:1.2em 50%;-moz-border-radius-topright:1.2em 50%;-webkit-border-top-right-radius:1.2em 50%;border-bottom-left-radius:1.2em 50%;-moz-border-radius-bottomleft:1.2em 50%;-webkit-border-bottom-left-radius:1.2em 50%;border-bottom-right-radius:1.2em 50%;-moz-border-radius-bottomright:1.2em 50%;-webkit-border-bottom-right-radius:1.2em 50%;line-height:2.3;padding:0 1em;font-size:11px;color:#fff;text-align:center;position:absolute;bottom:10px;left:10px}.gif_img_tips i{vertical-align:middle;margin:-0.2em .73em 0 -2px}.gif_img_play_arrow{display:inline-block;width:0;height:0;border-width:8px;border-style:dashed;border-color:transparent;border-right-width:0;border-left-color:#fff;border-left-style:solid;border-width:5px 0 5px 8px}.gif_img_loading{width:14px;height:14px}i.gif_img_loading{margin-left:-4px}.rich_media_global_msg{position:fixed;top:0;left:0;right:0;padding:.65em 35px .65em 15px;z-index:1;background-color:#cde6ff;color:#8c8c8c;font-size:13px}.rich_media_global_msg .icon_closed{position:absolute;right:15px;top:50%;margin-top:-5px;line-height:300px;overflow:hidden;-webkit-tap-highlight-color:rgba(0,0,0,0);background:transparent url(/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_appmsg_msg_closed_sprite.2x.png) no-repeat 0 0;width:11px;height:11px;vertical-align:middle;display:inline-block;-webkit-background-size:100% auto;background-size:100% auto}.rich_media_global_msg .icon_closed:active{background-position:0 -17px}.preview_appmsg .rich_media_title{margin-top:1.5em}@media screen and (min-width:1024px){.rich_media_global_msg{position:relative;margin:0 20px}.preview_appmsg .rich_media_title{margin-top:0}}</style>
+<style>
+     
+    </style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_pc2c9cd6.css">
+<![endif]-->
+
+    </head>
+    <body id="activity-detail" class="zh_CN mm_appmsg" ontouchstart="">
+        
+    <script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+        var write_sceen_time = (+new Date());
+    </script>
+
+    <div id="js_article" class="rich_media preview_appmsg">
+        
+        <div id="js_top_ad_area" class="top_banner">
+ 
+        </div>
+                
+
+        <div class="rich_media_inner">
+                        <div class="rich_media_global_msg">
+                
+                此为临时链接，仅用于文章预览，将在短期内失效
+                <a id="js_close_temp" href="javascript:;" class="icon_closed">关闭</a>
+            </div>
+                        <div id="page-content">
+                <div id="img-content" class="rich_media_area_primary">
+                    <h2 class="rich_media_title" id="activity-name">
+                        热点 | 鹿晗井柏然盗墓番位大PK，小鲜肉咖位战加剧？ 
+                    </h2>
+                    <div class="rich_media_meta_list">
+                        						                        <em id="post-date" class="rich_media_meta rich_media_meta_text">2016-01-17</em>
+
+                                                <em class="rich_media_meta rich_media_meta_text">影视大数据</em>
+                                                <a class="rich_media_meta rich_media_meta_link rich_media_meta_nickname" href="javascript:void(0);" id="post-user">影视大数据</a>
+                        <span class="rich_media_meta rich_media_meta_text rich_media_meta_nickname">影视大数据</span>
+
+                        <div id="js_profile_qrcode" class="profile_container" style="display:none;">
+                            <div class="profile_inner">
+                                <strong class="profile_nickname">影视大数据</strong>
+                                <img class="profile_avatar" id="js_profile_qrcode_img" src="" alt="">
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">微信号</label>
+                                <span class="profile_meta_value">ysdsju</span>
+                                </p>
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">功能介绍</label>
+                                <span class="profile_meta_value">影视、艺人数据分析评价，微博号@德塔文数据</span>
+                                </p>
+                                
+                            </div>
+                            <span class="profile_arrow_wrp" id="js_profile_arrow_wrp">
+                                <i class="profile_arrow arrow_out"></i>
+                                <i class="profile_arrow arrow_in"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                                                            
+                                        <div class="rich_media_thumb_wrp" id="media">
+                        
+                                                <script nonce="MOONSAFE_NONCE_1469070959">
+                            (function(){
+                                var cover = "http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB1ic5RgsGGpGzS1QvfXIEVgpLDqfdNGaDVmy177mdHzkzic78rWicmcfPFibEIpayuBbWXggjYl0ib2Lbg/0?wx_fmt=jpeg";
+                                document.write('<img class="rich_media_thumb" id="js_cover" onerror="this.parentNode.removeChild(this)" data-backsrc='+ cover +'  src="0.jpg" />');
+                            })();
+                        </script>
+                                            </div>
+                                        
+                    
+                    <div class="rich_media_content " id="js_content">
+                        
+
+                        
+                        <section style="box-sizing: border-box; background-color: rgb(255, 255, 255);"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><p style="box-sizing: border-box;">本周小鲜肉圈最劲爆的八卦必须是，井柏然的经纪人亲自下场，和鹿晗粉丝战起来了！</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">经纪人和粉丝开战，可谓少见，小鲜肉咖位战果然战况激烈。一切的一切，起源于电影《盗墓笔记》的番位之战。</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">可能对很多人来说，“番位”还是个新鲜词，其实也就是演出人员排位次序的意思，按照日本人的说法就变成了“番位”，进而延伸出“一番”、“二番”、“三番”和“四番”等定义，对应于演员表的第一位到第四位。</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">滥用严格排序法的结果是，艺人团队对影视作品中的排位顺序越来越介意。番位战的背后，更多是江湖地位和团队能力的较量。在小鲜肉竞争加剧的当今，番位更是成了各家团队和粉丝寸土必争的兵家要地。</p><p style="box-sizing: border-box;"><br  /></p></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><section class="" style="width: 100%; box-sizing: border-box;"><section class="" style="float: left; padding-right: 3px; line-height: 1; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="font-size: 44.8px; box-sizing: border-box;"></section></section></section></section><section class="" style="box-sizing: border-box; min-height: 4.5em !important;"><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin-top: 0.5em; margin-bottom: 0.5em;  box-sizing: border-box; "><section class="" style="display: inline-block; border-radius: 0.5em; padding: 0.3em 0.5em; color: rgb(255, 255, 255); box-shadow: rgb(165, 165, 165) 0.2em 0.2em 0.1em; box-sizing: border-box; background-color: rgb(249, 110, 87);"><section style="box-sizing: border-box;">盗墓大IP的前世今生</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><p style="box-sizing: border-box;">小说原著中，青年人气偶像鹿晗扮演的吴邪是主角，然而电影版张起灵貌似份量很不轻，再加上由“24亿帝”85电影小生领头羊井柏然出演，一个人气赛高，一个逼格过人，这是要火的节奏啊。但这样的演员配置，也为后面的争论埋下了伏笔。</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">最近一两年最热的题材，莫过于“盗墓探险系”和“西游系”。其中盗墓系的《盗墓笔记》和《鬼吹灯》更是话题十足、火爆十足、火药十足。拥有千万粉丝的超级IP《盗墓笔记》可谓引领风潮之先，去年李易峰等人主演的同名网剧获得了高达28亿的播放量，拉爆爱奇艺服务器，拉动网剧会员模式，开辟了网络剧的新纪元。紧跟着《鬼吹灯》改编大电影《寻龙诀》再次为盗墓题材添了一把烈火，超过16亿的票房引无数英雄竞折腰，对盗墓探险题材的市场预期更加火热。</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">这不，前两天《盗墓笔记》电影版主创阵容刚公布，就引来了一连串刀光剑影，掀起阵阵血雨腥风。</p><p style="box-sizing: border-box;"><br  /></p></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin-top: 0.5em; margin-bottom: 0.5em;  box-sizing: border-box; "><section class="" style="display: inline-block; border-radius: 0.5em; padding: 0.3em 0.5em; color: rgb(255, 255, 255); box-shadow: rgb(165, 165, 165) 0.2em 0.2em 0.1em; box-sizing: border-box; background-color: rgb(249, 110, 87);"><section style="box-sizing: border-box;">到底是怎么战起来的？</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><p style="box-sizing: border-box;">13号晚上，鹿晗第一个发微博“我，吴邪”，之后马思纯、王景春、张博宇、井柏然依次发布身份。待五位主创分别发完微博后，电影官博发集体照，称《盗墓笔记》电影由鹿晗、马思纯、王景春、张博宇、井柏然主演。随后，这五名演员相继转发了这条微博。之后所有的新闻也都是按照这样的顺序排序。</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">不料，井柏然的粉丝看到消息后不淡定了，井宝怎么说也是票房24亿的大咖演员，怎么能落到第五？再者，井柏然饰演的张起灵虽然戏份不多，却是全书中的精魂，都可以算作是第二男主了！现在居然把他排在最后？</p><p style="box-sizing: border-box;"><br  /></p></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="box-sizing: border-box; vertical-align: middle;" src="1.jpg" class="" data-type="png" data-ratio="0.5619834710743802" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><p style="box-sizing: border-box;">井柏然的粉丝第一时间去找电影官博去讨个说法，得到的答案是，井柏然不是“五番”，而是重量级压轴。</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">但这样的压轴方式还是让很多路人产生误解，于是井柏然粉丝开始联名声讨电影官博、片方及井柏然的经纪人，要求写明正确番位。其中不乏到电影官博下点蜡者，甚至有粉丝去咒骂排在第一位的鹿晗。鹿晗粉丝也不干了，凭什么要扯上我家小鹿？于是，两家粉丝激烈开撕。</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">14号下午，井柏然的经纪人张阿信发布微博称“岂曰无衣？与子同袍。关于盗墓，我们让，不撕。”其微博中提到井柏然本是演男主吴邪的，因为片方要用新的演员组合，退让到张起灵。井柏然作为专业演员，在拍摄期间全程驻组，但鹿晗将近过半的时间都在请假。</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">张阿信表示，鹿晗方忽然之间提出了很多不合理要求，为了大局，他们做出妥协。微信最后直指电影是粉丝电影。</p><p style="box-sizing: border-box;"><br  /></p></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="box-sizing: border-box; vertical-align: middle;" src="2.jpg" class="" data-type="png" data-ratio="0.8347107438016529" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="box-sizing: border-box; vertical-align: middle;" src="3.jpg" class="" data-type="png" data-ratio="0.8457300275482094" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><p style="box-sizing: border-box;">微信内容中井柏然方称，五个人的番位，如果鹿晗要求拍在第一，那么我们必须排在最后，最大化远离。并拒绝横版图，井柏然必须排在左边。</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">所以可见后来的电影官宣时，确实各大媒体微博，都采用了鹿晗排在第一，井柏然排在最后（压轴）的顺序。</p><p style="box-sizing: border-box;"><br  /></p></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="box-sizing: border-box; vertical-align: middle;" src="4.jpg" class="" data-type="png" data-ratio="0.5454545454545454" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><p style="box-sizing: border-box;">早前流出的疑似盗墓笔记全体定妆照也是遵照井柏然经纪人所要求的必须站在左边。</p><p style="box-sizing: border-box;"><br  /></p><section style="box-sizing: border-box;">井柏然经纪人微博一经发布，立即引起了鹿晗粉丝的强烈反弹。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">鹿晗粉丝做出10月2日进组到12月30日杀青这三个月期间，两人的所有个人行程图对比，鹿晗并非大部分时间在请假，指责张阿信信口雌黄，公然诬陷鹿晗的敬业。另外，本就是井柏然方要求放在最后，现在又宣称是鹿晗方欺人太甚，毁坏鹿晗的公众形象。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">拥有77万粉丝的鹿晗贴吧官方微博当晚发表长文，点名要求道歉。</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><p style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="box-sizing: border-box; vertical-align: middle;" src="5.jpg" class="" data-type="png" data-ratio="0.8815426997245179" data-w=""  /></p><p style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><br  /></p></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin-top: 0.5em; margin-bottom: 0.5em;  box-sizing: border-box; "><section class="" style="display: inline-block; border-radius: 0.5em; padding: 0.3em 0.5em; color: rgb(255, 255, 255); box-shadow: rgb(165, 165, 165) 0.2em 0.2em 0.1em; box-sizing: border-box; background-color: rgb(249, 110, 87);"><section style="box-sizing: border-box;">番位战的背后，是咖位战</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">电影电视剧的番位之争已经不是新鲜事，从当年《画皮》赵薇周迅两家为谁在前争得头破血流，到去年杨颖倪妮陈晓朱亚文主演的《新娘大作战》，处处可见明枪暗箭。只不过赵薇周迅之争时间已久，记忆者不多；而《新娘大作战》的四个演员解决得比较低调友好，外界还没反应过来，这事儿就过去了。</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">甚至有这种说法：同年龄段、同咖位的艺人要在一部作品中合作，越来越不容易了，因为大家对番位越来越计较。</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">这一次，井柏然和鹿晗的争斗略有些不同。我们来具体看看这两人的发展道路，试图廓清这场争斗的深层根由。</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">先从扮演吴邪的主演鹿晗说起。</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">鹿晗，1990年生，韩国男团EXO前成员，2014年归国发展。鹿晗拥有强大的粉丝基础，随便发一条微博，眨眼间就能转发评论几十万条，曾经发布的一条微博更是创造了1亿世界吉尼斯世界纪录。</p><p style="box-sizing: border-box;"><br  /></p></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="box-sizing: border-box; vertical-align: middle;" src="6.jpg" class="" data-type="png" data-ratio="0.6005509641873278" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><p style="box-sizing: border-box;">由他担任封面的杂志更是创下1分钟12000本奇迹记录。他的电影《重返20岁》，上映3天票房就过亿，其中有3000万都是粉丝贡献的。鹿晗的粉丝遍布全球，其所有行程会瞬时登上韩日泰马新各国的推特趋势。</p><p style="box-sizing: border-box;"><br  /></p><section style="box-sizing: border-box;"><strong><span style="color: rgb(249, 110, 87); font-size: 18px; box-sizing: border-box;">作为国内最有人气的青年偶像艺人之一，鹿晗具有强大的粉丝效应，相信制片方决定找他来演吴邪，很大一部分原因就是他的超高人气和粉丝基础。</span></strong></section><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">而比鹿晗大一岁的井柏然，可以说是影视圈的前辈了。2007年，井柏然凭借《加油好男儿》全国总冠军的身份出道，并与华谊签约。2010年，凭借《全城热恋》获得第17届北京大学生电影节“最佳新人”奖，并获同年金像奖”最佳新演员”奖提名。2013年，参演了《新编辑部的故事》，在《等风来》中担任男一；2014年参演《黄飞鸿之英雄有梦》、《失孤》等；2015年凭借24亿票房的《捉妖记》而一举成为国内新生代艺人中的翘楚。</p><p style="box-sizing: border-box;"><br  /></p></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="box-sizing: border-box; vertical-align: middle;" src="7.jpg" class="" data-type="png" data-ratio="0.6170798898071626" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><p style="box-sizing: border-box;">纵观井柏然的演艺生涯，走的是稳扎稳打的实力路线，几乎参演的每一部电影电视都是大制作、优秀题材。当然，井柏然可是华谊的亲生子，所拥有的资源肯定是其他小生不能比拟的。</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">井柏然即使不是国内演技最好的青年男演员，也必须是国内资源配置能力最强的青年男演员之一，《捉妖记》24亿的超高票房更是为他打下了难得的票房实绩基础。不论说这部电影是因为柯震东出事、井柏然捡漏，还是华谊厉害，但实打实的业绩在那里摆着，不由得你不信服。</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;"><strong><span style="color: rgb(249, 110, 87); font-size: 18px; box-sizing: border-box;">目前井柏然是85后电影演员的领军人物，在票房能力、公司资源能力、个人形象和时尚风格之中，他是个很均衡的选择。</span></strong></p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">制片方请来这两位男艺人分别饰演吴邪和张起灵，其实是明智之举，有了他俩的加盟，自带宣传效应，不愁票房销售。两人粉丝的网络激战，变相宣传了电影版《盗墓笔记》，不过，这对电影来说是好是坏，目前尚难定论。</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">艺人团队很在乎在各场合的排位，因为这将直接关系到他们的地位和人气、收入种种。这一次井柏然这一方公然撕破脸指责电影宣传方和鹿晗，其实反映了娱乐圈两种势力的碰撞。鹿晗是人气型艺人，他的力量就是他背后的粉丝，而井柏然是有强大公关团队的男艺人，他的背后则是娱乐圈大鳄华谊。</p><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;"><strong><span style="color: rgb(249, 110, 87); font-size: 18px; box-sizing: border-box;">鹿晗与井柏然的碰撞实质上是粉丝经济与大型运作资本的较量。</span></strong>传统娱乐生态下，粉丝没有这么强大的力量，谁拥有强势公关团队和资本，谁就拥有一切。但是现在，粉丝的力量在很大程度上决定了一名艺人的发展前景，与此同时，团队和资本的主导权和利益多少会受此影响，双方的冲突和争斗不可避免。</p><p style="box-sizing: border-box;"><br  /></p></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin-top: 0.5em; margin-bottom: 0.5em;  box-sizing: border-box; "><section class="" style="display: inline-block; border-radius: 0.5em; padding: 0.3em 0.5em; color: rgb(255, 255, 255); box-shadow: rgb(165, 165, 165) 0.2em 0.2em 0.1em; box-sizing: border-box; background-color: rgb(249, 110, 87);"><section style="box-sizing: border-box;">是开始，不是结束</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><p style="box-sizing: border-box;"><br  /></p><p style="box-sizing: border-box;">很可能，这次井柏然和鹿晗的粉丝冲突不过是个开端，以后会出现越来越多的这种粉丝经济与资本运作的强烈碰撞。在市场扩容、女性化消费成为主流的今天，小鲜肉们各有绝色绝艺，竞争、较量与融合成为大势。</p><section style="box-sizing: border-box;">究竟谁胜谁负，或者说，如何能将两者有机结合起来，发挥各自更大的效用？我们且拭目以待。</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="box-sizing: border-box; vertical-align: middle;" src="8.jpg" class="" data-type="png" data-ratio="0.8925619834710744" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;">最后放一段《盗墓笔记》原作者南派三叔的话，我觉得颇有深意：</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="box-sizing: border-box; vertical-align: middle;" src="9.jpg" class="" data-type="png" data-ratio="0.13774104683195593" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;">然而，你爱过烟花吗？烟花不美吗？</section><p style="box-sizing: border-box;">井与鹿，谁是烟花刹那的美丽，谁能三五年后留下记忆？或者我们谁也不知道，我们只知道，即使是咖位战，也是青春啊。</p><p style="box-sizing: border-box;"><br  /></p><p style="line-height: 25.6px; white-space: normal; box-sizing: border-box;"><em>欢迎亲耐滴你来信分享你对电影和艺人的感悟哈~~~</em></p><p style="line-height: 25.6px; white-space: normal; box-sizing: border-box;"><em><span style="line-height: 25.6px;">勾搭邮箱：chloe80@qq.com</span></em></p><section style="box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="line-height: 25.6px; white-space: normal; box-sizing: border-box;"><section style="line-height: 25.6px; max-width: 100%; box-sizing: border-box; background-color: rgb(255, 255, 255);"><section class="Powered-by-XIUMI V5" style="max-width: 100%; box-sizing: border-box;"><section style="margin-top: 0.5em; margin-bottom: 0.5em; overflow: hidden; max-width: 100%; box-sizing: border-box;"><section style="margin-bottom: -1em; max-width: 100%; box-sizing: border-box;"><section style="text-align: center; max-width: 100%; box-sizing: border-box;"><img width="1" src="10.jpg" data-w="16" data-ratio="0.9375" data-type="png" style="vertical-align: middle; box-sizing: border-box; width: 1em !important; visibility: visible !important; background-color: rgb(249, 110, 87);"  /><img width="1" src="11.jpg" data-w="16" data-ratio="1" data-type="png" style="vertical-align: middle; float: right; box-sizing: border-box; width: 1em !important; visibility: visible !important; background-color: rgb(249, 110, 87);"  /></section><section style="margin-top: -0.8em; width: 670px; vertical-align: top; display: inline-block; max-width: 100%; box-sizing: border-box;"><section style="width: 301.5px; border-top-color: rgb(249, 110, 87); border-top-width: 1px; border-top-style: solid; float: left; max-width: 100%; box-sizing: border-box;"></section><section style="width: 301.5px; border-top-color: rgb(249, 110, 87); border-top-width: 1px; border-top-style: solid; float: right; max-width: 100%; box-sizing: border-box;"></section></section><section style="margin-top: -1.5em; padding-right: 0.5em; padding-left: 0.5em; width: 670px; line-height: 1.3em; max-width: 100%; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="max-width: 100%; box-sizing: border-box;"><section style="max-width: 100%; box-sizing: border-box;"><section style="text-align: center; color: rgb(249, 110, 87); max-width: 100%; box-sizing: border-box;"><section style="max-width: 100%; box-sizing: border-box;">本文为原创文章</section><section style="max-width: 100%; box-sizing: border-box;">转载请注明：影视大数据</section></section></section></section></section><section style="max-width: 100%; box-sizing: border-box;"><img width="1" src="12.jpg" data-w="16" data-ratio="1" data-type="png" style="vertical-align: middle; float: left; box-sizing: border-box; width: 1em !important; visibility: visible !important; background-color: rgb(249, 110, 87);"  /><img width="1" src="13.jpg" data-w="16" data-ratio="1" data-type="png" style="vertical-align: middle; float: right; box-sizing: border-box; width: 1em !important; visibility: visible !important; background-color: rgb(249, 110, 87);"  /></section><section style="margin-top: -1.6em; width: 670px; text-align: center; vertical-align: top; display: inline-block; max-width: 100%; box-sizing: border-box;"><section style="width: 656.59px; vertical-align: middle; border-top-color: rgb(249, 110, 87); border-top-width: 1px; border-top-style: solid; display: inline-block; max-width: 100%; box-sizing: border-box;"></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="max-width: 100%; box-sizing: border-box;"><section style="margin-top: 10px; margin-bottom: 10px; padding-left: 2.6em; max-width: 100%; box-sizing: border-box;"><section style="margin-top: 2.1em; margin-bottom: -2.1em; text-align: center; color: rgb(160, 174, 25); max-width: 100%; box-sizing: border-box;"><section style="max-width: 100%; box-sizing: border-box;">公众号ID：ysdsju</section></section><section style="max-width: 100%; box-sizing: border-box;"><section style="margin-bottom: -2.6em; margin-left: -2.6em; border-radius: 100%; border: 3px solid rgb(0, 127, 168); border-image-source: none; width: 5em; height: 5em; vertical-align: bottom; display: inline-block; max-width: 100%; box-sizing: border-box; background-image: url(http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB1Qxp82jBnviaNVLkwiah0MrafoVDX3FUkHAwCqEV0TPZOYkeHsWhphXZiccicibwxjkpiaxR83dE8UTN0w/0?wx_fmt=jpeg); background-size: 154.05%; background-position: 50% 40%; background-repeat: no-repeat;"><img width="100%" src="14.jpg" data-w="74" data-ratio="1" data-type="jpeg" style="width: 74px; vertical-align: middle; box-sizing: border-box; opacity: 0; visibility: visible !important;"  /></section></section><img width="1" src="15.jpg" data-w="16" data-ratio="1" data-type="png" style="vertical-align: middle; float: left; box-sizing: border-box; width: 1em !important; visibility: visible !important; background-color: rgb(249, 110, 87);"  /><section style="max-width: 100%; box-sizing: border-box; background-color: rgb(255, 203, 45);"><section style="padding-top: 10px; padding-right: 10px; padding-left: 10px; width: 628.4px; max-width: 100%; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="max-width: 100%; box-sizing: border-box;"><section style="max-width: 100%; box-sizing: border-box;"><section style="text-align: center; font-size: 24px; max-width: 100%; box-sizing: border-box;"><section style="max-width: 100%; box-sizing: border-box;">影视大数据</section></section></section></section></section><section style="padding-top: 10px; padding-bottom: 10px; padding-left: 10px; width: 388.34px; vertical-align: top; display: inline-block; max-width: 100%; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="max-width: 100%; box-sizing: border-box;"><section style="max-width: 100%; box-sizing: border-box;"><section style="text-align: right; max-width: 100%; box-sizing: border-box;"><section style="max-width: 100%; box-sizing: border-box;">影视数据分析</section><section style="max-width: 100%; box-sizing: border-box;">新媒体分析<br style="max-width: 100%; box-sizing: border-box;"  /></section><section style="max-width: 100%; box-sizing: border-box;">娱乐数据分析<br style="max-width: 100%; box-sizing: border-box;"  /></section><section style="max-width: 100%; box-sizing: border-box;">艺人趋势分析</section></section></section></section></section><section style="padding-right: 10px; padding-left: 10px; width: 240.04px; vertical-align: top; display: inline-block; max-width: 100%; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="max-width: 100%; box-sizing: border-box;"><section style="margin-top: 10px; margin-bottom: 10px; text-align: center; max-width: 100%; box-sizing: border-box;"><img src="16.jpg" data-w="220" data-ratio="1.0227272727272727" data-type="jpeg" style="vertical-align: middle; box-sizing: border-box; width: auto !important; visibility: visible !important;"  /></section><section style="margin-top: 10px; margin-bottom: 10px; text-align: center; max-width: 100%; box-sizing: border-box;">工作联系：QQ149817396</section><section style="margin-top: 10px; margin-bottom: 10px; text-align: center; max-width: 100%; box-sizing: border-box;">微博@七州夷离堇</section></section></section></section></section></section></section><p style="line-height: 25.6px; background-color: rgb(255, 255, 255);"><br  /></p></section></section></section></section></section></section></section></section></section></section>
+                    </div>
+                    <script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+                        var first_sceen__time = (+new Date());
+
+                        if ("" == 1 && document.getElementById('js_content'))
+                            document.getElementById('js_content').addEventListener("selectstart",function(e){ e.preventDefault(); });
+
+                                        (function(){
+                            if (navigator.userAgent.indexOf("WindowsWechat") != -1){
+                                var link = document.createElement('link');
+                                var head = document.getElementsByTagName('head')[0];
+                                link.rel = 'stylesheet';
+                                link.type = 'text/css';
+                                link.href = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+                                head.appendChild(link);
+                            }
+                        })();
+                    </script>
+                    
+                    
+                                        
+                                        
+                                        <div class="rich_media_tool" id="js_toobar3">
+                                                                    <div id="js_read_area3" class="media_tool_meta tips_global meta_primary" style="display:none;">阅读 <span id="readNum3"></span></div>
+
+                        <span style="display:none;" class="media_tool_meta meta_primary tips_global meta_praise" id="like3">
+                            <i class="icon_praise_gray"></i><span class="praise_num" id="likeNum3"></span>
+                        </span>
+
+                        <a id="js_report_article3" style="display:none;" class="media_tool_meta tips_global meta_extra" href="javascript:void(0);">投诉</a>
+
+                    </div>
+
+
+
+                                    </div>
+
+                <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none">
+
+                </div>
+
+                <div class="rich_media_area_extra">
+
+                    
+                                        <div class="mpda_bottom_container" id="js_bottom_ad_area">
+                        
+                    </div>
+                                        
+                    <div id="js_iframetest" style="display:none;"></div>
+                                        
+                                    </div>
+               
+            </div>
+            <div id="js_pc_qr_code" class="qr_code_pc_outer" style="display:none;">
+                <div class="qr_code_pc_inner">
+                    <div class="qr_code_pc">
+                        <img id="js_pc_qr_code_img" class="qr_code_pc_img">
+                        <p>微信扫一扫<br>关注该公众号</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+        
+        <script nonce="MOONSAFE_NONCE_1469070959">
+    var __DEBUGINFO = {
+        debug_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/debug/console2ca724.js",
+        safe_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/moonsafe2f3e84.js",
+        res_list: []
+    };
+</script>
+        
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+    var not_in_mm_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm2c9cd6.css";
+    var windowwx_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+    var article_improve_combo_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_combo2eb52b.css";
+    var tid = "";
+    var aid = "";
+    var clientversion = "";
+    var appuin = "MzIwMDMzNzcyNQ=="||"";
+
+    var source = "";
+    var scene = 75;
+
+    var itemidx = "";
+
+    var _copyright_stat = "0";
+    var _ori_article_type = "";
+
+    var nickname = "影视大数据";
+    var appmsg_type = "6";
+    var ct = "1453016520";
+    var publish_time = "2016-01-17" || "";
+    var user_name = "gh_be98065513d1";
+    var user_name_new = "";
+    var fakeid   = "";
+    var version   = "";
+    var is_limit_user   = "0";
+    var round_head_img = "http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB1ELW0LLqCnHxgRo96Ecvib9G6oXkCfm0icJskpbiazjOGxnBrs1dsFw4PGXyBSMslaUSw6icyojeonicw/0?wx_fmt=png";
+    var msg_title = "热点&nbsp;|&nbsp;鹿晗井柏然盗墓番位大PK，小鲜肉咖位战加剧？";
+    var msg_desc = "争番的实质：粉丝经济VS大型资本运作。经纪人与粉丝各执一词，罗生门的真相有几重？";
+    var msg_cdn_url = "http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB1ic5RgsGGpGzS1QvfXIEVgpLDqfdNGaDVmy177mdHzkzic78rWicmcfPFibEIpayuBbWXggjYl0ib2Lbg/0?wx_fmt=jpeg";
+    var msg_link = "http://mp.weixin.qq.com/s?__biz=MzIwMDMzNzcyNQ==&amp;tempkey=gyQQfLwRAKAyf48QSIPFRlHM0G%2FlanBLSZ4blKv9wJ077PgPTo62lUV5yI5wCHtDEEiZ8ClFdGS98HXXwaD6piH3i%2BZl0S3LuLnH2hai%2B7E%2FmqqET2YbQmQ9CxBiF6MSXJVZDS9qVVnQNSHcv7IohA%3D%3D&amp;#rd";
+    var user_uin = "0"*1;
+    var msg_source_url = '';
+    var img_format = 'jpeg';
+    var srcid = '';
+    var req_id = '2812IEn3biOT8ApAz1EZW1bU';
+    var networkType;
+    var appmsgid = '' || '401492636'|| "401492636";
+    var comment_id = "0" * 1;
+    var comment_enabled = "" * 1;
+    var is_need_reward = "0" * 1;
+    var is_https_res = ("" * 1) && (location.protocol == "https:");
+
+    var devicetype = "";
+    var source_encode_biz = "";
+    // var source_username = "";
+    // var profile_ext_signature = "" || "";
+    var reprint_ticket = "";
+    var source_mid = "";
+    var source_idx = "";
+
+    var show_comment = "";
+    var __appmsgCgiData = {
+        can_use_page : "0"*1,
+        is_wxg_stuff_uin : "0"*1,
+        card_pos : "",
+        copyright_stat : "0",
+        source_biz : "",
+        hd_head_img : "http://wx.qlogo.cn/mmhead/Q3auHgzwzM4opw9CLZiawE4Tyg6sDaa6PJaxzAsxfSARfVRIvXEPHfw/0"||(window.location.protocol+"//"+window.location.host + "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_rumor_link.2x264e76.jpg")
+    };
+    var _empty_v = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/pages/voice/empty26f1f1.mp3";
+
+    var copyright_stat = "0" * 1;
+
+    var pay_fee = "" * 1;
+    var pay_timestamp = "";
+    var need_pay = "" * 1;
+
+    var need_report_cost = "0" * 1;
+    var use_tx_video_player = "0" * 1;
+
+    var friend_read_source = "" || "";
+    var friend_read_version = "" || "";
+    var friend_read_class_id = "" || "";
+
+    var is_only_read = "1" * 1;
+    var read_num = "2" * 1;
+    var like_num = "0" * 1;
+    var liked = "false" == 'true' ? true : false;
+    var is_temp_url = "gyQQfLwRAKAyf48QSIPFRlHM0G/lanBLSZ4blKv9wJ077PgPTo62lUV5yI5wCHtDEEiZ8ClFdGS98HXXwaD6piH3i&amp;nbsp;Zl0S3LuLnH2hai&amp;nbsp;7E/mqqET2YbQmQ9CxBiF6MSbvKnvi8KFHeQewlRokGuBw==" ? 1 : 0;
+    var send_time = "1469680582";
+      var icon_emotion_switch = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch.2x2f1273.png";
+      var icon_emotion_switch_active = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch_active.2x2f1273.png";
+      var icon_loading_white = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif";
+      var icon_audio_unread = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_unread26f1f1.png";
+      var icon_qqmusic_default = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_default.2x26f1f1.png";
+      var icon_qqmusic_source = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_source263724.png";
+
+    var topic_default_img = 'http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/topic/pic_book_thumb.2x2e4987.png';
+
+    // 话题卡片相关数据
+    var wxtopic = {
+    isbn : ""    // 书籍
+    };
+
+    var svr_time = "1469680613" * 1;
+
+        window.wxtoken = "";
+        window.__moon_initcallback = function(){
+        if(!!window.__initCatch){
+            window.__initCatch({
+                idkey : 27613,
+                startKey : 0,
+                limit : 128,
+                badjsId: 43,
+                reportOpt : {
+                    uin : uin,
+                    biz : biz,
+                    mid : mid,
+                    idx : idx,
+                    sn  : sn
+                },
+                extInfo : {
+                    network_rate : 0.01    //网络错误采样率
+                }
+            });
+        }
+    }
+    </script>
+
+        <script nonce="MOONSAFE_NONCE_1469070959">window.__moon_mainjs = 'appmsg/index.js';window.moon_map = {"appmsg/emotion/caret.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/caret278965.js","biz_wap/jsapi/cardticket.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/cardticket275627.js","appmsg/emotion/map.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/map278965.js","appmsg/emotion/textarea.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/textarea27cdc5.js","appmsg/emotion/nav.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/nav278965.js","appmsg/emotion/common.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/common278965.js","appmsg/emotion/slide.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/slide2a9cd9.js","pages/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/report2eec22.js","pages/music_player.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_player2b674b.js","pages/loadscript.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/loadscript2c9cd6.js","appmsg/emotion/dom.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/dom2f3ac3.js","appmsg/my_comment_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/my_comment_tpl.html2f3f48.js","biz_wap/utils/hashrouter.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/hashrouter2805ea.js","a/gotoappdetail.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/gotoappdetail2f33fb.js","a/ios.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/ios275627.js","a/android.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/android2c5484.js","a/profile.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/profile2f1750.js","a/mpshop.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/mpshop2f1750.js","a/card.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/card2f1750.js","biz_wap/utils/position.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/position2f1750.js","appmsg/a_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_report2f1750.js","biz_common/utils/respTypes.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/respTypes2c57d0.js","appmsg/cmt_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cmt_tpl.html2a2c13.js","sougou/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/a_tpl.html2c6e7c.js","appmsg/emotion/emotion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/emotion2f3ac3.js","biz_common/utils/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/report275627.js","biz_common/utils/huatuo.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/huatuo293afc.js","biz_common/utils/cookie.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/cookie275627.js","appmsg/topic_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/topic_tpl.html2f2e72.js","pages/voice_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_tpl.html2f2e72.js","pages/voice_component.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_component2f3ac3.js","pages/qqmusic_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/qqmusic_tpl.html2f2e72.js","new_video/ctl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/ctl2d441f.js","biz_common/utils/monitor.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/monitor2a30ee.js","biz_common/utils/spin.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/spin275627.js","biz_wap/jsapi/pay.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/pay275627.js","appmsg/reward_entry.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/reward_entry2f3ac3.js","appmsg/comment.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment2f3ac3.js","appmsg/like.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/like2eb52b.js","appmsg/a.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a2f1750.js","pages/version4video.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/version4video2e481d.js","rt/appmsg/getappmsgext.rt.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/rt/appmsg/getappmsgext.rt2c21f6.js","biz_wap/utils/storage.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage2a74ac.js","biz_common/tmpl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl2b3578.js","appmsg/img_copyright_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/img_copyright_tpl.html2a2c13.js","appmsg/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_tpl.html2f1750.js","biz_common/ui/imgonepx.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/ui/imgonepx275627.js","biz_common/dom/attr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr275627.js","biz_wap/utils/ajax.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax2f1747.js","biz_common/utils/string/html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html29f4e9.js","sougou/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/index2c7543.js","biz_wap/safe/mutation_observer_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/mutation_observer_report2f3e84.js","appmsg/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report2f3ac3.js","appmsg/report_and_source.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report_and_source2f1274.js","appmsg/page_pos.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/page_pos2ec4b2.js","appmsg/cdn_speed_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_speed_report2c57d0.js","appmsg/wxtopic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/wxtopic2f2e72.js","appmsg/voice.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voice2f2e72.js","appmsg/qqmusic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/qqmusic2f2e72.js","appmsg/iframe.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/iframe2ef6ca.js","appmsg/review_image.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/review_image2d0cfe.js","appmsg/outer_link.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/outer_link275627.js","biz_wap/jsapi/core.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core2f0d45.js","biz_common/dom/event.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event275627.js","appmsg/copyright_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/copyright_report2ec4b2.js","appmsg/cache.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cache2a74ac.js","appmsg/pay_for_reading.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/pay_for_reading2c5484.js","appmsg/async.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/async2f1750.js","biz_wap/ui/lazyload_img.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/ui/lazyload_img2ec99a.js","biz_common/log/jserr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/log/jserr2805ea.js","appmsg/share.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share2ec548.js","biz_wap/utils/mmversion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion2f1d97.js","appmsg/cdn_img_lib.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_img_lib275627.js","biz_common/utils/url/parse.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/url/parse2dd7fd.js","biz_common/dom/class.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/class275627.js","biz_wap/utils/device.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/device2b3aae.js","biz_wap/jsapi/a8key.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/a8key2a30ee.js","appmsg/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/index2f3f48.js"};</script><script nonce="MOONSAFE_NONCE_1469070959" async type="text/javascript" src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/moon2f0d45.js"></script>
+  <script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+    var real_show_page_time = +new Date();
+    if (!!window.addEventListener){
+        window.addEventListener("load", function(){
+            window.onload_endtime = +new Date();
+        });
+    }
+    
+  </script>
+
+    </body>
+</html>
+<!--tailTrap<body></body><head></head><html></html>-->
+ 

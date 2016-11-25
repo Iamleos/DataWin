@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<!--headTrap<body></body><head></head><html></html>--><html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+window.__nonce_str = "MOONSAFE_NONCE_1469070959"
+if (location.href.indexOf("safe=0") == -1 && window.__nonce_str) {
+	window.__moonsafe_csp_offset || (window.__moonsafe_csp_offset = 18);
+	document.write('<meta http-equiv="Content-Security-Policy" content="script-src https: \'unsafe-inline\' \'unsafe-eval\' *.qq.com *.weishi.com'+(window.__nonce_str ? ' \'nonce-' + window.__nonce_str + "\'":"")+ '">');
+        
+}
+</script>
+
+        <script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+            window.logs = {
+                pagetime: {}
+            };
+            window.logs.pagetime['html_begin'] = (+new Date());
+        </script>
+        
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+var page_begintime=+new Date,biz="MzIwMDMzNzcyNQ==",sn="",mid="401684606",idx="1",is_rumor="",norumor="";
+1*is_rumor&&!(1*norumor)&&(document.referrer&&-1!=document.referrer.indexOf("mp.weixin.qq.com/mp/rumor")||(location.href="http://mp.weixin.qq.com/mp/rumor?action=info&__biz="+biz+"&mid="+mid+"&idx="+idx+"&sn="+sn+"#wechat_redirect")),
+document.domain="qq.com";
+</script> 
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+var MutationObserver=window.WebKitMutationObserver||window.MutationObserver||window.MozMutationObserver,isDangerSrc=function(t){
+if(t){
+var e=t.match(/http(?:s)?:\/\/([^\/]+?)(\/|$)/);
+if(e&&!/qq\.com(\:8080)?$/.test(e[1])&&!/weishi\.com$/.test(e[1]))return!0;
+}
+return!1;
+},ishttp=0==location.href.indexOf("http://");
+-1==location.href.indexOf("safe=0")&&ishttp&&"function"==typeof MutationObserver&&"mp.weixin.qq.com"==location.host&&(window.__observer_data={
+count:0,
+exec_time:0,
+list:[]
+},window.__observer=new MutationObserver(function(t){
+window.__observer_data.count++;
+var e=new Date,r=[];
+t.forEach(function(t){
+for(var e=t.addedNodes,o=0;o<e.length;o++){
+var n=e[o];
+if("SCRIPT"===n.tagName){
+var i=n.src;
+isDangerSrc(i)&&(window.__observer_data.list.push(i),r.push(n)),!i&&window.__nonce_str&&n.getAttribute("nonce")!=window.__nonce_str&&(window.__observer_data.list.push("inlinescript_without_nonce"),
+r.push(n));
+}
+}
+});
+for(var o=0;o<r.length;o++){
+var n=r[o];
+n.parentNode&&n.parentNode.removeChild(n);
+}
+window.__observer_data.exec_time+=new Date-e;
+}),window.__observer.observe(document,{
+subtree:!0,
+childList:!0
+})),function(){
+if(-1==location.href.indexOf("safe=0")&&Math.random()<.01&&ishttp&&HTMLScriptElement.prototype.__lookupSetter__&&"undefined"!=typeof Object.defineProperty){
+window.__danger_src={
+xmlhttprequest:[],
+script_src:[],
+script_setAttribute:[]
+};
+var t="$"+Math.random();
+HTMLScriptElement.prototype.__old_method_script_src=HTMLScriptElement.prototype.__lookupSetter__("src"),
+HTMLScriptElement.prototype.__defineSetter__("src",function(t){
+t&&isDangerSrc(t)&&window.__danger_src.script_src.push(t),this.__old_method_script_src(t);
+});
+var e="element_setAttribute"+t;
+Object.defineProperty(Element.prototype,e,{
+value:Element.prototype.setAttribute,
+enumerable:!1
+}),Element.prototype.setAttribute=function(t,r){
+"SCRIPT"==this.tagName&&"src"==t&&isDangerSrc(r)&&window.__danger_src.script_setAttribute.push(r),
+this[e](t,r);
+};
+}
+}();
+</script> 
+
+        <link rel="dns-prefetch" href="//res.wx.qq.com">
+<link rel="dns-prefetch" href="//mmbiz.qpic.cn">
+<link rel="shortcut icon" type="image/x-icon" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+    String.prototype.html = function(encode) {
+        var replace =["&#39;", "'", "&quot;", '"', "&nbsp;", " ", "&gt;", ">", "&lt;", "<", "&amp;", "&", "&yen;", "¥"];
+        if (encode) {
+            replace.reverse();
+        }
+        for (var i=0,str=this;i< replace.length;i+= 2) {
+             str=str.replace(new RegExp(replace[i],'g'),replace[i+1]);
+        }
+        return str;
+    };
+
+    window.isInWeixinApp = function() {
+        return /MicroMessenger/.test(navigator.userAgent);
+    };
+
+    window.getQueryFromURL = function(url) {
+        url = url || 'http://qq.com/s?a=b#rd'; 
+        var query = url.split('?')[1].split('#')[0].split('&'),
+            params = {};
+        for (var i=0; i<query.length; i++) {
+            var arg = query[i].split('=');
+            params[arg[0]] = arg[1];
+        }
+        if (params['pass_ticket']) {
+        	params['pass_ticket'] = encodeURIComponent(params['pass_ticket'].html(false).html(false).replace(/\s/g,"+"));
+        }
+        return params;
+    };
+
+    (function() {
+	    var params = getQueryFromURL(location.href);
+        window.uin = params['uin'] || '';
+        window.key = params['key'] || '';
+        window.wxtoken = params['wxtoken'] || '';
+        window.pass_ticket = params['pass_ticket'] || '';
+    })();
+
+</script>
+
+        <title>分析 | 三打白骨精要来了!西游题材还能打吗？</title>
+        
+<style>html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;line-height:1.6}body{-webkit-touch-callout:none;font-family:-apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background-color:#f3f3f3;line-height:inherit}body.rich_media_empty_extra{background-color:#fff}body.rich_media_empty_extra .rich_media_area_primary:before{display:none}h1,h2,h3,h4,h5,h6{font-weight:400;font-size:16px}*{margin:0;padding:0}a{color:#607fa6;text-decoration:none}.rich_media_inner{font-size:16px;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.rich_media_area_primary{position:relative;padding:20px 15px 15px;background-color:#fff}.rich_media_area_primary:before{content:" ";position:absolute;left:0;top:0;width:100%;height:1px;border-top:1px solid #e5e5e5;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(0.5);transform:scaleY(0.5);top:auto;bottom:-2px}.rich_media_area_primary .original_img_wrp{display:inline-block;font-size:0}.rich_media_area_primary .original_img_wrp .tips_global{display:block;margin-top:.5em;font-size:14px;text-align:right;width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.rich_media_area_extra{padding:0 15px 0}.rich_media_title{margin-bottom:10px;line-height:1.4;font-weight:400;font-size:24px}.rich_media_meta_list{margin-bottom:18px;line-height:20px;font-size:0}.rich_media_meta_list em{font-style:normal}.rich_media_meta{display:inline-block;vertical-align:middle;margin-right:8px;margin-bottom:10px;font-size:16px}.meta_original_tag{display:inline-block;vertical-align:middle;padding:1px .5em;border:1px solid #9e9e9e;color:#8c8c8c;border-top-left-radius:20% 50%;-moz-border-radius-topleft:20% 50%;-webkit-border-top-left-radius:20% 50%;border-top-right-radius:20% 50%;-moz-border-radius-topright:20% 50%;-webkit-border-top-right-radius:20% 50%;border-bottom-left-radius:20% 50%;-moz-border-radius-bottomleft:20% 50%;-webkit-border-bottom-left-radius:20% 50%;border-bottom-right-radius:20% 50%;-moz-border-radius-bottomright:20% 50%;-webkit-border-bottom-right-radius:20% 50%;font-size:15px;line-height:1.1}.meta_enterprise_tag img{width:30px;height:30px!important;display:block;position:relative;margin-top:-3px;border:0}.rich_media_meta_text{color:#8c8c8c}span.rich_media_meta_nickname{display:none}.rich_media_thumb_wrp{margin-bottom:6px}.rich_media_thumb_wrp .original_img_wrp{display:block}.rich_media_thumb{display:block;width:100%}.rich_media_content{overflow:hidden;color:#3e3e3e}.rich_media_content *{max-width:100%!important;box-sizing:border-box!important;-webkit-box-sizing:border-box!important;word-wrap:break-word!important}.rich_media_content p{clear:both;min-height:1em;white-space:pre-wrap}.rich_media_content em{font-style:italic}.rich_media_content fieldset{min-width:0}.rich_media_content .list-paddingleft-2{padding-left:30px}.rich_media_content blockquote{margin:0;padding-left:10px;border-left:3px solid #dbdbdb}img{height:auto!important}@media(min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2){.mm_appmsg .rich_media_inner,.mm_appmsg .rich_media_meta,.mm_appmsg .discuss_list,.mm_appmsg .rich_media_extra,.mm_appmsg .title_tips .tips{font-size:17px}.mm_appmsg .meta_original_tag{font-size:15px}}@media(min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3){.mm_appmsg .rich_media_title{font-size:25px}}@media screen and (min-width:1024px){.rich_media{width:740px;margin-left:auto;margin-right:auto}.rich_media_inner{padding:20px}body{background-color:#fff}}@media screen and (min-width:1025px){body{font-family:"Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif}.rich_media{position:relative}.rich_media_inner{background-color:#fff;padding-bottom:100px}}.radius_avatar{display:inline-block;background-color:#fff;padding:3px;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;overflow:hidden;vertical-align:middle}.radius_avatar img{display:block;width:100%;height:100%;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;background-color:#eee}.cell{padding:.8em 0;display:block;position:relative}.cell_hd,.cell_bd,.cell_ft{display:table-cell;vertical-align:middle;word-wrap:break-word;word-break:break-all;white-space:nowrap}.cell_primary{width:2000px;white-space:normal}.flex_cell{padding:10px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.flex_cell_primary{width:100%;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;box-flex:1;flex:1}.original_tool_area{display:block;padding:.75em 1em 0;-webkit-tap-highlight-color:rgba(0,0,0,0);color:#3e3e3e;border:1px solid #eaeaea;margin:20px 0}.original_tool_area .tips_global{position:relative;padding-bottom:.5em;font-size:15px}.original_tool_area .tips_global:after{content:" ";position:absolute;left:0;bottom:0;right:0;height:1px;border-bottom:1px solid #dbdbdb;-webkit-transform-origin:0 100%;transform-origin:0 100%;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.original_tool_area .radius_avatar{width:27px;height:27px;padding:0;margin-right:.5em}.original_tool_area .radius_avatar img{height:100%!important}.original_tool_area .flex_cell_bd{width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.original_tool_area .flex_cell_ft{font-size:14px;color:#8c8c8c;padding-left:1em;white-space:nowrap}.original_tool_area .icon_access:after{content:" ";display:inline-block;height:8px;width:8px;border-width:1px 1px 0 0;border-color:#cbcad0;border-style:solid;transform:matrix(0.71,0.71,-0.71,0.71,0,0);-ms-transform:matrix(0.71,0.71,-0.71,0.71,0,0);-webkit-transform:matrix(0.71,0.71,-0.71,0.71,0,0);position:relative;top:-2px;top:-1px}.weui_loading{width:20px;height:20px;display:inline-block;vertical-align:middle;-webkit-animation:weuiLoading 1s steps(12,end) infinite;animation:weuiLoading 1s steps(12,end) infinite;background:transparent url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iciIgd2lkdGg9JzEyMHB4JyBoZWlnaHQ9JzEyMHB4JyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJub25lIiBjbGFzcz0iYmsiPjwvcmVjdD4KICAgIDxyZWN0IHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjRTlFOUU5JwogICAgICAgICAgdHJhbnNmb3JtPSdyb3RhdGUoMCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+CiAgICA8L3JlY3Q+CiAgICA8cmVjdCB4PSc0Ni41JyB5PSc0MCcgd2lkdGg9JzcnIGhlaWdodD0nMjAnIHJ4PSc1JyByeT0nNScgZmlsbD0nIzk4OTY5NycKICAgICAgICAgIHRyYW5zZm9ybT0ncm90YXRlKDMwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4KICAgICAgICAgICAgICAgICByZXBlYXRDb3VudD0naW5kZWZpbml0ZScvPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyM5Qjk5OUEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSg2MCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+CiAgICAgICAgICAgICAgICAgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnLz4KICAgIDwvcmVjdD4KICAgIDxyZWN0IHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjQTNBMUEyJwogICAgICAgICAgdHJhbnNmb3JtPSdyb3RhdGUoOTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNBQkE5QUEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxMjAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNCMkIyQjInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxNTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNCQUI4QjknCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxODAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNDMkMwQzEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyMTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNDQkNCQ0InCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyNDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNEMkQyRDInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyNzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNEQURBREEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgzMDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNFMkUyRTInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgzMzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0Pgo8L3N2Zz4=) no-repeat;-webkit-background-size:100%;background-size:100%}@-webkit-keyframes weuiLoading{0%{-webkit-transform:rotate3d(0,0,1,0deg)}100%{-webkit-transform:rotate3d(0,0,1,360deg)}}@keyframes weuiLoading{0%{-webkit-transform:rotate3d(0,0,1,0deg)}100%{-webkit-transform:rotate3d(0,0,1,360deg)}}.gif_img_wrp{display:inline-block;font-size:0;position:relative}.gif_img_wrp img{min-height:120px;min-width:120px}.gif_img_tips{background:rgba(0,0,0,0.6)!important;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000',endcolorstr = '#99000000');border-top-left-radius:1.2em 50%;-moz-border-radius-topleft:1.2em 50%;-webkit-border-top-left-radius:1.2em 50%;border-top-right-radius:1.2em 50%;-moz-border-radius-topright:1.2em 50%;-webkit-border-top-right-radius:1.2em 50%;border-bottom-left-radius:1.2em 50%;-moz-border-radius-bottomleft:1.2em 50%;-webkit-border-bottom-left-radius:1.2em 50%;border-bottom-right-radius:1.2em 50%;-moz-border-radius-bottomright:1.2em 50%;-webkit-border-bottom-right-radius:1.2em 50%;line-height:2.3;padding:0 1em;font-size:11px;color:#fff;text-align:center;position:absolute;bottom:10px;left:10px}.gif_img_tips i{vertical-align:middle;margin:-0.2em .73em 0 -2px}.gif_img_play_arrow{display:inline-block;width:0;height:0;border-width:8px;border-style:dashed;border-color:transparent;border-right-width:0;border-left-color:#fff;border-left-style:solid;border-width:5px 0 5px 8px}.gif_img_loading{width:14px;height:14px}i.gif_img_loading{margin-left:-4px}.rich_media_global_msg{position:fixed;top:0;left:0;right:0;padding:.65em 35px .65em 15px;z-index:1;background-color:#cde6ff;color:#8c8c8c;font-size:13px}.rich_media_global_msg .icon_closed{position:absolute;right:15px;top:50%;margin-top:-5px;line-height:300px;overflow:hidden;-webkit-tap-highlight-color:rgba(0,0,0,0);background:transparent url(/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_appmsg_msg_closed_sprite.2x.png) no-repeat 0 0;width:11px;height:11px;vertical-align:middle;display:inline-block;-webkit-background-size:100% auto;background-size:100% auto}.rich_media_global_msg .icon_closed:active{background-position:0 -17px}.preview_appmsg .rich_media_title{margin-top:1.5em}@media screen and (min-width:1024px){.rich_media_global_msg{position:relative;margin:0 20px}.preview_appmsg .rich_media_title{margin-top:0}}</style>
+<style>
+     
+    </style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_pc2c9cd6.css">
+<![endif]-->
+
+    </head>
+    <body id="activity-detail" class="zh_CN mm_appmsg" ontouchstart="">
+        
+    <script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+        var write_sceen_time = (+new Date());
+    </script>
+
+    <div id="js_article" class="rich_media preview_appmsg">
+        
+        <div id="js_top_ad_area" class="top_banner">
+ 
+        </div>
+                
+
+        <div class="rich_media_inner">
+                        <div class="rich_media_global_msg">
+                
+                此为临时链接，仅用于文章预览，将在短期内失效
+                <a id="js_close_temp" href="javascript:;" class="icon_closed">关闭</a>
+            </div>
+                        <div id="page-content">
+                <div id="img-content" class="rich_media_area_primary">
+                    <h2 class="rich_media_title" id="activity-name">
+                        分析 | 三打白骨精要来了!西游题材还能打吗？ 
+                    </h2>
+                    <div class="rich_media_meta_list">
+                        						                        <em id="post-date" class="rich_media_meta rich_media_meta_text">2016-01-30</em>
+
+                                                <em class="rich_media_meta rich_media_meta_text">七州夷离堇</em>
+                                                <a class="rich_media_meta rich_media_meta_link rich_media_meta_nickname" href="javascript:void(0);" id="post-user">影视大数据</a>
+                        <span class="rich_media_meta rich_media_meta_text rich_media_meta_nickname">影视大数据</span>
+
+                        <div id="js_profile_qrcode" class="profile_container" style="display:none;">
+                            <div class="profile_inner">
+                                <strong class="profile_nickname">影视大数据</strong>
+                                <img class="profile_avatar" id="js_profile_qrcode_img" src="" alt="">
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">微信号</label>
+                                <span class="profile_meta_value">ysdsju</span>
+                                </p>
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">功能介绍</label>
+                                <span class="profile_meta_value">影视、艺人数据分析评价，微博号@德塔文数据</span>
+                                </p>
+                                
+                            </div>
+                            <span class="profile_arrow_wrp" id="js_profile_arrow_wrp">
+                                <i class="profile_arrow arrow_out"></i>
+                                <i class="profile_arrow arrow_in"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                                                            
+                                                            
+                    
+                    <div class="rich_media_content " id="js_content">
+                        
+
+                        
+                        <section style="box-sizing: border-box; background-color: rgb(255, 255, 255);"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;">时值猴年，各种猴大行其道，西游题材更是备受关注。《西游记之大闹天宫》的续集《西游记之孙悟空《三打白骨精》即将在猴年春节档上映，一众拥泵翘首以待，与同档期的《美人鱼》、《澳门风云3》等剧形成强势竞争。在各大媒体，六小龄童与《三打》主演郭富城两代美猴王联手春晚的消息一度传得飞起，辟谣后仍然引发呼吁六小龄童上春晚的网络自发浪潮。在电影票房贴吧，《三打》郭天王粉丝与《美人鱼》周星爷粉丝甚至发生了激烈的唇枪舌剑，杀气冲天之下，我们不禁要问：在最近两年频繁爆出高票房之后，今年西游题材是否还会爆发，《三打白骨精》还能打吗？</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin: 0.5em 0px;  box-sizing: border-box; "><section class="" style="height: 2em; box-sizing: border-box;"><section style="display: inline-block; margin: 0px 15%; width: 70%; height: 2em; border-bottom-color: rgb(255, 129, 36); box-sizing: border-box; background-color: rgb(255, 129, 36);"><section class="" style="line-height: 1; padding: 0.5em 0px; text-align: center; color: rgb(255, 255, 240); box-sizing: border-box; background-color: rgba(255, 255, 255, 0.2);"><section style="box-sizing: border-box;">西游记，国民第一IP</section></section></section></section><section class="" style="margin-top: -1.6em; height: 2em; clear: both; box-sizing: border-box;"><section style="width: 25%; height: 0px; float: left; border-top-width: 1em; border-top-style: solid; border-top-color: rgb(255, 129, 36); border-bottom-width: 1em; border-bottom-style: solid; border-bottom-color: rgb(255, 129, 36); border-left-width: 1em !important; border-left-style: solid !important; border-left-color: transparent !important; box-sizing: border-box;"></section><section style="width: 25%; height: 0px; float: right; border-top-width: 1em; border-top-style: solid; border-top-color: rgb(255, 129, 36); border-bottom-width: 1em; border-bottom-style: solid; border-bottom-color: rgb(255, 129, 36); border-right-width: 1em !important; border-right-style: solid !important; border-right-color: transparent !important; box-sizing: border-box;"></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">如果要问，中国的国民第一IP是什么，大家很可能回答：《西游记》。</section><section style="box-sizing: border-box;">根据影视大数据不完全统计，最早的西游记影视版，可以追索到1927年的国产电影《孙悟空大闹天宫》。国人对西游记的兴趣可谓历久弥新。且不说文艺衍生和戏曲改编，有电影以来，西游题材共计影视化30次以上，其中不乏高收视率的神剧，譬如1986年版的电视剧西游记；也不乏高国民度、高票房的电影神作，比如周星驰的《大话西游》系列、《西游降魔篇》，以及各种版本的《大闹天宫》、《大圣归来》。</section><section style="box-sizing: border-box;">电视剧西游记每年都在重播，至今老少咸宜，六小龄童一部戏红了一生，至今有人热衷于刷让六小龄童上猴年春晚。</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="max-width: 100%; box-sizing: border-box; vertical-align: middle;" src="0.jpg" data-ratio="0.6356107660455487" data-w="483"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;">动画片大闹天宫成为多少人的情怀旧梦，至今看仍然是艺术性、品质感与趣味性并重的佳作。</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="max-width: 100%; box-sizing: border-box; vertical-align: middle;" src="1.jpg" data-ratio="0.6870503597122302" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;">周星驰依托《大话西游》在内地名声鹊起，“爱你一万年”的誓言成为70后和80后共同的情怀，星星也变成星爷。</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="max-width: 100%; box-sizing: border-box; vertical-align: middle;" src="2.jpg" data-ratio="0.6402877697841727" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;">《西游降魔篇》成为当年大陆华语票房第二名，同时也是当年全球华语票房第一名，</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="max-width: 100%; box-sizing: border-box; vertical-align: middle;" src="3.jpg" data-ratio="0.5" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;">刘镇伟《月光宝盒》等续集多见，市场持续对西游题材发烧。</section><section style="box-sizing: border-box;">新一代网剧也热衷于西游题材，《万万没想到之西游篇》成为万合天宜试水电影市场的第一部。《大圣归来》更是成就新一代口碑神话。</section><section style="box-sizing: border-box;">&nbsp;<span style="line-height: 1.6; box-sizing: border-box;">甚至连综艺也凑一脚，周迅等人参与的浙江卫视综艺节目《西游奇遇记》正是以西游作为故事核。</span></section><section style="box-sizing: border-box;">随着多版本的西游记反复轰炸，主角孙悟空俨然已经成为隐形的国民第一男神。</section><section style="box-sizing: border-box;">西游在内地有广泛受众，不论是内地还是港台，都热衷于拍摄西游题材，甚至香港出品团队对西游题材更是情有独钟。</section><section style="box-sizing: border-box;">内在原因分析，西游确实有很适合影视化的元素。</section><section style="box-sizing: border-box;">表现形式上，富有想象力、戏剧性、冲突感，在玄幻题材、视觉特效题材大行其道的今天，西游记提供了一个优质内核，能让电影视觉与精彩情节高度结合。尤其现在很多国产视觉大电影往往情节雷人，结构不靠谱，而西游记这样的优质原著核能解决很大部分情节人设的问题。更重要的是，西游记不但是个高国民度的故事核，还是个免费的故事核。在IP遭遇疯抢、价高难求的今天，并没有一个IP的综合价值可以超过老祖宗留给我们的文学瑰宝西游记。</section><section style="box-sizing: border-box;">精神内核上，有突出的叛逆精神和幽默感。即使是叛逆精神强烈的九零后甚至千禧后，也无法拒绝一个天马行空、纵横不羁的孙悟空。孙悟空某种意义上甚至是国民精神的潜在表达，幽默，有战斗力，有承载力，能张扬天地，也能屈辱压抑五百年后，仍然谈笑面对前途。他的机灵、叛逆与压抑能让不同层次的人都感同身受。孙悟空是妖性的，但也是富有人间烟火味的。</section><section style="box-sizing: border-box;">年龄面上，西游记适应的年龄面相当宽泛，堪称老少咸宜。当初动画片《大闹天宫》曾经风靡全国，令无数人激动于孙悟空的身姿。这部动画片至今来看仍然是精美巨作。现在很多成年人童年时候是看着六小龄童的电视剧西游记长大的，也有一些当年的孩子曾经接受周星驰《大话西游》至尊宝的熏陶。近年的西游降魔篇、西游记之大闹天宫、大圣归来等高票房大作，再次刷高西游记的国民度，西游记成为了一代又一代人的情怀。</section><section style="box-sizing: border-box;">&nbsp;</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin: 0.5em 0px;  box-sizing: border-box; "><section class="" style="height: 2em; box-sizing: border-box;"><section style="display: inline-block; margin: 0px 15%; width: 70%; height: 2em; border-bottom-color: rgb(255, 129, 36); box-sizing: border-box; background-color: rgb(255, 129, 36);"><section class="" style="line-height: 1; padding: 0.5em 0px; text-align: center; color: rgb(255, 255, 240); box-sizing: border-box; background-color: rgba(255, 255, 255, 0.2);"><section style="box-sizing: border-box;">同样是西游，效果大不同</section></section></section></section><section class="" style="margin-top: -1.6em; height: 2em; clear: both; box-sizing: border-box;"><section style="width: 25%; height: 0px; float: left; border-top-width: 1em; border-top-style: solid; border-top-color: rgb(255, 129, 36); border-bottom-width: 1em; border-bottom-style: solid; border-bottom-color: rgb(255, 129, 36); border-left-width: 1em !important; border-left-style: solid !important; border-left-color: transparent !important; box-sizing: border-box;"></section><section style="width: 25%; height: 0px; float: right; border-top-width: 1em; border-top-style: solid; border-top-color: rgb(255, 129, 36); border-bottom-width: 1em; border-bottom-style: solid; border-bottom-color: rgb(255, 129, 36); border-right-width: 1em !important; border-right-style: solid !important; border-right-color: transparent !important; box-sizing: border-box;"></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">然而，西游记国民度虽然高，并非每一部西游题材都收到好的效果。<span style="line-height: 1.6; box-sizing: border-box;">&nbsp;</span></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="max-width: 100%; box-sizing: border-box; vertical-align: middle;" src="4.jpg" data-ratio="0.5359712230215827" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;">《西游降魔篇》、《西游记之大闹天宫》和《西游之大圣归来》等片的成功，似乎掩盖了一些西游失意者的存在。</section><section style="box-sizing: border-box;">以刘镇伟的《越光宝盒》为例，沿袭了周星驰版《月光宝盒》的设定，品质却并不如意，尽管收到了1.31亿元的票房，却被视作一大烂片，对刘镇伟的口碑也有一定影响。</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="max-width: 100%; box-sizing: border-box; vertical-align: middle;" src="5.jpg" data-ratio="0.6654676258992805" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">类似还有《情癫大圣》，也未能得到足够好评。</span><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="max-width: 100%; box-sizing: border-box; vertical-align: middle;" src="6.jpg" data-ratio="0.7544910179640718" data-w="501"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;">尽管缺乏口碑，考虑到题材的普及度，市场对小成本的西游电影仍然持续感兴趣，甚至有一些零票房的西游电影面世。</section><section style="box-sizing: border-box;">《大闹天宫3D》作为国产动画片神作《大闹天宫》的重新上色版，由于制作质量粗糙，再上色后反而破坏了当年的视觉美感，且缺乏新意， 全片照搬原作，最终票房低迷，仅0.41亿元。</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="max-width: 100%; box-sizing: border-box; vertical-align: middle;" src="7.jpg" data-ratio="1.4285714285714286" data-w="385"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;">网剧大电影《万万没想到之西游篇》宣传高开，口碑却逐步低走，最终仅取得3.22亿票房，与预期中《煎饼侠》同等规模票房的市场估计相去甚远。这锅到底该网剧电影背，还是西游题材审美疲劳背？个人认为主要还是和制作品质、情节合理性等有关。网剧能出神作，西游更能出神作，西游+网剧没有出神作，更多是网剧模式与电影模式的适配问题，对西游题材的开发深度问题。</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="max-width: 100%; box-sizing: border-box; vertical-align: middle;" src="8.jpg" data-ratio="0.42805755395683454" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;">目前看有个规律是：近年火的西游题材，多是原著基础上适度改编、适度幽默的精致之作，视觉效果富有特色。</section><section style="box-sizing: border-box;">比如《西游降魔篇》，减少了爆笑成分，增加了惊悚元素，视觉效果相当有冲击力，情节紧凑生动，令观众大感刺激。</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="max-width: 100%; box-sizing: border-box; vertical-align: middle;" src="9.jpg" data-ratio="0.5629496402877698" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;">又比如《西游记之大闹天宫》，依托超过同业一个身位的特效效果，在2014年异军突起。据说光是特效就前后修改了3年，诚意可嘉，玉帝化龙、女娲星散的镜头至今令人震撼，可惜剧情颇有点弱智，看在牛逼特效的份上，观众还是很宽容地忍了。</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="max-width: 100%; box-sizing: border-box; vertical-align: middle;" src="10.jpg" data-ratio="0.5233812949640287" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;">2015年的《大圣归来》，则依托英雄热血的情怀、国产动画片中一流的视觉特效，充满中国风的画面，得到众多自来水的疯狂拥泵，票房口碑双双飚高，创造了国产动画片最高票房纪录。也正是从《大圣归来》开始，电影营销更加重视正向营销和口碑营销，民粹路线持续走强。这是一部有里程碑意义的作品。</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="max-width: 100%; box-sizing: border-box; vertical-align: middle;" src="11.jpg" data-ratio="0.6258992805755396" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="color: rgb(249, 110, 87); box-sizing: border-box;"><section style="box-sizing: border-box;">票房不如意的西游题材，很多是纯粹走小成本喜剧路线，或者恶搞过度，未能充分发挥西游记可做的视觉优势。</section><section style="box-sizing: border-box;">换而言之，西游题材要火，一定要做“大视觉”+“强情节”，在此基础上可以搭配“小幽默”。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin: 0.5em 0px;  box-sizing: border-box; "><section class="" style="height: 2em; box-sizing: border-box;"><section style="display: inline-block; margin: 0px 15%; width: 70%; height: 2em; border-bottom-color: rgb(255, 129, 36); box-sizing: border-box; background-color: rgb(255, 129, 36);"><section class="" style="line-height: 1; padding: 0.5em 0px; text-align: center; color: rgb(255, 255, 240); box-sizing: border-box; background-color: rgba(255, 255, 255, 0.2);"><section style="box-sizing: border-box;">三打白骨精的市场空间到底有多大</section></section></section></section><section class="" style="margin-top: -1.6em; height: 2em; clear: both; box-sizing: border-box;"><section style="width: 25%; height: 0px; float: left; border-top-width: 1em; border-top-style: solid; border-top-color: rgb(255, 129, 36); border-bottom-width: 1em; border-bottom-style: solid; border-bottom-color: rgb(255, 129, 36); border-left-width: 1em !important; border-left-style: solid !important; border-left-color: transparent !important; box-sizing: border-box;"></section><section style="width: 25%; height: 0px; float: right; border-top-width: 1em; border-top-style: solid; border-top-color: rgb(255, 129, 36); border-bottom-width: 1em; border-bottom-style: solid; border-bottom-color: rgb(255, 129, 36); border-right-width: 1em !important; border-right-style: solid !important; border-right-color: transparent !important; box-sizing: border-box;"></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="max-width: 100%; box-sizing: border-box; vertical-align: middle;" src="12.jpg" data-ratio="0.43345323741007197" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">《西游记之孙悟空三打白骨精》由郑保瑞执导，其中郭富城饰演孙悟空、冯绍峰饰演唐僧、小沈阳饰演猪八戒、罗仲谦饰演沙和尚，巩俐出演白骨精。更有上一代偶像男神费翔饰演云海西国国王，卡司可谓星光熠熠。</span><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">从《三打白骨精》的题材来看，属于西游基础上衍生的东方魔幻题材，预告片的视觉效果挺不错。据说特效团队在前期就介入了拍摄，800人拍摄团队进驻无锡两月有余，动用无锡市及无锡国家数字电影产业园的11个摄影棚进行为期5个月的拍摄，特效与实景的配合度较好。这类题材，正好是西游各类电影中最容易取得高票房的题材。</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="max-width: 100%; box-sizing: border-box; vertical-align: middle;" src="13.jpg" data-ratio="0.6564748201438849" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;">制作方选择了郭富城、巩俐、冯绍峰等艺人主演，演技和品质相当有保障。但也带来主演群整体年龄比同档期《美人鱼》偏高的问题。虽然《澳门风云3》也不乏老戏骨加持，但《三打白骨精》选择高品质的熟龄艺人加持，在电影市场日益青春化的今天，确实是对市场认可程度的一个考验。</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="max-width: 100%; box-sizing: border-box; vertical-align: middle;" src="14.jpg" data-ratio="0.6780575539568345" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">《澳门风云3》虽然还有周润发、刘德华等巨星加盟，但这两位都是人气型巨星，和巩俐这样以演技和影坛地位见长的很不一样。三打可谓不走寻常路。</section><section style="box-sizing: border-box;">同为巨星，周星驰已经不出镜了，《美人鱼》宁可选择话题度十足的邓超和一群小鲜肉加持，在卖星星情怀的同时，顺便卖一下鲜肉们的颜值。</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="max-width: 100%; box-sizing: border-box; vertical-align: middle;" src="15.jpg" data-ratio="0.60431654676259" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">幸好，《三打》是在春节档，全年数得着的合家欢档期，目前赵本山的《过年好》已经离开春节档，春节市场主要是《三打》、《美人鱼》和《澳门风云3》之战。而《三打》是其中唯一一部主打古装魔幻特效的大片，有一定的固定受众，即使面临强敌也不乏差异化竞争力。如果《三打》的口碑能发散开，有可能带动全年龄层的欣赏热情。</section><section style="box-sizing: border-box;">但春节档的竞争相当激烈，周星驰的《美人鱼》、王晶的《澳门风云3》等对手都来头不凡，《三打白骨精》能抢到多少份额，起始阶段的口碑运营和话题运营相当重要。</section><section style="box-sizing: border-box;">前作《西游记之大闹天宫》纯粹靠特效致胜，情节方面颇为被人诟病。仗着特效逆天，观众雷着雷着还是掏钱买了票。尽管本次找了一群高质量明星加盟，业内对《三打白骨精》的剧情质量也颇有存疑。这对前期的口碑运营形成了一个心理定势的挑战。</section><section style="box-sizing: border-box;">从预告片的播放量来看，《三打白骨精》感兴趣的人还不少。但播放量在土豆网更为集中，在爱奇艺、腾讯视频、优酷则不多。说明目前预告片还未能形成全网大推送（统计截止2016年1月27日，以下同）。</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="max-width: 100%; box-sizing: border-box; vertical-align: middle;" src="16.jpg" data-ratio="0.6572504708097928" data-w="531"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;">从微博话题的运营情况来看，《美人鱼》有一定优势，澳门风云3有后来居上的势头，《三打白骨精》的走势较弱。</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="max-width: 100%; box-sizing: border-box; vertical-align: middle;" src="17.jpg" data-ratio="0.4226618705035971" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;">此外，《三打白骨精》话题的原创度约为24.16%，比起《美人鱼》的33.45%和《澳门风云3》的48.23%略有偏低，说明三打的营销力度还不错，但核心兴趣人群的自生话题还不足。</section><section style="box-sizing: border-box;">从百度指数来看，《三打白骨精》的搜索兴趣人群还较弱，需要进一步推广加温。</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="max-width: 100%; box-sizing: border-box; vertical-align: middle;" src="18.jpg" data-ratio="0.37589928057553956" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;">从猫眼票房想看指数来看，三打目前想看人数16万，点映票房32万，《美人鱼》想看人数42万、且增速明显，《澳门风云3》想看人数43.6万。</section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" text-align: center; margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><img style="max-width: 100%; box-sizing: border-box; vertical-align: middle;" src="19.jpg" data-ratio="0.5665467625899281" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">&nbsp; &nbsp; &nbsp; &nbsp; 《三打白骨精》猫眼想看人数走势曲线</span><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">从豆瓣的点映影评来看，影评人的评价不高，认为郑宝瑞出品，很容易“一不留神变成烂片“。目前可见的好评不出意料都集中在特效上了，更有人声称，这是国产电影的最强特效。“开篇伏虎降龙气势逼人，直到一打、二打、三打斗智斗勇，最后恶斗骷髅兵团更是浩瀚之极。”看来这是铁了心要一招鲜吃遍天的节奏。</span><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><span style="color: rgb(249, 110, 87); box-sizing: border-box;">综合几大网站的走势情况，上映初期，依托档期、题材和特效的吸引力，《三打白骨精》的票房空间应该还不错，是一部中、高票房的电影。但口碑走势和人气不甚乐观，如不能依托成片品质提升口碑，可能难以走出长线行情。</span></section><section style="box-sizing: border-box;">目前来看，《三打白骨精》票房被《美人鱼》或《澳门风云3》压制的可能性较大。但仍然是一部强题材，西游IP的光辉仍然普照影视圈。</section><section style="box-sizing: border-box;">需要思考的是，如果星皓公司的《三打》运营效果不佳，这种<span style="color: rgb(249, 110, 87); box-sizing: border-box;">大特效+大演员+弱剧本的港式东方魔幻片，到底还能走多远？</span></section><section style="box-sizing: border-box;">《大圣归来》之后，下一个大火的西游题材会是谁呢？</section><section style="box-sizing: border-box;">《三打白骨精》？大火已经概率不大了。今何在的《悟空传》、周星驰的《西游降妖篇》，又会如何？</section><p style="box-sizing: border-box;">永远的西游，永远的梦。我们的猴男神永远与我们同在。</p><p style="box-sizing: border-box;"><br  /></p><section style="line-height: 25.6px; white-space: normal; max-width: 100%; box-sizing: border-box; background-color: rgb(255, 255, 255);"><section class="Powered-by-XIUMI V5" style="max-width: 100%; box-sizing: border-box;"><section style="margin-top: 0.5em; margin-bottom: 0.5em; overflow: hidden; max-width: 100%; box-sizing: border-box;"><section style="margin-bottom: -1em; max-width: 100%; box-sizing: border-box;"><section style="text-align: center; max-width: 100%; box-sizing: border-box;"><img width="1" src="20.jpg" data-ratio="1" data-w="16" data-type="png" style="vertical-align: middle; float: left; box-sizing: border-box; width: 1em !important; visibility: visible !important; background-color: rgb(249, 110, 87);"  /><img width="1" src="21.jpg" data-ratio="0.9375" data-w="16" data-type="png" style="vertical-align: middle; box-sizing: border-box; width: 1em !important; visibility: visible !important; background-color: rgb(249, 110, 87);"  /><img width="1" src="22.jpg" data-ratio="1" data-w="16" data-type="png" style="vertical-align: middle; float: right; box-sizing: border-box; width: 1em !important; visibility: visible !important; background-color: rgb(249, 110, 87);"  /></section><section style="margin-top: -0.8em; width: 670px; vertical-align: top; display: inline-block; max-width: 100%; box-sizing: border-box;"><section style="width: 301.5px; border-top-color: rgb(249, 110, 87); border-top-width: 1px; border-top-style: solid; float: left; max-width: 100%; box-sizing: border-box;"></section><section style="width: 301.5px; border-top-color: rgb(249, 110, 87); border-top-width: 1px; border-top-style: solid; float: right; max-width: 100%; box-sizing: border-box;"></section></section><section style="margin-top: -1.5em; padding-right: 0.5em; padding-left: 0.5em; width: 670px; line-height: 1.3em; max-width: 100%; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="max-width: 100%; box-sizing: border-box;"><section style="max-width: 100%; box-sizing: border-box;"><section style="text-align: center; color: rgb(249, 110, 87); max-width: 100%; box-sizing: border-box;"><section style="max-width: 100%; box-sizing: border-box;">本文为原创文章</section><section style="max-width: 100%; box-sizing: border-box;">转载请注明：影视大数据</section></section></section></section></section><section style="max-width: 100%; box-sizing: border-box;"><img width="1" src="23.jpg" data-ratio="1" data-w="16" data-type="png" style="vertical-align: middle; float: left; box-sizing: border-box; width: 1em !important; visibility: visible !important; background-color: rgb(249, 110, 87);"  /><img width="1" src="24.jpg" data-ratio="1" data-w="16" data-type="png" style="vertical-align: middle; float: right; box-sizing: border-box; width: 1em !important; visibility: visible !important; background-color: rgb(249, 110, 87);"  /></section><section style="margin-top: -1.6em; width: 670px; text-align: center; vertical-align: top; display: inline-block; max-width: 100%; box-sizing: border-box;"><section style="width: 656.59px; vertical-align: middle; border-top-color: rgb(249, 110, 87); border-top-width: 1px; border-top-style: solid; display: inline-block; max-width: 100%; box-sizing: border-box;"></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="max-width: 100%; box-sizing: border-box;"><section style="margin-top: 10px; margin-bottom: 10px; padding-left: 2.6em; max-width: 100%; box-sizing: border-box;"><section style="margin-top: 2.1em; margin-bottom: -2.1em; text-align: center; color: rgb(160, 174, 25); max-width: 100%; box-sizing: border-box;"><section style="max-width: 100%; box-sizing: border-box;">公众号ID：ysdsju</section></section><section style="max-width: 100%; box-sizing: border-box;"><section style="margin-bottom: -2.6em; margin-left: -2.6em; border-radius: 100%; border: 3px solid rgb(0, 127, 168); border-image-source: none; width: 5em; height: 5em; vertical-align: bottom; display: inline-block; max-width: 100%; box-sizing: border-box; background-image: url(&quot;http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB1Qxp82jBnviaNVLkwiah0MrafoVDX3FUkHAwCqEV0TPZOYkeHsWhphXZiccicibwxjkpiaxR83dE8UTN0w/0?wx_fmt=jpeg&quot;); background-size: 154.05%; background-position: 50% 40%; background-repeat: no-repeat;"><img width="100%" src="25.jpg" data-ratio="1" data-w="74" data-type="jpeg" style="width: 74px; vertical-align: middle; box-sizing: border-box; opacity: 0; visibility: visible !important;"  /></section></section><section style="max-width: 100%; box-sizing: border-box; background-color: rgb(255, 203, 45);"><section style="padding-top: 10px; padding-right: 10px; padding-left: 10px; width: 628.4px; max-width: 100%; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="max-width: 100%; box-sizing: border-box;"><section style="max-width: 100%; box-sizing: border-box;"><section style="text-align: center; font-size: 24px; max-width: 100%; box-sizing: border-box;"><section style="max-width: 100%; box-sizing: border-box;">影视大数据</section></section></section></section></section><section style="padding-top: 10px; padding-bottom: 10px; padding-left: 10px; width: 388.34px; vertical-align: top; display: inline-block; max-width: 100%; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="max-width: 100%; box-sizing: border-box;"><section style="max-width: 100%; box-sizing: border-box;"><section style="text-align: right; max-width: 100%; box-sizing: border-box;"><section style="max-width: 100%; box-sizing: border-box;">影视数据分析</section><section style="max-width: 100%; box-sizing: border-box;">新媒体分析<br style="max-width: 100%; box-sizing: border-box;"  /></section><section style="max-width: 100%; box-sizing: border-box;">娱乐数据分析<br style="max-width: 100%; box-sizing: border-box;"  /></section><section style="max-width: 100%; box-sizing: border-box;">艺人趋势分析</section></section></section></section></section><section style="padding-right: 10px; padding-left: 10px; width: 240.04px; vertical-align: top; display: inline-block; max-width: 100%; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="max-width: 100%; box-sizing: border-box;"><section style="margin-top: 10px; margin-bottom: 10px; text-align: center; max-width: 100%; box-sizing: border-box;"><img src="26.jpg" data-ratio="1.0227272727272727" data-w="220" data-type="jpeg" style="vertical-align: middle; box-sizing: border-box; width: auto !important; visibility: visible !important;"  /></section></section></section></section></section></section></section><p style="line-height: 25.6px; white-space: normal; background-color: rgb(255, 255, 255);"><br  /></p><p style="box-sizing: border-box;"><br  /></p></section></section></section></section>
+                    </div>
+                    <script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+                        var first_sceen__time = (+new Date());
+
+                        if ("" == 1 && document.getElementById('js_content'))
+                            document.getElementById('js_content').addEventListener("selectstart",function(e){ e.preventDefault(); });
+
+                                        (function(){
+                            if (navigator.userAgent.indexOf("WindowsWechat") != -1){
+                                var link = document.createElement('link');
+                                var head = document.getElementsByTagName('head')[0];
+                                link.rel = 'stylesheet';
+                                link.type = 'text/css';
+                                link.href = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+                                head.appendChild(link);
+                            }
+                        })();
+                    </script>
+                    
+                    
+                                        
+                                        
+                                        <div class="rich_media_tool" id="js_toobar3">
+                                                                    <div id="js_read_area3" class="media_tool_meta tips_global meta_primary" style="display:none;">阅读 <span id="readNum3"></span></div>
+
+                        <span style="display:none;" class="media_tool_meta meta_primary tips_global meta_praise" id="like3">
+                            <i class="icon_praise_gray"></i><span class="praise_num" id="likeNum3"></span>
+                        </span>
+
+                        <a id="js_report_article3" style="display:none;" class="media_tool_meta tips_global meta_extra" href="javascript:void(0);">投诉</a>
+
+                    </div>
+
+
+
+                                    </div>
+
+                <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none">
+
+                </div>
+
+                <div class="rich_media_area_extra">
+
+                    
+                                        <div class="mpda_bottom_container" id="js_bottom_ad_area">
+                        
+                    </div>
+                                        
+                    <div id="js_iframetest" style="display:none;"></div>
+                                        
+                                    </div>
+               
+            </div>
+            <div id="js_pc_qr_code" class="qr_code_pc_outer" style="display:none;">
+                <div class="qr_code_pc_inner">
+                    <div class="qr_code_pc">
+                        <img id="js_pc_qr_code_img" class="qr_code_pc_img">
+                        <p>微信扫一扫<br>关注该公众号</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+        
+        <script nonce="MOONSAFE_NONCE_1469070959">
+    var __DEBUGINFO = {
+        debug_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/debug/console2ca724.js",
+        safe_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/moonsafe2f3e84.js",
+        res_list: []
+    };
+</script>
+        
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+    var not_in_mm_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm2c9cd6.css";
+    var windowwx_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+    var article_improve_combo_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_combo2eb52b.css";
+    var tid = "";
+    var aid = "";
+    var clientversion = "";
+    var appuin = "MzIwMDMzNzcyNQ=="||"";
+
+    var source = "";
+    var scene = 75;
+
+    var itemidx = "";
+
+    var _copyright_stat = "0";
+    var _ori_article_type = "";
+
+    var nickname = "影视大数据";
+    var appmsg_type = "6";
+    var ct = "1454117897";
+    var publish_time = "2016-01-30" || "";
+    var user_name = "gh_be98065513d1";
+    var user_name_new = "";
+    var fakeid   = "";
+    var version   = "";
+    var is_limit_user   = "0";
+    var round_head_img = "http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB1ELW0LLqCnHxgRo96Ecvib9G6oXkCfm0icJskpbiazjOGxnBrs1dsFw4PGXyBSMslaUSw6icyojeonicw/0?wx_fmt=png";
+    var msg_title = "分析&nbsp;|&nbsp;三打白骨精要来了!西游题材还能打吗？";
+    var msg_desc = "西游确实有很适合影视化的元素&nbsp;,反复影视化之后，还会在今年春节档期取得成功吗？";
+    var msg_cdn_url = "http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB294ib0Kjxv3zrAJ5k2z1ic072iamu0zCIPzGibpJTxCNuibwlP3rGYx6tibTZibWj0kaNNVUOm1ibRO5icvJA/0?wx_fmt=jpeg";
+    var msg_link = "http://mp.weixin.qq.com/s?__biz=MzIwMDMzNzcyNQ==&amp;tempkey=gyQQfLwRAKAyf48QSIPFRsnKkzDaJ%2B8x7mgL2tmkHMqrtVoufiESb2K2RQDE1nDSDuzhAzjl7FSlisKCo8OWz%2BSCaeJpWHdztVXIGzwbhd0%2FmqqET2YbQmQ9CxBiF6MS%2Fa1exP4FHraZ49vFF%2FprPA%3D%3D&amp;#rd";
+    var user_uin = "0"*1;
+    var msg_source_url = '';
+    var img_format = 'jpeg';
+    var srcid = '';
+    var req_id = '2812zheCGf0fBfyeutwxvhxU';
+    var networkType;
+    var appmsgid = '' || '401684606'|| "401684606";
+    var comment_id = "0" * 1;
+    var comment_enabled = "" * 1;
+    var is_need_reward = "0" * 1;
+    var is_https_res = ("" * 1) && (location.protocol == "https:");
+
+    var devicetype = "";
+    var source_encode_biz = "";
+    // var source_username = "";
+    // var profile_ext_signature = "" || "";
+    var reprint_ticket = "";
+    var source_mid = "";
+    var source_idx = "";
+
+    var show_comment = "";
+    var __appmsgCgiData = {
+        can_use_page : "0"*1,
+        is_wxg_stuff_uin : "0"*1,
+        card_pos : "",
+        copyright_stat : "0",
+        source_biz : "",
+        hd_head_img : "http://wx.qlogo.cn/mmhead/Q3auHgzwzM4opw9CLZiawE4Tyg6sDaa6PJaxzAsxfSARfVRIvXEPHfw/0"||(window.location.protocol+"//"+window.location.host + "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_rumor_link.2x264e76.jpg")
+    };
+    var _empty_v = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/pages/voice/empty26f1f1.mp3";
+
+    var copyright_stat = "0" * 1;
+
+    var pay_fee = "" * 1;
+    var pay_timestamp = "";
+    var need_pay = "" * 1;
+
+    var need_report_cost = "0" * 1;
+    var use_tx_video_player = "0" * 1;
+
+    var friend_read_source = "" || "";
+    var friend_read_version = "" || "";
+    var friend_read_class_id = "" || "";
+
+    var is_only_read = "1" * 1;
+    var read_num = "2" * 1;
+    var like_num = "0" * 1;
+    var liked = "false" == 'true' ? true : false;
+    var is_temp_url = "gyQQfLwRAKAyf48QSIPFRsnKkzDaJ&amp;nbsp;8x7mgL2tmkHMqrtVoufiESb2K2RQDE1nDSDuzhAzjl7FSlisKCo8OWz&amp;nbsp;SCaeJpWHdztVXIGzwbhd0/mqqET2YbQmQ9CxBiF6MSE/MzrKafvJM1QKHqZ5MTdw==" ? 1 : 0;
+    var send_time = "1469680368";
+      var icon_emotion_switch = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch.2x2f1273.png";
+      var icon_emotion_switch_active = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch_active.2x2f1273.png";
+      var icon_loading_white = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif";
+      var icon_audio_unread = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_unread26f1f1.png";
+      var icon_qqmusic_default = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_default.2x26f1f1.png";
+      var icon_qqmusic_source = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_source263724.png";
+
+    var topic_default_img = 'http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/topic/pic_book_thumb.2x2e4987.png';
+
+    // 话题卡片相关数据
+    var wxtopic = {
+    isbn : ""    // 书籍
+    };
+
+    var svr_time = "1469680430" * 1;
+
+        window.wxtoken = "";
+        window.__moon_initcallback = function(){
+        if(!!window.__initCatch){
+            window.__initCatch({
+                idkey : 27613,
+                startKey : 0,
+                limit : 128,
+                badjsId: 43,
+                reportOpt : {
+                    uin : uin,
+                    biz : biz,
+                    mid : mid,
+                    idx : idx,
+                    sn  : sn
+                },
+                extInfo : {
+                    network_rate : 0.01    //网络错误采样率
+                }
+            });
+        }
+    }
+    </script>
+
+        <script nonce="MOONSAFE_NONCE_1469070959">window.__moon_mainjs = 'appmsg/index.js';window.moon_map = {"appmsg/emotion/caret.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/caret278965.js","biz_wap/jsapi/cardticket.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/cardticket275627.js","appmsg/emotion/map.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/map278965.js","appmsg/emotion/textarea.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/textarea27cdc5.js","appmsg/emotion/nav.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/nav278965.js","appmsg/emotion/common.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/common278965.js","appmsg/emotion/slide.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/slide2a9cd9.js","pages/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/report2eec22.js","pages/music_player.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_player2b674b.js","pages/loadscript.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/loadscript2c9cd6.js","appmsg/emotion/dom.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/dom2f3ac3.js","appmsg/my_comment_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/my_comment_tpl.html2f3f48.js","biz_wap/utils/hashrouter.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/hashrouter2805ea.js","a/gotoappdetail.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/gotoappdetail2f33fb.js","a/ios.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/ios275627.js","a/android.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/android2c5484.js","a/profile.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/profile2f1750.js","a/mpshop.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/mpshop2f1750.js","a/card.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/card2f1750.js","biz_wap/utils/position.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/position2f1750.js","appmsg/a_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_report2f1750.js","biz_common/utils/respTypes.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/respTypes2c57d0.js","appmsg/cmt_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cmt_tpl.html2a2c13.js","sougou/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/a_tpl.html2c6e7c.js","appmsg/emotion/emotion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/emotion2f3ac3.js","biz_common/utils/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/report275627.js","biz_common/utils/huatuo.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/huatuo293afc.js","biz_common/utils/cookie.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/cookie275627.js","appmsg/topic_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/topic_tpl.html2f2e72.js","pages/voice_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_tpl.html2f2e72.js","pages/voice_component.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_component2f3ac3.js","pages/qqmusic_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/qqmusic_tpl.html2f2e72.js","new_video/ctl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/ctl2d441f.js","biz_common/utils/monitor.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/monitor2a30ee.js","biz_common/utils/spin.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/spin275627.js","biz_wap/jsapi/pay.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/pay275627.js","appmsg/reward_entry.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/reward_entry2f3ac3.js","appmsg/comment.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment2f3ac3.js","appmsg/like.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/like2eb52b.js","appmsg/a.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a2f1750.js","pages/version4video.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/version4video2e481d.js","rt/appmsg/getappmsgext.rt.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/rt/appmsg/getappmsgext.rt2c21f6.js","biz_wap/utils/storage.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage2a74ac.js","biz_common/tmpl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl2b3578.js","appmsg/img_copyright_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/img_copyright_tpl.html2a2c13.js","appmsg/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_tpl.html2f1750.js","biz_common/ui/imgonepx.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/ui/imgonepx275627.js","biz_common/dom/attr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr275627.js","biz_wap/utils/ajax.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax2f1747.js","biz_common/utils/string/html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html29f4e9.js","sougou/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/index2c7543.js","biz_wap/safe/mutation_observer_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/mutation_observer_report2f3e84.js","appmsg/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report2f3ac3.js","appmsg/report_and_source.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report_and_source2f1274.js","appmsg/page_pos.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/page_pos2ec4b2.js","appmsg/cdn_speed_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_speed_report2c57d0.js","appmsg/wxtopic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/wxtopic2f2e72.js","appmsg/voice.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voice2f2e72.js","appmsg/qqmusic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/qqmusic2f2e72.js","appmsg/iframe.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/iframe2ef6ca.js","appmsg/review_image.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/review_image2d0cfe.js","appmsg/outer_link.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/outer_link275627.js","biz_wap/jsapi/core.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core2f0d45.js","biz_common/dom/event.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event275627.js","appmsg/copyright_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/copyright_report2ec4b2.js","appmsg/cache.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cache2a74ac.js","appmsg/pay_for_reading.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/pay_for_reading2c5484.js","appmsg/async.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/async2f1750.js","biz_wap/ui/lazyload_img.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/ui/lazyload_img2ec99a.js","biz_common/log/jserr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/log/jserr2805ea.js","appmsg/share.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share2ec548.js","biz_wap/utils/mmversion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion2f1d97.js","appmsg/cdn_img_lib.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_img_lib275627.js","biz_common/utils/url/parse.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/url/parse2dd7fd.js","biz_common/dom/class.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/class275627.js","biz_wap/utils/device.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/device2b3aae.js","biz_wap/jsapi/a8key.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/a8key2a30ee.js","appmsg/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/index2f3f48.js"};</script><script nonce="MOONSAFE_NONCE_1469070959" async type="text/javascript" src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/moon2f0d45.js"></script>
+  <script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+    var real_show_page_time = +new Date();
+    if (!!window.addEventListener){
+        window.addEventListener("load", function(){
+            window.onload_endtime = +new Date();
+        });
+    }
+    
+  </script>
+
+    </body>
+</html>
+<!--tailTrap<body></body><head></head><html></html>-->
+ 

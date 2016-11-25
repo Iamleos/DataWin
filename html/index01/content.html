@@ -1,0 +1,624 @@
+
+<!DOCTYPE html>
+<!--headTrap<body></body><head></head><html></html>--><html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+<script nonce="" type="text/javascript">
+window.__nonce_str = ""
+if (window.__nonce_str && location.href.indexOf("http://")==0 && Math.random() <= 0.1) {
+	window.__moonsafe_csp_offset || (window.__moonsafe_csp_offset = 18);
+	document.write('<meta http-equiv="Content-Security-Policy" content="script-src \'unsafe-inline\' \'unsafe-eval\' *.qq.com *.weishi.com'+(window.__nonce_str ? ' \'nonce-' + window.__nonce_str + "\'":"")+ '">');
+        
+}
+</script>
+        <script nonce="" type="text/javascript">
+            window.logs = {
+                pagetime: {}
+            };
+            window.logs.pagetime['html_begin'] = (+new Date());
+        </script>
+        
+<script type="text/javascript"> 
+
+    var page_begintime = (+new Date());
+
+    var biz = ""||"MzIwMDMzNzcyNQ==";
+    var sn = "" || ""|| "cf94009890e6b3e9a7953e4a239c3b12";
+    var mid = "" || ""|| "2650620696";
+    var idx = "" || "" || "1";
+
+    //辟谣需求
+    var is_rumor = ""*1;
+    var norumor = ""*1;
+    if (!!is_rumor&&!norumor){
+      if (!document.referrer || document.referrer.indexOf("mp.weixin.qq.com/mp/rumor") == -1){
+        location.href = "http://mp.weixin.qq.com/mp/rumor?action=info&__biz=" + biz + "&mid=" + mid + "&idx=" + idx + "&sn=" + sn + "#wechat_redirect";
+      }
+    }
+
+    //原创需求，需要跳转到中间页
+    /*
+    var copyrightInfo = {
+        display_source : ""*1,
+        nocopyrightsource : ""*1
+    };
+    if (!!copyrightInfo.display_source&&!copyrightInfo.nocopyrightsource){
+      if (!document.referrer || document.referrer.indexOf("mp.weixin.qq.com/mp/reprint") == -1){
+        location.href = "http://mp.weixin.qq.com/mp/reprint?action=info&__biz=" + biz + "&mid=" + mid + "&idx=" + idx + "&sn=" + sn + "#wechat_redirect";
+      }
+    }*/
+</script>
+<script type="text/javascript">
+var MutationObserver = window.WebKitMutationObserver||window.MutationObserver||window.MozMutationObserver;
+var isDangerSrc = function(src) {
+    if(src) {
+        var host = src.match(/http(?:s)?:\/\/([^\/]+?)(\/|$)/);
+        if(host && !/qq\.com(\:8080)?$/.test(host[1]) && !/weishi\.com$/.test(host[1])) {
+            return true;
+        }
+    }
+    return false;
+}
+var ishttp = location.href.indexOf("http://")==0;
+if (ishttp && typeof MutationObserver === 'function' && location.host == 'mp.weixin.qq.com') {
+    window.__observer_data = {count:0, exec_time: 0, list:[]};
+    window.__observer = new MutationObserver(function(mutations) {
+        // 统计触发的次数
+        window.__observer_data.count++;
+        var begin = new Date(), deleteNodes = [];
+        mutations.forEach(function(mutation) {
+            var nodes = mutation.addedNodes;
+            for (var i = 0; i < nodes.length; i++) {
+                var node = nodes[i];
+
+                if (node.tagName === 'SCRIPT') {
+                    var scriptSrc = node.src;
+                    if(isDangerSrc(scriptSrc)) {
+                        window.__observer_data.list.push(scriptSrc);
+                        deleteNodes.push(node);
+                    }
+                
+                }
+            }
+        });
+        for(var i=0; i<deleteNodes.length; i++) {
+            var node = deleteNodes[i];
+            node.parentNode.removeChild(node);
+        }
+        window.__observer_data.exec_time += (new Date() - begin);
+    });
+    window.__observer.observe(document, {subtree: true, childList: true});
+}
+(function() {
+    if (Math.random()<0.01 && ishttp && HTMLScriptElement.prototype.__lookupSetter__ && typeof Object.defineProperty !== "undefined") {
+        window.__danger_src = {xmlhttprequest:[], script_src: [], script_setAttribute: []};
+        var t = "$"+Math.random();
+        // script.src
+        HTMLScriptElement.prototype.__old_method_script_src = HTMLScriptElement.prototype.__lookupSetter__ ('src');
+        HTMLScriptElement.prototype.__defineSetter__ ('src', function(url) {
+            if (url && isDangerSrc(url)) {
+                // console.log("src:"+url);
+                window.__danger_src.script_src.push(url);
+            }
+            this.__old_method_script_src(url);
+        });
+        var element_setAttribute_method = "element_setAttribute"+t;
+        Object.defineProperty(Element.prototype, element_setAttribute_method, {
+            value: Element.prototype.setAttribute,
+            enumerable: false
+        });
+        Element.prototype.setAttribute = function(name, url) {
+            if (this.tagName == 'SCRIPT' && name == 'src' && isDangerSrc(url)) {
+                // console.log("setAttr:"+url);
+                window.__danger_src.script_setAttribute.push(url);
+            }
+            this[element_setAttribute_method](name, url);
+        };
+    }
+})();
+</script>
+
+        <link rel="dns-prefetch" href="//res.wx.qq.com">
+<link rel="dns-prefetch" href="//mmbiz.qpic.cn">
+<link rel="shortcut icon" type="image/x-icon" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+<script nonce="" type="text/javascript">
+    String.prototype.html = function(encode) {
+        var replace =["&#39;", "'", "&quot;", '"', "&nbsp;", " ", "&gt;", ">", "&lt;", "<", "&amp;", "&", "&yen;", "¥"];
+        if (encode) {
+            replace.reverse();
+        }
+        for (var i=0,str=this;i< replace.length;i+= 2) {
+             str=str.replace(new RegExp(replace[i],'g'),replace[i+1]);
+        }
+        return str;
+    };
+
+    window.isInWeixinApp = function() {
+        return /MicroMessenger/.test(navigator.userAgent);
+    };
+
+    window.getQueryFromURL = function(url) {
+        url = url || 'http://qq.com/s?a=b#rd'; 
+        var query = url.split('?')[1].split('#')[0].split('&'),
+            params = {};
+        for (var i=0; i<query.length; i++) {
+            var arg = query[i].split('=');
+            params[arg[0]] = arg[1];
+        }
+        if (params['pass_ticket']) {
+        	params['pass_ticket'] = encodeURIComponent(params['pass_ticket'].html(false).html(false).replace(/\s/g,"+"));
+        }
+        return params;
+    };
+
+    (function() {
+	    var params = getQueryFromURL(location.href);
+        window.uin = params['uin'] || '';
+        window.key = params['key'] || '';
+        window.wxtoken = params['wxtoken'] || '';
+        window.pass_ticket = params['pass_ticket'] || '';
+    })();
+
+</script>
+
+        <title>晨读|​霍建华林心如陈晓陈妍希同日宣布婚讯；乐视云启动A+融资，投前估值超70亿人民币</title>
+        
+<link rel="stylesheet" type="text/css" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve2eb52b.css">
+<style>
+     
+    </style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_pc2c9cd6.css">
+<![endif]-->
+<script type="text/javascript">
+    document.domain = "qq.com";
+</script>
+
+    </head>
+    <body id="activity-detail" class="zh_CN sougou_body" ontouchstart="">
+        
+    <script type="text/javascript">
+        var write_sceen_time = (+new Date());
+    </script>
+    
+    <div id="js_cmt_mine" class="discuss_container editing access" style="display:none;">
+        <div class="discuss_container_inner">
+            <h2 class="rich_media_title">晨读|​霍建华林心如陈晓陈妍希同日宣布婚讯；乐视云启动A+融资，投前估值超70亿人民币</h2>
+            <span id="log"></span>
+            <div class="frm_textarea_box_wrp">
+                <span class="frm_textarea_box">
+                    <textarea id="js_cmt_input" class="frm_textarea" placeholder="留言将由公众号筛选后显示，对所有人可见。"></textarea>
+                    <div class="emotion_tool">
+                        <span class="emotion_switch" style="display:none;"></span>
+                        <span id="js_emotion_switch" class="pic_emotion_switch_wrp">
+                            <img class="pic_default" src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch.2x278965.png" alt="">
+                            <img class="pic_active" src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch_active.2x278965.png" alt="">
+                        </span>
+                        <div class="emotion_panel" id="js_emotion_panel">
+                            <span class="emotion_panel_arrow_wrp" id="js_emotion_panel_arrow_wrp">
+                                <i class="emotion_panel_arrow arrow_out"></i>
+                                <i class="emotion_panel_arrow arrow_in"></i>
+                            </span>
+                            <div class="emotion_list_wrp" id="js_slide_wrapper">
+                                
+                                
+                            </div>
+                            <ul class="emotion_navs" id="js_navbar">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="discuss_btn_wrp"><a id="js_cmt_submit" class="btn btn_primary btn_discuss btn_disabled" href="javascript:;">提交</a></div>
+            <div class="discuss_list_wrp" style="display:none">
+                <div class="rich_tips with_line title_tips discuss_title_line">
+                    <span class="tips">我的留言</span>
+                </div>
+                <ul class="discuss_list" id="js_cmt_mylist"></ul>
+            </div>
+            <div class="rich_tips tips_global loading_tips" id="js_mycmt_loading">
+                <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif" class="rich_icon icon_loading_white" alt="">
+                <span class="tips">加载中</span>
+            </div>
+            <div class="wx_poptips" id="js_cmt_toast" style="display:none;">
+                <img alt="" class="icon_toast" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyMTUxMzkxZS1jYWVhLTRmZTMtYTY2NS0xNTRkNDJiOGQyMWIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTA3QzM2RTg3N0UwMTFFNEIzQURGMTQzNzQzMDAxQTUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTA3QzM2RTc3N0UwMTFFNEIzQURGMTQzNzQzMDAxQTUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NWMyOGVjZTMtNzllZS00ODlhLWIxZTYtYzNmM2RjNzg2YjI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjIxNTEzOTFlLWNhZWEtNGZlMy1hNjY1LTE1NGQ0MmI4ZDIxYiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmvxj1gAAAVrSURBVHja7J15rF1TFMbXk74q1ZKHGlMkJVIhIgg1FH+YEpEQJCKmGBpThRoSs5jVVNrSQUvEEENIhGiiNf9BiERICCFIRbUiDa2qvudbOetF3Tzv7XWGffa55/uS7593977n3vO7e5+199p7v56BgQGh0tcmvAUERREUQVEERREUQVEERREUQVEERREUQVEERREUQVEERREUQVEERVAUQVEERVAUQbVYk+HdvZVG8b5F0xj4RvhouB+eCy8KrdzDJc1RtAX8ILxvx98V1GyCSkN98Cx4z/95/Wn4fj6j6tUEeN4wkFSnw1MJqj5NhBfAuwaUHREUg4lqNMmePVsHll/HFhVfe1t3FwpJI8DXCCquDrCWNN4B6Tb4M3Z98aTPmTvh0YHl18PXw29yZiKejoPvcUD6E74yFBJbVDk6Bb7K8aP/Hb4c/tRzEYIqprPhSxzlf4Uvhb/0Xoig8qnHAJ3lqPMzfDH8XZ4LEpRf2sVdA5/sqPO9Qfop70UJyn+/boaPddT5yrq7VUUvTIVJI7q74MMddXR8NB1eXcYvhBpZm0s2w72/o86HFoKvLau/pYaXzjLMdUJ6y0LwtWV9CIIaXtvA8+G9HHV03u5q+K+yH47U0NoRngPv7KjzHDwTLj0bS1BDazfJJlcnOOostC6ysnCT+q80G/sIvFVgeW09D8FPVT0uoP7VfvAD8NjA8pqmuAN+OcYAjso0RbIZ8DGB5TVNcRO8JMaHY9SXSdfa3eeANJimWBLrA7JFiZwIXye+NMUV8CcxP2SRFjXefok7NRjSGZJlWUPvw2/wtNiQirSoXWyMsR28wR7AzzYM0oXw+Y7yK+CLJGeaoqjyrJSdZJD6Ov4+z5y6NJc0Az7NUecHydIUy+v60KNyQHoM3nKI1y7YCFiq0i7uBvgER52vDdKqWn9djhY1Dn4G3n6Ecqm2rF74dvgoR53S0hQxW9RJAZAGW5bSn58QJA27dQ7uIEedjywEX5NKVxCqsY6y+qA+LxFI4+yZ6oH0trWkNan80jygtIUsc5SflgAsDXgehfdx1KkkTRE76tN+Xue2jnTU0Ru1oIbvpt30bBtKhOp5yaaRkts0lic8V1i6dPcIRx2d/l8Y8XtNNEg7OOo8bl1kmmOKnDsO88CaYzejau0hWZqiL7C83oCH4SeTHvwV2BqqsHRVztSEYOmWF80NeXZT6Hd4KflResE9vCnBOlCyGfDNAstHTVPUDWoQ1t3iW+9WNizvlhfd4aerXd+ThqiMfNR6+9LvOOro5OY5JX2H4+F7HZD+kGzlamMgldWiirQsjcwWFbjmqZJteekJLK9pisvgL6RhKvuciZiwzrWWGapfrPy30kBVcSBIrw0aD3PU0XB6cehntq7rTMf7/2iQlktDVdXJLXlg6VjmiYBn6rWSTRCH6hvJ0hQrpcGq8oidsmHpTP8t8DGO9/vcWt9qabiqPgup1yKyQwvC2tSefZ73SSpNkUJ4PlLorlHZ+446nc8f3fIyywlJhwrTuwVSjBa1ccvSxN0hjjoK5xVrYZMd9V6XbFfgBukixTwGLg8sDam3dZR/wZ6L/dJlin1en8LS+bgpFbz3Ygvzu1J1HKxYNqxGpCmaCEo12rrBorD6LRp8UbpcdR5VWhTW35KlKd6QFqjuM2XzwlpnMxTvSkuUwuG/Xlg6NtPjbT6WFimF/VG6LEvXgn8QGDjMbBukVECFwhpoS+CQatfX2Q1q6H7wENHdrfCr0lKleEB9JyxNneus+VJpsVL9TwI6W65LovWIGl3KtVJaLv7LBwYTFEERFEVQFEERFEVQFEERFEVQFEERFEVQFEERFEVQFEERFFWq/hFgADUMN4RzT6/OAAAAAElFTkSuQmCC">
+                <p class="toast_content">已留言</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="js_article" class="rich_media">
+        
+        <div id="js_top_ad_area" class="top_banner">
+ 
+        </div>
+                
+
+        <div class="rich_media_inner">
+                        <div id="page-content">
+                <div id="img-content" class="rich_media_area_primary">
+                    <h2 class="rich_media_title" id="activity-name">
+                        晨读|​霍建华林心如陈晓陈妍希同日宣布婚讯；乐视云启动A+融资，投前估值超70亿人民币 
+                    </h2>
+                    <div class="rich_media_meta_list">
+                        						                        <em id="post-date" class="rich_media_meta rich_media_meta_text">2016-07-06</em>
+
+                                                <em class="rich_media_meta rich_media_meta_text">DataWin智库</em>
+                                                <a class="rich_media_meta rich_media_meta_link rich_media_meta_nickname" href="javascript:void(0);" id="post-user">影视大数据</a>
+                        <span class="rich_media_meta rich_media_meta_text rich_media_meta_nickname">影视大数据</span>
+
+                        <div id="js_profile_qrcode" class="profile_container" style="display:none;">
+                            <div class="profile_inner">
+                                <strong class="profile_nickname">影视大数据</strong>
+                                <img class="profile_avatar" id="js_profile_qrcode_img" src="" alt="">
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">微信号</label>
+                                <span class="profile_meta_value">ysdsju</span>
+                                </p>
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">功能介绍</label>
+                                <span class="profile_meta_value">影视数据分析评价，微博号@DataWin影视大数据</span>
+                                </p>
+                                
+                            </div>
+                            <span class="profile_arrow_wrp" id="js_profile_arrow_wrp">
+                                <i class="profile_arrow arrow_out"></i>
+                                <i class="profile_arrow arrow_in"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                                                            
+                                                            
+                    
+                    <div class="rich_media_content " id="js_content">
+                        
+
+                        
+                        <section style="line-height: 25.6px; white-space: normal; box-sizing: border-box; background-color: rgb(255, 255, 255);"><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin-top: 10px; margin-bottom: 10px; text-align: center;  box-sizing: border-box; "><img data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB1y5ffJgKD7vnKYNh27gQ5a3icV6K6zPy8ony1NBfnic13zLA2S7TMVKPmAlQZU2N7cL5shwRRvpeuQ/0?wx_fmt=gif" class="" data-type="gif" data-ratio="0.21223021582733814" data-w="" style="box-sizing: border-box; vertical-align: middle;"  /></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><section class="" style="padding-top: 1.1em; box-sizing: border-box;"><section style="width: 556px; display: inline-block; vertical-align: bottom; box-sizing: border-box;"><section class="" style="padding: 0.2em 0.4em; text-align: center; color: rgb(255, 255, 255); box-sizing: border-box; background-color: rgba(28, 64, 205, 0.992157);"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">今日头条</strong></section></section><section style="width: 0px; float: left; border-right-width: 4px; border-right-style: solid; border-right-color: rgba(28, 64, 205, 0.992157); border-top-width: 4px; border-top-style: solid; border-top-color: rgba(28, 64, 205, 0.992157); box-sizing: border-box; border-left-width: 4px !important; border-left-style: solid !important; border-left-color: transparent !important; border-bottom-width: 4px !important; border-bottom-style: solid !important; border-bottom-color: transparent !important;"></section><section style="width: 0px; float: right; border-left-width: 4px; border-left-style: solid; border-left-color: rgba(28, 64, 205, 0.992157); border-top-width: 4px; border-top-style: solid; border-top-color: rgba(28, 64, 205, 0.992157); box-sizing: border-box; border-right-width: 4px !important; border-right-style: solid !important; border-right-color: transparent !important; border-bottom-width: 4px !important; border-bottom-style: solid !important; border-bottom-color: transparent !important;"></section></section><section class="" style="margin-top: -3.5em; margin-right: 8px; margin-left: 8px; padding: 3.5em 10px 10px; border: 1px solid rgba(28, 205, 85, 0.992157); box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="color: rgba(28, 64, 205, 0.992157); box-sizing: border-box;"><strong style="box-sizing: border-box;">乐视云启动A+融资，投前估值超70亿人民币</strong></span><p style="line-height: 25.6px;">7月5日消息，乐视云CEO吴亚洲对外表示，乐视云已正式开放A+轮融资，乐视云商业计划书和相关融资资料已于近日启动。此前吴亚洲曾在采访时表示，A+轮融资的重点是“希望引入多元化的战略及财务投资人”。据了解，乐视云是专注于视频领域的云计算公司，脱胎于乐视网，于2014年1月成立独立公司，目前提供视频云、行业云、共享云、VR云平台以及自助化云平台商业服务，全球拥有680个CDN节点、20Tbps出口带宽，每年实现全年上百万场云直播、每天亿级设备访问。直播和视频行业的爆发正在带动背后云产业的兴起，有预测表示到2020年全球互联网视频将为2015年的4倍，其中消费类互联网视频流量将占消费类互联网流量的82%，商业互联网视频流量将占商业互联网流量的66%。未来围绕视频场景的市场规模将会有飞跃增长，以国内直播行业为例，数据显示截止目前，国内在线直播平台数量已经接近200家，平台用户数量达到2亿人，整个直播市场规模超过90亿元，这对于云计算公司意味着巨大的市场机会。</p><p><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB1y5ffJgKD7vnKYNh27gQ5auLalhDXibpajgeo6HfhYcNwwbWZktfeXiaLAOq9BmwZUKESr1RKc321g/0?wx_fmt=jpeg" data-ratio="0.7335907335907336" data-w="518" style="width: 518px;"  /></p></section></section></section></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin-top: 10px; margin-bottom: 10px; text-align: center;  box-sizing: border-box; "><section class="" style="padding-right: 1em; padding-left: 1em; display: inline-block; box-sizing: border-box;"><span class="" style="padding: 0.3em 0.5em; display: inline-block; border-radius: 0.5em; color: rgb(255, 255, 255); box-sizing: border-box; background-color: rgba(72, 100, 211, 0.992157);"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">舆情热点</strong></section></span></section><section class="" style="margin-top: -1em; padding: 20px 10px 10px; border: 1px solid rgba(28, 205, 85, 0.992157); box-sizing: border-box; background-color: rgb(254, 255, 255);"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="color: rgba(28, 64, 205, 0.992157); box-sizing: border-box;"><strong style="box-sizing: border-box;">《老九门》起番位之争，制片人道歉改片头</strong></span><br  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: left; box-sizing: border-box;"><section style="box-sizing: border-box;">7月4日，《老九门》在电视和网络双平台开播。不过有细心的观众发现，两版剧片头不一样，并且“领衔主演”人员名单也不尽相同——在爱奇艺的片头里，领衔主演是陈伟霆和张艺兴，片尾则是三个人名纵向排列。而在东方卫视的版本里，片头的领衔主演只有陈伟霆一人。不少粉丝开始为了偶像的番位展开争论。有网友表示对两版不同处理不满，两位男主陈伟霆、张艺兴应该同时出现；也有网友表示陈伟霆饰演张启山本就是《老九门》一番。当天晚上，慈文传媒转发了《老九门》制片人韩冰的微博，韩冰在微博里向主演及粉丝道歉，称东方卫视的片头片尾并非最终版本，下周就会更换为跟网络一样的版本，并感谢陈伟霆和张艺兴，称“两位演员同样重要”。粉丝撕番位近来越来越普遍，且常常以粉丝的胜利告终，这是一个值得注意的现象。<img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB1y5ffJgKD7vnKYNh27gQ5aFWPVQKF1YnW4yda2icia5GibhfXP6Mn2ytiaDIAYwx7c8yPNBm6H0x2RlQ/0?wx_fmt=jpeg" data-ratio="1.7771535580524345" data-w="534"  /></section></section></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin-top: 10px; margin-bottom: 10px; text-align: center;  box-sizing: border-box; "><section class="" style="padding-right: 1em; padding-left: 1em; display: inline-block; box-sizing: border-box;"><span class="" style="padding: 0.3em 0.5em; display: inline-block; border-radius: 0.5em; color: rgb(255, 255, 255); box-sizing: border-box; background-color: rgb(95, 156, 239);"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">行业动态</strong></section></span></section><section class="" style="margin-top: -1em; padding: 20px 10px 10px; border: 1px solid rgba(28, 205, 85, 0.992157); box-sizing: border-box; background-color: rgb(254, 255, 255);"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="color: rgb(95, 156, 239); box-sizing: border-box;"><strong style="box-sizing: border-box;">停用好声音?灿星节目换名:名称归属还未定</strong></span><br style="box-sizing: border-box;"  />“好声音”版权之争继续。早前，唐德公司向北京知识产权法院提出诉前保全申请，责令灿星公司停止使用包含有“中国好声音”、“ The Voice of China”字样的节目名称及相关商标标识宣传和制作歌唱类真人秀节目，之后，灿星方做出复议申请，要求撤销裁定。7月4日，北京知识产权法院就“中国好声音”节目名称归属案正式开庭结案，结案结果：维持（唐德）原有诉前保全。也就是说，灿星不能以“中国好声音”为名制作节目。这个结果会对即将于7月15日开播的灿星版《2016中国好声音》有何影响？灿星宣传总监陆伟表示目前暂时使用的名字是“2016好声音”，客观讲，“中国好声音”的归属权目前仍没有完全确定，需要之后进一步司法诉讼解决。</section><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;"><strong style="color: rgb(95, 156, 239); line-height: 1.6; box-sizing: border-box;">完美环球设立20亿规模泛娱乐并购基金</strong><br style="box-sizing: border-box;"  />完美世界集团旗下囊括游戏和影视两大核心业务的A股上市公司完美环球股份有限公司近日成立了“石河子市君毅云扬股权投资有限合伙企业”基金。基金以后将着重服务公司打造“全球IP工厂”整体的战略，通过并购基金获取资金的渠道，补充资金来源方式，扩展对外投资中公司资金决策的张力，优化公司资金结构，提高公司资金使用效率。同时，完美环球称正在筹划购买资产事项，目前该事项正在进行研究和论证。为了维护广大投资者利益，公司自2016年7月5日起停牌，公司预计在10个交易日披露相关事项后复牌，或相关事项经论证属于重大资产重组事项则转入重大资产重组程序。完美环球此前已经成立多期并购投资基金，通过“内生+外延”完善产品业务线。公司目前已经设立了影视投资基金，主要围绕海外影视制作及国内创新热点业态，投资方式包括直接股权、项目投资等。</section><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;"><span style="color: rgb(95, 156, 239); box-sizing: border-box;"><strong style="box-sizing: border-box;">英雄互娱投资1.4亿设立众合在线保险公司</strong></span>&nbsp;<br style="box-sizing: border-box;"  />7月5日，英雄互娱科技股份有限公司发布最新对外投资公告，公告对外公布了公司拟与贵州盘江投资控股有限公司以及其它10家发起人共同出资设立参股公司众合在线财产保险股份有限公司的具体细节。根据公告内容，众合在线注册资本为人民币10亿元，其中英雄互娱以货币出资的方式投资人民币1.4亿元，认购众合在线1.4亿股股份，占出资总额的14%，为众合在线的第二大股东。此次投资领域涉及到新领域保险业，主要为互联网保险相关产业，公告披露，此次投资对提高英雄互娱游戏玩家账户安全，提升公司服务质量，优化公司产业布局将产生积极影响。</section></section></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin-top: 10px; margin-bottom: 10px; text-align: center;  box-sizing: border-box; "><section class="" style="padding-right: 1em; padding-left: 1em; display: inline-block; box-sizing: border-box;"><span class="" style="padding: 0.3em 0.5em; display: inline-block; border-radius: 0.5em; color: rgb(255, 255, 255); box-sizing: border-box; background-color: rgb(23, 112, 221);"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">影视动态</strong></section></span></section><section class="" style="margin-top: -1em; padding: 20px 10px 10px; border: 1px solid rgba(28, 205, 85, 0.992157); box-sizing: border-box; background-color: rgb(254, 255, 255);"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: justify; box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="color: rgb(23, 112, 221); box-sizing: border-box;"><strong style="box-sizing: border-box;">电影定档</strong></span></section><section style="box-sizing: border-box;"><span style="color: rgb(23, 112, 221); box-sizing: border-box;">1. </span>《我们诞生在中国》定档8月12日登陆全国院线，周迅作为这则故事的“说书人”和“国宝”守护者，将用声音带领观众走进童话世界。</section><section style="box-sizing: border-box;">&nbsp;</section><section style="box-sizing: border-box;"><span style="color: rgb(23, 112, 221); box-sizing: border-box;"><strong style="box-sizing: border-box;">电影开机、杀青、上映</strong></span></section><section style="box-sizing: border-box;"><span style="color: rgb(72, 98, 198); box-sizing: border-box;">1. </span>电影《拆弹专家》在香港杀青，该片是由邱礼涛执导，刘德华监制并主演的警匪动作电影。</section><section style="box-sizing: border-box;"><br  /></section><section style="box-sizing: border-box;"></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;"><span style="color: rgb(23, 112, 221); box-sizing: border-box;">IP项目运营</span></strong></section><section style="box-sizing: border-box;"><span style="color: rgb(23, 112, 221); line-height: 1.6; box-sizing: border-box;">1.&nbsp;</span>电视剧《九州天空城》曝光定档片花，7月20日登陆江苏卫视周播剧场上星播出。该剧由张若昀、关晓彤主演。</section><section style="box-sizing: border-box;"><span style="color: rgb(23, 112, 221); line-height: 1.6; box-sizing: border-box;">2.&nbsp;</span>网剧《十宗罪》宣布定档7月20日优酷开播，同时发布严阵以待”版预告片和“共击罪恶”版主海报，充满了破朔迷离的色彩，悬疑感强劲十足。该剧由李东勋执导，张翰、曾志伟、于小彤、张雅玫主演。</section><section style="box-sizing: border-box;"><span style="color: rgb(23, 112, 221); line-height: 1.6; box-sizing: border-box;">3.&nbsp;</span>根据绿亦歌小说改编,张嘉辉担任监制,王芸和饶俊编剧的影版《岁月忽已暮》近日全面杀青。其中姜潮饰演顾辛烈，张子枫饰演姜河，宋威龙饰演江海。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;"><span style="color: rgb(23, 112, 221); box-sizing: border-box;">其它消息</span></strong></section><p style="box-sizing: border-box;"><span style="color: rgb(23, 112, 221); line-height: 1.6; box-sizing: border-box;">1. </span><span style="line-height: 1.6; white-space: pre-wrap; background-color: rgb(255, 255, 255);">由张家振制片、冯德伦执导的新版《纵横四海》迎来新进展，据外媒报道，影片将于今夏在捷克开拍。除了早前报道的舒淇担纲女主角之外，男演员人选也终于曝光，由让·雷诺搭档刘德华。</span></p><p style="box-sizing: border-box;"><span style="line-height: 1.6; white-space: pre-wrap; background-color: rgb(255, 255, 255);"><span style="color:#1770dd">2. </span></span><span style="line-height: 1.6; white-space: pre-wrap; background-color: rgb(255, 255, 255);">《海贼王2016剧场版》将于近期引进中国内地，具体上映时间待定。影片由上海炫动引进，出品方东映动画株式会社将会在7月7日开幕的第12届中国国际动漫游戏博览会（CCG EXPO）上正式宣布该消息。</span></p><section style="box-sizing: border-box;"><span style="color: rgb(72, 98, 198); box-sizing: border-box;"></span><span style="color: rgb(72, 98, 198); box-sizing: border-box;"></span></section><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;"></span></section></section></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin-top: 10px; margin-bottom: 10px; text-align: center;  box-sizing: border-box; "><section class="" style="padding-right: 1em; padding-left: 1em; display: inline-block; box-sizing: border-box;"><span class="" style="padding: 0.3em 0.5em; display: inline-block; border-radius: 0.5em; color: rgb(255, 255, 255); box-sizing: border-box; background-color: rgb(52, 172, 210);"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">艺人事业动态</strong></section></span></section><section class="" style="margin-top: -1em; padding: 20px 10px 10px; border: 1px solid rgba(28, 205, 85, 0.992157); box-sizing: border-box; background-color: rgb(254, 255, 255);"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: justify; box-sizing: border-box;"><section style="color: rgb(17, 17, 16); box-sizing: border-box;"><span style="color: rgb(52, 172, 210); box-sizing: border-box;">1.&nbsp;</span><span style="color: rgb(46, 183, 182); box-sizing: border-box;"><span style="color: rgb(46, 47, 50); box-sizing: border-box;">陈晓昨日发微博晒结婚证宣布婚讯及新婚妻子陈妍希怀孕的消息，陈妍希随后甜蜜转发。</span></span></section><section style="color: rgb(17, 17, 16); box-sizing: border-box;"><span style="color: rgb(46, 183, 182); box-sizing: border-box;">2.&nbsp;</span><span style="color: rgb(46, 47, 50); box-sizing: border-box;">在不久前的520宣布恋爱的霍建华和林心如昨日通过各自工作室微博宣布了即将结婚的好消息。霍建华爸爸透漏下个月两人将举办婚礼。</span></section><section style="color: rgb(17, 17, 16); box-sizing: border-box;"><span style="color: rgb(81, 173, 174); box-sizing: border-box;">3.&nbsp;</span>井柏然成为宝马MINI CLUBMAN首位形象大使，并成为<span style="line-height: 25.6px;">鬼冢喜八郎开创日本著名运动品牌鬼冢虎（OnitsukaTiger）在订购会官宣的品牌大使。</span></section><section style="color: rgb(17, 17, 16); box-sizing: border-box;"><span style="color: rgb(81, 173, 174); box-sizing: border-box;">4.&nbsp;</span>杨幂昨日亮相北京杜莎夫人蜡像馆为自己蜡像揭幕。</section><p style="color: rgb(17, 17, 16); box-sizing: border-box;"><span style="color: rgb(81, 173, 174); box-sizing: border-box;">5.&nbsp;</span>韩庚登上《时装男士》七月封面。</p><p style="box-sizing: border-box;"><span style="color:#51adae">6. </span>关晓彤被北京电影学院录取，文化课专业双第一。</p><p style="box-sizing: border-box;"><span style="color:#51adae">7. </span><span style="line-height: 25.6px;">秦舒培遭客户解约索赔百万。秦舒培收到律师函，客户指责其担任形象大使期间婚内出轨，有损品牌形象，要求解约并让秦舒培方通过媒体以及书面形式公开发表声明消除负面影响，并索赔百万元赔偿金。</span></p></section></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin-top: 10px; margin-bottom: 10px; text-align: center;  box-sizing: border-box; "><section class="" style="padding-right: 1em; padding-left: 1em; display: inline-block; box-sizing: border-box;"><span class="" style="padding: 0.3em 0.5em; display: inline-block; border-radius: 0.5em; color: rgb(255, 255, 255); box-sizing: border-box; background-color: rgb(71, 193, 168);"><section style="box-sizing: border-box;"><strong style="box-sizing: border-box;">一周市场传闻</strong></section></span></section><section class="" style="margin-top: -1em; padding: 20px 10px 10px; border: 1px solid rgba(28, 205, 85, 0.992157); box-sizing: border-box; background-color: rgb(254, 255, 255);"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style="   box-sizing: border-box; "><section class="" style="text-align: justify; box-sizing: border-box;"><section style="color: rgb(17, 17, 16); box-sizing: border-box;"><span style="line-height: 25.6px; color: rgb(46, 183, 182); box-sizing: border-box;">1.&nbsp;</span><span style="line-height: 25.6px; color: rgb(46, 47, 50); box-sizing: border-box;">电视剧《凰权》刘诗诗主演</span><br  /></section><p style="color: rgb(17, 17, 16); box-sizing: border-box;"><span style="color: rgb(81, 173, 174); box-sizing: border-box;">2.&nbsp;</span>陈可辛新电影邀约白百何or舒淇，男主是75后。</p><p style="box-sizing: border-box;"><span style="color:#51adae">3. </span>青春励志成长校园剧《我们的十六岁》王俊凯，王源，易烊千玺，薛之谦，预计9月开机</p></section></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin-top: 10px; margin-bottom: 10px;  box-sizing: border-box; "><section class="" style="padding: 5px 10px; width: 556px; display: inline-block; text-align: center; font-size: 12px; box-sizing: border-box; background-color: rgb(254, 255, 255);"><section style="box-sizing: border-box;">以上内容来自互联网，由DataWin智库整理</section></section><img data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB1y5ffJgKD7vnKYNh27gQ5absmB7sl37obcUEIOhNJuQWfzmxooianjz382dLee9rfuxeRjdD01jhg/0?wx_fmt=png" class="" data-type="png" data-ratio="0.09712230215827339" data-w="" style="margin-top: -1em; float: left; width: 556px; box-sizing: border-box; vertical-align: middle;"  /><section class="" style="clear: both; box-sizing: border-box;"></section></section></section><section class="Powered-by-XIUMI V5" style="   box-sizing: border-box; "><section class="" style=" margin-top: 0.5em; margin-bottom: 1em;  box-sizing: border-box; "><section class="" style="padding: 8px; border: 1px solid rgb(71, 193, 168); box-shadow: rgb(226, 226, 226) 0px 16px 1px -13px; line-height: 1; box-sizing: border-box;"><img data-src="http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB1y5ffJgKD7vnKYNh27gQ5aU0Ph8WbEAORCROGQ2rjZ6Ihia7a5HgoVYOjiaaTqgf0UBLAjkj45fzOA/0?wx_fmt=png" class="" data-type="png" data-ratio="0.9583333333333334" data-w="96" style="float: left; width: 6em; box-sizing: border-box; vertical-align: middle;"  /><section style="text-align: right; box-sizing: border-box;"><section class="" style="margin-right: 0.5em; display: inline-block; vertical-align: top; width: 0.8em; font-size: 12.8px; color: rgb(120, 124, 129); box-sizing: border-box;"><strong style="box-sizing: border-box;">艺人趋势分析</strong></section><section class="" style="margin-right: 0.5em; display: inline-block; vertical-align: top; width: 0.8em; font-size: 12.8px; color: rgb(120, 124, 129); box-sizing: border-box;"><section style="font-size: 13.0001px; box-sizing: border-box;"><strong style="box-sizing: border-box;">娱乐数据分析</strong></section></section><section class="" style="margin-right: 0.5em; display: inline-block; vertical-align: top; width: 0.8em; font-size: 12.8px; color: rgb(120, 124, 129); box-sizing: border-box;"><section style="font-size: 13.0001px; box-sizing: border-box;"><strong style="box-sizing: border-box;">新媒体分析<br style="box-sizing: border-box;"  /></strong></section></section><section class="" style="margin-right: 0.5em; display: inline-block; vertical-align: top; width: 0.8em; font-size: 12.8px; color: rgb(120, 124, 129); box-sizing: border-box;"><section style="font-size: 13.0001px; box-sizing: border-box;"><strong style="box-sizing: border-box;">影视数据分析</strong></section></section><section class="" style="margin-right: 1em; display: inline-block; vertical-align: top; width: 1.2em; text-align: center; font-size: 19.2px; color: rgb(255, 255, 255); box-sizing: border-box; background-color: rgb(71, 193, 168);"><section style="font-size: 19px; box-sizing: border-box;"><strong style="box-sizing: border-box;">业务内容</strong></section></section><section class="" style="display: inline-block; vertical-align: top; width: 1.5em; font-size: 24px; box-sizing: border-box;"><section style="box-sizing: border-box;">影视大数据<br style="box-sizing: border-box;"  /></section></section></section><section class="" style="padding: 0.5em; box-sizing: border-box;"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style=" padding-top: 0.2em; padding-bottom: 0.2em;  box-sizing: border-box; "><section class="" style="font-size: 12.8px; box-sizing: border-box;"><section style="font-size: 13.0001px; box-sizing: border-box;">微信号：ysdsju</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style=" padding-top: 0.2em; padding-bottom: 0.2em;  box-sizing: border-box; "><section class="" style="font-size: 12.8px; color: rgba(10, 10, 10, 0.992157); box-sizing: border-box;"><section style="font-size: 13.0001px; box-sizing: border-box;">QQ：149817396</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section class="" style=" padding-top: 0.2em; padding-bottom: 0.2em;  box-sizing: border-box; "><section class="" style="font-size: 12.8px; color: rgba(10, 10, 10, 0.992157); box-sizing: border-box;"><section style="box-sizing: border-box;">Weibo：@德塔文数据</section></section></section></section></section></section></section></section></section><p><br  /></p>
+                    </div>
+                    <script type="text/javascript">
+                        var first_sceen__time = (+new Date());
+
+                        if ("" == 1 && document.getElementById('js_content'))
+                            document.getElementById('js_content').addEventListener("selectstart",function(e){ e.preventDefault(); });
+
+                                        (function(){
+                            if (navigator.userAgent.indexOf("WindowsWechat") != -1){
+                                var link = document.createElement('link');
+                                var head = document.getElementsByTagName('head')[0];
+                                link.rel = 'stylesheet';
+                                link.type = 'text/css';
+                                link.href = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+                                head.appendChild(link);
+                            }
+                        })();
+                    </script>
+                    <link rel="stylesheet" type="text/css" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_combo2eb52b.css">
+                    
+                    
+                                        
+                                        
+                                        <div class="rich_media_tool" id="js_toobar3">
+                                                                    <div id="js_read_area3" class="media_tool_meta tips_global meta_primary" style="display:none;">阅读 <span id="readNum3"></span></div>
+
+                        <span style="display:none;" class="media_tool_meta meta_primary tips_global meta_praise" id="like3">
+                            <i class="icon_praise_gray"></i><span class="praise_num" id="likeNum3"></span>
+                        </span>
+
+                        <a id="js_report_article3" style="display:none;" class="media_tool_meta tips_global meta_extra" href="javascript:void(0);">投诉</a>
+
+                    </div>
+
+
+
+                                        <div class="rich_media_tool" id="js_sg_bar">
+                         <a class="media_tool_meta meta_primary"  href="" target="_blank">阅读原文</a>
+                         <div class="media_tool_meta tips_global meta_primary">阅读 <span><span id="sg_readNum3"></span></span></div>
+
+                         <span class="media_tool_meta meta_primary tips_global meta_praise">
+                            <i class="icon_praise_gray"></i><span class="praise_num"><span class="praise_num" id="sg_likeNum3"></span>
+                        </span>
+                    </div>
+                                    </div>
+
+                <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none">
+
+                </div>
+
+                <div class="rich_media_area_extra">
+
+                    
+                                        <div class="mpda_bottom_container" id="js_bottom_ad_area">
+                        
+                    </div>
+                                        
+                    <div id="js_iframetest" style="display:none;"></div>
+                                        <div class="rich_media_extra" id="sg_cmt_area">
+                        <div class="discuss_container" id="sg_cmt_main" style="display:none">
+                            <div class="rich_tips with_line title_tips discuss_title_line">
+                                <span class="tips">精选留言</span>
+                            </div>
+                            <ul class="discuss_list" id="sg_cmt_list"></ul>
+                        </div>
+
+                        <div class="rich_tips tips_global loading_tips" id="sg_cmt_loading">
+                            <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif" class="rich_icon icon_loading_white" alt="">
+                            <span class="tips">加载中</span>
+                        </div>
+
+                        <div class="rich_tips with_line tips_global" id="sg_cmt_statement" style="display:none">
+                            <span class="tips">以上留言由公众号筛选后显示</span>
+                        </div>
+
+                        <p class="rich_split_tips tc" id="sg_cmt_qa" style="display:none;">
+                            <a href="http://kf.qq.com/touch/sappfaq/150211YfyMVj150313qmMbyi.html?scene_id=kf264">
+                                了解留言功能详情
+                            </a>
+                        </p>
+                    </div>
+                                        
+                                        <div class="rich_media_extra" id="js_cmt_area" style="display:none">
+
+                        <div class="discuss_container" id="js_cmt_main" style="display:none">
+                            <div class="rich_tips with_line title_tips discuss_title_line">
+                                <span class="tips">精选留言</span>
+                            </div>
+                            <p class="tips_global tc title_bottom_tips" id="js_cmt_nofans1" style="display:none;">该文章作者已设置需关注才可以留言</p>
+                            <p class="discuss_icon_tips title_bottom_tips tr" id="js_cmt_addbtn1" style="display:none">
+                                
+                                                                <a href="#comment">写留言<img class="icon_edit" src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_edit25ded2.png" alt=""></a>
+                                                            </p>
+                            <ul class="discuss_list" id="js_cmt_list"></ul>
+                        </div>
+
+
+                        <div class="tips_global rich_split_tips tc" id="js_cmt_nofans2" style="display:none;">
+                            该文章作者已设置需关注才可以留言
+                        </div>
+
+                        <p class="discuss_icon_tips rich_split_tips tr" id="js_cmt_addbtn2" style="display:none">
+                            
+                                                        <a href="#comment">写留言<img class="icon_edit" src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_edit25ded2.png" alt=""></a>
+                                                    </p>
+
+                        <p class="rich_split_tips tc tips_global" id="js_cmt_tips" style="display:none;"></p>
+
+
+                        <div class="rich_tips tips_global loading_tips" id="js_cmt_loading">
+                            <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif" class="rich_icon icon_loading_white" alt="">
+                            <span class="tips">加载中</span>
+                        </div>
+
+                        <div class="rich_tips with_line tips_global" id="js_cmt_statement" style="display:none">
+                            <span class="tips">以上留言由公众号筛选后显示</span>
+                        </div>
+
+                        <p class="rich_split_tips tc" id="js_cmt_qa" style="display:none;">
+                            <a href="http://kf.qq.com/touch/sappfaq/150211YfyMVj150313qmMbyi.html?scene_id=kf264">
+                                了解留言功能详情
+                            </a>
+                        </p>
+
+                    </div>
+                                    </div>
+               
+            </div>
+            <div id="js_pc_qr_code" class="qr_code_pc_outer" style="display:none;">
+                <div class="qr_code_pc_inner">
+                    <div class="qr_code_pc">
+                        <img id="js_pc_qr_code_img" class="qr_code_pc_img">
+                        <p>微信扫一扫<br>关注该公众号</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+        
+        <script nonce="">
+    var __DEBUGINFO = {
+        debug_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/debug/console2ca724.js",
+        safe_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/moonsafe2ea69c.js",
+        res_list: []
+    };
+</script>
+        <script>window.moon_map = {"appmsg/emotion/caret.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/caret278965.js","biz_wap/jsapi/cardticket.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/cardticket275627.js","appmsg/emotion/map.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/map278965.js","appmsg/emotion/textarea.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/textarea27cdc5.js","appmsg/emotion/nav.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/nav278965.js","appmsg/emotion/common.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/common278965.js","appmsg/emotion/slide.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/slide2a9cd9.js","pages/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/report2e9114.js","pages/music_player.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_player2b674b.js","pages/loadscript.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/loadscript2c9cd6.js","appmsg/emotion/dom.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/dom278965.js","biz_wap/utils/hashrouter.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/hashrouter2805ea.js","a/gotoappdetail.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/gotoappdetail2ea0e6.js","a/ios.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/ios275627.js","a/android.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/android2c5484.js","a/profile.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/profile2ea0e6.js","a/mpshop.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/mpshop2ea0e6.js","a/card.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/card2ea0e6.js","biz_wap/utils/position.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/position29b1f8.js","appmsg/a_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_report2e2d45.js","biz_common/utils/respTypes.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/respTypes2c57d0.js","appmsg/cmt_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cmt_tpl.html2a2c13.js","sougou/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/a_tpl.html2c6e7c.js","appmsg/emotion/emotion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/emotion2a9cd9.js","biz_common/utils/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/report275627.js","biz_common/utils/huatuo.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/huatuo293afc.js","biz_common/utils/cookie.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/cookie275627.js","pages/voice_component.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_component2c5484.js","new_video/ctl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/ctl2d441f.js","biz_common/utils/monitor.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/monitor2a30ee.js","biz_common/utils/spin.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/spin275627.js","biz_wap/jsapi/pay.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/pay275627.js","appmsg/reward_entry.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/reward_entry2e21d7.js","appmsg/comment.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment2ec548.js","appmsg/like.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/like2eb52b.js","appmsg/a.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a2ea76c.js","pages/version4video.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/version4video2e481d.js","rt/appmsg/getappmsgext.rt.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/rt/appmsg/getappmsgext.rt2c21f6.js","biz_wap/utils/storage.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage2a74ac.js","biz_common/tmpl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl2b3578.js","appmsg/img_copyright_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/img_copyright_tpl.html2a2c13.js","appmsg/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_tpl.html2d1390.js","biz_common/ui/imgonepx.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/ui/imgonepx275627.js","biz_common/dom/attr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr275627.js","biz_wap/utils/ajax.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax2c7a90.js","biz_common/utils/string/html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html29f4e9.js","sougou/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/index2c7543.js","biz_wap/safe/mutation_observer_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/mutation_observer_report2d5cb8.js","appmsg/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report2ecee3.js","appmsg/report_and_source.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report_and_source2c0ff9.js","appmsg/page_pos.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/page_pos2ec4b2.js","appmsg/cdn_speed_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_speed_report2c57d0.js","appmsg/wxtopic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/wxtopic2e4987.js","appmsg/voice.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voice2ab8bd.js","appmsg/qqmusic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/qqmusic2ab8bd.js","appmsg/iframe.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/iframe2e69b8.js","appmsg/review_image.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/review_image2d0cfe.js","appmsg/outer_link.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/outer_link275627.js","biz_wap/jsapi/core.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core2c30c1.js","biz_common/dom/event.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event275627.js","appmsg/copyright_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/copyright_report2ec4b2.js","appmsg/cache.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cache2a74ac.js","appmsg/pay_for_reading.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/pay_for_reading2c5484.js","appmsg/async.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/async2ec84f.js","biz_wap/ui/lazyload_img.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/ui/lazyload_img2ec99a.js","biz_common/log/jserr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/log/jserr2805ea.js","appmsg/share.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share2ec548.js","biz_wap/utils/mmversion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion275627.js","appmsg/cdn_img_lib.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_img_lib275627.js","biz_common/utils/url/parse.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/url/parse2dd7fd.js","biz_common/dom/class.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/class275627.js","biz_wap/utils/device.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/device2b3aae.js","biz_wap/jsapi/a8key.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/a8key2a30ee.js","appmsg/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/index2ec99a.js"};</script><script type="text/javascript" src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/moon2ee9f1.js"></script>
+    <script id="topic_tpl" type="text/html">        
+        <span class="db topic_wrp">
+            <span class="topic_thumb" style="background-image:url({img_url});"></span>
+            <span class="topic_content">
+                <strong class="topic_title">{title}</strong>
+                <span class="topic_desc">{author}</span>
+                <span class="topic_info">
+                    <span class="topic_info_extra"><span class="icon_topic"></span>话题</span>
+                    <span class="topic_info_primary">相关文章{msg_num}篇</span>
+                </span>
+            </span>
+        </span>
+    </script>
+    <script id="voice_tpl" type="text/html">        
+        <span id="voice_main_<#=voiceid#>_<#=posIndex#>" class="db audio_area <#if(!musicSupport){#> unsupport<#}#>">
+            <span class="tc tips_global unsupport_tips" <#if(show_not_support!==true){#>style="display:none;"<#}#>>
+            当前浏览器不支持播放音乐或语音，请在微信或其他浏览器中播放            </span>
+            <span class="audio_wrp db">
+                <span id="voice_play_<#=voiceid#>_<#=posIndex#>" class="audio_play_area">
+                    <i class="icon_audio_default"></i>
+                    <i class="icon_audio_playing"></i>
+                    <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_unread26f1f1.png" alt="" class="pic_audio_default">
+                </span>
+                <span class="audio_length tips_global"><#=duration_str#></span>
+                <span class="db audio_info_area">
+                    <strong class="db audio_title"><#=title#></strong>
+                    <span class="audio_source tips_global"><#if(window.nickname){#>来自<#=window.nickname#><#}#></span>
+                </span>
+                <span id="voice_progress_<#=voiceid#>_<#=posIndex#>" class="progress_bar" style="width:0px;"></span>
+            </span>
+        </span>
+    </script>
+
+    <script id="qqmusic_tpl" type="text/html">        
+        <span id="qqmusic_main_<#=comment_id#>_<#=posIndex#>" class="db qqmusic_area <#if(!musicSupport){#> unsupport<#}#>">
+            <span class="tc tips_global unsupport_tips" <#if(show_not_support!==true){#>style="display:none;"<#}#>>
+            当前浏览器不支持播放音乐或语音，请在微信或其他浏览器中播放            </span>
+            <span class="db qqmusic_wrp">
+                <span class="db qqmusic_bd">
+                    <span id="qqmusic_play_<#=musicid#>_<#=posIndex#>" class="play_area">
+                        <i class="icon_qqmusic_switch"></i>
+                        <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_default.2x26f1f1.png" alt="" class="pic_qqmusic_default">
+                        <img src="<#=music_img#>" data-autourl="<#=audiourl#>" data-musicid="<#=musicid#>" class="qqmusic_thumb" alt="">
+                    </span>
+                                        <a id="qqmusic_home_<#=musicid#>_<#=posIndex#>" href="javascript:void(0);" class="access_area">
+                        <span class="qqmusic_songname"><#=music_name#></span>
+                        <span class="qqmusic_singername"><#=singer#></span>
+                        <span class="qqmusic_source"><img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_source263724.png" alt=""></span>
+                    </a>
+                </span>
+            </span>       
+        </span>
+    </script>
+  <script type="text/javascript">
+      var not_in_mm_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm2c9cd6.css";
+      var windowwx_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+      var tid = "";
+      var aid = "";
+      var clientversion = "0";
+      var appuin = ""||"MzIwMDMzNzcyNQ==";
+
+      var source = "";
+      var scene = 75;
+      
+      var itemidx = "";
+
+      var _copyright_stat = "0";
+      var _ori_article_type = "";
+
+      var nickname = "影视大数据";
+      var appmsg_type = "9";
+      var ct = "1467759306";
+      var publish_time = "2016-07-06" || "";
+      var user_name = "gh_be98065513d1";
+      var user_name_new = "";
+      var fakeid   = "";
+      var version   = "";
+      var is_limit_user   = "0";
+      var round_head_img = "http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB1ELW0LLqCnHxgRo96Ecvib9G6oXkCfm0icJskpbiazjOGxnBrs1dsFw4PGXyBSMslaUSw6icyojeonicw/0?wx_fmt=png";
+      var msg_title = "晨读|​霍建华林心如陈晓陈妍希同日宣布婚讯；乐视云启动A+融资，投前估值超70亿人民币";
+      var msg_desc = "7月5日：乐视云启动A+融资，投前估值超70亿人民币；霍建华林心如、陈晓陈妍希同日宣布婚讯；刘德华拆弹专家杀青……";
+      var msg_cdn_url = "http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB1y5ffJgKD7vnKYNh27gQ5auLalhDXibpajgeo6HfhYcNwwbWZktfeXiaLAOq9BmwZUKESr1RKc321g/0?wx_fmt=jpeg";
+      var msg_link = "http://mp.weixin.qq.com/s?__biz=MzIwMDMzNzcyNQ==&amp;mid=2650620696&amp;idx=1&amp;sn=cf94009890e6b3e9a7953e4a239c3b12#rd";
+      var user_uin = "0"*1;
+      var msg_source_url = '';
+      var img_format = 'jpeg';
+      var srcid = '';
+      var req_id = '0611t25vvvcx9uIAuvSv05Ma';
+      var networkType;
+      var appmsgid = '' || ''|| "2650620696";
+      var comment_id = "4096329415" * 1;
+      var comment_enabled = "" * 1;
+      var is_need_reward = "0" * 1;
+      var is_https_res = ("" * 1) && (location.protocol == "https:");
+
+      var devicetype = "";
+      var source_encode_biz = "";
+      // var source_username = "";
+      // var profile_ext_signature = "" || "";
+      var reprint_ticket = "";
+      var source_mid = "";
+      var source_idx = "";
+
+      var show_comment = "";
+      var __appmsgCgiData = {
+            can_use_page : "0"*1,
+            is_wxg_stuff_uin : "0"*1,
+            card_pos : "",
+            copyright_stat : "0",
+            source_biz : "",
+            hd_head_img : "http://wx.qlogo.cn/mmhead/Q3auHgzwzM4opw9CLZiawE4Tyg6sDaa6PJaxzAsxfSARfVRIvXEPHfw/0"||(window.location.protocol+"//"+window.location.host + "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_rumor_link.2x264e76.jpg")
+      };
+      var _empty_v = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/pages/voice/empty26f1f1.mp3";
+
+      var copyright_stat = "0" * 1;
+
+      var pay_fee = "" * 1;
+      var pay_timestamp = "";
+      var need_pay = "" * 1;
+
+      var need_report_cost = "0" * 1;
+      var use_tx_video_player = "0" * 1;
+
+      var friend_read_source = "" || "";
+      var friend_read_version = "" || "";
+      var friend_read_class_id = "" || "";
+
+      var is_only_read = "1" * 1;
+      var read_num = "" * 1;
+      var like_num = "" * 1;
+      var liked = "" == 'true' ? true : false;
+      var is_temp_url = "" ? 1 : 0;
+      var send_time = "";
+
+      var topic_default_img = 'http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/topic/pic_book_thumb.2x2e4987.png';
+
+      // 话题卡片相关数据
+      var wxtopic = {
+        isbn : ""    // 书籍
+      };
+
+      var svr_time = "1467776461" * 1;
+      
+            window.wxtoken = "";
+          if(!!window.__initCatch){
+        window.__initCatch({
+            idkey : 27613,
+            startKey : 0,
+            limit : 128,
+            reportOpt : {
+                uin : uin,
+                biz : biz,
+                mid : mid,
+                idx : idx,
+                sn  : sn
+            },
+            extInfo : {
+                network_rate : 0.01    //网络错误采样率
+            }
+        });
+    }
+  </script>
+  <script type="text/javascript">
+    var real_show_page_time = +new Date();
+    if (!!window.addEventListener){
+        window.addEventListener("load", function(){
+            window.onload_endtime = +new Date();
+        });
+    }
+            window.isSg=true;
+        window.sg_qr_code="/rr?timestamp=1467776461&src=3&ver=1&signature=XWFvuxi46Wkql0*nOkhaRsccu2huqnTLiu6SSeXXhihKtX-5kP0DgYDEP8BIJRyp1ZvfNYA9Zud2vgkR-oHgyjHReqmyzW-1kAnlEeGdVnA=";
+        window.sg_data={
+            src:"3",
+            ver:"1",
+            timestamp:"1467776459",
+            signature:"klXJOxeTckRJX4-ySnquIZHnJrcHRhFfN8ye9CixXnXWh-KQwB6ZaLtBouSPCsAiUB-qFl9sF2borE88z8FzoK5stTBfWKN0SQgi0amhwrExwXVOerOJMo-qTQ44i9QhEqdYMVUjVmHu66f7oC1PKKCmtMPo8EJFyPPNCJpns3Y="
+        }
+          seajs.use('appmsg/index.js');
+  </script>
+
+    </body>
+</html>
+<!--tailTrap<body></body><head></head><html></html>-->
+ 

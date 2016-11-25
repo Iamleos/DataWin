@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" >
+	<script>
+	function displayResult()
+	{
+		var table=document.getElementById("myTable");
+		var rowNum=table.rows.length;
+		var row=table.insertRow(rowNum-3);
+		var cell1=row.insertCell(0);
+		var cell2=row.insertCell(1);
+		//从第1个select开始算
+		var sel="<select name='select"+(rowNum-7)+"' id='select"+(rowNum-7)+"'><option value='1'>艺人贴吧</option><option value='2'>电影吧</option><option value='3'>豆瓣八组</option><option value='4'>豆瓣分</option><option value='5'>格瓦拉分</option><option value='6'>猫眼票房简报</option><option value='7'>猫眼黄金排片</option><option value='8'>猫眼排片</option><option value='9'>猫眼票房粗报</option><option value='10'>猫眼评分</option><option value='11'>天涯</option><option value='12'>晋江兔区</option><option value='13'>艺恩票房</option><option value='14'>友谊吧</option><option value='15'>娱乐圈吧</option><option value='16'>专资办票房</option></select>";
+		cell1.innerHTML=sel;
+		var file="<input type='file'  name ='file' id ='"+(rowNum-7)+"' onchange='rename(this.id)'/>" 
+		cell2.innerHTML=file;
+	}
+	function rename(x)
+	{
+		var selected="select"+document.getElementById(x).id;
+		var  myselect=document.getElementById(selected);
+		
+		var index=myselect.selectedIndex ; 
+		var value=myselect.options[index].value;
+		document.getElementById(x).name="file"+value;
+
+		
+	}
+
+	var xmlHttp;
+	function createXMLHttpRequest()
+	{
+		if(window.ActiveXObject)
+		{
+			xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		else if(window.XMLHttpRequest)
+		{
+			xmlHttp = new XMLHttpRequest();
+		}
+	}
+	function Trim(str)
+         { 
+             return str.replace(/(^\s*)|(\s*$)/g, ""); 
+     }
+	function startRequest()
+	{
+		createXMLHttpRequest();
+		try
+		{   
+		    var url="checkstatus.php";
+			//window.alert(url);
+			xmlHttp.onreadystatechange = handleStateChange;
+			xmlHttp.open("GET",url, true);
+			xmlHttp.send(null);
+		}
+		catch(exception)
+		{
+			alert("xmlHttp Fail");
+		}
+	}
+	function handleStateChange()
+	{
+		if(xmlHttp.readyState == 4)
+		{
+			if (xmlHttp.status == 200 || xmlHttp.status == 0)
+			{
+					var result = xmlHttp.responseText;
+					window.alert(result);
+					var json = eval("("+ result +")");
+					//window.alert(json.yirenba.name);
+					var str="<tr><td>数据库表</td><td>状态</td><td>系统指定入库时间</td></tr>";
+					str+="<tr><td>"+json.yirenba.name+"</td><td>"+json.yirenba.status+"</td><td>"+json.yirenba.systime+"</td></tr>";
+					str+="<tr><td>"+json.dianyingba.name+"</td><td>"+json.dianyingba.status+"</td><td>"+json.dianyingba.systime+"</td></tr>";
+					str+="<tr><td>"+json.doubanbazu.name+"</td><td>"+json.doubanbazu.status+"</td><td>"+json.doubanbazu.systime+"</td></tr>";
+					str+="<tr><td>"+json.doubanfen.name+"</td><td>"+json.doubanfen.status+"</td><td>"+json.doubanfen.systime+"</td></tr>";
+					str+="<tr><td>"+json.gewalafen.name+"</td><td>"+json.gewalafen.status+"</td><td>"+json.gewalafen.systime+"</td></tr>";
+					str+="<tr><td>"+json.mpiaofangjianbao.name+"</td><td>"+json.mpiaofangjianbao.status+"</td><td>"+json.mpiaofangjianbao.systime+"</td></tr>";
+					str+="<tr><td>"+json.maoyanhuangjinpaipian.name+"</td><td>"+json.maoyanhuangjinpaipian.status+"</td><td>"+json.maoyanhuangjinpaipian.systime+"</td></tr>";
+					str+="<tr><td>"+json.maoyanpaipian.name+"</td><td>"+json.maoyanpaipian.status+"</td><td>"+json.maoyanpaipian.systime+"</td></tr>";
+					str+="<tr><td>"+json.maoyanpiaofang.name+"</td><td>"+json.maoyanpiaofang.status+"</td><td>"+json.maoyanpiaofang.systime+"</td></tr>";
+					str+="<tr><td>"+json.maoyanfen.name+"</td><td>"+json.maoyanfen.status+"</td><td>"+json.maoyanfen.systime+"</td></tr>";
+					str+="<tr><td>"+json.tianya.name+"</td><td>"+json.tianya.status+"</td><td>"+json.tianya.systime+"</td></tr>";
+					str+="<tr><td>"+json.jinjiangtuqu.name+"</td><td>"+json.jinjiangtuqu.status+"</td><td>"+json.jinjiangtuqu.systime+"</td></tr>";
+					str+="<tr><td>"+json.enyipiaofang.name+"</td><td>"+json.enyipiaofang.status+"</td><td>"+json.enyipiaofang.systime+"</td></tr>";
+					str+="<tr><td>"+json.zpiaofang.name+"</td><td>"+json.zpiaofang.status+"</td><td>"+json.zpiaofang.systime+"</td></tr>";
+					str+="<tr><td>"+json.yuleba.name+"</td><td>"+json.yuleba.status+"</td><td>"+json.yuleba.systime+"</td></tr>";
+					str+="<tr><td>"+json.youyiba.name+"</td><td>"+json.youyiba.status+"</td><td>"+json.youyiba.systime+"</td></tr>";
+
+					//window.alert(str);
+					var data=document.getElementById("status_tab");
+					data.innerHTML=str;
+
+					
+			}
+		}
+	}
+	</script>
+	
+	<style type="text/css">
+	body,div{
+		padding:0px;
+		margin:0px;
+	}
+	body{text-align:center} 
+	#upload{background-color:#c0c0c0;
+	        
+			width:1000px;
+			margin:0 auto;
+			padding:10px;
+           }
+	#myTable{
+			
+			margin:0 auto;
+			padding:10px;
+
+			}
+
+	</style>
+</head>
+<body  onload="startRequest()">
+<div id="upload"  >
+	
+
+	<table id="status_tab"  align="center" style="width:400px;border:1px solid #000;">
+		
+	</table>
+
+	
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+		<table id="myTable" >
+			<tr>
+				<td style="text-align:right;"><label for="file">百度指数:</label></td>
+				<td><input type="file" name="baidu" id="baidu" /> </td>
+			</tr>
+			<tr>
+				<td><label for="file">百度媒体数:</label></td>
+				<td><input type="file" name="baidumeiti" id="baidumeiti" /> </td>
+			</tr>
+			<tr>
+				<td style="text-align:right;"><label for="file">360指数:</label></td>
+				<td><input type="file" name="qihu" id="qihu" /> </td>
+			</tr>
+			<tr>
+				<td style="text-align:right;"><label for="file">微指数整体:</label></td>
+				<td><input type="file" name="weizhishuzhengti" id="weizhishuzhengti" /> </td>
+			</tr>
+			<tr>
+				<td style="text-align:right;"><label for="file">微指数移动:</label></td>
+				<td><input type="file" name="weizhishuyidong" id="weizhishuyidong" /> </td>
+			</tr>
+
+			<tr>
+				<td style="text-align:right;">用户名:</td>
+				<td style="text-align:left;"><input type="text" name="user" id="user" />  </td>
+			</tr>
+			<tr>
+				<td style="text-align:right;"><label for="file">密码:</label></td>
+				<td style="text-align:left;"><input type="password" name="password" id="pswd" /> </td>
+			</tr>
+			
+			<tr>
+				<td style="text-align:right;"><input type="submit" name="submit" value="上传"  /></td>
+				<td style="text-align:left;"><button type="button" onclick="displayResult()">继续添加</button></td>
+				
+			</tr>
+		</table>
+		
+    </form>
+</div>
+
+</body>
+</html>

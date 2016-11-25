@@ -1,0 +1,331 @@
+﻿<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<script src='http://www.ichartjs.com/ichart.latest.min.js'></script>
+<script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
+<script type='text/javascript'>
+
+//截取中文字符串的长度
+function cutstr(str, len) {
+        var str_length = 0;
+        var str_len = 0;
+        str_cut = new String();
+        str_len = str.length;
+        for (var i = 0; i < str_len; i++) {
+            a = str.charAt(i);
+            str_length++;
+            if (escape(a).length > 4) {
+                //中文字符的长度经编码之后大于4  
+                str_length++;
+            }
+            str_cut = str_cut.concat(a);
+            if (str_length >= len) {
+                str_cut = str_cut.concat("");
+                return str_cut;
+            }
+        }
+        //如果给定字符串小于指定长度，则返回源字符串；  
+        if (str_length < len) {
+            return str;
+        }
+   }
+function createdata(){
+	
+	$.get("./php/filmdaily.php",function(data){
+		 var json=JSON.parse(data);
+		 var tb_title=json.title;
+		 var tb_sub_title=json.sub_title;
+		 var data_pflist=json.data_pf;
+		 
+		 var color_arr=new Array("#5087c9","#f58608","#9d9e9b","#f5a020","#4365f0","#4cb551","#19287d","#cf2908","#f7cb39","#825410","#f5378f");
+		 var data_pf = new Array();
+		 for(var i=0;i<data_pflist.length;i++)
+		 {
+			var filmname=cutstr(data_pflist[i]['name'],18);
+			var pf=data_pflist[i]['dypf'];
+			var filmcolor=color_arr[i];
+			var obj={name:filmname,value:pf,color:filmcolor};
+			data_pf.push(obj);
+		
+		 }
+		 
+		 var data_pfzblist=json.data_pfzb;
+		 var data_pfzb = new Array();
+		 for(var i=0;i<data_pfzblist.length;i++)
+		 {
+			var filmname=cutstr(data_pfzblist[i]['name'],20);
+			var pfzb=data_pfzblist[i]['pfzb'];
+			var filmcolor=color_arr[i];
+			var obj={name:filmname,value:pfzb,color:filmcolor};
+			data_pfzb.push(obj);
+			
+		
+		 }
+		 
+		 var data_ppzblist=json.data_ppzb;
+		 var data_ppzb = new Array();
+		 for(var i=0;i<data_ppzblist.length;i++)
+		 {
+			var filmname=cutstr(data_ppzblist[i]['name'],20);
+			var ppzb=data_ppzblist[i]['ppzb'];
+			var filmcolor=color_arr[i];
+			var obj={name:filmname,value:ppzb,color:filmcolor};
+			data_ppzb.push(obj);
+			
+		
+		 }
+		
+		
+		 
+		 $(function(){
+			  var chart = iChart.create({
+					render:"ichart-render",
+					width:800,
+					height:500,
+					animation:true,
+					background_color:"#fefefe",
+					gradient:false,
+					color_factor:0.2,
+					border:{
+						  color:"#f5ab23",
+						  width:1
+					},
+					align:"right",
+					offsetx:-10,
+					offsety:0,
+					sub_option:{
+						  border:{
+								color:"#BCBCBC",
+								width:0
+						  },
+						  label:{
+								fontweight:500,
+								fontsize:11,
+								color:"#4572a7",
+								sign:"square",
+								sign_size:12,
+								border:{
+									  color:"#BCBCBC",
+									  width:1
+								},
+								background_color:"#fefefe"
+						  }
+					},
+					shadow:true,
+					shadow_color:"#666666",
+					shadow_blur:2,
+					showpercent:false,
+					column_width:"70%",
+					bar_height:"70%",
+					radius:"90%",
+					title:{
+						  text:tb_title,
+						  color:"#424242",
+						  fontsize:24,
+						  font:"微软雅黑",
+						  textAlign:"center",
+						  height:36,
+						  offsetx:0,
+						  offsety:5,
+						 
+					},
+					subtitle:{
+						  text:tb_sub_title,
+						  color:"#403f3f",
+						  fontsize:18,
+						  font:"微软雅黑",
+						  textAlign:"center",
+						  height:36,
+						  offsetx:0,
+						  offsety:20,
+						  background_color:"#FFD700"
+					},
+					footnote:{
+						  text:"",
+						  color:"#111111",
+						  fontsize:12,
+						  font:"微软雅黑",
+						  textAlign:"right",
+						  height:20,
+						  offsetx:0,
+						  offsety:0
+					},
+					legend:{
+						  enable:false,
+						  background_color:"#fefefe",
+						  color:"#333333",
+						  fontsize:12,
+						  border:{
+								color:"#BCBCBC",
+								width:1
+						  },
+						  column:1,
+						  align:"right",
+						  valign:"center",
+						  offsetx:0,
+						  offsety:0
+					},
+					coordinate:{
+						  width:"83%",
+						  height:"80%",
+						  background_color:"#ffffff",
+						  axis:{
+								color:"#a1a5ab",
+								width:[1,"",1,""]
+						  },
+						  grid_color:"#d9d9d9",
+						  label:{
+								fontweight:500,
+								color:"#262525",
+								fontsize:12
+						  }
+					},
+					label:{
+						  fontweight:500,
+						  color:"#0f0e0e",
+						  fontsize:13,
+						  font:"微软雅黑"
+					},
+					type:"bar2d",
+					data:data_pf
+			  });
+			  
+			 
+			 var donut= new iChart.Donut2D({
+						data:data_pfzb,
+						label:{
+							color:'#4c4f48'
+						},
+						sub_option:{
+							
+							label : false
+						},
+						text_space : 16,
+						showpercent:true,
+						decimalsnum:1,
+						animation:true,
+						align : 'right',
+						offsetx:chart.coo.get('originx')-200,
+						offsety:-(chart.get('centery')-chart.coo.get('originy')-230),
+						//animation : animation,
+						radius:70,
+						donutwidth:15,
+						offset_angle:270
+					});
+					
+					
+					var donut2= new iChart.Donut2D({
+						data:data_ppzb,
+						label:{
+							color:'#4c4f48'
+						},
+						sub_option:{
+							
+							label : false
+						},
+						text_space : 16,
+						showpercent:true,
+						decimalsnum:1,
+						animation:true,
+						align : 'right',
+						offsetx:chart.coo.get('originx')-215,
+						offsety:-(chart.get('centery')-chart.coo.get('originy')-230),
+						//animation : animation,
+						radius:55,
+						donutwidth:15,
+						offset_angle:270
+					});
+					
+					chart.plugin(new iChart.Custom({
+							drawFn:function(){
+								 //计算位置
+								var coo = chart.getCoordinate(),
+									x = coo.get('originx'),
+									y = coo.get('originy'),
+									H = coo.height;
+								//在左侧的位置，渲染说明文字。
+								var image = new Image(); 
+								image.src = "logo.png"; 
+								this.T.c.drawImage(image,5,10,100,40);	
+								
+							}
+					}));
+					
+					chart.plugin(new iChart.Custom({
+							drawFn:function(){
+								 //计算位置
+								var coo = chart.getCoordinate(),
+									x = coo.get('originx'),
+									y = coo.get('originy'),
+									H = coo.height;
+								//在左侧的位置，渲染说明文字。
+								chart.target.textAlign('start')
+								.textBaseline('bottom')
+								.textFont('400 15px 微软雅黑')
+								.fillText('排片占比',x+490,y+h-90,false,'#000');	
+								
+							}
+					}));
+					
+					chart.plugin(new iChart.Custom({
+							drawFn:function(){
+								 //计算位置
+								var coo = chart.getCoordinate(),
+									x = coo.get('originx'),
+									y = coo.get('originy'),
+									H = coo.height;
+								//在左侧的位置，渲染说明文字。
+								chart.target.textAlign('start')
+								.textBaseline('bottom')
+								.textFont('400 15px 微软雅黑')
+								.fillText('票房占比',x+540,y+h-180,false,'#000');	
+								
+							}
+					}));
+					
+					chart.plugin(new iChart.Custom({
+							drawFn:function(){
+								 //计算位置
+								var coo = chart.getCoordinate(),
+									x = coo.get('originx'),
+									y = coo.get('originy'),
+									H = coo.height;
+								//在左侧的位置，渲染说明文字。
+								chart.target.line(650,340,680,310,1,"#000")	
+								
+							}
+					}));
+					
+					chart.plugin(new iChart.Custom({
+							drawFn:function(){
+								 //计算位置
+								var coo = chart.getCoordinate(),
+									x = coo.get('originx'),
+									y = coo.get('originy'),
+									H = coo.height;
+								//在左侧的位置，渲染说明文字。
+								chart.target.line(700,268,670,310,1,"#000")	
+								
+							}
+					}));
+					
+					chart.plugin(donut);
+					chart.plugin(donut2);
+					
+			 
+			 chart.draw();
+			 
+		});
+		 
+	});
+	
+}
+
+</script>
+</head>
+<body style='background-color:#fff;' onload='createdata()'>
+<a href='kbll.html' style='text-decoration:none'><input type='button' value='上一张'/></a>
+<a href='dypf.html' style='text-decoration:none'><input type='button' value='下一张'/></a>
+<div id='ichart-render'></div>
+</body>
+</html>

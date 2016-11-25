@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<!--headTrap<body></body><head></head><html></html>--><html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+window.__nonce_str = "MOONSAFE_NONCE_1469070959"
+if (location.href.indexOf("safe=0") == -1 && window.__nonce_str) {
+	window.__moonsafe_csp_offset || (window.__moonsafe_csp_offset = 18);
+	document.write('<meta http-equiv="Content-Security-Policy" content="script-src https: \'unsafe-inline\' \'unsafe-eval\' *.qq.com *.weishi.com'+(window.__nonce_str ? ' \'nonce-' + window.__nonce_str + "\'":"")+ '">');
+        
+}
+</script>
+
+        <script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+            window.logs = {
+                pagetime: {}
+            };
+            window.logs.pagetime['html_begin'] = (+new Date());
+        </script>
+        
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+var page_begintime=+new Date,biz="MzIwMDMzNzcyNQ==",sn="",mid="402261731",idx="1",is_rumor="",norumor="";
+1*is_rumor&&!(1*norumor)&&(document.referrer&&-1!=document.referrer.indexOf("mp.weixin.qq.com/mp/rumor")||(location.href="http://mp.weixin.qq.com/mp/rumor?action=info&__biz="+biz+"&mid="+mid+"&idx="+idx+"&sn="+sn+"#wechat_redirect")),
+document.domain="qq.com";
+</script> 
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+var MutationObserver=window.WebKitMutationObserver||window.MutationObserver||window.MozMutationObserver,isDangerSrc=function(t){
+if(t){
+var e=t.match(/http(?:s)?:\/\/([^\/]+?)(\/|$)/);
+if(e&&!/qq\.com(\:8080)?$/.test(e[1])&&!/weishi\.com$/.test(e[1]))return!0;
+}
+return!1;
+},ishttp=0==location.href.indexOf("http://");
+-1==location.href.indexOf("safe=0")&&ishttp&&"function"==typeof MutationObserver&&"mp.weixin.qq.com"==location.host&&(window.__observer_data={
+count:0,
+exec_time:0,
+list:[]
+},window.__observer=new MutationObserver(function(t){
+window.__observer_data.count++;
+var e=new Date,r=[];
+t.forEach(function(t){
+for(var e=t.addedNodes,o=0;o<e.length;o++){
+var n=e[o];
+if("SCRIPT"===n.tagName){
+var i=n.src;
+isDangerSrc(i)&&(window.__observer_data.list.push(i),r.push(n)),!i&&window.__nonce_str&&n.getAttribute("nonce")!=window.__nonce_str&&(window.__observer_data.list.push("inlinescript_without_nonce"),
+r.push(n));
+}
+}
+});
+for(var o=0;o<r.length;o++){
+var n=r[o];
+n.parentNode&&n.parentNode.removeChild(n);
+}
+window.__observer_data.exec_time+=new Date-e;
+}),window.__observer.observe(document,{
+subtree:!0,
+childList:!0
+})),function(){
+if(-1==location.href.indexOf("safe=0")&&Math.random()<.01&&ishttp&&HTMLScriptElement.prototype.__lookupSetter__&&"undefined"!=typeof Object.defineProperty){
+window.__danger_src={
+xmlhttprequest:[],
+script_src:[],
+script_setAttribute:[]
+};
+var t="$"+Math.random();
+HTMLScriptElement.prototype.__old_method_script_src=HTMLScriptElement.prototype.__lookupSetter__("src"),
+HTMLScriptElement.prototype.__defineSetter__("src",function(t){
+t&&isDangerSrc(t)&&window.__danger_src.script_src.push(t),this.__old_method_script_src(t);
+});
+var e="element_setAttribute"+t;
+Object.defineProperty(Element.prototype,e,{
+value:Element.prototype.setAttribute,
+enumerable:!1
+}),Element.prototype.setAttribute=function(t,r){
+"SCRIPT"==this.tagName&&"src"==t&&isDangerSrc(r)&&window.__danger_src.script_setAttribute.push(r),
+this[e](t,r);
+};
+}
+}();
+</script> 
+
+        <link rel="dns-prefetch" href="//res.wx.qq.com">
+<link rel="dns-prefetch" href="//mmbiz.qpic.cn">
+<link rel="shortcut icon" type="image/x-icon" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+    String.prototype.html = function(encode) {
+        var replace =["&#39;", "'", "&quot;", '"', "&nbsp;", " ", "&gt;", ">", "&lt;", "<", "&amp;", "&", "&yen;", "¥"];
+        if (encode) {
+            replace.reverse();
+        }
+        for (var i=0,str=this;i< replace.length;i+= 2) {
+             str=str.replace(new RegExp(replace[i],'g'),replace[i+1]);
+        }
+        return str;
+    };
+
+    window.isInWeixinApp = function() {
+        return /MicroMessenger/.test(navigator.userAgent);
+    };
+
+    window.getQueryFromURL = function(url) {
+        url = url || 'http://qq.com/s?a=b#rd'; 
+        var query = url.split('?')[1].split('#')[0].split('&'),
+            params = {};
+        for (var i=0; i<query.length; i++) {
+            var arg = query[i].split('=');
+            params[arg[0]] = arg[1];
+        }
+        if (params['pass_ticket']) {
+        	params['pass_ticket'] = encodeURIComponent(params['pass_ticket'].html(false).html(false).replace(/\s/g,"+"));
+        }
+        return params;
+    };
+
+    (function() {
+	    var params = getQueryFromURL(location.href);
+        window.uin = params['uin'] || '';
+        window.key = params['key'] || '';
+        window.wxtoken = params['wxtoken'] || '';
+        window.pass_ticket = params['pass_ticket'] || '';
+    })();
+
+</script>
+
+        <title>深度 | 美人鱼的行业经济效应和艺人们的过去未来</title>
+        
+<style>html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;line-height:1.6}body{-webkit-touch-callout:none;font-family:-apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background-color:#f3f3f3;line-height:inherit}body.rich_media_empty_extra{background-color:#fff}body.rich_media_empty_extra .rich_media_area_primary:before{display:none}h1,h2,h3,h4,h5,h6{font-weight:400;font-size:16px}*{margin:0;padding:0}a{color:#607fa6;text-decoration:none}.rich_media_inner{font-size:16px;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.rich_media_area_primary{position:relative;padding:20px 15px 15px;background-color:#fff}.rich_media_area_primary:before{content:" ";position:absolute;left:0;top:0;width:100%;height:1px;border-top:1px solid #e5e5e5;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(0.5);transform:scaleY(0.5);top:auto;bottom:-2px}.rich_media_area_primary .original_img_wrp{display:inline-block;font-size:0}.rich_media_area_primary .original_img_wrp .tips_global{display:block;margin-top:.5em;font-size:14px;text-align:right;width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.rich_media_area_extra{padding:0 15px 0}.rich_media_title{margin-bottom:10px;line-height:1.4;font-weight:400;font-size:24px}.rich_media_meta_list{margin-bottom:18px;line-height:20px;font-size:0}.rich_media_meta_list em{font-style:normal}.rich_media_meta{display:inline-block;vertical-align:middle;margin-right:8px;margin-bottom:10px;font-size:16px}.meta_original_tag{display:inline-block;vertical-align:middle;padding:1px .5em;border:1px solid #9e9e9e;color:#8c8c8c;border-top-left-radius:20% 50%;-moz-border-radius-topleft:20% 50%;-webkit-border-top-left-radius:20% 50%;border-top-right-radius:20% 50%;-moz-border-radius-topright:20% 50%;-webkit-border-top-right-radius:20% 50%;border-bottom-left-radius:20% 50%;-moz-border-radius-bottomleft:20% 50%;-webkit-border-bottom-left-radius:20% 50%;border-bottom-right-radius:20% 50%;-moz-border-radius-bottomright:20% 50%;-webkit-border-bottom-right-radius:20% 50%;font-size:15px;line-height:1.1}.meta_enterprise_tag img{width:30px;height:30px!important;display:block;position:relative;margin-top:-3px;border:0}.rich_media_meta_text{color:#8c8c8c}span.rich_media_meta_nickname{display:none}.rich_media_thumb_wrp{margin-bottom:6px}.rich_media_thumb_wrp .original_img_wrp{display:block}.rich_media_thumb{display:block;width:100%}.rich_media_content{overflow:hidden;color:#3e3e3e}.rich_media_content *{max-width:100%!important;box-sizing:border-box!important;-webkit-box-sizing:border-box!important;word-wrap:break-word!important}.rich_media_content p{clear:both;min-height:1em;white-space:pre-wrap}.rich_media_content em{font-style:italic}.rich_media_content fieldset{min-width:0}.rich_media_content .list-paddingleft-2{padding-left:30px}.rich_media_content blockquote{margin:0;padding-left:10px;border-left:3px solid #dbdbdb}img{height:auto!important}@media(min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2){.mm_appmsg .rich_media_inner,.mm_appmsg .rich_media_meta,.mm_appmsg .discuss_list,.mm_appmsg .rich_media_extra,.mm_appmsg .title_tips .tips{font-size:17px}.mm_appmsg .meta_original_tag{font-size:15px}}@media(min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3){.mm_appmsg .rich_media_title{font-size:25px}}@media screen and (min-width:1024px){.rich_media{width:740px;margin-left:auto;margin-right:auto}.rich_media_inner{padding:20px}body{background-color:#fff}}@media screen and (min-width:1025px){body{font-family:"Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif}.rich_media{position:relative}.rich_media_inner{background-color:#fff;padding-bottom:100px}}.radius_avatar{display:inline-block;background-color:#fff;padding:3px;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;overflow:hidden;vertical-align:middle}.radius_avatar img{display:block;width:100%;height:100%;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;background-color:#eee}.cell{padding:.8em 0;display:block;position:relative}.cell_hd,.cell_bd,.cell_ft{display:table-cell;vertical-align:middle;word-wrap:break-word;word-break:break-all;white-space:nowrap}.cell_primary{width:2000px;white-space:normal}.flex_cell{padding:10px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.flex_cell_primary{width:100%;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;box-flex:1;flex:1}.original_tool_area{display:block;padding:.75em 1em 0;-webkit-tap-highlight-color:rgba(0,0,0,0);color:#3e3e3e;border:1px solid #eaeaea;margin:20px 0}.original_tool_area .tips_global{position:relative;padding-bottom:.5em;font-size:15px}.original_tool_area .tips_global:after{content:" ";position:absolute;left:0;bottom:0;right:0;height:1px;border-bottom:1px solid #dbdbdb;-webkit-transform-origin:0 100%;transform-origin:0 100%;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.original_tool_area .radius_avatar{width:27px;height:27px;padding:0;margin-right:.5em}.original_tool_area .radius_avatar img{height:100%!important}.original_tool_area .flex_cell_bd{width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.original_tool_area .flex_cell_ft{font-size:14px;color:#8c8c8c;padding-left:1em;white-space:nowrap}.original_tool_area .icon_access:after{content:" ";display:inline-block;height:8px;width:8px;border-width:1px 1px 0 0;border-color:#cbcad0;border-style:solid;transform:matrix(0.71,0.71,-0.71,0.71,0,0);-ms-transform:matrix(0.71,0.71,-0.71,0.71,0,0);-webkit-transform:matrix(0.71,0.71,-0.71,0.71,0,0);position:relative;top:-2px;top:-1px}.weui_loading{width:20px;height:20px;display:inline-block;vertical-align:middle;-webkit-animation:weuiLoading 1s steps(12,end) infinite;animation:weuiLoading 1s steps(12,end) infinite;background:transparent url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iciIgd2lkdGg9JzEyMHB4JyBoZWlnaHQ9JzEyMHB4JyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJub25lIiBjbGFzcz0iYmsiPjwvcmVjdD4KICAgIDxyZWN0IHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjRTlFOUU5JwogICAgICAgICAgdHJhbnNmb3JtPSdyb3RhdGUoMCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+CiAgICA8L3JlY3Q+CiAgICA8cmVjdCB4PSc0Ni41JyB5PSc0MCcgd2lkdGg9JzcnIGhlaWdodD0nMjAnIHJ4PSc1JyByeT0nNScgZmlsbD0nIzk4OTY5NycKICAgICAgICAgIHRyYW5zZm9ybT0ncm90YXRlKDMwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4KICAgICAgICAgICAgICAgICByZXBlYXRDb3VudD0naW5kZWZpbml0ZScvPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyM5Qjk5OUEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSg2MCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+CiAgICAgICAgICAgICAgICAgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnLz4KICAgIDwvcmVjdD4KICAgIDxyZWN0IHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjQTNBMUEyJwogICAgICAgICAgdHJhbnNmb3JtPSdyb3RhdGUoOTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNBQkE5QUEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxMjAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNCMkIyQjInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxNTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNCQUI4QjknCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxODAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNDMkMwQzEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyMTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNDQkNCQ0InCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyNDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNEMkQyRDInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyNzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNEQURBREEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgzMDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNFMkUyRTInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgzMzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0Pgo8L3N2Zz4=) no-repeat;-webkit-background-size:100%;background-size:100%}@-webkit-keyframes weuiLoading{0%{-webkit-transform:rotate3d(0,0,1,0deg)}100%{-webkit-transform:rotate3d(0,0,1,360deg)}}@keyframes weuiLoading{0%{-webkit-transform:rotate3d(0,0,1,0deg)}100%{-webkit-transform:rotate3d(0,0,1,360deg)}}.gif_img_wrp{display:inline-block;font-size:0;position:relative}.gif_img_wrp img{min-height:120px;min-width:120px}.gif_img_tips{background:rgba(0,0,0,0.6)!important;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000',endcolorstr = '#99000000');border-top-left-radius:1.2em 50%;-moz-border-radius-topleft:1.2em 50%;-webkit-border-top-left-radius:1.2em 50%;border-top-right-radius:1.2em 50%;-moz-border-radius-topright:1.2em 50%;-webkit-border-top-right-radius:1.2em 50%;border-bottom-left-radius:1.2em 50%;-moz-border-radius-bottomleft:1.2em 50%;-webkit-border-bottom-left-radius:1.2em 50%;border-bottom-right-radius:1.2em 50%;-moz-border-radius-bottomright:1.2em 50%;-webkit-border-bottom-right-radius:1.2em 50%;line-height:2.3;padding:0 1em;font-size:11px;color:#fff;text-align:center;position:absolute;bottom:10px;left:10px}.gif_img_tips i{vertical-align:middle;margin:-0.2em .73em 0 -2px}.gif_img_play_arrow{display:inline-block;width:0;height:0;border-width:8px;border-style:dashed;border-color:transparent;border-right-width:0;border-left-color:#fff;border-left-style:solid;border-width:5px 0 5px 8px}.gif_img_loading{width:14px;height:14px}i.gif_img_loading{margin-left:-4px}.rich_media_global_msg{position:fixed;top:0;left:0;right:0;padding:.65em 35px .65em 15px;z-index:1;background-color:#cde6ff;color:#8c8c8c;font-size:13px}.rich_media_global_msg .icon_closed{position:absolute;right:15px;top:50%;margin-top:-5px;line-height:300px;overflow:hidden;-webkit-tap-highlight-color:rgba(0,0,0,0);background:transparent url(/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_appmsg_msg_closed_sprite.2x.png) no-repeat 0 0;width:11px;height:11px;vertical-align:middle;display:inline-block;-webkit-background-size:100% auto;background-size:100% auto}.rich_media_global_msg .icon_closed:active{background-position:0 -17px}.preview_appmsg .rich_media_title{margin-top:1.5em}@media screen and (min-width:1024px){.rich_media_global_msg{position:relative;margin:0 20px}.preview_appmsg .rich_media_title{margin-top:0}}</style>
+<style>
+     
+    </style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_pc2c9cd6.css">
+<![endif]-->
+
+    </head>
+    <body id="activity-detail" class="zh_CN mm_appmsg" ontouchstart="">
+        
+    <script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+        var write_sceen_time = (+new Date());
+    </script>
+
+    <div id="js_article" class="rich_media preview_appmsg">
+        
+        <div id="js_top_ad_area" class="top_banner">
+ 
+        </div>
+                
+
+        <div class="rich_media_inner">
+                        <div class="rich_media_global_msg">
+                
+                此为临时链接，仅用于文章预览，将在短期内失效
+                <a id="js_close_temp" href="javascript:;" class="icon_closed">关闭</a>
+            </div>
+                        <div id="page-content">
+                <div id="img-content" class="rich_media_area_primary">
+                    <h2 class="rich_media_title" id="activity-name">
+                        深度 | 美人鱼的行业经济效应和艺人们的过去未来 
+                    </h2>
+                    <div class="rich_media_meta_list">
+                        						                        <em id="post-date" class="rich_media_meta rich_media_meta_text">2016-02-28</em>
+
+                                                <em class="rich_media_meta rich_media_meta_text">苏秦</em>
+                                                <a class="rich_media_meta rich_media_meta_link rich_media_meta_nickname" href="javascript:void(0);" id="post-user">影视大数据</a>
+                        <span class="rich_media_meta rich_media_meta_text rich_media_meta_nickname">影视大数据</span>
+
+                        <div id="js_profile_qrcode" class="profile_container" style="display:none;">
+                            <div class="profile_inner">
+                                <strong class="profile_nickname">影视大数据</strong>
+                                <img class="profile_avatar" id="js_profile_qrcode_img" src="" alt="">
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">微信号</label>
+                                <span class="profile_meta_value">ysdsju</span>
+                                </p>
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">功能介绍</label>
+                                <span class="profile_meta_value">影视、艺人数据分析评价，微博号@德塔文数据</span>
+                                </p>
+                                
+                            </div>
+                            <span class="profile_arrow_wrp" id="js_profile_arrow_wrp">
+                                <i class="profile_arrow arrow_out"></i>
+                                <i class="profile_arrow arrow_in"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                                                            
+                                                            
+                    
+                    <div class="rich_media_content " id="js_content">
+                        
+
+                        
+                        <section style="box-sizing: border-box; background-color: rgb(255, 255, 255);"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><img src="0.jpg" data-ratio="1.5" data-w="440" data-type="jpeg" data-s="300,640"  /><br  /></section><section style="box-sizing: border-box;">虽然笔者一直都看好《美人鱼》的票房，但当仅仅12天就打破了《捉妖记》票房第一纪录这个新闻传来，当票房呼啸着20天内就突破了30亿，笔者不得不说一句：“我和我的小伙伴们都惊呆了……”</section><section style="box-sizing: border-box;">截止发稿时，美人鱼票房已高达31亿，该片的巨大成功成为行业热议焦点，也为2016年电影市场打下一个浓墨重彩的开局，极有可能成为行业研究的重点对象。<span style="line-height: 1.6; box-sizing: border-box;">&nbsp;我们不禁要问：</span></section><section style="box-sizing: border-box;"><span style="color: rgb(255, 76, 65); line-height: 1.6; box-sizing: border-box;">《美人鱼》为什么这么红，谁赚了钱，谁成了名，谁获了利？有样学样，下一个赚钱的是你吗？</span></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="margin: 0.5em 0px; box-sizing: border-box;"><section style="padding: 20px; text-align: center; color: white; line-height: 1.4; font-weight: bold; box-sizing: border-box; box-shadow: 0px 3px 3px rgb(221,221,221); background-color: rgb(249, 110, 87);"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="font-size: 24px; box-sizing: border-box;"><section style="box-sizing: border-box;">经济影响与行业影响</section></section></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">《美人鱼》的成功不但创造了诸多的票房纪录，例如一系列的“最快打破”以及“票房单日过亿”，而且<span style="color: rgb(255, 76, 65); line-height: 1.6; box-sizing: border-box;">对于其出品方、发行方的股票价格都造成了极大的影响</span>。</span><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="text-align: center; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><img style="vertical-align: middle; max-width: 100%; box-sizing: border-box;" src="1.jpg" data-ratio="0.75" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">周星驰的比高集团的股价一度大幅上扬，在电影上映期间该支港股成交量激增，股价峰值比电影上映之前上涨17.4%。</span><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="text-align: center; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><img style="vertical-align: middle; max-width: 100%; box-sizing: border-box;" src="2.jpg" data-ratio="0.38671875" data-w="512"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">参与电影出品与发行的几家公司中，也有从前并不为大家所熟悉的公司打响了名号，例如参与影片保底之一的和和影业。</span><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">以前参与影片保底的多是传统影业公司，和和影业则是一家有强烈私募基金背景的影业公司，显然金融玩家已经越来越多地参与电影业的游戏。</section><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">据了解，直到3月初《美人鱼》都将保有25%以上的排片，保守预估美人鱼最终票房将过32亿元，根据院线方和发行方的分成比例，院线分得57%，发行和制作分得43%，则片方和发行商最终能拿到13.76亿元。媒体称《美人鱼》的制作成本高达4亿元，因此净利润将在10亿元左右。这还不包括股市带来的收益。</span><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">事实上影视传媒股也的确受春节档票房的利好逆势上涨，16日开市当天光线传媒就上涨了8%，近20亿市值，一度涨幅高达25亿，相当于《美人鱼》8天的票房综合。美人鱼给光线带来的短期概念效应十分惊人，同时也展示了光线的市场能力，为其2016年业报打下良好基础。数据显示，共14家基金持有光线传媒股，持仓量总计663.22万股，占流通A股0.50%。在《美人鱼》票房不断刷新记录的同时，这些基金也分享了高红利。</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="text-align: center; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><img style="vertical-align: middle; max-width: 100%; box-sizing: border-box;" src="3.jpg" data-ratio="0.4832089552238806" data-w="536"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="color: rgb(255, 76, 65);">《美人鱼》的自身衍生市场空间也极具想象力</span>，一位业内人士表示，美人鱼的衍生市场价值保守估计应有几十个亿，但目前衍生品开发还比较少，目前看到的有周星驰手绘的“美人鱼”独家授权著名珠宝品牌IDo打造 “鱼萌萌”项链等衍生品。</section><section style="box-sizing: border-box;">事实上，早在2013年，周星驰就曾经与浙江桐乡乌镇西栅景区合作，计划开发大话西游的大型主题影城“西游影城”。该项目毗邻乌镇景区，规划用地约1000亩，拟建成国家5A级旅游景区，但后续跟进尚不清晰。周星驰能否在美人鱼项目上用力衍生一把，市场是有需求的，就看星爷是否愿意投精力了。</section><section style="box-sizing: border-box;">《美人鱼》带给市场的经济效应显然十分庞大。</section><section style="box-sizing: border-box;"><span style="color: rgb(255, 76, 65);">在经济不景气的情况下，娱乐行业往往更加兴旺。美人鱼的逆势上行，成为了2016年电影业兴旺发达的一个标志，给</span><span style="color: rgb(255, 76, 65);"><span style="color: rgb(255, 76, 65);">2016年本来就大火特火的电影市场来了一把火上浇油。受此示范效应影响，不少行业外资金加速向影视业流动倾斜。</span></span></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="margin: 0.5em 0px; box-sizing: border-box;"><section style="padding: 20px; text-align: center; color: white; line-height: 1.4; font-weight: bold; box-sizing: border-box; box-shadow: 0px 3px 3px rgb(221,221,221); background-color: rgb(249, 110, 87);"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="font-size: 24px; box-sizing: border-box;"><section style="box-sizing: border-box;">主创的前景分析</section></section></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="margin: 0.5em 0px; box-sizing: border-box;"><section style="padding: 0.3em 0.5em; height: 2em; color: rgb(255, 255, 255); vertical-align: top; display: inline-block; box-sizing: border-box; background-color: rgb(249, 110, 87);"><section style="box-sizing: border-box;">白发星星，宝刀未老</section></section><section style="width: 0.5em; height: 2em; vertical-align: top; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(249, 110, 87); border-top-width: 1em !important; border-bottom-width: 1em !important; border-left-width: 0.5em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box;"></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">《美人鱼》对于周星驰的意义是毋庸置疑的，首先是证明了自己的一套依然拥有庞大的市场，“宝刀未老”，也挽回了上次的《西游降魔篇》票房叫好、自己却挣不到钱的尴尬。</span><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;"></span></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="text-align: center; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><img style="vertical-align: middle; max-width: 100%; box-sizing: border-box;" src="4.jpg" data-ratio="1.4325" data-w="400"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">而正在制作中的由周星驰监制、徐克导演的《西游伏妖篇》显然也会因此分得一些声势，这部预定了明年春节档的周星驰、徐克双重保驾的电影，恐怕会让各大瞄准年年刷新票房纪录的春节档的竞争者们稍微三思，避其锋芒。</span><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">之前《捉妖记》的发行方曾在采访中提到，就是为了避开星爷才没有选择《捉妖记》在春节档上映，无论是否属实，总有那么几分道理。所以《西游伏妖篇》只要把招牌树好，可以说一开始就锁定了一定程度的成功。至于会不会如《美人鱼》般再创辉煌，那还有待届时评估。</section><section style="box-sizing: border-box;">但敏感的是，周星驰的作品往往经历周期较长，在经过美人鱼的天量消费和口碑加持之后，市场期待又创新高，对《西游伏妖篇》的要求无疑是进一步提高了。星爷头发恐怕要全部熬白的节奏。</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="margin: 0.5em 0px; box-sizing: border-box;"><section style="padding: 0.3em 0.5em; height: 2em; color: rgb(255, 255, 255); vertical-align: top; display: inline-block; box-sizing: border-box; background-color: rgb(249, 110, 87);"><section style="box-sizing: border-box;">邓超中生代笑傲江湖</section></section><section style="width: 0.5em; height: 2em; vertical-align: top; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(249, 110, 87); border-top-width: 1em !important; border-bottom-width: 1em !important; border-left-width: 0.5em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box;"></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="text-align: center; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><img style="vertical-align: middle; max-width: 100%; box-sizing: border-box;" src="5.jpg" data-ratio="1.4634146341463414" data-w="410"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">作为男主演，邓超获利同样巨大，从《烈日灼心》的演技备受肯定，到《恶棍天使》的争议，邓超一度下跌受创的口碑再一次在《美人鱼》中被挽回，霸道总裁的人设带来的“苏点”让他在各论坛和微博的讨论度再度升高，公众形象中对演技的评价也提升不少。尽管近期因为微博向佐事件引起了一些争议，却几乎没人质疑邓超是个好演员。</span><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">作为中生代男演员电影咖，邓超明显是前途无量，在票房和商业价值上创造了一个巅峰。</section><section style="box-sizing: border-box;">只是，“邓超只要不当导演就很好”这样的评论现在似乎颇为常见，不知道邓超自己是不是开心呢？而外表逗比、内心邪魅狂狷、坚持放飞自我的超哥是否能放弃自己的导演梦，那也难说的很……</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="margin: 0.5em 0px; box-sizing: border-box;"><section style="padding: 0.3em 0.5em; height: 2em; color: rgb(255, 255, 255); vertical-align: top; display: inline-block; box-sizing: border-box; background-color: rgb(249, 110, 87);"><section style="box-sizing: border-box;">林允，巨片与绯闻双重加持星女郎</section></section><section style="width: 0.5em; height: 2em; vertical-align: top; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(249, 110, 87); border-top-width: 1em !important; border-bottom-width: 1em !important; border-left-width: 0.5em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box;"></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">新人女主演林允能在出道之际就得到这样的票房成绩，不能不让人把她和“谋女郎”倪妮比一比。</span><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">笔者在《美人鱼》上映前的分析文章里曾经提到个人认为她和倪妮的型有些相近，万万没想到后来的一连串证据表明，她是真的很热衷于去和倪妮学习，除了时尚感、拍照pose，连绯闻男友都选了同一个……</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="text-align: center; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><img style="vertical-align: middle; max-width: 100%; box-sizing: border-box;" src="6.jpg" data-ratio="0.6672661870503597" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;">模仿路线相近的演员去造成大众的比较，这是一个常见的提高个人记忆点的快捷路径，而有了绯闻也不怕没有跟拍和话题。事实上比较百度指数我们也会发现，电影上映前，林允作为星女郎已经取得了相当大的人气预期空间，并提前获取了一定的后续资源，反而是电影上映后，林允百度指数的上升远不如之后因全民星探的爆料绯闻而形成的峰值指数。</section><section style="box-sizing: border-box;">搜索各大论坛，《美人鱼》电影本身似乎并没有给林允形象带来太多的帮助，究其原因，也许一方面是比较傻白甜的女主人设光芒不够，争议不多，没什么好讲，留下的印象不够深刻，而且不少观众被美艳的张雨绮吸引了不少目光；另一方面是大众都倾向于她目前的成功是星爷的护航，其个人的市场价值还没有能被证明。</section><section style="box-sizing: border-box;">预计林允的热度还可以再保持一阵子，但是之后是好是坏还很难说。毕竟星爷一向专注于自己的电影创作，似乎不是很擅长捧人，历任星女郎不糊者几稀。反而是和冯绍峰的绯闻可以让她继续保持一定的话题点。不管有心无心，在《三打》同步上映之际，两片男女主角的绯闻对电影和对两位的后续话题还是有利的。</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="margin: 0.5em 0px; box-sizing: border-box;"><section style="padding: 0.3em 0.5em; height: 2em; color: rgb(255, 255, 255); vertical-align: top; display: inline-block; box-sizing: border-box; background-color: rgb(249, 110, 87);"><section style="box-sizing: border-box;">罗志祥，小猪这次真遇到风口了</section></section><section style="width: 0.5em; height: 2em; vertical-align: top; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(249, 110, 87); border-top-width: 1em !important; border-bottom-width: 1em !important; border-left-width: 0.5em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box;"></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="text-align: center; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><img style="vertical-align: middle; max-width: 100%; box-sizing: border-box;" src="7.jpg" data-ratio="0.5269784172661871" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">这一次收益很大的另一个主演是罗志祥。</span></section><section style="box-sizing: border-box;">事实上因为《极限挑战》综艺的热度，这位台湾演员再一次回到了观众的视野中心，但是因为一系列个人事件，其公众形象并不算十分良好；但是这次《美人鱼》出演的令人喜爱和揪心的八爪鱼角色为其挣得了相当的正面印象，事实上现在有关《美人鱼》的微博同人漫画创作，一半以上是以罗志祥的八爪鱼角色为主题，其微博关注度可见一斑。</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="text-align: center; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><img style="vertical-align: middle; max-width: 100%; box-sizing: border-box;" src="8.jpg" data-ratio="1.4136363636363635" data-w="440"  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="margin: 0.5em 0px; box-sizing: border-box;"><section style="padding: 0.3em 0.5em; height: 2em; color: rgb(255, 255, 255); vertical-align: top; display: inline-block; box-sizing: border-box; background-color: rgb(249, 110, 87);"><section style="box-sizing: border-box;">张雨绮，美人回春</section></section><section style="width: 0.5em; height: 2em; vertical-align: top; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(249, 110, 87); border-top-width: 1em !important; border-bottom-width: 1em !important; border-left-width: 0.5em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box;"></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="text-align: center; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><img style="vertical-align: middle; max-width: 100%; box-sizing: border-box;" src="9.jpg" data-ratio="0.6672661870503597" data-w=""  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">以霸道美艳角色登场的张雨绮，讨论度居高不下。在上面的百度指数比较中我们会发现张雨绮的个人搜索指数是除了林允外上升最多的。笔者留意到张雨绮方面也顺势做了一系列微博推广和形象公关。</span><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">张雨绮在其离婚后就有一段日子没有出现在公众面前，也没有令人瞩目的影视作品，可见对其事业还是造成了一定的影响。而显然其离婚事件对公众形象造成的影响在这次电影之后大约会翻页了，事业可能会再迎来一个春天也未可知。最近她正积极出没于时装周，显然是摩拳擦掌打算再战。</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="margin: 0.5em 0px; box-sizing: border-box;"><section style="padding: 0.3em 0.5em; height: 2em; color: rgb(255, 255, 255); vertical-align: top; display: inline-block; box-sizing: border-box; background-color: rgb(249, 110, 87);"><section style="box-sizing: border-box;">吴亦凡，新生代卡位战的阶段胜利者</section></section><section style="width: 0.5em; height: 2em; vertical-align: top; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(249, 110, 87); border-top-width: 1em !important; border-bottom-width: 1em !important; border-left-width: 0.5em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box;"></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="text-align: center; margin-top: 10px; margin-bottom: 10px; box-sizing: border-box;"><span style="line-height: 0px; display: none;">‍</span><img src="10.jpg" data-ratio="0.8255395683453237" data-w="" data-type="jpeg" data-s="300,640"  /><br  /></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">还值得一提的是在该片中客串演出的吴亦凡。虽然只有短短的几幕镜头，但事实上吴亦凡正是从此片中正式与周星驰搭上线，然后有接下了《西游伏妖篇》中领衔主演唐僧的角色，预计将在明年春节亮相。《美人鱼》的高票房，对于其在观众里混个脸熟有一定的帮助作用，而《西游伏妖篇》的机会，也使其在一众同时涌出的小鲜肉中，得到了相对较高的起点。</span><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">吴亦凡最近论坛舆情指数和微指数都居高不下，人气十足，最近又接下了吕克贝松的《星际特工》，以及好莱坞大片《极限特工3》，并且似乎都不是打酱油的戏份。在现在的新生代明星市场里，人气和机会缺一不可，而吴亦凡两者都有，这使得其在新生代男演员中占据一定优势。如果再能收获《西游伏妖篇》的成功，对其日后彻底上位显然会有十分重要的帮助。</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="margin: 0.5em 0px; box-sizing: border-box;"><section style="padding: 0.3em 0.5em; height: 2em; color: rgb(255, 255, 255); vertical-align: top; display: inline-block; box-sizing: border-box; background-color: rgb(249, 110, 87);"><section style="box-sizing: border-box;">潜在受益者远超你的想象</section></section><section style="width: 0.5em; height: 2em; vertical-align: top; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(249, 110, 87); border-top-width: 1em !important; border-bottom-width: 1em !important; border-left-width: 0.5em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box;"></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">甚至可以说，即使在美人鱼主创之外，由于美人鱼巨大成功，给西游伏妖篇带来了巨大期待，伏妖篇主演之一的林更新，也成为了预期中的潜在受益者之一。</span><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">可以说，《美人鱼》这部电影，给每一个参与电影的主创们都带来了更多的机会，给相关电影人、产业链也带来了巨大机遇。</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="margin: 0.5em 0px; box-sizing: border-box;"><section style="padding: 20px; text-align: center; color: white; line-height: 1.4; font-weight: bold; box-sizing: border-box; box-shadow: 0px 3px 3px rgb(221,221,221); background-color: rgb(249, 110, 87);"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="font-size: 24px; box-sizing: border-box;"><section style="box-sizing: border-box;">美人鱼为什么这么红</section></section></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">在《美人鱼》上映前，很多人对于“周星驰”这个招牌是否还能卖，都抱有或多好少的好奇，而在《美人鱼》大卖之后，看客们又轻易地下了结论，果然观众就是吃“周星驰”这碗情怀饭吧。</span><br style="box-sizing: border-box;"  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="margin: 0.5em 0px; box-sizing: border-box;"><section style="padding: 0.3em 0.5em; height: 2em; color: rgb(255, 255, 255); vertical-align: top; display: inline-block; box-sizing: border-box; background-color: rgb(249, 110, 87);"><section style="box-sizing: border-box;">不止是情怀饭</section></section><section style="width: 0.5em; height: 2em; vertical-align: top; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(249, 110, 87); border-top-width: 1em !important; border-bottom-width: 1em !important; border-left-width: 0.5em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box;"></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">大卖当然有一部分原因和周星驰有关，尤其是在前期宣传和吸引第一波观众的阶段，周星驰招牌和片中一些知名演员的号召力都是有重要作用的。</span><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">另外，结合发行方、营销方案提供方之前受访时提到的“饥饿营销”策略，结合出品方提到的天价保底策略，《美人鱼》显然是一次多方运作的成功。</section><section style="box-sizing: border-box;">不过，除此之外呢？</section><section style="box-sizing: border-box;">任何一部影视作品的成功，都不可能脱离其内容本身，毕竟就算运营方再能运作，总得有东西可卖吧？</section><section style="box-sizing: border-box;">在电影品质方面，《美人鱼》在豆瓣电影7.3分的评分、猫眼9.1分的评分都在证明观众对该片品质的认可。但如果我们细分一下，观众为什么对该片的品质认可，《美人鱼》到底给了观众什么东西让它被认可呢？</section><section style="box-sizing: border-box;"><img src="11.jpg" data-ratio="0.5251798561151079" data-w="" data-type="png" data-s="300,640"  /><br  />&nbsp;<span style="line-height: 1.6; box-sizing: border-box;">如果把这个问题抛给观众，问：“你为什么去看《美人鱼》，甚至二刷、三刷？”他/她可能会回答你：因为是周星驰电影；因为我是邓超、或者吴亦凡的粉丝；因为好笑欢乐；因为过年合家欢；因为情人节约会；因为朋友推荐；因为自己看了觉得好看就再带家人看一遍……等等。</span></section><section style="box-sizing: border-box;">从以上这种种原因中，我们会发现，除了一部分周星驰和主创人员的情怀效应、明星号召力外，最主要的是内容受到第一波观众肯定后，引起的口耳相传，这也是现在许多票房成功电影的原因。但是，品质受到肯定、又口耳相传的秘密是什么呢？</section><section style="box-sizing: border-box;">&nbsp;<span style="line-height: 1.6; box-sizing: border-box;">又有很多人会说，因为是喜剧啊。</span></section><section style="box-sizing: border-box;">在过去的几年里，大卖的《泰囧》、《捉妖记》、《夏洛特烦恼》等片都告诉电影人，喜剧元素就是比较好卖。但是，那么多部喜剧，为什么《美人鱼》就是比别的片子票房高出那么多呢？和同是星爷出品的《西游降魔篇》相比它也胜出了太多。这仅仅是因为市场体量更大了吗？</section><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">非也，非也。</span></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="margin: 0.5em 0px; box-sizing: border-box;"><section style="padding: 0.3em 0.5em; height: 2em; color: rgb(255, 255, 255); vertical-align: top; display: inline-block; box-sizing: border-box; background-color: rgb(249, 110, 87);"><section style="box-sizing: border-box;">环保题材的加持效应</section></section><section style="width: 0.5em; height: 2em; vertical-align: top; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(249, 110, 87); border-top-width: 1em !important; border-bottom-width: 1em !important; border-left-width: 0.5em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box;"></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">《美人鱼》的胜出，和它的题材有很大关系。《美人鱼》大胜的其中一个原因，是因为《美人鱼》是一部三观正确、普世价值、宣导内容积极向上的环保电影。</span><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">当我们点开一些《美人鱼》的长篇差评，会发现不少人的角度都是攻击《美人鱼》的剧情幼稚；或者说它根本是无聊的环保宣导影片。怀着批判态度的影评人们们总是能找到各种各样的问题，认为别人的东西浅薄而无知。</span><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">但是，当你抛弃文化人的优越感和追求深度的挑剔，去认真体会平民市场，你会发现简单而向上的主题的重要。事实上，在一份针对刚刚过去的春节档的满意度调查中，有这样的数据体现：</section><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;"><img src="12.jpg" data-ratio="0.6231578947368421" data-w="475" data-type="png" data-s="300,640"  /><br  />这份调查的结果显示，观众认为今年的春节档电影，观赏性满意度与去年持平，但在思想性上，却以81.4%的满意度远高于去年的78.8%。而思想性满意度名列前一位的正是《美人鱼》。</span><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">这件事重要吗？是的。</section><section style="box-sizing: border-box;">价值观的正确和表达方式的朴素对文化作品来说其实是一件非常重要的事。这里的价值观指的并不是政治意涵的社会价值观，而是简单的世界观。</section><section style="box-sizing: border-box;">一部有趣的作品可以让你的票房好看，一部有趣而且有正能量价值观和传播能力的作品，则能产生广泛影响力。</section><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">从观众心理的角度剖析，每个普通人都有向好的心态，和对正能量的追求，也希望能为自己所做的选择找到正当性。这时候，具有正确的价值观——如美人鱼的“环保”，就会比起其它电影给人以更多的“我做了一个善良的选择”的心理暗示，以及更乐于把这份朴素的“善良、美好或者说是自我感觉良好”推荐给家人和朋友，因为这种宣传也是对自己的“对地球环境关怀”的正确价值观进行了二次肯定。可能正是这份很多人具有的潜意识，使得《美人鱼》更容易获得人们自发的宣传和推广。</span><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;"><img src="13.jpg" data-ratio="0.5953878406708596" data-w="477" data-type="png" data-s="300,640"  /><br  />尤其，在现今合家观赏占观影人群46.8%的春节档时，带着家人看一部价值观朴素而正确的电影，给孩子讲讲朴素的人生道理，这也更容易让家长获得一种“做到了寓教于乐”的自我满意。而《美人鱼》被一些人认为过于简单幼稚的类童话剧情，对于老人和孩子确实很适合的，对于那些生活已经很复杂，不想再在电影里寻找复杂的成年人观众也更加具有吸引力。</span></section><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">在当今电影市场里，不少电影人对于发掘所谓“三观正确”的主流主题兴致缺缺，有的电影人或是充满了自由浪漫主义思想的文艺范儿，或是觉得价值观就是要深刻挖掘社会弊病才得以体现，对于三观正确具有普世价值的电影，往往会觉得那不够深刻、粉饰太平或是歌功颂德，商业大片似乎顶多就像《人在囧途》、《港囧》之类的，发掘一下拒绝婚外恋、悬崖勒马的传统家庭精神——甚至是以男性为核心的家庭精神。</span><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">然而电影人却似乎忽略了一个现实，那就是看电影的人民群众其实也是需要一些朴素的、不那么复杂深刻的、不是老堕胎或婚外情的美好简单的电影。</section><section style="box-sizing: border-box;">比如我们如果回头看1995年的奥斯卡最佳电影颁奖，《阿甘正传》战胜了《肖申克的救赎》和《低俗小说》，谁说《肖申克的救赎》不是伟大电影呢？但是《阿甘正传》却是美国人民对国家感情和那种中间偏右的价值观的胜利。</section><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">当今中国处在一个巨变的时代，许多人的三观是模糊而混乱的，这种时候，简单而明晰的价值观就有其市场，问题只是在电影人能不能找到一个好的切入点。《美人鱼》做到了，《美人鱼》的胜利，有相当部分是题材的胜利，也是价值观的胜利，更是一种朴素的价值观被很好很有趣地表达的胜利。</span><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">其实如果我们回头看《大圣归来》电影票房的逆袭，对国漫情怀的胜利何尝不是一种价值观的胜利呢？那是对中国文化的肯定、对中国动漫前途的期盼的胜利，是很朴素的人民感情。其实有些东西并不需要太复杂，只要找准核心，再以不要太拙劣的表现方式讲好故事做好电影，一定会有吃这套价值观的人捧场。</section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="margin: 0.5em 0px; box-sizing: border-box;"><section style="padding: 0.3em 0.5em; height: 2em; color: rgb(255, 255, 255); vertical-align: top; display: inline-block; box-sizing: border-box; background-color: rgb(249, 110, 87);"><section style="box-sizing: border-box;">港圈接地气的成功之作</section></section><section style="width: 0.5em; height: 2em; vertical-align: top; border-top-color: transparent !important; border-bottom-color: transparent !important; border-left-color: rgb(249, 110, 87); border-top-width: 1em !important; border-bottom-width: 1em !important; border-left-width: 0.5em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; box-sizing: border-box;"></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">除去这些形而上的东西，《美人鱼》的成功也是香港团队更与内地“接地气”的象征。星爷启用麦特文化这样的内地营销公司参与宣传，不但在网络宣传上极尽画手、段子手各种卖萌之能事，还积极跑了20个城市的路演，不能不说这样的与大众博感情的方式在几年前的香港团队里几乎是没有的。而它也确实达到了积极效果。</span><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">当今社会讲求“体验经济”，其实无论是为观众考虑的剧情设计，还是与观众积极互动的宣传手法，也不能说不是关注观众体验的思维模式。这样说来，其实《美人鱼》正是一部很了解普通观众想要什么、就给了观众他们的需求、从而大卖的电影。</section><section style="box-sizing: border-box;"><img src="14.jpg" data-ratio="0.75" data-w="440" data-type="jpeg" data-s="300,640"  /><br  /></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="margin: 0.5em 0px; box-sizing: border-box;"><section style="padding: 20px; text-align: center; color: white; line-height: 1.4; font-weight: bold; box-sizing: border-box; box-shadow: 0px 3px 3px rgb(221,221,221); background-color: rgb(249, 110, 87);"><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="font-size: 24px; box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="line-height: 1.4; box-sizing: border-box;">重剑无锋，大巧不工</span><br style="box-sizing: border-box;"  /></section></section></section></section></section></section></section><section class="Powered-by-XIUMI V5" style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><section style="box-sizing: border-box;"><span style="line-height: 1.6; box-sizing: border-box;">《美人鱼》的成功，是把周星驰情怀、港片情节、一些致敬元素这些“旧”的东西，使用返璞归真、童真简单、不需纠结的方式，和环保等当下人们关心并与人类未来息息相关的“新”价值观串联起来的成功，可以说是一部电影讲述了从过去到未来的串联，全面的覆盖必然会有某一点戳中观众。</span><br style="box-sizing: border-box;"  /></section><section style="box-sizing: border-box;">周星驰层在电影《食神》里提到，最考验一个好厨师功力的，正是“蛋炒饭”这样最简单的东西，也许这正体现了星爷的价值观，返璞归真却集大成于一身。这种综合能力正是从业人员值得思考和学习的。</section><section style="box-sizing: border-box;"><br style="box-sizing: border-box;"  /></section></section></section></section></section>
+                    </div>
+                    <script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+                        var first_sceen__time = (+new Date());
+
+                        if ("" == 1 && document.getElementById('js_content'))
+                            document.getElementById('js_content').addEventListener("selectstart",function(e){ e.preventDefault(); });
+
+                                        (function(){
+                            if (navigator.userAgent.indexOf("WindowsWechat") != -1){
+                                var link = document.createElement('link');
+                                var head = document.getElementsByTagName('head')[0];
+                                link.rel = 'stylesheet';
+                                link.type = 'text/css';
+                                link.href = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+                                head.appendChild(link);
+                            }
+                        })();
+                    </script>
+                    
+                    
+                                        
+                                        
+                                        <div class="rich_media_tool" id="js_toobar3">
+                                                                    <div id="js_read_area3" class="media_tool_meta tips_global meta_primary" style="display:none;">阅读 <span id="readNum3"></span></div>
+
+                        <span style="display:none;" class="media_tool_meta meta_primary tips_global meta_praise" id="like3">
+                            <i class="icon_praise_gray"></i><span class="praise_num" id="likeNum3"></span>
+                        </span>
+
+                        <a id="js_report_article3" style="display:none;" class="media_tool_meta tips_global meta_extra" href="javascript:void(0);">投诉</a>
+
+                    </div>
+
+
+
+                                    </div>
+
+                <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none">
+
+                </div>
+
+                <div class="rich_media_area_extra">
+
+                    
+                                        <div class="mpda_bottom_container" id="js_bottom_ad_area">
+                        
+                    </div>
+                                        
+                    <div id="js_iframetest" style="display:none;"></div>
+                                        
+                                    </div>
+               
+            </div>
+            <div id="js_pc_qr_code" class="qr_code_pc_outer" style="display:none;">
+                <div class="qr_code_pc_inner">
+                    <div class="qr_code_pc">
+                        <img id="js_pc_qr_code_img" class="qr_code_pc_img">
+                        <p>微信扫一扫<br>关注该公众号</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+        
+        <script nonce="MOONSAFE_NONCE_1469070959">
+    var __DEBUGINFO = {
+        debug_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/debug/console2ca724.js",
+        safe_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/moonsafe2f3e84.js",
+        res_list: []
+    };
+</script>
+        
+<script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+    var not_in_mm_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm2c9cd6.css";
+    var windowwx_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+    var article_improve_combo_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_combo2eb52b.css";
+    var tid = "";
+    var aid = "";
+    var clientversion = "";
+    var appuin = "MzIwMDMzNzcyNQ=="||"";
+
+    var source = "";
+    var scene = 75;
+
+    var itemidx = "";
+
+    var _copyright_stat = "0";
+    var _ori_article_type = "";
+
+    var nickname = "影视大数据";
+    var appmsg_type = "6";
+    var ct = "1456637889";
+    var publish_time = "2016-02-28" || "";
+    var user_name = "gh_be98065513d1";
+    var user_name_new = "";
+    var fakeid   = "";
+    var version   = "";
+    var is_limit_user   = "0";
+    var round_head_img = "http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB1ELW0LLqCnHxgRo96Ecvib9G6oXkCfm0icJskpbiazjOGxnBrs1dsFw4PGXyBSMslaUSw6icyojeonicw/0?wx_fmt=png";
+    var msg_title = "深度&nbsp;|&nbsp;美人鱼的行业经济效应和艺人们的过去未来";
+    var msg_desc = "美人鱼为什么这么红，谁赚了钱，谁成了名，谁获了利？有样学样，下一个赚钱的是你吗？";
+    var msg_cdn_url = "http://mmbiz.qpic.cn/mmbiz/oaicOIQQ9PB3icdPjeXic8IQotpiaWibhSetDexUtqJBt0QN821DYRIVNia9icu9201jANzRXud27vLtLDOsic9mERrXqA/0?wx_fmt=jpeg";
+    var msg_link = "http://mp.weixin.qq.com/s?__biz=MzIwMDMzNzcyNQ==&amp;tempkey=gyQQfLwRAKAyf48QSIPFRuoQif0P%2FYizN24uw4ki5VQlLFSU36VYBW7B9q%2FubSxPxc1iTProRdPbxFf6rPFfmrB%2BdKqy%2BcGCAxJTfl8axwA%2FmqqET2YbQmQ9CxBiF6MSlFOau%2BTLjLlWx5EwxuYpSw%3D%3D&amp;#rd";
+    var user_uin = "0"*1;
+    var msg_source_url = '';
+    var img_format = 'jpeg';
+    var srcid = '';
+    var req_id = '2812QQ8vuj565wwMWWh8bZMO';
+    var networkType;
+    var appmsgid = '' || '402261731'|| "402261731";
+    var comment_id = "0" * 1;
+    var comment_enabled = "" * 1;
+    var is_need_reward = "0" * 1;
+    var is_https_res = ("" * 1) && (location.protocol == "https:");
+
+    var devicetype = "";
+    var source_encode_biz = "";
+    // var source_username = "";
+    // var profile_ext_signature = "" || "";
+    var reprint_ticket = "";
+    var source_mid = "";
+    var source_idx = "";
+
+    var show_comment = "";
+    var __appmsgCgiData = {
+        can_use_page : "0"*1,
+        is_wxg_stuff_uin : "0"*1,
+        card_pos : "",
+        copyright_stat : "0",
+        source_biz : "",
+        hd_head_img : "http://wx.qlogo.cn/mmhead/Q3auHgzwzM4opw9CLZiawE4Tyg6sDaa6PJaxzAsxfSARfVRIvXEPHfw/0"||(window.location.protocol+"//"+window.location.host + "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_rumor_link.2x264e76.jpg")
+    };
+    var _empty_v = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/pages/voice/empty26f1f1.mp3";
+
+    var copyright_stat = "0" * 1;
+
+    var pay_fee = "" * 1;
+    var pay_timestamp = "";
+    var need_pay = "" * 1;
+
+    var need_report_cost = "0" * 1;
+    var use_tx_video_player = "0" * 1;
+
+    var friend_read_source = "" || "";
+    var friend_read_version = "" || "";
+    var friend_read_class_id = "" || "";
+
+    var is_only_read = "1" * 1;
+    var read_num = "2" * 1;
+    var like_num = "0" * 1;
+    var liked = "false" == 'true' ? true : false;
+    var is_temp_url = "gyQQfLwRAKAyf48QSIPFRuoQif0P/YizN24uw4ki5VQlLFSU36VYBW7B9q/ubSxPxc1iTProRdPbxFf6rPFfmrB&amp;nbsp;dKqy&amp;nbsp;cGCAxJTfl8axwA/mqqET2YbQmQ9CxBiF6MS38s5M1D5urnMObGy1RbW/A==" ? 1 : 0;
+    var send_time = "1469680049";
+      var icon_emotion_switch = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch.2x2f1273.png";
+      var icon_emotion_switch_active = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch_active.2x2f1273.png";
+      var icon_loading_white = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif";
+      var icon_audio_unread = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_unread26f1f1.png";
+      var icon_qqmusic_default = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_default.2x26f1f1.png";
+      var icon_qqmusic_source = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_source263724.png";
+
+    var topic_default_img = 'http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/topic/pic_book_thumb.2x2e4987.png';
+
+    // 话题卡片相关数据
+    var wxtopic = {
+    isbn : ""    // 书籍
+    };
+
+    var svr_time = "1469680094" * 1;
+
+        window.wxtoken = "";
+        window.__moon_initcallback = function(){
+        if(!!window.__initCatch){
+            window.__initCatch({
+                idkey : 27613,
+                startKey : 0,
+                limit : 128,
+                badjsId: 43,
+                reportOpt : {
+                    uin : uin,
+                    biz : biz,
+                    mid : mid,
+                    idx : idx,
+                    sn  : sn
+                },
+                extInfo : {
+                    network_rate : 0.01    //网络错误采样率
+                }
+            });
+        }
+    }
+    </script>
+
+        <script nonce="MOONSAFE_NONCE_1469070959">window.__moon_mainjs = 'appmsg/index.js';window.moon_map = {"appmsg/emotion/caret.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/caret278965.js","biz_wap/jsapi/cardticket.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/cardticket275627.js","appmsg/emotion/map.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/map278965.js","appmsg/emotion/textarea.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/textarea27cdc5.js","appmsg/emotion/nav.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/nav278965.js","appmsg/emotion/common.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/common278965.js","appmsg/emotion/slide.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/slide2a9cd9.js","pages/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/report2eec22.js","pages/music_player.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_player2b674b.js","pages/loadscript.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/loadscript2c9cd6.js","appmsg/emotion/dom.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/dom2f3ac3.js","appmsg/my_comment_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/my_comment_tpl.html2f3f48.js","biz_wap/utils/hashrouter.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/hashrouter2805ea.js","a/gotoappdetail.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/gotoappdetail2f33fb.js","a/ios.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/ios275627.js","a/android.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/android2c5484.js","a/profile.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/profile2f1750.js","a/mpshop.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/mpshop2f1750.js","a/card.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/card2f1750.js","biz_wap/utils/position.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/position2f1750.js","appmsg/a_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_report2f1750.js","biz_common/utils/respTypes.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/respTypes2c57d0.js","appmsg/cmt_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cmt_tpl.html2a2c13.js","sougou/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/a_tpl.html2c6e7c.js","appmsg/emotion/emotion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/emotion2f3ac3.js","biz_common/utils/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/report275627.js","biz_common/utils/huatuo.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/huatuo293afc.js","biz_common/utils/cookie.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/cookie275627.js","appmsg/topic_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/topic_tpl.html2f2e72.js","pages/voice_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_tpl.html2f2e72.js","pages/voice_component.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_component2f3ac3.js","pages/qqmusic_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/qqmusic_tpl.html2f2e72.js","new_video/ctl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/ctl2d441f.js","biz_common/utils/monitor.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/monitor2a30ee.js","biz_common/utils/spin.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/spin275627.js","biz_wap/jsapi/pay.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/pay275627.js","appmsg/reward_entry.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/reward_entry2f3ac3.js","appmsg/comment.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment2f3ac3.js","appmsg/like.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/like2eb52b.js","appmsg/a.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a2f1750.js","pages/version4video.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/version4video2e481d.js","rt/appmsg/getappmsgext.rt.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/rt/appmsg/getappmsgext.rt2c21f6.js","biz_wap/utils/storage.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage2a74ac.js","biz_common/tmpl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl2b3578.js","appmsg/img_copyright_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/img_copyright_tpl.html2a2c13.js","appmsg/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_tpl.html2f1750.js","biz_common/ui/imgonepx.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/ui/imgonepx275627.js","biz_common/dom/attr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr275627.js","biz_wap/utils/ajax.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax2f1747.js","biz_common/utils/string/html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html29f4e9.js","sougou/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/index2c7543.js","biz_wap/safe/mutation_observer_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/mutation_observer_report2f3e84.js","appmsg/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report2f3ac3.js","appmsg/report_and_source.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report_and_source2f1274.js","appmsg/page_pos.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/page_pos2ec4b2.js","appmsg/cdn_speed_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_speed_report2c57d0.js","appmsg/wxtopic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/wxtopic2f2e72.js","appmsg/voice.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voice2f2e72.js","appmsg/qqmusic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/qqmusic2f2e72.js","appmsg/iframe.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/iframe2ef6ca.js","appmsg/review_image.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/review_image2d0cfe.js","appmsg/outer_link.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/outer_link275627.js","biz_wap/jsapi/core.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core2f0d45.js","biz_common/dom/event.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event275627.js","appmsg/copyright_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/copyright_report2ec4b2.js","appmsg/cache.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cache2a74ac.js","appmsg/pay_for_reading.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/pay_for_reading2c5484.js","appmsg/async.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/async2f1750.js","biz_wap/ui/lazyload_img.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/ui/lazyload_img2ec99a.js","biz_common/log/jserr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/log/jserr2805ea.js","appmsg/share.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share2ec548.js","biz_wap/utils/mmversion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion2f1d97.js","appmsg/cdn_img_lib.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_img_lib275627.js","biz_common/utils/url/parse.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/url/parse2dd7fd.js","biz_common/dom/class.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/class275627.js","biz_wap/utils/device.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/device2b3aae.js","biz_wap/jsapi/a8key.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/a8key2a30ee.js","appmsg/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/index2f3f48.js"};</script><script nonce="MOONSAFE_NONCE_1469070959" async type="text/javascript" src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/moon2f0d45.js"></script>
+  <script nonce="MOONSAFE_NONCE_1469070959" type="text/javascript">
+    var real_show_page_time = +new Date();
+    if (!!window.addEventListener){
+        window.addEventListener("load", function(){
+            window.onload_endtime = +new Date();
+        });
+    }
+    
+  </script>
+
+    </body>
+</html>
+<!--tailTrap<body></body><head></head><html></html>-->
+ 
