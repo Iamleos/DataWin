@@ -43,7 +43,9 @@ while($j<(int)($line/30))
         $bname=trim(str_replace("\"","",$arr[0]));
 
         $bmeiti=(int)(substr($arr[3],1,strlen($arr[3])-4));
+	//$bmeiti = (int)$arr[3];
         $bacquitime=date("Y-m-d");
+	echo $bmeiti;
         $sqlinsert="insert into baidumeiti(bname,bmeiti,bacquitime) values('{$bname}','{$bmeiti}','{$bacquitime}')";
         echo $sqlinsert;
         $result=mysql_query($sqlinsert,$con);

@@ -1,4 +1,5 @@
 <?php
+echo exec('whoami');
   $ch = curl_init("http://piaofang.maoyan.com");
   curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1664.3 Safari/537.36");
   curl_setopt($ch, CURLOPT_TIMEOUT, 2);
@@ -18,15 +19,13 @@ if(count($ttf[1])==0){
 }
 else{
   preg_match_all('/.*\/colorstone\/(.*)/',$ttf[1][0],$filename);
-  $com = "wget -P /var/www/html/filmdaily/maoyanpiaofang ".$ttf[1][0];
+  $com = "sudo wget -P /var/www/html/filmdaily/maoyanpiaofang ".$ttf[1][0];
   shell_exec($com);
   sleep(3);
-  shell_exec('rename '.$filename[1][0].' map.ttf /var/www/html/filmdaily/maoyanpiaofang/'.$filename[1][0]);
+  shell_exec('sudo rename '.$filename[1][0].' map.ttf /var/www/html/filmdaily/maoyanpiaofang/'.$filename[1][0]);
   sleep(3);
-  shell_exec("java -classpath /var/www/html/filmdaily/maoyanpiaofang/ maoyan");
+  exec("/home/jdk/bin/java -classpath /var/www/html/filmdaily/maoyanpiaofang/ maoyan");
   sleep(3);
-  shell_exec("php /var/www/html/filmdaily/maoyanpiaofang/maoyan_getData.php");
-  sleep(5);
-  shell_exec("rm -f map.ttf"); 
+  shell_exec("sudo php /var/www/html/filmdaily/maoyanpiaofang/maoyan_getData.php");
 }
  ?>

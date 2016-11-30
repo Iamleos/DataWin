@@ -7,9 +7,8 @@ import java.io.IOException;
 
 public class maoyan {
 	public static void main(String[] args) throws IOException{
-		File file = new File("/var/www/html/filmdaily/maoyanpiaofang/map.ttf");
-		File filwout = new File("/var/www/html/filmdaily/maoyanpiaofang/key.txt");
-		filwout.setWritable(true,false);
+		File file = new File("/var/www/html/filmdaily/maoyanfen/map.ttf");
+		File filwout = new File("/var/www/html/filmdaily/maoyanfen/key.txt");
 		FileOutputStream ou = new FileOutputStream(filwout);
 		FileInputStream in = new FileInputStream(file);
 		byte[] bt = new byte[10000];

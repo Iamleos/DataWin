@@ -5,6 +5,7 @@
  * @param: $urls array url列表
  * @param: $callback string 需要进行内容处理的回调函数。示例：func(array)
  */
+  date_default_timezone_set("Asia/Shanghai");
   echo date("Y-n-d H:i:s",time()+8*3600)."</br>";
   function curl($urls = array(), $callback = '',$yname=array())
   {
