@@ -70,7 +70,7 @@
 
 						fclose($myfile);
 
-						$url='http://localhost/admin/baidu.php';
+						$url='http://115.159.205.133/admin/baidu.php';
 						file_get_contents($url);
 
 						echo"<font color='#32CD32'>百度搜索指数：上传成功</font><br/>";
@@ -109,7 +109,7 @@
 
 						fclose($myfile);
 
-						$url='http://localhost/admin/baidumeiti.php';
+						$url='http://115.159.205.133/admin/baidumeiti.php';
 						file_get_contents($url);
 
 						echo"<font color='#32CD32'>百度媒体指数：上传成功</font><br/>";
@@ -148,7 +148,7 @@
 
 						fclose($myfile);
 
-						$url='http://localhost/admin/qihu.php';
+						$url='http://115.159.205.133/admin/qihu.php';
 						file_get_contents($url);
 
 						echo"<font color='#32CD32'>360指数：上传成功</font><br/>";
@@ -188,7 +188,7 @@
 
 					fclose($myfile);
 
-					$url='http://localhost/admin/weizhishuzhengti.php';
+					$url='http://115.159.205.133/admin/weizhishuzhengti.php';
 					file_get_contents($url);
 					echo"<font color='#32CD32'>微指数整体上传成功</font><br/>";
 				}
@@ -222,7 +222,7 @@
 						fwrite($myfile, $txt);
 
 						fclose($myfile);
-						$url='http://localhost/admin/weizhishuyidong.php';
+						$url='http://115.159.205.133/admin/weizhishuyidong.php';
 						file_get_contents($url);
 						echo"<font color='#32CD32'>微指数移动上传成功</font><br/>";
 
@@ -282,7 +282,7 @@
 
 						fclose($myfile);
 
-						$url='http://localhost/admin/yirenba.php';
+						$url='http://115.159.205.133/admin/yirenba.php';
 						file_get_contents($url);
 
 						echo"<font color='#32CD32'>艺人贴吧指数：上传成功</font><br/>";
@@ -321,7 +321,7 @@
 						fwrite($myfile, $txt);
 
 						fclose($myfile);
-						$url='http://localhost/admin/dianyingba.php';
+						$url='http://115.159.205.133/admin/dianyingba.php';
 						file_get_contents($url);
 
 						echo"<font color='#32CD32'>电影吧指数：上传成功</font><br/>";
@@ -360,7 +360,7 @@
 						fwrite($myfile, $txt);
 
 						fclose($myfile);
-						$url='http://localhost/admin/doubanbazu.php';
+						$url='http://115.159.205.133/admin/doubanbazu.php';
 						file_get_contents($url);
 
 						echo"<font color='#32CD32'>豆瓣八组指数：上传成功</font><br/>";
@@ -399,7 +399,7 @@
 						fwrite($myfile, $txt);
 
 						fclose($myfile);
-						$url='http://localhost/admin/doubanfen.php';
+						$url='http://115.159.205.133/admin/doubanfen.php';
 						file_get_contents($url);
 						echo"<font color='#32CD32'>豆瓣分指数：上传成功</font><br/>";
 
@@ -437,7 +437,7 @@
 						fwrite($myfile, $txt);
 
 						fclose($myfile);
-						$url='http://localhost/admin/gewalafen.php';
+						$url='http://115.159.205.133/admin/gewalafen.php';
 						file_get_contents($url);
 
 						echo"<font color='#32CD32'>格瓦拉分指数：上传成功</font><br/>";
@@ -477,7 +477,7 @@
 
 						fclose($myfile);
 
-						$url='http://localhost/admin/maoyanpiaofangjianbao.php';
+						$url='http://115.159.205.133/admin/maoyanpiaofangjianbao.php';
 						file_get_contents($url);
 
 						echo"<font color='#32CD32'>猫眼票房简报指数：上传成功</font><br/>";
@@ -516,7 +516,7 @@
 						fwrite($myfile, $txt);
 
 						fclose($myfile);
-						$url='http://localhost/admin/maoyanhuangjinpaipian.php';
+						$url='http://115.159.205.133/admin/maoyanhuangjinpaipian.php';
 						file_get_contents($url);
 						echo"<font color='#32CD32'>猫眼黄金排片指数：上传成功</font><br/>";
 
@@ -555,7 +555,7 @@
 
 						fclose($myfile);
 
-						$url='http://localhost/admin/maoyanpaipian.php';
+						$url='http://115.159.205.133/admin/maoyanpaipian.php';
 						file_get_contents($url);
 
 						echo"<font color='#32CD32'>猫眼排片指数：上传成功</font><br/>";
@@ -595,7 +595,7 @@
 
 						fclose($myfile);
 
-						$url='http://localhost/admin/maoyanpiaofangcubao.php';
+						$url='http://115.159.205.133/admin/maoyanpiaofangcubao.php';
 						file_get_contents($url);
 
 						echo"<font color='#32CD32'>猫眼票房粗报指数：上传成功</font><br/>";
@@ -634,7 +634,7 @@
 						fwrite($myfile, $txt);
 
 						fclose($myfile);
-						$url='http://localhost/admin/maoyanfen.php';
+						$url='http://115.159.205.133/admin/maoyanfen.php';
 						file_get_contents($url);
 
 						echo"<font color='#32CD32'>猫眼评分指数：上传成功</font><br/>";
@@ -673,7 +673,7 @@
 						fwrite($myfile, $txt);
 
 						fclose($myfile);
-						$url='http://localhost/admin/tianya.php';
+						$url='http://115.159.205.133/admin/tianya.php';
 						file_get_contents($url);
 
 						echo"<font color='#32CD32'>天涯指数：上传成功</font><br/>";
@@ -713,7 +713,7 @@
 
 						fclose($myfile);
 
-						$url='http://localhost/admin/tuqu.php';
+						$url='http://115.159.205.133/admin/tuqu.php';
 						file_get_contents($url);
 
 						echo"<font color='#32CD32'>晋江兔区指数：上传成功</font><br/>";
@@ -752,7 +752,7 @@
 						fwrite($myfile, $txt);
 
 						fclose($myfile);
-						$url='http://localhost/admin/enyipiaofang.php';
+						$url='http://115.159.205.133/admin/enyipiaofang.php';
 						file_get_contents($url);
 
 						echo"<font color='#32CD32'>艺恩票房指数：上传成功</font><br/>";
@@ -791,7 +791,7 @@
 						fwrite($myfile, $txt);
 
 						fclose($myfile);
-						$url='http://localhost/admin/youyiba.php';
+						$url='http://115.159.205.133/admin/youyiba.php';
 						file_get_contents($url);
 
 						echo"<font color='#32CD32'>友谊吧指数：上传成功</font><br/>";
@@ -830,7 +830,7 @@
 						fwrite($myfile, $txt);
 
 						fclose($myfile);
-						$url='http://localhost/admin/yulequanba.php';
+						$url='http://115.159.205.133/admin/yulequanba.php';
 						file_get_contents($url);
 
 						echo"<font color='#32CD32'>娱乐圈吧指数：上传成功</font><br/>";
@@ -869,7 +869,7 @@
 						fwrite($myfile, $txt);
 
 						fclose($myfile);
-						$url='http://localhost/admin/zpiaofang.php';
+						$url='http://115.159.205.133/admin/zpiaofang.php';
 						file_get_contents($url);
 
 						echo"<font color='#32CD32'>专资办票房指数：上传成功</font><br/>";

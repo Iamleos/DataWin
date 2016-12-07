@@ -71,17 +71,17 @@
 		$lingdian=mysql_query("select mname from specialfilm where type=2");
 		while($row_ld=mysql_fetch_row($lingdian))
 		{
-			$m_z=mysql_query("select mboxoffice from dianyingzh where mainname='{$row_ld[0]}'");
+			$m_z=mysql_query("select zboxoffice from dianyingzh where mainname='{$row_ld[0]}'");
 
 			$m_zboxoffice=mysql_fetch_row($m_z);
-			if($m_zboxoffice[0])
+			if($m_zboxoffice[0]<=0)
 			{
 				$name=$row_ld[0];
 
 				$row_str=mysql_query("select * from dianyingzh where mainname='{$row_ld[0]}'");
 				$row=mysql_fetch_row($row_str,true);
 
-				$dy=mysql_query("select * from maoyanpiaofang where mname='{$name}'");
+				$dy=mysql_query("select * from mpiaofangjianbao where mname='{$name}'");
 				$jb=mysql_fetch_row($dy,true);
 
 				$yjpf=(int)($jb['mboxoffice']);
@@ -114,8 +114,6 @@
 				}
 
 				$datalist=array("name"=>$name,"yjqt"=>$yjpf,"pf"=>$pf,"ljpf"=>$ljpf,"gyrc"=>$gyrc,"cj"=>$cj,"cjpf"=>$cjpf,"pfzb"=>$pfzb,"sz"=>$sz,"syts"=>"");
-				$datalist=array("name"=>$name,"yjqt"=>$yjpf,"pf"=>$pf,"ljpf"=>$ljpf,"gyrc"=>$gyrc,"cj"=>$cj,"cjpf"=>$cjpf,"pfzb"=>$pfzb,"sz"=>$sz,"syts"=>"");
-
 
 				$arr['ldc'][$j]=$datalist;
 				$j++;
@@ -141,6 +139,7 @@
 
 				$dy=mysql_query("select * from mpiaofangjianbao where mname='{$name}'");
 				$jb=mysql_fetch_row($dy,true);
+
 				$yjpf=(int)($jb['mboxoffice']);
 				$pf=(int)($jb['mboxoffice']);
 				$ljpf="";

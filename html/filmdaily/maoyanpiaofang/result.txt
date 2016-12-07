@@ -33,14 +33,14 @@
 
 <style id="js-nuwa">
     @font-face {font-family: 'cs';
-        src: url(//p1.meituan.net/colorstone/777ce8a7bf321dcf26b914d2e4fc5f193168.eot); /* IE9 */
-        src: url(//p1.meituan.net/colorstone/41a65872d5613106fe8b1185e31b1e592088.woff)  format('woff'), /* chrome、firefox */
-             url(//p1.meituan.net/colorstone/949bb5140fefdb3ea97887e756e033f33000.ttf) format('truetype'); /* 魅族自带浏览器只认ttf */
+        src: url(//p1.meituan.net/colorstone/3bca498b496daa8b06c4b841614ab2d03168.eot); /* IE9 */
+        src: url(//p0.meituan.net/colorstone/97d26832ec0ca049de334b8b28ad8afe2084.woff)  format('woff'), /* chrome、firefox */
+             url(//p0.meituan.net/colorstone/a7b6c6d77b50acc9defcf74097bf82393000.ttf) format('truetype'); /* 魅族自带浏览器只认ttf */
     }
 </style>
 <link rel="stylesheet" type="text/css" href="//ms0.meituan.net/piaofang/css/ticket.3335890e.css" />
 <title>猫眼专业版</title></head>
-<body class="has-bar" data-ymd="2016-11-30">
+<body class="has-bar" data-ymd="2016-12-07">
 <div id="wx_pic" style="display:none;">
     <img src="//ms0.meituan.net/piaofang/img/wx_pic.png"/>
 </div>
@@ -49,58 +49,6 @@
             //ms0.meituan.net/piaofang/img/logo_150717.png
     " /></h1>
 </header>
-<style>
-#slide-wrap{
-    max-height: 3rem;
-    max-width: 12.8rem;
-    position: relative;
-    overflow: hidden;
-    margin:0 auto;
-}
-.slide-placeholder{
-    padding-bottom: 23.4375%;
-    width: 100%;
-    max-height: .6rem;
-    visibility: hidden;
-}
-.wrap-placeholder{
-    max-width: 12.8rem;
-}
-.swipe{
-    margin: 0 auto;
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    width: 100%;
-}
-.swipe-wrap{
-    overflow: hidden;
-    position: relative;
-    height: inherit;
-}
-.swipe-wrap>a{
-    float:left;
-    width:100%;
-    height: inherit;
-    position: relative;
-    text-align: center;
-}
-.swipe-wrap img{
-    height: 100%;
-}
-</style>
-<div id="slide-wrap" data-com="slider">
-    <div class="wrap-placeholder">
-        <div class="slide-placeholder"></div>
-    </div>
-    <div id='slider' class='swipe'>
-        <div class='swipe-wrap'>
-                <a href="http://piaofang.maoyan.com/app" data-src="//p1.meituan.net/mmc/0e17cb35c2a77287ed9fd3481480983223247.jpg" data-name="30分钟票房"></a>
-        </div>
-    </div>
-</div>
 <div class="menus">
         <a class="active" href="javascript:;">票房</a>
         <a href="/show">排片</a>
@@ -111,11 +59,11 @@
 </div>
 <ul class="dateBar hbox " data-com="dateBar,
     minDate:'2011-01-01',
-    maxDate:'2016-12-15',
-    today: '2016-11-30',
+    maxDate:'2016-12-22',
+    today: '2016-12-07',
     selectMinDate:'2011-01-01',
-    selectMaxDate:'2016-12-15',
-    selectDate: '2016-11-30',
+    selectMaxDate:'2016-12-22',
+    selectDate: '2016-12-07',
     showPreSale: 'true',
     dateFmt:'full_day'" >
 
@@ -131,13 +79,13 @@
     <div class="indentOut hollow" id="desc-wrap">
         <div class='logo'>
             <span id="dayStr" class="today">
-                2016-11-30
+                2016-12-07
                 今天
             </span>
             <span>大盘：</span>
-            <span id='ticket_count'><i class="cs gsBlur">&#xf299;&#xf74e;&#xe328;&#xf74e;.&#xf0a5;万</i></span>
+            <span id='ticket_count'><i class="cs gsBlur">&#xf032;&#xe4d6;&#xed65;&#xed65;.&#xed65;万</i></span>
         </div>
-        <div id="dayTips" class="update">每30分钟更新一次，上次更新北京时间18:30</div>
+        <div id="dayTips" class="update">每30分钟更新一次，上次更新北京时间22:30</div>
     </div>
     <div class="ticketList">
         <ul id='ticketList_Title' class="title clearfix">
@@ -149,533 +97,487 @@
             <li class="c5">上座率</li>
         </ul>
         <div class="content strip" id='ticket_tbody'>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/344881?_v_=yes'">
+                <li class='c1'>
+                    <b>你的名字。</b>
+                    <br><em>上映6天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xe4e3;.&#xf032;&#xed65;亿</i></em>
+                </li>
+                <li class="c2 ">
+                    <b><i class="cs gsBlur">&#xf62a;&#xf62a;&#xea2b;&#xed65;.&#xf62a;&#xe4e3;</i></b><br/>
+                </li>
+                <li class="c3 "><i class="cs gsBlur">&#xe4e3;&#xed65;.&#xe2e8;%</i></li>
+                <li class="c4 ">
+                        <i class="cs gsBlur">&#xe4e3;&#xe4e3;.&#xf534;%</i>
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            <i class="cs gsBlur">&#xe2e8;&#xe4d6;.&#xe4e3;%</i>
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>你的名字。</b>
+                    <br><em>上映6天</em>
+                </li>
+                </ul>
                 <ul class="canTouch" data-com="hrefTo,href:'/movie/248918?_v_=yes'">
                 <li class='c1'>
                     <b>神奇动物在哪里</b>
-                    <br><em>上映6天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf299;.&#xe431;&#xf1dd;亿</i></em>
+                    <br><em>上映13天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xea2b;.&#xf62a;&#xed65;亿</i></em>
                 </li>
                 <li class="c2 ">
-                    <b><i class="cs gsBlur">&#xf59f;&#xf0a5;&#xe431;&#xf299;.&#xf0a5;&#xecda;</i></b><br/>
+                    <b><i class="cs gsBlur">&#xf184;&#xe4d6;&#xf534;.&#xf184;&#xf62a;</i></b><br/>
                 </li>
-                <li class="c3 "><i class="cs gsBlur">&#xe328;&#xecda;.&#xf74e;%</i></li>
+                <li class="c3 "><i class="cs gsBlur">&#xe2e8;&#xe4e3;.&#xe4e3;%</i></li>
                 <li class="c4 ">
-                        <i class="cs gsBlur">&#xf299;&#xf1dd;.&#xecda;%</i>
+                        <i class="cs gsBlur">&#xe2e8;&#xe51c;.&#xf62a;%</i>
                 </li>
                 <li class="c5 ">
                     <span style="margin-right:-.1rem">
-                            <i class="cs gsBlur">&#xf0a5;.&#xf39c;%</i>
+                            <i class="cs gsBlur">&#xed65;.&#xf534;%</i>
                     </span>
                     <span style="padding-right:.24rem" class="_more"></span>
                 </li>
                 <li class="solid">
                     <b>神奇动物在哪里</b>
-                    <br><em>上映6天</em>
-                </li>
-                </ul>
-                <ul class="canTouch" data-com="hrefTo,href:'/movie/346564?_v_=yes'">
-                <li class='c1'>
-                    <b>间谍同盟</b>
-                    <br><i class="font-orange">上映首日</i><em style="margin-left: .1rem"><i class="cs gsBlur">&#xe431;&#xecda;&#xecda;.&#xf74e;万</i></em>
-                </li>
-                <li class="c2 ">
-                    <b><i class="cs gsBlur">&#xe431;&#xecda;&#xf59f;.&#xf0a5;&#xf1dd;</i></b><br/>
-                </li>
-                <li class="c3 "><i class="cs gsBlur">&#xf59f;&#xe431;.&#xf795;%</i></li>
-                <li class="c4 ">
-                        <i class="cs gsBlur">&#xf1dd;&#xf39c;.&#xecda;%</i>
-                </li>
-                <li class="c5 ">
-                    <span style="margin-right:-.1rem">
-                            <i class="cs gsBlur">&#xf0a5;.&#xf299;%</i>
-                    </span>
-                    <span style="padding-right:.24rem" class="_more"></span>
-                </li>
-                <li class="solid">
-                    <b>间谍同盟</b>
-                    <br><i class="font-orange">上映首日</i>
-                </li>
-                </ul>
-                <ul class="canTouch" data-com="hrefTo,href:'/movie/341749?_v_=yes'">
-                <li class='c1'>
-                    <b>我不是潘金莲</b>
-                    <br><em>上映13天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf299;.&#xecda;&#xecda;亿</i></em>
-                </li>
-                <li class="c2 ">
-                    <b><i class="cs gsBlur">&#xecda;&#xf39c;&#xe328;.&#xf0a5;&#xe431;</i></b><br/>
-                </li>
-                <li class="c3 "><i class="cs gsBlur">&#xf59f;&#xf299;.&#xf59f;%</i></li>
-                <li class="c4 ">
-                        <i class="cs gsBlur">&#xf59f;&#xf39c;.&#xf59f;%</i>
-                </li>
-                <li class="c5 ">
-                    <span style="margin-right:-.1rem">
-                            <i class="cs gsBlur">&#xf795;.&#xf39c;%</i>
-                    </span>
-                    <span style="padding-right:.24rem" class="_more"></span>
-                </li>
-                <li class="solid">
-                    <b>我不是潘金莲</b>
                     <br><em>上映13天</em>
                 </li>
                 </ul>
-                <ul class="canTouch" data-com="hrefTo,href:'/movie/246222?_v_=yes'">
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/79088?_v_=yes'">
                 <li class='c1'>
-                    <b>海洋奇缘</b>
-                    <br><em>上映6天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf59f;.&#xf39c;&#xf299;亿</i></em>
+                    <b>三少爷的剑</b>
+                    <br><em>上映6天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xed65;&#xe4e3;&#xed65;&#xea2b;.&#xf184;万</i></em>
                 </li>
                 <li class="c2 ">
-                    <b><i class="cs gsBlur">&#xe328;&#xf1dd;&#xf39c;.&#xecda;&#xf39c;</i></b><br/>
+                    <b><i class="cs gsBlur">&#xf032;&#xed65;&#xe4d6;.&#xea2b;&#xe51c;</i></b><br/>
                 </li>
-                <li class="c3 "><i class="cs gsBlur">&#xf59f;&#xf39c;.&#xf795;%</i></li>
+                <li class="c3 "><i class="cs gsBlur">&#xe2e8;&#xe2e8;.&#xe4d6;%</i></li>
                 <li class="c4 ">
-                        <i class="cs gsBlur">&#xf59f;&#xf299;.&#xf74e;%</i>
+                        <i class="cs gsBlur">&#xe2e8;&#xf62a;.&#xf184;%</i>
                 </li>
                 <li class="c5 ">
                     <span style="margin-right:-.1rem">
-                            <i class="cs gsBlur">&#xe431;.&#xf0a5;%</i>
+                            <i class="cs gsBlur">&#xf184;.&#xe51c;%</i>
                     </span>
                     <span style="padding-right:.24rem" class="_more"></span>
                 </li>
                 <li class="solid">
-                    <b>海洋奇缘</b>
+                    <b>三少爷的剑</b>
                     <br><em>上映6天</em>
                 </li>
                 </ul>
-                <ul class="canTouch" data-com="hrefTo,href:'/movie/344073?_v_=yes'">
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/246373?_v_=yes'">
                 <li class='c1'>
-                    <b>名侦探柯南：纯黑的恶梦</b>
-                    <br><em>上映6天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf1dd;&#xf0a5;&#xf795;&#xe431;.&#xf1dd;万</i></em>
+                    <b>佩小姐的奇幻城堡</b>
+                    <br><em>上映6天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf534;&#xe4d6;&#xed65;&#xe51c;.&#xe51c;万</i></em>
                 </li>
                 <li class="c2 ">
-                    <b><i class="cs gsBlur">&#xf795;&#xe431;.&#xf795;&#xecda;</i></b><br/>
+                    <b><i class="cs gsBlur">&#xf032;&#xea2b;&#xf184;.&#xed65;&#xf184;</i></b><br/>
                 </li>
-                <li class="c3 "><i class="cs gsBlur">&#xf1dd;.&#xecda;%</i></li>
+                <li class="c3 "><i class="cs gsBlur">&#xe2e8;&#xe4d6;.&#xf184;%</i></li>
                 <li class="c4 ">
-                        <i class="cs gsBlur">&#xecda;.&#xe328;%</i>
+                        <i class="cs gsBlur">&#xe2e8;&#xe51c;.&#xf62a;%</i>
                 </li>
                 <li class="c5 ">
                     <span style="margin-right:-.1rem">
-                            <i class="cs gsBlur">&#xe431;.&#xf1dd;%</i>
+                            <i class="cs gsBlur">&#xf184;.&#xea2b;%</i>
                     </span>
                     <span style="padding-right:.24rem" class="_more"></span>
                 </li>
                 <li class="solid">
-                    <b>名侦探柯南：纯黑的恶梦</b>
-                    <br><em>上映6天</em>
-                </li>
-                </ul>
-                <ul class="canTouch" data-com="hrefTo,href:'/movie/341529?_v_=yes'">
-                <li class='c1'>
-                    <b>冲天火</b>
-                    <br><em>上映6天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf299;&#xf299;&#xf0a5;&#xf795;.&#xf299;万</i></em>
-                </li>
-                <li class="c2 ">
-                    <b><i class="cs gsBlur">&#xf795;&#xf1dd;.&#xf795;&#xf299;</i></b><br/>
-                </li>
-                <li class="c3 "><i class="cs gsBlur">&#xf1dd;.&#xe328;%</i></li>
-                <li class="c4 ">
-                        <i class="cs gsBlur">&#xf0a5;.&#xf795;%</i>
-                </li>
-                <li class="c5 ">
-                    <span style="margin-right:-.1rem">
-                            <i class="cs gsBlur">&#xe328;.&#xf795;%</i>
-                    </span>
-                    <span style="padding-right:.24rem" class="_more"></span>
-                </li>
-                <li class="solid">
-                    <b>冲天火</b>
-                    <br><em>上映6天</em>
-                </li>
-                </ul>
-                <ul class="canTouch" data-com="hrefTo,href:'/movie/247259?_v_=yes'">
-                <li class='c1'>
-                    <b>大话西游3</b>
-                    <br><em>上映78天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf299;.&#xe431;&#xe431;亿</i></em>
-                </li>
-                <li class="c2 ">
-                    <b><i class="cs gsBlur">&#xf74e;&#xf299;.&#xf59f;&#xecda;</i></b><br/>
-                </li>
-                <li class="c3 "><i class="cs gsBlur">&#xf1dd;.&#xf1dd;%</i></li>
-                <li class="c4 ">
-                        <i class="cs gsBlur">&#xf39c;.&#xf59f;%</i>
-                </li>
-                <li class="c5 ">
-                    <span style="margin-right:-.1rem">
-                            <i class="cs gsBlur">&#xe431;&#xe431;.&#xecda;%</i>
-                    </span>
-                    <span style="padding-right:.24rem" class="_more"></span>
-                </li>
-                <li class="solid">
-                    <b>大话西游3</b>
-                    <br><em>上映78天</em>
-                </li>
-                </ul>
-                <ul class="canTouch" data-com="hrefTo,href:'/movie/247736?_v_=yes'">
-                <li class='c1'>
-                    <b>比利·林恩的中场战事</b>
-                    <br><em>上映20天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf59f;.&#xecda;&#xf74e;亿</i></em>
-                </li>
-                <li class="c2 ">
-                    <b><i class="cs gsBlur">&#xe431;&#xe328;.&#xf39c;&#xe431;</i></b><br/>
-                </li>
-                <li class="c3 "><i class="cs gsBlur">&#xf59f;.&#xf0a5;%</i></li>
-                <li class="c4 ">
-                        <i class="cs gsBlur">&#xf39c;.&#xe431;%</i>
-                </li>
-                <li class="c5 ">
-                    <span style="margin-right:-.1rem">
-                            <i class="cs gsBlur">&#xf795;.&#xf74e;%</i>
-                    </span>
-                    <span style="padding-right:.24rem" class="_more"></span>
-                </li>
-                <li class="solid">
-                    <b>比利·林恩的中场战事</b>
-                    <br><em>上映20天</em>
-                </li>
-                </ul>
-                <ul class="canTouch" data-com="hrefTo,href:'/movie/246124?_v_=yes'">
-                <li class='c1'>
-                    <b>奇异博士</b>
-                    <br><em>上映27天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf0a5;.&#xecda;&#xf39c;亿</i></em>
-                </li>
-                <li class="c2 ">
-                    <b><i class="cs gsBlur">&#xe431;&#xf59f;.&#xf299;&#xf74e;</i></b><br/>
-                </li>
-                <li class="c3 "><i class="cs gsBlur">&#xf59f;.&#xe431;%</i></li>
-                <li class="c4 ">
-                        <i class="cs gsBlur">&#xf1dd;.&#xecda;%</i>
-                </li>
-                <li class="c5 ">
-                    <span style="margin-right:-.1rem">
-                            <i class="cs gsBlur">&#xe431;.&#xf74e;%</i>
-                    </span>
-                    <span style="padding-right:.24rem" class="_more"></span>
-                </li>
-                <li class="solid">
-                    <b>奇异博士</b>
-                    <br><em>上映27天</em>
-                </li>
-                </ul>
-                <ul class="canTouch" data-com="hrefTo,href:'/movie/345105?_v_=yes'">
-                <li class='c1'>
-                    <b>最萌身高差</b>
-                    <br><em>上映6天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xecda;&#xf39c;&#xecda;.&#xecda;万</i></em>
-                </li>
-                <li class="c2 ">
-                    <b><i class="cs gsBlur">&#xf59f;&#xf74e;.&#xe328;&#xf795;</i></b><br/>
-                </li>
-                <li class="c3 "><i class="cs gsBlur">&#xf39c;.&#xecda;%</i></li>
-                <li class="c4 ">
-                        <i class="cs gsBlur">&#xf59f;.&#xf74e;%</i>
-                </li>
-                <li class="c5 ">
-                    <span style="margin-right:-.1rem">
-                            <i class="cs gsBlur">&#xe431;.&#xf299;%</i>
-                    </span>
-                    <span style="padding-right:.24rem" class="_more"></span>
-                </li>
-                <li class="solid">
-                    <b>最萌身高差</b>
-                    <br><em>上映6天</em>
-                </li>
-                </ul>
-                <ul class="canTouch" data-com="hrefTo,href:'/movie/343413?_v_=yes'">
-                <li class='c1'>
-                    <b>28岁未成年</b>
-                    <br><em>点映</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf59f;&#xf59f;&#xf74e;.&#xecda;万</i></em>
-                </li>
-                <li class="c2 ">
-                    <b><i class="cs gsBlur">&#xf59f;&#xf1dd;.&#xf39c;&#xf1dd;</i></b><br/>
-                </li>
-                <li class="c3 "><i class="cs gsBlur">&#xf39c;.&#xf299;%</i></li>
-                <li class="c4 ">
-                        <i class="cs gsBlur">&#xf39c;.&#xf39c;%</i>
-                </li>
-                <li class="c5 ">
-                    <span style="margin-right:-.1rem">
-                            <i class="cs gsBlur">&#xf74e;&#xf1dd;.&#xf59f;%</i>
-                    </span>
-                    <span style="padding-right:.24rem" class="_more"></span>
-                </li>
-                <li class="solid">
-                    <b>28岁未成年</b>
-                    <br><em>点映</em>
-                </li>
-                </ul>
-                <ul class="canTouch" data-com="hrefTo,href:'/movie/248675?_v_=yes'">
-                <li class='c1'>
-                    <b>深海浩劫</b>
-                    <br><em>上映16天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf0a5;&#xf1dd;&#xf59f;&#xe431;.&#xf795;万</i></em>
-                </li>
-                <li class="c2 ">
-                    <b><i class="cs gsBlur">&#xf795;.&#xf299;&#xf59f;</i></b><br/>
-                </li>
-                <li class="c3 "><i class="cs gsBlur">&#xf39c;.&#xf1dd;%</i></li>
-                <li class="c4 ">
-                        <i class="cs gsBlur">&#xf39c;.&#xecda;%</i>
-                </li>
-                <li class="c5 ">
-                    <span style="margin-right:-.1rem">
-                            <i class="cs gsBlur">&#xf74e;.&#xf299;%</i>
-                    </span>
-                    <span style="padding-right:.24rem" class="_more"></span>
-                </li>
-                <li class="solid">
-                    <b>深海浩劫</b>
-                    <br><em>上映16天</em>
-                </li>
-                </ul>
-                <ul class="canTouch" data-com="hrefTo,href:'/movie/338391?_v_=yes'">
-                <li class='c1'>
-                    <b>湄公河行动</b>
-                    <br><em>上映62天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf59f;&#xf59f;.&#xf74e;&#xf299;亿</i></em>
-                </li>
-                <li class="c2 ">
-                    <b><i class="cs gsBlur">&#xf0a5;.&#xe328;&#xf74e;</i></b><br/>
-                </li>
-                <li class="c3 "><i class="cs gsBlur">&#xf39c;.&#xf1dd;%</i></li>
-                <li class="c4 ">
-                        <i class="cs gsBlur">&#xf39c;.&#xf1dd;%</i>
-                </li>
-                <li class="c5 ">
-                    <span style="margin-right:-.1rem">
-                            <i class="cs gsBlur">&#xf59f;&#xe328;.&#xf39c;%</i>
-                    </span>
-                    <span style="padding-right:.24rem" class="_more"></span>
-                </li>
-                <li class="solid">
-                    <b>湄公河行动</b>
-                    <br><em>上映62天</em>
-                </li>
-                </ul>
-                <ul class="canTouch" data-com="hrefTo,href:'/movie/1182756?_v_=yes'">
-                <li class='c1'>
-                    <b>怨灵地下室</b>
-                    <br><em>上映6天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf59f;&#xe431;&#xf0a5;.&#xf74e;万</i></em>
-                </li>
-                <li class="c2 ">
-                    <b><i class="cs gsBlur">&#xe328;.&#xf795;&#xe328;</i></b><br/>
-                </li>
-                <li class="c3 "><i class="cs gsBlur">&#xf39c;.&#xf59f;%</i></li>
-                <li class="c4 ">
-                        <i class="cs gsBlur">&#xf59f;.&#xf59f;%</i>
-                </li>
-                <li class="c5 ">
-                    <span style="margin-right:-.1rem">
-                            <i class="cs gsBlur">&#xf1dd;.&#xe431;%</i>
-                    </span>
-                    <span style="padding-right:.24rem" class="_more"></span>
-                </li>
-                <li class="solid">
-                    <b>怨灵地下室</b>
+                    <b>佩小姐的奇幻城堡</b>
                     <br><em>上映6天</em>
                 </li>
                 </ul>
                 <ul class="canTouch" data-com="hrefTo,href:'/movie/343866?_v_=yes'">
                 <li class='c1'>
                     <b>超级快递</b>
-                    <br><em>点映</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf59f;&#xf795;.&#xecda;万</i></em>
+                    <br><em>上映6天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xe51c;&#xe51c;&#xe2e8;&#xea2b;.&#xf62a;万</i></em>
                 </li>
                 <li class="c2 ">
-                    <b><i class="cs gsBlur">&#xe328;.&#xf299;&#xf74e;</i></b><br/>
+                    <b><i class="cs gsBlur">&#xea2b;&#xe4d6;&#xed65;.&#xf032;&#xe2e8;</i></b><br/>
                 </li>
-                <li class="c3 "><i class="cs gsBlur">&#xf39c;.&#xf59f;%</i></li>
+                <li class="c3 "><i class="cs gsBlur">&#xf184;.&#xe51c;%</i></li>
                 <li class="c4 ">
-                        <i class="cs gsBlur">&#xf39c;.&#xf39c;%</i>
+                        <i class="cs gsBlur">&#xf534;.&#xed65;%</i>
                 </li>
                 <li class="c5 ">
                     <span style="margin-right:-.1rem">
-                            <i class="cs gsBlur">&#xf0a5;&#xe328;.&#xe431;%</i>
+                            <i class="cs gsBlur">&#xe2e8;&#xf62a;.&#xe51c;%</i>
                     </span>
                     <span style="padding-right:.24rem" class="_more"></span>
                 </li>
                 <li class="solid">
                     <b>超级快递</b>
-                    <br><em>点映</em>
-                </li>
-                </ul>
-                <ul class="canTouch" data-com="hrefTo,href:'/movie/344437?_v_=yes'">
-                <li class='c1'>
-                    <b>我是处女座</b>
-                    <br><em>上映6天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xe328;&#xe328;&#xf795;.&#xecda;万</i></em>
-                </li>
-                <li class="c2 ">
-                    <b><i class="cs gsBlur">&#xe328;.&#xf299;&#xf299;</i></b><br/>
-                </li>
-                <li class="c3 "><i class="cs gsBlur">&#xf39c;.&#xf59f;%</i></li>
-                <li class="c4 ">
-                        <i class="cs gsBlur">&#xf39c;.&#xf0a5;%</i>
-                </li>
-                <li class="c5 ">
-                    <span style="margin-right:-.1rem">
-                            <i class="cs gsBlur">&#xe431;.&#xf299;%</i>
-                    </span>
-                    <span style="padding-right:.24rem" class="_more"></span>
-                </li>
-                <li class="solid">
-                    <b>我是处女座</b>
                     <br><em>上映6天</em>
                 </li>
                 </ul>
-                <ul class="canTouch" data-com="hrefTo,href:'/movie/336766?_v_=yes'">
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/341749?_v_=yes'">
                 <li class='c1'>
-                    <b>夺路而逃</b>
-                    <br><em>上映20天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf1dd;&#xecda;&#xf59f;.&#xecda;万</i></em>
+                    <b>我不是潘金莲</b>
+                    <br><em>上映20天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xe4e3;.&#xf534;&#xf032;亿</i></em>
                 </li>
                 <li class="c2 ">
-                    <b><i class="cs gsBlur">&#xe328;.&#xf1dd;&#xe328;</i></b><br/>
+                    <b><i class="cs gsBlur">&#xe51c;&#xe4d6;&#xf032;.&#xe4d6;&#xe4d6;</i></b><br/>
                 </li>
-                <li class="c3 "><i class="cs gsBlur">&#xf39c;.&#xf59f;%</i></li>
+                <li class="c3 "><i class="cs gsBlur">&#xf032;.&#xed65;%</i></li>
                 <li class="c4 ">
-                        <i class="cs gsBlur">&#xf39c;.&#xf39c;%</i>
+                        <i class="cs gsBlur">&#xf62a;.&#xe51c;%</i>
                 </li>
                 <li class="c5 ">
                     <span style="margin-right:-.1rem">
-                            <i class="cs gsBlur">&#xf1dd;&#xe431;.&#xecda;%</i>
+                            <i class="cs gsBlur">&#xe2e8;&#xea2b;.&#xf184;%</i>
                     </span>
                     <span style="padding-right:.24rem" class="_more"></span>
                 </li>
                 <li class="solid">
-                    <b>夺路而逃</b>
+                    <b>我不是潘金莲</b>
                     <br><em>上映20天</em>
                 </li>
                 </ul>
-                <ul class="canTouch" data-com="hrefTo,href:'/movie/342427?_v_=yes'">
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/246222?_v_=yes'">
                 <li class='c1'>
-                    <b>外公芳龄38</b>
-                    <br><em>上映20天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xe431;&#xf39c;&#xf1dd;&#xe328;.&#xf74e;万</i></em>
+                    <b>海洋奇缘</b>
+                    <br><em>上映13天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xe2e8;.&#xea2b;&#xe51c;亿</i></em>
                 </li>
                 <li class="c2 ">
-                    <b><i class="cs gsBlur">&#xf299;.&#xe328;&#xf1dd;</i></b><br/>
+                    <b><i class="cs gsBlur">&#xe2e8;&#xe51c;&#xe2e8;.&#xe4d6;&#xed65;</i></b><br/>
                 </li>
-                <li class="c3 "><i class="cs gsBlur">&#xf39c;.&#xf59f;%</i></li>
+                <li class="c3 "><i class="cs gsBlur">&#xf62a;.&#xe4e3;%</i></li>
                 <li class="c4 ">
-                        <i class="cs gsBlur">&#xf39c;.&#xf299;%</i>
+                        <i class="cs gsBlur">&#xe51c;.&#xe51c;%</i>
                 </li>
                 <li class="c5 ">
                     <span style="margin-right:-.1rem">
-                            <i class="cs gsBlur">&#xf74e;.&#xf1dd;%</i>
+                            <i class="cs gsBlur">&#xed65;.&#xe4e3;%</i>
                     </span>
                     <span style="padding-right:.24rem" class="_more"></span>
                 </li>
                 <li class="solid">
-                    <b>外公芳龄38</b>
-                    <br><em>上映20天</em>
+                    <b>海洋奇缘</b>
+                    <br><em>上映13天</em>
                 </li>
                 </ul>
-                <ul class="canTouch" data-com="hrefTo,href:'/movie/337195?_v_=yes'">
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/346564?_v_=yes'">
                 <li class='c1'>
-                    <b>夏威夷之恋</b>
-                    <br><em>上映6天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf1dd;&#xf39c;&#xf1dd;.&#xf0a5;万</i></em>
+                    <b>间谍同盟</b>
+                    <br><em>上映8天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf62a;&#xf184;&#xf62a;&#xe4e3;.&#xf184;万</i></em>
                 </li>
                 <li class="c2 ">
-                    <b><i class="cs gsBlur">&#xf299;.&#xf299;&#xe431;</i></b><br/>
+                    <b><i class="cs gsBlur">&#xe2e8;&#xe2e8;&#xf184;.&#xf534;&#xe4d6;</i></b><br/>
                 </li>
-                <li class="c3 "><i class="cs gsBlur">&#xf39c;.&#xf59f;%</i></li>
+                <li class="c3 "><i class="cs gsBlur">&#xf62a;.&#xe4d6;%</i></li>
                 <li class="c4 ">
-                        <i class="cs gsBlur">&#xf39c;.&#xecda;%</i>
+                        <i class="cs gsBlur">&#xf62a;.&#xe4e3;%</i>
                 </li>
                 <li class="c5 ">
                     <span style="margin-right:-.1rem">
-                            <i class="cs gsBlur">&#xe431;.&#xf795;%</i>
+                            <i class="cs gsBlur">&#xe2e8;&#xe2e8;.&#xf62a;%</i>
                     </span>
                     <span style="padding-right:.24rem" class="_more"></span>
                 </li>
                 <li class="solid">
-                    <b>夏威夷之恋</b>
+                    <b>间谍同盟</b>
+                    <br><em>上映8天</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/336835?_v_=yes'">
+                <li class='c1'>
+                    <b>极速之巅</b>
+                    <br><em>上映6天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xe2e8;&#xea2b;&#xe4e3;&#xf62a;.&#xf62a;万</i></em>
+                </li>
+                <li class="c2 ">
+                    <b><i class="cs gsBlur">&#xf184;&#xf032;.&#xe51c;&#xe2e8;</i></b><br/>
+                </li>
+                <li class="c3 "><i class="cs gsBlur">&#xe2e8;.&#xe51c;%</i></li>
+                <li class="c4 ">
+                        <i class="cs gsBlur">&#xf62a;.&#xed65;%</i>
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            <i class="cs gsBlur">&#xed65;.&#xe4e3;%</i>
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>极速之巅</b>
                     <br><em>上映6天</em>
                 </li>
                 </ul>
-                <ul class="canTouch" data-com="hrefTo,href:'/movie/344902?_v_=yes'">
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/247736?_v_=yes'">
                 <li class='c1'>
-                    <b>航海王之黄金城</b>
-                    <br><em>上映20天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf59f;.&#xf39c;&#xf0a5;亿</i></em>
+                    <b>比利·林恩的中场战事</b>
+                    <br><em>上映27天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xe2e8;.&#xf032;&#xe4e3;亿</i></em>
                 </li>
                 <li class="c2 ">
-                    <b><i class="cs gsBlur">&#xf299;.&#xf1dd;&#xf795;</i></b><br/>
+                    <b><i class="cs gsBlur">&#xe51c;&#xf62a;.&#xe2e8;&#xed65;</i></b><br/>
                 </li>
-                <li class="c3 "><i class="cs gsBlur">&#xf39c;.&#xf59f;%</i></li>
+                <li class="c3 "><i class="cs gsBlur">&#xe4d6;.&#xed65;%</i></li>
                 <li class="c4 ">
-                        <i class="cs gsBlur">&#xf39c;.&#xf1dd;%</i>
+                        <i class="cs gsBlur">&#xe4d6;.&#xe2e8;%</i>
                 </li>
                 <li class="c5 ">
                     <span style="margin-right:-.1rem">
-                            <i class="cs gsBlur">&#xe431;.&#xf299;%</i>
+                            <i class="cs gsBlur">&#xe2e8;&#xed65;.&#xea2b;%</i>
                     </span>
                     <span style="padding-right:.24rem" class="_more"></span>
                 </li>
                 <li class="solid">
-                    <b>航海王之黄金城</b>
-                    <br><em>上映20天</em>
+                    <b>比利·林恩的中场战事</b>
+                    <br><em>上映27天</em>
                 </li>
                 </ul>
-                <ul class="canTouch" data-com="hrefTo,href:'/movie/410612?_v_=yes'">
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/1132403?_v_=yes'">
                 <li class='c1'>
-                    <b>驴得水</b>
-                    <br><em>上映34天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf59f;.&#xf0a5;&#xf299;亿</i></em>
+                    <b>食人岛</b>
+                    <br><em>上映6天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf62a;&#xf62a;&#xe2e8;.&#xe4d6;万</i></em>
                 </li>
                 <li class="c2 ">
-                    <b><i class="cs gsBlur">&#xf59f;.&#xe431;&#xf59f;</i></b><br/>
+                    <b><i class="cs gsBlur">&#xe2e8;&#xed65;.&#xf032;&#xe2e8;</i></b><br/>
                 </li>
-                <li class="c3 "><i class="cs gsBlur">&#xf39c;.&#xf39c;%</i></li>
+                <li class="c3 "><i class="cs gsBlur">&#xe4d6;.&#xe4e3;%</i></li>
                 <li class="c4 ">
-                        <i class="cs gsBlur">&#xf39c;.&#xf59f;%</i>
+                        <i class="cs gsBlur">&#xe2e8;.&#xf62a;%</i>
                 </li>
                 <li class="c5 ">
                     <span style="margin-right:-.1rem">
-                            <i class="cs gsBlur">&#xf795;.&#xf0a5;%</i>
+                            <i class="cs gsBlur">&#xea2b;.&#xf184;%</i>
                     </span>
                     <span style="padding-right:.24rem" class="_more"></span>
                 </li>
                 <li class="solid">
-                    <b>驴得水</b>
-                    <br><em>上映34天</em>
+                    <b>食人岛</b>
+                    <br><em>上映6天</em>
                 </li>
                 </ul>
-                <ul class="canTouch" data-com="hrefTo,href:'/movie/1197460?_v_=yes'">
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/338349?_v_=yes'">
                 <li class='c1'>
-                    <b>沙漠之心</b>
-                    <br><em>点映</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf59f;.&#xe328;万</i></em>
+                    <b>血战钢锯岭</b>
+                    <br><em>零点场</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf62a;&#xe2e8;.&#xf032;万</i></em>
                 </li>
                 <li class="c2 ">
-                    <b><i class="cs gsBlur">&#xf59f;.&#xf299;&#xf795;</i></b><br/>
+                    <b><i class="cs gsBlur">&#xe2e8;&#xe51c;.&#xe2e8;&#xf032;</i></b><br/>
                 </li>
-                <li class="c3 "><i class="cs gsBlur">&#xf39c;.&#xf39c;%</i></li>
+                <li class="c3 "><i class="cs gsBlur">&#xe4d6;.&#xf62a;%</i></li>
                 <li class="c4 ">
-                        <i class="cs gsBlur">&#xf39c;.&#xf39c;%</i>
+                        <i class="cs gsBlur">&#xe4d6;.&#xe51c;%</i>
                 </li>
                 <li class="c5 ">
                     <span style="margin-right:-.1rem">
-                            <i class="cs gsBlur">&#xf74e;&#xf39c;.&#xf299;%</i>
+                            <i class="cs gsBlur">&#xf184;.&#xea2b;%</i>
                     </span>
                     <span style="padding-right:.24rem" class="_more"></span>
                 </li>
                 <li class="solid">
-                    <b>沙漠之心</b>
-                    <br><em>点映</em>
+                    <b>血战钢锯岭</b>
+                    <br><em>零点场</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/344073?_v_=yes'">
+                <li class='c1'>
+                    <b>名侦探柯南：纯黑的恶梦</b>
+                    <br><em>上映13天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xe4e3;&#xe4d6;&#xf032;&#xe51c;.&#xf62a;万</i></em>
+                </li>
+                <li class="c2 ">
+                    <b><i class="cs gsBlur">&#xf032;.&#xf534;&#xe51c;</i></b><br/>
+                </li>
+                <li class="c3 "><i class="cs gsBlur">&#xe4d6;.&#xe2e8;%</i></li>
+                <li class="c4 ">
+                        <i class="cs gsBlur">&#xe4d6;.&#xe4e3;%</i>
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            <i class="cs gsBlur">&#xed65;.&#xed65;%</i>
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>名侦探柯南：纯黑的恶梦</b>
+                    <br><em>上映13天</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/345105?_v_=yes'">
+                <li class='c1'>
+                    <b>最萌身高差</b>
+                    <br><em>上映13天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xea2b;&#xf184;&#xf534;.&#xe4e3;万</i></em>
+                </li>
+                <li class="c2 ">
+                    <b><i class="cs gsBlur">&#xf62a;.&#xf184;&#xe2e8;</i></b><br/>
+                </li>
+                <li class="c3 "><i class="cs gsBlur">&#xe4d6;.&#xe4d6;%</i></li>
+                <li class="c4 ">
+                        <i class="cs gsBlur">&#xe4d6;.&#xe2e8;%</i>
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            <i class="cs gsBlur">&#xe2e8;&#xf62a;.&#xf032;%</i>
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>最萌身高差</b>
+                    <br><em>上映13天</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/248675?_v_=yes'">
+                <li class='c1'>
+                    <b>深海浩劫</b>
+                    <br><em>上映23天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xed65;&#xf62a;&#xea2b;&#xe4d6;.&#xe51c;万</i></em>
+                </li>
+                <li class="c2 ">
+                    <b><i class="cs gsBlur">&#xf62a;.&#xed65;&#xf534;</i></b><br/>
+                </li>
+                <li class="c3 "><i class="cs gsBlur">&#xe4d6;.&#xe4d6;%</i></li>
+                <li class="c4 ">
+                        <i class="cs gsBlur">&#xe4d6;.&#xe2e8;%</i>
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            <i class="cs gsBlur">&#xe2e8;&#xf62a;.&#xf62a;%</i>
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>深海浩劫</b>
+                    <br><em>上映23天</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/341529?_v_=yes'">
+                <li class='c1'>
+                    <b>冲天火</b>
+                    <br><em>上映13天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xe4e3;&#xf032;&#xe4d6;&#xed65;.&#xf62a;万</i></em>
+                </li>
+                <li class="c2 ">
+                    <b><i class="cs gsBlur">&#xe2e8;.&#xf534;&#xed65;</i></b><br/>
+                </li>
+                <li class="c3 "><i class="cs gsBlur">&#xe4d6;.&#xe4d6;%</i></li>
+                <li class="c4 ">
+                        <i class="cs gsBlur">&#xe4d6;.&#xf62a;%</i>
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            <i class="cs gsBlur">&#xea2b;.&#xf032;%</i>
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>冲天火</b>
+                    <br><em>上映13天</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/346759?_v_=yes'">
+                <li class='c1'>
+                    <b>勇士</b>
+                    <br><em>上映55天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xe4e3;&#xe2e8;&#xf032;&#xf534;.&#xf62a;万</i></em>
+                </li>
+                <li class="c2 ">
+                    <b><i class="cs gsBlur">&#xe2e8;.&#xe4e3;&#xea2b;</i></b><br/>
+                </li>
+                <li class="c3 "><i class="cs gsBlur">&#xe4d6;.&#xe4d6;%</i></li>
+                <li class="c4 ">
+                        <i class="cs gsBlur">&#xe4d6;.&#xe4d6;%</i>
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            <i class="cs gsBlur">&#xf62a;&#xf032;.&#xf534;%</i>
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>勇士</b>
+                    <br><em>上映55天</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/338391?_v_=yes'">
+                <li class='c1'>
+                    <b>湄公河行动</b>
+                    <br><em>上映69天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xe2e8;&#xe2e8;.&#xf184;&#xe51c;亿</i></em>
+                </li>
+                <li class="c2 ">
+                    <b><i class="cs gsBlur">&#xe2e8;.&#xe4e3;&#xe51c;</i></b><br/>
+                </li>
+                <li class="c3 "><i class="cs gsBlur">&#xe4d6;.&#xe4d6;%</i></li>
+                <li class="c4 ">
+                        <i class="cs gsBlur">&#xe4d6;.&#xe4d6;%</i>
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            <i class="cs gsBlur">&#xe2e8;&#xf62a;.&#xf62a;%</i>
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>湄公河行动</b>
+                    <br><em>上映69天</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/1189048?_v_=yes'">
+                <li class='c1'>
+                    <b>遵义会议</b>
+                    <br><em>上映59天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf62a;&#xe4e3;&#xe51c;.&#xea2b;万</i></em>
+                </li>
+                <li class="c2 ">
+                    <b><i class="cs gsBlur">&#xe2e8;.&#xe2e8;&#xf184;</i></b><br/>
+                </li>
+                <li class="c3 "><i class="cs gsBlur">&#xe4d6;.&#xe4d6;%</i></li>
+                <li class="c4 ">
+                        <i class="cs gsBlur">&#xe4d6;.&#xe4d6;%</i>
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            <i class="cs gsBlur">&#xe4e3;&#xf184;.&#xed65;%</i>
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>遵义会议</b>
+                    <br><em>上映59天</em>
                 </li>
                 </ul>
                 <ul class="canTouch" data-com="hrefTo,href:'/movie/246674?_v_=yes'">
                 <li class='c1'>
                     <b>越囧</b>
-                    <br><em>上映6天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xf1dd;&#xf0a5;.&#xf0a5;万</i></em>
+                    <br><em>上映13天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xe4e3;&#xf62a;.&#xea2b;万</i></em>
                 </li>
                 <li class="c2 ">
-                    <b><i class="cs gsBlur">&#xf59f;.&#xf59f;&#xecda;</i></b><br/>
+                    <b><i class="cs gsBlur">&#xe2e8;.&#xe4d6;&#xf032;</i></b><br/>
                 </li>
-                <li class="c3 "><i class="cs gsBlur">&#xf39c;.&#xf39c;%</i></li>
+                <li class="c3 "><i class="cs gsBlur">&#xe4d6;.&#xe4d6;%</i></li>
                 <li class="c4 ">
-                        <i class="cs gsBlur">&#xf39c;.&#xf59f;%</i>
+                        <i class="cs gsBlur">&#xe4d6;.&#xe4d6;%</i>
                 </li>
                 <li class="c5 ">
                     <span style="margin-right:-.1rem">
-                            <i class="cs gsBlur">&#xf59f;&#xf0a5;.&#xe431;%</i>
+                            <i class="cs gsBlur">&#xf62a;&#xf62a;.&#xe4d6;%</i>
                     </span>
                     <span style="padding-right:.24rem" class="_more"></span>
                 </li>
                 <li class="solid">
                     <b>越囧</b>
-                    <br><em>上映6天</em>
+                    <br><em>上映13天</em>
+                </li>
+                </ul>
+                <ul class="canTouch" data-com="hrefTo,href:'/movie/344437?_v_=yes'">
+                <li class='c1'>
+                    <b>我是处女座</b>
+                    <br><em>上映13天</em><em style="margin-left: .1rem"><i class="cs gsBlur">&#xe51c;&#xf032;&#xe2e8;.&#xf032;万</i></em>
+                </li>
+                <li class="c2 ">
+                    <b><i class="cs gsBlur">&#xe2e8;.&#xe4d6;&#xf62a;</i></b><br/>
+                </li>
+                <li class="c3 "><i class="cs gsBlur">&#xe4d6;.&#xe4d6;%</i></li>
+                <li class="c4 ">
+                        <i class="cs gsBlur">&#xe4d6;.&#xe4d6;%</i>
+                </li>
+                <li class="c5 ">
+                    <span style="margin-right:-.1rem">
+                            <i class="cs gsBlur">&#xe2e8;&#xf032;.&#xf032;%</i>
+                    </span>
+                    <span style="padding-right:.24rem" class="_more"></span>
+                </li>
+                <li class="solid">
+                    <b>我是处女座</b>
+                    <br><em>上映13天</em>
                 </li>
                 </ul>
         </div>
@@ -717,7 +619,7 @@ window.addEventListener('pageshow',function (ev){
 });
 
 //b-log
-var MT=MT||{};MT.TimeTracker={rt:1480503182117,st:Date.now()},window.addEventListener("load",function(){MT.TimeTracker.lt=Date.now()}),document.addEventListener("DOMContentLoaded",function(){MT.TimeTracker.dt=Date.now()}),MT.log={_logs:[],send:function(a,b,c){this._logs.push({type:a,value:b,sampling:c})}};
+var MT=MT||{};MT.TimeTracker={rt:1481121361726,st:Date.now()},window.addEventListener("load",function(){MT.TimeTracker.lt=Date.now()}),document.addEventListener("DOMContentLoaded",function(){MT.TimeTracker.dt=Date.now()}),MT.log={_logs:[],send:function(a,b,c){this._logs.push({type:a,value:b,sampling:c})}};
 
 //frep
 !function(e,t,n){function s(){var e=t.createElement("script");e.async=!0,e.src="https://s0.meituan.net/bs/js/?f=mta-js:mta.min.js";var n=t.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)}if(e.MeituanAnalyticsObject=n,e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)},"complete"===t.readyState)s();else{var r="addEventListener",i="attachEvent";if(e[r])e[r]("load",s,!1);else if(e[i])e[i]("onload",s);else{var a=e.onload;e.onload=function(){s(),a&&a()}}}}(window,document,"mta"),function(e,t,n){if(t&&!("_mta"in t)){t._mta=!0;var s=e.location.protocol;if("file:"!==s){var r=e.location.host,i=t.prototype.open;t.prototype.open=function(t,n,a,o,h){if(this._method="string"==typeof t?t.toUpperCase():null,n){if(0===n.indexOf("http://")||0===n.indexOf("https://")||0===n.indexOf("//"))this._url=n;else if(0===n.indexOf("/"))this._url=s+"//"+r+n;else{var l=s+"//"+r+e.location.pathname;l=l.substring(0,l.lastIndexOf("/")+1),this._url=l+n}var u=this._url.indexOf("?");-1!==u?(this._searchLength=this._url.length-1-u,this._url=this._url.substring(0,u)):this._searchLength=0}else this._url=null,this._searchLength=0;return this._startTime=(new Date).getTime(),i.apply(this,arguments)};var a="onreadystatechange",o="addEventListener",h=t.prototype.send;t.prototype.send=function(t){function n(n,r){if(0!==n._url.indexOf(s+"//frep.meituan.net/_.gif")){for(var i="browser.ajax",a=[98,114,111,119,115,101,114,46,97,106,97,120],o=0,h=i.length;h>o;o++)if(i.charCodeAt(o)!==a[o])return;var l;if(n.response)switch(n.responseType){case"json":l=JSON&&JSON.stringify(n.response).length;break;case"blob":case"moz-blob":l=n.response.size;break;case"arraybuffer":l=n.response.byteLength;case"document":l=n.response.documentElement&&n.response.documentElement.innerHTML&&n.response.documentElement.innerHTML.length+28;break;default:l=n.response.length}e.mta("send",i,{url:n._url,method:n._method,error:!(0===n.status.toString().indexOf("2")||304===n.status),responseTime:(new Date).getTime()-n._startTime,requestSize:n._searchLength+(t?t.length:0),responseSize:l||0})}}if(o in this){var r=function(e){n(this,e)};this[o]("load",r),this[o]("error",r),this[o]("abort",r)}else{var i=this[a];this[a]=function(t){i&&i.apply(this,arguments),4===this.readyState&&e.mta&&n(this,t)}}return h.apply(this,arguments)}}}}(window,window.XMLHttpRequest,"mta");
@@ -772,8 +674,8 @@ var require = function() {
 require(['lib/declareable.js','lib/count.js','util/gaConfig.js','util/nuwa.js']);
 </script>
 <script>
-      var calendarDate = {"today":"2016-11-30","resourcePath":"//ms0.meituan.net/piaofang","selectDate":"2016-11-30","selectMaxDate":"2016-12-15","selectMinDate":"2011-01-01","weekDate":"今天","showPreSale":true,"hasNav":true,"showWeek":true,"hasBefore":true,"isToday":true};
-    var __updateTime = '18:30';
+      var calendarDate = {"today":"2016-12-07","resourcePath":"//ms0.meituan.net/piaofang","selectDate":"2016-12-07","selectMaxDate":"2016-12-22","selectMinDate":"2011-01-01","weekDate":"今天","showPreSale":true,"hasNav":true,"showWeek":true,"hasBefore":true,"isToday":true};
+    var __updateTime = '22:30';
 </script>
 <script>require(['biz/ticket.js']);</script>
 </body>

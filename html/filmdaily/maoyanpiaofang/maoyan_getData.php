@@ -1,4 +1,5 @@
 <?php
+  date_default_timezone_set("Asia/Shanghai");
   $map = array();
   $file = fopen('/var/www/html/filmdaily/maoyanpiaofang/result.txt','r');
   $mapfile = fopen('/var/www/html/filmdaily/maoyanpiaofang/key.txt','r');
@@ -7,7 +8,7 @@
   }
   $number = array("0","1","2","3","4","5","6","7","8","9");
   $result = fread($file, filesize('/var/www/html/filmdaily/maoyanpiaofang/result.txt'));
-  $acquittime = date("Y-n-d H:i:s",time());
+  $acquittime = date("Y-n-d",time());
   preg_match_all('/<li class=\'c1\'>\s*<b>(.*)<\/b>/', $result, $filmname);
   preg_match_all('/每30分钟更新一次，上次更新北京时间(.*)<\/div>/', $result, $piaofangshijian);
   preg_match_all('/<em style=\"margin-left: .1rem\"><i class=\"cs gsBlur\">(.*)<\/i><\/em>/', $result, $sumboxoffice);
@@ -27,6 +28,18 @@
   $boxofficerate = str_ireplace($map, $number, $boxofficerate);
   $rowpiecerate = str_ireplace($map, $number, $rowpiecerate);
   $seatrate = str_ireplace($map, $number, $seatrate);
+  foreach($sumboxoffice as $key => $value){
+    if(strchr($value, '亿')){
+      $sumboxoffice[$key] = str_replace('亿','',$value)*10000;
+    }
+    elseif(strchr($value, '万')){
+      $sumboxoffice[$key] = (float)str_replace('万','',$value);
+    }
+  }
+
+  $boxofficerate = str_replace('%','',$boxofficerate);
+  $rowpiecerate = str_replace('%','',$rowpiecerate);
+  $seatrate = str_ireplace('%','',$seatrate);
   $host="56a3768226622.sh.cdb.myqcloud.com";
   $name="root";
   $password="ctfoxno1";
@@ -34,7 +47,7 @@
   $con=mysqli_connect($host,$name,$password,$dbname,4892) or die("Can't connect mysql!".mysqli_connect_error() );
   mysqli_query($con,"set names utf8");
   mysqli_query($con, "drop table if exists maoyanpiaofang");
-  mysqli_query($con, "create table maoyanpiaofang(mname varchar(30), msumboxoffice varchar(30), mboxoffice varchar(30), mboxofficerate varchar(30), mrowpiecerate varchar(30), mseatrate varchar(30), mpiaofangshijian varchar(30), macquitime varchar(30));");
+  mysqli_query($con, "create table maoyanpiaofang(mname varchar(30), msumboxoffice numeric(8,2), mboxoffice numeric(7,2), mboxofficerate numeric(3,1), mrowpiecerate numeric(3,1), mseatrate numeric(3,1), mpiaofangshijian varchar(30), macquitime date);");
   var_dump($piaofangshijian[0]);
   for($i = 0; $i < count($filmname); $i++){
     mysqli_query($con, "insert into maoyanpiaofang(mname, msumboxoffice, mboxoffice, mboxofficerate, mrowpiecerate, mseatrate, mpiaofangshijian, macquitime) values('{$filmname[$i]}', '{$sumboxoffice[$i]}', '{$boxoffice[$i]}', '{$boxofficerate[$i]}', '{$rowpiecerate[$i]}', '{$seatrate[$i]}', '{$piaofangshijian[0]}', '{$acquittime}')");

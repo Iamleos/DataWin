@@ -49,7 +49,7 @@
 		createXMLHttpRequest();
 		try
 		{   
-		    var url="checkstatus.php";
+		    var url="checkstatus_yiren.php";
 			//window.alert(url);
 			xmlHttp.onreadystatechange = handleStateChange;
 			xmlHttp.open("GET",url, true);
@@ -69,25 +69,17 @@
 					var result = xmlHttp.responseText;
 					//window.alert(result);
 					var json = eval("("+ result +")");
-					//window.alert(json.yirenba.name);
+					//window.alert(json.doubanbazu.name);
 					var str="<tr><td>数据库表</td><td>状态</td><td>系统指定入库时间</td></tr>";
-					//str+="<tr><td>"+json.yirenba.name+"</td><td>"+json.yirenba.status+"</td><td>"+json.yirenba.systime+"</td></tr>";
-					//str+="<tr><td>"+json.dianyingba.name+"</td><td>"+json.dianyingba.status+"</td><td>"+json.dianyingba.systime+"</td></tr>";
-					//str+="<tr><td>"+json.doubanbazu.name+"</td><td>"+json.doubanbazu.status+"</td><td>"+json.doubanbazu.systime+"</td></tr>";
-					str+="<tr><td>"+json.doubanfen.name+"</td><td>"+json.doubanfen.status+"</td><td>"+json.doubanfen.systime+"</td></tr>";
-					str+="<tr><td>"+json.gewalafen.name+"</td><td>"+json.gewalafen.status+"</td><td>"+json.gewalafen.systime+"</td></tr>";
-					str+="<tr><td>"+json.mpiaofangjianbao.name+"</td><td>"+json.mpiaofangjianbao.status+"</td><td>"+json.mpiaofangjianbao.systime+"</td></tr>";
-					str+="<tr><td>"+json.maoyanhuangjinpaipian.name+"</td><td>"+json.maoyanhuangjinpaipian.status+"</td><td>"+json.maoyanhuangjinpaipian.systime+"</td></tr>";
-					str+="<tr><td>"+json.maoyanpaipian.name+"</td><td>"+json.maoyanpaipian.status+"</td><td>"+json.maoyanpaipian.systime+"</td></tr>";
-					str+="<tr><td>"+json.maoyanpiaofang.name+"</td><td>"+json.maoyanpiaofang.status+"</td><td>"+json.maoyanpiaofang.systime+"</td></tr>";
-					str+="<tr><td>"+json.maoyanfen.name+"</td><td>"+json.maoyanfen.status+"</td><td>"+json.maoyanfen.systime+"</td></tr>";
+                                        str+="<tr><td>"+json.doubanbazu.name+"</td><td>"+json.doubanbazu.status+"</td><td>"+json.doubanbazu.systime+"</td></tr>";
 					str+="<tr><td>"+json.tianya.name+"</td><td>"+json.tianya.status+"</td><td>"+json.tianya.systime+"</td></tr>";
 					str+="<tr><td>"+json.tuqu.name+"</td><td>"+json.tuqu.status+"</td><td>"+json.tuqu.systime+"</td></tr>";
-					str+="<tr><td>"+json.enyipiaofang.name+"</td><td>"+json.enyipiaofang.status+"</td><td>"+json.enyipiaofang.systime+"</td></tr>";
-					str+="<tr><td>"+json.zzbpiaofang.name+"</td><td>"+json.zzbpiaofang.status+"</td><td>"+json.zzbpiaofang.systime+"</td></tr>";
-					//str+="<tr><td>"+json.yuleba.name+"</td><td>"+json.yuleba.status+"</td><td>"+json.yuleba.systime+"</td></tr>";
-					//str+="<tr><td>"+json.youyiba.name+"</td><td>"+json.youyiba.status+"</td><td>"+json.youyiba.systime+"</td></tr>";
-                                        str+="<tr><td>"+json.turing_zzb_cinema.name+"</td><td>"+json.turing_zzb_cinema.status+"</td><td>"+json.turing_zzb_cinema.systime+"</td></tr>";
+					str+="<tr><td>"+json.yirenba.name+"</td><td>"+json.yirenba.status+"</td><td>"+json.yirenba.systime+"</td></tr>";
+					str+="<tr><td>"+json.yirenbaidub50.name+"</td><td>"+json.yirenbaidub50.status+"</td><td>"+json.yirenbaidub50.systime+"</td></tr>";
+					str+="<tr><td>"+json.yirenbaidug50.name+"</td><td>"+json.yirenbaidug50.status+"</td><td>"+json.yirenbaidug50.systime+"</td></tr>";
+					str+="<tr><td>"+json.yirenkoubei.name+"</td><td>"+json.yirenkoubei.status+"</td><td>"+json.yirenkoubei.systime+"</td></tr>";
+                                        str+="<tr><td>"+json.yirenredu.name+"</td><td>"+json.yirenredu.status+"</td><td>"+json.yirenredu.systime+"</td></tr>";
+                                        str+="<tr><td>"+json.yirenweixin.name+"</td><td>"+json.yirenweixin.status+"</td><td>"+json.yirenweixin.systime+"</td></tr>";
 					//window.alert(str+"+++");
 					var data=document.getElementById("status_tab");
 					data.innerHTML=str;
@@ -120,6 +112,7 @@
 	</style>
 </head>
 <body  onload="startRequest()">
+
 <div id="upload"  >
 	
 
@@ -127,7 +120,7 @@
 		
 	</table>
 
-	
+<!--	
 	<form action="upload.php" method="post" enctype="multipart/form-data">
 		<table id="myTable" >
 			<tr>
@@ -168,7 +161,7 @@
 		</table>
 		
     </form>
+-->
 </div>
-
 </body>
 </html>

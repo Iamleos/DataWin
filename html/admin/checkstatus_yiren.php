@@ -43,31 +43,18 @@ date_default_timezone_set("Asia/Shanghai");
 
 
 	//调用检测入库的状态
-	//checkStatus("baidumeiti","百度媒体指数","23:00:00",2);
-	//checkStatus("baiduzhishu","百度搜索指数","23:00:00",3);
-	//checkStatus("qihu","360指数","23:00:00",3);
-	//checkStatus("weizhishuzhengti","微指数整体","23:00:00",2);
-	//checkStatus("weizhishuyidong","微指数移动","23:00:00",3);
-
-	//checkStatus("yirenba","艺人贴吧","19:00:00",4,"filmdaily");
-	//checkStatus("dianyingba","电影吧","19:00:00",4,"filmdaily");
-	checkStatus("doubanbazu","豆瓣八组","20:00:00",2,"filmdaily");
-	checkStatus("doubanfen","豆瓣分","21:00:00",3,"filmdaily");
-    checkStatus("gewalafen","格瓦拉分","21:00:00",3,"filmdaily");
-	checkStatus("mpiaofangjianbao","猫眼票房简报","22:26:00",7,"filmdaily");
-	checkStatus("maoyanhuangjinpaipian","猫眼黄金排片","21:30:00",3,"filmdaily");
-	checkStatus("maoyanpaipian","猫眼排片","21:30:00",3,"filmdaily");
-	checkStatus("maoyanpiaofang","猫眼票房粗报","22:36:00",7,"filmdaily");
-	checkStatus("maoyanfen","猫眼评分","22:30:00",4,"filmdaily");
-	checkStatus("tianya","天涯社区","20:00:00",2,"yiren");
-	checkStatus("tuqu","晋江兔区","20:00:00",2,"yiren");
-	checkStatus("enyipiaofang","艺恩票房","21:30:00",5,"filmdaily");
-	checkStatus("zzbpiaofang","专资办票房","21:35:00",11,"filmdaily");
-	//checkStatus("yuleba","娱乐圈吧","19:00:00",2,"filmdaily");
 	//checkStatus("youyiba","友谊吧","19:00:00",2,"filmdaily");
-
-	checkStatusForYesterday("turing_zzb_cinema","昨日专资办","18:00:00","time",4,"filmdaily");
-
+	checkStatus("doubanbazu","豆瓣八组","20:00:00",2,"yiren");
+	checkStatus("tianya","天涯","20:00:00",2,"yiren");
+	checkStatus("tuqu","兔区","20:00:00",2,"yiren");
+	checkStatusForUpdate("yirenba","艺人吧","20:00:00","yacquitime",4,"yiren");
+	checkStatusForUpdate("yirenbaidub50","艺人百度前50男","20:00:00","yacquitime",3,"yiren");
+	checkStatusForUpdate("yirenbaidug50","艺人百度前50女","20:00:00","yacquitime",3,"yiren");
+	checkStatusForUpdate("yirenkoubei","艺人口碑","20:30:00","acquitime",9,"yiren");
+	checkStatus("yirenredu","艺人热度","20:15:00",25,"yiren");
+	checkStatus("yirenweixin","艺人微信","21:08:00",4,"yiren");
+	//checkStatusForYesterday("turing_zzb_cinema","昨日专资办","18:00:00","time",4,"filmdaily");
+	//chechStatusForUpdate("hyhittitle","hyhittitle","","yacquitime",8,"yiren");
 
 	/**
 	 * descript: 检测入库的状态
@@ -130,7 +117,7 @@ date_default_timezone_set("Asia/Shanghai");
 	} // end func
 
 /////fuc of checkStatus for turing_zzb_*
-        function checkStatusForYesterday($tabname,$strname,$systime,$time,$i,$dbname)
+        function checkStatusForUpdate($tabname,$strname,$systime,$time,$i,$dbname)
         {
                 $host="56a3768226622.sh.cdb.myqcloud.com:4892";
                 $name="root";
@@ -150,7 +137,7 @@ date_default_timezone_set("Asia/Shanghai");
                 mysql_query("set names utf8");
             $sqlresult=mysql_query("select * from {$tabname} order by {$time} desc limit 1",$con);
                 $arr=array();
-                $today=date("Y-m-d",strtotime("-1 day"));
+                $today=date("Y-m-d");
                 if($row=mysql_fetch_row($sqlresult))
                 {
                         if(strtotime($row[$i])>=strtotime("{$today} 00:00:00"))

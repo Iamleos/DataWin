@@ -44,12 +44,16 @@
 	//$day="20150930";
 	//while(strtotime($day)<strtotime("20160727"))
 	//{
-		$day=date("Ymd",strtotime("-1 day"));
-
+		if(count($argv)==2){
+			$day=date("Ymd",strtotime("$argv[1]"));
+		}
+		else{
+			$day=date("Ymd",strtotime("-1 day"));
+		}
 		$post_data = array(
 		  'time' => "{$day}"
 		);
-
+var_dump($post_data);
 		$json_str=send_post('http://www.zgdypw.cn/ashx/TEST.ashx?type=getdate', $post_data);
 		$info_str=json_decode($json_str);
 		$box_office_sum = str_replace(",","",$info_str->sales);
@@ -97,11 +101,10 @@
 			$cinema_piaofang=str_replace(",","",$arr2[2][$i]);
 			$cinema_session=str_replace(",","",$arr2[3][$i]);
 			$cinema_people=str_replace(",","",$arr2[4][$i]);
-
+var_dump($cinema_piaofang);
 			//echo $cinema_name."-".$cinema_piaofang."-".$cinema_session."-".$cinema_people."<br/>";
 			$sql="insert into turing_zzb_cinema(cinema_name,cinema_piaofang,cinema_session,cinema_people,time) values('{$cinema_name}','{$cinema_piaofang}','{$cinema_session}','{$cinema_people}','{$day}');";
 			mysql_query($sql,$con);
-			echo $sql."<br/>";
 		}
 
 

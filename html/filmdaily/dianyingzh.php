@@ -141,6 +141,11 @@
 			 if($percent>75)
 			{
 				echo $zzbname."+".$dyzhname;
+				foreach($row as $key => $value){
+					if($value==NULL){
+						$row[$key] = 0;
+					}
+				}
 				mysql_query("update dianyingzh set zboxofficesum='{$row[1]}' where dianyingzh.mainname ='{$film_row[0]}' ;");
 				mysql_query("update dianyingzh set zboxoffice='{$row[2]}' where dianyingzh.mainname ='{$film_row[0]}' ;");
 				mysql_query("update dianyingzh set zsession='{$row[3]}' where dianyingzh.mainname ='{$film_row[0]}' ;");
@@ -171,8 +176,6 @@
 		$qian=array(" ","　","\t","\n","\r");$hou=array("","","","","");
 		return str_replace($qian,$hou,$str);
 	}
-
-
 	//添加专资办数据
 	//mysql_query("update dianyingzh set zboxofficesum=(select zzbpiaofang.zboxofficesum from zzbpiaofang where zzbpiaofang.zname=dianyingzh.mainname or zzbpiaofang.zname=dianyingzh.bc1 or zzbpiaofang.zname=dianyingzh.bc2);");
 	//mysql_query("update dianyingzh set zboxoffice=(select zzbpiaofang.zboxoffice from zzbpiaofang where zzbpiaofang.zname=dianyingzh.mainname or zzbpiaofang.zname=dianyingzh.bc1 or zzbpiaofang.zname=dianyingzh.bc2);");
