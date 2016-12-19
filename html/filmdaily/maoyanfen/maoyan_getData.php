@@ -38,6 +38,7 @@
     shell_exec($com);
     sleep(3);
     shell_exec('rename '.$keyname[1][0].' map.ttf /var/www/html/filmdaily/maoyanfen/'.$keyname[1][0]);
+var_dump($keyname[1][0]);
     sleep(3);
     shell_exec("/home/jdk/bin/java -classpath /var/www/html/filmdaily/maoyanfen maoyan");
     sleep(3);
