@@ -52,7 +52,7 @@ date_default_timezone_set("Asia/Shanghai");
 	checkStatusForUpdate("yirenbaidug50","艺人百度前50女","20:00:00","yacquitime",3,"yiren");
 	checkStatusForUpdate("yirenkoubei","艺人口碑","20:30:00","acquitime",9,"yiren");
 	checkStatus("yirenredu","艺人热度","20:15:00",25,"yiren");
-	checkStatus("yirenweixin","艺人微信","21:08:00",4,"yiren");
+	checkStatusForUpdate("yirenweixin","艺人微信","21:08:00","ydate",4,"yiren");
 	//checkStatusForYesterday("turing_zzb_cinema","昨日专资办","18:00:00","time",4,"filmdaily");
 	//chechStatusForUpdate("hyhittitle","hyhittitle","","yacquitime",8,"yiren");
 

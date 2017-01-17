@@ -48,6 +48,12 @@
         }
         $number = array("0","1","2","3","4","5","6","7","8","9");
         $data = str_ireplace($map, $number, $data);
+        foreach ($data as $key1 => $value1) {
+            if(strstr($value1,"亿")){
+                $data[$key1] = (string)(((float)str_replace('亿','',$value1))*10000);
+            }
+        }
+
         $data = str_replace('万','',$data);
         $data = str_replace('%','',$data);
         var_dump($city);

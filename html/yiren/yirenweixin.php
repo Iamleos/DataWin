@@ -6,7 +6,6 @@
  * @param: $callback string 需要进行内容处理的回调函数。示例：func(array)
  */
   date_default_timezone_set("Asia/Shanghai");
-  echo date("Y-n-d H:i:s",time()+8*3600)."</br>";
   function curl($urls = array(), $callback = '',$yname=array())
   {
       $flag = 0;
@@ -130,8 +129,8 @@ $dbname="yiren";
 $con=mysqli_connect($host,$name,$password,$dbname,4892) or die("Can't connect mysql!".mysqli_connect_error() );
 mysqli_select_db($con,$dbname);
 mysqli_query($con,"set names utf8");
-mysqli_query($con, "drop table if exists yirenweixin");
-mysqli_query($con, "create table yirenweixin(yname varchar(30),ypaper varchar(30),yread varchar(30),ylove int(8),ydate varchar(30));");
+//mysqli_query($con, "drop table if exists yirenweixin");
+//mysqli_query($con, "create table yirenweixin(yname varchar(30),ypaper varchar(30),yread varchar(30),ylove int(8),ydate varchar(30));");
 $res = mysqli_query($con, "select me from actname");
 $yname = array();
 $i=0;

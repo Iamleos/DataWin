@@ -2,6 +2,7 @@
     header("Content-type:text/html; charset=utf-8");
     //获取每部电影的编号
     date_default_timezone_set("Asia/Shanghai");
+    $time = date("Y-m-d",time());
     $url = "http://piaofang.maoyan.com";
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1664.3 Safari/537.36");
@@ -52,11 +53,32 @@
       $result = curl_exec($ch);
       curl_close($ch);
       preg_match_all('/<script id="pageData" type="application\/json">\s*(.*)\s*<\/script>/',$result,$data);
-      preg_match_all('/<div class="stackcolumn-bar left" style="width:(.*)"><\/div>/',$result, $man);
-      preg_match_all('/<div class="stackcolumn-bar right" style="width:(.*)"><\/div>/',$result, $woman);
-      if($man[0]!=NULL){
-          $man = str_replace('%','',$man[1][0]);
-          $woman = str_replace('%','',$woman[1][0]);
+      preg_match_all('/<div class="stackcolumn-bar left" style="width:(.*)"><\/div>/',$result, $left);
+      preg_match_all('/<div class="stackcolumn-bar right" style="width:(.*)"><\/div>/',$result, $right);
+      preg_match_all('/<div class="linebars-desc">(.*)<\/div>\s*<div class="linebars-value">(.*)<\/div>/',$result, $city);
+      $city_data = array("","","","");
+      foreach($city[1] as $key2 => $value2){
+	  switch ($value2){
+		case "一线城市":
+			$city_data[0] = str_replace('%','',$city[2][$key2]);
+			break;
+		case "二线城市":
+                        $city_data[1] = str_replace('%','',$city[2][$key2]);
+                        break;
+		case "三线城市":
+                        $city_data[2] = str_replace('%','',$city[2][$key2]);
+                        break;
+		case "四线城市":
+                        $city_data[3] = str_replace('%','',$city[2][$key2]);
+                        break;
+	  }
+
+      }
+      if($left[0]!=NULL){
+          $man = str_replace('%','',$left[1][0]);
+          $woman = str_replace('%','',$right[1][0]);
+	  $bachelor_or_above = str_replace('%','',$left[1][1]);
+	  $bachelor_below = str_replace('%','',$right[1][1]); 
           $data = $data[1][0];
           $data = json_decode($data,true);
           $ageData = $data["ageRatesChart"]["series"][0]["points"];
@@ -64,11 +86,9 @@
           foreach ($ageData as $key1 => $value1) {
               $ageData[$key1]["yPercent"] = (string)$value1["yPercent"];
           }
-          $numberRow = mysqli_query($con, 'select * from maoyan_shouzhong where name="'.$value[0].'";');
-          if(!$numberRow->num_rows){
               mysqli_query($con, "insert into maoyan_shouzhong values('{$value[0]}','0','{$ageData[0]['yPercent']}','{$ageData[1]['yPercent']}','{$ageData[2]['yPercent']}',
-              '{$ageData[3]['yPercent']}','{$ageData[4]['yPercent']}','{$ageData[5]['yPercent']}','{$man}','{$woman}');");
-          }
+             '{$ageData[3]['yPercent']}','{$ageData[4]['yPercent']}','{$ageData[5]['yPercent']}','{$man}','{$woman}','{$date}','{$bachelor_or_above}','{$bachelor_below}','{$city_data[0]}',
+		'{$city_data[1]}','{$city_data[2]}','{$city_data[3]}');");
       }
       else {
           continue;

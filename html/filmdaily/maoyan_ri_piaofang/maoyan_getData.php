@@ -18,7 +18,6 @@ var_dump("*******************************************************");
   preg_match_all('/<li class=\"c4 \">\s*<i class=\"cs gsBlur\">(.*)<\/i>/',$result, $rowpiecerate);
   preg_match_all('/<li class=\"c5 \">\s*<span style=\"margin-right:-.1rem\">\s*<i class=\"cs gsBlur\">(.*)<\/i>/', $result, $seatrate);
   $filmname = $filmname[1];
-  $piaofangshijian = $piaofangshijian[1];
   $sumboxoffice = $sumboxoffice[1];
   $boxoffice = $boxoffice[1];
   $boxofficerate = $boxofficerate[1];
@@ -47,7 +46,6 @@ var_dump("*******************************************************");
   $dbname="filmdaily";
   $con=mysqli_connect($host,$name,$password,$dbname,4892) or die("Can't connect mysql!".mysqli_connect_error() );
   mysqli_query($con,"set names utf8");
-  var_dump($piaofangshijian[0]);
   for($i = 0; $i < count($filmname); $i++){
     mysqli_query($con, "insert into maoyan_ri_piaofang(name, piaofang, piaofang_rate, paipian_rate, people_per_session, time) values('{$filmname[$i]}', '{$boxoffice[$i]}', '{$boxofficerate[$i]}', '{$rowpiecerate[$i]}', '{$seatrate[$i]}', '{$acquittime}')");
     var_dump($filmname[$i]);
