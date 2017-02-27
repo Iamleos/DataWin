@@ -42,13 +42,8 @@
   $con=mysqli_connect($host,$name,$password,$dbname,4892) or die("Can't connect mysql!".mysqli_connect_error() );
   mysqli_query($con,"set names utf8");
   for($i = 0; $i < count($cinema_name); $i++){
-      if($no>=50){
-          continue;
-      }
-      else {
           mysqli_query($con, "insert into maoyan_cinema(cinema_name, no, piaofang, total_people, per_people, single_boxoffice, time) values('{$cinema_name[$i]}', '{$no}', '{$data[$i*4]}', '{$data[$i*4+1]}', '{$data[$i*4+2]}', '{$data[$i*4+3]}', '{$date}')");
           $no++;
-      }
   }
   mysqli_close($con);
  ?>

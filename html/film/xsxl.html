@@ -38,17 +38,23 @@
 			var gyxl=datalist[i]['gyxl'];
 			var ppxl=datalist[i]['ppxl'];
 			var wxbl=datalist[i]['wxbl'];
+			var kb = datalist[i]['kb'];
+			var rd = datalist[i]['rd'];
+			var tjl = datalist[i]['tjl'];
 			
-			var str="<tr style=\"font-size:18px;color:#000;font-family:'微软雅黑'; text-align:center;font-weight:bold;\">";
+			var str="<tr style=\"font-size:20px;color:#000;font-family:'微软雅黑'; text-align:center;font-weight:bold;\">";
 			    str+="<td class='name' >"+name+"</td>";
 				str+="<td class='jrpp' >"+jrpp+"</td>";
 				str+="<td class='mrpp' >"+mrpp+"</td>";
-				str+="<td class='jrhj' >"+jrhj+"</td>";
-				str+="<td class='mrhj' >"+mrhj+"</td>";
-				str+="<td class='pjpj' >"+pjpj+"</td>";
-				str+="<td class='gyxl' >"+gyxl+"</td>";
-				str+="<td class='ppxl' >"+ppxl+"</td>";
+				//str+="<td class='jrhj' >"+jrhj+"</td>";
+				//str+="<td class='mrhj' >"+mrhj+"</td>";
+				//str+="<td class='pjpj' >"+pjpj+"</td>";
+				//str+="<td class='gyxl' >"+gyxl+"</td>";
+				//str+="<td class='ppxl' >"+ppxl+"</td>";
 				str+="<td class='wxbl' >"+wxbl+"</td>";
+				str+="<td class='kb' >"+kb+"</td>";
+				str+="<td class='rd' >"+rd+"</td>";
+				str+="<td class='tjl' >"+tjl+"</td>";
 				
 			$("#filmdata").append(str);
 				
@@ -67,17 +73,23 @@
 			var gyxl=ypp[i]['gyxl'];
 			var ppxl=ypp[i]['ppxl'];
 			var wxbl=ypp[i]['wxbl'];
+			var wxbl=ypp[i]['kb'];
+			var wxbl=ypp[i]['rd'];
+			var wxbl=ypp[i]['tjl'];
 			
-			var str="<tr style=\"font-size:18px;color:#000;font-family:'微软雅黑'; text-align:center;font-weight:bold;\">";
+			var str="<tr style=\"font-size:20px;color:#000;font-family:'微软雅黑'; text-align:center;font-weight:bold;\">";
 			    str+="<td class='name' >"+name+"</td>";
 				str+="<td class='jrpp' >"+jrpp+"</td>";
 				str+="<td class='mrpp' >"+mrpp+"</td>";
-				str+="<td class='jrhj' >"+jrhj+"</td>";
-				str+="<td class='mrhj' >"+mrhj+"</td>";
-				str+="<td class='pjpj' >"+pjpj+"</td>";
-				str+="<td class='gyxl' >"+gyxl+"</td>";
-				str+="<td class='ppxl' >"+ppxl+"</td>";
+				//str+="<td class='jrhj' >"+jrhj+"</td>";
+				//str+="<td class='mrhj' >"+mrhj+"</td>";
+				//str+="<td class='pjpj' >"+pjpj+"</td>";
+				//str+="<td class='gyxl' >"+gyxl+"</td>";
+				//str+="<td class='ppxl' >"+ppxl+"</td>";
 				str+="<td class='wxbl' >"+wxbl+"</td>";
+				str+="<td class='kb' >"+kb+"</td>";
+				str+="<td class='rd' >"+rd+"</td>";
+				str+="<td class='tjl' >"+tjl+"</td>";
 				
 			$("#filmdata").append(str);
 				
@@ -85,7 +97,7 @@
 		
 		var color_arr = new Array("#FFFAFA","#FFFAF5","#FFFAF0","#FFFACD","#FFF68F","#FFEC8B","#FFD700","#FFC125","#FFB90F","#FFA500");
 		
-		var data_type = new Array("jrpp","mrpp","jrhj","mrhj","pjpj","gyxl","ppxl","wxbl");
+		var data_type = new Array("jrpp","mrpp","jrhj","mrhj","pjpj","gyxl","ppxl","wxbl","kb","rd","tjl");
 		for(var m=0;m<data_type.length;m++)
 		{
 			var arr = new Array();
@@ -140,24 +152,27 @@
 
 <body onload="getdata()">
 
-<div id="pic" style="width:800px;margin:0 auto;border:1px solid #FF7F00;background:#fff;">
+<div id="pic" style="width:640px;margin:0 auto;border:1px solid #FF7F00;background:#fff;">
 <div style="font-family:'微软雅黑';color:#333;font-size:24px; font-weight:bold; text-align:left; height:60px;">
   <img src="logo.png" />
-  <span id="title" style="margin-left:150px; "> 2016年8月10日电影销售效率</span>
+  <span id="title" style="margin-left:10%; "> 2016年8月10日电影销售效率</span>
 </div>
 <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
  
   <tbody id="filmdata">
-    <tr style="background:#FF8C00; height:80px;font-size:18px;color:#fff;font-family:'微软雅黑';">
+    <tr style="background:#FF8C00; height:80px;font-size:20px;color:#fff;font-family:'微软雅黑';">
       <th scope="col">电影名称</th>
       <th scope="col" style="background:#FF9700;">今日排片(%)</th>
       <th scope="col">明日排片(%)</th>
-      <th scope="col" style="background:#FF9700;">今日黄金排片(%)</th>
+      <!-- <th scope="col" style="background:#FF9700;">今日黄金排片(%)</th>
       <th scope="col">明日黄金排片(%)</th>
       <th scope="col" style="background:#FF9700;">平均票价(元)</th>
       <th scope="col">观影排片效率(%)</th>
-      <th scope="col" style="background:#FF9700;">票房排片效率(%)</th>
-      <th scope="col">网销比例(%)</th>
+      <th scope="col" style="background:#FF9700;">票房排片效率(%)</th> -->
+      <th scope="col" style="background:#FF9700;">网销比例(%)</th>
+	  <th scope="col">口碑</th>
+	  <th scope="col">网络热度</th>
+	  <th scope="col">网络推荐力</th>
      
     </tr>
     

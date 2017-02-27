@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>下载图片和狗语言</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+		function loadImage(){
+
+			$.get("dypf.html", function(result){
+   				alert(result);
+ 		    });
+		}
+	</script>
+</head>
+<body >
+	<input type='button' name="download" value="一键下载" onclick="loadImage()" />
+</body>
+</html>

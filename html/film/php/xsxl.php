@@ -48,6 +48,22 @@
 		$jrhjpp=round((float)$row['m_gold_rowpiecerate_today'],1)."%";
 		$mrhjpp=round((float)$row['m_gold_rowpiecerate_tomorrow'],1)."%";
 		$pjpj="";
+		//计算口碑
+		$fen=$row['dfen']+$row['mfen']+$row['gfen'];
+		$fen_num=1;
+		if($fen>0){
+			if($row['dfen']>0){
+				$fen_num++;
+			}
+			if($row['mfen']>0){
+				$fen_num++;
+			}
+			if($row['mfen']>0){
+				$fen_num++;
+			}
+			$fen=round($fen/$fen_num,1);
+
+		}
 		if((float)$row['zperson']!=0)
 		{
 			$pjpj=(int)(((float)$row['zboxoffice'])*10000/((float)$row['zperson']));
@@ -59,8 +75,9 @@
 			$gyxl=round((((float)$row['zperson'])/$total_people-(float)$row['jb_mrowpiecerate']/100)*100,1)."%";
 		}
 
-
-
+		//计算热度
+		$rd=round((round($row['wzs']/150000.0,2)+((float)$row['bsearch']*0.8+(float)$row['qsearch']*0.2)/150000.0+((float)$row['bmeiti']+(float)$row['qmeiti']*0.2*0.2)/1000.0+($row['wread']/10000.0)/150.0)*3,2)>10?9.9:round((round($row['wzs']/150000.0,2)+((float)$row['bsearch']*0.8+(float)$row['qsearch']*0.2)/150000.0+((float)$row['bmeiti']+(float)$row['qmeiti']*0.2*0.2)/1000.0+($row['wread']/10000.0)/150.0)*3,2);
+		$tjl=round($fen*$rd/8,1);
 
 		$ppxl=round(((-(float)$row['mrowpiecerate']+(float)$row['jb_mboxofficerate'])*100)/100,1)."%";
 
@@ -87,7 +104,7 @@
 			}
 		}
 
-		$datalist=array("name"=>$name,"jrpp"=>$jrpp,"mrpp"=>$mrpp,"jrhjpp"=>$jrhjpp,"mrhjpp"=>$mrhjpp,"pjpj"=>$pjpj,"gyxl"=>$gyxl,"ppxl"=>$ppxl,"wxbl"=>$wxbl);
+		$datalist=array("name"=>$name,"jrpp"=>$jrpp,"mrpp"=>$mrpp,"jrhjpp"=>$jrhjpp,"mrhjpp"=>$mrhjpp,"pjpj"=>$pjpj,"gyxl"=>$gyxl,"ppxl"=>$ppxl,"wxbl"=>$wxbl,"kb"=>$fen,"rd"=>$rd,"tjl"=>$tjl);
 		$arr['data'][$i]=$datalist;
 		$i++;
 	}
@@ -114,8 +131,25 @@
 			$pjpj="";
 
 			$gyxl="";
+			//计算口碑
+			$fen=$row['dfen']+$row['mfen']+$row['gfen'];
+			$fen_num=1;
+			if($fen>0){
+				if($row['dfen']>0){
+					$fen_num++;
+				}
+				if($row['mfen']>0){
+					$fen_num++;
+				}
+				if($row['mfen']>0){
+					$fen_num++;
+				}
+				$fen=round($fen/$fen_num,1);
 
+			}
 
+			//$rd=round((round($row['wzs']/150000.0,2)+((float)$row['bsearch']*0.8+(float)$row['qsearch']*0.2)/150000.0+((float)$row['bmeiti']+(float)$row['qmeiti']*0.2*0.2)/1000.0+($row['wread']/10000.0)/150.0)*3,2)>10?9.9:round((round($row['wzs']/150000.0,2)+((float)$row['bsearch']*0.8+(float)$row['qsearch']*0.2)/150000.0+((float)$row['bmeiti']+(float)$row['qmeiti']*0.2*0.2)/1000.0+($row['wread']/10000.0)/150.0)*3,2);
+			//$tjl=round($fen*$rd/8,1);
 			$ppxl=round(((-(float)$data_row['mrowpiecerate']+(float)$data_row['jb_mboxofficerate'])*100)/100,1)."%";
 
 			$wxbl=round((1-(float)(((float)$data_row['zofficerate'])/100.00))*100,3)."%";
@@ -141,7 +175,7 @@
 				}
 			}
 
-			$datalist=array("name"=>$name,"jrpp"=>$jrpp,"mrpp"=>$mrpp,"jrhjpp"=>$jrhjpp,"mrhjpp"=>$mrhjpp,"pjpj"=>$pjpj,"gyxl"=>$gyxl,"ppxl"=>$ppxl,"wxbl"=>"");
+			$datalist=array("name"=>$name,"jrpp"=>$jrpp,"mrpp"=>$mrpp,"jrhjpp"=>$jrhjpp,"mrhjpp"=>$mrhjpp,"pjpj"=>$pjpj,"gyxl"=>$gyxl,"ppxl"=>$ppxl,"wxbl"=>"","kb"=>$fen,"rd"=>$rd,"tjl"=>$tjl);
 			$arr['ypp'][$j]=$datalist;
 			$j++;
 		}

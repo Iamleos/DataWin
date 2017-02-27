@@ -8,7 +8,7 @@
 
 <style type="text/css">
 	td{
-		width:10%;
+		width:5%;
 		height:70px;
 	}
 </style>
@@ -43,16 +43,16 @@
 			var syts=datalist[i]['syts'];
 			var gyrc=datalist[i]['gyrc'];
 		
-			var str="<tr style=\"font-size:18px;color:#000;font-family:'微软雅黑'; text-align:center;font-weight:bold;\">";
+			var str="<tr style=\"font-size:20px;color:#000;font-family:'微软雅黑'; text-align:center;font-weight:bold;\">";
 			    str+="<td class='name' >"+name+"</td>";
-				str+="<td class='yjqt' >"+yjqt+"</td>";
+				//str+="<td class='yjqt' >"+yjqt+"</td>";
 				str+="<td class='pf' >"+pf+"</td>";
 				str+="<td class='ljpf' >"+ljpf+"</td>";
-				str+="<td class='gyrc' >"+gyrc+"</td>";
+				//str+="<td class='gyrc' >"+gyrc+"</td>";
 				str+="<td class='cj' >"+cj+"</td>";
-				str+="<td class='cjpf' >"+cjpf+"</td>";
+				//str+="<td class='cjpf' >"+cjpf+"</td>";
 				str+="<td class='pfzb' >"+pfzb+"</td>";
-				str+="<td class='sz' >"+sz+"</td>";
+				//str+="<td class='sz' >"+sz+"</td>";
 				str+="<td class='syts' >"+syts+"</td>";
 				
 			$("#filmdata").append(str);
@@ -73,16 +73,16 @@
 				var syts=dy[i]['syts'];
 				var gyrc=dy[i]['gyrc'];
 			
-				var str="<tr style=\"font-size:18px;color:#000;font-family:'微软雅黑'; text-align:center;font-weight:bold;\">";
+				var str="<tr style=\"font-size:20px;color:#000;font-family:'微软雅黑'; text-align:center;font-weight:bold;\">";
 					str+="<td class='name' ><span style=\"font-size:12px;color:#FFC125;text-align:left;padding-left:0px;\">(点映)</span>"+name+"</td>";
-					str+="<td class='yjqt' >"+yjqt+"</td>";
+					//str+="<td class='yjqt' >"+yjqt+"</td>";
 					str+="<td class='pf' >"+pf+"</td>";
 					str+="<td class='ljpf' >"+ljpf+"</td>";
-					str+="<td class='gyrc' >"+gyrc+"</td>";
+					//str+="<td class='gyrc' >"+gyrc+"</td>";
 					str+="<td class='cj' >"+cj+"</td>";
-					str+="<td class='cjpf' >"+cjpf+"</td>";
+					//str+="<td class='cjpf' >"+cjpf+"</td>";
 					str+="<td class='pfzb' >"+pfzb+"</td>";
-					str+="<td class='sz' >"+sz+"</td>";
+					//str+="<td class='sz' >"+sz+"</td>";
 					str+="<td class='syts' >"+syts+"</td>";
 					
 				$("#filmdata").append(str);
@@ -104,16 +104,17 @@
 				var syts=ldc[i]['syts'];
 				var gyrc=ldc[i]['gyrc'];
 			
-				var str="<tr style=\"font-size:18px;color:#000;font-family:'微软雅黑'; text-align:center;font-weight:bold;\">";
+				var str="<tr style=\"font-size:20px;color:#000;font-family:'微软雅黑'; text-align:center;font-weight:bold;\">";
 					str+="<td class='name' ><span style=\"font-size:12px;color:#FFC125;\">(零点场)</span>"+name+"</td>";
-					str+="<td class='yjqt' >"+yjqt+"</td>";
+					str+="<td class='name' ><span style=\"font-size:12px;color:#FFC125;text-align:left;padding-left:0px;\">(点映)</span>"+name+"</td>";
+					//str+="<td class='yjqt' >"+yjqt+"</td>";
 					str+="<td class='pf' >"+pf+"</td>";
 					str+="<td class='ljpf' >"+ljpf+"</td>";
-					str+="<td class='gyrc' >"+gyrc+"</td>";
+					//str+="<td class='gyrc' >"+gyrc+"</td>";
 					str+="<td class='cj' >"+cj+"</td>";
-					str+="<td class='cjpf' >"+cjpf+"</td>";
+					//str+="<td class='cjpf' >"+cjpf+"</td>";
 					str+="<td class='pfzb' >"+pfzb+"</td>";
-					str+="<td class='sz' >"+sz+"</td>";
+					//str+="<td class='sz' >"+sz+"</td>";
 					str+="<td class='syts' >"+syts+"</td>";
 					
 				$("#filmdata").append(str);
@@ -181,24 +182,24 @@
 
 <body onload="getdata()">
 
-<div id="pic" style="width:900px;margin:0 auto;border:1px solid #FF7F00;background:#fff;">
+<div id="pic" style="width:640px;margin:0 auto;border:1px solid #FF7F00;background:#fff;">
 <div style="font-family:'微软雅黑';color:#333;font-size:24px; font-weight:bold; text-align:left; height:60px;">
   <img src="logo.png" />
-  <span id="title" style="margin-left:150px; "> 2016年8月10日电影票房</span>
+  <span id="title" style="margin-left:10%; "> 2016年8月10日电影票房</span>
 </div>
 <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
  
   <tbody id="filmdata">
-    <tr style="background:#FF8C00; height:80px;font-size:18px;color:#fff;font-family:'微软雅黑';">
+    <tr style="background:#FF8C00; height:80px;font-size:20px;color:#fff;font-family:'微软雅黑';">
       <th scope="col">电影名称</th>
-      <th scope="col" style="background:#FF9700;">预计全天(万元)</th>
+      <!-- <th scope="col" style="background:#FF9700;">预计全天(万元)</th> -->
       <th scope="col">21:30票房(万元)</th>
       <th scope="col" style="background:#FF9700;">累计票房(万元)</th>
-	  <th scope="col" >观影人次(人)</th>
+	  <!-- <th scope="col" >观影人次(人)</th> -->
       <th scope="col" style="background:#FF9700;">场均(人)</th>
-      <th scope="col" >场均票房(元)</th>
+      <!-- <th scope="col" >场均票房(元)</th> -->
       <th scope="col" style="background:#FF9700;">票房占比(%)</th>
-      <th scope="col" >上座(%)</th>
+      <!-- <th scope="col" >上座(%)</th> -->
       <th scope="col" style="background:#FF9700;">上映天数</th>
     </tr>
     

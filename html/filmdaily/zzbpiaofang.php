@@ -71,6 +71,10 @@
 		$zinternetsale=findNum($zint_arr[1][0]);
 		$zinternetrate=intval(((int)findNum($zint_arr[2][0]))/100);
 
+	        if (strstr($zname,"&middot;")) {
+        	    $zname = str_replace("&middot;","·",$zname);
+	        }
+
 
 		$sqlinsert="insert into zzbpiaofang(zname,zboxofficesum,zboxoffice,zsession,zperson,zofficesale,zofficerate,zinternetsale,zinternetrate,zrealtimeboxoffice,zestimatedboxoffice,zacquitime) values('{$zname}','{$zboxofficesum}','{$zboxoffice}','{$zsession}','{$zperson}','{$zofficesale}','{$zofficerate}','{$zinternetsale}','{$zinternetrate}','{$zrealtimeboxoffice}','{$zestimatedboxoffice}','{$time}')";
         //echo $sqlinsert;

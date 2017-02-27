@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>德塔文科技</title>
+	<script src="js/echarts.min.js"></script>	
+	<script type="text/javascript" src="./js/html2canvas.min.js"></script>
+	<script src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+	<body style='background-color:#fff;'>
+	<a href='kbll.html' style='text-decoration:none'><input type='button' value='上一张'/></a>
+	<a href='dypf.html' style='text-decoration:none'><input type='button' value='下一张'/></a>
+	<div id="main" style="width: 640px;height:550px; border:1px solid #f5ab23; margin:auto;background-color:#fff;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+        $.getJSON("./php/filmdaily.php",function(data){
+			var pic_title=data.title;
+			var pic_sub_title=data.sub_title;
+			var filmname=new Array();
+			var dypf = new Array();
+			var pfzb = new Array();
+			var ppzb = new Array();
+			$.each(data.data_pf,function(key,value){
+	
+	            filmname.push(value['name']);
+
+	            dypf.push(value['dypf']);
+	        });
+	        $.each(data.data_pfzb,function(key,value){
+	            pfzb.push(value['pfzb']);
+	        });
+	        $.each(data.data_ppzb,function(key,value){
+	            ppzb.push(parseFloat(value['ppzb']));
+
+	            
+	        });
+	        dypf.reverse();
+	        filmname.reverse();
+	        ppzb.reverse();
+	        pfzb.reverse(); 
+	        // 使用刚指定的配置项和数据显示图表。
+        	myChart.setOption({
+
+        		title:{
+					text:pic_title,
+					subtext:pic_sub_title,
+					left:'50%',
+					textAlign:'center',
+					textStyle:{
+						fontSize:22,
+						fontFamily:'微软雅黑',
+					},
+					subtextStyle:{
+						fontSize:16,
+						fontWeight:'bold',
+						fontFamily:'微软雅黑',
+						color:'#000',
+					},
+					itemGap:20,
+					padding:[20,5,0,5],
+				},
+				graphic:[{
+					type: 'image',
+				    style: {
+				        image: 'logo.png',
+				        x: 0,
+				        y: 0,
+				        width: 120,
+				        height: 49
+				    }
+				},{
+			        type: 'group',
+			        id: 'textGroup1',
+			        left: '77%',
+			        top: '75%',
+			        bounding: 'raw',
+			        children: [
+			            {
+			                type: 'rect',
+			                z: 100,
+			                left: 'center',
+			                top: 'center',
+			                shape: {
+			                    width: 330,
+			                    height: 100
+			                },
+			                style: {
+			                    fill: 'transparent',
+			                    
+			                }
+			            },
+			            {
+			                type: 'text',
+			                z: 100,
+			                top: 'middle',
+			                left: 'center',
+			                style: {
+			                    text: [
+			                        '排片占比'
+			                    ].join('\n'),
+			                    font: '12px "微软雅黑", sans-serif'
+			                }
+			            }
+			        ]
+			    },{
+			        type: 'group',
+			        id: 'textGroup2',
+			        left: '87%',
+			        top: '57%',
+			        bounding: 'raw',
+			        children: [
+			            {
+			                type: 'rect',
+			                z: 100,
+			                left: 'center',
+			                top: 'center',
+			                shape: {
+			                    width: 330,
+			                    height: 100
+			                },
+			                style: {
+			                    fill: 'transparent',
+			                    
+			                }
+			            },
+			            {
+			                type: 'text',
+			                z: 100,
+			                top: 'middle',
+			                left: 'center',
+			                style: {
+			                    text: [
+			                        '票房占比'
+			                    ].join('\n'),
+			                    font: '12px "微软雅黑", sans-serif'
+			                }
+			            }
+			        ]
+			    },{
+					type: 'group',
+		            
+		            bounding: 'raw',
+		            top:55,
+		            z: 100,
+		            children: [
+				                {
+				                    type: 'rect',
+				                    
+				                    z: 1,
+				                    shape: {
+				                        width: 640,
+				                        height: 35
+				                    },
+				                    style: {
+				                        fill: '#FFD700'
+				                    }
+				                }
+		            ]
+				}]
+				,
+				tooltip: {
+					trigger: 'item',
+					formatter: '{b}：{c}万元'
+				},
+				grid: [{
+
+					left: '2%',
+					right: '6%',
+					bottom: '2%',
+					containLabel: true
+				}],
+				xAxis: [{
+					
+					axisTick: {
+						show: false
+					},
+					axisLabel:{
+						textStyle:{
+							color:'#000',
+							fontSize:14,
+							fontWeight:'bold',
+						}
+					},
+
+				},{
+					nameGap: 20,
+
+					axisTick: {
+						show: false
+					}
+				},
+				{
+					nameGap: 20,
+					axisTick: {
+						show: false
+					}
+				}],
+				yAxis: [{
+					
+					type: 'category',
+					data: filmname,
+					axisTick: {
+						show: false
+					},
+					axisLabel:{
+						textStyle:{
+							color:'#000',
+							fontSize:16,
+							fontWeight:'bold',
+							fontFamily:'微软雅黑',
+						}
+					},
+
+				},{
+					
+					type: 'category',
+					
+					axisTick: {
+						show: false
+					}
+				},{
+					
+					type: 'category',
+					
+					axisTick: {
+						show: false
+					}
+				}],
+				series: [{
+					name: '票房',
+					type: 'bar',
+					data: dypf,
+					barMaxWidth: '65%',
+					label: {
+						normal: {
+							show: true,
+							position: 'right',
+							formatter: '{c}',
+							
+						}
+					},
+					itemStyle: {
+						normal: {　　　　　　　　　　　　　　 //好，这里就是重头戏了，定义一个list，然后根据所以取得不同的值，这样就实现了，
+							color: function(params) {
+								// build a color map as your need.
+								var colorList = [
+									"#5087c9","#f58608","#9d9e9b","#f5a020",
+									"#4365f0","#4cb551","#19287d","#cf2908",
+									"#f7cb39","#825410","#f5378f","#f5378f"
+								];
+								return colorList[params.dataIndex]
+							},
+							　　　　　　　　　　　　　　 //以下为是否显示，显示位置和显示格式的设置了
+							label: {
+								show: true,
+								position: 'top',
+								//                             formatter: '{c}'
+								formatter: '{b}\n{c}'
+							}
+						}
+					},
+
+				},{
+			        type: 'pie',
+			        center: ['77%', '75%'],
+			        selectedMode: 'single',
+			        radius: ['25%', '35%'],
+			        itemStyle: {
+						normal: {　　　　　　　　　　　　　　 //好，这里就是重头戏了，定义一个list，然后根据所以取得不同的值，这样就实现了，
+							color: function(params) {
+								// build a color map as your need.
+								var colorList = [
+									"#5087c9","#f58608","#9d9e9b","#f5a020",
+									"#4365f0","#4cb551","#19287d","#cf2908",
+									"#f7cb39","#825410","#f5378f","#f5378f"
+								];
+								return colorList[params.dataIndex]
+							}
+							
+						}
+					},
+			        label: {
+			            normal: {
+			                position: 'inner',
+			                
+			                textStyle: {
+			                    color: '#fff',
+			                    fontWeight: 'bold',
+			                    fontSize: 14
+			                },
+
+
+			            }
+			        },
+			        labelLine: {
+			            normal: {
+			                show: false
+			            }
+			        },
+			        data: pfzb,
+			    },
+			    {
+			        type: 'pie',
+			        selectedMode: 'single',
+			        center: ['77%', '75%'],
+			        radius: ['12%', '22%'],
+			        itemStyle: {
+						normal: {　　　　　　　　　　　　　　 //好，这里就是重头戏了，定义一个list，然后根据所以取得不同的值，这样就实现了，
+							color: function(params) {
+								// build a color map as your need.
+								var colorList = [
+									"#5087c9","#f58608","#9d9e9b","#f5a020",
+									"#4365f0","#4cb551","#19287d","#cf2908",
+									"#f7cb39","#825410","#f5378f","#f5378f"
+								];
+								return colorList[params.dataIndex]
+							}
+							
+						}
+					},
+			        label: {
+			            normal: {
+			                position: 'inner',
+			                
+			                textStyle: {
+			                    color: '#fff',
+			                    fontWeight: 'bold',
+			                    fontSize: 14
+			                }
+			            }
+			        },
+			        labelLine: {
+			            normal: {
+			                show: false
+			            }
+			        },
+			        data: ppzb,
+			    }]
+        	});
+			
+			html2canvas($("#main")).then(function(canvas) {
+            document.body.appendChild(canvas);
+			$("#main").css({"display":"none" });
+			
+        });
+
+		});
+     
+        
+    </script>
+
+</body>
+</html>

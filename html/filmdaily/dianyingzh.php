@@ -111,7 +111,6 @@
 	mysql_query("alter table dianyingzh add column wpaper int(10)");
 	mysql_query("alter table dianyingzh add column wread int(10)");
 	mysql_query("alter table dianyingzh add column wlove int(10)");
-
 	//添加微信指数数据
 	mysql_query("update dianyingzh set wpaper=(select dianyingweixin.dpaper from dianyingweixin where dianyingzh.mainname=dianyingweixin.dname or dianyingzh.bc1=dianyingweixin.dname or dianyingzh.bc2=dianyingweixin.dname );");
 	mysql_query("update dianyingzh set wread=(select dianyingweixin.dread from dianyingweixin where dianyingzh.mainname=dianyingweixin.dname or dianyingzh.bc1=dianyingweixin.dname or dianyingzh.bc2=dianyingweixin.dname );");
@@ -127,7 +126,6 @@
 	mysql_query("update dianyingzh set eboxofficedaily=(select enyipiaofang.eboxofficedaily from enyipiaofang where dianyingzh.mainname=enyipiaofang.ename);");
 	mysql_query("update dianyingzh set eboxofficerate=(select enyipiaofang.eboxofficerate from enyipiaofang where dianyingzh.mainname=enyipiaofang.ename);");
 	mysql_query("update dianyingzh set eday=(select enyipiaofang.eday from enyipiaofang where dianyingzh.mainname=enyipiaofang.ename);");
-
 	//名字相似比较
 	$zzb=mysql_query("select * from zzbpiaofang");
 	while($row=mysql_fetch_row($zzb))
@@ -347,7 +345,6 @@
 	{
 		$youyibastr=$row[0]."".$youyibastr;
 	}
-
 	echo $youyibastr."<br>";
 
 	$youyiname=mysql_query("select * from filmname");
