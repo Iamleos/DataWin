@@ -37,13 +37,15 @@
             $weibo_dis = (string)($weibo_dis*10000);
         }
         preg_match_all('/url\(\/\/(.*)\)\sformat/',$result,$ttf);
-        preg_match_all('/.*\/colorstone\/(.*)/',$ttf[1][0],$keyname);
+var_dump($ttf);
+        die();
+	preg_match_all('/.*\/colorstone\/(.*)/',$ttf[1][0],$keyname);
         $com = "wget -P /var/www/html/filmdaily/maoyan_want_see ".$ttf[1][0];
         shell_exec($com);
         sleep(3);
         shell_exec('rename '.$keyname[1][0].' map.ttf /var/www/html/filmdaily/maoyan_want_see/'.$keyname[1][0]);
         sleep(3);
-        shell_exec("java -classpath /var/www/html/filmdaily/maoyan_want_see maoyan");
+        shell_exec("/home/jdk/bin/java -classpath /var/www/html/filmdaily/maoyan_want_see maoyan");
         sleep(3);
         $map = array();
         $mapfile = fopen('/var/www/html/filmdaily/maoyan_want_see/key.txt','r');

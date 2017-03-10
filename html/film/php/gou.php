@@ -132,7 +132,7 @@
 				$pf=0;
 
 			}
-			if((int)$pf>700)
+			if((int)$pf>10)
 			{
 				if($syts<=7)
 				{
@@ -148,7 +148,7 @@
 				   $str.=$row['mainname']."，预计全日票房{$pf}万";
 				}
 
-				if((int)$pf>1500)
+				if((int)$pf>100)
 				{
 					$yesterday=date("Y-m-d",(strtotime("{$row_time[0]}")-3600*24));
 					$film_yesterday=mysql_query("select * from dyhistory where mainname='{$row['mainname']}' and acquitime='{$yesterday}'");
@@ -169,7 +169,7 @@
 					}
 
 				}
-			}else if((int)$pf>100&&$syts<8){
+			}else if((int)$pf>1&&$syts<8){
 				if((int)$mtype['type']==3)
 					{
 						$str.=$row['mainname']."  上映首日，预计全日票房{$pf}万";
