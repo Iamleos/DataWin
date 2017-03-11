@@ -42,6 +42,9 @@
         $size = $data[1];
         $tag = $data[2];
         foreach ($tag as $key1 => $value1) {
+            if ($tag[$key1] == "") {
+                continue;
+            }
             $tag[$key1] = str_ireplace("<br>","",$tag[$key1]);
             mysqli_query($con, "insert into yingxiang_tv_everyday values('{$value[0]}','{$tag[$key1]}','{$size[$key1]}','{$date}');");
         }

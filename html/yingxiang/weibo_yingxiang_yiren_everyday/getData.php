@@ -9,8 +9,12 @@
     date_default_timezone_set("Asia/Shanghai");
     $date = date("Y-m-d");
 
-    $data = mysqli_query($con,"select yname from yirenbaidug50 where yacquitime='{$date}' order by ynum;");
-    $data = mysqli_fetch_all($data);
+    $girldata = mysqli_query($con,"select yname from yirenbaidug50 where yacquitime='{$date}' order by ynum;");
+    $girldata = mysqli_fetch_all($girldata);
+    $boydata = mysqli_query($con,"select yname from yirenbaidub50 where yacquitime='{$date}' order by ynum;");
+    $boydata = mysqli_fetch_all($boydata);
+    //var_dump($girldata);
+    $data = array_merge($girldata,$boydata);
     mysqli_close($con);
 
 //连接yingxiang数据库
@@ -42,6 +46,9 @@
         $size = $data[1];
         $tag = $data[2];
         foreach ($tag as $key1 => $value1) {
+            if ($tag[$key1] == "") {
+                continue;
+            }
             $tag[$key1] = str_ireplace("<br>","",$tag[$key1]);
             mysqli_query($con, "insert into yingxiang_yiren_everyday values('{$value[0]}','{$tag[$key1]}','{$size[$key1]}','{$date}');");
         }
