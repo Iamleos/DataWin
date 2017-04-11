@@ -89,6 +89,8 @@
     $data["paper"] = $ypaper[1][0];
     preg_match_all('/<i class=\"fa fa-thumbs-o-up\"><\/i>(.*)/',$result,$ygood);
     preg_match_all('/<i class="fa fa-book"><\/i>(.*)\s*<i class="fa fa-thumbs-o-up">/',$result,$yread0);
+	var_dump($yread);
+die();
     $ylove = 0;
     $yread1 = 0;
     foreach ($ygood[1] as $key => $value) {
@@ -127,11 +129,8 @@ $name="root";
 $password="ctfoxno1";
 $dbname="yiren";
 $con=mysqli_connect($host,$name,$password,$dbname,4892) or die("Can't connect mysql!".mysqli_connect_error() );
-mysqli_select_db($con,$dbname);
 mysqli_query($con,"set names utf8");
-//mysqli_query($con, "drop table if exists yirenweixin");
-//mysqli_query($con, "create table yirenweixin(yname varchar(30),ypaper varchar(30),yread varchar(30),ylove int(8),ydate varchar(30));");
-$res = mysqli_query($con, "select me from actname");
+$res = mysqli_query($con, "select me from actname limit 2");
 $yname = array();
 $i=0;
 while ($row=mysqli_fetch_row($res)){
@@ -143,7 +142,6 @@ while ($row=mysqli_fetch_row($res)){
     continue;
   }
 }
-echo count($yname);
 ///////////connect url&&&&&getData////////////////
 
 while(count($yname) != 0){
@@ -153,6 +151,7 @@ while(count($yname) != 0){
   $data = array();
   foreach ($yname as $key => $value) {
     $data[$value] = getData($result[$urls[$key]]["result"],$value);
+	var_dump($data);
   }
   foreach ($yname as $key => $value) {
     if($data[$value]['paper']!=NULL){
@@ -166,7 +165,6 @@ while(count($yname) != 0){
 }
 
 mysqli_close($con);
-echo date("Y-n-d H:i:s",time()+8*3600)."</br>";
 
 
 

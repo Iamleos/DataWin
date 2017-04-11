@@ -8,13 +8,9 @@
     mysqli_query($con,"set names utf8");
     date_default_timezone_set("Asia/Shanghai");
     $date = date("Y-m-d");
+    $data = mysqli_query($con, "select me from actname;");
+    $data = mysqli_fetch_all($data);
 
-    $girldata = mysqli_query($con,"select yname from yirenbaidug50 where yacquitime='{$date}' order by ynum;");
-    $girldata = mysqli_fetch_all($girldata);
-    $boydata = mysqli_query($con,"select yname from yirenbaidub50 where yacquitime='{$date}' order by ynum;");
-    $boydata = mysqli_fetch_all($boydata);
-    //var_dump($girldata);
-    $data = array_merge($girldata,$boydata);
     mysqli_close($con);
 
 //连接yingxiang数据库
