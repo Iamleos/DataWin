@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Oceanus | MaoYan Access Control System</title>
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  text-align: center;
+}
+header h3{
+  margin: 20px;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+main{
+  width: 400px;
+  margin: auto;
+  padding: 10px;
+  background: #efefef;
+}
+
+img, input, button{
+  margin: auto;
+  display: block;
+}
+
+img{
+  height: 40px;
+}
+
+input{
+  outline: 0;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 3px;
+  text-align: center;
+  font-family: monospace;
+  border: 1px solid #efefef;
+}
+button{
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 3px;
+  font-size: 16px;
+  background: #e54847;
+  text-transform: uppercase;
+}
+
+footer{
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #999;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.message{
+  color: red;
+}
+
+@media screen and (max-width: 768px){
+  body{
+    text-align: left !important;
+  }
+  main{
+    width: 95%;
+  }
+}
+
+</style>
+<script type="text/javascript">
+;(function(global, undefined){
+  function refresh(e){
+    this.setAttribute('src', this.src.replace(/&t=(\d+)/, '&t=' + +new Date));
+  }
+  document.addEventListener('DOMContentLoaded', function(){
+    var captcha = document.getElementById('captcha');
+    captcha.addEventListener('click', refresh);
+    captcha.addEventListener('touchstart', refresh);
+  });
+})(window);
+</script>
+</head>
+<body>
+  <header>
+    <!-- <h1>MaoYan Access Control System</h1> -->
+    <h3>
+      <p>很抱歉，您所在的网络有异常访问，此刻我们无法响应您的请求。</p>
+      <p>请输入以下验证码，即可恢复使用。</p>
+    </h3>
+  </header>
+  <main>
+    <p class="message" ></p>
+    <form method="post" >
+      <img id="captcha" src="https://verify.meituan.com/v2/captcha?request_code=a66a72b082cd4f5fbba8f6556a163c2c&action=spiderindefence&t=1" alt="captcha" />
+      <input type="hidden" name="__oceanus" value="1">
+      <input type="hidden" name="ip" value="115.159.205.133" />
+      <input type="hidden" name="url" value="http://piaofang.maoyan.com/company/invest" />
+      <input type="hidden" name="ticket" value="" />
+      <input type="hidden" name="request_code" value="a66a72b082cd4f5fbba8f6556a163c2c" />
+      <input type="text" name="captcha_code" required placeholder="" />
+      <button type="submit">提交</button>
+    </form>
+  </main>
+  <footer>
+    <a href="https://maoyan.com">猫眼电影</a>
+  </footer>
+</body>
+</html>

@@ -1,10 +1,10 @@
 <?php
 /**
- *@µ÷ÓÃ°Ë×¦Óã¶¹°êÆÀ·Öapi
+ *@è°ƒç”¨å…«çˆªé±¼è±†ç“£è¯„åˆ†api
  *@author: xujun
- *@notice ¾ßÌå½âÊÍ¿´dianyingba.php
+ *@notice å…·ä½“è§£é‡Šçœ‹dianyingba.php
  */
- #! /usr/bin/php
+ #!/usr/bin/php
     header("Content-Type: text/html;charset=utf-8");
 	set_time_limit(0);
     $host="56a3768226622.sh.cdb.myqcloud.com:4892";
