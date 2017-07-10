@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>德塔文数据采集与重算</title>
+<link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png" />
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<style type="text/css">
+		body,div,table,tr,td{
+			margin:0;
+			padding:0;
+		}
+		.header{
+			width:100%;
+			height:100px;
+			background:#f9f9f9;
+			text-align:center;
+			line-height:100px;
+			font-size:20px;
+			font-family:"黑体";
+		}
+		.content{
+			width:100%;
+			background:#f4f4f4;
+			margin:auto;
+		}
+		table{
+			width:100%;
+			border-bottom:1px #cccccc solid;
+			border-top:1px #cccccc solid;
+		}
+		.line{
+			height:50px;
+			line-height:50px;
+			
+		}
+		.c1{
+			width:38%;
+			text-align:right;
+			
+		}
+		.c2{
+			width:15%;
+			text-align:center;
+		}
+		.c3{
+			width:10%;
+			text-align:left;
+		}
+		.c4{
+			width:37%;
+			text-align:left;
+		}
+		.c2 input{
+			background-color:#99FF00;
+			
+		
+		}
+		.c3 input{
+			background-color:#CCCC66;
+			
+		}
+		.c4 input{
+			background-color:#FFCC33;  
+			
+		}
+		
+	</style>
+	<script type="text/javascript">
+		function re_calculate(){
+			
+			$.get("http://115.159.205.133/filmdaily/dianyingzh.php");
+			alert("重新汇总成功");
+		}
+		function acq_zzb(){
+			$.get("http://115.159.205.133/filmdaily/zzbpiaofang.php");
+			alert("重新采集成功");
+		}
+		function acq_myhj(){
+			$.get("http://115.159.205.133/filmdaily/maoyan_hjpp.php");
+			alert("重新采集成功");
+		}
+		function acq_mypp(){
+			$.get("http://115.159.205.133/filmdaily/maoyan_pp.php");
+			alert("重新采集成功");
+		}
+		function acq_gewala(){
+			$.get("http://115.159.205.133/filmdaily/gewalafen.php");
+                        alert("重新采集成功");
+		}
+                function acq_mypfcb(){
+                        $.get("http://115.159.205.133/filmdaily/maoyanpiaofang/acq.php");
+                        alert("重新采集成功");
+                }
+                function acq_myf(){
+                        $.get("http://115.159.205.133/filmdaily/maoyanfen/acq.php");
+                        alert("重新采集成功");
+                }
+                function acq_mypfjb(){
+                        $.get("http://115.159.205.133/filmdaily/maoyanpiaofangjianbao/acq.php");
+                        alert("重新采集成功");
+                }
+	</script>
+</head>
+		
+<body>
+	<div class="header">
+		德塔文数据采集与重算
+	</div>
+	<div class="content">
+		<table>
+			<tr class="line"><td class="c1">专资办票房</td><td class="c2"><input type="button" name="acq_zzb" value="重新采集" onclick="acq_zzb()"/></td><td class="c3"><input type="button" name="re_calculate" value="重新汇总" onclick="re_calculate()"/></td><td class="c4"><a href="http://115.159.205.133/admin/upload.html" target="_blank" style="text-decoration:none;"><input type="button" name="check_status" value="查看采集状态"/></a></td></tr>
+			<tr class="line"><td class="c1">猫眼排片</td><td class="c2"><input type="button" name="acq_mypp" value="重新采集" onclick="acq_mypp()"/></td><td class="c3"><input type="button" name="re_calculate" value="重新汇总" onclick="re_calculate()"/></td><td class="c4"><a href="http://115.159.205.133/admin/upload.html" target="_blank" style="text-decoration:none;"><input type="button" name="check_status" value="查看采集状态"/></a></td></tr>
+			<tr class="line"><td class="c1">猫眼黄金排片</td><td class="c2"><input type="button" name="acq_myhj" value="重新采集" onclick="acq_myhj()"/></td><td class="c3"><input type="button" name="re_calculate" value="重新汇总" onclick="re_calculate()"/></td><td class="c4"><a href="http://115.159.205.133/admin/upload.html" target="_blank" style="text-decoration:none;"><input type="button" name="check_status" value="查看采集状态"/></a></td></tr>
+                        <tr class="line"><td class="c1">格瓦拉</td><td class="c2"><input type="button" name="acq_gewala" value="重新采集" onclick="acq_gewala()"/></td><td class="c3"><input type="button" name="re_calculate" value="重新汇总" onclick="re_calculate()"/></td><td class="c4"><a href="http://115.159.205.133/admin/upload.html" target="_blank" style="text-decoration:none;"><input type="button" name="check_status" value="查看采集状态"/></a></td></tr>
+                        <tr class="line"><td class="c1">猫眼票房粗报</td><td class="c2"><input type="button" name="acq_mypfcb" value="重新采集" onclick="acq_mypfcb()"/></td><td class="c3"><input type="button" name="re_calculate" value="重新汇总" onclick="re_calculate()"/></td><td class="c4"><a href="http://115.159.205.133/admin/upload.html" target="_blank" style="text-decoration:none;"><input type="button" name="check_status" value="查看采集状态"/></a></td></tr>
+                        <tr class="line"><td class="c1">猫眼分</td><td class="c2"><input type="button" name="acq_myf" value="重新采集" onclick="acq_myf()"/></td><td class="c3"><input type="button" name="re_calculate" value="重新汇总" onclick="re_calculate()"/></td><td class="c4"><a href="http://115.159.205.133/admin/upload.html" target="_blank" style="text-decoration:none;"><input type="button" name="check_status" value="查看采集状态"/></a></td></tr>
+                        <tr class="line"><td class="c1">猫眼票房简报</td><td class="c2"><input type="button" name="acq_mypfjb" value="重新采集" onclick="acq_mypfjb()"/></td><td class="c3"><input type="button" name="re_calculate" value="重新汇总" onclick="re_calculate()"/></td><td class="c4"><a href="http://115.159.205.133/admin/upload.html" target="_blank" style="text-decoration:none;"><input type="button" name="check_status" value="查看采集状态"/></a></td></tr>
+		</table>
+	</div>
+	<div class="footer">
+		
+	</div>
+</body>
+</html>

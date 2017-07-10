@@ -8,7 +8,7 @@
     $dbname="TV";
     $con=mysqli_connect($host,$name,$password,$dbname,4892) or die("Can't connect mysql!".mysqli_connect_error() );
     mysqli_query($con,"set names utf8");
-    $tv = mysqli_query($con, "select name from douban_tv where zzsy='1'");
+    $tv = mysqli_query($con, "select name from search_list;");
     $tv = mysqli_fetch_all($tv);
     mysqli_close($con);
     //入库
@@ -21,20 +21,24 @@
 
     foreach ($tv as $key => $value) {
         $tvname = $value[0];
-        $url_name = urlencode($tvname);
-        $url = "http://index.haosou.com/index/radarJson?t=30&q=".$url_name;
-        $ch = curl_init($url);
-        curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1664.3 Safari/537.36");
-        curl_setopt($ch, CURLOPT_TIMEOUT, 5);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($ch, CURLOPT_HEADER, 0);
-        curl_setopt($ch, CURLOPT_NOSIGNAL, true);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-        $result = curl_exec($ch);
-        curl_close($ch);
+        $flag = 0;
+        do {
+            $json = NULL;
+            $data = NULL;
+            exec("python /var/www/html/zhishu/360_zhishu/python/getData_xuqiu.py '{$tvname}'",$json);
+            $data = json_decode($json[0]);
+            if ($flag > 2) {
+                break;
+            }
+            elseif ($data == NULL) {
+                $flag++;
+                continue;
+            }
+            if ($data->msg == "no result") {
+                continue 2;
+            }
+        } while (0);
 
-        $data = json_decode($result);
         if ($data->data == false) {
             continue;
         }
@@ -42,7 +46,6 @@
         $from = $data->data->from_query;
         $to = $data->data->to_query;
         $list = $data->data->list;
-
         if (count($burst) < 5) {
             $diff = 5-count($burst);
             $obj = new stdClass();
@@ -86,8 +89,6 @@
 
             }
         }
-
-
         mysqli_query($con, "insert into 360_tv_xuqiu values('{$tvname}',
         '{$list[0]->query}','{$list[0]->power}','{$list[1]->query}','{$list[1]->power}','{$list[2]->query}','{$list[2]->power}','{$list[3]->query}','{$list[3]->power}',
         '{$list[4]->query}','{$list[4]->power}',
@@ -98,7 +99,6 @@
         '{$burst[0]->query}','{$burst[0]->power}','{$burst[1]->query}','{$burst[1]->power}','{$burst[2]->query}','{$burst[2]->power}','{$burst[3]->query}','{$burst[3]->power}',
         '{$burst[4]->query}','{$burst[4]->power}',
         '{$date}');");
-
         var_dump($tvname);
         sleep(1);
 

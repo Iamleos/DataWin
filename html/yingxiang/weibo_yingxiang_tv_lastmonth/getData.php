@@ -8,7 +8,7 @@
     mysqli_query($con,"set names utf8");
     date_default_timezone_set("Asia/Shanghai");
     $date = date("Y-m-d");
-    $tvname = mysqli_query($con,"select name from douban_tv where zzsy='1';");
+    $tvname = mysqli_query($con,"select name from search_list;");
     $tvname = mysqli_fetch_all($tvname);
 
     mysqli_close($con);

@@ -9,7 +9,7 @@
     date_default_timezone_set("Asia/Shanghai");
     $date = date("Y-m-d");
 
-    $data = mysqli_query($con,"select name from douban_tv where zzsy='1';");
+    $data = mysqli_query($con,"select name from search_list;");
     $data = mysqli_fetch_all($data);
     mysqli_close($con);
 

@@ -1,0 +1,714 @@
+[ 2017-05-23T02:13:34+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_tq4egp3sd7fkkri3d2hbvtuot0, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2017-05-23T02:13:35+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_2pu6t6s5uo5ov6q6qo7ed6a092, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001656s ]
+
+[ 2017-05-23T02:13:35+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_qvpb75kqn2946f13e5ud7fvi52, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2017-05-23T02:13:35+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_2h7n149rlhi39ssd8qidf9f7g4, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2017-05-23T03:43:34+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_7h1u9bdk1ks5s7012s566a33f7, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2017-05-23T03:43:34+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_jictuqifcpkkvv09c50h9117j2, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000833s ]
+
+[ 2017-05-23T03:43:34+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_isoa0s3dtidc45rfp02pk6ulo7, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2017-05-23T03:43:34+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_2jjclgeb853kunq142oce3v3c2, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000839s ]
+
+[ 2017-05-23T10:22:55+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_1j07ok6vit2o1fk9v38hbpu767, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2017-05-23T10:22:56+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_6t05d6e969mvjo47lipkl9ppg7, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000877s ]
+
+[ 2017-05-23T14:47:23+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_hdphc83pp259bteuq6t3l42bj2, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000901s ]
+
+[ 2017-05-23T14:47:23+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_0gmgmin6o23sra8pk90dlf5ft0, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000885s ]
+
+[ 2017-05-23T14:47:23+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_922s14nq4c8v6q23mfr4vdbrk7, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000555s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2017-05-23T14:47:24+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_rff0sa7dtrdu9743r8hgg6b986, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000664s ]
+
+[ 2017-05-23T14:56:58+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_33feevem0kqaoonc60c4s8mc74, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000624s ]
+
+[ 2017-05-23T14:56:58+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_ecms224ilh63irk8a21d951c46, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2017-05-23T14:56:58+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_d1phdrldt1k8sgi7idmjq8dsb4, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000892s ]
+
+[ 2017-05-23T14:56:59+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_ud3umbmkai3efh9jc33pb9m2t6, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000669s ]
+
+[ 2017-05-23T15:19:22+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_6cckgv6f21gt1a80o27b04fqn1, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000980s ]
+
+[ 2017-05-23T18:33:41+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_pnlg03kpc8thvgq4g4v45c5re2, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000965s ]
+
+[ 2017-05-23T18:33:41+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_ea9emac8400l8ssekuj9i2fl36, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2017-05-23T18:33:41+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_ult1ujrq4um7a9anii68p9i834, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000676s ]
+
+[ 2017-05-23T18:33:41+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_5ddkaarv1i26f7nardr2e52rr5, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2017-05-23T20:45:46+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_6edud589hfsidi4n427tdresl5, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2017-05-23T20:45:52+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_mbga25sgkg3m4ithh9kr43in73, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001077s ]
+
+[ 2017-05-23T22:36:53+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_4jt5al8mcf99p5qkt4qfgbnsf4, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000824s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000885s ]
+
+[ 2017-05-23T22:36:53+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_k77ctcroask0hmbopgvj74s334, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0038s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000937s ]
+
+[ 2017-05-23T22:36:53+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_3lm744b03r856f2tvau7cn5ll4, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0045s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0045s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000809s ]
+
+[ 2017-05-23T22:36:53+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_84e298greo5ga476nf6ofa4j97, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0039s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2017-05-23T22:37:18+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_t7iufk7ldcjh98r3ikfv24c4d2, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000898s ]
+
+[ 2017-05-23T23:34:51+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_i1st5f5ksglckdboo7dem07u52, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000749s ]
+
+[ 2017-05-23T23:34:51+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_62fjsimo3in0r1vfj593lk5686, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000646s ]
+
+[ 2017-05-23T23:34:51+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_2gp9kicmgvv3s0q7b5qaeogm05, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2017-05-23T23:34:51+08:00 ] 115.159.205.133 /V/index.php/Home/User/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+NOTIC: [2] session_start(): open(/var/lib/php/session/sess_p5imn91n6pj9rmmcp3esec0j80, O_RDWR) failed: Permission denied (13) /var/www/html/V/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant upload - assumed 'upload' /var/www/html/V/Application/Home/Controller/UserController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `tp_upload` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="今日晨读" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="艺人数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="电影数据分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0058s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="影视项目总分析" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="行业研究" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="月咨询总结" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_upload` WHERE ( classify="最新消息" ) ORDER BY id DESC LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000664s ]
+

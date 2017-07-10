@@ -7,7 +7,7 @@
     $dbname="TV";
     $con=mysqli_connect($host,$name,$password,$dbname,4892) or die("Can't connect mysql!".mysqli_connect_error() );
     mysqli_query($con,"set names utf8");
-    $tvname = mysqli_query($con, "select name from douban_tv where zzsy='1';");
+    $tvname = mysqli_query($con, "select name from search_list;");
     $tvname = mysqli_fetch_all($tvname);
     mysqli_close($con);
 

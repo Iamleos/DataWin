@@ -1,9 +1,9 @@
 <?php
     //读取地区编号配置文件
-    $region = simplexml_load_file("../region.xml");
+    $region = simplexml_load_file("/var/www/html/zhishu/360_zhishu/region.xml");
     $region = json_decode(json_encode($region),true);
-    $characters = simplexml_load_file("../characters.xml");
-    $characters = json_decode(json_encode($characters),true);
+#    $characters = simplexml_load_file("../characters.xml");
+#    $characters = json_decode(json_encode($characters),true);
     date_default_timezone_set("Asia/Shanghai");
     $date = date("Y-m-d");
     //提取艺人名单
@@ -27,20 +27,24 @@
     //爬取数据
     foreach ($film as $key => $value) {
         $filmname = $value[0];
-        $url_name = urlencode($filmname);
-        $url = "http://index.haosou.com/index/indexquerygraph?t=30&area=%E5%85%A8%E5%9B%BD&q=".$url_name;
-        $ch = curl_init($url);
-        curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1664.3 Safari/537.36");
-        curl_setopt($ch, CURLOPT_TIMEOUT, 5);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($ch, CURLOPT_HEADER, 0);
-        curl_setopt($ch, CURLOPT_NOSIGNAL, true);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-        $result = curl_exec($ch);
-        curl_close($ch);
-
-        $data = json_decode($result)->data;
+        $flag = 0;
+        do {
+            $json = NULL;
+            $data = NULL;
+            exec("python /var/www/html/zhishu/360_zhishu/python/getData_renqun.py '{$filmname}'",$json);
+            $data = json_decode($json[0]);
+            if ($flag > 2) {
+                break;
+            }
+            elseif ($data == NULL) {
+                $flag++;
+                continue;
+            }
+            if ($data->msg == "no result") {
+                continue 2;
+            }
+        } while (0);
+        $data = $data->data;
         if($data == false){
             continue;
         }
@@ -56,6 +60,16 @@
             $age_cp[$value1["entity"]]["sex"]["female"] = (string)($value1["sex"]["female"]/100);
 
         }
+        //有的关键词的搜索出的age信息只有3个或者更少的年龄段的划分，需要补全
+        $age_total_cp = array("01","02","03","04","05");
+        $age_current_cp = array_keys($age_cp);
+        $age_cp_diff = array_diff($age_total_cp,$age_current_cp);
+        foreach ($age_cp_diff as $key6 => $value6) {
+            $age_cp["$value6"]["percent"] = "0";
+            $age_cp["$value6"]["sex"]["male"] = "0";
+            $age_cp["$value6"]["sex"]["female"] = "0";
+        }
+
         foreach ($sex as $key2 => $value2) {
             $sex_cp[$value2["entity"]] = (string)($value2["percent"]/100);
         }
@@ -86,16 +100,17 @@
 
             }
         }
+
         mysqli_query($con,"insert into 360_film_region(name,
-        {$region["key"][(int)($province[0]->entity-1)]},{$region["key"][(int)($province[1]->entity-1)]},{$region["key"][(int)($province[2]->entity-1)]},{$region["key"][(int)($province[3]->entity-1)]},
-        {$region["key"][(int)($province[4]->entity-1)]},{$region["key"][(int)($province[5]->entity-1)]},{$region["key"][(int)($province[6]->entity-1)]},{$region["key"][(int)($province[7]->entity-1)]},
-        {$region["key"][(int)($province[8]->entity-1)]},{$region["key"][(int)($province[9]->entity-1)]},{$region["key"][(int)($province[10]->entity-1)]},{$region["key"][(int)($province[11]->entity-1)]},
-        {$region["key"][(int)($province[12]->entity-1)]},{$region["key"][(int)($province[13]->entity-1)]},{$region["key"][(int)($province[14]->entity-1)]},{$region["key"][(int)($province[15]->entity-1)]},
-        {$region["key"][(int)($province[16]->entity-1)]},{$region["key"][(int)($province[17]->entity-1)]},{$region["key"][(int)($province[18]->entity-1)]},{$region["key"][(int)($province[19]->entity-1)]},
-        {$region["key"][(int)($province[20]->entity-1)]},{$region["key"][(int)($province[21]->entity-1)]},{$region["key"][(int)($province[22]->entity-1)]},{$region["key"][(int)($province[23]->entity-1)]},
-        {$region["key"][(int)($province[24]->entity-1)]},{$region["key"][(int)($province[25]->entity-1)]},{$region["key"][(int)($province[26]->entity-1)]},{$region["key"][(int)($province[27]->entity-1)]},
-        {$region["key"][(int)($province[28]->entity-1)]},{$region["key"][(int)($province[29]->entity-1)]},{$region["key"][(int)($province[30]->entity-1)]},{$region["key"][(int)($province[31]->entity-1)]},
-        {$region["key"][(int)($province[32]->entity-1)]},{$region["key"][(int)($province[33]->entity-1)]},
+        {$region["key"][(int)($province[0]->entity)-1]},{$region["key"][(int)($province[1]->entity)-1]},{$region["key"][(int)($province[2]->entity)-1]},{$region["key"][(int)($province[3]->entity)-1]},
+        {$region["key"][(int)($province[4]->entity)-1]},{$region["key"][(int)($province[5]->entity)-1]},{$region["key"][(int)($province[6]->entity)-1]},{$region["key"][(int)($province[7]->entity)-1]},
+        {$region["key"][(int)($province[8]->entity)-1]},{$region["key"][(int)($province[9]->entity)-1]},{$region["key"][(int)($province[10]->entity)-1]},{$region["key"][(int)($province[11]->entity)-1]},
+        {$region["key"][(int)($province[12]->entity)-1]},{$region["key"][(int)($province[13]->entity)-1]},{$region["key"][(int)($province[14]->entity)-1]},{$region["key"][(int)($province[15]->entity)-1]},
+        {$region["key"][(int)($province[16]->entity)-1]},{$region["key"][(int)($province[17]->entity)-1]},{$region["key"][(int)($province[18]->entity)-1]},{$region["key"][(int)($province[19]->entity)-1]},
+        {$region["key"][(int)($province[20]->entity)-1]},{$region["key"][(int)($province[21]->entity)-1]},{$region["key"][(int)($province[22]->entity)-1]},{$region["key"][(int)($province[23]->entity)-1]},
+        {$region["key"][(int)($province[24]->entity)-1]},{$region["key"][(int)($province[25]->entity)-1]},{$region["key"][(int)($province[26]->entity)-1]},{$region["key"][(int)($province[27]->entity)-1]},
+        {$region["key"][(int)($province[28]->entity)-1]},{$region["key"][(int)($province[29]->entity)-1]},{$region["key"][(int)($province[30]->entity)-1]},{$region["key"][(int)($province[31]->entity)-1]},
+        {$region["key"][(int)($province[32]->entity)-1]},{$region["key"][(int)($province[33]->entity)-1]},
         acquitime)
         values('{$filmname}',
         '{$province[0]->percent}','{$province[1]->percent}','{$province[2]->percent}','{$province[3]->percent}','{$province[4]->percent}','{$province[5]->percent}',
@@ -116,10 +131,16 @@
         '{$date}');");
 
         mysqli_query($con, "insert into 360_film_attribute values('{$filmname}',
-        '{$characters["key"][(int)$interest[0]->entity-1]}','{$interest[0]->percent}','{$characters["key"][(int)$interest[1]->entity-1]}','{$interest[1]->percent}',
-        '{$characters["key"][(int)$interest[2]->entity-1]}','{$interest[2]->percent}','{$characters["key"][(int)$interest[3]->entity-1]}','{$interest[3]->percent}',
-        '{$characters["key"][(int)$interest[4]->entity-1]}','{$interest[4]->percent}','{$characters["key"][(int)$interest[5]->entity-1]}','{$interest[5]->percent}',
-        '{$characters["key"][(int)$interest[6]->entity-1]}','{$interest[6]->percent}','{$characters["key"][(int)$interest[7]->entity-1]}','{$interest[7]->percent}',
+        '{$interest[0]->entity}','{$interest[0]->percent}','{$interest[1]->entity}','{$interest[1]->percent}',
+        '{$interest[2]->entity}','{$interest[2]->percent}','{$interest[3]->entity}','{$interest[3]->percent}',
+        '{$interest[4]->entity}','{$interest[4]->percent}','{$interest[5]->entity}','{$interest[5]->percent}',
+        '{$interest[6]->entity}','{$interest[6]->percent}','{$interest[7]->entity}','{$interest[7]->percent}',
+        '{$date}');");
+        var_dump("insert into 360_film_attribute values('{$filmname}',
+        '{$interest[0]->entity}','{$interest[0]->percent}','{$interest[1]->entity}','{$interest[1]->percent}',
+        '{$interest[2]->entity}','{$interest[2]->percent}','{$interest[3]->entity}','{$interest[3]->percent}',
+        '{$interest[4]->entity}','{$interest[4]->percent}','{$interest[5]->entity}','{$interest[5]->percent}',
+        '{$interest[6]->entity}','{$interest[6]->percent}','{$interest[7]->entity}','{$interest[7]->percent}',
         '{$date}');");
         var_dump($filmname);
         sleep(1);

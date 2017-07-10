@@ -22,8 +22,8 @@
 	$html=file_get_contents("http://www.zgdypw.cn/pors/w/webStatisticsDatas/api/{$day}/searchDayBoxOffice");
 	$info_str=json_decode($html,true);
 	$box_office_sum=$info_str["data"]["dayBoxOffice"]["totalBoxoffice"];
-	$session=$info_str["data"]["dayBoxOffice"]["totalSession"];
-	$people=rand((int)$info_str["data"]["dayBoxOffice"]["totalAudience"]/10000,4);
+	$session=$info_str["data"]["dayBoxOffice"]["totalSession"]/10000;
+	$people=$info_str["data"]["dayBoxOffice"]["totalAudience"]/10000;
 	$sql_str="insert into turing_zzb_total(total_piaofang,total_session,total_people,time) values('{$box_office_sum}','{$session}','{$people}','{$day}');";
 	mysql_query($sql_str,$con);
 	for($i=0;$i<10;$i++)

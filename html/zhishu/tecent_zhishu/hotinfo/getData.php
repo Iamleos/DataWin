@@ -1,0 +1,146 @@
+<?php
+    include "/var/www/html/zhishu/tecent_zhishu/function_lib/lib.php";
+
+    //获取采集名单
+
+    $filmcon = DataWin\getDB("filmdaily");
+    $filmname = mysqli_query($filmcon,"select mainname from filmname where zzsy=1;");
+    $filmname = mysqli_fetch_all($filmname);
+    mysqli_close($filmcon);
+    $yirencon = DataWin\getDB("yiren");
+    $yirenname = mysqli_query($yirencon,"select me from actname;");
+    $yirenname = mysqli_fetch_all($yirenname);
+    mysqli_close($yirencon);
+    $tvcon = DataWin\getDB("TV");
+    $tvname = mysqli_fetch_all(mysqli_query($tvcon,"select name from search_list;"));
+    mysqli_close($tvcon);
+    $zycon = DataWin\getDB("zhishu");
+    $zyname = mysqli_query($zycon,"select name from linshi_word;");
+    $zyname = mysqli_fetch_all($zyname);
+    mysqli_close($zycon);
+
+    //获取代插入库
+    $con = DataWin\getDB("zhishu");
+    $time = DataWin\getDate();
+    $info_time = DataWin\getDate("-1");
+    $info_date = str_ireplace("-","",$info_time);
+
+    foreach ($zyname as $key => $value) {
+        $flag = 0;
+        do {
+            $json = NULL;
+            $data = NULL;
+            exec("python /var/www/html/zhishu/tecent_zhishu/hotinfo/getData.py $value[0] $info_date",$json);
+            $data = json_decode($json[0]);
+            if ($flag > 2) {
+                break;
+            }
+            elseif ($data == NULL) {
+                $flag++;
+                continue;
+            }
+            if (count($data->data->value) == 0) {
+                continue 2;
+            }
+        } while (0);
+
+        $data = $data->data->value;
+        foreach ($data as $key1 => $value1) {
+            mysqli_query($con, "insert into tx_zy_hotInfo values(
+            '{$value[0]}','{$time}','{$info_time}','{$value1->sTitle}','{$value1->sUrl}'
+            );");
+        }
+        var_dump($value[0]);
+        sleep(3);
+    }
+
+
+    foreach ($yirenname as $key => $value) {
+        $flag = 0;
+        do {
+            $json = NULL;
+            $data = NULL;
+            exec("python /var/www/html/zhishu/tecent_zhishu/hotinfo/getData.py $value[0] $info_date",$json);
+            $data = json_decode($json[0]);
+            if ($flag > 2) {
+                break;
+            }
+            elseif ($data == NULL) {
+                $flag++;
+                continue;
+            }
+            if (count($data->data->value) == 0) {
+                continue 2;
+            }
+        } while (0);
+
+        $data = $data->data->value;
+        foreach ($data as $key1 => $value1) {
+            mysqli_query($con, "insert into tx_yiren_hotInfo values(
+            '{$value[0]}','{$time}','{$info_time}','{$value1->sTitle}','{$value1->sUrl}'
+            );");
+        }
+        var_dump($value[0]);
+        sleep(3);
+    }
+
+    foreach ($filmname as $key => $value) {
+        $flag = 0;
+        do {
+            $json = NULL;
+            $data = NULL;
+            exec("python /var/www/html/zhishu/tecent_zhishu/hotinfo/getData.py $value[0] $info_date",$json);
+            $data = json_decode($json[0]);
+            if ($flag > 2) {
+                break;
+            }
+            elseif ($data == NULL) {
+                $flag++;
+                continue;
+            }
+            if (count($data->data->value) == 0) {
+                continue 2;
+            }
+        } while (0);
+
+        $data = $data->data->value;
+        foreach ($data as $key1 => $value1) {
+            mysqli_query($con, "insert into tx_film_hotInfo values(
+            '{$value[0]}','{$time}','{$info_time}','{$value1->sTitle}','{$value1->sUrl}'
+            );");
+        }
+        var_dump($value[0]);
+        sleep(3);
+
+    }
+
+    foreach ($tvname as $key => $value) {
+        $flag = 0;
+        do {
+            $json = NULL;
+            $data = NULL;
+            exec("python /var/www/html/zhishu/tecent_zhishu/hotinfo/getData.py $value[0] $info_date",$json);
+            $data = json_decode($json[0]);
+            if ($flag > 2) {
+                break;
+            }
+            elseif ($data == NULL) {
+                $flag++;
+                continue;
+            }
+            if (count($data->data->value) == 0) {
+                continue 2;
+            }
+        } while (0);
+        $data = $data->data->value;
+        foreach ($data as $key1 => $value1) {
+            mysqli_query($con, "insert into tx_tv_hotInfo values(
+            '{$value[0]}','{$time}','{$info_time}','{$value1->sTitle}','{$value1->sUrl}'
+            );");
+        }
+        var_dump($value[0]);
+        sleep(3);
+    }
+
+
+ ?>

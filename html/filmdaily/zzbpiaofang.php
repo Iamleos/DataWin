@@ -21,79 +21,34 @@
     mysql_query("set names utf8");
 	mysql_query("drop table if exists zzbpiaofang;",$con);
     mysql_query("create table zzbpiaofang(zname varchar(30),zboxofficesum int(6),zboxoffice int(5),zsession int(7),zperson int(8),zofficesale int(6),zofficerate decimal(4,2),zinternetsale int(6),zinternetrate decimal(4,2),zrealtimeboxoffice int(8),zestimatedboxoffice int(8),zacquitime date,primary key(zname,zacquitime));",$con);
-
-	$url="http://111.205.151.7/movies/0";
+	
+	$day=date("Y-m-d");
+	$url="http://weixin.gjdyzjb.cn/pors/w/webChatRealTimeDatas/api/{$day}/searchFilmTop10";
 	$html=file_get_contents($url);
-	//echo $html;
-	$arr1= array();
-	$arr2= array();
-	$arr3= array();
-	$preg1='/<span class="num">([\w\W]*?)<\/span>/';
-	$preg2='/<div class="open_time">([\w\W]*?)<\/div>/';
-	$preg3='/<tr>([\w\W]*?)<\/tr>/';
-	preg_match_all($preg1, $html, $arr1);
-	preg_match_all($preg2, $html, $arr2);
-	preg_match_all($preg3, $html, $arr3);
-	//var_dump($arr3[1]);
-
-
-	$zrealtimeboxoffice=findNum($arr1[1][0]);
-	$zestimatedboxoffice=findNum($arr1[1][1]);
-	//var_dump($arr2[1][0]);
-	$regex="'\d{4}-\d{1,2}-\d{1,2}'is";
-	preg_match_all($regex,$arr2[1][0],$matches);
-	//var_dump($matches);
-	$time=$matches[0][0];
-	//echo $time;
-	//echo $zrealtimeboxoffice;
-	//echo $zestimatedboxoffice;
-
-	for($i=1;$i<count($arr3[1]);$i++)
+	$info_str=json_decode($html,true);
+	$zrealtimeboxoffice=$info_str["data"]["dayBoxOffice"]["totalBoxoffice"];
+	$zestimatedboxoffice=$info_str["data"]["dayBoxOffice"]["forecastTotalBoxoffice"];
+	$time=$info_str["data"]["businessDay"];
+	
+	for($i=0;$i<10;$i++)
 	{
-		//var_dump($arr3[1][$i]);
-		$arr=array();
-		$preg='/<td>([\w\W]*?)<\/td>/';
-		preg_match_all($preg, $arr3[1][$i], $arr);
-		$zname=$arr[1][0];
-		$zboff_preg='/([\w\W]*?)<i>([\w\W]*?)<\/i>/';
-		preg_match_all($zboff_preg, $arr[1][1], $zboff_arr);
-		$zboxoffice=findNum($zboff_arr[1][0]);
-		$zboxofficesum=findNum($zboff_arr[2][0]);
-		preg_match_all($zboff_preg, $arr[1][2], $zsp_arr);
-		$zsession=findNum($zsp_arr[1][0]);
-		$zperson=findNum($zsp_arr[2][0]);
-		preg_match_all($zboff_preg, $arr[1][3], $zoff_arr);
-
-		$zofficesale=findNum($zoff_arr[1][0]);
-		$zofficerate=intval(((int)findNum($zoff_arr[2][0]))/100);
-		echo $zofficerate."<br/>";
-		preg_match_all($zboff_preg, $arr[1][4], $zint_arr);
-		$zinternetsale=findNum($zint_arr[1][0]);
-		$zinternetrate=intval(((int)findNum($zint_arr[2][0]))/100);
-
-	        if (strstr($zname,"&middot;")) {
-        	    $zname = str_replace("&middot;","·",$zname);
-	        }
+		$zname=$info_str["data"]["top10Films"][$i]["filmName"];
+		$zboxoffice=$info_str["data"]["top10Films"][$i]["daySales"];
+		$zboxofficesum=$info_str["data"]["top10Films"][$i]["filmTotalSales"];
+		$zsession=$info_str["data"]["top10Films"][$i]["daySession"];
+		$zperson=rand((int)$info_str["data"]["top10Films"][$i]["dayAudience"]/10000,4);
+		$zofficesale=$info_str["data"]["top10Films"][$i]["localDaySales"];
+		$zofficerate=$info_str["data"]["top10Films"][$i]["localDaySalesPer"];
+		$zinternetsale=$info_str["data"]["top10Films"][$i]["onlineDaySales"];
+		$zinternetrate=$info_str["data"]["top10Films"][$i]["onlineDaySalesPer"];
 
 
 		$sqlinsert="insert into zzbpiaofang(zname,zboxofficesum,zboxoffice,zsession,zperson,zofficesale,zofficerate,zinternetsale,zinternetrate,zrealtimeboxoffice,zestimatedboxoffice,zacquitime) values('{$zname}','{$zboxofficesum}','{$zboxoffice}','{$zsession}','{$zperson}','{$zofficesale}','{$zofficerate}','{$zinternetsale}','{$zinternetrate}','{$zrealtimeboxoffice}','{$zestimatedboxoffice}','{$time}')";
-        //echo $sqlinsert;
+        echo $sqlinsert;
         mysql_query($sqlinsert,$con);
 
 
 	}
 
-	//提取字符串中的数字
-	function findNum($str=''){
-    $str=trim($str);
-    if(empty($str)){return '';}
-    $temp=array('1','2','3','4','5','6','7','8','9','0');
-    $result='';
-    for($i=0;$i<strlen($str);$i++){
-        if(in_array($str[$i],$temp)){
-            $result.=$str[$i];
-        }
-    }
-    return $result;
-	}
+
 ?>
