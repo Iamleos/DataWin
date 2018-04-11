@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>tv_name</title>
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+
+    function showData(opt){
+        var option = "";
+        var data = document.getElementsByName('data');
+        var dataArray = new Object();
+
+        dataArray.name = data[0].value;
+        dataArray.pingfen = data[1].value;
+        dataArray.juxing = data[2].value;
+        dataArray.gongshi = data[3].value;
+        dataArray.daoyan = data[4].value;
+        dataArray.bianju = data[5].value;
+        dataArray.zhuyan = data[6].value;
+        dataArray.type = data[7].value;
+        dataArray.region = data[8].value;
+        dataArray.language = data[9].value;
+        dataArray.first_show = data[10].value;
+        dataArray.jishu = data[11].value;
+        dataArray.danjipianchang = data[12].value;
+        dataArray.youming = data[13].value;
+        dataArray.where_to_see = data[14].value;
+        dataArray.tag = data[15].value;
+        dataArray.zzsy = data[16].value;
+        dataArray.need_update = data[17].value;
+	dataArray.href = data[18].value;
+        dataJson = JSON.stringify(dataArray);
+
+        if (opt == "删除") {
+            option = "delete";
+        }
+        else if(opt == "插入"){
+            option = "insert";
+            if ((data[16].value != '0'&&data[16].value != '1')||(data[17].value != '0'&&data[17].value != '1')) {
+                alert("请输如0或１");
+                return;
+            }
+        }
+        else {
+            option = "modify";
+            if (data[16].value != "" && (data[16].value != "1" || data[16].value != "0")) {
+                alert("请输如0或１");
+                return;
+            }
+            if (data[17].value != "" && (data[17].value != "1" || data[17].value != "0")) {
+                alert("请输如0或１");
+                return;
+            }
+        }
+        if(!confirm("确认"+opt+"\n"+data[0].value)){
+            return;
+        };
+        $.ajax({
+           url:'../search/tv_manage.php',
+           type:'post',
+           dataType:'json',
+           data:"opt="+option+"&json="+dataJson,
+           success:function(data){
+               //console.log(data);
+            //document.getElementById("show").innerHTML=data;
+                if (typeof(data) == "undefined" || data.result == "error") {
+                    alert("未知错误");
+                }
+                else {
+                    if (data.result == "error0") {
+                        alert("请提供id");
+                    }
+                    else if (data.result == "error1") {
+                        alert("请输入名称");
+                    }
+                    else if (data.result == "error2") {
+                        alert("请勿输入id");
+                    }
+                    else if (data.result == "success_insert") {
+                        alert("插入成功");
+                    }
+                    else if (data.result == "success_delete") {
+                        alert("删除成功");
+                    }
+                    else if (data.result == "success_modify") {
+                        alert("修改成功");
+                    }
+                    else {
+                        alert("未知错误");
+                    }
+                }
+            }
+        });
+    }
+
+</script>
+</head>
+
+<body >
+<p style="text-align:center;"><img src="../pic/index.png" width="800" height="300"></p>
+<center>
+    <div style="font-size:10">
+    　<a href="film.html"> 电影库</a>｜
+      <a href="tv.html"> 电视剧库</a>｜
+      <a href="tv_name.html"> 电视剧名库</a>｜
+      <a href="yiren.html"> 艺人库</a>｜
+      <a href="zy.html"> 综艺库</a>
+    </div>
+    <br>
+    <div>
+        <a href="film_manage.html"> 电影库－编辑</a>｜
+        <a href="tv_manage.html"> 电视剧库－编辑</a>｜
+        <a href="tv_name_manage.html"> 电视剧名库－编辑</a>｜
+        <a href="yiren_manage.html"> 艺人库－编辑</a>｜
+        <a href="zy_manage.html"> 综艺库－编辑</a>
+    </div>
+</center>
+<hr>
+<div style="float:left;width:30%">
+    <center>
+        <h1 >注意：</h1>
+        <h3><strong style="color:grey">删除、修改、插入</strong>数据时<strong style="color:red">需要</strong>提供<strong style="color:blue">电视剧完整名称</strong></h3>
+        <h3><strong style="color:grey">插入和修改</strong>数据时<strong style="color:red">请勿输入英文单引号(e.g. ' ")</strong></h3>
+        <h3><strong style="color:grey">修改</strong>数据时<strong style="color:red">只需要填写待修改选项</strong></h3>
+
+    </center>
+</div>
+<div style="text-align:center;float:left">
+    <center>
+        <table >
+            <tr>
+                <th width="30%">名称：</th>
+                <th width="70%"><input type="text" name="data" size="100"></th>
+            </tr>
+            <tr>
+                <th width="30%">豆瓣评分：</th>
+                <th width="70%"><input type="text" name="data"  size="100"></th>
+            </tr>
+            <tr>
+                <th width="30%">剧型：</th>
+                <th width="70%"><input type="text" name="data"  size="100"></th>
+            </tr>
+            <tr>
+                <th width="30%">公司：</th>
+                <th width="70%"><input type="text" name="data"  size="100"></th>
+            </tr>
+            <tr>
+                <th width="30%">导演：</th>
+                <th width="70%"><input type="text" name="data"  size="100"></th>
+            </tr>
+            <tr>
+                <th width="30%">编剧：</th>
+                <th width="70%"><input type="text" name="data"  size="100"></th>
+            </tr>
+            <tr>
+                <th width="30%">主演：</th>
+                <th width="70%"><input type="text" name="data" size="100"></th>
+            </tr>
+            <tr>
+                <th width="30%">类型：</th>
+                <th width="70%"><input type="text" name="data" size="100"></th>
+            </tr>
+            <tr>
+                <th width="30%">制片国家/地区：</th>
+                <th width="70%"><input type="text" name="data" size="100"></th>
+            </tr>
+            <tr>
+                <th width="30%">语言：</th>
+                <th width="70%"><input type="text" name="data" size="100"></th>
+            </tr>
+            <tr>
+                <th width="30%">首播时间(0000-00-00)：</th>
+                <th width="70%"><input type="text" name="data" size="100"></th>
+            </tr>
+            <tr>
+                <th width="30%">集数：</th>
+                <th width="70%"><input type="text" name="data" size="100"></th>
+            </tr>
+            <tr>
+                <th width="30%">单集片长：</th>
+                <th width="70%"><input type="text" name="data" size="100"></th>
+            </tr>
+            <tr>
+                <th width="30%">电视剧别名：</th>
+                <th width="70%"><input type="text" name="data" size="100"></th>
+            </tr>
+            <tr>
+                <th width="30%">播放平台：</th>
+                <th width="70%"><input type="text" name="data" size="100"></th>
+            </tr>
+            <tr>
+                <th width="30%">豆瓣成员常用标签：</th>
+                <th width="70%"><input type="text" name="data" size="100"></th>
+            </tr>
+            <tr>
+                <th width="30%">是否正在上映(1:是;0否)：</th>
+                <th width="70%"><input type="text" name="data" size="100"></th>
+            </tr>
+            <tr>
+                <th width="30%">电视剧信息是否完整(1:是;0否)：</th>
+                <th width="70%"><input type="text" name="data" size="100"></th>
+            </tr>
+	    <tr>
+                <th width="30%">href: </th>
+                <th width="70%"><input type="text" name="data" size="100"></th>
+            </tr>
+
+        </table>
+        <input  type="button" id="delete" value="删除" onclick="showData(this.value)"/>
+        <input  type="button" id="insert" value="插入" onclick="showData(this.value)"/>
+        <input  type="button" id="modify" value="修改" onclick="showData(this.value)"/>
+    </center>
+</div>
+<div id="show">
+</div>
+
+
+</body>
+</html>

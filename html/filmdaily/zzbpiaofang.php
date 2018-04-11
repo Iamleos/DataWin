@@ -22,8 +22,10 @@
 	mysql_query("drop table if exists zzbpiaofang;",$con);
     mysql_query("create table zzbpiaofang(zname varchar(30),zboxofficesum int(6),zboxoffice int(5),zsession int(7),zperson int(8),zofficesale int(6),zofficerate decimal(4,2),zinternetsale int(6),zinternetrate decimal(4,2),zrealtimeboxoffice int(8),zestimatedboxoffice int(8),zacquitime date,primary key(zname,zacquitime));",$con);
 	
+	
 	$day=date("Y-m-d");
 	$url="http://weixin.gjdyzjb.cn/pors/w/webChatRealTimeDatas/api/{$day}/searchFilmTop10";
+	echo $url;
 	$html=file_get_contents($url);
 	$info_str=json_decode($html,true);
 	$zrealtimeboxoffice=$info_str["data"]["dayBoxOffice"]["totalBoxoffice"];
@@ -36,7 +38,7 @@
 		$zboxoffice=$info_str["data"]["top10Films"][$i]["daySales"];
 		$zboxofficesum=$info_str["data"]["top10Films"][$i]["filmTotalSales"];
 		$zsession=$info_str["data"]["top10Films"][$i]["daySession"];
-		$zperson=rand((int)$info_str["data"]["top10Films"][$i]["dayAudience"]/10000,4);
+		$zperson=(int)$info_str["data"]["top10Films"][$i]["dayAudience"]/10000;
 		$zofficesale=$info_str["data"]["top10Films"][$i]["localDaySales"];
 		$zofficerate=$info_str["data"]["top10Films"][$i]["localDaySalesPer"];
 		$zinternetsale=$info_str["data"]["top10Films"][$i]["onlineDaySales"];
@@ -49,6 +51,7 @@
 
 
 	}
+	
 
 
 ?>

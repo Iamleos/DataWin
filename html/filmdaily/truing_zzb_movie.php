@@ -17,13 +17,14 @@
     mysql_select_db($dbname,$con);
     mysql_query("set names utf8");
 
+
+
 	$day=date("Y-m-d",strtotime("-1 day"));
-	//$day="2017-04-24";
 	$html=file_get_contents("http://www.zgdypw.cn/pors/w/webStatisticsDatas/api/{$day}/searchDayBoxOffice");
 	$info_str=json_decode($html,true);
 	$box_office_sum=$info_str["data"]["dayBoxOffice"]["totalBoxoffice"];
-	$session=$info_str["data"]["dayBoxOffice"]["totalSession"]/10000;
-	$people=$info_str["data"]["dayBoxOffice"]["totalAudience"]/10000;
+	$session=(int)$info_str["data"]["dayBoxOffice"]["totalSession"]/10000;
+	$people=(int)$info_str["data"]["dayBoxOffice"]["totalAudience"]/10000;
 	$sql_str="insert into turing_zzb_total(total_piaofang,total_session,total_people,time) values('{$box_office_sum}','{$session}','{$people}','{$day}');";
 	mysql_query($sql_str,$con);
 	for($i=0;$i<10;$i++)
@@ -31,7 +32,7 @@
 		$film_name=$info_str["data"]["top10Films"][$i]["filmName"];
 		$film_piaofang=$info_str["data"]["top10Films"][$i]["daySales"];
 		$film_session=$info_str["data"]["top10Films"][$i]["daySession"];
-		$film_people=rand((int)$info_str["data"]["top10Films"][$i]["dayAudience"]/10000,4);
+		$film_people=(int)$info_str["data"]["top10Films"][$i]["dayAudience"]/10000;
 		$film_sum_piaofang=$info_str["data"]["top10Films"][$i]["filmTotalSales"];
 		//echo $film_name."-".$film_piaofang."-".$film_session."-".$film_people."-".$film_sum_piaofang."<br/>";
 		$sql="insert into turing_zzb_film(film_name,film_piaofang,film_session,film_people,film_sum_piaofang,time) values('{$film_name}','{$film_piaofang}','{$film_session}','{$film_people}','{$film_sum_piaofang}','{$day}');";
@@ -43,7 +44,7 @@
 		$cinema_name=$info_str["data"]["top10Cinemas"][$i]["cinemaName"];
 		$cinema_piaofang=$info_str["data"]["top10Cinemas"][$i]["totalSales"];
 		$cinema_session=$info_str["data"]["top10Cinemas"][$i]["daySession"];
-		$cinema_people=rand((int)$info_str["data"]["top10Cinemas"][$i]["dayAudience"]/10000,4);
+		$cinema_people=(int)$info_str["data"]["top10Cinemas"][$i]["dayAudience"]/10000;
 
 		//echo $cinema_name."-".$cinema_piaofang."-".$cinema_session."-".$cinema_people."<br/>";
 		$sql="insert into turing_zzb_cinema(cinema_name,cinema_piaofang,cinema_session,cinema_people,time) values('{$cinema_name}','{$cinema_piaofang}','{$cinema_session}','{$cinema_people}','{$day}');";
@@ -55,7 +56,7 @@
 		$theatres_name=$info_str["data"]["top10CinemaChains"][$i]["cinemaChainName"];
 		$theatres_piaofang=$info_str["data"]["top10CinemaChains"][$i]["totalSales"];
 		$theatres_session=$info_str["data"]["top10CinemaChains"][$i]["daySession"];
-		$theatres_people=rand((int)$info_str["data"]["top10CinemaChains"][$i]["dayAudience"]/10000,4);
+		$theatres_people=(int)$info_str["data"]["top10CinemaChains"][$i]["dayAudience"]/10000;
 
 		//echo $cinema_name."-".$cinema_piaofang."-".$cinema_session."-".$cinema_people."<br/>";
 		$sql="insert into turing_zzb_theatres(theatres_name,theatres_piaofang,theatres_session,theatres_people,time) values('{$theatres_name}','{$theatres_piaofang}','{$theatres_session}','{$theatres_people}','{$day}');";
@@ -67,7 +68,7 @@
 		$city_name=$info_str["data"]["top10Citys"][$i]["cityName"];
 		$city_piaofang=$info_str["data"]["top10Citys"][$i]["totalSales"];
 		$city_session=$info_str["data"]["top10Citys"][$i]["daySession"];
-		$city_people=rand((int)$info_str["data"]["top10Citys"][$i]["dayAudience"]/10000,4);
+		$city_people=(int)$info_str["data"]["top10Citys"][$i]["dayAudience"]/10000;
 
 		//echo $cinema_name."-".$cinema_piaofang."-".$cinema_session."-".$cinema_people."<br/>";
 		$sql="insert into turing_zzb_city(city_name,city_piaofang,city_session,city_people,time) values('{$city_name}','{$city_piaofang}','{$city_session}','{$city_people}','{$day}');";

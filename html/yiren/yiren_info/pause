@@ -1,0 +1,5 @@
+胡夏
+Traceback (most recent call last):
+  File "update_image/update_image.py", line 15, in <module>
+    data = demjson.decode(data)['data']['thisWeek']
+TypeError: list indices must be integers, not str

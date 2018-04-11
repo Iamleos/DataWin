@@ -231,7 +231,7 @@
 
         //插入数据库
         mysqli_query($con, "insert into maoyan values('{$filmname[$key]}','{$daoyan}','{$zhuyan}','{$zhipian}','{$faxing}',
-        '{$jianjie}','{$value}','{$release}','{$category}','{$region}');");
+        '{$jianjie}',null,'{$release}','{$category}','{$region}');");
     }
     mysqli_close($con);
 

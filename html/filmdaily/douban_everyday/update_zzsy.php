@@ -13,7 +13,7 @@
         preg_match('/(.{0,10})/',$value[1],$firstShowEx);
         $diff = date_diff(date_create($date),date_create($firstShowEx[1]));
         if ($diff->format("%a") >90) {
-            mysqli_query($con,"update douban_tv set zzsy='0' where name = '{$value[0]}';");
+            mysqli_query($con,"update douban_tv set zzsy='0' where name = \"{$value[0]}\";");
             var_dump($value[0]);
         }
     }

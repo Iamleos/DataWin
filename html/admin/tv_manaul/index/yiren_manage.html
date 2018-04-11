@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>tv_name</title>
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+
+    function showData(opt){
+        var option = "";
+        var data = document.getElementsByName('data');
+        var dataArray = new Object();
+
+        dataArray.id = data[0].value;
+        dataArray.name = data[1].value;
+        dataArray.guoji = data[2].value;
+        dataArray.mingzu = data[3].value;
+        dataArray.xingzuo = data[4].value;
+        dataArray.xuexing = data[5].value;
+        dataArray.shengao = data[6].value;
+        dataArray.tizhong = data[7].value;
+        dataArray.chushengdi = data[8].value;
+        dataArray.chushengriqi = data[9].value;
+        dataArray.zhiye = data[10].value;
+        dataArray.biyexuexiao = data[11].value;
+        dataArray.jinjigongsi = data[12].value;
+        dataArray.daibiaozuoping = data[13].value;
+        dataArray.bieming = data[14].value;
+        dataArray.zhuyaochengjiu = data[15].value;
+        dataArray.changpiangongsi = data[16].value;
+        dataArray.peiou = data[17].value;
+        dataArray.nver = data[18].value;
+        dataArray.erzi = data[19].value;
+        dataArray.gender = data[20].value;
+        dataArray.introduction = data[21].value;
+        dataJson = JSON.stringify(dataArray);
+        if (opt == "删除") {
+            option = "delete";
+            if (data[0].value == "") {
+                alert("请输入id");
+                return;
+            }
+        }
+        else if(opt == "插入"){
+            option = "insert";
+            if (data[0].value != "") {
+                alert("请勿输入id");
+                return;
+            }
+            if (data[1].value == "") {
+                alert("请输入名称");
+                return;
+            }
+        }
+        else {
+            option = "modify";
+            if (data[0].value == "") {
+                alert("请输入id");
+                return;
+            }
+        }
+        if(!confirm("确认"+opt+"\n"+data[0].value)){
+            return;
+        };
+        $.ajax({
+           url:'../search/yiren_manage.php',
+           type:'post',
+           dataType:'json',
+           data:"opt="+option+"&json="+dataJson,
+           success:function(data){
+               //console.log(data);
+            //document.getElementById("show").innerHTML=data;
+                if (typeof(data) == "undefined" || data.result == "error") {
+                    alert("未知错误");
+                }
+                else {
+                    if (data.result == "error0") {
+                        alert("请提供id");
+                    }
+                    else if (data.result == "error1") {
+                        alert("请输入名称");
+                    }
+                    else if (data.result == "error2") {
+                        alert("请勿输入id");
+                    }
+                    else if (data.result == "success_insert") {
+                        alert("插入成功");
+                    }
+                    else if (data.result == "success_delete") {
+                        alert("删除成功");
+                    }
+                    else if (data.result == "success_modify") {
+                        alert("修改成功");
+                    }
+                    else {
+                        alert("未知错误");
+                    }
+                }
+            }
+        });
+    }
+
+</script>
+</head>
+
+<body >
+<p style="text-align:center;"><img src="../pic/index.png" width="800" height="300"></p>
+<center>
+    <div style="font-size:10">
+    　<a href="film.html"> 电影库</a>｜
+      <a href="tv.html"> 电视剧库</a>｜
+      <a href="tv_name.html"> 电视剧名库</a>｜
+      <a href="yiren.html"> 艺人库</a>｜
+      <a href="zy.html"> 综艺库</a>
+    </div>
+    <br>
+    <div>
+        <a href="film_manage.html"> 电影库－编辑</a>｜
+        <a href="tv_manage.html"> 电视剧库－编辑</a>｜
+        <a href="tv_name_manage.html"> 电视剧名库－编辑</a>｜
+        <a href="yiren_manage.html"> 艺人库－编辑</a>｜
+        <a href="zy_manage.html"> 综艺库－编辑</a>
+    </div>
+</center>
+<hr>
+<div style="float:left;width:30%">
+    <center>
+        <h1 >注意：</h1>
+        <h3><strong style="color:grey">删除和修改</strong>数据时<strong style="color:red">需要</strong>提供<strong style="color:blue">艺人id</strong></h3>
+        <h3><strong style="color:grey">插入</strong>数据时<strong style="color:red">不可以</strong>输入<strong style="color:blue">艺人id</strong></h3>
+        <h3><strong style="color:grey">插入和修改</strong>数据时<strong style="color:red">请勿输入英文单引号(e.g. ' ")</strong></h3>
+        <h3><strong style="color:grey">修改</strong>数据时<strong style="color:red">只需要填写待修改选项</strong></h3>
+    </center>
+</div>
+<div style="text-align:center;float:left">
+    <center>
+        <table >
+            <tr>
+                <th width="20%"><strong style="color:blue">艺人id：</strong></th>
+                <th width="80%"><input type="text" name="data"  size="100"></th>
+            </tr>
+            <tr>
+                <th width="20%">艺人名称：</th>
+                <th width="80%"><input type="text" name="data"  size="100"></th>
+            </tr>
+            <tr>
+                <th width="20%">国籍：</th>
+                <th width="80%"><input type="text" name="data"  size="100"></th>
+            </tr>
+            <tr>
+                <th width="20%">民族：</th>
+                <th width="80%"><input type="text" name="data"  size="100"></th>
+            </tr>
+            <tr>
+                <th width="20%">星座：</th>
+                <th width="80%"><input type="text" name="data"  size="100"></th>
+            </tr>
+            <tr>
+                <th width="20%">血型：</th>
+                <th width="80%"><input type="text" name="data"  size="100"></th>
+            </tr>
+            <tr>
+                <th width="20%">身高：</th>
+                <th width="80%"><input type="text" name="data"  size="100"></th>
+            </tr>
+            <tr>
+                <th width="20%">体重：</th>
+                <th width="80%"><input type="text" name="data" size="100"></th>
+            </tr>
+            <tr>
+                <th width="20%">出生地：</th>
+                <th width="80%"><input type="text" name="data" size="100"></th>
+            </tr>
+            <tr>
+                <th width="20%">出生日期：</th>
+                <th width="80%"><input type="text" name="data" size="100"></th>
+            </tr>
+            <tr>
+                <th width="20%">职业：</th>
+                <th width="80%"><input type="text" name="data"  size="100"></th>
+            </tr>
+            <tr>
+                <th width="20%">毕业学校：</th>
+                <th width="80%"><input type="text" name="data" size="100"></th>
+            </tr>
+            <tr>
+                <th width="20%">经济公司：</th>
+                <th width="80%"><input type="text" name="data" size="100"></th>
+            </tr>
+            <tr>
+                <th width="20%">代表作品：</th>
+                <th width="80%"><input type="text" name="data" size="100"></th>
+            </tr>
+            <tr>
+                <th width="20%">别名：</th>
+                <th width="80%"><input type="text" name="data"  size="100"></th>
+            </tr>
+            <tr>
+                <th width="20%">主要成就：</th>
+                <th width="80%"><input type="text" name="data" size="100"></th>
+            </tr>
+            <tr>
+                <th width="20%">唱片公司：</th>
+                <th width="80%"><input type="text" name="data" size="100"></th>
+            </tr>
+            <tr>
+                <th width="20%">配偶：</th>
+                <th width="80%"><input type="text" name="data" size="100"></th>
+            </tr>
+            <tr>
+                <th width="20%">女儿：</th>
+                <th width="80%"><input type="text" name="data"  size="100"></th>
+            </tr>
+            <tr>
+                <th width="20%">儿子：</th>
+                <th width="80%"><input type="text" name="data" size="100"></th>
+            </tr>
+            <tr>
+                <th width="20%">性别：</th>
+                <th width="80%"><input type="text" name="data" size="100"></th>
+            </tr>
+            <tr>
+                <th width="20%">简介：</th>
+                <th width="80%"><input type="text" name="data" size="100"></th>
+            </tr>
+        </table>
+        <input  type="button" id="delete" value="删除" onclick="showData(this.value)"/>
+        <input  type="button" id="insert" value="插入" onclick="showData(this.value)"/>
+        <input  type="button" id="modify" value="修改" onclick="showData(this.value)"/>
+    </center>
+</div>
+<div id="show">
+</div>
+
+
+</body>
+</html>

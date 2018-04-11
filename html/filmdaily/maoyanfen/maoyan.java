@@ -7,8 +7,12 @@ import java.io.IOException;
 
 public class maoyan {
 	public static void main(String[] args) throws IOException{
-		File file = new File("/var/www/html/filmdaily/maoyanfen/map.ttf");
-		File filwout = new File("/var/www/html/filmdaily/maoyanfen/key.txt");
+		String file_dir = maoyan.class.getResource("").toString();
+		String dir = file_dir.replace("file:","");
+		System.out.println(dir);
+		File file = new File(dir+"/map.ttf");
+		File filwout = new File("/home/leos/work/filmdaily_new/maoyanfen/key.txt");
+		filwout.setWritable(true, false);
 		FileOutputStream ou = new FileOutputStream(filwout);
 		FileInputStream in = new FileInputStream(file);
 		byte[] bt = new byte[10000];

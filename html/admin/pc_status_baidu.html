@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" >
+
+	<script>
+
+	function displayResult()
+
+	{
+
+		var table=document.getElementById("myTable");
+
+		var rowNum=table.rows.length;
+
+		var row=table.insertRow(rowNum-3);
+
+		var cell1=row.insertCell(0);
+
+		var cell2=row.insertCell(1);
+
+		//从第1个select开始算
+
+		var sel="<select name='select"+(rowNum-7)+"' id='select"+(rowNum-7)+"'><option value='1'>艺人贴吧</option><option value='2'>电影吧</option><option value='3'>豆瓣八组</option><option value='4'>豆瓣分</option><option value='5'>格瓦拉分</option><option value='6'>猫眼票房简报</option><option value='7'>猫眼黄金排片</option><option value='8'>猫眼排片</option><option value='9'>猫眼票房粗报</option><option value='10'>猫眼评分</option><option value='11'>天涯</option><option value='12'>晋江兔区</option><option value='13'>艺恩票房</option><option value='14'>友谊吧</option><option value='15'>娱乐圈吧</option><option value='16'>专资办票房</option></select>";
+
+		cell1.innerHTML=sel;
+
+		var file="<input type='file'  name ='file' id ='"+(rowNum-7)+"' onchange='rename(this.id)'/>" 
+
+		cell2.innerHTML=file;
+
+	}
+
+	function rename(x)
+
+	{
+
+		var selected="select"+document.getElementById(x).id;
+
+		var  myselect=document.getElementById(selected);
+
+		
+
+		var index=myselect.selectedIndex ; 
+
+		var value=myselect.options[index].value;
+
+		document.getElementById(x).name="file"+value;
+
+
+
+		
+
+	}
+
+
+
+	var xmlHttp;
+
+	function createXMLHttpRequest()
+
+	{
+
+		if(window.ActiveXObject)
+
+		{
+
+			xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+
+		}
+
+		else if(window.XMLHttpRequest)
+
+		{
+
+			xmlHttp = new XMLHttpRequest();
+
+		}
+
+	}
+
+	function Trim(str)
+
+         { 
+
+             return str.replace(/(^\s*)|(\s*$)/g, ""); 
+
+     }
+
+	function startRequest()
+
+	{
+
+		createXMLHttpRequest();
+
+		try
+
+		{   
+
+		    var url="pc_status_baidu.php";
+
+			//window.alert(url);
+
+			xmlHttp.onreadystatechange = handleStateChange;
+
+			xmlHttp.open("GET",url, true);
+
+			xmlHttp.send(null);
+
+		}
+
+		catch(exception)
+
+		{
+
+			alert("xmlHttp Fail");
+
+		}
+
+	}
+
+	function handleStateChange()
+
+	{
+
+		if(xmlHttp.readyState == 4)
+
+		{
+
+			if (xmlHttp.status == 200 || xmlHttp.status == 0)
+
+			{
+
+					var result = xmlHttp.responseText;
+
+					//window.alert(result);
+
+					var json = eval("("+ result +")");
+
+					//window.alert(json.doubanbazu.name);
+
+					var str="<tr><td>数据库表</td><td>状态</td><td>爬虫开始时间</td></tr>";
+
+                                        str+="<tr><td>"+json.baidu_news_yiren.name+"</td><td>"+json.baidu_news_yiren.status+"</td><td>"+json.baidu_news_yiren.systime+"</td></tr>";
+                                        str+="<tr><td>"+json.sogou_news_other.name+"</td><td>"+json.sogou_news_other.status+"</td><td>"+json.sogou_news_other.systime+"</td></tr>";
+					//window.alert(str+"+++");
+
+					var data=document.getElementById("status_tab");
+
+					data.innerHTML=str;
+
+
+
+					
+
+			}
+
+		}
+
+	}
+
+	</script>
+
+	
+
+	<style type="text/css">
+
+	body,div{
+
+		padding:0px;
+
+		margin:0px;
+
+	}
+
+	body{text-align:center} 
+
+	#upload{background-color:#c0c0c0;
+
+	        
+
+			width:1000px;
+
+			margin:0 auto;
+
+			padding:10px;
+
+           }
+
+	#myTable{
+
+			
+
+			margin:0 auto;
+
+			padding:10px;
+
+
+
+			}
+
+
+
+	</style>
+
+</head>
+
+<body  onload="startRequest()">
+
+
+
+<div id="upload"  >
+
+	
+
+
+
+	<table id="status_tab"  align="center" style="width:400px;border:1px solid #000;">
+
+		
+
+	</table>
+
+
+
+
+</div>
+
+</body>
+
+</html>
+
+

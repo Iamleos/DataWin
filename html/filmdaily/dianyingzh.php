@@ -204,8 +204,9 @@
 	mysql_query("update dianyingzh set mpiaofangshijian=(select maoyanpiaofang.mpiaofangshijian from maoyanpiaofang where (dianyingzh.mainname=maoyanpiaofang.mname or dianyingzh.myname=maoyanpiaofang.mname));");
 
 	//添加明日排片占比数据
-	mysql_query("update dianyingzh set tomorrow_rate=(select maoyanpaipian.mrowpiecerate from maoyanpaipian where maoyanpaipian.mtype='1' and (dianyingzh.mainname=maoyanpaipian.mname or dianyingzh.myname=maoyanpaipian.mname ));");
-
+	//mysql_query("update dianyingzh set tomorrow_rate=(select maoyanpaipian.mrowpiecerate from maoyanpaipian where maoyanpaipian.mtype='1' and (dianyingzh.mainname=maoyanpaipian.mname or dianyingzh.myname=maoyanpaipian.mname ));");
+	$date = date("Y-m-d");
+        mysql_query("update dianyingzh set tomorrow_rate=(select maoyan_pre_paipian.percent from maoyan_pre_paipian where maoyan_pre_paipian.time='{$date}' and (dianyingzh.mainname=maoyan_pre_paipian.name or dianyingzh.myname=maoyan_pre_paipian.mname));");
 
 	//添加猫眼票房简报数据
 	mysql_query("update dianyingzh set jb_msumboxoffice=(select mpiaofangjianbao.msumboxoffice from mpiaofangjianbao where dianyingzh.mainname=mpiaofangjianbao.mname or dianyingzh.myname=mpiaofangjianbao.mname);");
@@ -305,7 +306,6 @@
     mysql_query("update dianyingzh set yulequannum={$yulenum} where dianyingzh.mainname='{$row[0]}';");
 
 	}
-
 	//提取豆瓣八组的提及数
 
 	$resdouban=mysql_query("select dtitle from doubanbazu;",$con);
@@ -502,8 +502,7 @@ mysql_query("CREATE TABLE  IF NOT EXISTS `dyhistory` (
   `acquitime` date DEFAULT NULL,
   primary key(mainname,acquitime)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;");
-
-mysql_query("insert IGNORE into dyhistory select * from dianyingzh ");
+mysql_query("insert IGNORE into dyhistory select * from dianyingzh;");
 
 
 ?>

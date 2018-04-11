@@ -8,7 +8,7 @@
     $dbname="zhishu";
     $con=mysqli_connect($host,$name,$password,$dbname,4892) or die("Can't connect mysql!".mysqli_connect_error() );
     mysqli_query($con,"set names utf8");
-    $other = mysqli_query($con, "select name from linshi_word");
+    $other = mysqli_query($con, "select name from other_name");
     $other = mysqli_fetch_all($other);
     mysqli_close($con);
     //入库

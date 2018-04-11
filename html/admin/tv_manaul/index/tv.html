@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>tv_name</title>
+<script>
+    function showData(option){
+        name = document.getElementById("name").value;
+        if (name==""){
+            alert("请输入剧名");
+            return;
+        }
+        if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp=new XMLHttpRequest();
+        }else{// code for IE6, IE5
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange=function(){
+            if (xmlhttp.readyState==4 && xmlhttp.status==200){
+                if (xmlhttp.responseText == "ok") {
+                    alert("插入成功");
+                }
+                else if (xmlhttp.responseText == "repeat") {
+                    alert("剧名已存在");
+                }
+                else if (xmlhttp.responseText == "lose") {
+                    alert("请输入正确的douban链接");
+                }
+                else if (xmlhttp.responseText == "error"){
+                    alert("插入失败，未知错误！");
+                }
+                else{
+                    document.getElementById("show").innerHTML=xmlhttp.responseText;
+                }
+            }
+        }
+        xmlhttp.open("GET","../search/tv_search.php?name="+name,true);
+        xmlhttp.send();
+    }
+</script>
+</head>
+
+<body>
+<p style="text-align:center;"><img src="../pic/index.png" width="800" height="300"></p>
+<center>
+    <div style="font-size:10">
+    　<a href="film.html"> 电影库</a>｜
+      <a href="tv.html"> 电视剧库</a>｜
+      <a href="tv_name.html"> 电视剧名库</a>｜
+      <a href="yiren.html"> 艺人库</a>｜
+      <a href="zy.html"> 综艺库</a>
+    </div>
+    <br>
+    <div>
+        <a href="film_manage.html"> 电影库－编辑</a>｜
+        <a href="tv_manage.html"> 电视剧库－编辑</a>｜
+        <a href="tv_name_manage.html"> 电视剧名库－编辑</a>｜
+        <a href="yiren_manage.html"> 艺人库－编辑</a>｜
+        <a href="zy_manage.html"> 综艺库－编辑</a>
+    </div>
+</center>
+<form id="form1" name="form1"  style="text-align:center">
+    <p>
+    <label for="name"></label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关键字: <input type="text" name="uname" id="name" style="width:300px"/>
+    </p>
+    <input  type="button"  value="查询" onclick="showData(this.value)"/>
+</form>
+</br>
+<div id="show" style="text-align:center"></div>
+
+</body>
+</html>

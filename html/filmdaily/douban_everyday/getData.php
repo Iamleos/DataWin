@@ -1,4 +1,7 @@
 <?php
+/*
+douban_everyday表维护
+*/
     $host="56a3768226622.sh.cdb.myqcloud.com";
     $name="root";
     $password="ctfoxno1";
@@ -36,7 +39,7 @@
 
             $playable = (string)$value->title;
             preg_match_all('/<span class="pl">首播:<\/span> <span property="v:initialReleaseDate" content="(.{0,10}).*">/', $result, $firstShow);
-	var_dump($firstShow);
+            var_dump($firstShow);
             preg_match_all('/<strong class="ll rating_num" property="v:average">(.*)<\/strong>/',$result, $pingfen);
             preg_match_all('/<a href="collections" class="rating_people"><span property="v:votes">(.*)<\/span>/', $result, $peopleNum);
             if(count($pingfen[0]) == 0){
@@ -51,8 +54,8 @@
                 $peopleNum = $peopleNum[1][0];
             }
             $diff = date_diff(date_create($date),date_create($firstShow[1][0]));
-            if (count($firstShow[0]) != 0 &&  $diff->format("%a") <= 60) {
-                mysqli_query($con, "insert into douban_everyday values('{$value->title}', '{$firstShow[1][0]}', '{$pingfen}', '{$peopleNum}', '{$playable}','{$date}');");
+            if (count($firstShow[0]) != 0 &&  $diff->format("%a") <= 90) {
+                mysqli_query($con, "insert into douban_everyday values(\"{$value->title}\", \"{$firstShow[1][0]}\", \"{$pingfen}\", \"{$peopleNum}\", \"{$playable}\",\"{$date}\");");
                 var_dump($value->title);
             }
             else {

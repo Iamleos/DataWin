@@ -1,5 +1,7 @@
 <?php
-
+/*
+此脚本每周做一次，爬去前20页douban，更新douba_tv表中数据，主要是上映时间的更新
+*/
     $host="56a3768226622.sh.cdb.myqcloud.com";
     $name="root";
     $password="ctfoxno1";
@@ -24,7 +26,7 @@
         $result = json_decode($result);
         $tv = $result->subjects;
         foreach ($tv as $key => $value) {
-            $hasTv = mysqli_query($con, "select name from douban_tv where name='{$value->title}';");
+            $hasTv = mysqli_query($con, "select name from douban_tv where name=\"{$value->title}\";");
             $rate = $value->rate;
             if(mysqli_fetch_array($hasTv) == NULL){
                 $url = $value->url;
@@ -59,6 +61,15 @@
                 preg_match_all('/<a class="playBtn" data-cn=".*" data-source=".*"  href="javascript: void 0;">\s*(.*)\s*<\/a>/', $result, $playBtn);
                 preg_match_all('/<span class="buylink-price"><span>\s*(.*)\s*<\/span><\/span>/', $result, $buylink);
                 preg_match_all('/<a href="\/tag\/.*" class="">(.*)<\/a>/', $result, $tag);
+                preg_match_all('/<div id="mainpic" class="">[\s\S]*?<img src="(.*?)" title/', $result, $image);
+
+                //Imag
+                if (count($image[1]) != 1){
+                    $image = "NULL";
+                }
+                else {
+                    $image = $image[1][0];
+                }
                 //整合数据
                 //daoyan
                 if (count($daoyan[1]) != 1) {
@@ -191,11 +202,10 @@
                 else {
                     $tag = NULL;
                 }
-
-
-                mysqli_query($con, "insert into douban_tv values('{$value->title}', '{$rate}', '国产剧', '{$daoyan}', '{$bianju}', '{$zhuyan}', '{$type}'
-                                                                , '{$region}', '{$language}', '{$firstShow}', '{$jishu}', '{$danjipianchang}'
-                                                                , '{$youming}', '{$playBtn}', '{$tag}','{$zzsy}');");
+		mysqli_query($con, "insert into tv_list values(\"{$value->title}\",\"{$image}\",\"1\");");
+                mysqli_query($con, "insert into douban_tv values(\"{$value->title}\", \"{$rate}\", \"国产剧\", \"NULL\",\"{$daoyan}\", \"{$bianju}\", \"{$zhuyan}\", \"{$type}\"
+                                                                        , \"{$region}\", \"{$language}\", \"{$firstShow}\", \"{$jishu}\", \"{$danjipianchang}\"
+                                                                        , \"{$youming}\", \"{$playBtn}\", \"{$tag}\",\"{$zzsy}\",\"1\",\"{$url}\");");
             }
             else {
                 $url = $value->url;
@@ -226,12 +236,12 @@
                     }
 
                 }
-                mysqli_query($con, "update douban_tv set zzsy='{$zzsy}' where name='{$value->title}';");
-
+                mysqli_query($con, "update douban_tv set zzsy=\"{$zzsy}\" where name=\"{$value->title}\";");
 
 
             }
             var_dump($value->title);
+	        sleep(1);
         }
 
     }
